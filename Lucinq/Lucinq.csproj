@@ -45,9 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BooleanQueryExtensions.cs" />
-    <Compile Include="GroupedBooleanQuery.cs" />
+    <Compile Include="QueryBuilder.cs" />
     <Compile Include="Interfaces\ILuceneSearch.cs" />
-    <Compile Include="Interfaces\IQueryWithParent.cs" />
+    <Compile Include="Interfaces\IQueryBuilder.cs" />
     <Compile Include="LuceneSearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryExtensions.cs" />

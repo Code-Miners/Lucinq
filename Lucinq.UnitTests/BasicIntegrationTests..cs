@@ -1,6 +1,7 @@
 ﻿using System;
 using Lucene.Net.Documents;
 using Lucene.Net.Search;
+using Lucinq.Interfaces;
 using NUnit.Framework;
 
 namespace Lucinq.UnitTests
@@ -28,102 +29,127 @@ namespace Lucinq.UnitTests
 		[Test]
 		public void SingleTermClauseSuccessful()
 		{
-			BooleanQuery query = new BooleanQuery();
+			IQueryBuilder queryBuilder = new QueryBuilder();
 
-			query.Term("_name", "work");
+			queryBuilder.Term("_name", "work");
 
-			var results = ExecuteAndAssert(query, 8);
+			var results = ExecuteAndAssert(queryBuilder, 8);
 
 			Assert.AreEqual(8, results.TotalHits);
 
-			BooleanQuery alternative = new BooleanQuery();
+			IQueryBuilder alternative = new QueryBuilder();
 			alternative.Where(x => x.Term("_name", "work"));
 
-			var results2 = Search.Execute(query, 20);
+			var results2 = Search.Execute(queryBuilder.Build(), 20);
 			Assert.AreEqual(results.TotalHits, results2.TotalHits);
 		}
 
 		[Test]
 		public void SingleTermSetupSuccessful()
 		{
-			BooleanQuery query = new BooleanQuery();
-			query.Setup(x => x.Term("_name", "work"));
+			IQueryBuilder queryBuilder = new QueryBuilder();
+			queryBuilder.Setup(x => x.Term("_name", "work"));
 
-			ExecuteAndAssert(query, 8);
+			ExecuteAndAssert(queryBuilder, 8);
 		}
 
 		[Test]
 		public void SimpleOrClauseSuccessful()
 		{
-			BooleanQuery query = new BooleanQuery();
+			IQueryBuilder queryBuilder = new QueryBuilder();
 
-			query.Or
+			queryBuilder.Or
 				(
 					x => x.Term("_name", "work"),
 					x => x.Term("_name", "text")
 				);
 
-			ExecuteAndAssert(query, 16);
+			ExecuteAndAssert(queryBuilder, 16);
 		}
 
 		[Test]
 		public void SimpleAndClauseSuccessful()
 		{
-			BooleanQuery query = new BooleanQuery();
+			IQueryBuilder queryBuilder = new QueryBuilder();
 
-			query.And
+			queryBuilder.And
 				(
 					x => x.Term("_name", "work"),
 					x => x.Term("_name", "highlights")
 				);
 
-			ExecuteAndAssert(query, 4);
+			ExecuteAndAssert(queryBuilder, 4);
+		}
+
+		[Test]
+		public void RemoveAndReexecute()
+		{
+			IQueryBuilder queryBuilder = new QueryBuilder();
+
+			queryBuilder.Term("_name", "home", key: "highlightscriteria");
+
+			var results = ExecuteAndAssert(queryBuilder, 4);
+
+			queryBuilder.Queries.Remove("highlightscriteria");
+			queryBuilder.Term("_name", "work", key: "workcriteria");
+
+			Console.WriteLine("\r\nSecond Criteria");
+
+			var results2 = ExecuteAndAssert(queryBuilder, 8);
+
+			Assert.AreNotEqual(results.TotalHits, results2.TotalHits);
 		}
 
 		[Test]
 		public void SimpleWildCardQuery()
 		{
-			BooleanQuery query = new BooleanQuery();
-			query.Setup(x => x.WildCard("_name", "h*"));
+			IQueryBuilder queryBuilder = new QueryBuilder();
+			queryBuilder.Setup(x => x.WildCard("_name", "h*"));
 
-			ExecuteAndAssert(query, 16);
+			ExecuteAndAssert(queryBuilder, 16);
 		}
 
 		[Test]
 		public void ChainedTerms()
 		{
-			BooleanQuery query = new BooleanQuery();
-			query.Setup
+			IQueryBuilder queryBuilder = new QueryBuilder();
+			queryBuilder.Setup
 				(
 					x => x.WildCard("_name", "*highlights"),
 					x => x.Term("_name", "work")
 				);
 
-			ExecuteAndAssert(query, 4);
+			ExecuteAndAssert(queryBuilder, 4);
+		}
+
+		[Test]
+		public void RemoveTerms()
+		{
+			
 		}
 
 		[Test]
 		public void Group()
 		{
-			BooleanQuery query = new BooleanQuery();
-			query.Setup
+			IQueryBuilder queryBuilder = new QueryBuilder();
+			queryBuilder.Setup
 				(
 					x => x.WildCard("_name", "*highlights"),
 					x => x.Term("_name", "work")
 				);
-			query.Group().Setup
+			queryBuilder.Group().Setup
 				(
 					x => x.Term("_name", "work")
 				);
 
 			throw new NotImplementedException("Needs finishing");
 
-			ExecuteAndAssert(query, 4);
+			ExecuteAndAssert(queryBuilder, 4);
 		}
 
-		private TopDocs ExecuteAndAssert(BooleanQuery query, int numberOfHitsExpected)
+		private TopDocs ExecuteAndAssert(IQueryBuilder queryBuilder, int numberOfHitsExpected)
 		{
-			TopDocs results = Search.Execute(query, 20);
+			TopDocs results = Search.Execute(queryBuilder.Build(), 20);
 
 			foreach (Document document in Search.GetTopDocuments(results))
 			{

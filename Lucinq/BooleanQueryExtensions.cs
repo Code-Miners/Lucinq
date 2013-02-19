@@ -13,102 +13,105 @@ namespace Lucinq
 	{
 		#region [ Boolean Extensions ]
 
-		public static BooleanQuery Where(this BooleanQuery inputQuery, Action<BooleanQuery> inputExpression)
+		public static IQueryBuilder Where(this IQueryBuilder inputQuery, Action<IQueryBuilder> inputExpression)
 		{
 			inputExpression(inputQuery);
 			return inputQuery;
 		}
 
-		public static TermQuery Term(this BooleanQuery inputQuery, string fieldName, string fieldValue, BooleanClause.Occur occur = null)
+		public static TermQuery Term(this IQueryBuilder inputQueryBuilder, string fieldName, string fieldValue, float? boost = null, BooleanClause.Occur occur = null, string key = null)
 		{
 			Term term = new Term(fieldName, fieldValue);
-			BooleanQuery parentQuery = GetParentQuery(inputQuery);
 			TermQuery query = new TermQuery(term);
-			SetOccurValue(inputQuery, ref occur);
-			parentQuery.Add(query, occur);
+			SetOccurValue(inputQueryBuilder, ref occur);
+			SetBoostValue(query, boost);
+
+			inputQueryBuilder.Add(query, occur, key);
 			return query;
 		}
 
-		public static PhraseQuery Phrase(this BooleanQuery inputQuery, string field, string text, BooleanClause.Occur occur = null)
+		public static PhraseQuery Phrase(this IQueryBuilder inputQueryBuilder, string field, string text, float? boost = null, BooleanClause.Occur occur = null, string key = null)
 		{
-			BooleanQuery parentQuery = GetParentQuery(inputQuery);
 			PhraseQuery query = new PhraseQuery();
-			SetOccurValue(inputQuery, ref occur);
-			query.AddTerm(field, text);
-			parentQuery.Add(query, occur);
+			SetOccurValue(inputQueryBuilder, ref occur);
+
+			if (!String.IsNullOrEmpty(field))
+			{
+				query.AddTerm(field, text);
+			}
+
+			SetBoostValue(query, boost);
+
+			inputQueryBuilder.Add(query, occur, key);
 			return query;
 		}
 
-		public static PhraseQuery Phrase(this BooleanQuery inputQuery, BooleanClause.Occur occur = null)
+		public static PhraseQuery Phrase(this IQueryBuilder inputQueryBuilder, float? boost = null, BooleanClause.Occur occur = null, string key = null)
 		{
-			BooleanQuery parentQuery = GetParentQuery(inputQuery);
-			PhraseQuery query = new PhraseQuery();
-			SetOccurValue(inputQuery, ref occur);
-			parentQuery.Add(query, occur);
-			return query;
+			return inputQueryBuilder.Phrase(null, null, boost, occur, key);
 		}
 
-		public static WildcardQuery WildCard(this BooleanQuery inputQuery, string fieldName, string fieldValue, BooleanClause.Occur occur = null)
+		public static WildcardQuery WildCard(this IQueryBuilder inputQueryBuilder, string fieldName, string fieldValue, float? boost = null, BooleanClause.Occur occur = null, string key = null)
 		{
 			Term term = new Term(fieldName, fieldValue);
-			BooleanQuery parentQuery = GetParentQuery(inputQuery);
 			WildcardQuery query = new WildcardQuery(term);
-			SetOccurValue(inputQuery, ref occur);
-			parentQuery.Add(query, occur);
+			SetOccurValue(inputQueryBuilder, ref occur);
+			SetBoostValue(query, boost);
+
+			inputQueryBuilder.Add(query, occur, key);
 			return query;
 		}
 
-		public static BooleanQuery And(this BooleanQuery inputQuery, params Action<GroupedBooleanQuery>[] queries)
+		public static IQueryBuilder And(this IQueryBuilder inputQueryBuilder, params Action<QueryBuilder>[] queries)
 		{
-			return inputQuery.Group(BooleanClause.Occur.MUST, queries);
+			return inputQueryBuilder.Group(BooleanClause.Occur.MUST, queries).Parent;
 		}
 
-		public static BooleanQuery Or(this BooleanQuery inputQuery, params Action<GroupedBooleanQuery>[] queries)
+		public static IQueryBuilder Or(this IQueryBuilder inputQueryBuilder, params Action<QueryBuilder>[] queries)
 		{
-			var groupedBooleanQuery = inputQuery.AddGroup(BooleanClause.Occur.SHOULD, queries);
+			return inputQueryBuilder.Group(BooleanClause.Occur.SHOULD, queries).Parent;
+		}
+
+		public static IQueryBuilder Group(this IQueryBuilder inputQueryBuilder, BooleanClause.Occur occur = null, params Action<QueryBuilder>[] queries)
+		{
+			var groupedBooleanQuery = inputQueryBuilder.AddGroup(occur, queries);
 			if (groupedBooleanQuery == null)
 			{
 				throw new Exception("An error occurred creating the inner query");
 			}
-			return groupedBooleanQuery.ParentQuery;
+			return groupedBooleanQuery;
 		}
 
-		public static BooleanQuery Group(this BooleanQuery inputQuery, BooleanClause.Occur occur = null, params Action<GroupedBooleanQuery>[] queries)
+		private static IQueryBuilder AddGroup(this IQueryBuilder inputQueryBuilder, BooleanClause.Occur occur = null, params Action<QueryBuilder>[] queries)
 		{
-			var groupedBooleanQuery = inputQuery.AddGroup(BooleanClause.Occur.SHOULD, queries);
-			if (groupedBooleanQuery == null)
+			if (occur == null)
 			{
-				throw new Exception("An error occurred creating the inner query");
+				occur = BooleanClause.Occur.MUST;
 			}
-			return inputQuery.AddGroup(BooleanClause.Occur.SHOULD, queries);
-		}
-
-		private static GroupedBooleanQuery AddGroup(this BooleanQuery inputQuery, BooleanClause.Occur occur = null, params Action<GroupedBooleanQuery>[] queries)
-		{
-			GroupedBooleanQuery query = new GroupedBooleanQuery(inputQuery) { Occur = BooleanClause.Occur.MUST };
+			QueryBuilder queryBuilder = new QueryBuilder(inputQueryBuilder) { Occur = occur };
 			foreach (var item in queries)
 			{
-				item(query);
+				item(queryBuilder);
 			}
-			inputQuery.Add(query, BooleanClause.Occur.MUST);
-			return query;
+			inputQueryBuilder.Groups.Add(queryBuilder);
+			return queryBuilder;
 		}
 
-		public static BooleanQuery Setup(this BooleanQuery inputQuery, params Action<BooleanQuery>[] queries)
+		public static IQueryBuilder Setup(this IQueryBuilder inputQueryBuilder, params Action<IQueryBuilder>[] queries)
 		{
 			foreach (var item in queries)
 			{
-				item(inputQuery);
+				item(inputQueryBuilder);
 			}
-			return inputQuery;
+			return inputQueryBuilder;
 		}
 
-		public static Query Raw(this BooleanQuery booleanQuery, string field, string queryText, BooleanClause.Occur occur = null)
+		public static Query Raw(this QueryBuilder booleanQueryBuilder, string field, string queryText, BooleanClause.Occur occur = null, string key = null)
 		{
 			Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_29);
 			QueryParser queryParser = new QueryParser(Version.LUCENE_29, field, analyzer);
 			Query query = queryParser.Parse(queryText);
-			booleanQuery.Add(query, occur);
+			booleanQueryBuilder.Add(query, occur, key);
 			return query;
 		}
 
@@ -116,34 +119,23 @@ namespace Lucinq
 
 		#region [ Helper Methods ]
 
-		private static void SetOccurValue(BooleanQuery inputQuery, ref BooleanClause.Occur occur)
+		private static void SetBoostValue(Query query, float? boost)
+		{
+			if (!boost.HasValue)
+			{
+				return;
+			}
+			query.SetBoost(boost.Value);
+		}
+
+		private static void SetOccurValue(IQueryBuilder inputQueryBuilder, ref BooleanClause.Occur occur)
 		{
 			if (occur != null)
 			{
 				return;
 			}
 
-			GroupedBooleanQuery parentQuery = inputQuery as GroupedBooleanQuery;
-			occur = parentQuery != null ? parentQuery.Occur : BooleanClause.Occur.MUST;
-		}
-
-		private static BooleanQuery GetParentQuery(Query inputQuery)
-		{
-			BooleanQuery parentQuery;
-			if (inputQuery is BooleanQuery)
-			{
-				parentQuery = inputQuery as BooleanQuery;
-			}
-			else if (inputQuery is IQueryWithParent)
-			{
-				IQueryWithParent wrappedQuery = inputQuery as IQueryWithParent;
-				parentQuery = wrappedQuery.ParentQuery;
-			}
-			else
-			{
-				throw new ArgumentException("Wrong parameter type - should be IWrappedQuery or BooleanQuery", "inputQuery");
-			}
-			return parentQuery;
+			occur = inputQueryBuilder != null ? inputQueryBuilder.Occur : BooleanClause.Occur.MUST;
 		}
 
 		#endregion
