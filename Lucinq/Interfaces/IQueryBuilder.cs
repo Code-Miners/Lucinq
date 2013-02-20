@@ -3,12 +3,8 @@ using Lucene.Net.Search;
 
 namespace Lucinq.Interfaces
 {
-	public interface IQueryBuilder
+	public interface IQueryBuilder : IQueryChainer
 	{
-		BooleanClause.Occur Occur { get; set; }
-
-		IQueryBuilder Parent { get; }
-
 		Dictionary<string, QueryReference> Queries { get; }
 
 		List<IQueryBuilder> Groups { get; } 

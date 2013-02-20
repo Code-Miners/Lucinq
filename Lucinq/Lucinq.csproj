@@ -44,7 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BooleanQueryExtensions.cs" />
+    <Compile Include="Interfaces\IQueryChainer.cs" />
+    <Compile Include="QueryBuilderExtensions.cs" />
     <Compile Include="QueryBuilder.cs" />
     <Compile Include="Interfaces\ILuceneSearch.cs" />
     <Compile Include="Interfaces\IQueryBuilder.cs" />

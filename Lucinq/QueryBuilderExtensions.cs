@@ -9,15 +9,28 @@ using Version = Lucene.Net.Util.Version;
 
 namespace Lucinq
 {
-	public static class BooleanQueryExtensions
+	public static class QueryBuilderExtensions
 	{
-		#region [ Boolean Extensions ]
+		#region [ Setup Expressions ]
 
 		public static IQueryBuilder Where(this IQueryBuilder inputQuery, Action<IQueryBuilder> inputExpression)
 		{
 			inputExpression(inputQuery);
 			return inputQuery;
 		}
+
+		public static IQueryBuilder Setup(this IQueryBuilder inputQueryBuilder, params Action<IQueryBuilder>[] queries)
+		{
+			foreach (var item in queries)
+			{
+				item(inputQueryBuilder);
+			}
+			return inputQueryBuilder;
+		}
+
+		#endregion
+
+		#region [ Term Expressions ]
 
 		public static TermQuery Term(this IQueryBuilder inputQueryBuilder, string fieldName, string fieldValue, float? boost = null, BooleanClause.Occur occur = null, string key = null)
 		{
@@ -29,6 +42,21 @@ namespace Lucinq
 			inputQueryBuilder.Add(query, occur, key);
 			return query;
 		}
+
+		public static IQueryBuilder Terms(this IQueryBuilder inputQueryBuilder, string fieldName, string[] fieldValues,
+		                                  float? boost = null, BooleanClause.Occur occur = null)
+		{
+			var group = inputQueryBuilder.Group();
+			foreach (var fieldValue in fieldValues)
+			{
+				group.Term(fieldName, fieldValue, boost, occur);
+			}
+			return group.Parent;
+		}
+
+		#endregion
+
+		#region [ Phrase Expressions ]
 
 		public static PhraseQuery Phrase(this IQueryBuilder inputQueryBuilder, string field, string text, float? boost = null, BooleanClause.Occur occur = null, string key = null)
 		{
@@ -51,6 +79,10 @@ namespace Lucinq
 			return inputQueryBuilder.Phrase(null, null, boost, occur, key);
 		}
 
+		#endregion
+
+		#region [ Wildcard Expressions ]
+
 		public static WildcardQuery WildCard(this IQueryBuilder inputQueryBuilder, string fieldName, string fieldValue, float? boost = null, BooleanClause.Occur occur = null, string key = null)
 		{
 			Term term = new Term(fieldName, fieldValue);
@@ -62,19 +94,47 @@ namespace Lucinq
 			return query;
 		}
 
-		public static IQueryBuilder And(this IQueryBuilder inputQueryBuilder, params Action<QueryBuilder>[] queries)
+		public static IQueryBuilder WildCards(this IQueryBuilder inputQueryBuilder, string fieldName, string[] fieldValues,
+								  float? boost = null, BooleanClause.Occur occur = null)
 		{
-			return inputQueryBuilder.Group(BooleanClause.Occur.MUST, queries).Parent;
+			var group = inputQueryBuilder.Group();
+			foreach (var fieldValue in fieldValues)
+			{
+				group.WildCard(fieldName, fieldValue, boost, occur);
+			}
+			return group.Parent;
+		}
+		#endregion
+
+		#region [ Group Expressions ]
+
+		public static IQueryBuilder And(this IQueryBuilder inputQueryBuilder, params Action<IQueryBuilder>[] queries)
+		{
+			return inputQueryBuilder.Group(BooleanClause.Occur.MUST, BooleanClause.Occur.MUST, queries).Parent;
 		}
 
-		public static IQueryBuilder Or(this IQueryBuilder inputQueryBuilder, params Action<QueryBuilder>[] queries)
+		public static IQueryBuilder And(this IQueryBuilder inputQueryBuilder, BooleanClause.Occur occur = null, params Action<IQueryBuilder>[] queries)
 		{
-			return inputQueryBuilder.Group(BooleanClause.Occur.SHOULD, queries).Parent;
+			return inputQueryBuilder.Group(occur, BooleanClause.Occur.MUST, queries).Parent;
 		}
 
-		public static IQueryBuilder Group(this IQueryBuilder inputQueryBuilder, BooleanClause.Occur occur = null, params Action<QueryBuilder>[] queries)
+		public static IQueryBuilder Or(this IQueryBuilder inputQueryBuilder, params Action<IQueryBuilder>[] queries)
 		{
-			var groupedBooleanQuery = inputQueryBuilder.AddGroup(occur, queries);
+			return inputQueryBuilder.Group(BooleanClause.Occur.MUST, BooleanClause.Occur.SHOULD, queries).Parent;
+		}
+
+		public static IQueryBuilder Or(this IQueryBuilder inputQueryBuilder, BooleanClause.Occur occur = null, params Action<IQueryBuilder>[] queries)
+		{
+			return inputQueryBuilder.Group(occur, BooleanClause.Occur.SHOULD, queries).Parent;
+		}
+
+		public static IQueryBuilder Group(this IQueryBuilder inputQueryBuilder, BooleanClause.Occur occur = null, BooleanClause.Occur childrenOccur = null, params Action<IQueryBuilder>[] queries)
+		{
+			if (occur == null)
+			{
+				occur = BooleanClause.Occur.MUST;
+			}
+			var groupedBooleanQuery = inputQueryBuilder.AddGroup(occur, childrenOccur, queries);
 			if (groupedBooleanQuery == null)
 			{
 				throw new Exception("An error occurred creating the inner query");
@@ -82,13 +142,18 @@ namespace Lucinq
 			return groupedBooleanQuery;
 		}
 
-		private static IQueryBuilder AddGroup(this IQueryBuilder inputQueryBuilder, BooleanClause.Occur occur = null, params Action<QueryBuilder>[] queries)
+		private static IQueryBuilder AddGroup(this IQueryBuilder inputQueryBuilder, BooleanClause.Occur occur = null, BooleanClause.Occur childrenOccur = null, params Action<IQueryBuilder>[] queries)
 		{
 			if (occur == null)
 			{
 				occur = BooleanClause.Occur.MUST;
 			}
-			QueryBuilder queryBuilder = new QueryBuilder(inputQueryBuilder) { Occur = occur };
+			if (childrenOccur == null)
+			{
+				childrenOccur = BooleanClause.Occur.MUST;
+			}
+
+			IQueryBuilder queryBuilder = new QueryBuilder(inputQueryBuilder) { Occur = occur, ChildrenOccur = childrenOccur};
 			foreach (var item in queries)
 			{
 				item(queryBuilder);
@@ -97,14 +162,9 @@ namespace Lucinq
 			return queryBuilder;
 		}
 
-		public static IQueryBuilder Setup(this IQueryBuilder inputQueryBuilder, params Action<IQueryBuilder>[] queries)
-		{
-			foreach (var item in queries)
-			{
-				item(inputQueryBuilder);
-			}
-			return inputQueryBuilder;
-		}
+		#endregion
+
+		#region [ Other Expressions ]
 
 		public static Query Raw(this QueryBuilder booleanQueryBuilder, string field, string queryText, BooleanClause.Occur occur = null, string key = null)
 		{
@@ -135,7 +195,7 @@ namespace Lucinq
 				return;
 			}
 
-			occur = inputQueryBuilder != null ? inputQueryBuilder.Occur : BooleanClause.Occur.MUST;
+			occur = inputQueryBuilder != null ? inputQueryBuilder.ChildrenOccur : BooleanClause.Occur.MUST;
 		}
 
 		#endregion

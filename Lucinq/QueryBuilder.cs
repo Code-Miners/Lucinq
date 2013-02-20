@@ -13,6 +13,7 @@ namespace Lucinq
 			Queries = new Dictionary<string, QueryReference>();
 			Groups = new List<IQueryBuilder>();
 			Occur = BooleanClause.Occur.MUST;
+			ChildrenOccur = BooleanClause.Occur.MUST;
 		}
 
 		public QueryBuilder(IQueryBuilder parentQueryBuilder)
@@ -26,6 +27,8 @@ namespace Lucinq
 		#region [ Properties ]
 
 		public BooleanClause.Occur Occur { get; set; }
+
+		public BooleanClause.Occur ChildrenOccur { get; set; }
 
 		public IQueryBuilder Parent { get; private set; }
 

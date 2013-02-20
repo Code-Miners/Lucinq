@@ -4,10 +4,10 @@ using Lucene.Net.Search;
 using Lucinq.Interfaces;
 using NUnit.Framework;
 
-namespace Lucinq.UnitTests
+namespace Lucinq.UnitTests.IntegrationTests
 {
 	[TestFixture]
-	public class FacetSearchTests
+	public class BasicTests
 	{
 		#region [ Fields ]
 
@@ -60,6 +60,7 @@ namespace Lucinq.UnitTests
 
 			queryBuilder.Or
 				(
+					BooleanClause.Occur.MUST,
 					x => x.Term("_name", "work"),
 					x => x.Term("_name", "text")
 				);
@@ -101,6 +102,30 @@ namespace Lucinq.UnitTests
 		}
 
 		[Test]
+		public void EasyOr()
+		{
+			IQueryBuilder queryBuilder = new QueryBuilder();
+			queryBuilder.Terms("_name", new[] {"home", "work"}, occur:BooleanClause.Occur.SHOULD);
+			var results = ExecuteAndAssert(queryBuilder, 12);
+		}
+
+		/*[Test]
+		public void SimpleNot()
+		{
+			IQueryBuilder queryBuilder = new QueryBuilder();
+			queryBuilder.Not().Term("_name", "home");
+			var results = ExecuteAndAssert(queryBuilder, 12);
+		}*/
+
+		[Test]
+		public void EasyAnd()
+		{
+			IQueryBuilder queryBuilder = new QueryBuilder();
+			queryBuilder.Terms("_name", new[] { "highlight", "work" }, occur: BooleanClause.Occur.MUST);
+			var results = ExecuteAndAssert(queryBuilder, 4);
+		}
+
+		[Test]
 		public void SimpleWildCardQuery()
 		{
 			IQueryBuilder queryBuilder = new QueryBuilder();
@@ -135,16 +160,16 @@ namespace Lucinq.UnitTests
 			queryBuilder.Setup
 				(
 					x => x.WildCard("_name", "*highlights"),
-					x => x.Term("_name", "work")
+					x => x.Term("_name", "work"),
+					x => x.Group().Setup
+							(
+								y => y.Term("_name", "work")
+							)
 				);
-			queryBuilder.Group().Setup
-				(
-					x => x.Term("_name", "work")
-				);
-
-			throw new NotImplementedException("Needs finishing");
 
 			ExecuteAndAssert(queryBuilder, 4);
+
+			throw new NotImplementedException("Needs finishing");
 		}
 
 		private TopDocs ExecuteAndAssert(IQueryBuilder queryBuilder, int numberOfHitsExpected)
