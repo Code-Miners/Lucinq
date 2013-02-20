@@ -175,5 +175,38 @@ namespace Lucinq.UnitTests.UnitTests
 			Assert.AreEqual(queryString, newQueryString);
 			Console.Write(queryString);
 		}
+
+		[Test]
+		public void CompositeTermPhraseWildcardTests()
+		{
+			BooleanQuery originalQuery = new BooleanQuery();
+			Term term = new Term("_name", "value");
+			TermQuery termQuery = new TermQuery(term);
+			originalQuery.Add(termQuery, BooleanClause.Occur.MUST);
+			PhraseQuery phraseQuery = new PhraseQuery();
+			Term phraseTerm = new Term("_name", "phrase");
+			phraseQuery.Add(phraseTerm);
+			originalQuery.Add(phraseQuery, BooleanClause.Occur.MUST);
+
+			Term wildcardTerm = new Term("_name", "*wildcard*");
+			WildcardQuery wildcardQuery = new WildcardQuery(wildcardTerm);
+			originalQuery.Add(wildcardQuery, BooleanClause.Occur.SHOULD);
+
+			string queryString = originalQuery.ToString();
+
+
+			QueryBuilder builder = new QueryBuilder();
+			builder.Setup
+				(
+					x => x.Term("_name", "value"),
+					x => x.Phrase("_name", "phrase"),
+					x => x.WildCard("_name", "*wildcard*", occur:BooleanClause.Occur.SHOULD)
+				);
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
 	}
 }

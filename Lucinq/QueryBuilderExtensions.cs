@@ -32,7 +32,7 @@ namespace Lucinq
 
 		#region [ Term Expressions ]
 
-		public static TermQuery Term(this IQueryBuilder inputQueryBuilder, string fieldName, string fieldValue, float? boost = null, BooleanClause.Occur occur = null, string key = null)
+		public static TermQuery Term(this IQueryBuilder inputQueryBuilder, string fieldName, string fieldValue, BooleanClause.Occur occur = null,  float? boost = null, string key = null)
 		{
 			Term term = new Term(fieldName, fieldValue);
 			TermQuery query = new TermQuery(term);
@@ -43,13 +43,12 @@ namespace Lucinq
 			return query;
 		}
 
-		public static IQueryBuilder Terms(this IQueryBuilder inputQueryBuilder, string fieldName, string[] fieldValues,
-		                                  float? boost = null, BooleanClause.Occur occur = null)
+		public static IQueryBuilder Terms(this IQueryBuilder inputQueryBuilder, string fieldName, string[] fieldValues, BooleanClause.Occur occur = null, float? boost = null)
 		{
 			var group = inputQueryBuilder.Group();
 			foreach (var fieldValue in fieldValues)
 			{
-				group.Term(fieldName, fieldValue, boost, occur);
+				group.Term(fieldName, fieldValue, occur, boost);
 			}
 			return group.Parent;
 		}
@@ -83,7 +82,7 @@ namespace Lucinq
 
 		#region [ Wildcard Expressions ]
 
-		public static WildcardQuery WildCard(this IQueryBuilder inputQueryBuilder, string fieldName, string fieldValue, float? boost = null, BooleanClause.Occur occur = null, string key = null)
+		public static WildcardQuery WildCard(this IQueryBuilder inputQueryBuilder, string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null)
 		{
 			Term term = new Term(fieldName, fieldValue);
 			WildcardQuery query = new WildcardQuery(term);
@@ -94,13 +93,13 @@ namespace Lucinq
 			return query;
 		}
 
-		public static IQueryBuilder WildCards(this IQueryBuilder inputQueryBuilder, string fieldName, string[] fieldValues,
-								  float? boost = null, BooleanClause.Occur occur = null)
+		public static IQueryBuilder WildCards(this IQueryBuilder inputQueryBuilder, string fieldName, string[] fieldValues, BooleanClause.Occur occur = null,
+								  float? boost = null)
 		{
 			var group = inputQueryBuilder.Group();
 			foreach (var fieldValue in fieldValues)
 			{
-				group.WildCard(fieldName, fieldValue, boost, occur);
+				group.WildCard(fieldName, fieldValue, occur, boost);
 			}
 			return group.Parent;
 		}
