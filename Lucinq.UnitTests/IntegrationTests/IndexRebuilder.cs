@@ -67,7 +67,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 						}
 
 
-						Field linkField = new Field("link", BBCFields.Link, Field.Store.YES, Field.Index.NOT_ANALYZED);
+						Field linkField = new Field(BBCFields.Link, newsArticle.Link, Field.Store.YES, Field.Index.NOT_ANALYZED);
 						document.Add(linkField);
 
 						indexWriter.AddDocument(document);

@@ -32,6 +32,11 @@ namespace Lucinq
 			return IndexSearcher.Search(query, null, noOfResults);
 		}
 
+		public TopDocs Execute(IQueryBuilder queryBuilder, int noOfResults)
+		{
+			return Execute(queryBuilder.Build(), noOfResults);
+		}
+
 		public Document GetDocument(int documentId)
 		{
 			return IndexSearcher.Doc(documentId);

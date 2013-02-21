@@ -115,6 +115,30 @@ namespace Lucinq.UnitTests.IntegrationTests
 		}*/
 
 		[Test]
+		public void PhraseDistance()
+		{
+			throw new NotImplementedException("Needs writing");
+		}
+
+		[Test]
+		public void Paging()
+		{
+			throw new NotImplementedException("Needs writing");
+		}
+
+		[Test]
+		public void Sorting()
+		{
+			throw new NotImplementedException("Needs writing");
+		}
+
+		[Test]
+		public void Range()
+		{
+			throw new NotImplementedException("Needs writing");
+		}
+
+		[Test]
 		public void EasyAnd()
 		{
 			IQueryBuilder queryBuilder = new QueryBuilder();
@@ -165,7 +189,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 		private TopDocs ExecuteAndAssert(IQueryBuilder queryBuilder, int numberOfHitsExpected)
 		{
-			TopDocs results = Search.Execute(queryBuilder.Build(), 20);
+			TopDocs results = Search.Execute(queryBuilder, 20);
 
 			foreach (Document document in Search.GetTopDocuments(results))
 			{
