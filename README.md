@@ -1,10 +1,9 @@
-Lucinq
-======
+Lucinq - A Fluent / Expressive API for Lucene.Net
+=================================================
 
-Expressive API for Lucene.Net, currently in alpha stage. 
-
-The aim of the project is to give a relatively fluent API to Lucene.Net. The primary purpose of which is to make Lucene a little less verbose 
-to accomplish most tasks whilst retaining the power and speed of Lucene.
+This project gives fluent style API to Lucene.Net. The primary purpose of which is to make Lucene a little less verbose 
+to accomplish most tasks whilst retaining the power and speed of Lucene. It has been designed with the goal with driving the
+existing lucene API, and keeping the abstraction to a minimum.
 
 Features
 ========
