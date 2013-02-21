@@ -6,6 +6,15 @@ Expressive API for Lucene.Net, currently in alpha stage.
 The aim of the project is to give a relatively fluent API to Lucene.Net. The primary purpose of which is to make Lucene a little less verbose 
 to accomplish most tasks whilst retaining the power and speed of Lucene.
 
+Features
+========
+
+- A fluent style api for working with lucene queries for most of the query types and grouping.
+- Paging
+- Sorting (coming soon)
+- Query manipulation - remove terms and re-run for example.
+
+
 Example Syntax
 ==============
 
