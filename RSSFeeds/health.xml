@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Health</title>  
+    <link>http://www.bbc.co.uk/news/health/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Health section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 17:31:41 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Health</title>  
+      <link>http://www.bbc.co.uk/news/health/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/health/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>IVF guidelines raise age limit to 42</title>  
+      <description>Couples struggling to have a baby should get fertility treatment more quickly and older women should gain access to IVF, say new NHS guidelines.</description>  
+      <link>http://www.bbc.co.uk/news/health-21505578#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21505578</guid>  
+      <pubDate>Wed, 20 Feb 2013 01:34:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65960000/jpg/_65960191_c0104967-ivf_embryo%2C_light_micrograph-spl.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65960000/jpg/_65960192_c0104967-ivf_embryo%2C_light_micrograph-spl.jpg"/> 
+    </item>  
+    <item> 
+      <title>Hanged man 'failed' by health trust</title>  
+      <description>A Birmingham father of two who took his own life was failed by a mental health trust, a coroner finds.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-birmingham-21517763#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-birmingham-21517763</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:13:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972850_waynegrew.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972922_waynegrew.jpg"/> 
+    </item>  
+    <item> 
+      <title>20% of new HIV cases are men over 45</title>  
+      <description>One in five new cases of HIV in Northern Ireland are in men over the age of 45.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21524101#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21524101</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:02:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985292_hivtest.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985293_hivtest.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sars-like virus death reported in UK</title>  
+      <description>A patient infected with a new respiratory illness similar to the deadly Sars virus has died in the UK.</description>  
+      <link>http://www.bbc.co.uk/news/health-21503893#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21503893</guid>  
+      <pubDate>Tue, 19 Feb 2013 10:47:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65953000/jpg/_65953399_coronavirusspl.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65953000/jpg/_65953400_coronavirusspl.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Bionic legs' for military amputees</title>  
+      <description>Injured military personnel who have legs amputated are to be given the most up-to-date prosthetic limbs after the government set aside £6.5m.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21497473#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21497473</guid>  
+      <pubDate>Tue, 19 Feb 2013 11:58:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65947000/jpg/_65947645_hi016412591.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65947000/jpg/_65947646_hi016412591.jpg"/> 
+    </item>  
+    <item> 
+      <title>Four A&amp;E units being downgraded</title>  
+      <description>Accident and Emergency (A&amp;E) units at four London hospitals are to be downgraded.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-london-21502719#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-london-21502719</guid>  
+      <pubDate>Tue, 19 Feb 2013 21:53:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949816_hospital.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949817_hospital.jpg"/> 
+    </item>  
+    <item> 
+      <title>Fizzy drinks tax needed - doctors</title>  
+      <description>Fizzy drinks should be heavily taxed and junk food adverts banished until after the TV watershed, doctors say, in a call for action over obesity.</description>  
+      <link>http://www.bbc.co.uk/news/health-21478314#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21478314</guid>  
+      <pubDate>Sun, 17 Feb 2013 23:50:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65926000/gif/_65926753_c0119975-middle-age_fat.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65926000/gif/_65926754_c0119975-middle-age_fat.gif"/> 
+    </item>  
+    <item> 
+      <title>Diamond to shine light on infections</title>  
+      <description>The UK's national synchrotron facility - the Diamond Light Source near Oxford - is to become a world centre for studying the structure of viruses and bacteria that cause serious disease.</description>  
+      <link>http://www.bbc.co.uk/news/science-environment-21481223#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/science-environment-21481223</guid>  
+      <pubDate>Sun, 17 Feb 2013 20:25:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65920000/jpg/_65920255_glass-artpiece-inspired-by-.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65920000/jpg/_65920256_glass-artpiece-inspired-by-.jpg"/> 
+    </item>  
+    <item> 
+      <title>Fall in condom use behind HIV rise</title>  
+      <description>A fall in the proportion of gay and bisexual men using condoms is behind the rise in HIV infections in those groups in the UK, say researchers.</description>  
+      <link>http://www.bbc.co.uk/news/health-21474066#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21474066</guid>  
+      <pubDate>Sat, 16 Feb 2013 00:02:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65918000/jpg/_65918686_condoms-spl.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65918000/jpg/_65918687_condoms-spl.jpg"/> 
+    </item>  
+    <item> 
+      <title>Hunt warns over defensive NHS bosses</title>  
+      <description>Health Secretary Jeremy Hunt writes to every NHS trust in England warning them against a culture that is "defensive" in dealing with whistleblowers.</description>  
+      <link>http://www.bbc.co.uk/news/health-21483103#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21483103</guid>  
+      <pubDate>Sat, 16 Feb 2013 14:35:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65922000/jpg/_65922476_cd73aqr5.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65922000/jpg/_65922487_cd73aqr5.jpg"/> 
+    </item>  
+    <item> 
+      <title>Cooking classes 'boost healthy diet'</title>  
+      <description>Short cooking classes can have a long-term impact on healthy eating, a study suggests.</description>  
+      <link>http://www.bbc.co.uk/news/health-21478156#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21478156</guid>  
+      <pubDate>Sun, 17 Feb 2013 00:11:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65917000/jpg/_65917850_cooking_spl.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65917000/jpg/_65917851_cooking_spl.jpg"/> 
+    </item>  
+    <item> 
+      <title>Third family 'Sars-like virus' case</title>  
+      <description>A third member of a family in the UK has been infected with a new respiratory illness similar to the deadly Sars virus, officials have confirmed.</description>  
+      <link>http://www.bbc.co.uk/news/health-21478320#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21478320</guid>  
+      <pubDate>Fri, 15 Feb 2013 17:48:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65919000/jpg/_65919016_coronavirusspl.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65919000/jpg/_65919017_coronavirusspl.jpg"/> 
+    </item>  
+    <item> 
+      <title>New Zealand acts on tobacco packets</title>  
+      <description>New Zealand says it will put all tobacco products into plain packaging, following the landmark move by Australia last year.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21501889#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21501889</guid>  
+      <pubDate>Tue, 19 Feb 2013 04:08:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949352_cigarette.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949353_cigarette.jpg"/> 
+    </item>  
+    <item> 
+      <title>Philip cracks Filipino nurse joke</title>  
+      <description>The Duke of Edinburgh tells a Filipino nurse her country must be "half empty", as so many people have come to the UK to work for the NHS.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-beds-bucks-herts-21519917#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-beds-bucks-herts-21519917</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:48:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971003_dukeofedinburghandnurse.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971004_dukeofedinburghandnurse.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sea bed to be mined for antibiotics</title>  
+      <description>Scientists are to hunt for new antibiotics at the bottom of the ocean in an £8m project led by experts at Aberdeen University.</description>  
+      <link>http://www.bbc.co.uk/news/health-21457149#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21457149</guid>  
+      <pubDate>Fri, 15 Feb 2013 04:13:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65902000/jpg/_65902845_deepseatrench.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65902000/jpg/_65902846_deepseatrench.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Grief and anxiety are not mental illnesses'</title>  
+      <description>Why we should not diagnose people with more mental illnesses</description>  
+      <link>http://www.bbc.co.uk/news/health-20986796#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-20986796</guid>  
+      <pubDate>Fri, 18 Jan 2013 03:01:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65353000/jpg/_65353096_depression_youngman.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65353000/jpg/_65353097_depression_youngman.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Sri Lankan monks told to watch diet</title>  
+      <description>Sri Lankan monks given advice on healthier diet</description>  
+      <link>http://www.bbc.co.uk/news/health-21296153#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21296153</guid>  
+      <pubDate>Fri, 01 Feb 2013 13:59:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65647000/jpg/_65647874_srimonk.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65647000/jpg/_65647875_srimonk.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Dementia: Pioneering city of Bruges</title>  
+      <description>Bruges is recognised as a pioneering city in how it deals with dementia.</description>  
+      <link>http://www.bbc.co.uk/news/health-21516365#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21516365</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:15:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971155_65970963.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971156_65970963.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Doctors call for tax on fizzy drinks</title>  
+      <description>Fizzy drinks should be heavily taxed and junk food adverts banished until after the watershed, doctors have said, in a call for action over obesity.</description>  
+      <link>http://www.bbc.co.uk/news/health-21498650#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21498650</guid>  
+      <pubDate>Mon, 18 Feb 2013 19:50:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65947000/jpg/_65947992_cola.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65947000/jpg/_65947993_cola.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Breastfeeding 'power hour'</title>  
+      <description>Save The Children says that more than 800,000 children could be saved each year if mothers breastfed immediately after birth.</description>  
+      <link>http://www.bbc.co.uk/news/health-21496078#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21496078</guid>  
+      <pubDate>Mon, 18 Feb 2013 07:56:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65940000/jpg/_65940361_65940106.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65940000/jpg/_65940362_65940106.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Food retailers set for meat talks</title>  
+      <description>The environment secretary is set to meet food retailers and trade bodies later to establish what is being done to restore consumer confidence.</description>  
+      <link>http://www.bbc.co.uk/news/health-21496081#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21496081</guid>  
+      <pubDate>Mon, 18 Feb 2013 08:15:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65940000/jpg/_65940291_horsemeat.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65940000/jpg/_65940292_horsemeat.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Can building muscle help you live longer?</title>  
+      <description>New research suggests that short bursts of intense exercise may be healthier than long, stamina-building sessions in the gym.</description>  
+      <link>http://www.bbc.co.uk/news/magazine-21472537#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-21472537</guid>  
+      <pubDate>Mon, 18 Feb 2013 00:02:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65904000/jpg/_65904701_peter_pushups.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65904000/jpg/_65904702_peter_pushups.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Hunt should 'improve culture' of NHS</title>  
+      <description>Stephen Dorrell MP, who has now written a letter to Health Secretary Jeremy Hunt, explained to Today presenter James Naughtie that the Health Select Committee now has had "clear evidence" that the Department of Health is not in favour of gagging clauses.</description>  
+      <link>http://www.bbc.co.uk/news/uk-21470075#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-21470075</guid>  
+      <pubDate>Fri, 15 Feb 2013 08:53:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65902000/jpg/_65902916_65902373.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65902000/jpg/_65902917_65902373.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Fizzy drinks tax needed - doctors</title>  
+      <description>Fizzy drinks should be heavily taxed and junk food adverts banished until after the television watershed, doctors have said, in a call for action over obesity</description>  
+      <link>http://www.bbc.co.uk/news/health-21495819#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21495819</guid>  
+      <pubDate>Mon, 18 Feb 2013 06:10:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65939000/jpg/_65939950_65939891.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65939000/jpg/_65939951_65939891.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'Patients must be protected'</title>  
+      <description>Health Secretary Jeremy Hunt has warned NHS bosses against allowing a culture that is "legalistic and defensive" in dealing with staff who raise concerns over patient care.</description>  
+      <link>http://www.bbc.co.uk/news/health-21487244#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21487244</guid>  
+      <pubDate>Sat, 16 Feb 2013 17:19:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65927000/jpg/_65927788_65927600.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65927000/jpg/_65927789_65927600.jpg"/> 
+    </item>  
+    <item> 
+      <title>Getting our anorexic daughter to eat</title>  
+      <description>Parents describe the struggle to help their anorexic children</description>  
+      <link>http://www.bbc.co.uk/news/health-21382410#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21382410</guid>  
+      <pubDate>Sun, 17 Feb 2013 01:56:48 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65789000/jpg/_65789486_young_girl_sitting.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65789000/jpg/_65789487_young_girl_sitting.jpg"/> 
+    </item>  
+    <item> 
+      <title>'The power of the first hour'</title>  
+      <description>How breastfeeding immediately after birth can prevent deaths</description>  
+      <link>http://www.bbc.co.uk/news/world-21497785#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-21497785</guid>  
+      <pubDate>Mon, 18 Feb 2013 14:25:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65943000/jpg/_65943598_rs51854__mg_9046(2).jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65943000/jpg/_65943599_rs51854__mg_9046(2).jpg"/> 
+    </item>  
+    <item> 
+      <title>Why do radiologists miss dancing gorillas?</title>  
+      <description>How can radiologists miss dancing gorillas?</description>  
+      <link>http://www.bbc.co.uk/news/health-21466529#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21466529</guid>  
+      <pubDate>Sat, 16 Feb 2013 02:10:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65912000/jpg/_65912243_c0140984-mountain_gorilla-spl.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65912000/jpg/_65912244_c0140984-mountain_gorilla-spl.jpg"/> 
+    </item>  
+    <item> 
+      <title>US Army seeks new ways to treat facial skin injuries</title>  
+      <description>US Army researches new techniques for repairing wounds</description>  
+      <link>http://www.bbc.co.uk/news/science-environment-21480652#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/science-environment-21480652</guid>  
+      <pubDate>Sat, 16 Feb 2013 00:57:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65918000/jpg/_65918817_photo.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65918000/jpg/_65918839_photo.jpg"/> 
+    </item>  
+    <item> 
+      <title>Scrubbing Up: Anonymous sexual health?</title>  
+      <description>Is anonymity being damaged in sexual health?</description>  
+      <link>http://www.bbc.co.uk/news/health-21447571#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21447571</guid>  
+      <pubDate>Fri, 15 Feb 2013 04:52:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65876000/jpg/_65876302_m8600323-condoms-spl.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65876000/jpg/_65876303_m8600323-condoms-spl.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: What makes us fall in love with art?</title>  
+      <description>The science behind why we fall in love with a work of art</description>  
+      <link>http://www.bbc.co.uk/news/magazine-21377626#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-21377626</guid>  
+      <pubDate>Thu, 14 Feb 2013 00:41:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65879000/jpg/_65879240_brainart3.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65879000/jpg/_65879241_brainart3.jpg"/> 
+    </item>  
+    <item> 
+      <title>The children facing a life of surgery</title>  
+      <description>The children facing a lifetime of surgery</description>  
+      <link>http://www.bbc.co.uk/news/health-21411752#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21411752</guid>  
+      <pubDate>Wed, 13 Feb 2013 00:43:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65851000/jpg/_65851693_operation.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65851000/jpg/_65851694_operation.jpg"/> 
+    </item>  
+    <item> 
+      <title>Why the elderly care crisis is here to stay</title>  
+      <description>Why the crisis in old age care is here to stay</description>  
+      <link>http://www.bbc.co.uk/news/health-21441893#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21441893</guid>  
+      <pubDate>Wed, 13 Feb 2013 10:50:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65864000/jpg/_65864715_xf8bilb9.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65864000/jpg/_65864716_xf8bilb9.jpg"/> 
+    </item>  
+    <item> 
+      <title>Comedians become 'dementia friends'</title>  
+      <description>Comedians join mission to train a million dementia volunteers</description>  
+      <link>http://www.bbc.co.uk/news/health-21415594#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21415594</guid>  
+      <pubDate>Tue, 12 Feb 2013 07:57:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65847000/jpg/_65847133_jobrandbecomesoneofalzheimer%26apos%3Bssociety%26apos%3Bsveryfirstdementiafriends.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65847000/jpg/_65847134_jobrandbecomesoneofalzheimer%26apos%3Bssociety%26apos%3Bsveryfirstdementiafriends.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

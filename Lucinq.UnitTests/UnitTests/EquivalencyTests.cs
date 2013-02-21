@@ -94,8 +94,8 @@ namespace Lucinq.UnitTests.UnitTests
 			QueryBuilder builder2 = new QueryBuilder();
 			builder2.Setup
 				(
-					x => x.Term("_name", "value1", occur: BooleanClause.Occur.SHOULD),
-					x => x.Term("_name", "value2", occur: BooleanClause.Occur.SHOULD)
+					x => x.Term("_name", "value1", BooleanClause.Occur.SHOULD),
+					x => x.Term("_name", "value2", BooleanClause.Occur.SHOULD)
 				);
 			Query replacementQuery2 = builder2.Build();
 			string newQueryString2 = replacementQuery2.ToString();
@@ -200,7 +200,7 @@ namespace Lucinq.UnitTests.UnitTests
 				(
 					x => x.Term("_name", "value"),
 					x => x.Phrase("_name", "phrase"),
-					x => x.WildCard("_name", "*wildcard*", occur:BooleanClause.Occur.SHOULD)
+					x => x.WildCard("_name", "*wildcard*", BooleanClause.Occur.SHOULD)
 				);
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();

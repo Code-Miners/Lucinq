@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Northern Ireland</title>  
+    <link>http://www.bbc.co.uk/news/northern_ireland/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Northern Ireland section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 19:53:21 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Northern Ireland</title>  
+      <link>http://www.bbc.co.uk/news/northern_ireland/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/northern_ireland/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>20% of new HIV cases are men over 45</title>  
+      <description>One in five new cases of HIV in Northern Ireland are in men over the age of 45.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21524101#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21524101</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:02:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985292_hivtest.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985293_hivtest.jpg"/> 
+    </item>  
+    <item> 
+      <title>High child poverty in NI cities</title>  
+      <description>West Belfast has the second highest level of child poverty in the UK, according to a new report from the Campaign to End Child Poverty.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21506734#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21506734</guid>  
+      <pubDate>Wed, 20 Feb 2013 06:37:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986811_bk2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986812_bk2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Kings Hall to host games ceremony</title>  
+      <description>The opening ceremony of the World Police and Fire Games in Northern Ireland will be held at the Kings Hall in Belfast.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21520677#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21520677</guid>  
+      <pubDate>Wed, 20 Feb 2013 20:02:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986985_2473133_8ae214cd.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986986_2473133_8ae214cd.jpg"/> 
+    </item>  
+    <item> 
+      <title>Moher cliffs defaced with graffiti</title>  
+      <description>The Cliffs of Moher, one of Ireland's most famous tourist attractions, is defaced by a spray-painting mural artist.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21518918#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21518918</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:11:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65984000/jpg/_65984310_moher.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65984000/jpg/_65984311_moher.jpg"/> 
+    </item>  
+    <item> 
+      <title>Clash over St Patrick's Day visit</title>  
+      <description>Members of a Stormont committee clash over how many of them go to Washington for St Patrick's Day at taxpayer's expense.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21523558#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21523558</guid>  
+      <pubDate>Wed, 20 Feb 2013 18:06:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65982000/jpg/_65982066_whitehouse.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65982000/jpg/_65982067_whitehouse.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sporting village plan for Belfast</title>  
+      <description>Discussions are under way about transforming the Boucher Road area of south Belfast into a sporting village.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21514346#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21514346</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:07:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977220_11150_sk752imagesrev2-1crop2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977221_11150_sk752imagesrev2-1crop2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sex offender takes prison poppy case</title>  
+      <description>Prison chiefs are to review the policy on inmates wearing poppies following a legal challenge by a prominent loyalist and sex offender, the High Court has heard.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21524103#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21524103</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:24:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983242__50935520__harbinson3-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983243__50935520__harbinson3-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Three jailed for Kesh bank robbery</title>  
+      <description>Three members of a Belfast gang who admitted robbing a bank have been jailed at Londonderry Crown Court.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-foyle-west-21520676#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-foyle-west-21520676</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:43:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985654_dsc02335.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985655_dsc02335.jpg"/> 
+    </item>  
+    <item> 
+      <title>Two charged over attacks on houses</title>  
+      <description>A man and a teenage girl are charged as part of the investigation into a serious of attacks on homes in a County Antrim housing estate.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21516166#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21516166</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:15:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978465_pacemakerantrimhousesattacked02.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978466_pacemakerantrimhousesattacked02.jpg"/> 
+    </item>  
+    <item> 
+      <title>Slight rise in NI unemployment rate</title>  
+      <description>There has been a 0.2% increase in the unemployment rate in Northern Ireland, according to the latest Labour Force Survey figures.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21516167#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21516167</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:15:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972552_jobsearch.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972553_jobsearch.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sectarian killer seeks royal pardon</title>  
+      <description>A man jailed last week for a sectarian murder in 1973 has asked to be freed under the Royal Prerogative of Mercy.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21520675#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21520675</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:44:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65979000/jpg/_65979791_pacemakereileendoherty3.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65979000/jpg/_65979792_pacemakereileendoherty3.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ulster pair handed Ireland debuts</title>  
+      <description>Paddy Jackson gets the nod ahead of Ronan O'Gara to start at fly-half for Ireland in Sunday's Six Nations game against Scotland.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21519953</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21519953</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:12:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65976000/gif/_65976147_paddyjackson624.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65976000/gif/_65976149_paddyjackson624.gif"/> 
+    </item>  
+    <item> 
+      <title>Disaster survivor dies 60 years on</title>  
+      <description>A County Antrim man who was one of the few remaining survivors of the 1953 Princess Victoria ferry disaster has died, 60 years on from the tragedy.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21516170#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21516170</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:33:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65979000/jpg/_65979252_photo.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65979000/jpg/_65979253_photo.jpg"/> 
+    </item>  
+    <item> 
+      <title>Several shots are fired near house</title>  
+      <description>Several shots are fired near a house in Cullyhanna, County Armagh.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21521309#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21521309</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:25:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977595__policetape_226.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977596__policetape_226.jpg"/> 
+    </item>  
+    <item> 
+      <title>Further drop in NI house prices</title>  
+      <description>House prices in Northern Ireland drop by 13% in 2012, according to the Land and Property Services.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21518917#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21518917</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:21:14 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975463_65974758.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975464_65974758.jpg"/> 
+    </item>  
+    <item> 
+      <title>Irish PM in apology over laundries</title>  
+      <description>The Irish Prime Minister, Enda Kenny, formally apologises on behalf of the Irish state for its role in the Magdalene laundries.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21510281#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21510281</guid>  
+      <pubDate>Tue, 19 Feb 2013 22:41:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65964000/jpg/_65964999__52213069_ek.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965000__52213069_ek.jpg"/> 
+    </item>  
+    <item> 
+      <title>Derry mum's appeal after son's death</title>  
+      <description>The family of a man who died hours after he was assaulted in Londonderry say they still don't know what happened to him before or after the attack.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-foyle-west-21516589#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-foyle-west-21516589</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:50:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975060_terrymccartney.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975061_terrymccartney.jpg"/> 
+    </item>  
+    <item> 
+      <title>30 new jobs at Derry IT firm 8over8</title>  
+      <description>A software company in Londonderry is to create more than 30 new jobs as part of a £2.7m expansion programme.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-foyle-west-21516588#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-foyle-west-21516588</guid>  
+      <pubDate>Wed, 20 Feb 2013 08:39:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971318__55364129_mageemainbldg.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971319__55364129_mageemainbldg.jpg"/> 
+    </item>  
+    <item> 
+      <title>Woman threatened to burn down house</title>  
+      <description>A 21-year-old Londonderry woman is given a conditional discharge after threatening to burn down a police officer's house.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-foyle-west-21470099#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-foyle-west-21470099</guid>  
+      <pubDate>Fri, 15 Feb 2013 14:41:40 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Man 'assaulted' mother and sister</title>  
+      <description>A man accused of assaulting his mother and sister has been remanded in custody following his appearance at Londonderry Magistrates Court.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-foyle-west-21470098#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-foyle-west-21470098</guid>  
+      <pubDate>Fri, 15 Feb 2013 13:48:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65911000/jpg/_65911696_derrybishop%26apos%3Bsstreetcourthouse.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65911000/jpg/_65911697_derrybishop%26apos%3Bsstreetcourthouse.jpg"/> 
+    </item>  
+    <item> 
+      <title>Iceland boss sorry for Irish remark</title>  
+      <description>The chief executive of supermarket chain Iceland apologises for comments he made about "the Irish" in a TV programme on the horsemeat scandal.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21508758#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21508758</guid>  
+      <pubDate>Tue, 19 Feb 2013 13:56:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65958000/jpg/_65958560_walker.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65958000/jpg/_65958561_walker.jpg"/> 
+    </item>  
+    <item> 
+      <title>Concern over Garda station closures</title>  
+      <description>There has been strong reaction in border areas of the Irish Republic to the closure of local Garda stations.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21487403#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21487403</guid>  
+      <pubDate>Tue, 19 Feb 2013 06:44:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949790_garda.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949791_garda.jpg"/> 
+    </item>  
+    <item> 
+      <title>Irish Life sold for purchase price</title>  
+      <description>Canadian life insurer Great-West Lifeco announces it is to buy state-rescued insurer Irish Life.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21508171#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21508171</guid>  
+      <pubDate>Tue, 19 Feb 2013 15:46:20 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65961000/jpg/_65961858_pa010465622.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65961000/jpg/_65961859_pa010465622.jpg"/> 
+    </item>  
+    <item> 
+      <title>Irish stabbing victim dies in Perth</title>  
+      <description>A County Wexford man, who was critically injured in a knife attack in Perth last week, has died.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21491750#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21491750</guid>  
+      <pubDate>Sun, 17 Feb 2013 16:27:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65937000/jpg/_65937198_getty103401660.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65937000/jpg/_65937199_getty103401660.jpg"/> 
+    </item>  
+    <item> 
+      <title>Stars give others a chance to shine</title>  
+      <description>A taste of Americana arrives in Northern Ireland with the ninth Belfast Nashville Songwriters festival.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21519839#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21519839</guid>  
+      <pubDate>Wed, 20 Feb 2013 18:46:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986447_252329_363699497060221_1458384448_n.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986448_252329_363699497060221_1458384448_n.jpg"/> 
+    </item>  
+    <item> 
+      <title>Puppet love</title>  
+      <description>Puppet love - love and sex in Northern Ireland</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21458107#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21458107</guid>  
+      <pubDate>Thu, 14 Feb 2013 14:33:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65889000/jpg/_65889018_ulsterkama.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65890000/jpg/_65890040_ulsterkama.jpg"/> 
+    </item>  
+    <item> 
+      <title>McCrea no longer committee chair</title>  
+      <description>Lagan Valley MLA Basil McCrea is no longer chairman of the employment committee, members have been told.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21517425#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21517425</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:13:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974955_basilmccrea.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974956_basilmccrea.jpg"/> 
+    </item>  
+    <item> 
+      <title>Lutton denies running because of SF</title>  
+      <description>The Unionist Unity Candidate in the Mid-Ulster by-election has denied he is standing because Sinn Fein are fielding Francie Molloy.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21506174#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21506174</guid>  
+      <pubDate>Tue, 19 Feb 2013 13:07:58 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65957000/jpg/_65957563_mikenigelpeter.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65957000/jpg/_65957564_mikenigelpeter.jpg"/> 
+    </item>  
+    <item> 
+      <title>Nesbitt: 'Call off flag protest'</title>  
+      <description>The leader of the Ulster Unionist party, Mike Nesbitt, has called on the organisers of Saturday's flag protest in Belfast city centre to call it off.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21502730#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21502730</guid>  
+      <pubDate>Tue, 19 Feb 2013 11:46:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65958000/jpg/_65958298_uup_leader_mike_nesbitt_meet_psni_03.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65958000/jpg/_65958299_uup_leader_mike_nesbitt_meet_psni_03.jpg"/> 
+    </item>  
+    <item> 
+      <title>McCrea 'likely to form new party'</title>  
+      <description>Lagan Valley MLA Basil McCrea has said it is likely that he and John McCallister will set up a new party to challenge the DUP and the UUP.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21472784#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21472784</guid>  
+      <pubDate>Fri, 15 Feb 2013 19:20:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65907000/jpg/_65907952_basilmcrea.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65907000/jpg/_65907953_basilmcrea.jpg"/> 
+    </item>  
+    <item> 
+      <title>Planners behind Erneside extension</title>  
+      <description>Planners recommend that a major extension to the Erneside Shopping Centre in Enniskillen should go ahead.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21506726#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21506726</guid>  
+      <pubDate>Tue, 19 Feb 2013 12:35:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65957000/jpg/_65957097_1992_erneside_2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65957000/jpg/_65957098_1992_erneside_2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Quinn and Lagan drop joint plan</title>  
+      <description>The Quinn Group cement and quarrying business and the Belfast-based Lagan group abandons plans for a joint venture.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21472640#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21472640</guid>  
+      <pubDate>Fri, 15 Feb 2013 13:07:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65906000/jpg/_65906325_quinnhq.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65906000/jpg/_65906326_quinnhq.jpg"/> 
+    </item>  
+    <item> 
+      <title>Caterpillar creating 200 jobs in NI</title>  
+      <description>The global manufacturing firm Caterpillar is to create 200 new administrative jobs in west Belfast.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21429179#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21429179</guid>  
+      <pubDate>Tue, 12 Feb 2013 14:36:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65843000/jpg/_65843191_ap016706531.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65843000/jpg/_65843192_ap016706531.jpg"/> 
+    </item>  
+    <item> 
+      <title>Dromara butter spreading success</title>  
+      <description>Abernethy Butter Company in Dromara, County Down is spreading its success all the way to Fortnum and Mason in London.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21383049#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21383049</guid>  
+      <pubDate>Fri, 08 Feb 2013 11:36:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65777000/jpg/_65777422_abernethy.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65777000/jpg/_65777423_abernethy.jpg"/> 
+    </item>  
+    <item> 
+      <title>Green light for Windsor upgrade</title>  
+      <description>Work on the Windsor Park redevelopment is set to begin after planning permission for the £29.2m project is granted.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21510912</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21510912</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:49:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/53448000/jpg/_53448585__51630239_cup_final_poster-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/53447000/jpg/_53447084__51630239_cup_final_poster-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Foster selected for Euro Indoors</title>  
+      <description>Sprinter Amy Foster is named in the initial Ireland team for the European Indoor Championships in Gothenburg.</description>  
+      <link>http://www.bbc.co.uk/sport/0/athletics/21523104</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/athletics/21523104</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:21:40 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65931000/jpg/_65931321_fosteragain.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65931000/jpg/_65931323_fosteragain.jpg"/> 
+    </item>  
+    <item> 
+      <title>Cross to face Irish for Scotland</title>  
+      <description>Geoff Cross replaces Euan Murray in the Scotland line-up to face Ireland at Murrayfield.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21504709</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21504709</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:33:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977323_8212023.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977387_8212023.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Northern Ireland Assembly</title>  
+      <description>A former chief fire officer says whistleblower Linda Ford was right to report irregularities.</description>  
+      <link>http://www.bbc.co.uk/democracylive/northern-ireland-21426862</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/democracylive/northern-ireland-21426862</guid>  
+      <pubDate>Wed, 13 Feb 2013 17:45:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65885000/jpg/_65885175_health13-2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65885000/jpg/_65885176_health13-2.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Fortune in fish stolen in Omagh</title>  
+      <description>Thieves have netted themselves a fortune of fish after raiding a pond at a home in Omagh, County Tyrone.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21523610#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21523610</guid>  
+      <pubDate>Wed, 20 Feb 2013 19:40:14 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65987000/jpg/_65987571_koi.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65987000/jpg/_65987572_koi.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Looking for work on Stormont's doorstep</title>  
+      <description>A 56-year-old man with 35 years of experience is forced to seek work on the road with a signboard and flyers.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21523608#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21523608</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:15:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981131_kenmorrow.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981132_kenmorrow.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Irish PM's tearful laundries apology</title>  
+      <description>Irish Prime Minister Enda Kenny has formally apologised on behalf of the state for its role in the Magdalene laundries.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21510497#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21510497</guid>  
+      <pubDate>Tue, 19 Feb 2013 19:53:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966905_65966873.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966906_65966873.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Three houses attacked in Antrim</title>  
+      <description>Three houses in the same street are attacked within a period of just over an hour in County Antrim.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21508168#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21508168</guid>  
+      <pubDate>Tue, 19 Feb 2013 14:08:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65959000/jpg/_65959023_pacemakerantrimhousesattacked05.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65959000/jpg/_65959044_pacemakerantrimhousesattacked05.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: The vanguard of spring</title>  
+      <description>Gordon Adair finds a clash of the seasons breaking out in Springhill.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21479539#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21479539</guid>  
+      <pubDate>Fri, 15 Feb 2013 19:20:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65919000/jpg/_65919531_1213.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65919000/jpg/_65919624_1213.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Turbulent times for unionism</title>  
+      <description>BBC Newsline's political reporter Stephen Walker looks at a turbulent 24 hours for unionism.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21475763#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21475763</guid>  
+      <pubDate>Fri, 15 Feb 2013 14:29:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65912000/jpg/_65912576_1212.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65912000/jpg/_65912577_1212.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: A celestial close shave</title>  
+      <description>Donna Traynor visits Armagh Observatory, one of the oldest in the world, where scientists are tracking the progress of an asteroid approaching Earth.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21461134#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21461134</guid>  
+      <pubDate>Thu, 14 Feb 2013 19:28:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65898000/jpg/_65898349_017153919.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65898000/jpg/_65898350_017153919.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: PwC estimates fracking yield</title>  
+      <description>Shale gas deposits in Northern Ireland could be worth up to �80bn according to a new report by consulting firm PwC.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21461132#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21461132</guid>  
+      <pubDate>Thu, 14 Feb 2013 14:43:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65888000/jpg/_65888836_fracky.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65891000/jpg/_65891329_fracky.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'Our hearts were broken so many times'</title>  
+      <description>The Irish government asks a judge to consider compensation arrangements for Magdalene survivors</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21523609#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21523609</guid>  
+      <pubDate>Wed, 20 Feb 2013 19:32:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65987000/jpg/_65987464_m2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65987000/jpg/_65987465_m2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Out of this world</title>  
+      <description>Canadian astronaut tweets in Irish from outer space</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21506725#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21506725</guid>  
+      <pubDate>Tue, 19 Feb 2013 11:57:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65957000/jpg/_65957040_nasa014824467.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65957000/jpg/_65957041_nasa014824467.jpg"/> 
+    </item>  
+    <item> 
+      <title>Riches to rags: One mans story</title>  
+      <description>One man's story as he struggles to find work</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21517419#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21517419</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:54:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978515_photo.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978516_photo.jpg"/> 
+    </item>  
+    <item> 
+      <title>Rihanna: Good tree gone bad</title>  
+      <description>A tree featured in a Rihanna video is dying, according to the farmer</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21503200#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21503200</guid>  
+      <pubDate>Tue, 19 Feb 2013 12:19:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65957000/jpg/_65957118_farmer_alan_graham_rihanna_video_pmaker_6.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65957000/jpg/_65957119_farmer_alan_graham_rihanna_video_pmaker_6.jpg"/> 
+    </item>  
+    <item> 
+      <title>Cow birth keeps councillor late</title>  
+      <description>A councillor gives an unusual excuse for being late for a meeting</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21502782#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21502782</guid>  
+      <pubDate>Tue, 19 Feb 2013 12:58:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65955000/jpg/_65955972_cow.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65955000/jpg/_65955973_cow.jpg"/> 
+    </item>  
+    <item> 
+      <title>Getting in touch with BBC News NI</title>  
+      <description>Send BBC News NI your comments, tell your own stories and share your pictures.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-18906478#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-18906478</guid>  
+      <pubDate>Wed, 02 Jan 2013 08:39:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65036000/jpg/_65036889_oldfarmhouseinrostrevor.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65036000/jpg/_65036890_oldfarmhouseinrostrevor.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

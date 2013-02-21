@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Middle East</title>  
+    <link>http://www.bbc.co.uk/news/world/middle_east/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Middle East section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 20:02:43 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Middle East</title>  
+      <link>http://www.bbc.co.uk/news/world/middle_east/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/world/middle_east/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Syria footballer 'killed by mortars'</title>  
+      <description>A Syrian footballer has been killed in a mortar strike near a stadium in the capital, Damascus, a state news outlet says.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-21516957#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-21516957</guid>  
+      <pubDate>Wed, 20 Feb 2013 15:05:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986245_65986240.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986266_65986240.jpg"/> 
+    </item>  
+    <item> 
+      <title>Livni joins Israeli government</title>  
+      <description>Former Israeli opposition leader Tzipi Livni agrees to join a new coalition led by the Prime Minister, Benjamin Netanyahu.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-21518167#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-21518167</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:52:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977103_65977101.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977104_65977101.jpg"/> 
+    </item>  
+    <item> 
+      <title>Women sworn in on Saudi council</title>  
+      <description>Saudi King Abdullah swears in 30 women to the previously all-male Shura Council, seen by many as a major step in female participation in public life in the kingdom.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-21516955#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-21516955</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:02:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973436_65972542.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973437_65972542.jpg"/> 
+    </item>  
+    <item> 
+      <title>Iran 'set up Bahrain militant cell'</title>  
+      <description>Bahrain accuses Iran's Revolutionary Guards of setting up a militant cell to carry out attacks and assassinations, but government critics are sceptical.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-21522074#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-21522074</guid>  
+      <pubDate>Wed, 20 Feb 2013 19:34:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986422_img-20130216-00890.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986423_img-20130216-00890.jpg"/> 
+    </item>  
+    <item> 
+      <title>Tunisia PM Hamadi Jebali resigns</title>  
+      <description>Tunisian Prime Minister Hamadi Jebali resigns after failing to form a new government following a political assassination.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21508498#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21508498</guid>  
+      <pubDate>Tue, 19 Feb 2013 22:36:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969630_017274624.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969631_017274624.jpg"/> 
+    </item>  
+    <item> 
+      <title>Syria 'rocket kills 31 in Aleppo'</title>  
+      <description>A Syrian army rocket attack kills at least 31 people in the northern city of Aleppo, eyewitnesses and activists say.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-21508468#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-21508468</guid>  
+      <pubDate>Tue, 19 Feb 2013 23:16:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65958000/jpg/_65958727_65958666.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65958000/jpg/_65958728_65958666.jpg"/> 
+    </item>  
+    <item> 
+      <title>Israel's Prisoner X 'hanged himself'</title>  
+      <description>Israel confirms that a secret detainee known as Prisoner X - identified as Australian-Israeli Ben Zygier - hanged himself in his cell 2010.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21508923#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21508923</guid>  
+      <pubDate>Tue, 19 Feb 2013 15:12:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65960000/jpg/_65960848_65914008.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65960000/jpg/_65960849_65914008.jpg"/> 
+    </item>  
+    <item> 
+      <title>Fighter plane crashes in Yemen</title>  
+      <description>A fighter plane crashes into a residential neighbourhood of the Yemeni capital, Sanaa, killing at least nine people, reports say.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-21505467#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-21505467</guid>  
+      <pubDate>Tue, 19 Feb 2013 12:41:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65957000/jpg/_65957149_65957147.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65957000/jpg/_65957150_65957147.jpg"/> 
+    </item>  
+    <item> 
+      <title>Hezbollah 'attacked Syrian villages'</title>  
+      <description>Syrian rebels and opposition leaders have accused the Lebanese militant Shia group Hezbollah of attacking three villages in a big operation inside Syria.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-21496735#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-21496735</guid>  
+      <pubDate>Mon, 18 Feb 2013 15:10:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65941000/jpg/_65941155_65941138.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65941000/jpg/_65941156_65941138.jpg"/> 
+    </item>  
+    <item> 
+      <title>Protests for Palestinian prisoners</title>  
+      <description>Protests are held in the West Bank in solidarity with Palestinian hunger strikers in Israeli jails, following warnings about the state of their health.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-21498848#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-21498848</guid>  
+      <pubDate>Mon, 18 Feb 2013 14:47:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65945000/jpg/_65945067_65943173.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65945000/jpg/_65945068_65943173.jpg"/> 
+    </item>  
+    <item> 
+      <title>Baghdad hit by deadly bomb blasts</title>  
+      <description>Several car bombs explode in mainly Shia areas in the Iraqi capital, Baghdad, killing at least 21 people and injuring scores more, officials say.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-21489777#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-21489777</guid>  
+      <pubDate>Sun, 17 Feb 2013 15:51:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65936000/jpg/_65936726_zv50ejnk.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65936000/jpg/_65936727_zv50ejnk.jpg"/> 
+    </item>  
+    <item> 
+      <title>Israel politician Lieberman on trial</title>  
+      <description>Israel's former foreign minister, Avigdor Lieberman, pleads not guilty at the opening of his trial on charges of fraud and breach of trust.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-21491651#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-21491651</guid>  
+      <pubDate>Sun, 17 Feb 2013 15:57:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65936000/jpg/_65936839_017257707-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65936000/jpg/_65936840_017257707-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Israel lets in wounded Syrians</title>  
+      <description>Israel says Syrians can cross into the occupied Golan Heights "in exceptional cases" after seven are taken to hospital in northern Israel.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-21492857#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-21492857</guid>  
+      <pubDate>Sun, 17 Feb 2013 16:42:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65936000/jpg/_65936460_reutersjeep.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65936000/jpg/_65936461_reutersjeep.jpg"/> 
+    </item>  
+    <item> 
+      <title>Algeria profile</title>  
+      <description>Provides overview, key facts and events, timelines and leader profiles along with current news about Algeria</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14118852#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14118852</guid>  
+      <pubDate>Thu, 17 Jan 2013 08:20:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/61633000/jpg/_61633822_bouteflika_afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/61633000/jpg/_61633823_bouteflika_afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bahrain country profile</title>  
+      <description>Provides an overview of Bahrain, including key events and facts about this oil-rich state which has become a financial services centre</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-14540571#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-14540571</guid>  
+      <pubDate>Tue, 30 Oct 2012 15:36:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/61633000/jpg/_61633827_bah_gaspipe-afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/61633000/jpg/_61633828_bah_gaspipe-afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Egypt profile</title>  
+      <description>Provides an overview of Egypt, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13313370#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13313370</guid>  
+      <pubDate>Tue, 15 Jan 2013 11:21:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/61634000/jpg/_61634262_egy_sphinx3_afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/61634000/jpg/_61634263_egy_sphinx3_afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Iran country profile</title>  
+      <description>Provides an overview of Iran, including key events and facts about this country whose supreme leader is an Islamic cleric</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-14541327#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-14541327</guid>  
+      <pubDate>Thu, 31 Jan 2013 12:21:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/61634000/jpg/_61634267_irn_khamenei1_afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/61634000/jpg/_61634268_irn_khamenei1_afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Iraq country profile</title>  
+      <description>Provides an overview of Iraq, including key events and facts about the home of some of the earliest civilisations</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-14542954#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-14542954</guid>  
+      <pubDate>Tue, 18 Dec 2012 15:49:20 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Israel profile</title>  
+      <description>Provides an overview of Israel, including key events and facts about the world's only state with a majority Jewish population</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-14628835#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-14628835</guid>  
+      <pubDate>Tue, 08 May 2012 07:43:45 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Jordan profile</title>  
+      <description>Provides an overview of Jordan, including key events and facts about this small country in the Middle East.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-14631981#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-14631981</guid>  
+      <pubDate>Tue, 22 Jan 2013 09:59:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/61635000/jpg/_61635049_jdn_petra1_afp.jpg"/>  
+      <media:thumbnail width="144" height="80" url="http://news.bbcimg.co.uk/media/images/61635000/jpg/_61635050_jdn_petra1_afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Kuwait profile</title>  
+      <description>Provides an overview of Kuwait, including key events and facts about this oil-rich state.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-14644252#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-14644252</guid>  
+      <pubDate>Tue, 11 Dec 2012 15:48:29 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Lebanon profile</title>  
+      <description>Provides an overview of Lebanon, including key events and facts about a country which has often been at the centre of Middle Eastern conflicts</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-14647308#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-14647308</guid>  
+      <pubDate>Wed, 24 Oct 2012 15:19:19 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Libya country profile</title>  
+      <description>Provides an overview of Libya, including key events and facts about this major oil producer which was ruled by Colonel Gaddafi for 42 years.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13754897#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13754897</guid>  
+      <pubDate>Mon, 10 Dec 2012 17:43:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/61635000/jpg/_61635054_libya_gaddafi_afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/61635000/jpg/_61635055_libya_gaddafi_afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Mauritania country profile</title>  
+      <description>Provides an overview, basic information and key events for this oil-producing, mainly desert country in west Africa</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13881985#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13881985</guid>  
+      <pubDate>Sun, 25 Nov 2012 16:39:51 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Morocco country profile - Overview</title>  
+      <description>Provides an overview of Morocco, including key events and facts about this mountainous kingdom at the far end of the Maghreb</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14121438#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14121438</guid>  
+      <pubDate>Mon, 28 May 2012 14:28:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/61636000/jpg/_61636217_kingmohamedvi_afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/61636000/jpg/_61636218_kingmohamedvi_afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Oman profile</title>  
+      <description>Provides an overview of Oman, including key events and facts about the oldest independent state in the Arab world</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-14654150#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-14654150</guid>  
+      <pubDate>Tue, 11 Sep 2012 10:18:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/61636000/jpg/_61636549_omn_qaboosmosque2_afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/61636000/jpg/_61636550_omn_qaboosmosque2_afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Qatar country profile</title>  
+      <description>Provides an overview of Qatar, including key events and facts about this small country which has become a major oil producer.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-14702226#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-14702226</guid>  
+      <pubDate>Thu, 14 Jun 2012 10:41:17 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Saudi Arabia profile</title>  
+      <description>Provides an overview of Saudi Arabia, including key events and facts about the birthplace of Islam</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-14702705#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-14702705</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:06:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/61636000/jpg/_61636658_sau_kingabdallah2_afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/61636000/jpg/_61636659_sau_kingabdallah2_afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sudan country profile</title>  
+      <description>Provides an overview, basic information and key events for this African country</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14094995#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14094995</guid>  
+      <pubDate>Wed, 03 Oct 2012 11:41:59 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Syria profile</title>  
+      <description>Provides an overview of Syria, including key events and facts about this influential Middle Eastern country.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-14703856#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-14703856</guid>  
+      <pubDate>Wed, 12 Dec 2012 12:28:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64547000/jpg/_64547471_syr_palmyra2_afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64547000/jpg/_64547472_syr_palmyra2_afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Tunisia profile</title>  
+      <description>Provides overview, key facts and events, timelines and leader profiles along with current news about Tunisia</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14107241#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14107241</guid>  
+      <pubDate>Thu, 07 Feb 2013 11:45:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/61636000/jpg/_61636663_tunisia_demo_feb2011afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/61636000/jpg/_61636664_tunisia_demo_feb2011afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>United Arab Emirates profile</title>  
+      <description>Provides an overview of the United Arab Emirates - known as the UAE - including key events and facts about this federation of seven states.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-14703998#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-14703998</guid>  
+      <pubDate>Thu, 31 Jan 2013 12:37:50 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Yemen profile</title>  
+      <description>Provides an overview of Yemen, including key events and facts about one of the poorest countries in the Middle East</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-14704852#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-14704852</guid>  
+      <pubDate>Wed, 12 Sep 2012 09:43:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/61636000/jpg/_61636809_yemen_opp_demo3_apr11_afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/61636000/jpg/_61636810_yemen_opp_demo3_apr11_afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Golan Heights profile</title>  
+      <description>Provides an overview of the Golan Heights, including key events and facts about this strategically important Syrian territory occupied by Israel.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-14724842#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-14724842</guid>  
+      <pubDate>Tue, 30 Aug 2011 17:17:24 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Palestinian territories profile</title>  
+      <description>Provides an overview of the Palestinian territories, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-14630174#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-14630174</guid>  
+      <pubDate>Thu, 24 Jan 2013 10:42:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/63641000/jpg/_63641938_63640996.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/63641000/jpg/_63641939_63640996.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Life for Indian workers in the Gulf</title>  
+      <description>The BBC met two of the 1.75 million Indians living in the United Arab Emirates to ask about their lives, and visited their families back home in India to find out how their money is being spent.</description>  
+      <link>http://www.bbc.co.uk/news/business-21493299#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21493299</guid>  
+      <pubDate>Sun, 17 Feb 2013 20:35:20 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65939000/jpg/_65939059_65938640.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65939000/jpg/_65939060_65938640.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Medication prices to fall in UAE</title>  
+      <description>In the United Arab Emirates thousands of types of medication are to be made cheaper after the government said that prices should be brought in line with other Middle Eastern countries.</description>  
+      <link>http://www.bbc.co.uk/news/business-21495087#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21495087</guid>  
+      <pubDate>Sun, 17 Feb 2013 22:11:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65939000/jpg/_65939249_65939079.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65939000/jpg/_65939250_65939079.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Rebels battle for control of Aleppo</title>  
+      <description>The BBC's Ian Pannell reports from al-Safira and Aleppo in the north of Syria where thousands have lost their lives and rebel fighters are battling for control.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-21510722#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-21510722</guid>  
+      <pubDate>Tue, 19 Feb 2013 23:05:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65962000/jpg/_65962286_65962278.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65962000/jpg/_65962287_65962278.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Herod exhibition provokes dig row</title>  
+      <description>The first ever exhibition devoted to the life and works of King Herod of Judea has caused controversy, and not because of the king's historical reputation.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-21483217#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-21483217</guid>  
+      <pubDate>Sat, 16 Feb 2013 10:17:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65922000/jpg/_65922367_de27.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65922000/jpg/_65922368_de27.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: The fans who hate their own player</title>  
+      <description>Football authorities and senior political figures in Israel have condemned recent racist incidents, relating to one of the country's largest football clubs.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-21455792#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-21455792</guid>  
+      <pubDate>Thu, 14 Feb 2013 10:58:40 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65898000/jpg/_65898265_65884989.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65898000/jpg/_65898266_65884989.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Prayer protests at Western Wall</title>  
+      <description>Arrest of 10 Jewish women for praying at Jerusalem's Western Wall wearing prayer shawls and skullcaps is the latest escalation of a conflict over one of Judaism's holiest sites.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-21434099#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-21434099</guid>  
+      <pubDate>Tue, 12 Feb 2013 21:12:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65852000/jpg/_65852490_65852481.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65854000/jpg/_65854942_65852481.jpg"/> 
+    </item>  
+    <item> 
+      <title>Arabia's extraordinary wildlife</title>  
+      <description>BBC filmmakers reveal survival stories of Arabia's diverse wildlife</description>  
+      <link>http://www.bbc.co.uk/nature/21511412</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/nature/21511412</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:02:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983414_sgrab_fox_yawn.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983415_sgrab_fox_yawn.jpg"/> 
+    </item>  
+    <item> 
+      <title>Tony Mendez, the real CIA spy in Argo</title>  
+      <description>How a CIA spy gave Ben Affleck the story of Argo</description>  
+      <link>http://www.bbc.co.uk/news/magazine-21504409#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-21504409</guid>  
+      <pubDate>Wed, 20 Feb 2013 00:35:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971428_argo320.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971429_argo320.jpg"/> 
+    </item>  
+    <item> 
+      <title>Living in a Syrian battleground town</title>  
+      <description>Syrian conflict tears life apart for civilians on front line</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-21504390#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-21504390</guid>  
+      <pubDate>Tue, 19 Feb 2013 12:04:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65953000/jpg/_65953521_panellpic2.jpg"/>  
+      <media:thumbnail width="144" height="80" url="http://news.bbcimg.co.uk/media/images/65953000/jpg/_65953522_panellpic2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Curious case of Israel's Prisoner X</title>  
+      <description>Mysterious case sparks debate about censorship and civil rights</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-21477769#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-21477769</guid>  
+      <pubDate>Sun, 17 Feb 2013 00:56:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65914000/jpg/_65914017_65914008.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65914000/jpg/_65914419_65914008.jpg"/> 
+    </item>  
+    <item> 
+      <title>Slow rebirth for post-Gaddafi Libya</title>  
+      <description>Two years on from uprising, Libyans want faster progress</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21457879#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21457879</guid>  
+      <pubDate>Sun, 17 Feb 2013 00:52:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65919000/jpg/_65919780_65919617.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65919000/jpg/_65919781_65919617.jpg"/> 
+    </item>  
+    <item> 
+      <title>New Herod exhibit sparks controversy</title>  
+      <description>Biblical tyrant, great builder, creator of mass employment</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-21460847#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-21460847</guid>  
+      <pubDate>Sat, 16 Feb 2013 07:31:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65912000/jpg/_65912836_herodafp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65912000/jpg/_65912837_herodafp.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

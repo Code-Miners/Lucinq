@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC Sport - Cricket</title>  
+    <link>http://www.bbc.co.uk/sport/0/cricket/</link>  
+    <description>The latest stories from the Cricket section of the BBC Sport web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 13:56:43 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbc.co.uk/sol/shared/img/sport_120x60.gif</url>  
+      <title>BBC Sport - Cricket</title>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/sport/0/cricket/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>England level NZ one-day series</title>  
+      <description>Joe Root's mature 79 not out helps England to an eight-wicket win over New Zealand, levelling the one-day series at 1-1.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21515161</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21515161</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:15:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972518_root_trott_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972517_root_trott_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>England duo sent home from tour</title>  
+      <description>England Lions duo Matt Coles and Ben Stokes are sent home from the tour of Australia for disciplinary reasons.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21518135</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21518135</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:57:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974292_ben-stokes-getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975327_durham-benstokesgetty.jpg"/> 
+    </item>  
+    <item> 
+      <title>England hand contract to Buttler</title>  
+      <description>Somerset's Jos Buttler earns an England increment contract after the one-day international win against New Zealand.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21521610</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21521610</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:56:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65979000/jpg/_65979320_buttler_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65979000/jpg/_65979168_buttler_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Cook praises Root's contribution</title>  
+      <description>England captain Alastair Cook praises Joe Root after he stars in an eight-wicket win over New Zealand in Napier.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21518350</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21518350</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:23:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973486_root.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973488_root.jpg"/> 
+    </item>  
+    <item> 
+      <title>Yorkshire veteran McGrath retires</title>  
+      <description>Former Yorkshire captain Anthony McGrath announces his retirement from the game at the age of 37.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21504875</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21504875</guid>  
+      <pubDate>Tue, 19 Feb 2013 10:28:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952960_151956596.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952962_151956596.jpg"/> 
+    </item>  
+    <item> 
+      <title>Northants secure Copeland signing</title>  
+      <description>Northants sign Australian seam bowler Trent Copeland for the beginning of the new county seaso</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21505136</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21505136</guid>  
+      <pubDate>Tue, 19 Feb 2013 13:21:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65957000/jpg/_65957741_copeland_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65957000/jpg/_65957783_copeland_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Anderson's pride at wicket record</title>  
+      <description>Bowler Jimmy Anderson admits he never expected to become England's highest wicket-taker but is proud of his record.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21503155</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21503155</guid>  
+      <pubDate>Tue, 19 Feb 2013 10:09:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951201_jimmy_anderson_afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951257_jimmy_anderson_afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Carter receives Scotland call-up</title>  
+      <description>Veteran all-rounder Neil Carter is set to win a first Scotland cap after being called up for the tour of the United Arab Emirates.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21506674</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21506674</guid>  
+      <pubDate>Tue, 19 Feb 2013 12:02:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65955000/jpg/_65955586_151108856.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65955000/jpg/_65955588_151108856.jpg"/> 
+    </item>  
+    <item> 
+      <title>Compton 'not focused on Ashes'</title>  
+      <description>Somerset and England opener Nick Compton focusing on the series with New Zealand rather than the Ashes.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21497724</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21497724</guid>  
+      <pubDate>Tue, 19 Feb 2013 11:13:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65945000/jpg/_65945786_156367390.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65945000/jpg/_65945788_156367390.jpg"/> 
+    </item>  
+    <item> 
+      <title>Briggs fit to start Hants season</title>  
+      <description>Hampshire spinner Danny Briggs says he will be fit for the start of the county season following an ankle injury.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21504951</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21504951</guid>  
+      <pubDate>Tue, 19 Feb 2013 11:19:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/58398000/jpg/_58398826_briggs.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/58398000/jpg/_58398824_briggs.jpg"/> 
+    </item>  
+    <item> 
+      <title>Anderson backed for more records</title>  
+      <description>James Anderson is backed to set more bowling records for England after surpassing Sir Ian Botham's total of wickets.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21498790</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21498790</guid>  
+      <pubDate>Mon, 18 Feb 2013 16:10:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65944000/jpg/_65944899_james_anderson_getty3.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65944000/jpg/_65944901_james_anderson_getty3.jpg"/> 
+    </item>  
+    <item> 
+      <title>Youngsters 'ready to fly' - Adams</title>  
+      <description>Kent coach Jimmy Adams says offering the right chances to their young players will be crucial in the season ahead.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21479720</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21479720</guid>  
+      <pubDate>Tue, 19 Feb 2013 10:44:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65946000/jpg/_65946243_jimmyadamsprofile2012getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65946000/jpg/_65946223_jimmyadamsprofile2012getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Australia win Women's World Cup</title>  
+      <description>Ellyse Perry inspires Australia to their sixth Women's World Cup with a 114-run victory over West Indies in Mumbai.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21485520</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21485520</guid>  
+      <pubDate>Sun, 17 Feb 2013 16:19:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65935000/jpg/_65935893_perry.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65935000/jpg/_65935895_perry.jpg"/> 
+    </item>  
+    <item> 
+      <title>NZ defeat England in ODI opener</title>  
+      <description>Brendon McCullum hits an unbeaten 69 as New Zealand beat England by three wickets in the opening one-dayer.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21483747</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21483747</guid>  
+      <pubDate>Sun, 17 Feb 2013 09:18:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65932000/jpg/_65932326_65932323.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65932000/jpg/_65932328_65932327.jpg"/> 
+    </item>  
+    <item> 
+      <title>South Africa secure series victory</title>  
+      <description>Saeed Ajmal's 10-wicket haul is in vain as South Africa beat Pakistan by four wickets to take a 2-0 lead in the series.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21494087</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21494087</guid>  
+      <pubDate>Sun, 17 Feb 2013 17:51:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65937000/jpg/_65937637_amla.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65937000/jpg/_65937639_amla.jpg"/> 
+    </item>  
+    <item> 
+      <title>Fields revels in historic hat-trick</title>  
+      <description>Australia captain Jodie Fields says victory over West Indies in the Women's World Cup final completed a "great piece of history".</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21494718</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21494718</guid>  
+      <pubDate>Sun, 17 Feb 2013 20:32:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65935000/jpg/_65935893_perry.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65938000/jpg/_65938615_161856636(1).jpg"/> 
+    </item>  
+    <item> 
+      <title>Cricket chief defends World Cup</title>  
+      <description>International Cricket Council chief executive Dave Richardson hits back at criticisms of the women's World Cup held in India.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21492924</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21492924</guid>  
+      <pubDate>Sun, 17 Feb 2013 15:54:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65936000/jpg/_65936235_richardson.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65936000/jpg/_65936237_richardson.jpg"/> 
+    </item>  
+    <item> 
+      <title>England need more practice - Cook</title>  
+      <description>England captain Alastair Cook concedes his side were rusty in their one-day defeat by New Zealand in Hamilton.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21491246</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21491246</guid>  
+      <pubDate>Sun, 17 Feb 2013 11:56:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65933000/jpg/_65933850_cook.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65933000/jpg/_65933852_cook.jpg"/> 
+    </item>  
+    <item> 
+      <title>Root given incremental contract</title>  
+      <description>Joe Root is handed an England incremental contract after Sunday's first one-day international defeat by New Zealand.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21491434</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21491434</guid>  
+      <pubDate>Sun, 17 Feb 2013 12:34:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65934000/jpg/_65934430_joe_root_getty2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65934000/jpg/_65934428_joe_root_getty2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Edwards to rest ahead of Ashes</title>  
+      <description>England women's captain Charlotte Edwards looks forward to a rest from cricket but insists she has no plans to retire.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21473484</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21473484</guid>  
+      <pubDate>Fri, 15 Feb 2013 13:53:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65909000/jpg/_65909276_65909275.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65911000/jpg/_65911874_england-charlotteedwardsgetty2.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Kent youngsters must be ready - Adams</title>  
+      <description>Kent head coach Jimmy Adams tells BBC Radio Kent that their younger players must be ready to seize their opportunities when given a chance in the first team this season.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21500017</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21500017</guid>  
+      <pubDate>Tue, 19 Feb 2013 10:14:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65946000/jpg/_65946243_jimmyadamsprofile2012getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65946000/jpg/_65946223_jimmyadamsprofile2012getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Aussies credit bowling brilliance</title>  
+      <description>Australia's Alex Blackwell "can't speak highly enough" of their bowling attack as they dismiss the West Indies for 145 to win the World Cup final by 114 runs.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21494938</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21494938</guid>  
+      <pubDate>Sun, 17 Feb 2013 20:01:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65938000/jpg/_65938814_161856636.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65938000/jpg/_65938768_161856636.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: England World Cup exit 'heartbreaking'</title>  
+      <description>England cricket captain Charlotte Edwards says their failure to make the World Cup final is "heartbreaking".</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21453584</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21453584</guid>  
+      <pubDate>Wed, 13 Feb 2013 19:37:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65877000/png/_65877738_mmcriengedwardspic.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65877000/png/_65877740_mmcriengedwardspic.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: England need to bully Australia - Prior</title>  
+      <description>Wicketkeeper Matt Prior believes England need to "do a bit of bullying" against Australia if they are to retain the Ashes this summer.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21432632</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21432632</guid>  
+      <pubDate>Wed, 13 Feb 2013 07:13:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65849000/png/_65849823_prior.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65849000/png/_65849825_prior.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: England prepare for New Zealand clash</title>  
+      <description>BBC Sport's Joe Wilson reports from Mumbai as England's women prepare for their crucial Super Six game against New Zealand at the Cricket World Cup.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21432636</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21432636</guid>  
+      <pubDate>Tue, 12 Feb 2013 16:39:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65850000/jpg/_65850622_wilsoncricket.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65850000/jpg/_65850624_wilsoncricket.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'Poor shot selection' cost England</title>  
+      <description>England women captain Charlotte Edwards says the team's "poor shot selection" cost them victory against Australia in the World Cup.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21386083</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21386083</guid>  
+      <pubDate>Fri, 08 Feb 2013 14:19:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65783000/png/_65783401_mmcriedwardsclippic.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65783000/png/_65783403_mmcriedwardsclippic.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: England women in 'confident' mood</title>  
+      <description>England cricketer Anya Shrubshole says the team is "confident" ahead of their World Cup clash with Australia on Friday.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21375039</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21375039</guid>  
+      <pubDate>Thu, 07 Feb 2013 17:20:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65764000/png/_65764886_mmcriwmnswilsonvtpic.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65764000/png/_65764941_mmcriwmnswilsonvtpic.png"/> 
+    </item>  
+    <item> 
+      <title>Women's cricket hits the big time</title>  
+      <description>A sport undergoing rapid change has showcased its growing strengths and diversity in a fascinating World Cup tournament in India.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21495121</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21495121</guid>  
+      <pubDate>Sun, 17 Feb 2013 22:11:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65939000/jpg/_65939287_australiacricketgetty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65939000/jpg/_65939285_australiacricketgetty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Where did it go wrong for England?</title>  
+      <description>Dropped catches and poor batting cost England in the Women’s World Cup, says Mark Butcher and Ebony Rainford-Brent</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21452037</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21452037</guid>  
+      <pubDate>Thu, 14 Feb 2013 00:05:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65875000/jpg/_65875456_edwardsgetty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65875000/jpg/_65875454_edwardsgetty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Champagne on ice, Beefy's wine trips &amp; bungee jumping</title>  
+      <description>Former England captain Alec Stewart looks back on previous England tours to New Zealand - on and off the pitch</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21429159</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21429159</guid>  
+      <pubDate>Wed, 13 Feb 2013 08:03:14 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65845000/jpg/_65845796_alecstewartnzgetty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65845000/jpg/_65845784_alecstewartnzgetty.jpg"/> 
+    </item>  
+    <item> 
+      <title>The rise of the quicks</title>  
+      <description>Test Match Special's Charles Dagnall and Aussie legend Cathryn Fitzpatrick on the modern female fast bowler</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21441554</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21441554</guid>  
+      <pubDate>Wed, 13 Feb 2013 15:26:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65867000/jpg/_65867316_holly_ferling_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65867000/jpg/_65867188_holly_ferling_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>County ins &amp; outs</title>  
+      <description>Keep up to date with the latest signings, departures and rumours</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/19595016</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/19595016</guid>  
+      <pubDate>Mon, 17 Sep 2012 07:25:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/62886000/jpg/_62886729_james_harris_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/62886000/jpg/_62886727_james_harris_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Laura Marsh: We are up for the Ashes</title>  
+      <description>England all-rounder Laura Marsh says England are determined to win the Ashes after their World Cup disappointment</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21503132</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21503132</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:57:48 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65953000/jpg/_65953162_laura_marsh2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65953000/jpg/_65953164_laura_marsh2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Women's Cricket World Cup: Team of the Tournament</title>  
+      <description>Test Match Special's Charles Dagnall reveals his Women's Cricket World Cup Team of the Tournament</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21497422</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21497422</guid>  
+      <pubDate>Mon, 18 Feb 2013 12:23:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65942000/jpg/_65942597_anyashrubsole_getty1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65942000/jpg/_65942599_anyashrubsole_getty1.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

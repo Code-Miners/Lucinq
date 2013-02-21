@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Politics</title>  
+    <link>http://www.bbc.co.uk/news/politics/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Politics section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 17:00:56 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Politics</title>  
+      <link>http://www.bbc.co.uk/news/politics/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/politics/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Cameron marks Amritsar massacre</title>  
+      <description>David Cameron becomes the first serving UK prime minister to pay his respects at the scene of one of the bloodiest massacres in British history.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21515360#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21515360</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:45:14 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971122_65959573.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971164_65959573.jpg"/> 
+    </item>  
+    <item> 
+      <title>4G auction raises less than forecast</title>  
+      <description>Telecoms regulator Ofcom announces the winners of its 4G mobile auction, which raises a lower-than-expected £2.34bn for the Treasury.</description>  
+      <link>http://www.bbc.co.uk/news/business-21516243#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21516243</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:05:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970424_65970271.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970425_65970271.jpg"/> 
+    </item>  
+    <item> 
+      <title>UK unemployment total falls to 2.5m</title>  
+      <description>UK unemployment fell in the three months to December, while the number in work also jumped to a new record, official figures show.</description>  
+      <link>http://www.bbc.co.uk/news/business-21517854#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21517854</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:17:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972034_325l4k8x.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972035_325l4k8x.jpg"/> 
+    </item>  
+    <item> 
+      <title>Jury discharged in Pryce points case</title>  
+      <description>Chris Huhne's ex-wife Vicky Pryce faces a retrial after the jury, described by a judge as suffering "fundamental deficits in understanding", fails to reach a verdict in her speeding points trial.</description>  
+      <link>http://www.bbc.co.uk/news/uk-21516473#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-21516473</guid>  
+      <pubDate>Wed, 20 Feb 2013 19:05:53 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65980000/jpg/_65980681_hf8ryw2k.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65980000/jpg/_65980682_hf8ryw2k.jpg"/> 
+    </item>  
+    <item> 
+      <title>Clegg migrant 'guesstimate' warning</title>  
+      <description>Nick Clegg refuses to reveal government estimates of the number of Romanian and Bulgarian immigrants expected in the UK when work restrictions are lifted.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21518466#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21518466</guid>  
+      <pubDate>Wed, 20 Feb 2013 15:17:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973534_65973525.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973575_65973525.jpg"/> 
+    </item>  
+    <item> 
+      <title>Would-be MP Mozzarella got £72,000</title>  
+      <description>An "anti-cookery" political party represented by an "Italian takeaway chef" called Mr Mozzarella received more than £72,000 in donations.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21521130#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21521130</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:12:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978014_mr_mozzarella3.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978015_mr_mozzarella3.jpg"/> 
+    </item>  
+    <item> 
+      <title>Clegg defends mansion tax plan</title>  
+      <description>Deputy Prime Minister Nick Clegg defends Lib Dem plans for a mansion tax after an angry homeowner said the tax could force his family out of their home.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21523314#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21523314</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:56:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981521_65981514.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65982000/jpg/_65982768_65981514.jpg"/> 
+    </item>  
+    <item> 
+      <title>Councils 'must curb top salaries'</title>  
+      <description>Councils are told to curb the pay of senior staff after figures suggest more than 28,000 are earning at least £50,000 a year.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21511885#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21511885</guid>  
+      <pubDate>Wed, 20 Feb 2013 03:08:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65964000/jpg/_65964488_65964142.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65964000/jpg/_65964489_65964142.jpg"/> 
+    </item>  
+    <item> 
+      <title>Red Arrows 'secure under Cameron'</title>  
+      <description>The Red Arrows RAF display team's future is safe as long as David Cameron is prime minister, Number 10 says, dismissing speculation it could be axed.</description>  
+      <link>http://www.bbc.co.uk/news/uk-21514999#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-21514999</guid>  
+      <pubDate>Wed, 20 Feb 2013 08:01:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969526_59080768.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969527_59080768.jpg"/> 
+    </item>  
+    <item> 
+      <title>Watchdog warns of energy bill rises</title>  
+      <description>Consumers face higher energy bills as the UK becomes more reliant on imports, the chief of the energy watchdog warns.</description>  
+      <link>http://www.bbc.co.uk/news/business-21501878#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21501878</guid>  
+      <pubDate>Tue, 19 Feb 2013 17:21:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949418_65949315.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949419_65949315.jpg"/> 
+    </item>  
+    <item> 
+      <title>Electric car plugs get 75% subsidy</title>  
+      <description>The government announces that it will cover up to 75% of the cost of installing charging points for electric vehicles in garages and driveways.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21503532#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21503532</guid>  
+      <pubDate>Tue, 19 Feb 2013 16:35:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65955000/jpg/_65955844_63296407.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65955000/jpg/_65955845_63296407.jpg"/> 
+    </item>  
+    <item> 
+      <title>Name and shame tax avoiders, MPs say</title>  
+      <description>Tax avoiders should be named and shamed to discourage the rich from using legal loopholes to avoid paying their fair share, a spending watchdog says.</description>  
+      <link>http://www.bbc.co.uk/news/uk-21502659#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-21502659</guid>  
+      <pubDate>Tue, 19 Feb 2013 10:33:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951317_65950177.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951318_65950177.jpg"/> 
+    </item>  
+    <item> 
+      <title>McCrea no longer committee chair</title>  
+      <description>Lagan Valley MLA Basil McCrea is no longer chairman of the employment committee, members have been told.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21517425#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21517425</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:13:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974955_basilmccrea.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974956_basilmccrea.jpg"/> 
+    </item>  
+    <item> 
+      <title>Introduction</title>  
+      <description>A tour of the Northern Ireland Assembly at Stormont.</description>  
+      <link>http://news.bbc.co.uk/democracylive/hi/guides/newsid_8107000/8107911.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/democracylive/hi/guides/newsid_8107000/8107911.stm</guid>  
+      <pubDate>Tue, 20 Jul 2010 15:10:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/46006000/jpg/_46006061_stormont16649.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/51923000/jpg/_51923458_007566912-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>SNP defends infrastructure spending</title>  
+      <description>The Scottish government defends its spending on infrastructure after claims ministers have "over-promised and under-delivered".</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-politics-21526013#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-politics-21526013</guid>  
+      <pubDate>Wed, 20 Feb 2013 19:20:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986256_004600401-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986257_004600401-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Introduction</title>  
+      <description>BBC Democracy Live takes you on a tour of the Scottish Parliament.</description>  
+      <link>http://news.bbc.co.uk/democracylive/hi/guides/newsid_8136000/8136663.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/democracylive/hi/guides/newsid_8136000/8136663.stm</guid>  
+      <pubDate>Wed, 28 Oct 2009 17:00:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/46018000/jpg/_46018083_-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/51923000/jpg/_51923456_003881440-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Action to tackle 'failing' schools</title>  
+      <description>The education services of two more Welsh councils should be taken into special measures, according to inspectors.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-21510849#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-21510849</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:43:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965610_7ek1da6m.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965611_7ek1da6m.jpg"/> 
+    </item>  
+    <item> 
+      <title>Introduction</title>  
+      <description>A guide to the National Assembly for Wales.</description>  
+      <link>http://news.bbc.co.uk/democracylive/hi/guides/newsid_8052000/8052008.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/democracylive/hi/guides/newsid_8052000/8052008.stm</guid>  
+      <pubDate>Tue, 31 May 2011 14:54:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/46422000/jpg/_46422017_005038219-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/51923000/jpg/_51923457_002219558-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>MP: Fire service faces privatisation</title>  
+      <description>A former fire services minister accuses the government of "sneaking through" privatisation of the fire service.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21524059#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21524059</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:19:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983227_ff.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983228_ff.jpg"/> 
+    </item>  
+    <item> 
+      <title>Strep B screening call for mothers</title>  
+      <description>It's an infection that kills 40 babies a year, yet campaigners say the NHS won't sanction screening to tackle Strep B.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-21512510#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-21512510</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:52:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965698_65965640.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965699_65965640.jpg"/> 
+    </item>  
+    <item> 
+      <title>Political editors across England</title>  
+      <description>Political analysis from around England</description>  
+      <link>http://www.bbc.co.uk/news/10605785#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/10605785</guid>  
+      <pubDate>Fri, 17 Jun 2011 14:15:17 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>VIDEO: House of Commons</title>  
+      <description>The government reveals results of tests for the presence of bute in the food chain.</description>  
+      <link>http://www.bbc.co.uk/democracylive/house-of-commons-21457513</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/democracylive/house-of-commons-21457513</guid>  
+      <pubDate>Thu, 14 Feb 2013 11:44:20 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65896000/jpg/_65896471_65886543.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65896000/jpg/_65896472_65886543.jpg"/> 
+    </item>  
+    <item> 
+      <title>Q&amp;A: Beginner's guide to PM's speech</title>  
+      <description>David Cameron delivers his long-awaited speech on the UK's relations with the EU. Here's an at-a-glance guide.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21013771#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21013771</guid>  
+      <pubDate>Wed, 23 Jan 2013 11:17:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65307000/jpg/_65307127_65306702.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65307000/jpg/_65307128_65306702.jpg"/> 
+    </item>  
+    <item> 
+      <title>Links to UK political websites</title>  
+      <description>Links to political parties and other useful websites covering UK politics.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-18247131#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-18247131</guid>  
+      <pubDate>Tue, 31 Jul 2012 14:35:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/60567000/jpg/_60567022_014752423-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/60567000/jpg/_60567063_014752423-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Who's who: Cameron's new cabinet</title>  
+      <description>As David Cameron reshuffles his cabinet, here's a full list of who is doing what job.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-19475248#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-19475248</guid>  
+      <pubDate>Tue, 30 Oct 2012 12:36:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/62683000/jpg/_62683244_hunt.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/62683000/jpg/_62683245_hunt.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ed Miliband's shadow cabinet</title>  
+      <description>The details of Labour leader Ed Miliband's shadow cabinet following the recent reshuffle.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-11494915#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-11494915</guid>  
+      <pubDate>Thu, 17 May 2012 11:24:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/49472000/jpg/_49472021_edshadowcabpa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/55913000/jpg/_55913742_013038819-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Global Parliaments online</title>  
+      <description>Links to other Parliamentary broadcasters</description>  
+      <link>http://news.bbc.co.uk/democracylive/hi/bbc_parliament/newsid_8762000/8762150.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/democracylive/hi/bbc_parliament/newsid_8762000/8762150.stm</guid>  
+      <pubDate>Fri, 25 Jun 2010 11:33:24 GMT</pubDate>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65062000/jpg/_65062872_-7.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Irish PM's tearful laundries apology</title>  
+      <description>Irish Prime Minister Enda Kenny has formally apologised on behalf of the state for its role in the Magdalene laundries.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21510497#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21510497</guid>  
+      <pubDate>Tue, 19 Feb 2013 19:53:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966905_65966873.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966906_65966873.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Beef products taken off Commons menu</title>  
+      <description>The House of Commons has withdrawn four Brakes beef products from its catering outlets while tests are carried out for horse DNA.</description>  
+      <link>http://www.bbc.co.uk/news/uk-21513497#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-21513497</guid>  
+      <pubDate>Tue, 19 Feb 2013 22:36:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968148_65968033.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968149_65968033.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: PM promises India corruption help</title>  
+      <description>David Cameron has promised to "respond to any request for information" on corruption allegations over India's procurement of helicopters from the Anglo-Italian company AgustaWestland.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21510491#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21510491</guid>  
+      <pubDate>Tue, 19 Feb 2013 17:25:58 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65964000/jpg/_65964092_cameron.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65964000/jpg/_65964093_cameron.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Miliband seeks Nordic inspiration</title>  
+      <description>Ed Miliband has said people's living standards are going to be a key battle ground in the next general election.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21510493#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21510493</guid>  
+      <pubDate>Tue, 19 Feb 2013 19:22:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966695_65966690.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966696_65966690.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Should tax avoiders be named?</title>  
+      <description>ACCA's head of taxation told 5 live that he wondered where the line would be drawn on naming and shaming tax avoiders.</description>  
+      <link>http://www.bbc.co.uk/news/business-21505976#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21505976</guid>  
+      <pubDate>Tue, 19 Feb 2013 12:42:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65957000/jpg/_65957063_hmrc_gety.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65957000/jpg/_65957064_hmrc_gety.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Food retailers must restore trust</title>  
+      <description>The Environment Secretary Owen Paterson has said it is up to food businesses to complete tests, publish results and convince the public about the food they sell</description>  
+      <link>http://www.bbc.co.uk/news/uk-21498648#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-21498648</guid>  
+      <pubDate>Mon, 18 Feb 2013 17:55:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65947000/jpg/_65947580_owenpaterson1802.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65947000/jpg/_65947581_owenpaterson1802.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Do voters trust Labour with the economy?</title>  
+      <description>Labour has been talking about a "mansion tax" to help fund the reintroduction of the 10p income tax rate, which Gordon Brown introduced and later abolished.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21491072#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21491072</guid>  
+      <pubDate>Sun, 17 Feb 2013 11:05:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65933000/jpg/_65933182_65933113.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65933000/jpg/_65933183_65933113.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Row over Labour hopeful's Thatcher comments</title>  
+      <description>Sadiq Khan says John O'Farrell's comments about Thatcher in a book were "probably bad humour, him trying to be funny, but clearly not funny"</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21491157#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21491157</guid>  
+      <pubDate>Sun, 17 Feb 2013 12:34:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65934000/jpg/_65934006_jex_1359906_de01-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65934000/jpg/_65934007_jex_1359906_de01-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>UK PMs' apologies for the past</title>  
+      <description>What UK prime ministers have said sorry for in recent years</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21503533#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21503533</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:01:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965455_65965450.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965456_65965450.jpg"/> 
+    </item>  
+    <item> 
+      <title>Eastleigh by-election candidates</title>  
+      <description>A full list of those who are standing in Eastleigh</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21418431#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21418431</guid>  
+      <pubDate>Tue, 19 Feb 2013 15:12:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65828000/jpg/_65828657_000733031-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65832000/jpg/_65832433_000733031-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Political impact of lower 4G price</title>  
+      <description>Why lower than expected 4G income could prove important</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21520402#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21520402</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:32:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65980000/jpg/_65980844_65971136.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65980000/jpg/_65980845_65971136.jpg"/> 
+    </item>  
+    <item> 
+      <title>Indian students think twice about UK</title>  
+      <description>Indian students on why they are being put off UK universities</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21461669#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21461669</guid>  
+      <pubDate>Fri, 15 Feb 2013 00:57:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65896000/jpg/_65896322_rajini2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65896000/jpg/_65896323_rajini2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Harold in the House</title>  
+      <description>Preston Witts' memories of PM Wilson in Parliament</description>  
+      <link>http://www.bbc.co.uk/democracylive/21432269</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/democracylive/21432269</guid>  
+      <pubDate>Thu, 14 Feb 2013 11:23:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65886000/jpg/_65886461_65886454.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65886000/jpg/_65886462_65886454.jpg"/> 
+    </item>  
+    <item> 
+      <title>What is parliament and how does it work?</title>  
+      <description>Find out more about the Commons and Lords and how they work</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-17827461#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-17827461</guid>  
+      <pubDate>Tue, 29 May 2012 12:57:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/60616000/jpg/_60616515_001073022-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/60616000/jpg/_60616516_001073022-1.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

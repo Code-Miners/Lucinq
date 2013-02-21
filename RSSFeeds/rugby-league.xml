@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC Sport - Rugby League</title>  
+    <link>http://www.bbc.co.uk/sport/0/rugby-league/</link>  
+    <description>The latest stories from the Rugby League section of the BBC Sport web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 19:32:48 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbc.co.uk/sol/shared/img/sport_120x60.gif</url>  
+      <title>BBC Sport - Rugby League</title>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/sport/0/rugby-league/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Super League bans shoulder charge</title>  
+      <description>The Rugby Football League decides to follow the RLIF's lead and ban the shoulder charge tackle from Super League.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21520551</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21520551</guid>  
+      <pubDate>Wed, 20 Feb 2013 19:22:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951885_t41d8293.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951887_t41d8293.jpg"/> 
+    </item>  
+    <item> 
+      <title>Smith relishes Sinfield contest</title>  
+      <description>Melbourne skipper Cameron Smith relishes facing Leeds counterpart Kevin Sinfield in Friday's World Club Challenge.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21516922</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21516922</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:51:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978553_dsc_3451.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978615_dsc_3451.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bousquet fails in RFL ban appeal</title>  
+      <description>The Rugby Football League has rejected the appeal against a four match ban by Catalans Dragons prop Julian Bousquet.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21516893</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21516893</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:09:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971744_bousquet.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971742_bousquet.jpg"/> 
+    </item>  
+    <item> 
+      <title>RLIF bans shoulder charge tackle</title>  
+      <description>Shoulder charges are banned by the Rugby League International Federation in international competitions.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21502550</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21502550</guid>  
+      <pubDate>Tue, 19 Feb 2013 09:42:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951885_t41d8293.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951887_t41d8293.jpg"/> 
+    </item>  
+    <item> 
+      <title>Morley sidelined by torn bicep</title>  
+      <description>Warrington Wolves will be without captain Adrian Morley for at least two months after the veteran forward tore a bicep.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21508618</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21508618</guid>  
+      <pubDate>Tue, 19 Feb 2013 14:53:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65958000/jpg/_65958691_cb6p3513.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65958000/jpg/_65958689_cb6p3513.jpg"/> 
+    </item>  
+    <item> 
+      <title>Dureau to return after surgery</title>  
+      <description>Catalans Dragons half-back Scott Dureau will return to training after an operation to remove a tumour behind the eye.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21510960</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21510960</guid>  
+      <pubDate>Tue, 19 Feb 2013 16:30:58 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65617000/jpg/_65617952_1z1b3054.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65617000/jpg/_65617954_1z1b3054.jpg"/> 
+    </item>  
+    <item> 
+      <title>Chase 'committed' to Castleford</title>  
+      <description>Rangi Chase says he is "100% committed" to Castleford, despite rumours linking him to NRL and Super League clubs.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21509724</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21509724</guid>  
+      <pubDate>Tue, 19 Feb 2013 16:20:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65962000/jpg/_65962092_cb6p4340.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65962000/jpg/_65962178_cb6p4340.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ferres leaves Castleford position</title>  
+      <description>Castleford chief executive Steve Ferres resigns with immediate effect after just six months in the role.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21504883</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21504883</guid>  
+      <pubDate>Tue, 19 Feb 2013 16:37:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65955000/jpg/_65955218_134520820.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65954000/jpg/_65954887_134520820.jpg"/> 
+    </item>  
+    <item> 
+      <title>Calf problem rules out Wellens</title>  
+      <description>St Helens will be without captain Paul Wellens for a month because of a calf problem, adding to the club's injury woes.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21509407</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21509407</guid>  
+      <pubDate>Tue, 19 Feb 2013 15:55:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65960000/jpg/_65960686_cb6p1710.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65960000/jpg/_65960632_cb6p1710.jpg"/> 
+    </item>  
+    <item> 
+      <title>Swinton coach McCormack resigns</title>  
+      <description>Steve McCormack quits as head coach of Swinton Lions for personal reasons but will remain in charge of Scotland.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21508710</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21508710</guid>  
+      <pubDate>Tue, 19 Feb 2013 14:24:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65959000/jpg/_65959027_216239_3.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65959000/jpg/_65959025_216239_3.jpg"/> 
+    </item>  
+    <item> 
+      <title>Wakefield's Agar to coach France</title>  
+      <description>Wakefield Trinity Wildcats boss Richard Agar takes on the role of part-time coach to the France national side.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21497725</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21497725</guid>  
+      <pubDate>Mon, 18 Feb 2013 12:30:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/62791000/jpg/_62791215_62791210.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/62791000/jpg/_62791217_62791210.jpg"/> 
+    </item>  
+    <item> 
+      <title>Hardaker out of Club Challenge</title>  
+      <description>Leeds Rhinos full-back Zak Hardaker will miss Friday's World Club Challenge against Melbourne with a hand injury.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21498400</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21498400</guid>  
+      <pubDate>Mon, 18 Feb 2013 16:35:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65944000/jpg/_65944787_t41d0715.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65944000/jpg/_65944789_t41d0715.jpg"/> 
+    </item>  
+    <item> 
+      <title>Broncos coach Rea remains upbeat</title>  
+      <description>Head coach Tony Rea remains positive despite London Broncos losing their opening three Super League matches.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21497669</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21497669</guid>  
+      <pubDate>Mon, 18 Feb 2013 12:49:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65942000/jpg/_65942922_tonyreapeeringgetty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65942000/jpg/_65942918_tonyreapeeringgetty.jpg"/> 
+    </item>  
+    <item> 
+      <title>London Broncos 0-28 Wakefield</title>  
+      <description>Ben Cockayne scores two tries as Wakefield beat London Broncos to extend their winless start to the season.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21434471</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21434471</guid>  
+      <pubDate>Sun, 17 Feb 2013 16:52:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65802000/jpg/_65802562_pa-13772715.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65802000/jpg/_65802536_pa-13772715.jpg"/> 
+    </item>  
+    <item> 
+      <title>Hull KR 44-18 Widnes</title>  
+      <description>Kris Welham returns with one of Hull KR's eight tries against Widnes to help earn the Robins' first win of the season.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21434395</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21434395</guid>  
+      <pubDate>Sun, 17 Feb 2013 16:53:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65917000/jpg/_65917309_pa-12839119.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65917000/jpg/_65917311_pa-12839119.jpg"/> 
+    </item>  
+    <item> 
+      <title>Huddersfield 22-10 Wigan</title>  
+      <description>Huddersfield Giants maintain their 100% start to the Super League season, coming from 10-0 down to beat Wigan Warriors.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21434312</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21434312</guid>  
+      <pubDate>Sat, 16 Feb 2013 16:46:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65927000/jpg/_65927499_cb6p0830.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65927000/jpg/_65927497_cb6p0830.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bradford Bulls 38-12 Castleford</title>  
+      <description>Brett Kearney runs in a hat-trick of tries as Bradford Bulls race to victory against Yorkshire neighbours Castleford.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21434118</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21434118</guid>  
+      <pubDate>Sat, 16 Feb 2013 18:48:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65929000/jpg/_65929619_1z1b0619.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65929000/jpg/_65929617_1z1b0619.jpg"/> 
+    </item>  
+    <item> 
+      <title>Warrington 24-16 Catalan Dragons</title>  
+      <description>Warrington winger Joel Monaghan runs in two tries to help end Catalan Dragons' winning start to the season.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21434041</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21434041</guid>  
+      <pubDate>Fri, 15 Feb 2013 22:01:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65921000/jpg/_65921258_153541564.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65921000/jpg/_65921260_153541564.jpg"/> 
+    </item>  
+    <item> 
+      <title>Leeds 42-14 Salford</title>  
+      <description>Joel Moon scores two tries against his former club as Leeds inflict a third straight Super League defeat on Salford.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21431558</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21431558</guid>  
+      <pubDate>Fri, 15 Feb 2013 21:53:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65920000/jpg/_65920745_160488512.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65920000/jpg/_65920747_160488512.jpg"/> 
+    </item>  
+    <item> 
+      <title>St Helens 22-22 Hull FC</title>  
+      <description>Hull FC come from behind to draw 22-22 at St Helens and leave new coach Nathan Brown still without a home win.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21433403</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21433403</guid>  
+      <pubDate>Fri, 15 Feb 2013 22:45:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64138000/jpg/_64138211_pa-7690383.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64138000/jpg/_64138168_pa-7690383.jpg"/> 
+    </item>  
+    <item> 
+      <title>Fages 'expecting more injuries'</title>  
+      <description>Salford's Theo Fages says he is prepared for more injuries after he was knocked out during Saturday's defeat by Catalan.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21473832</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21473832</guid>  
+      <pubDate>Fri, 15 Feb 2013 16:10:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65906000/jpg/_65906837_1z1b8412.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65906000/jpg/_65906835_1z1b8412.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Robins switched off - Sandercock</title>  
+      <description>Hull Kingston Rovers coach Craig Sandercock tells BBC Radio Humberside his side "switched off" in the second half after taking a 32-0 lead into the break against Widnes.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21493934</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21493934</guid>  
+      <pubDate>Sun, 17 Feb 2013 17:47:53 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/60512000/jpg/_60512964_craigsandercock3.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/60512000/jpg/_60512755_craigsandercock3.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Giants vision impresses Fielden</title>  
+      <description>Huddersfield Giants prop Stuart Fielden tells the Super League Show his switch from Wigan last summer was encouraged by the vision of coach Paul Anderson</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21443736</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21443736</guid>  
+      <pubDate>Wed, 13 Feb 2013 13:13:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65866000/jpg/_65866307_65864543.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65866000/jpg/_65866305_65864543.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Defence pleases Hull coach Gentle</title>  
+      <description>Hull FC coach Peter Gentle tells BBC Radio Humberside that his side's defensive performance pleased him as the Black and Whites defeated Bradford on Sunday.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21405326</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21405326</guid>  
+      <pubDate>Sun, 10 Feb 2013 17:56:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/59669000/jpg/_59669906_petergentlemap.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/59521000/jpg/_59521772_petergentlemap.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: McNamara warns Super League Clubs</title>  
+      <description>England Rugby League Coach Steve McNamara has warned Super League Clubs about over spending</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21382252</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21382252</guid>  
+      <pubDate>Fri, 08 Feb 2013 15:34:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65776000/jpg/_65776920_mcnamara3.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65782000/jpg/_65782446_mcnamara3.jpg"/> 
+    </item>  
+    <item> 
+      <title>Leaders Giants to right wrongs of last year</title>  
+      <description>Huddersfield may have underachieved last year, but this time things will be different, hooker Shaun Lunt tells BBC Sport’s George Riley</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21451061</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21451061</guid>  
+      <pubDate>Wed, 13 Feb 2013 18:37:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65874000/jpg/_65874436_shaunlunt_getty_90171523.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65877000/jpg/_65877279_pa-15758428.jpg"/> 
+    </item>  
+    <item> 
+      <title>Aussie drugs scandal shows money talks in sport</title>  
+      <description>Tulsen Tollett, the former professional rugby player turned BBC Sport presenter, looks at the doping scandal in his home country</description>  
+      <link>http://www.bbc.co.uk/sport/0/21415819</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/21415819</guid>  
+      <pubDate>Mon, 11 Feb 2013 16:57:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65825000/jpg/_65825153_tulsentollett_getty_1532805.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65824000/jpg/_65824977_tulsentollett_getty_1532805.jpg"/> 
+    </item>  
+    <item> 
+      <title>From semi-pro singer to the Super League</title>  
+      <description>Can business woman, singer and mum of the year Kate Hardcastle turn the Bradford Bulls' fortunes around?</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21304598</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21304598</guid>  
+      <pubDate>Sat, 09 Feb 2013 08:26:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65767000/jpg/_65767980_kh_003.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65767000/jpg/_65767539_kate_hardcastle1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Super League is back - cheerful and fearful</title>  
+      <description>Super League's on-field theatre continues to be played out against a backdrop of financial uncertainty but a home World Cup brings added excitement</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21281912</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21281912</guid>  
+      <pubDate>Thu, 31 Jan 2013 20:14:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65625000/jpg/_65625253_65625244.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65625000/jpg/_65625251_65625244.jpg"/> 
+    </item>  
+    <item> 
+      <title>Super League 2013 season preview</title>  
+      <description>BBC Sport looks at the prospects for all 14 Super League clubs in the build-up to the 2013 season</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21164401</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21164401</guid>  
+      <pubDate>Fri, 01 Feb 2013 07:39:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65578000/jpg/_65578508_cb6p8295.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65578000/jpg/_65578510_cb6p8295.jpg"/> 
+    </item>  
+    <item> 
+      <title>Q&amp;A with Leeds Rhinos star Ryan Hall</title>  
+      <description>Leeds Rhinos rugby league star Ryan Hall gets grilled by School Reporters from Abbey Grange Academy in Leeds.</description>  
+      <link>http://www.bbc.co.uk/schoolreport/21345362</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/schoolreport/21345362</guid>  
+      <pubDate>Wed, 06 Feb 2013 11:45:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65730000/jpg/_65730644_65729789.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65730000/jpg/_65730645_65729789.jpg"/> 
+    </item>  
+    <item> 
+      <title>Countdown to the 2013 World Cup</title>  
+      <description>With a year to go until the start of the 2013 Rugby League World Cup, BBC Sport looks at the main contenders</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/19985191</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/19985191</guid>  
+      <pubDate>Fri, 26 Oct 2012 06:39:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/63554000/jpg/_63554475_cameronsmith.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/63554000/jpg/_63554459_cameronsmith.jpg"/> 
+    </item>  
+    <item> 
+      <title>A new owner, a new start for Salford City Reds</title>  
+      <description>As Dr Marwan Koukash takes control of Salford City Reds, BBC Sport reflects on a difficult period for the Super League club</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21249912</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21249912</guid>  
+      <pubDate>Thu, 31 Jan 2013 14:59:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65620000/jpg/_65620988_148402683.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65620000/jpg/_65620986_148402683.jpg"/> 
+    </item>  
+    <item> 
+      <title>Veteran Menzies set for swansong</title>  
+      <description>Catalans Dragons veteran Steve Menzies tells BBC Sport this could be his last season in professional rugby league</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21196055</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21196055</guid>  
+      <pubDate>Wed, 30 Jan 2013 15:37:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65598000/jpg/_65598108_sw018_catalan-warrington_130512.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65598000/jpg/_65598110_sw018_catalan-warrington_130512.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bulls dealt double injury blow</title>  
+      <description>Bradford Bulls forward John Bateman and scrum-half Luke Gale need surgery and may miss the start of the season.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/20524567</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/20524567</guid>  
+      <pubDate>Wed, 28 Nov 2012 10:44:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/63298000/jpg/_63298390_p026_0908.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/63298000/jpg/_63298392_p026_0908.jpg"/> 
+    </item>  
+    <item> 
+      <title>Shenton named Castleford captain</title>  
+      <description>Centre Michael Shenton will captain Castleford in Super League next season after re-joining the club from St Helens.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/20597360</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/20597360</guid>  
+      <pubDate>Tue, 04 Dec 2012 15:13:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64554000/jpg/_64554146_shenton.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64554000/jpg/_64554148_shenton.jpg"/> 
+    </item>  
+    <item> 
+      <title>Catalans coach upbeat on future</title>  
+      <description>Head coach Laurent Frayssinous is confident Catalan Dragons can continue their Super League progress.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/20697625</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/20697625</guid>  
+      <pubDate>Fri, 14 Dec 2012 08:41:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64754000/jpg/_64754903_frayssinous.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64754000/jpg/_64754905_frayssinous.jpg"/> 
+    </item>  
+    <item> 
+      <title>Broncos can be the biggest - Rea</title>  
+      <description>London Broncos head coach Tony Rea believes the club has the potential to grow into the biggest club in Super League.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/20683441</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/20683441</guid>  
+      <pubDate>Tue, 11 Dec 2012 17:37:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64700000/jpg/_64700011_tonyreabroncos1getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64700000/jpg/_64700009_tonyreabroncos1getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Giants signing Ta'ai granted visa</title>  
+      <description>Huddersfield Giants overseas signing Ukuma Ta'ai is granted his visa and is expected to fly into the UK shortly.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/20898353</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/20898353</guid>  
+      <pubDate>Mon, 28 Jan 2013 19:47:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/62825000/jpg/_62825723_144236937.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/62825000/jpg/_62825725_144236937.jpg"/> 
+    </item>  
+    <item> 
+      <title>Hull offer Briscoe new contract</title>  
+      <description>Hull FC hope a much-improved contract offer could tempt England winger Tom Briscoe to put his NRL ambitions on hold.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/20592922</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/20592922</guid>  
+      <pubDate>Tue, 04 Dec 2012 12:19:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64544000/jpg/_64544901_briscoe.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64545000/jpg/_64545073_briscoe.jpg"/> 
+    </item>  
+    <item> 
+      <title>Burns excited by Hull KR switch</title>  
+      <description>Hull KR half-back Travis Burns denies he joined the club as a last resort after being banned for 12 matches in the NRL.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/20413516</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/20413516</guid>  
+      <pubDate>Tue, 20 Nov 2012 14:15:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64261000/jpg/_64261158_photo.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64261000/jpg/_64261160_photo.jpg"/> 
+    </item>  
+    <item> 
+      <title>Moon exit angers Salford coach</title>  
+      <description>Phil Veivers accuses Joel Moon of a lack of commitment to Salford after the centre completed a move to Leeds.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/20425741</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/20425741</guid>  
+      <pubDate>Wed, 21 Nov 2012 12:13:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64281000/jpg/_64281829_sw08_salford_try.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64281000/jpg/_64281831_sw08_salford_try.jpg"/> 
+    </item>  
+    <item> 
+      <title>Salford staff are in dark - Long</title>  
+      <description>Assistant coach Sean Long says there has been a lack of communication with staff over Salford's financial problems.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/20692172</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/20692172</guid>  
+      <pubDate>Wed, 12 Dec 2012 10:09:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64710000/jpg/_64710624_1z1b3455.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64710000/jpg/_64710622_1z1b3455.jpg"/> 
+    </item>  
+    <item> 
+      <title>St Helens have sound base - Brown</title>  
+      <description>New St Helens coach Nathan Brown says he has inherited a squad packed with experience and talent at Langtree Park.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/20327729</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/20327729</guid>  
+      <pubDate>Thu, 15 Nov 2012 10:10:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64138000/jpg/_64138211_pa-7690383.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64138000/jpg/_64138168_pa-7690383.jpg"/> 
+    </item>  
+    <item> 
+      <title>Boost for Wildcats stadium plans</title>  
+      <description>Plans for a new stadium for Wakefield Trinity Wildcats rugby league club gain final approval from the secretary of state.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-leeds-20627503#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-leeds-20627503</guid>  
+      <pubDate>Thu, 06 Dec 2012 13:49:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64607000/jpg/_64607283_pitchviews.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64607000/jpg/_64607284_pitchviews.jpg"/> 
+    </item>  
+    <item> 
+      <title>Warrington's Wood makes comeback</title>  
+      <description>Paul Wood, who had a testicle removed following Warrington's Grand Final defeat in October, returns to action.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/20851543</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/20851543</guid>  
+      <pubDate>Thu, 27 Dec 2012 14:11:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64981000/jpg/_64981490_t41d8490.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64981000/jpg/_64981488_t41d8490.jpg"/> 
+    </item>  
+    <item> 
+      <title>Brown undergoes ankle operation</title>  
+      <description>Widnes Vikings confirm Kevin Brown has undergone ankle surgery, but expect him to be fit for the start of the season.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/20802007</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/20802007</guid>  
+      <pubDate>Thu, 20 Dec 2012 14:40:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64877000/jpg/_64877199_t41d8628.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64877000/jpg/_64877197_t41d8628.jpg"/> 
+    </item>  
+    <item> 
+      <title>Warriors trio sign new contracts</title>  
+      <description>England trio Josh Charnley, Sean O'Loughlin and Michael McIlorum sign new long-term contracts with Wigan Warriors.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/20315162</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/20315162</guid>  
+      <pubDate>Tue, 13 Nov 2012 14:34:20 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64115000/jpg/_64115165_t41d7883.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64115000/jpg/_64115163_t41d7883.jpg"/> 
+    </item>  
+    <item> 
+      <title>Super League 2012 in pictures</title>  
+      <description>The best action in pictures from the 2012 Super League season and the Challenge Cup.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/19571588</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/19571588</guid>  
+      <pubDate>Wed, 17 Oct 2012 14:18:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/63340000/jpg/_63340192_kevin_sinfield_pa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/63339000/jpg/_63339534_kevin_sinfield_pa.jpg"/> 
+    </item>  
+    <item> 
+      <title>Danny McGuire's Super League XIII</title>  
+      <description>Leeds Rhinos stand-off Danny McGuire selects his Super League XIII ahead of the World Club Challenge match against Melbourne Storm.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/21281021</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/21281021</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:49:17 GMT</pubDate>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65937000/jpg/_65937528_mcguire_graphic.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

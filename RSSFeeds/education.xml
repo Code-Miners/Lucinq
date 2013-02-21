@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Education &amp; Family</title>  
+    <link>http://www.bbc.co.uk/news/education/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Education &amp; Family section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 17:38:44 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Education &amp; Family</title>  
+      <link>http://www.bbc.co.uk/news/education/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/education/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Faith of free school bids revealed</title>  
+      <description>A quarter of applications to set up free schools in England over the past two years were from faith-based organisations, official data shows.</description>  
+      <link>http://www.bbc.co.uk/news/education-21520161#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21520161</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:38:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975605_4ec707f6-0fd5-41a9-b4c7-7ad07a34ee6d.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975606_61f01b4d-a96f-43de-bf75-28afae00e186.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Appalling' GCSE attainment gap</title>  
+      <description>Twice as many pupils at the best schools in England got at least five good GCSEs last year than those at the worst, government data shows.</description>  
+      <link>http://www.bbc.co.uk/news/education-21520170#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21520170</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:37:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65982000/jpg/_65982705_65982702.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985619_65982702.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Wide differences' in child poverty</title>  
+      <description>Levels of child poverty vary dramatically across the UK and within regions, according to a new map that breaks down poverty rates by area.</description>  
+      <link>http://www.bbc.co.uk/news/education-21511583#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21511583</guid>  
+      <pubDate>Wed, 20 Feb 2013 02:13:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966368_footballpoorboys.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966369_footballpoorboys.jpg"/> 
+    </item>  
+    <item> 
+      <title>Action to tackle 'failing' schools</title>  
+      <description>The education services of two more Welsh councils should be taken into special measures, according to inspectors.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-21510849#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-21510849</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:43:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965610_7ek1da6m.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965611_7ek1da6m.jpg"/> 
+    </item>  
+    <item> 
+      <title>Universities urge fees cap rethink</title>  
+      <description>University leaders call for a rethink of plans to introduce a legally-enforceable cap on fees for students coming to Scotland from the rest of the UK.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-politics-21502716#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-politics-21502716</guid>  
+      <pubDate>Tue, 19 Feb 2013 17:43:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949856_students_pa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949857_students_pa.jpg"/> 
+    </item>  
+    <item> 
+      <title>Creative writing A-level launches</title>  
+      <description>Aspiring authors, playwrights and poets are going to be offered an A-level in creative writing, which is claimed as the first of its kind in the UK.</description>  
+      <link>http://www.bbc.co.uk/news/education-21506128#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21506128</guid>  
+      <pubDate>Tue, 19 Feb 2013 13:34:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65957000/jpg/_65957726_017249472-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65957000/jpg/_65957727_017249472-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Schools 'lack adequate wi-fi'</title>  
+      <description>Only about a quarter of schools in England have good enough wi-fi to get the best out of digital technology, figures suggest.</description>  
+      <link>http://www.bbc.co.uk/news/education-21476385#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21476385</guid>  
+      <pubDate>Tue, 19 Feb 2013 15:37:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65954000/jpg/_65954628_ipad.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65954000/jpg/_65954629_ipad.jpg"/> 
+    </item>  
+    <item> 
+      <title>Baby P pair appeal over sacking</title>  
+      <description>One of Baby Peter's social workers had to move house when the case led to a "hysterical media outcry", the Court of Appeal hears.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-london-21509280#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-london-21509280</guid>  
+      <pubDate>Tue, 19 Feb 2013 16:28:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65959000/jpg/_65959434_006492215-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65959000/jpg/_65959435_006492215-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Too many pupils 'lack basic skills'</title>  
+      <description>A Northern Ireland Audit Office report says unacceptably large numbers of pupils are failing to achieve even minimal levels in literacy and numeracy.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21502780#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21502780</guid>  
+      <pubDate>Tue, 19 Feb 2013 14:10:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65950000/jpg/_65950541_classroom.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65950000/jpg/_65950542_classroom.jpg"/> 
+    </item>  
+    <item> 
+      <title>Quinton coach wants school first aid</title>  
+      <description>The coach of a Trowbridge footballer, 13, who suffered a cardiac arrest during a match wants all children to be taught lifesaving first aid skills.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-wiltshire-21502859#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-wiltshire-21502859</guid>  
+      <pubDate>Tue, 19 Feb 2013 09:18:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949976_swns_heart_attack_.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949977_swns_heart_attack_.jpg"/> 
+    </item>  
+    <item> 
+      <title>Glasgow University to expand campus</title>  
+      <description>Glasgow University is to expand its main campus in the west end of the city by taking over the Western Infirmary site.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-glasgow-west-21504870#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-glasgow-west-21504870</guid>  
+      <pubDate>Tue, 19 Feb 2013 11:20:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65954000/jpg/_65954144_65954091.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65954000/jpg/_65954145_65954091.jpg"/> 
+    </item>  
+    <item> 
+      <title>Play warns pupils of carbon monoxide</title>  
+      <description>A theatre company tours Swansea schools to teach children about the dangers of carbon monoxide.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-south-west-wales-21419314#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-south-west-wales-21419314</guid>  
+      <pubDate>Tue, 19 Feb 2013 07:19:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65850000/jpg/_65850193_co2play.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65850000/jpg/_65850194_co2play.jpg"/> 
+    </item>  
+    <item> 
+      <title>Horsemeat found in school dinners</title>  
+      <description>Food Standards Agency tests show that horsemeat DNA is present in some school dinners served in Lancashire.</description>  
+      <link>http://www.bbc.co.uk/news/education-21475337#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21475337</guid>  
+      <pubDate>Fri, 15 Feb 2013 16:21:53 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65922000/jpg/_65922228_burger.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65922000/jpg/_65922229_burger.jpg"/> 
+    </item>  
+    <item> 
+      <title>Judgement reserved over uni cash row</title>  
+      <description>A judge reserves his decision over whether a student's human rights were breached when an Oxford college turned him down on financial grounds.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-21465879#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-21465879</guid>  
+      <pubDate>Fri, 15 Feb 2013 19:14:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65895000/jpg/_65895973_de26.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65895000/jpg/_65895974_de26.jpg"/> 
+    </item>  
+    <item> 
+      <title>Rethink urged on child poverty</title>  
+      <description>The government should focus less on how to measure child poverty and more on how to eradicate it, a leading children's charity argues.</description>  
+      <link>http://www.bbc.co.uk/news/education-21462601#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21462601</guid>  
+      <pubDate>Fri, 15 Feb 2013 10:34:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65901000/jpg/_65901004_poorchildrenglasgowstreetfootball.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65901000/jpg/_65901005_poorchildrenglasgowstreetfootball.jpg"/> 
+    </item>  
+    <item> 
+      <title>Beef removed from school menus</title>  
+      <description>Beef is removed from school meals across Staffordshire as a precautionary measure amid the horsemeat scandal.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-stoke-staffordshire-21458671#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-stoke-staffordshire-21458671</guid>  
+      <pubDate>Thu, 14 Feb 2013 16:51:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65883000/jpg/_65883276_65871969.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65883000/jpg/_65883277_65871969.jpg"/> 
+    </item>  
+    <item> 
+      <title>School burgers 'clear of horse DNA'</title>  
+      <description>A company that makes burgers supplied to Northern Ireland schools that were recalled, says tests show they are clear of horse DNA.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21455335#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21455335</guid>  
+      <pubDate>Thu, 14 Feb 2013 20:53:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65880000/jpg/_65880900_burger.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65880000/jpg/_65880901_burger.jpg"/> 
+    </item>  
+    <item> 
+      <title>School PE 'not strenuous enough'</title>  
+      <description>Education inspectors warn that there is not enough strenuous activity in many of England's school PE lessons.</description>  
+      <link>http://www.bbc.co.uk/news/education-21449610#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21449610</guid>  
+      <pubDate>Thu, 14 Feb 2013 02:11:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65876000/jpg/_65876882_yellowthinkstock.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65876000/jpg/_65876883_yellowthinkstock.jpg"/> 
+    </item>  
+    <item> 
+      <title>Come to UK, PM urges Indian students</title>  
+      <description>David Cameron urges Indian students to come and study in the UK as he tried to address concerns about tougher visa rules ahead of a visit to the country.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21456363#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21456363</guid>  
+      <pubDate>Thu, 14 Feb 2013 09:24:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65882000/jpg/_65882530_65882378.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65882000/jpg/_65882531_65882378.jpg"/> 
+    </item>  
+    <item> 
+      <title>Cities 'make it hard to concentrate'</title>  
+      <description>Living in a city makes it more difficult for people to focus attention, while countryside folk can concentrate better, research suggests.</description>  
+      <link>http://www.bbc.co.uk/news/education-21506132#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21506132</guid>  
+      <pubDate>Wed, 20 Feb 2013 02:09:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965815_006027109-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965816_006027109-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Richard III's wounds echoed in poem</title>  
+      <description>An expert believes a Welsh poem about Richard III's death can be seen as an accurate description of how he died now the king's skeleton has been found.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-21441319#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-21441319</guid>  
+      <pubDate>Fri, 15 Feb 2013 07:45:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65869000/jpg/_65869896_017131394-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65869000/jpg/_65869897_017131394-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Secure colleges plan for offenders</title>  
+      <description>Secure colleges could be introduced to improve the education given to young offenders as part of a shake-up of youth custody in England and Wales.</description>  
+      <link>http://www.bbc.co.uk/news/education-21443812#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21443812</guid>  
+      <pubDate>Thu, 14 Feb 2013 08:15:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65880000/jpg/_65880681_65863235.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65881000/jpg/_65881722_65863235.jpg"/> 
+    </item>  
+    <item> 
+      <title>Court rejects GCSE grades challenge</title>  
+      <description>A legal attempt to overturn controversial GCSE grades has been rejected by the High Court</description>  
+      <link>http://www.bbc.co.uk/news/education-21426396#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21426396</guid>  
+      <pubDate>Wed, 13 Feb 2013 16:39:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65843000/jpg/_65843890_65843883.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65843000/jpg/_65843951_65843883.jpg"/> 
+    </item>  
+    <item> 
+      <title>Gove under pressure over advisers</title>  
+      <description>Education Secretary Michael Gove faces further questions from MPs over claims he misled Parliament over alleged bullying by his special advisers.</description>  
+      <link>http://www.bbc.co.uk/news/education-21434745#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21434745</guid>  
+      <pubDate>Wed, 13 Feb 2013 16:28:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65855000/jpg/_65855587_gove.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65855000/jpg/_65855598_gove.jpg"/> 
+    </item>  
+    <item> 
+      <title>SA university closed after protests</title>  
+      <description>South Africa's Fort Hare University, where Nelson Mandela once studied, shuts down its main campus after protests over a 90% rise in residence fees.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21441746#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21441746</guid>  
+      <pubDate>Wed, 13 Feb 2013 13:34:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65869000/jpg/_65869599_protestforthare_newage_464.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65869000/jpg/_65869600_protestforthare_newage_464.jpg"/> 
+    </item>  
+    <item> 
+      <title>Missing children data 'worrying'</title>  
+      <description>There is a "worrying" lack of reliable data on missing children in England, Ofsted's chief inspector Sir Michael Wilshaw has said.</description>  
+      <link>http://www.bbc.co.uk/news/education-21382286#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21382286</guid>  
+      <pubDate>Fri, 08 Feb 2013 15:36:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65778000/jpg/_65778616_crowd_thinkstock.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65778000/jpg/_65778617_crowd_thinkstock.jpg"/> 
+    </item>  
+    <item> 
+      <title>Parents 'angry' over childcare plan</title>  
+      <description>More than 11,000 parents sign a petition asking the government in England to reconsider its plans to change staff-to-child childcare ratios, says a charity.</description>  
+      <link>http://www.bbc.co.uk/news/education-21375010#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21375010</guid>  
+      <pubDate>Fri, 08 Feb 2013 02:32:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65767000/jpg/_65767474_childpainting%3Dthinkstock.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65767000/jpg/_65767475_childpainting%3Dthinkstock.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Angry young men' lack optimism</title>  
+      <description>Young men in the "squeezed middle" are negative about ever getting a decent job, according to a survey of youth attitudes.</description>  
+      <link>http://www.bbc.co.uk/news/education-20947604#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-20947604</guid>  
+      <pubDate>Tue, 05 Feb 2013 10:35:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65695000/jpg/_65695404_016871942-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65695000/jpg/_65695405_016871942-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Web safety lessons urged for infants</title>  
+      <description>Children as young as five should be given lessons in how to use the internet safely, campaigners have urged.</description>  
+      <link>http://www.bbc.co.uk/news/education-21328411#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21328411</guid>  
+      <pubDate>Tue, 05 Feb 2013 10:30:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65698000/jpg/_65698026_childcomputereye.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65698000/jpg/_65698027_childcomputereye.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: School horsemeat 'not a health issue'</title>  
+      <description>Horsemeat has been found in cottage pies supplied to 47 schools in Lancashire. These have been withdrawn, and the council says that there is no health risk to the public.</description>  
+      <link>http://www.bbc.co.uk/news/uk-21476140#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-21476140</guid>  
+      <pubDate>Fri, 15 Feb 2013 16:30:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65915000/jpg/_65915950_wnx4a8ox.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65915000/jpg/_65915951_wnx4a8ox.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Slum children flock to free school</title>  
+      <description>A shopkeeper in New Delhi runs an improvised school under a railway bridge in New Delhi to help raise children from nearby slums out of poverty.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21507893#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21507893</guid>  
+      <pubDate>Tue, 19 Feb 2013 18:42:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966281_65964673.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966282_65964673.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Tough visa rules 'deter Indian students'</title>  
+      <description>The numbers of Indians studying in the UK fell for the first time in the last year, many say due to changes in visa rules. As David Cameron prepares to visit India, how is the issue affecting Indians' perception of Britain?</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21478698#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21478698</guid>  
+      <pubDate>Fri, 15 Feb 2013 21:49:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65920000/jpg/_65920996_65919062.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65920000/jpg/_65920997_65919062.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: College expenses case in court</title>  
+      <description>A postgraduate student who says he was turned down by an Oxford university on financial grounds will have his case heard in Manchester Crown Court on Friday.</description>  
+      <link>http://www.bbc.co.uk/news/education-21469594#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21469594</guid>  
+      <pubDate>Fri, 15 Feb 2013 08:03:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65901000/jpg/_65901563_de01.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65901000/jpg/_65901584_de01.jpg"/> 
+    </item>  
+    <item> 
+      <title>Students' rooms: 1890s v 2010s</title>  
+      <description>How have digs changed over the past 100 years?</description>  
+      <link>http://www.bbc.co.uk/news/magazine-21425200#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-21425200</guid>  
+      <pubDate>Fri, 15 Feb 2013 11:22:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65909000/jpg/_65909495_students144.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65909000/jpg/_65909496_students144.jpg"/> 
+    </item>  
+    <item> 
+      <title>The challenge of providing good PE lessons</title>  
+      <description>Funding cuts and the struggle to capitalise on the Olympic legacy .</description>  
+      <link>http://www.bbc.co.uk/news/education-21432286#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21432286</guid>  
+      <pubDate>Thu, 14 Feb 2013 04:18:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65853000/jpg/_65853794_dsc_0012.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65853000/jpg/_65853795_dsc_0012.jpg"/> 
+    </item>  
+    <item> 
+      <title>How to make the best of a bad job</title>  
+      <description>How to make low skilled-jobs more attractive</description>  
+      <link>http://www.bbc.co.uk/news/business-21461519#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21461519</guid>  
+      <pubDate>Sun, 17 Feb 2013 22:34:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65908000/jpg/_65908241_messi-getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65917000/jpg/_65917625_messi-getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Indian students think twice about UK</title>  
+      <description>How do Indian students view UK visa charges?</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21461669#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21461669</guid>  
+      <pubDate>Fri, 15 Feb 2013 00:57:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65896000/jpg/_65896322_rajini2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65896000/jpg/_65896323_rajini2.jpg"/> 
+    </item>  
+    <item> 
+      <title>School sport 'keeps kids off the streets'</title>  
+      <description>Pupils give their verdict on physical education</description>  
+      <link>http://www.bbc.co.uk/schoolreport/21460592</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/schoolreport/21460592</guid>  
+      <pubDate>Thu, 14 Feb 2013 16:13:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65889000/jpg/_65889595_img_6623.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65889000/jpg/_65889980_img_6623.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

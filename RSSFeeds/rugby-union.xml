@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC Sport - Rugby Union</title>  
+    <link>http://www.bbc.co.uk/sport/0/rugby-union/</link>  
+    <description>The latest stories from the Rugby Union section of the BBC Sport web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 17:57:37 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbc.co.uk/sol/shared/img/sport_120x60.gif</url>  
+      <title>BBC Sport - Rugby Union</title>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/sport/0/rugby-union/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Cross to face Irish for Scotland</title>  
+      <description>Geoff Cross replaces Euan Murray in the Scotland line-up to face Ireland at Murrayfield.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21504709</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21504709</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:33:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977323_8212023.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977387_8212023.jpg"/> 
+    </item>  
+    <item> 
+      <title>Parisse ban rules out Wales game</title>  
+      <description>A 30-day suspension means inspirational Italy captain Sergio Parisse is set to miss the rest of the 2013 Six Nations.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21517465</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21517465</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:35:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973477_sergio.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973479_sergio.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ulster pair handed Ireland debuts</title>  
+      <description>Paddy Jackson gets the nod ahead of Ronan O'Gara to start for Ireland in Sunday's Six Nations game against Scotland.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21519953</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21519953</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:12:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65976000/gif/_65976147_paddyjackson624.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65976000/gif/_65976149_paddyjackson624.gif"/> 
+    </item>  
+    <item> 
+      <title>Johnson hopes for winning feeling</title>  
+      <description>Interim head coach Scott Johnson is eager for Scotland to improve further in the Six Nations match against Ireland.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21521535</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21521535</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:13:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983993_8380427.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983991_8380427.jpg"/> 
+    </item>  
+    <item> 
+      <title>Captain Jones praises Warburton</title>  
+      <description>Skipper Ryan Jones praises Sam Warburton's resilience and character after the flanker lost the Wales captaincy.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21517459</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21517459</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:47:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/57760000/jpg/_57760109_44519604.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971544_ryanjones.jpg"/> 
+    </item>  
+    <item> 
+      <title>Diamond to remain as Sale supremo</title>  
+      <description>Steve Diamond confirms to BBC Radio Manchester he will stay as Sale's director of rugby for "the next couple of years".</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21521387</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21521387</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:49:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978700_155274698.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978698_155274698.jpg"/> 
+    </item>  
+    <item> 
+      <title>England name same 23 for France</title>  
+      <description>England coach Stuart Lancaster selects an unchanged 23-man squad for Saturday's Six Nations match against France.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21510632</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21510632</guid>  
+      <pubDate>Tue, 19 Feb 2013 19:24:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966623_lancaster.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966625_lancaster.jpg"/> 
+    </item>  
+    <item> 
+      <title>Fly-half Lamb set to join Tigers</title>  
+      <description>Northampton Saints boss Jim Mallinder confirms fly-half Ryan Lamb will join Leicester Tigers at the end of the season.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21522861</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21522861</guid>  
+      <pubDate>Wed, 20 Feb 2013 15:47:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65982000/jpg/_65982119_pa-14907447.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65982000/jpg/_65982121_pa-14907447.jpg"/> 
+    </item>  
+    <item> 
+      <title>Irish will not panic, says Fisher</title>  
+      <description>London Irish forward Jonathan Fisher says the relegation-threatened club are not about to "hit the panic button".</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21506003</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21506003</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:16:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/60400000/jpg/_60400364_fisher.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/60400000/jpg/_60400366_fisher.jpg"/> 
+    </item>  
+    <item> 
+      <title>Stringer is loving playing again</title>  
+      <description>Scrum-half Peter Stringer is happy to be playing regularly again after joining Bath on loan from Munster last month.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21519767</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21519767</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:04:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983870_161142225.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983874_161142225.jpg"/> 
+    </item>  
+    <item> 
+      <title>Myler signs new Saints contract</title>  
+      <description>Northampton Saints fly-half Stephen Myler extends his contract at Franklin's Gardens for 'the foreseeable future.'</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21518876</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21518876</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:25:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975134_pa-14923673.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975268_pa-14923673.jpg"/> 
+    </item>  
+    <item> 
+      <title>Tigers' Jooste set for Castres</title>  
+      <description>Leicester back-row forward Wessel Jooste is in talks with Castres about joining the club until the end of the season.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21520710</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21520710</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:13:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/62269000/jpg/_62269310_106539596.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/62269000/jpg/_62269332_106539596.jpg"/> 
+    </item>  
+    <item> 
+      <title>England hopeful of Morgan return</title>  
+      <description>England coach Stuart Lancaster hopes Ben Morgan will be fit to return for their Six Nations match against Italy.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21495311</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21495311</guid>  
+      <pubDate>Mon, 18 Feb 2013 16:31:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65944000/jpg/_65944976_benmorgan23.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65945000/jpg/_65945680_benmorgan23.jpg"/> 
+    </item>  
+    <item> 
+      <title>Warburton and Jones on Wales bench</title>  
+      <description>Alun Wyn Jones and Sam Warburton return from injury on the bench for Wales against Italy in the Six Nations on Saturday.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21504625</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21504625</guid>  
+      <pubDate>Tue, 19 Feb 2013 13:00:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952639_cdf_080213_ulster_v_ospreys02.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65956000/jpg/_65956775_cdf_080213_ulster_v_ospreys02.jpg"/> 
+    </item>  
+    <item> 
+      <title>Parisse red no surprise to Edwards</title>  
+      <description>Wales defence coach Shaun Edwards claims Italy captain Sergio Parisse has a history of backchat to referees.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21499366</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21499366</guid>  
+      <pubDate>Mon, 18 Feb 2013 16:53:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65946000/jpg/_65946373_sergio.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65946000/jpg/_65946375_sergio.jpg"/> 
+    </item>  
+    <item> 
+      <title>Warburton praise for coach Howley</title>  
+      <description>Sam Warburton, who has lost his place as Wales captain, praises interim coach Rob Howley for naming his team early for Italy.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21500109</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21500109</guid>  
+      <pubDate>Mon, 18 Feb 2013 21:59:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65946000/jpg/_65946774_sam.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65947000/jpg/_65947397_sam.jpg"/> 
+    </item>  
+    <item> 
+      <title>England Women make three changes</title>  
+      <description>England Women coach Gary Street makes three changes for Saturday's Six Nations match against France at Twickenham.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21506631</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21506631</guid>  
+      <pubDate>Tue, 19 Feb 2013 12:32:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65955000/jpg/_65955779_gary_street.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65956000/jpg/_65956736_gary_street.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bath bring in Houston and Orlandi</title>  
+      <description>Bath sign number eight Leroy Houston from Colomiers and tighthead prop Juan Pablo Orlandi from Racing Metro.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21507343</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21507343</guid>  
+      <pubDate>Tue, 19 Feb 2013 17:50:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965024_leroy_houston.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965028_leroy_houston.jpg"/> 
+    </item>  
+    <item> 
+      <title>Wasps to capture Sale lock Myall</title>  
+      <description>Wasps complete a deal to sign Sale's Kearnan Myall for next season and extend the contract of fellow lock Marco Wentzel.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21509416</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21509416</guid>  
+      <pubDate>Tue, 19 Feb 2013 16:36:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65962000/jpg/_65962936_160365620.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65962000/jpg/_65962922_160365620.jpg"/> 
+    </item>  
+    <item> 
+      <title>Burger extends Saracens contract</title>  
+      <description>Saracens forward Jacques Burger, who is recovering from a long-term knee injury, signs a new contract with the club.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21505885</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21505885</guid>  
+      <pubDate>Tue, 19 Feb 2013 11:12:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65954000/jpg/_65954240_jacquesburgertraininggetty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65954000/jpg/_65954238_jacquesburgertraininggetty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Brown thanks Quins boss O'Shea</title>  
+      <description>Full-back Mike Brown thanks Harlequins coach Conor O'Shea for helping to re-establish him in the England side.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21480001</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21480001</guid>  
+      <pubDate>Tue, 19 Feb 2013 10:18:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65918000/jpg/_65918791_mikebrownenglandempics.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65918000/jpg/_65918789_mikebrownenglandempics.jpg"/> 
+    </item>  
+    <item> 
+      <title>Robinson arrival pleases Middleton</title>  
+      <description>Bristol coach Liam Middleton is excited to work with ex-England and Scotland boss Andy Robinson as director of rugby.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21508200</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21508200</guid>  
+      <pubDate>Tue, 19 Feb 2013 16:06:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/63075000/jpg/_63075010_middleton_tt.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/63079000/jpg/_63079747_middleton_tt.jpg"/> 
+    </item>  
+    <item> 
+      <title>Robinson takes on Bristol role</title>  
+      <description>Former England and Scotland head coach Andy Robinson is appointed director of rugby at Championship outfit Bristol.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21496687</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21496687</guid>  
+      <pubDate>Mon, 18 Feb 2013 10:50:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65940000/jpg/_65940614_robinson_getty_2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65942000/jpg/_65942281_robinson_getty_2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Injured Henry out of Irish squad</title>  
+      <description>Ireland back row Chris Henry misses the game against Scotland and could be out for four weeks with a knee injury.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21484874</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21484874</guid>  
+      <pubDate>Mon, 18 Feb 2013 18:46:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65947000/jpg/_65947920_inpho_00654369.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65947000/jpg/_65947918_inpho_00654369.jpg"/> 
+    </item>  
+    <item> 
+      <title>Parisse set to miss Wales match</title>  
+      <description>Italy captain Sergio Parisse is set to miss playing against Wales after being suspended following his sending-off for Stade Francais.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21492750</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21492750</guid>  
+      <pubDate>Mon, 18 Feb 2013 16:26:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65936000/jpg/_65936747_160603451.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65936000/jpg/_65936745_160603451.jpg"/> 
+    </item>  
+    <item> 
+      <title>London Welsh 25-26 Sale</title>  
+      <description>Gavin Henson impresses for London Welsh - but Sale win the Premiership basement battle at the Kassam Stadium.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21431470</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21431470</guid>  
+      <pubDate>Sun, 17 Feb 2013 17:04:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65937000/jpg/_65937131_161853544.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65937000/jpg/_65937097_161853544.jpg"/> 
+    </item>  
+    <item> 
+      <title>Wasps 33-29 Gloucester</title>  
+      <description>Wales international Stephen Jones lands five kicks at goal as Wasps edge out Gloucester 33-29 in a thriller.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21431383</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21431383</guid>  
+      <pubDate>Sun, 17 Feb 2013 19:37:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65911000/jpg/_65911120_stephen_jones.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65911000/jpg/_65911125_stephen_jones.jpg"/> 
+    </item>  
+    <item> 
+      <title>Saracens 31-11 Exeter</title>  
+      <description>Charlie Hodgson scores 16 points as Saracens beat Exeter 31-11 to win their first league game at Allianz Park.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21431029</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21431029</guid>  
+      <pubDate>Sat, 16 Feb 2013 17:03:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65926000/jpg/_65926975_161789771.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65926000/jpg/_65926971_161789771.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: England must 'perform' after loss</title>  
+      <description>England flanker Hannah Gallagher says the team will put in a "performance" against France in their Women's Six Nations game on Saturday.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21514062</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21514062</guid>  
+      <pubDate>Tue, 19 Feb 2013 21:45:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967667_mmrguwmnsgallagherpic.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967668_mmrguwmnsgallagherpic.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Domestic return delights Robinson</title>  
+      <description>Bristol's new director of rugby Andy Robinson tells BBC Points West he is relishing a return to the domestic game after a three-and-a-half year spell at international level with Scotland.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21496495</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21496495</guid>  
+      <pubDate>Mon, 18 Feb 2013 16:14:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65940000/jpg/_65940439_robinson_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65940000/jpg/_65940491_robinson_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Biggar promises 'more to come'</title>  
+      <description>Fly-half Dan Biggar, who set up Wales' winning try against France in the Six Nations, promises to show more against Italy and England.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21496949</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21496949</guid>  
+      <pubDate>Mon, 18 Feb 2013 11:08:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65942000/jpg/_65942151_biggar_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65941000/jpg/_65941975_biggar_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Gold welcomes strong Bath squad</title>  
+      <description>Bath head coach Gary Gold tells BBC Points West the arrival of Australian number eight Leroy Houston and Argentina prop Juan Pablo Orlandi will give his squad a welcome boost for next season.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21512768</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21512768</guid>  
+      <pubDate>Tue, 19 Feb 2013 18:55:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965825_gold.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965813_gold.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Davies encouraged despite defeat</title>  
+      <description>Gloucester director of rugby Nigel Davies tells BBC Gloucestershire he was disappointed with his side's 33-29 defeat by Wasps but remains encouraged by the players' "character".</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21496690</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21496690</guid>  
+      <pubDate>Mon, 18 Feb 2013 11:36:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65942000/jpg/_65942426_davies_getty_glos_2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65942000/jpg/_65942424_davies_getty_glos_2.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Top Gear team play car rugby</title>  
+      <description>Top Gear's Jeremy Clarkson and James May try their hand at car rugby at Twickenham.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21478732</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21478732</guid>  
+      <pubDate>Sat, 16 Feb 2013 13:48:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65921000/png/_65921238_mmrgutopgearrugby.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65921000/png/_65921233_mmrgutopgearrugby.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Rugby union's first plastic pitch</title>  
+      <description>Saracens will create a bit of history on Saturday when they host Exeter Chiefs - it'll be the first Premiership match on an artificial pitch.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21477141</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21477141</guid>  
+      <pubDate>Fri, 15 Feb 2013 17:15:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65917000/jpg/_65917028_65917023.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65917000/jpg/_65917030_65917023.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Cockerill unhappy with referee</title>  
+      <description>Leicester Tigers director of rugby Richard Cockerill tells BBC Radio Leicester that referee Wayne Barnes did not treat both sides equally in the 25-21 defeat away against Harlequins.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21488332</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21488332</guid>  
+      <pubDate>Sat, 16 Feb 2013 19:45:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/58231000/jpg/_58231743_cockers.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65008000/jpg/_65008017_158637384.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Pitch was right for Saints - West</title>  
+      <description>Saints coach Dorian West tells BBC Radio Northampton that Worcester's pitch was "built for mauling and scrumming" and gave them an advantage.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21488727</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21488727</guid>  
+      <pubDate>Sat, 16 Feb 2013 20:30:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64363000/jpg/_64363386_154836866.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64363000/jpg/_64363388_154836866.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Rehab puts Priestland in dog house</title>  
+      <description>Wales fly-half Rhys Priestland tells The Back Page about his recovery from a torn Achilles tendon.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21470657</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21470657</guid>  
+      <pubDate>Fri, 15 Feb 2013 11:17:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65906000/jpg/_65906503_rhys-priestland.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65906000/jpg/_65906459_rhys-priestland.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Joubert excited by Allianz Park era</title>  
+      <description>Saracens number eight Ernst Joubert tells BBC London that he is excited by their move to Allianz Park.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21474763</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21474763</guid>  
+      <pubDate>Fri, 15 Feb 2013 14:58:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65908000/jpg/_65908768_ernstjoubertgetty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65908000/jpg/_65908769_ernstjoubertgetty.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Gloucester can match Wasps - Davies</title>  
+      <description>Gloucester director of rugby Nigel Davies tells BBC Gloucestershire his team are capable of matching the "threat" of an improving Wasps side when they meet on Sunday.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21471308</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21471308</guid>  
+      <pubDate>Fri, 15 Feb 2013 10:47:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65903000/jpg/_65903235_davies_getty_glos_3.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65903000/jpg/_65903233_davies_getty_glos_3.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Six of the Best: England v France</title>  
+      <description>Watch short highlights of BBC Sport's pick of some of the best clashes between England and France (UK only).</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/17285864</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/17285864</guid>  
+      <pubDate>Wed, 07 Mar 2012 11:55:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/58936000/jpg/_58936335_richard_hill_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/58936000/jpg/_58936337_richard_hill_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Ruck 'n' Roll Years - 1980s</title>  
+      <description>A look back at the news and Five Nations action from the 1980s.</description>  
+      <link>http://news.bbc.co.uk/sport1/hi/rugby_union/7870869.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/sport1/hi/rugby_union/7870869.stm</guid>  
+      <pubDate>Wed, 04 Feb 2009 19:20:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/45445000/jpg/_45445654_1980s_av66.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65545000/jpg/_65545616_1980s_av203.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Three famous Welsh wins in France</title>  
+      <description>BBC Sport picks out three memorable Welsh victories in France, as Rob Howley prepares to take the current Grand Slam champions to Paris in the Six Nations on Saturday.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21357605</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21357605</guid>  
+      <pubDate>Thu, 07 Feb 2013 12:54:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65744000/jpg/_65744904_52244604.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65744000/jpg/_65744906_52244604.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Marvellous Mauro lights up Murrayfield</title>  
+      <description>Italy flanker Mauro Bergamasco scores an incredible solo try against Scotland in the 2001 Six Nations at Murrayfield.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21368797</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21368797</guid>  
+      <pubDate>Fri, 08 Feb 2013 09:38:48 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65756000/png/_65756234_mm6nabergamascotry.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65756000/png/_65756236_mm6nabergamascotry.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Williams scores Grand Slam try</title>  
+      <description>BBC Sport's Jason Mohammad hails Martyn Williams's 2008 score against France as his favourite Six Nations try.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21368792</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21368792</guid>  
+      <pubDate>Thu, 07 Feb 2013 12:04:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65755000/png/_65755484_mm6namwilliamstry.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65755000/png/_65755486_mm6namwilliamstry.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Six Nations tries of the tournament</title>  
+      <description>BBC Sport rounds up the most spectacular tries from this year's dramatic Six Nations, including Stuart Hogg's classy try for Scotland against France, Scott Williams snatching a win over England at Twickenham and Tom Croft's impressive effort in England's victory over the French in Paris. (UK only).</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/17409764</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/17409764</guid>  
+      <pubDate>Fri, 16 Mar 2012 19:55:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/59135000/jpg/_59135971_scottwilliamstry.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/59135000/jpg/_59135972_scottwilliamstry.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Ruck 'n' Roll Years - 1970s</title>  
+      <description>A look back at the news, music and Five Nations action from the 1970s.</description>  
+      <link>http://news.bbc.co.uk/sport1/hi/rugby_union/7870853.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/sport1/hi/rugby_union/7870853.stm</guid>  
+      <pubDate>Thu, 05 Feb 2009 18:45:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/45445000/jpg/_45445632_1970s_av66.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65545000/jpg/_65545615_1970s_av203.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Ruck 'n' Roll Years - 1990s</title>  
+      <description>A look back at the news and Five Nations action from the 1990s.</description>  
+      <link>http://news.bbc.co.uk/sport1/hi/rugby_union/7870874.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/sport1/hi/rugby_union/7870874.stm</guid>  
+      <pubDate>Wed, 04 Feb 2009 19:22:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/45445000/jpg/_45445665_1990s_av66.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65545000/jpg/_65545617_1990s_av203.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Legend O'Driscoll breaks try record</title>  
+      <description>A tribute to Ireland centre Brian O'Driscoll who breaks the 87 year-old try-scoring Championship record in the Six Nations victory against England.(UK users only)</description>  
+      <link>http://news.bbc.co.uk/sport1/hi/rugby_union/9430293.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/sport1/hi/rugby_union/9430293.stm</guid>  
+      <pubDate>Sat, 19 Mar 2011 18:36:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/51752000/jpg/_51752998_bod.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/51752000/jpg/_51752999_bod.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Six Nations 2011 - Top Tries</title>  
+      <description>BBC Sport's pick of the best tries of the 2011 Six Nations tournament. (UK users only)</description>  
+      <link>http://news.bbc.co.uk/sport1/hi/rugby_union/9430932.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/sport1/hi/rugby_union/9430932.stm</guid>  
+      <pubDate>Sun, 20 Mar 2011 19:12:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/51760000/jpg/_51760861_-24.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/51760000/jpg/_51760862_-24.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Ruck 'n' Roll Years - 1960s</title>  
+      <description>A look back at the news and Five Nations action from the 1960s.</description>  
+      <link>http://news.bbc.co.uk/sport1/hi/rugby_union/7873270.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/sport1/hi/rugby_union/7873270.stm</guid>  
+      <pubDate>Thu, 05 Feb 2009 18:53:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/45449000/jpg/_45449563_barry-john.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65545000/jpg/_65545614_barry-john.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Ruck 'n' Roll Years - 2000s</title>  
+      <description>A look back at the news and Six Nations action from the 2000s.</description>  
+      <link>http://news.bbc.co.uk/sport1/hi/rugby_union/7870883.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/sport1/hi/rugby_union/7870883.stm</guid>  
+      <pubDate>Wed, 04 Feb 2009 19:24:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/45445000/jpg/_45445676_2000s_av66.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65545000/jpg/_65545613_2000s_av203.jpg"/> 
+    </item>  
+    <item> 
+      <title>John Beattie's Six Nations blog</title>  
+      <description>BBC Scotland commentator asks if home advantage matters, and whether Euan Murray should refuse to play on a Sunday</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21498467</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21498467</guid>  
+      <pubDate>Mon, 18 Feb 2013 14:03:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/57759000/jpg/_57759751_44519598.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65944000/jpg/_65944095_65943474.jpg"/> 
+    </item>  
+    <item> 
+      <title>Farrell firmly in Lions frame</title>  
+      <description>England’s half-backs show their credentials and competition hots up at full-back after second round of Six Nations matches, says BBC Sport's Bryn Palmer</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21406271</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21406271</guid>  
+      <pubDate>Mon, 11 Feb 2013 09:22:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65811000/jpg/_65811449_65811325.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65811000/jpg/_65811688_farrellnew.jpg"/> 
+    </item>  
+    <item> 
+      <title>Winning ugly confirms England's character</title>  
+      <description>Pretty can wait for another day - England passed their Irish examination with flying colours, writes Tom Fordyce</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21405910</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21405910</guid>  
+      <pubDate>Sun, 10 Feb 2013 20:49:48 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65811000/jpg/_65811072_65811069.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65811000/jpg/_65811451_coleryanafp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Paris jeers are relief to Welsh ears</title>  
+      <description>BBC Sport's Bryn Palmer witnesses Welsh defiance and a moment of class bring relief to the long-suffering champions in Paris</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21399583</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21399583</guid>  
+      <pubDate>Sun, 10 Feb 2013 08:11:58 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65803000/jpg/_65803230_daviesjones.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65803000/jpg/_65803228_daviesjones.jpg"/> 
+    </item>  
+    <item> 
+      <title>Women's Six Nations Guide</title>  
+      <description>BBC London's Sara Orchard casts her eye over the prospects for the Women's Six Nations</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21260435</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21260435</guid>  
+      <pubDate>Wed, 30 Jan 2013 12:07:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65568000/jpg/_65568471_sarah_hunter.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65594000/jpg/_65594525_captains2013launch_reuters.jpg"/> 
+    </item>  
+    <item> 
+      <title>Can Wales succeed in Italian job?</title>  
+      <description>"Psychologically, it is a big test for Wales to back up what they did in Paris," says former flanker Martyn Williams.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21471610</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21471610</guid>  
+      <pubDate>Tue, 19 Feb 2013 06:56:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65947000/jpg/_65947999_ryanjones_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65947000/jpg/_65947997_ryanjones_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Jeremy Guscott's Six Nations Q&amp;A</title>  
+      <description>BBC expert on whether France can upset England, Wales' midfield, Scotland taking on Ireland, and Warren Gatland</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21501382</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21501382</guid>  
+      <pubDate>Tue, 19 Feb 2013 07:56:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/58346000/jpg/_58346250_007347950.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/58346000/jpg/_58346249_007347950.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

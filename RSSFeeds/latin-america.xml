@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Latin America &amp; Caribbean</title>  
+    <link>http://www.bbc.co.uk/news/world/latin_america/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Latin America &amp; Caribbean section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 19:53:33 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Latin America &amp; Caribbean</title>  
+      <link>http://www.bbc.co.uk/news/world/latin_america/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/world/latin_america/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Grenada opposition sweeps into power</title>  
+      <description>The opposition New National Party in Grenada has won all 15 constituencies in Tuesday's general election, preliminary results suggest.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-21526209#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-21526209</guid>  
+      <pubDate>Wed, 20 Feb 2013 19:51:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986709_grenadaflag.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986710_grenadaflag.jpg"/> 
+    </item>  
+    <item> 
+      <title>Interpol targets timber traffickers</title>  
+      <description>Interpol says it has arrested hundreds of people across Central and South America in a three-month operation against the illicit timber trade.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-21513855#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-21513855</guid>  
+      <pubDate>Tue, 19 Feb 2013 21:57:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967791_logged.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967812_logged.jpg"/> 
+    </item>  
+    <item> 
+      <title>Rare giant armadillo birth recorded</title>  
+      <description>The birth of a rare giant armadillo has been recorded for the first time in Brazil.</description>  
+      <link>http://www.bbc.co.uk/nature/21498108</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/nature/21498108</guid>  
+      <pubDate>Mon, 18 Feb 2013 16:36:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65945000/jpg/_65945843_motherandbaby.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65945000/jpg/_65945844_motherandbaby.jpg"/> 
+    </item>  
+    <item> 
+      <title>Seven US lawmakers in Cuba visit</title>  
+      <description>A group of seven US lawmakers meet Cuba's foreign minister in an effort to improve relations between the two countries.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-21501574#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-21501574</guid>  
+      <pubDate>Tue, 19 Feb 2013 21:52:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949276_65948976.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949277_65948976.jpg"/> 
+    </item>  
+    <item> 
+      <title>Chavez returns from Cuba cancer care</title>  
+      <description>Venezuelan President Hugo Chavez announces his return home from Cuba, where he had been receiving treatment for cancer since the end of 2012.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-21495976#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-21495976</guid>  
+      <pubDate>Mon, 18 Feb 2013 16:36:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65944000/jpg/_65944769_65943261.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65944000/jpg/_65944770_65943261.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bolivia seizes Spanish-run airports</title>  
+      <description>Bolivia's decision to nationalise three Spanish-owned airports draws an angry response from Madrid, which calls the move an "unfriendly act".</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-21499296#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-21499296</guid>  
+      <pubDate>Mon, 18 Feb 2013 23:47:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949025_airportap.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949026_airportap.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ecuador president wins re-election</title>  
+      <description>Ecuador's President Rafael Correa calls for "another four years of revolution" as he is re-elected for a third term with more than 50% of the vote.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-21492470#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-21492470</guid>  
+      <pubDate>Mon, 18 Feb 2013 06:42:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65939000/jpg/_65939555_65939464.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65939000/jpg/_65939556_65939464.jpg"/> 
+    </item>  
+    <item> 
+      <title>Farc releases Colombian soldier</title>  
+      <description>Colombia's main left-wing rebel group, the Farc, releases a soldier it had held hostage for nearly three weeks, a day after freeing two policemen.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-21489378#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-21489378</guid>  
+      <pubDate>Sun, 17 Feb 2013 04:06:58 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65931000/jpg/_65931624_65931611.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65931000/jpg/_65931625_65931611.jpg"/> 
+    </item>  
+    <item> 
+      <title>Brazil launches sustainability party</title>  
+      <description>Former environment minister and presidential candidate Marina Silva launches a new party, but still needs 500,000 signatures to register it officially.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-21487993#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-21487993</guid>  
+      <pubDate>Sat, 16 Feb 2013 22:06:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65931000/jpg/_65931020_marina.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65931000/jpg/_65931021_marina.jpg"/> 
+    </item>  
+    <item> 
+      <title>Antigua and Barbuda profile</title>  
+      <description>Provides an overview of Antigua &amp; Barbuda , including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-18706079#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-18706079</guid>  
+      <pubDate>Thu, 31 Jan 2013 15:45:25 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Argentina country profile</title>  
+      <description>Provides an overview of Argentina, including key events and facts of this South American country</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-18707514#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-18707514</guid>  
+      <pubDate>Tue, 29 Jan 2013 15:51:08 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Bahamas profile</title>  
+      <description>Provides an overview of the Bahamas, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-18722984#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-18722984</guid>  
+      <pubDate>Thu, 02 Aug 2012 10:56:09 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Barbados profile</title>  
+      <description>Provides an overview of Barbados , including key events and facts about this Caribbean country</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-18723928#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-18723928</guid>  
+      <pubDate>Tue, 19 Feb 2013 13:28:30 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Belize country profile</title>  
+      <description>Provides an overview of Belize, including key events and facts about this Central American country</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-18724590#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-18724590</guid>  
+      <pubDate>Tue, 20 Nov 2012 11:00:05 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Bolivia profile</title>  
+      <description>Provides an overview of Bolivia, including key events and facts about this Latin American country</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-18727507#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-18727507</guid>  
+      <pubDate>Tue, 21 Aug 2012 12:55:27 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Brazil profile</title>  
+      <description>Provides an overview of Argentina, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-18909529#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-18909529</guid>  
+      <pubDate>Tue, 21 Aug 2012 15:27:52 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Chile country profile</title>  
+      <description>Provides an overview, basic information as well as key dates for this South American country</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-19357497#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-19357497</guid>  
+      <pubDate>Thu, 23 Aug 2012 12:38:19 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Colombia country profile</title>  
+      <description>Provides an overview, basic information as well as key dates for this South American country</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-19390026#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-19390026</guid>  
+      <pubDate>Tue, 20 Nov 2012 14:39:06 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Costa Rica country profile</title>  
+      <description>Provides an overview of Costa Rica, including key events and facts for this South American country.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-19414068#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-19414068</guid>  
+      <pubDate>Wed, 29 Aug 2012 15:43:57 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Cuba country profile</title>  
+      <description>Provides an overview, basic information and key events for this Caribbean island nation</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-19583447#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-19583447</guid>  
+      <pubDate>Wed, 17 Oct 2012 10:46:26 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Dominica country profile</title>  
+      <description>Provides an overview of Dominica, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-19246342#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-19246342</guid>  
+      <pubDate>Tue, 11 Sep 2012 11:30:06 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Dominican Republic profile</title>  
+      <description>Provides an overview of the Dominican Republic, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-19246340#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-19246340</guid>  
+      <pubDate>Wed, 29 Aug 2012 15:17:23 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Ecuador profile</title>  
+      <description>Provides and overview of Ecuador, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-19331501#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-19331501</guid>  
+      <pubDate>Tue, 19 Feb 2013 10:23:22 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>El Salvador profile</title>  
+      <description>Provides an overview of El Salvador</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-19401932#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-19401932</guid>  
+      <pubDate>Sun, 30 Sep 2012 11:02:07 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Grenada country profile</title>  
+      <description>Provides an overview, basic information as well as key events for this Caribbean island nation</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-19598301#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-19598301</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:44:21 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Guatemala country profile</title>  
+      <description>Provides and overview, basic information as well as key dates for this Central American country</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-19635877#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-19635877</guid>  
+      <pubDate>Tue, 18 Sep 2012 10:24:38 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Guyana profile - Overview</title>  
+      <description>Provides an overview of Guyana, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-19546909#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-19546909</guid>  
+      <pubDate>Mon, 01 Oct 2012 11:52:29 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Haiti profile</title>  
+      <description>Provides an overview of Haiti, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-19548810#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-19548810</guid>  
+      <pubDate>Sun, 04 Nov 2012 15:25:06 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Honduras profile</title>  
+      <description>Provides an overview of Honduras, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-18954311#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-18954311</guid>  
+      <pubDate>Wed, 29 Aug 2012 09:53:15 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Jamaica profile</title>  
+      <description>Provides an overview of Jamaica, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-18784061#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-18784061</guid>  
+      <pubDate>Tue, 09 Oct 2012 10:44:54 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Mexico profile</title>  
+      <description>Provides an overview of Mexico, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-18095241#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-18095241</guid>  
+      <pubDate>Thu, 04 Oct 2012 14:34:04 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Nicaragua profile</title>  
+      <description>Provides an overview of Nicaragua, including key events and facts for this South American country.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-19735631#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-19735631</guid>  
+      <pubDate>Thu, 25 Oct 2012 14:46:30 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Panama profile</title>  
+      <description>Provides an overview of Panama, including key events and facts about this strategically important Central American country.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-19888936#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-19888936</guid>  
+      <pubDate>Tue, 23 Oct 2012 10:52:52 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Paraguay profile</title>  
+      <description>Provides an overview, basic information as well as key dates for Paraguay, a landlocked country in South America</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-19978115#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-19978115</guid>  
+      <pubDate>Wed, 17 Oct 2012 10:08:05 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Peru profile</title>  
+      <description>Provides an overview of Peru as well as basic facts and key dates for this South American country</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-19928905#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-19928905</guid>  
+      <pubDate>Fri, 12 Oct 2012 14:50:35 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Suriname profile</title>  
+      <description>Presents an overview, basic information as well as key dates for this small South American country</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-19997673#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-19997673</guid>  
+      <pubDate>Thu, 18 Oct 2012 16:28:14 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>St Kitts and Nevis profile</title>  
+      <description>Provides an overview, basic facts and key events for this small Caribbean island nation</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-20032548#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-20032548</guid>  
+      <pubDate>Mon, 22 Oct 2012 14:16:50 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>St Lucia profile</title>  
+      <description>Provides overview of St Lucia, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-19833213#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-19833213</guid>  
+      <pubDate>Thu, 18 Oct 2012 12:59:20 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>St Vincent and the Grenadines profile</title>  
+      <description>Provides an overview of St Vincent and the Grenadines, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-20006734#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-20006734</guid>  
+      <pubDate>Fri, 26 Oct 2012 13:41:56 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Trinidad and Tobago profile</title>  
+      <description>Provides an overview, basic information and key dates for this small Caribbean island nation</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-20072231#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-20072231</guid>  
+      <pubDate>Wed, 24 Oct 2012 15:05:32 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Uruguay profile</title>  
+      <description>Provides an overview of Uruguay, including key events and facts about this small South American country between Brazil and Argentina.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-20041847#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-20041847</guid>  
+      <pubDate>Tue, 23 Oct 2012 17:04:36 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Venezuela country profile - Overview</title>  
+      <description>Provides an overview of Venezuela, including key events and facts about this oil-rich South American country.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-19649648#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-19649648</guid>  
+      <pubDate>Mon, 10 Dec 2012 17:09:48 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Anguilla profile</title>  
+      <description>Provides an overview of Anguilla, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-20142904#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-20142904</guid>  
+      <pubDate>Thu, 01 Nov 2012 14:40:58 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Aruba profile</title>  
+      <description>Provides an overview of Aruba, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-20145233#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-20145233</guid>  
+      <pubDate>Thu, 22 Nov 2012 13:52:26 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Bermuda profile</title>  
+      <description>Provides an overview of Bermuda, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-20158216#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-20158216</guid>  
+      <pubDate>Wed, 19 Dec 2012 10:24:24 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>British Virgin Islands profile</title>  
+      <description>Provides an overview of British Virgin Islands, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-20211990#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-20211990</guid>  
+      <pubDate>Fri, 23 Nov 2012 10:49:45 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Cayman Islands profile</title>  
+      <description>Provides an overview of Cayman Islands, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-20219637#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-20219637</guid>  
+      <pubDate>Wed, 19 Dec 2012 11:38:29 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Curacao profile</title>  
+      <description>Provides an overview, basic facts and key dates about this small, autonomous Dutch territory in the Caribbean</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-20413910#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-20413910</guid>  
+      <pubDate>Wed, 21 Nov 2012 09:41:36 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Falkland Islands</title>  
+      <description>Provides an overview, basic facts and key events for this remote British overseas territory</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-18425572#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-18425572</guid>  
+      <pubDate>Wed, 13 Jun 2012 11:20:31 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>French Guiana profile</title>  
+      <description>Provides an overview of this French overseas territory</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-20376142#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-20376142</guid>  
+      <pubDate>Tue, 20 Nov 2012 13:40:12 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Guadeloupe profile</title>  
+      <description>Provides an overview, basic information and key dates for this French dependency in the Caribbean</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-20313500#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-20313500</guid>  
+      <pubDate>Tue, 13 Nov 2012 13:20:18 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Martinique profile</title>  
+      <description>Provides an overview, basic information and key dates for this French overseas territory</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-20259685#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-20259685</guid>  
+      <pubDate>Thu, 08 Nov 2012 17:35:57 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Montserrat profile</title>  
+      <description>Provides an overview, basic information and key dates for Montserrat, a British overseas territory</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-20256517#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-20256517</guid>  
+      <pubDate>Thu, 08 Nov 2012 14:58:30 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Puerto Rico profile</title>  
+      <description>Provides and overview as well as facts and figures for this small dependency of the United States situated in the Caribbean</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-17139243#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-17139243</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:24:00 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Turks and Caicos profile</title>  
+      <description>Provides an overview of the Turks and Caicos, including key events and facts for this British overseas territory</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-20252929#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-20252929</guid>  
+      <pubDate>Fri, 16 Nov 2012 10:53:56 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>VIDEO: Dissident Cuban blogger booed in Brazil</title>  
+      <description>Dissident Cuban blogger Yoani Sanchez is met with protests in Brazil on her first trip abroad after taking advantage of newly-eased travel regulations.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-21510993#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-21510993</guid>  
+      <pubDate>Tue, 19 Feb 2013 20:48:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65963000/jpg/_65963565_yoani_sanchez.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65963000/jpg/_65963566_yoani_sanchez.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Mixed reactions to Chavez return</title>  
+      <description>People on the streets of Caracas speak to the BBC about the return of President Hugo Chavez to Venezuela following months of cancer treatment in Cuba.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-21499462#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-21499462</guid>  
+      <pubDate>Mon, 18 Feb 2013 17:11:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65944000/jpg/_65944314_venezuela.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65946000/jpg/_65946676_venezuela.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Chavez's return officially announced</title>  
+      <description>Venezuela's information minister and vice-president take to state television to officially announce that President Hugo Chavez has returned home following cancer surgery in Cuba.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-21498684#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-21498684</guid>  
+      <pubDate>Mon, 18 Feb 2013 14:03:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65944000/jpg/_65944162_chav.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65944000/jpg/_65944163_chav.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Clean up after world's biggest carnival</title>  
+      <description>Preliminary figures suggests there has been a 20% increase in rubbish left on the streets of Rio after the Carnival compared to last year.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-21475570#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-21475570</guid>  
+      <pubDate>Fri, 15 Feb 2013 22:32:30 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65911000/jpg/_65911022_de36.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65911000/jpg/_65911023_de36.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ecuador's Correa eyes re-election</title>  
+      <description>Why Ecuador's leader seems set for four more years</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-21379601#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-21379601</guid>  
+      <pubDate>Thu, 14 Feb 2013 18:51:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65779000/jpg/_65779796_65779688.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65779000/jpg/_65779797_65779688.jpg"/> 
+    </item>  
+    <item> 
+      <title>A Feast to celebrate Yoruba culture</title>  
+      <description>Play tells story of Nigerian deity who ends up on Cuba streets</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21389976#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21389976</guid>  
+      <pubDate>Thu, 14 Feb 2013 09:51:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65835000/jpg/_65835679_feast-photoericrichmond.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65835000/jpg/_65835802_feast-photoericrichmond.jpg"/> 
+    </item>  
+    <item> 
+      <title>How many Roman Catholics are there in the world?</title>  
+      <description>More than 40% of Roman Catholics live in Latin America</description>  
+      <link>http://www.bbc.co.uk/news/world-21443313#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-21443313</guid>  
+      <pubDate>Wed, 13 Feb 2013 15:49:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65873000/jpg/_65873206_cardinals_ap.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65873000/jpg/_65873207_cardinals_ap.jpg"/> 
+    </item>  
+    <item> 
+      <title>In pictures: Rio de Janeiro's Carnival</title>  
+      <description>Rio's Carnival comes to a colourful climax</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-21424066#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-21424066</guid>  
+      <pubDate>Tue, 12 Feb 2013 08:08:53 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65836000/jpg/_65836996_beija-flor_afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65836000/jpg/_65836997_beija-flor_afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Why Neymar is staying in Brazil</title>  
+      <description>Tim Vickery on why Neymar is happy to stay in Brazil</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21409456</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21409456</guid>  
+      <pubDate>Mon, 11 Feb 2013 11:19:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65816000/jpg/_65816632_neymar1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65816000/jpg/_65816634_neymar1.jpg"/> 
+    </item>  
+    <item> 
+      <title>How safe do women feel on a night out?</title>  
+      <description>How young women in Rio and other world cities try to stay safe</description>  
+      <link>http://www.bbc.co.uk/news/magazine-21186182#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-21186182</guid>  
+      <pubDate>Wed, 13 Feb 2013 10:50:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65850000/jpg/_65850068_jilldancing.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65850000/jpg/_65850069_jilldancing.jpg"/> 
+    </item>  
+    <item> 
+      <title>How positive thinking toppled Pinochet</title>  
+      <description>How a publicity whizz kid toppled Chile's Augusto Pinochet</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21321833#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21321833</guid>  
+      <pubDate>Wed, 06 Feb 2013 03:38:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65709000/jpg/_65709483_pasandorevista.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65709000/jpg/_65709484_pasandorevista.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

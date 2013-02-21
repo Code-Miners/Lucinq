@@ -14,7 +14,6 @@ namespace Lucinq
 
 		public LuceneSearch(string indexPath)
 		{
-			//@"D:\tfs\3chillies.visualstudio.com\TwoBirds\Data\indexes\BirdAndBird"
 			IndexSearcher = new IndexSearcher(FSDirectory.Open(new DirectoryInfo(indexPath)), true);
 		}
 

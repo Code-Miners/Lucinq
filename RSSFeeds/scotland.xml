@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Scotland</title>  
+    <link>http://www.bbc.co.uk/news/scotland/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Scotland section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 19:21:46 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Scotland</title>  
+      <link>http://www.bbc.co.uk/news/scotland/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/scotland/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Scots unemployment falls by 13,000</title>  
+      <description>Scotland's jobless total fell by 13,000 to 206,000 between October and December, according to official figures.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-business-21510375#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-business-21510375</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:42:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972871_010396307-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972872_010396307-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bridge corrosion problems 'resolved'</title>  
+      <description>Corrosion problems on the Forth Road Bridge appear to have been resolved, according to the latest inspection reports.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-edinburgh-east-fife-21522376#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-edinburgh-east-fife-21522376</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:11:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65979000/jpg/_65979439_007354614-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65979000/jpg/_65979440_007354614-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Tanker drivers to take strike action</title>  
+      <description>Tanker drivers at Grangemouth oil refinery are to take industrial action at the end of the week in a dispute over pensions and pay.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-tayside-central-21518372#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-tayside-central-21518372</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:08:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973117_fuelcan.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973118_fuelcan.jpg"/> 
+    </item>  
+    <item> 
+      <title>Forth searched over missing student</title>  
+      <description>Central Scotland Police are to carry out a search of the Forth Estuary as they continue efforts to trace a missing teenager.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-tayside-central-21524726#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-tayside-central-21524726</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:48:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983960_ohalloran.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983961_ohalloran.jpg"/> 
+    </item>  
+    <item> 
+      <title>Man arrested over Edinburgh death</title>  
+      <description>A 24-year old man who was discovered with serious injuries in a house in Edinburgh has died.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-edinburgh-east-fife-21519017#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-edinburgh-east-fife-21519017</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:43:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974062_dsc_7565.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974063_dsc_7565.jpg"/> 
+    </item>  
+    <item> 
+      <title>Manager Smith exits Dundee post</title>  
+      <description>Scottish Premier League club Dundee have parted company with manager Barry Smith.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21521521</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21521521</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:47:48 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978190_8345585.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978191_8345585.jpg"/> 
+    </item>  
+    <item> 
+      <title>Man admits raping Scot in Thailand</title>  
+      <description>A man confesses to raping a Scottish woman who reported being attacked by a group of men in Thailand.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-21516134#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-21516134</guid>  
+      <pubDate>Wed, 20 Feb 2013 07:10:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970294_tv000130344.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970295_tv000130344.jpg"/> 
+    </item>  
+    <item> 
+      <title>SNP defends infrastructure spending</title>  
+      <description>The Scottish government defends its spending on infrastructure after claims ministers have "over-promised and under-delivered".</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-politics-21526013#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-politics-21526013</guid>  
+      <pubDate>Wed, 20 Feb 2013 19:20:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986256_004600401-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986257_004600401-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Four years prison after knife threat</title>  
+      <description>A man who forced his way into the home of a Fife woman and threatened her while he was on bail is sentenced to four years in prison.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-edinburgh-east-fife-21519331#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-edinburgh-east-fife-21519331</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:01:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65984000/jpg/_65984655_perthsheriffcourt.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65984000/jpg/_65984656_perthsheriffcourt.jpg"/> 
+    </item>  
+    <item> 
+      <title>Man jailed for child porn images</title>  
+      <description>An Ayrshire surveyor caught with thousands of child porn images is jailed for three years.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-glasgow-west-21525345#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-glasgow-west-21525345</guid>  
+      <pubDate>Wed, 20 Feb 2013 18:14:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65984000/jpg/_65984920_64981762.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986096_64981762.jpg"/> 
+    </item>  
+    <item> 
+      <title>Report due on high-speed rail line</title>  
+      <description>The business case for building a high-speed rail link between Edinburgh and Glasgow is to be outlined by the Scottish government.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-politics-21521429#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-politics-21521429</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:29:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975837_highspeedtrain.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975838_highspeedtrain.jpg"/> 
+    </item>  
+    <item> 
+      <title>Police warning over Gumtree thefts</title>  
+      <description>Police in Edinburgh investigate a series of robberies of people who agreed to meet buyers for electronics they were selling online.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-edinburgh-east-fife-21519325#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-edinburgh-east-fife-21519325</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:49:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975961_dsc_7535.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975962_dsc_7535.jpg"/> 
+    </item>  
+    <item> 
+      <title>Eight-month fire to be extinguished</title>  
+      <description>A fire which has been smouldering in a pile of wood chips at an Aberdeenshire recycling plant since last June is to be tackled.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-north-east-orkney-shetland-21517812#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-north-east-orkney-shetland-21517812</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:47:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973604_keenanrecycling.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973666_keenanrecycling.jpg"/> 
+    </item>  
+    <item> 
+      <title>Health board sorry for care failures</title>  
+      <description>A health board apologises for failures in its care and treatment of a 92-year-old man in the weeks leading up to his death.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-highlands-islands-21520931#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-highlands-islands-21520931</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:12:14 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978542_medicalspl464.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978543_medicalspl464.jpg"/> 
+    </item>  
+    <item> 
+      <title>Naked shopper fined after 'prank'</title>  
+      <description>An Inverkeithing man who walked into his local store naked to buy cigarettes and wine is fined £500 after admitting breach of the peace.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-edinburgh-east-fife-21522454#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-edinburgh-east-fife-21522454</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:27:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65984000/jpg/_65984838_kevindickson4.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65984000/jpg/_65984911_kevindickson4.jpg"/> 
+    </item>  
+    <item> 
+      <title>Four arrested after Rangers v Annan</title>  
+      <description>Four fans are arrested in connection with an alleged disturbance at Ibrox Stadium during a Rangers versus Annan Athletic football match.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-21522447#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-21522447</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:23:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65980000/jpg/_65980163_ibrox.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65980000/jpg/_65980164_ibrox.jpg"/> 
+    </item>  
+    <item> 
+      <title>Fresh row over isles estate buyout</title>  
+      <description>A fresh war of words breaks out between a landowner and his crofting tenants on Lewis.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-highlands-islands-21517986#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-highlands-islands-21517986</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:39:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972377_-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972378_-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>STV sees profits rise and debt cut</title>  
+      <description>Media group STV increases it profits by 3% and cut its debt and says it has moved on from its dispute with ITV.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-business-21517058#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-business-21517058</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:25:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972054__51405890__49555437_stv226-1-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972055__51405890__49555437_stv226-1-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>HMV to close 37 more stores in UK</title>  
+      <description>Collapsed music and DVD retailer HMV is to close a further 37 stores, including branches in Glasgow and East Kilbride.</description>  
+      <link>http://www.bbc.co.uk/news/business-21517862#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21517862</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:31:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977360_afpg017089976.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977361_afpg017089976.jpg"/> 
+    </item>  
+    <item> 
+      <title>Man charged over pensioner robbery</title>  
+      <description>A man has been charged in connection with the robbery of a woman in her late seventies in Stirling.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-tayside-central-21518778#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-tayside-central-21518778</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:04:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973137_dsc_7555.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973138_dsc_7555.jpg"/> 
+    </item>  
+    <item> 
+      <title>City of Culture 2017 team appointed</title>  
+      <description>The team to head Aberdeen's bid to become the UK City of Culture 2017 has now been appointed, BBC Scotland can reveal.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-north-east-orkney-shetland-21518965#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-north-east-orkney-shetland-21518965</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:56:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973675_42114642.jpg"/>  
+      <media:thumbnail width="144" height="80" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974343_42114642.jpg"/> 
+    </item>  
+    <item> 
+      <title>Dolphins 'mimic call of companions'</title>  
+      <description>Marine biologists at St Andrews University say dolphins mimic the distinct whistles of their closest companions as a way of tracking them.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-edinburgh-east-fife-21507301#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-edinburgh-east-fife-21507301</guid>  
+      <pubDate>Wed, 20 Feb 2013 00:40:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65962000/jpg/_65962472_aptv016902747.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65962000/jpg/_65962473_aptv016902747.jpg"/> 
+    </item>  
+    <item> 
+      <title>Website reveals hidden landscape</title>  
+      <description>A new website is launched to help people explore an ancient landscape hidden beneath fields and woodland in north-west Caithness.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-highlands-islands-21507061#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-highlands-islands-21507061</guid>  
+      <pubDate>Wed, 20 Feb 2013 00:56:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65963000/jpg/_65963815_scan464.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65963000/jpg/_65963816_scan464.jpg"/> 
+    </item>  
+    <item> 
+      <title>Dunfermline share issue 'delayed'</title>  
+      <description>Dunfermline cancel the launch of a new share issue due on Wednesday but say the offer will go ahead soon.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21522345</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21522345</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:43:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65979000/gif/_65979577_44935687.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65979000/gif/_65979576_44944163.gif"/> 
+    </item>  
+    <item> 
+      <title>Norovirus closes city hospital wards</title>  
+      <description>Eight out of nine wards at an Edinburgh hospital are closed to new patients due to an outbreak of norovirus.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-edinburgh-east-fife-21513877#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-edinburgh-east-fife-21513877</guid>  
+      <pubDate>Tue, 19 Feb 2013 20:49:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967190_004937361-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967364_004937361-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>School plan receives 12,000 comments</title>  
+      <description>More than 12,00 people take part in a public consultation into building a new Portobello High School in an Edinburgh field.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-edinburgh-east-fife-21447093#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-edinburgh-east-fife-21447093</guid>  
+      <pubDate>Wed, 13 Feb 2013 16:35:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65868000/jpg/_65868861_59388362.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65868000/jpg/_65868862_59388362.jpg"/> 
+    </item>  
+    <item> 
+      <title>Weir Group in £55m spending spree</title>  
+      <description>Glasgow engineering company Weir Group makes three acquisitions in three different countries for a total of £55m.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-business-21517055#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-business-21517055</guid>  
+      <pubDate>Wed, 20 Feb 2013 08:48:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971389_weir.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971390_weir.jpg"/> 
+    </item>  
+    <item> 
+      <title>Clyde Blowers in North Sea move</title>  
+      <description>Clyde Blowers Capital is poised to move into the oil and gas sector after buying a US energy services business.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-business-21521246#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-business-21521246</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:32:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978374_65978369.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65982000/jpg/_65982078_65978369.jpg"/> 
+    </item>  
+    <item> 
+      <title>Murder accused 'held Lynda Spence'</title>  
+      <description>One of the men accused of murdering missing financial adviser Lynda Spence told his former partner he had held her at a house, a court hears.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-glasgow-west-21506952#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-glasgow-west-21506952</guid>  
+      <pubDate>Tue, 19 Feb 2013 16:21:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65957000/jpg/_65957186_spin-spence6.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65961000/jpg/_65961305_spin-spence6.jpg"/> 
+    </item>  
+    <item> 
+      <title>Drivers blamed for bridge delays</title>  
+      <description>Drivers of two lorries carrying abnormal loads are to be reported after being accused of causing delays on the Kessock Bridge.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-highlands-islands-21524978#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-highlands-islands-21524978</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:44:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983474_kessockbrig_im_464.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983475_kessockbrig_im_464.jpg"/> 
+    </item>  
+    <item> 
+      <title>Crofters given first refusal on isle</title>  
+      <description>Residents on Great Bernera have been given until April to decide whether to take over the isle in a community buyout.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-highlands-islands-21517991#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-highlands-islands-21517991</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:59:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974705_greatbernera464.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974706_greatbernera464.jpg"/> 
+    </item>  
+    <item> 
+      <title>Scotland 'faces EU funding cut'</title>  
+      <description>Scotland is facing a disproportionate cut in European structural funds thought to be worth about a quarter-of-a-billion pounds, SNP ministers claim.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-politics-21508779#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-politics-21508779</guid>  
+      <pubDate>Tue, 19 Feb 2013 18:33:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65962000/jpg/_65962023_017013399-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65962000/jpg/_65962024_017013399-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Shetland set for £12m budget cut</title>  
+      <description>Shetland Islands Council is to cut its budget by almost £12.5m next year.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-north-east-orkney-shetland-21519532#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-north-east-orkney-shetland-21519532</guid>  
+      <pubDate>Wed, 20 Feb 2013 15:54:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981995_shetland_hq.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981996_shetland_hq.jpg"/> 
+    </item>  
+    <item> 
+      <title>Peterhead set for new police station</title>  
+      <description>Councillors are being asked to give their approval to plans for a new police station in Peterhead.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-north-east-orkney-shetland-21523369#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-north-east-orkney-shetland-21523369</guid>  
+      <pubDate>Wed, 20 Feb 2013 15:53:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981987_grampian_police_back2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981988_grampian_police_back2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Campaign planned against footbridge</title>  
+      <description>A foot and cycle bridge over the River Dee at Braemar is not needed, it is claimed.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-north-east-orkney-shetland-21517810#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-north-east-orkney-shetland-21517810</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:51:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972723_braemarbridgeplan.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972724_braemarbridgeplan.jpg"/> 
+    </item>  
+    <item> 
+      <title>Hospital infection improvements made</title>  
+      <description>The Healthcare Environment Inspectorate finds improvements in measures to help reduce infection risks at the Borders General Hospital.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-south-scotland-21519687#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-south-scotland-21519687</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:08:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974877_2450944_25ce4acc-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974878_2450944_25ce4acc-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Spending study uncovers failings</title>  
+      <description>An investigation into the financial management of social work in Dumfries and Galloway uncovers a number of failings.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-south-scotland-21517926#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-south-scotland-21517926</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:48:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972498__50416223__48383375_council006-1-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972499__50416223__48383375_council006-1-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Disaster survivor dies 60 years on</title>  
+      <description>A County Antrim man who was one of the few remaining survivors of the 1953 Princess Victoria ferry disaster has died, 60 years on from the tragedy.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21516170#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21516170</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:33:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65979000/jpg/_65979252_photo.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65979000/jpg/_65979253_photo.jpg"/> 
+    </item>  
+    <item> 
+      <title>Falkirk goalkeeper given driving ban</title>  
+      <description>Falkirk goalkeeper Graham Bowman is fined and banned from the roads after pleading guilty to drink driving.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-tayside-central-21518781#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-tayside-central-21518781</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:39:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65980000/jpg/_65980267_grahambowmansps2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65980000/jpg/_65980268_grahambowmansps2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Woman, 86, injured in car crash</title>  
+      <description>An 86-year old woman has been taken to hospital with serious injuries following a car crash in Abernethy town centre.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-tayside-central-21523731#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-tayside-central-21523731</guid>  
+      <pubDate>Wed, 20 Feb 2013 15:54:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981421_dsc_7494.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981573_dsc_7494.jpg"/> 
+    </item>  
+    <item> 
+      <title>Nature reserve plans given support</title>  
+      <description>Scottish Natural Heritage has given its backing to plans to create a new local nature reserve near Stenhousemuir.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-tayside-central-21523971#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-tayside-central-21523971</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:27:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981582_carrondamsgoogle.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981937_carrondamsgoogle.jpg"/> 
+    </item>  
+    <item> 
+      <title>Meat scandal 'boosting Scots beef'</title>  
+      <description>Scottish meat sales have increased since the start of the horsemeat scandal because of its reputation for quality, Scots ministers say.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-business-21502789#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-business-21502789</guid>  
+      <pubDate>Tue, 19 Feb 2013 16:19:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65962000/jpg/_65962694_beef.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65962000/jpg/_65962695_beef.jpg"/> 
+    </item>  
+    <item> 
+      <title>Universities urge fees cap rethink</title>  
+      <description>University leaders call for a rethink of plans to introduce a legally-enforceable cap on fees for students coming to Scotland from the rest of the UK.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-politics-21502716#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-politics-21502716</guid>  
+      <pubDate>Tue, 19 Feb 2013 17:43:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949856_students_pa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949857_students_pa.jpg"/> 
+    </item>  
+    <item> 
+      <title>'More work needed' on breastfeeding</title>  
+      <description>Extra work is needed to encourage more women to breastfeed after a "significant decrease", according to the Scottish government.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-21506107#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-21506107</guid>  
+      <pubDate>Tue, 19 Feb 2013 16:41:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65956000/jpg/_65956089_mother_breastfeeding_baby_boy-spl-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65956000/jpg/_65956090_mother_breastfeeding_baby_boy-spl-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>BHP Billiton boss Kloppers to retire</title>  
+      <description>Mining giant BHP Billiton says its chief executive Marius Kloppers will retire in May, and will be replaced by Andrew Mackenzie.</description>  
+      <link>http://www.bbc.co.uk/news/business-21514530#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21514530</guid>  
+      <pubDate>Tue, 19 Feb 2013 22:56:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968334_65967890.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968335_65967890.jpg"/> 
+    </item>  
+    <item> 
+      <title>Mortgage lending falls in January</title>  
+      <description>The amount of money lent to UK homebuyers fell last month to the lowest level in nine months, says the Council of Mortgage Lenders.</description>  
+      <link>http://www.bbc.co.uk/news/business-21517934#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21517934</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:35:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65984000/jpg/_65984964_80741711.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65984000/jpg/_65984965_80741711.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Wide differences' in child poverty</title>  
+      <description>Levels of child poverty vary dramatically across the UK and within regions, according to a new map that breaks down poverty rates by area.</description>  
+      <link>http://www.bbc.co.uk/news/education-21511583#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21511583</guid>  
+      <pubDate>Wed, 20 Feb 2013 02:13:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966368_footballpoorboys.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966369_footballpoorboys.jpg"/> 
+    </item>  
+    <item> 
+      <title>Cross to face Irish for Scotland</title>  
+      <description>Geoff Cross replaces Euan Murray in the Scotland line-up to face Ireland at Murrayfield.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21504709</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21504709</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:33:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977323_8212023.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977387_8212023.jpg"/> 
+    </item>  
+    <item> 
+      <title>Calderwood 'happy' to talk to Dundee</title>  
+      <description>Jimmy Calderwood says he would be happy to speak to Dundee about their managerial vacancy "if the offer came".</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21525142</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21525142</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:34:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985350_jimmy_calderwood.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985348_jimmy_calderwood.jpg"/> 
+    </item>  
+    <item> 
+      <title>Johnson hopes for winning feeling</title>  
+      <description>Interim head coach Scott Johnson is eager for Scotland to improve further in the Six Nations match against Ireland.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/21521535</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/21521535</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:13:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983993_8380427.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983991_8380427.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sgoil Ghàidhlig Ghlaschu a' fàs</title>  
+      <description>Seann seòmraichean dìomhain gan sgeadachadh airson teagaisg, agus faisg air 700 sgoilear a-nis aig Sgoil Ghàidhlig Ghlaschu.</description>  
+      <link>http://www.bbc.co.uk/naidheachdan/21517626</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/naidheachdan/21517626</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:10:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975378_f2bmwcnk.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975379_f2bmwcnk.jpg"/> 
+    </item>  
+    <item> 
+      <title>Leisgeul mu bhàs eusaintich</title>  
+      <description>NHS na Gàidhealtachd a' tabhainn leisgeul às dèidh laigsean ann an cùram a fhuair euslainteach aosta a fhuair bàs san ospadal san Ath Leathann.</description>  
+      <link>http://www.bbc.co.uk/naidheachdan/21520082</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/naidheachdan/21520082</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:40:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65980000/jpg/_65980137_007680931-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65980000/jpg/_65980138_007680931-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Planaichean Chiseòirn gam mìneachadh</title>  
+      <description>Là fosgailte ga chumail ann an Loch Carrann gus planaichean leasachaidh seann ghàraidh ola Chiseòirn a mhìneachadh don t-sluagh.</description>  
+      <link>http://www.bbc.co.uk/naidheachdan/21517621</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/naidheachdan/21517621</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:01:53 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971943_jk2dx17b.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971944_jk2dx17b.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Scottish Parliament</title>  
+      <description>Minister says a report into the high-speed rail plan for Glasgow to Edinburgh is underway.</description>  
+      <link>http://www.bbc.co.uk/democracylive/scotland-21510383</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/democracylive/scotland-21510383</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:33:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975231_65975146.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975232_65975146.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Eddie Izzard: 'I'm 2.8% Neanderthal'</title>  
+      <description>While using comedian Eddie Izzard's DNA to trace the migration of his ancestors out of Africa and into Europe, geneticist Dr Jim Wilson has discovered that Izzard is 2.8% Neanderthal.</description>  
+      <link>http://www.bbc.co.uk/news/science-environment-21507732#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/science-environment-21507732</guid>  
+      <pubDate>Wed, 20 Feb 2013 00:37:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65959000/jpg/_65959004_65952724.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65959000/jpg/_65959005_65952724.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Cannibal legend hits the big screen</title>  
+      <description>The story of cannibal Sawney Bean is proving to be hit for a first time film-maker and his family from Aberdeen.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-21506190#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-21506190</guid>  
+      <pubDate>Tue, 19 Feb 2013 16:37:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65961000/jpg/_65961957_2sawney_cu2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65961000/jpg/_65961958_2sawney_cu2.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: 'Need to understand' EU funds cut</title>  
+      <description>Scotland's Deputy First Minster Nicola Sturgeon says she wants to "better understand" why the country could be facing a disproportionate cut in European structural funds.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-politics-21518977#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-politics-21518977</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:28:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973846_euflag.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973847_euflag.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Scots SAS soldier's mementoes found</title>  
+      <description>An insight into the World War II experiences of a Scot who served with the SAS goes on public display for the first time.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-21509359#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-21509359</guid>  
+      <pubDate>Tue, 19 Feb 2013 15:14:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65959000/jpg/_65959995_2flag.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65959000/jpg/_65959996_2flag.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: David Hayman on cannibal legend</title>  
+      <description>Actor David Hayman says he relished the chance to play cannibal Sawney Bean even though the tale terrorised him as a child.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-21506181#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-21506181</guid>  
+      <pubDate>Tue, 19 Feb 2013 11:49:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65954000/jpg/_65954482_2david_hayman.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65954000/jpg/_65954483_2david_hayman.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Bill McLaren memorial unveiled</title>  
+      <description>Bill McLaren, known as the voice of rugby, is remembered in his home town of Hawick with the unveiling of a memorial.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-21506189#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-21506189</guid>  
+      <pubDate>Tue, 19 Feb 2013 15:08:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65959000/jpg/_65959804_2bill_mclaren.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65959000/jpg/_65959805_2bill_mclaren.jpg"/> 
+    </item>  
+    <item> 
+      <title>In pictures: Yang Guang style</title>  
+      <description>Edinburgh Zoo's male giant panda bulks up ahead of the mating season</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-edinburgh-east-fife-21519330#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-edinburgh-east-fife-21519330</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:03:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978383_gettytv017279877.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978384_gettytv017279877.jpg"/> 
+    </item>  
+    <item> 
+      <title>Emeli Sande: 'Last year was surreal'</title>  
+      <description>Brit nominee Emile Sande on fame's highs and lows</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21503470#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21503470</guid>  
+      <pubDate>Wed, 20 Feb 2013 08:19:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952843_65952679.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65953000/jpg/_65953015_65952679.jpg"/> 
+    </item>  
+    <item> 
+      <title>Pursuing a financial claim</title>  
+      <description>Advice on issues such as PPI and credit and debit card purchases</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-21521240#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-21521240</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:49:14 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977891_coins.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977892_coins.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Smelly' fans remind people to eat</title>  
+      <description>Could a 'smelly fan' help people with memory problems?</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-21485333#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-21485333</guid>  
+      <pubDate>Tue, 19 Feb 2013 09:15:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65928000/jpg/_65928944_smelly-fan.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65928000/jpg/_65928945_smelly-fan.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: From Nasa to a Scottish bookshop</title>  
+      <description>One woman's journey from Nasa to a Scottish bookshop</description>  
+      <link>http://www.bbc.co.uk/news/magazine-21472543#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-21472543</guid>  
+      <pubDate>Tue, 19 Feb 2013 00:20:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65918000/jpg/_65918608_65914757.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65918000/jpg/_65918609_65914757.jpg"/> 
+    </item>  
+    <item> 
+      <title>Your pictures</title>  
+      <description>A selection of your images taken across Scotland</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-21443744#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-21443744</guid>  
+      <pubDate>Fri, 15 Feb 2013 11:48:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65950000/jpg/_65950623_sunrise.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951283_sunrise.jpg"/> 
+    </item>  
+    <item> 
+      <title>Audience plea for TV debate</title>  
+      <description>BBC's Newsnight Scotland appeals for debate audience</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-politics-21441263#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-politics-21441263</guid>  
+      <pubDate>Wed, 13 Feb 2013 16:54:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65874000/jpg/_65874671_434-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65874000/jpg/_65874672_434-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>What the Scottish papers say</title>  
+      <description>The stories making the headlines in Scotland's newspapers.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-13403807#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-13403807</guid>  
+      <pubDate>Wed, 20 Feb 2013 08:14:40 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/62778000/jpg/_62778130_sunday_newspapers003.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/62778000/jpg/_62778131_sunday_newspapers003.jpg"/> 
+    </item>  
+    <item> 
+      <title>Your pictures from across Scotland</title>  
+      <description>How to send us your images from across Scotland</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-11287381#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-11287381</guid>  
+      <pubDate>Fri, 15 Feb 2013 11:51:48 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65908000/jpg/_65908503_janet_parker.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65908000/jpg/_65908504_janet_parker.jpg"/> 
+    </item>  
+    <item> 
+      <title>Join Brian Taylor's Big Debate audience</title>  
+      <description>Join the audience for Brian Taylor's Big Debate each Friday</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-politics-15190428#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-politics-15190428</guid>  
+      <pubDate>Thu, 07 Feb 2013 15:10:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/55861000/jpg/_55861708_briantaylor_direct.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/56586000/jpg/_56586580_009434017-1.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

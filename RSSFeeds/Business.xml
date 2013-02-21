@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Business</title>  
+    <link>http://www.bbc.co.uk/news/business/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Business section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 18:09:44 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Business</title>  
+      <link>http://www.bbc.co.uk/news/business/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/business/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>UK unemployment total falls to 2.5m</title>  
+      <description>UK unemployment fell in the three months to December, while the number in work also jumped to a new record, official figures show.</description>  
+      <link>http://www.bbc.co.uk/news/business-21517854#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21517854</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:17:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972034_325l4k8x.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972035_325l4k8x.jpg"/> 
+    </item>  
+    <item> 
+      <title>4G auction raises less than forecast</title>  
+      <description>Telecoms regulator Ofcom announces the winners of its 4G mobile auction, which raises a lower-than-expected £2.34bn for the Treasury.</description>  
+      <link>http://www.bbc.co.uk/news/business-21516243#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21516243</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:05:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970424_65970271.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970425_65970271.jpg"/> 
+    </item>  
+    <item> 
+      <title>HMV to close 37 more stores in UK</title>  
+      <description>Collapsed music and DVD retailer HMV is to close a further 37 stores, affecting 464 jobs.</description>  
+      <link>http://www.bbc.co.uk/news/business-21517862#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21517862</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:31:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977360_afpg017089976.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977361_afpg017089976.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bank chief outvoted on stimulus move</title>  
+      <description>Bank of England governor Sir Mervyn King backed more action to boost the economy earlier this month, but was outvoted by his colleagues.</description>  
+      <link>http://www.bbc.co.uk/news/business-21518538#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21518538</guid>  
+      <pubDate>Wed, 20 Feb 2013 18:43:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974093_012838995-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974094_012838995-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>London Market Report</title>  
+      <description>The pound falls sharply after the Bank of England's Monetary Policy Committee minutes indicate more monetary stimulus could be on the way.</description>  
+      <link>http://www.bbc.co.uk/news/business-11899862#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-11899862</guid>  
+      <pubDate>Wed, 20 Feb 2013 18:44:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/57669000/jpg/_57669240_013489818-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/57669000/jpg/_57669232_013489818-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Mortgage lending falls in January</title>  
+      <description>The amount of money lent to UK homebuyers fell last month to the lowest level in nine months, says the Council of Mortgage Lenders.</description>  
+      <link>http://www.bbc.co.uk/news/business-21517934#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21517934</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:35:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65984000/jpg/_65984964_80741711.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65984000/jpg/_65984965_80741711.jpg"/> 
+    </item>  
+    <item> 
+      <title>Office Depot and OfficeMax to merge</title>  
+      <description>Office Depot agrees to buy its rival OfficeMax for about $1.2bn (£785m) in the first move towards consolidation in the US office supplies industry.</description>  
+      <link>http://www.bbc.co.uk/news/business-21524411#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21524411</guid>  
+      <pubDate>Wed, 20 Feb 2013 18:06:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985766_65984604.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985767_65984604.jpg"/> 
+    </item>  
+    <item> 
+      <title>Greece hit by fresh strike chaos</title>  
+      <description>Widespread disruption hits Greece as thousands of people join the first general strike of 2013 against austerity measures.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21515012#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21515012</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:06:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65982000/jpg/_65982128_65982028.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65982000/jpg/_65982129_65982028.jpg"/> 
+    </item>  
+    <item> 
+      <title>FBI to investigate Heinz trades</title>  
+      <description>The Federal Bureau of Investigation joins an investigation into suspicious share trading ahead of the Heinz takeover deal last week.</description>  
+      <link>http://www.bbc.co.uk/news/business-21516258#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21516258</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:05:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973153_heinz.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973154_heinz.jpg"/> 
+    </item>  
+    <item> 
+      <title>Gill to step down as Man Utd chief</title>  
+      <description>David Gill is to step down as Manchester United chief executive on 30 June, the Premier League club confirms.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21519522</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21519522</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:29:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65976000/jpg/_65976155_david-gill3.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65976000/jpg/_65976153_david-gill3.jpg"/> 
+    </item>  
+    <item> 
+      <title>STV sees profits rise and debt cut</title>  
+      <description>Media group STV increases it profits by 3% and cut its debt and says it has moved on from its dispute with ITV.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-business-21517058#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-business-21517058</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:25:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972054__51405890__49555437_stv226-1-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972055__51405890__49555437_stv226-1-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Carpets firm in administration talks</title>  
+      <description>Axminster Carpets, one of Devon's biggest employers, applies to go into administration bringing fears for 400 workers.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-devon-21517018#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-devon-21517018</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:04:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65982000/jpg/_65982850_65979689.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65982000/jpg/_65982851_65979689.jpg"/> 
+    </item>  
+    <item> 
+      <title>AirAsia plans Indian budget carrier</title>  
+      <description>Asia's largest low-cost carrier, AirAsia, plans to launch an Indian budget airline with India's Tata and a third investor, Telestra Tradeplace.</description>  
+      <link>http://www.bbc.co.uk/news/business-21519003#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21519003</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:26:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975427_airasia.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975428_airasia.jpg"/> 
+    </item>  
+    <item> 
+      <title>Japan posts record trade deficit</title>  
+      <description>Japan's monthly trade deficit hits a record in January after its recent monetary policy stance weakened its currency sharply.</description>  
+      <link>http://www.bbc.co.uk/news/business-21515024#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21515024</guid>  
+      <pubDate>Wed, 20 Feb 2013 04:41:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969498_105620525.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969499_105620525.jpg"/> 
+    </item>  
+    <item> 
+      <title>Record loss at Credit Agricole</title>  
+      <description>French bank Credit Agricole reports a worse-than-expected annual loss after an unexpected tax charge pushes it deeper into the red.</description>  
+      <link>http://www.bbc.co.uk/news/business-21516253#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21516253</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:40:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970557_creditagricole.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970558_creditagricole.jpg"/> 
+    </item>  
+    <item> 
+      <title>Zambia seizes Chinese-owned mine</title>  
+      <description>The Zambian government takes over the running of a troubled Chinese-owned coal mine after revoking its licence because of safety lapses.</description>  
+      <link>http://www.bbc.co.uk/news/business-21520478#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21520478</guid>  
+      <pubDate>Wed, 20 Feb 2013 15:34:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981121_collummine.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981122_collummine.jpg"/> 
+    </item>  
+    <item> 
+      <title>Crime writer wins $51m lawsuit</title>  
+      <description>Crime writer Patricia Cornwell wins a $51m (£33m) suit against her former financial managers, after a jury agrees their negligence cost her millions.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21511617#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21511617</guid>  
+      <pubDate>Tue, 19 Feb 2013 22:08:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967150_65964758.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967151_65964758.jpg"/> 
+    </item>  
+    <item> 
+      <title>Apple computers 'hacked' in breach</title>  
+      <description>Computers used by Apple employees were hacked by the same attackers who targeted Facebook, the iPhone-maker says.</description>  
+      <link>http://www.bbc.co.uk/news/technology-21510791#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21510791</guid>  
+      <pubDate>Tue, 19 Feb 2013 18:45:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966427_mac1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966428_mac1.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Wide differences' in child poverty</title>  
+      <description>Levels of child poverty vary dramatically across the UK and within regions, according to a new map that breaks down poverty rates by area.</description>  
+      <link>http://www.bbc.co.uk/news/education-21511583#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21511583</guid>  
+      <pubDate>Wed, 20 Feb 2013 02:13:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966368_footballpoorboys.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966369_footballpoorboys.jpg"/> 
+    </item>  
+    <item> 
+      <title>Lloyds fined for PPI payment delay</title>  
+      <description>Lloyds Banking Group is fined £4.3m for delaying compensation payments to 140,000 customers over Payment Protection Insurance (PPI) mis-selling.</description>  
+      <link>http://www.bbc.co.uk/news/business-21505351#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21505351</guid>  
+      <pubDate>Tue, 19 Feb 2013 12:22:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65953000/jpg/_65953489_uozhmdq4.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65953000/jpg/_65953490_uozhmdq4.jpg"/> 
+    </item>  
+    <item> 
+      <title>Watchdog warns of energy bill rises</title>  
+      <description>Consumers face higher energy bills as the UK becomes more reliant on imports, the chief of the energy watchdog warns.</description>  
+      <link>http://www.bbc.co.uk/news/business-21501878#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21501878</guid>  
+      <pubDate>Tue, 19 Feb 2013 17:21:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949418_65949315.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949419_65949315.jpg"/> 
+    </item>  
+    <item> 
+      <title>Obama warns 'cuts mean job losses'</title>  
+      <description>US President Barack Obama warns that deep, across-the-board spending cuts due to take effect next month would cause job losses and must be averted.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21508658#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21508658</guid>  
+      <pubDate>Tue, 19 Feb 2013 19:48:20 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65963000/jpg/_65963923_65963687.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65963000/jpg/_65963924_65963687.jpg"/> 
+    </item>  
+    <item> 
+      <title>High Street vacancies 'stabilise'</title>  
+      <description>The percentage of shops lying empty in the UK's High Streets and shopping centres stabilised last year, a report says.</description>  
+      <link>http://www.bbc.co.uk/news/business-21503035#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21503035</guid>  
+      <pubDate>Tue, 19 Feb 2013 12:23:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65956000/jpg/_65956747_ozkvsmlq.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65956000/jpg/_65956748_ozkvsmlq.jpg"/> 
+    </item>  
+    <item> 
+      <title>Debit cards 'to give way to phones'</title>  
+      <description>The use of debit cards could decline within the next eight years, says the UK Payments Council, as we start to make payments by mobile phone.</description>  
+      <link>http://www.bbc.co.uk/news/business-21504319#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21504319</guid>  
+      <pubDate>Tue, 19 Feb 2013 12:44:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65955000/jpg/_65955862_78281926.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65955000/jpg/_65955863_78281926.jpg"/> 
+    </item>  
+    <item> 
+      <title>BHP Billiton boss Kloppers to retire</title>  
+      <description>Mining giant BHP Billiton says its chief executive Marius Kloppers will retire in May, and will be replaced by Andrew Mackenzie.</description>  
+      <link>http://www.bbc.co.uk/news/business-21514530#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21514530</guid>  
+      <pubDate>Tue, 19 Feb 2013 22:56:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968334_65967890.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968335_65967890.jpg"/> 
+    </item>  
+    <item> 
+      <title>Dell sales fall ahead of buyout</title>  
+      <description>Computer maker Dell reports a drop in sales but its earnings still beat expectations, in what could be its last set of results as a public company.</description>  
+      <link>http://www.bbc.co.uk/news/business-21514023#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21514023</guid>  
+      <pubDate>Tue, 19 Feb 2013 22:09:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967883_65967545.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967884_65967545.jpg"/> 
+    </item>  
+    <item> 
+      <title>Nestle finds horsemeat in beef meals</title>  
+      <description>The world's biggest food company, Nestle, has removed beef pasta meals from shelves in Italy and Spain after tests revealed traces of horse DNA.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21501568#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21501568</guid>  
+      <pubDate>Tue, 19 Feb 2013 13:39:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949063_nestle2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949064_nestle2.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Action needed' on football fixing</title>  
+      <description>Football officials say countries and organisations must do more to tackle corruption, at a conference on match-fixing in Kuala Lumpur.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21515491#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21515491</guid>  
+      <pubDate>Wed, 20 Feb 2013 07:27:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970415_65970163.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970416_65970163.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sporting village plan for Belfast</title>  
+      <description>Discussions are under way about transforming the Boucher Road area of south Belfast into a sporting village.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-21514346#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-21514346</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:07:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977220_11150_sk752imagesrev2-1crop2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977221_11150_sk752imagesrev2-1crop2.jpg"/> 
+    </item>  
+    <item> 
+      <title>World Cup to use goal-line system</title>  
+      <description>Fifa says goal-line technology will be used at the 2014 World Cup in Brazil, after successful Club World Cup trial.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21505488</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21505488</guid>  
+      <pubDate>Tue, 19 Feb 2013 12:47:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/61395000/jpg/_61395847_frank_lampard.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/61395000/jpg/_61395851_frank_lampard.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Costa jobs draw 1,700 applications</title>  
+      <description>More than 1,700 people applied for just eight jobs at a new Costa Coffee shop in Nottingham.</description>  
+      <link>http://www.bbc.co.uk/news/business-21521125#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21521125</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:01:20 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981873_65980434.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981874_65980434.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 4G auction pricing 'fair' say EE</title>  
+      <description>The prices paid by mobile phone operators for the UK's 4G spectrum was "fair" according to the boss of Everything Everywhere.</description>  
+      <link>http://www.bbc.co.uk/news/business-21521120#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21521120</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:09:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978869_65978246.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978870_65978246.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Carpet firm in administration talks</title>  
+      <description>Axminster Carpets, one of Devon's biggest employers, has applied to go into administration.</description>  
+      <link>http://www.bbc.co.uk/news/business-21525825#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21525825</guid>  
+      <pubDate>Wed, 20 Feb 2013 18:29:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986165_65986156.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986206_65986156.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Sony putting hopes on PS4 launch</title>  
+      <description>Sony is launching its new PlayStation in an effort to recapture both a share of the market and the enthusiasm for purpose-built games consoles.</description>  
+      <link>http://www.bbc.co.uk/news/business-21516195#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21516195</guid>  
+      <pubDate>Wed, 20 Feb 2013 07:58:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970474_017022321-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970909_017022321-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Young people 'struggling to find jobs'</title>  
+      <description>Despite an overall fall in UK unemployment, youth unemployment has risen slightly according to official figures.</description>  
+      <link>http://www.bbc.co.uk/news/business-21521118#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21521118</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:47:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65976000/jpg/_65976965_65976956.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977407_65976956.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Bank bonus cap 'will not reduce risk'</title>  
+      <description>Negotiations to introduce a bonus cap in the European Union have stalled after EU countries and the bloc's parliament clashed over how far to go in curbing pay for the industry's top earners.</description>  
+      <link>http://www.bbc.co.uk/news/business-21518280#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21518280</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:43:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972900_017271028.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972901_017271028.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: China denies cyber attack allegations</title>  
+      <description>China is denying allegations that a secretive branch of its military is responsible for cyber attacks on global companies.</description>  
+      <link>http://www.bbc.co.uk/news/business-21514872#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21514872</guid>  
+      <pubDate>Wed, 20 Feb 2013 03:21:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969604_000105483.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969605_000105483.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: 'Getting the price right' on oil barrels</title>  
+      <description>Platts, the oil pricing agency, is proposing changes to the way it assesses the Brent oil market, in terms of the price of oil per barrel.</description>  
+      <link>http://www.bbc.co.uk/news/uk-21518098#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-21518098</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:12:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973354_65972680.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973355_65972680.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sony PlayStation 4 faces challenges</title>  
+      <description>What does the PlayStation 4 have in store for Sackboy and Sony's other characters?</description>  
+      <link>http://www.bbc.co.uk/news/technology-21479858#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21479858</guid>  
+      <pubDate>Wed, 20 Feb 2013 00:00:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968601_littlke.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968602_littlke.jpg"/> 
+    </item>  
+    <item> 
+      <title>How does illegal sports betting work?</title>  
+      <description>How does illegal sports betting work and what are the fears?</description>  
+      <link>http://www.bbc.co.uk/news/business-21501858#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21501858</guid>  
+      <pubDate>Tue, 19 Feb 2013 22:05:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952518_161450489.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952589_161450489.jpg"/> 
+    </item>  
+    <item> 
+      <title>How care fee reforms may affect you</title>  
+      <description>How plans for paying for long-term care affect you</description>  
+      <link>http://www.bbc.co.uk/news/business-21507462#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21507462</guid>  
+      <pubDate>Tue, 19 Feb 2013 23:27:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65960000/jpg/_65960251_xf8bilb9.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65960000/jpg/_65960252_xf8bilb9.jpg"/> 
+    </item>  
+    <item> 
+      <title>Could we all soon own a drone?</title>  
+      <description>Soon we could all have one</description>  
+      <link>http://www.bbc.co.uk/news/business-21432170#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21432170</guid>  
+      <pubDate>Tue, 19 Feb 2013 01:56:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65852000/jpg/_65852020_lifestyle_ardrone2_ny_stree.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65852000/jpg/_65852021_lifestyle_ardrone2_ny_stree.jpg"/> 
+    </item>  
+    <item> 
+      <title>One couple's mission to find a better work/life balance</title>  
+      <description>One couple's mission to find a better work/life balance</description>  
+      <link>http://www.bbc.co.uk/news/business-21302969#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21302969</guid>  
+      <pubDate>Sun, 17 Feb 2013 22:15:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65894000/jpg/_65894018_young-house.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65894000/jpg/_65894019_young-house.jpg"/> 
+    </item>  
+    <item> 
+      <title>How to make the best of a bad job</title>  
+      <description>How to make low-skilled jobs more attractive</description>  
+      <link>http://www.bbc.co.uk/news/business-21461519#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21461519</guid>  
+      <pubDate>Sun, 17 Feb 2013 22:34:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65908000/jpg/_65908241_messi-getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65917000/jpg/_65917625_messi-getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Chinese buy up Bordeaux's wines</title>  
+      <description>How China's consumers are turning to Bordeaux</description>  
+      <link>http://www.bbc.co.uk/news/business-21292824#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21292824</guid>  
+      <pubDate>Sun, 17 Feb 2013 23:26:48 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65729000/jpg/_65729417_chinesestudents.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65729000/jpg/_65729418_chinesestudents.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

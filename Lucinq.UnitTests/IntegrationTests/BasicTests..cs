@@ -11,8 +11,6 @@ namespace Lucinq.UnitTests.IntegrationTests
 	{
 		#region [ Fields ]
 
-		private const string indexPath = @"D:\tfs\3chillies.visualstudio.com\TwoBirds\Data\indexes\BirdAndBird";
-
 		private LuceneSearch search;
 		
 		#endregion
@@ -21,7 +19,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 		public LuceneSearch Search
 		{
-			get { return search ?? (search = new LuceneSearch(indexPath)); }
+			get { return search ?? (search = new LuceneSearch(GeneralConstants.Paths.BBCIndex)); }
 		}
 
 		#endregion
@@ -31,7 +29,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		{
 			IQueryBuilder queryBuilder = new QueryBuilder();
 
-			queryBuilder.Term("_name", "work");
+			queryBuilder.Term(BBCFields.Title, "africa");
 
 			var results = ExecuteAndAssert(queryBuilder, 8);
 
@@ -48,7 +46,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		public void SingleTermSetupSuccessful()
 		{
 			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Setup(x => x.Term("_name", "work"));
+			queryBuilder.Setup(x => x.Term(BBCFields.Title, "africa"));
 
 			ExecuteAndAssert(queryBuilder, 8);
 		}
@@ -60,12 +58,11 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 			queryBuilder.Or
 				(
-					BooleanClause.Occur.MUST,
-					x => x.Term("_name", "work"),
-					x => x.Term("_name", "text")
+					x => x.Term(BBCFields.Title, "africa"),
+					x => x.Term(BBCFields.Title, "europe")
 				);
 
-			ExecuteAndAssert(queryBuilder, 16);
+			ExecuteAndAssert(queryBuilder, 12);
 		}
 
 		[Test]
@@ -75,11 +72,11 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 			queryBuilder.And
 				(
-					x => x.Term("_name", "work"),
-					x => x.Term("_name", "highlights")
+					x => x.Term(BBCFields.Title, "africa"),
+					x => x.Term(BBCFields.Title, "road")
 				);
 
-			ExecuteAndAssert(queryBuilder, 4);
+			ExecuteAndAssert(queryBuilder, 1);
 		}
 
 		[Test]
@@ -87,16 +84,16 @@ namespace Lucinq.UnitTests.IntegrationTests
 		{
 			IQueryBuilder queryBuilder = new QueryBuilder();
 
-			queryBuilder.Term("_name", "home", key: "highlightscriteria");
+			queryBuilder.Term(BBCFields.Title, "africa", key: "africacriteria");
 
-			var results = ExecuteAndAssert(queryBuilder, 4);
+			var results = ExecuteAndAssert(queryBuilder, 8);
 
-			queryBuilder.Queries.Remove("highlightscriteria");
-			queryBuilder.Term("_name", "work", key: "workcriteria");
+			queryBuilder.Queries.Remove("africacriteria");
+			queryBuilder.Term(BBCFields.Title, "report", key: "businesscriteria");
 
 			Console.WriteLine("\r\nSecond Criteria");
 
-			var results2 = ExecuteAndAssert(queryBuilder, 8);
+			var results2 = ExecuteAndAssert(queryBuilder, 5);
 
 			Assert.AreNotEqual(results.TotalHits, results2.TotalHits);
 		}
@@ -105,8 +102,8 @@ namespace Lucinq.UnitTests.IntegrationTests
 		public void EasyOr()
 		{
 			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Terms("_name", new[] {"home", "work"}, occur:BooleanClause.Occur.SHOULD);
-			var results = ExecuteAndAssert(queryBuilder, 12);
+			queryBuilder.Terms(BBCFields.Title, new[] {"europe", "africa"}, BooleanClause.Occur.SHOULD);
+			ExecuteAndAssert(queryBuilder, 12);
 		}
 
 		/*[Test]
@@ -121,17 +118,17 @@ namespace Lucinq.UnitTests.IntegrationTests
 		public void EasyAnd()
 		{
 			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Terms("_name", new[] { "highlight", "work" }, occur: BooleanClause.Occur.MUST);
-			var results = ExecuteAndAssert(queryBuilder, 4);
+			queryBuilder.Terms(BBCFields.Title, new[] { "africa", "road" }, occur: BooleanClause.Occur.MUST);
+			ExecuteAndAssert(queryBuilder, 1);
 		}
 
 		[Test]
 		public void SimpleWildCardQuery()
 		{
 			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Setup(x => x.WildCard("_name", "h*"));
+			queryBuilder.Setup(x => x.WildCard(BBCFields.Description, "a*"));
 
-			ExecuteAndAssert(queryBuilder, 16);
+			ExecuteAndAssert(queryBuilder, 902);
 		}
 
 		[Test]
@@ -140,17 +137,11 @@ namespace Lucinq.UnitTests.IntegrationTests
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup
 				(
-					x => x.WildCard("_name", "*highlights"),
-					x => x.Term("_name", "work")
+					x => x.WildCard(BBCFields.Description, "a*"),
+					x => x.Term(BBCFields.Description, "police")
 				);
 
-			ExecuteAndAssert(queryBuilder, 4);
-		}
-
-		[Test]
-		public void RemoveTerms()
-		{
-			
+			ExecuteAndAssert(queryBuilder, 17);
 		}
 
 		[Test]
@@ -159,7 +150,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup
 				(
-					x => x.WildCard("_name", "*highlights"),
+					x => x.WildCard("_name", "a*"),
 					x => x.Term("_name", "work"),
 					x => x.Group().Setup
 							(
@@ -178,7 +169,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 			foreach (Document document in Search.GetTopDocuments(results))
 			{
-				Console.WriteLine(document.GetValues("_name")[0]);
+				Console.WriteLine(document.GetValues(BBCFields.Title)[0]);
 			}
 
 			Assert.AreEqual(numberOfHitsExpected, results.TotalHits);

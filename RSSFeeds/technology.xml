@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Technology</title>  
+    <link>http://www.bbc.co.uk/news/technology/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Technology section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 14:30:02 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Technology</title>  
+      <link>http://www.bbc.co.uk/news/technology/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/technology/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>4G auction raises less than forecast</title>  
+      <description>Telecoms regulator Ofcom announces the winners of its 4G mobile auction, which raises a lower-than-expected £2.34bn for the Treasury.</description>  
+      <link>http://www.bbc.co.uk/news/business-21516243#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21516243</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:05:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970424_65970271.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970425_65970271.jpg"/> 
+    </item>  
+    <item> 
+      <title>New Google Glass features unveiled</title>  
+      <description>Google reveals more details about its smart glasses project and invites "creative individuals" to try out the device.</description>  
+      <link>http://www.bbc.co.uk/news/technology-21519859#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21519859</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:28:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65979000/jpg/_65979619_65977785.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65979000/jpg/_65979620_65977785.jpg"/> 
+    </item>  
+    <item> 
+      <title>Apple offers users update after hack</title>  
+      <description>Apple has released a software update after the company admitted a security flaw had left its own employees' computers exposed to hackers.</description>  
+      <link>http://www.bbc.co.uk/news/technology-21519856#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21519856</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:48:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977748_154437283.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977779_154437283.jpg"/> 
+    </item>  
+    <item> 
+      <title>Crowdfunders win African app prize</title>  
+      <description>SliceBiz, a Ghana-based service which seeks to popularise crowdfunded investment in Africa, is among the latest Apps4Africa winners.</description>  
+      <link>http://www.bbc.co.uk/news/technology-21513287#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21513287</guid>  
+      <pubDate>Wed, 20 Feb 2013 04:09:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969556_kitche.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969557_kitche.jpg"/> 
+    </item>  
+    <item> 
+      <title>China condemns US hacking report</title>  
+      <description>China's military says a report linking it to prolific hacking of US targets is flawed, as the US says it has repeatedly raised concerns about cyber theft with Beijing.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21515259#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21515259</guid>  
+      <pubDate>Wed, 20 Feb 2013 07:30:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969783_017270774-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969784_017270774-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Apple computers 'hacked' in breach</title>  
+      <description>Computers used by Apple employees were hacked by the same attackers who targeted Facebook, the iPhone-maker says.</description>  
+      <link>http://www.bbc.co.uk/news/technology-21510791#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21510791</guid>  
+      <pubDate>Tue, 19 Feb 2013 18:45:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966427_mac1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966428_mac1.jpg"/> 
+    </item>  
+    <item> 
+      <title>HTC unveils new flagship smartphone</title>  
+      <description>HTC has unveiled its new flagship smartphone, the revamped HTC One, in an attempt to regain lost market share.</description>  
+      <link>http://www.bbc.co.uk/news/technology-21504008#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21504008</guid>  
+      <pubDate>Tue, 19 Feb 2013 15:37:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952428_htcone_silver.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952579_htcone_silver.jpg"/> 
+    </item>  
+    <item> 
+      <title>China military unit 'behind hacking'</title>  
+      <description>A Chinese military unit is likely one of the world's "most prolific cyber espionage groups", a US firm says, as the White House voices concern about cyber theft.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-china-21502088#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-china-21502088</guid>  
+      <pubDate>Tue, 19 Feb 2013 19:57:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65950000/jpg/_65950751_65949630.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65950000/jpg/_65950752_65949630.jpg"/> 
+    </item>  
+    <item> 
+      <title>Dell sales fall ahead of buyout</title>  
+      <description>Computer maker Dell reports a drop in sales but its earnings still beat expectations, in what could be its last set of results as a public company.</description>  
+      <link>http://www.bbc.co.uk/news/business-21514023#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21514023</guid>  
+      <pubDate>Tue, 19 Feb 2013 22:09:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967883_65967545.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967884_65967545.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sony cuts PS Vita price in Japan</title>  
+      <description>Sony is to drop the price of the handheld PS Vita console ahead of an event expected to see the launch of the next PlayStation console.</description>  
+      <link>http://www.bbc.co.uk/news/technology-21505062#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21505062</guid>  
+      <pubDate>Tue, 19 Feb 2013 16:20:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65956000/jpg/_65956009_124921243.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65956000/jpg/_65956010_124921243.jpg"/> 
+    </item>  
+    <item> 
+      <title>Google 'seeks to cut piracy funds'</title>  
+      <description>Google is reportedly in talks with payment companies such as Paypal, Visa and Mastercard to cut off funding to sites profiting from piracy.</description>  
+      <link>http://www.bbc.co.uk/news/technology-21505060#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21505060</guid>  
+      <pubDate>Tue, 19 Feb 2013 12:59:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65956000/jpg/_65956349_111926397.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65956000/jpg/_65956350_111926397.jpg"/> 
+    </item>  
+    <item> 
+      <title>Astronaut in Reddit chat from space</title>  
+      <description>Canadian astronaut Chris Hadfield, who will assume command of the International Space Station in March, held a live web chat from space.</description>  
+      <link>http://www.bbc.co.uk/news/technology-21497468#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21497468</guid>  
+      <pubDate>Mon, 18 Feb 2013 15:28:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65942000/png/_65942820_reddit-logo.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65942000/png/_65942821_reddit-logo.png"/> 
+    </item>  
+    <item> 
+      <title>EU 'may take action' against Google</title>  
+      <description>EU watchdogs plan to take action against Google by this summer, over the web giant's current privacy policy.</description>  
+      <link>http://www.bbc.co.uk/news/technology-21499190#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21499190</guid>  
+      <pubDate>Mon, 18 Feb 2013 17:19:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65945000/jpg/_65945105_google.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65945000/jpg/_65945106_google.jpg"/> 
+    </item>  
+    <item> 
+      <title>PM promises India corruption help</title>  
+      <description>David Cameron promises to "respond to any request for information" on corruption allegations over India's procurement of helicopters from Anglo-Italian firm AgustaWestland.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21501971#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21501971</guid>  
+      <pubDate>Tue, 19 Feb 2013 15:08:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951091_65951082.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951092_65951082.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Bionic legs' for military amputees</title>  
+      <description>Injured military personnel who have legs amputated are to be given the most up-to-date prosthetic limbs after the government set aside £6.5m.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21497473#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21497473</guid>  
+      <pubDate>Tue, 19 Feb 2013 11:58:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65947000/jpg/_65947645_hi016412591.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65947000/jpg/_65947646_hi016412591.jpg"/> 
+    </item>  
+    <item> 
+      <title>Burger King Twitter account 'hacked'</title>  
+      <description>US fast-food chain Burger King says its Twitter account may have been hacked after its profile picture was changed to a McDonald's logo and offensive messages were posted.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21500175#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21500175</guid>  
+      <pubDate>Mon, 18 Feb 2013 20:54:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65948000/jpg/_65948572_65946712.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65948000/jpg/_65948573_65946712.jpg"/> 
+    </item>  
+    <item> 
+      <title>Electric car plugs get 75% subsidy</title>  
+      <description>The government announces that it will cover up to 75% of the cost of installing charging points for electric vehicles in garages and driveways.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21503532#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21503532</guid>  
+      <pubDate>Tue, 19 Feb 2013 16:35:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65955000/jpg/_65955844_63296407.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65955000/jpg/_65955845_63296407.jpg"/> 
+    </item>  
+    <item> 
+      <title>Amazon fires German security firm</title>  
+      <description>Online retailer Amazon ends the contract of a security firm used at one of its German warehouses following complaints about workers' conditions.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21496781#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21496781</guid>  
+      <pubDate>Mon, 18 Feb 2013 13:53:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65943000/jpg/_65943106_badhersfeld.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65943000/jpg/_65943107_badhersfeld.jpg"/> 
+    </item>  
+    <item> 
+      <title>Schools 'lack adequate wi-fi'</title>  
+      <description>Only about a quarter of schools in England have good enough wi-fi to get the best out of digital technology, figures suggest.</description>  
+      <link>http://www.bbc.co.uk/news/education-21476385#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-21476385</guid>  
+      <pubDate>Tue, 19 Feb 2013 15:37:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65954000/jpg/_65954628_ipad.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65954000/jpg/_65954629_ipad.jpg"/> 
+    </item>  
+    <item> 
+      <title>'More accurate' sat-nav revealed</title>  
+      <description>A sat-nav system that can pinpoint a car's location to within two metres is being developed in Spain.</description>  
+      <link>http://www.bbc.co.uk/news/technology-21442095#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21442095</guid>  
+      <pubDate>Wed, 13 Feb 2013 11:48:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65866000/jpg/_65866317_003697295-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65866000/jpg/_65866318_003697295-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: AA battery 'powers mobile for 15 years'</title>  
+      <description>The phone powered by a single AA battery that can last for 15 years and make emergency calls without a sim card.</description>  
+      <link>http://news.bbc.co.uk/1/hi/programmes/click_online/9783165.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/1/hi/programmes/click_online/9783165.stm</guid>  
+      <pubDate>Fri, 11 Jan 2013 12:41:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65160000/jpg/_65160697_140224334.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65839000/jpg/_65839105_140224334.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Sony putting hopes on PS4 launch</title>  
+      <description>Sony is launching its new PlayStation in an effort to recapture both a share of the market and the enthusiasm for purpose-built games consoles.</description>  
+      <link>http://www.bbc.co.uk/news/business-21516195#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21516195</guid>  
+      <pubDate>Wed, 20 Feb 2013 07:58:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970474_017022321-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970909_017022321-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Is Aaron Swartz an internet 'martyr'?</title>  
+      <description>Aaron Swartz was a passionate advocate and activist for an open internet. After his death - from an apparent suicide - supporters want tough computer hacking laws changed.</description>  
+      <link>http://www.bbc.co.uk/news/magazine-21377630#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-21377630</guid>  
+      <pubDate>Tue, 19 Feb 2013 01:41:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65948000/jpg/_65948860_aaronswartz2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65948000/jpg/_65948861_aaronswartz2.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Broadband packages 'undecipherable'</title>  
+      <description>Report author Alison Black told BBC Radio 5 live that some companies' small print is leaving customers confused.</description>  
+      <link>http://www.bbc.co.uk/news/business-21520383#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21520383</guid>  
+      <pubDate>Wed, 20 Feb 2013 15:50:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65980000/jpg/_65980758_broadband_pa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65980000/jpg/_65980759_broadband_pa.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Apps4Africa winners are announced</title>  
+      <description>The three winners of the latest Apps4Africa competition are announced on the BBC World Service.</description>  
+      <link>http://www.bbc.co.uk/news/technology-21518532#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21518532</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:35:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975121_kitche.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975122_kitche.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Are patent laws a wind-up?</title>  
+      <description>The European Union hopes to boost invention as it creates a single patent system for the whole region.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21510198#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21510198</guid>  
+      <pubDate>Wed, 20 Feb 2013 00:09:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969261_65969259.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969262_65969259.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: New scheme helps history come to life</title>  
+      <description>A new scheme which will allow people to learn more about the history and character of their town or village has been launched.</description>  
+      <link>http://www.bbc.co.uk/news/uk-21508679#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-21508679</guid>  
+      <pubDate>Tue, 19 Feb 2013 15:40:53 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65960000/jpg/_65960746_65960744.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65961000/jpg/_65961760_65960744.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Apple attack 'could affect anyone'</title>  
+      <description>Apple has said its computers were attacked by the same hackers that targeted Facebook.</description>  
+      <link>http://www.bbc.co.uk/news/technology-21512994#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21512994</guid>  
+      <pubDate>Tue, 19 Feb 2013 23:40:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969149_65966338.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969150_65966338.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Car that sets limits on teen drivers</title>  
+      <description>A new system means parents can set maximum speed and even volume limits when handing their car keys to their teenage children.</description>  
+      <link>http://www.bbc.co.uk/news/uk-21483160#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-21483160</guid>  
+      <pubDate>Sat, 16 Feb 2013 12:50:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65925000/jpg/_65925675_65925667.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65925000/jpg/_65925676_65925667.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sony PlayStation 4 faces challenges</title>  
+      <description>As Sony gets set to announce its next-gen console - what can gamers expect?</description>  
+      <link>http://www.bbc.co.uk/news/technology-21479858#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21479858</guid>  
+      <pubDate>Wed, 20 Feb 2013 00:00:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968601_littlke.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968602_littlke.jpg"/> 
+    </item>  
+    <item> 
+      <title>4G: The results are in</title>  
+      <description>Why did the 4G auction come in at £1bn below expectations?</description>  
+      <link>http://www.bbc.co.uk/news/technology-21517376#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21517376</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:52:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974749_rorycellanjones.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974750_rorycellanjones.jpg"/> 
+    </item>  
+    <item> 
+      <title>HTC shows its metal</title>  
+      <description>HTC's new phone is packed with innovation - but can it turn around its maker's fortunes?</description>  
+      <link>http://www.bbc.co.uk/news/technology-21479485#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21479485</guid>  
+      <pubDate>Tue, 19 Feb 2013 15:38:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65963000/jpg/_65963699_htcone_silver.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65963000/jpg/_65963700_htcone_silver.jpg"/> 
+    </item>  
+    <item> 
+      <title>3D is dead - long live 3D?</title>  
+      <description>The death of 3D services may have been greatly exaggerated</description>  
+      <link>http://www.bbc.co.uk/news/technology-21465628#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21465628</guid>  
+      <pubDate>Tue, 19 Feb 2013 10:52:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65964000/jpg/_65964631_3dpicture.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65964000/jpg/_65964632_3dpicture.jpg"/> 
+    </item>  
+    <item> 
+      <title>Could we all soon own a drone?</title>  
+      <description>Will every family eventually own an unmanned aircraft?</description>  
+      <link>http://www.bbc.co.uk/news/business-21432170#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21432170</guid>  
+      <pubDate>Tue, 19 Feb 2013 01:56:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65852000/jpg/_65852020_lifestyle_ardrone2_ny_stree.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65852000/jpg/_65852021_lifestyle_ardrone2_ny_stree.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: What if you had a vision of the future?</title>  
+      <description>Artists offer inspiration for the BBC's What If competition</description>  
+      <link>http://www.bbc.co.uk/news/magazine-21162817#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-21162817</guid>  
+      <pubDate>Tue, 29 Jan 2013 00:23:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65490000/jpg/_65490543_22_animating.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65490000/jpg/_65490544_22_animating.jpg"/> 
+    </item>  
+    <item> 
+      <title>How will our future cities look?</title>  
+      <description>What will cities look like in the future?</description>  
+      <link>http://www.bbc.co.uk/news/technology-20770518#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-20770518</guid>  
+      <pubDate>Sun, 17 Feb 2013 23:24:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65464000/jpg/_65464050_flyingcar.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65464000/jpg/_65464051_flyingcar.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

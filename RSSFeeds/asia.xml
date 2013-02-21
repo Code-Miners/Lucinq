@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Asia</title>  
+    <link>http://www.bbc.co.uk/news/world/asia/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Asia section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 17:49:55 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Asia</title>  
+      <link>http://www.bbc.co.uk/news/world/asia/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/world/asia/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Pakistan bomb victims' burials begin</title>  
+      <description>Shia Muslims in the Pakistani city of Quetta begin to bury victims of Saturday's bomb attack, ending a protest at official inaction.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21516447#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21516447</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:39:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975820_65975813.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975921_65975813.jpg"/> 
+    </item>  
+    <item> 
+      <title>China condemns US hacking report</title>  
+      <description>China's military says a report linking it to prolific hacking of US targets is flawed, as the US says it has repeatedly raised concerns about cyber theft with Beijing.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21515259#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21515259</guid>  
+      <pubDate>Wed, 20 Feb 2013 07:30:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969783_017270774-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969784_017270774-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Lost Antarctic penguin found in NZ</title>  
+      <description>A royal penguin is being cared for at a Wellington Zoo after washing up on the coast of New Zealand, 2,000km (1,240 miles) from its Antarctic home.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21519560#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21519560</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:59:58 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977187_65974058.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65977000/jpg/_65977188_65974058.jpg"/> 
+    </item>  
+    <item> 
+      <title>Japan posts record trade deficit</title>  
+      <description>Japan's monthly trade deficit hits a record in January after its recent monetary policy stance weakened its currency sharply.</description>  
+      <link>http://www.bbc.co.uk/news/business-21515024#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21515024</guid>  
+      <pubDate>Wed, 20 Feb 2013 04:41:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969498_105620525.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969499_105620525.jpg"/> 
+    </item>  
+    <item> 
+      <title>Two Tibetan youths 'self-immolate'</title>  
+      <description>Two Tibetan youths, aged 17 and 18, have burned themselves to death in protest in western China, reports from activists and Tibetan exiles say.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21525589#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21525589</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:46:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985112_65984897.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985113_65984897.jpg"/> 
+    </item>  
+    <item> 
+      <title>Activists clash with Japan whalers</title>  
+      <description>Japan's whaling fleet clashes with anti-whaling group Sea Shepherd in the Southern Ocean, with the activists saying their boat was rammed.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21515490#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21515490</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:41:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971979_65970422.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971980_65970422.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Action needed' on football fixing</title>  
+      <description>Football officials say countries and organisations must do more to tackle corruption, at a conference on match-fixing in Kuala Lumpur.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21515491#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21515491</guid>  
+      <pubDate>Wed, 20 Feb 2013 07:27:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970415_65970163.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970416_65970163.jpg"/> 
+    </item>  
+    <item> 
+      <title>Cameron marks Amritsar massacre</title>  
+      <description>David Cameron becomes the first serving UK prime minister to pay his respects at the scene of one of the bloodiest massacres in British history.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21515360#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21515360</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:45:14 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971122_65959573.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971164_65959573.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sporadic violence marks India strike</title>  
+      <description>Sporadic violence marks the beginning of a two-day strike called by India's trade unions in protest against economic reforms</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-india-21515338#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-india-21515338</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:45:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973234_65970094.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973235_65970094.jpg"/> 
+    </item>  
+    <item> 
+      <title>S Lanka army 'killed boy in custody'</title>  
+      <description>Photographs emerge said to show the 12-year-old son of a Tamil rebel leader alive and well in custody less than two hours before he was shot dead.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21509656#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21509656</guid>  
+      <pubDate>Tue, 19 Feb 2013 20:58:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966268_lankaboy.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966269_lankaboy.jpg"/> 
+    </item>  
+    <item> 
+      <title>North Korea threatens South Korea</title>  
+      <description>North Korea has been criticised for remarks about the "final destruction" of South Korea made during a UN debate on disarmament</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21510479#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21510479</guid>  
+      <pubDate>Tue, 19 Feb 2013 18:05:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65963000/png/_65963782_kimjongun-final.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65963000/png/_65963783_kimjongun-final.png"/> 
+    </item>  
+    <item> 
+      <title>Afghanistan civilian casualties fall</title>  
+      <description>The number of civilian casualties in Afghanistan has fallen for the first time in six years, a new UN report says, with 2,754 losing their lives.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21502064#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21502064</guid>  
+      <pubDate>Tue, 19 Feb 2013 05:54:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949565_65949460.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949566_65949460.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Filipino workers speak of abuse</title>  
+      <description>Many people faced with limited job options and grinding poverty in the Philippines have decided to look for work overseas - but they risk being forced into slave labour.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21514716#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21514716</guid>  
+      <pubDate>Wed, 20 Feb 2013 02:00:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969424_woman.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969425_woman.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: BBC reporter detained amid China hacking</title>  
+      <description>A secretive branch of China's military is most likely one of the world's "most prolific cyber espionage groups", a US cyber security firm has said.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-21505803#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-21505803</guid>  
+      <pubDate>Tue, 19 Feb 2013 12:55:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65957000/jpg/_65957413_shanghaibuilding.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65957000/jpg/_65957414_shanghaibuilding.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'No one in China knew about hacking'</title>  
+      <description>A computer security company based in the US says the Chinese military is behind a series of high-level cyber-hacking attacks.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-china-21504944#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-china-21504944</guid>  
+      <pubDate>Tue, 19 Feb 2013 11:11:53 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65954000/jpg/_65954327_65953370.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65954000/jpg/_65954328_65953370.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Slum children flock to free school</title>  
+      <description>A shopkeeper in New Delhi runs an improvised school under a railway bridge in New Delhi to help raise children from nearby slums out of poverty.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21507893#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21507893</guid>  
+      <pubDate>Tue, 19 Feb 2013 18:42:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966281_65964673.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966282_65964673.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Japan rock star's 'quiet UK life'</title>  
+      <description>Six months ago, the Gangnam Style star Psy remained largely unknown outside of his native Korea, but today his video has been viewed more than a billion times on YouTube.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21510249#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21510249</guid>  
+      <pubDate>Tue, 19 Feb 2013 16:39:30 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65964000/jpg/_65964667_65963529.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65964000/jpg/_65964668_65963529.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Fall in Afghan civilian casualties</title>  
+      <description>The number of civilian casualties in Afghanistan has fallen for the first time in six years, a UN report says.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21510254#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21510254</guid>  
+      <pubDate>Tue, 19 Feb 2013 21:15:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967724_65966821.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967725_65966821.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'Proud my son died for his beliefs'</title>  
+      <description>Following the deaths of 16 insurgents in Thailand in a failed attack on a Thai marine base, the BBC's Jonathan Head speaks to some of the insurgents' bereaved families.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21501846#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21501846</guid>  
+      <pubDate>Tue, 19 Feb 2013 03:11:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949182_saoudi.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949183_saoudi.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Families' fury over Pakistan blast</title>  
+      <description>Quetta blast victims' fury at army 'failure' to tackle ethnic violence</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21500390#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21500390</guid>  
+      <pubDate>Mon, 18 Feb 2013 20:07:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65948000/jpg/_65948280_women_hazara.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65948000/jpg/_65948281_women_hazara.jpg"/> 
+    </item>  
+    <item> 
+      <title>Beatles help India traffic campaign</title>  
+      <description>The police in the eastern Indian city of Calcutta is using the picture on the cover of the iconic Beatles album Abbey Road in a campaign to enforce road safety.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-india-21502047#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-india-21502047</guid>  
+      <pubDate>Tue, 19 Feb 2013 08:53:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951366_574546_4492762431561_1613565334_n.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951367_574546_4492762431561_1613565334_n.jpg"/> 
+    </item>  
+    <item> 
+      <title>Gold bars for tsunami-hit Japan port</title>  
+      <description>People in a small Japanese fishing port devastated by the 2011 tsunami have been receiving gold bars in the post from an anonymous benefactor.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21488981#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21488981</guid>  
+      <pubDate>Sun, 17 Feb 2013 02:44:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65931000/jpg/_65931570_65931507.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65931000/jpg/_65931571_65931507.jpg"/> 
+    </item>  
+    <item> 
+      <title>Fields revels in historic hat-trick</title>  
+      <description>Australia captain Jodie Fields says victory over West Indies in the Women's World Cup final completed a "great piece of history".</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21494718</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21494718</guid>  
+      <pubDate>Sun, 17 Feb 2013 20:32:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65935000/jpg/_65935893_perry.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65938000/jpg/_65938615_161856636(1).jpg"/> 
+    </item>  
+    <item> 
+      <title>China media: Hacking denial</title>  
+      <description>Media and experts back China's denial of allegations that one of its military units is behind prolific cyber attacks against US firms.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-china-21515539#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-china-21515539</guid>  
+      <pubDate>Wed, 20 Feb 2013 05:44:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969978_hacking.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970009_hacking.jpg"/> 
+    </item>  
+    <item> 
+      <title>China bans footballers for fixing</title>  
+      <description>China's football authorities ban 33 players and officials for life and strip Shanghai Shenhua of league title after investigation.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-china-21502085#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-china-21502085</guid>  
+      <pubDate>Tue, 19 Feb 2013 05:55:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952907_65949603.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952908_65949603.jpg"/> 
+    </item>  
+    <item> 
+      <title>Kidnap 'kingpin' sent back to China</title>  
+      <description>A Chinese national suspected of heading a kidnapping ring targeting Chinese citizens in Venezuela is brought back to China, officials say.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-china-21470876#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-china-21470876</guid>  
+      <pubDate>Fri, 15 Feb 2013 11:00:30 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65906000/gif/_65906986_china_guangdong_02_13.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65906000/gif/_65906987_china_guangdong_02_13.gif"/> 
+    </item>  
+    <item> 
+      <title>AirAsia plans Indian budget carrier</title>  
+      <description>Asia's largest low-cost carrier, AirAsia, plans to launch an Indian budget airline with India's Tata and a third investor, Telestra Tradeplace.</description>  
+      <link>http://www.bbc.co.uk/news/business-21519003#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21519003</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:26:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975427_airasia.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975428_airasia.jpg"/> 
+    </item>  
+    <item> 
+      <title>India detentions for rape and murder</title>  
+      <description>Police in India detain three men in the state of Maharashtra in connection with the rape and murder of three sisters aged between six and 11.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-india-21515528#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-india-21515528</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:27:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973421_65971867.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973422_65971867.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bandit gang hangings delayed again</title>  
+      <description>India's Supreme Court puts on hold "until further orders" the execution of four men convicted of being associates of notorious bandit Veerappan.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-india-21515523#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-india-21515523</guid>  
+      <pubDate>Wed, 20 Feb 2013 06:50:40 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969956_000152272.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970130_000152272.jpg"/> 
+    </item>  
+    <item> 
+      <title>Two charged in PNG 'sorcery' killing</title>  
+      <description>Two people are charged in Papua New Guinea with burning alive a woman they accused of sorcery, officials say.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21501955#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21501955</guid>  
+      <pubDate>Tue, 19 Feb 2013 06:09:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65949000/gif/_65949484_png_hagen_0213.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65949000/gif/_65949485_png_hagen_0213.gif"/> 
+    </item>  
+    <item> 
+      <title>Guam knife attack toll rises</title>  
+      <description>The death toll from an attack in Guam rose to three after a Japanese man mown down by a car died of his injuries, officials say.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21455179#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21455179</guid>  
+      <pubDate>Thu, 14 Feb 2013 06:37:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65880000/jpg/_65880414_017216089-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65880000/jpg/_65880415_017216089-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Three charged in rhino horn ring</title>  
+      <description>Three people are arrested in the US and accused of a conspiring to smuggle endangered black rhinoceros horns to China, prosecutors say.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21453696#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21453696</guid>  
+      <pubDate>Thu, 14 Feb 2013 01:27:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65880000/jpg/_65880063_146543498.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65880000/jpg/_65880064_146543498.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bangladesh protests spark law change</title>  
+      <description>Bangladesh alters a law to allow the state to appeal against the life sentence of an Islamist party leader, after protesters called for his execution.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21492198#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21492198</guid>  
+      <pubDate>Sun, 17 Feb 2013 16:43:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65937000/jpg/_65937036_dhaka.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65937000/jpg/_65937037_dhaka.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sri Lanka group seeks halal boycott</title>  
+      <description>A hardline Sinhalese Buddhist group in Sri Lanka calls for the abolition of the Muslim halal system of certifying foods and other goods.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21494959#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21494959</guid>  
+      <pubDate>Sun, 17 Feb 2013 20:47:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65938000/jpg/_65938995_65938958.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65938000/jpg/_65938996_65938958.jpg"/> 
+    </item>  
+    <item> 
+      <title>Anger over Pakistan blast 'failures'</title>  
+      <description>The governor of Pakistan's Balochistan province denounces intelligence failures as the death toll in a sectarian bombing in Quetta rises to 81.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21489756#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21489756</guid>  
+      <pubDate>Sun, 17 Feb 2013 08:07:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65932000/jpg/_65932019_cpvq66k6.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65932000/jpg/_65932020_cpvq66k6.jpg"/> 
+    </item>  
+    <item> 
+      <title>Afghanistan - Country profile</title>  
+      <description>Key facts, figures and dates.</description>  
+      <link>http://news.bbc.co.uk/1/hi/world/south_asia/country_profiles/1162668.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/1/hi/world/south_asia/country_profiles/1162668.stm</guid>  
+      <pubDate>Tue, 15 Mar 2011 14:02:09 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Australia country profile</title>  
+      <description>Provides an overview of Australia, including key facts and events</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-15674351#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-15674351</guid>  
+      <pubDate>Tue, 10 Jul 2012 11:19:46 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Country profile: Bangladesh</title>  
+      <description>Key facts, figures and dates</description>  
+      <link>http://news.bbc.co.uk/1/hi/world/south_asia/country_profiles/1160598.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/1/hi/world/south_asia/country_profiles/1160598.stm</guid>  
+      <pubDate>Tue, 08 Mar 2011 11:54:57 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Country profile: Bhutan</title>  
+      <description>Key facts, figures and dates.</description>  
+      <link>http://news.bbc.co.uk/1/hi/world/south_asia/country_profiles/1166513.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/1/hi/world/south_asia/country_profiles/1166513.stm</guid>  
+      <pubDate>Tue, 08 Mar 2011 12:05:50 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Brunei profile</title>  
+      <description>Provides an overview of Brunei, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-12990058#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-12990058</guid>  
+      <pubDate>Wed, 04 Jul 2012 14:05:54 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Burma profile</title>  
+      <description>Key facts, figures and dates</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-12990563#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-12990563</guid>  
+      <pubDate>Tue, 05 Feb 2013 12:55:35 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Cambodia profile</title>  
+      <description>Provides an overview of Cambodia, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-13006539#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-13006539</guid>  
+      <pubDate>Tue, 19 Feb 2013 14:30:22 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>China profile</title>  
+      <description>Provides an overview of China, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-13017877#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-13017877</guid>  
+      <pubDate>Thu, 07 Feb 2013 11:11:57 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Cook Islands profile</title>  
+      <description>Provides an overview of the Cook Islands, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-16495238#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-16495238</guid>  
+      <pubDate>Wed, 11 Jan 2012 15:12:33 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>East Timor country profile</title>  
+      <description>Provides an overview of East Timor, including key events and facts about this former Portuguese colony which won independence from Indonesia in a long civil war</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-14919009#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-14919009</guid>  
+      <pubDate>Tue, 26 Jun 2012 10:29:50 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Fiji country profile</title>  
+      <description>Provides an overview of Fiji, including key events and facts about this tropical island and ethnically diverse former British colony in the Pacific.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-14919067#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-14919067</guid>  
+      <pubDate>Wed, 26 Dec 2012 15:05:06 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>French Polynesia profile</title>  
+      <description>Provides an overview of French Polynesia, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-16492623#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-16492623</guid>  
+      <pubDate>Wed, 07 Nov 2012 16:24:49 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Guam profile</title>  
+      <description>Provides an overview of Guam, which is home to a key US military base in the Pacific Ocean</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-16517384#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-16517384</guid>  
+      <pubDate>Sun, 12 Feb 2012 10:11:26 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Hong Kong profile</title>  
+      <description>Provides an overview of Hong Kong, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-16517764#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-16517764</guid>  
+      <pubDate>Tue, 02 Oct 2012 16:24:31 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Country profile: India</title>  
+      <description>Details of the key facts, figures and dates.</description>  
+      <link>http://news.bbc.co.uk/1/hi/world/south_asia/country_profiles/1154019.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/1/hi/world/south_asia/country_profiles/1154019.stm</guid>  
+      <pubDate>Thu, 31 Mar 2011 10:12:04 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Indonesia country profile</title>  
+      <description>Provides an overview of Indonesia, including key events and facts about the world's fourth most populous nation</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-14921238#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-14921238</guid>  
+      <pubDate>Tue, 31 Jul 2012 10:57:21 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Japan country profile</title>  
+      <description>Provides an overview of Japan, including key events and facts about this earthquake-prone country on the western rim of the Pacific.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-14918801#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-14918801</guid>  
+      <pubDate>Thu, 24 Jan 2013 12:32:45 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Kashmir profile</title>  
+      <description>An overview of the former princely state of Kashmir, which has been partitioned between India and Pakistan since 1947.</description>  
+      <link>http://www.bbc.co.uk/news/world-south-asia-11693674#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-south-asia-11693674</guid>  
+      <pubDate>Sat, 03 Nov 2012 12:28:33 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Kazakhstan profile</title>  
+      <description>Provides an overview of Kazakhstan, including key events and facts about this vast, mineral-rich Central Asian country.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-15263826#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-15263826</guid>  
+      <pubDate>Wed, 10 Oct 2012 10:11:57 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Kiribati profile</title>  
+      <description>Provides an overview of Kiribati including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-16431122#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-16431122</guid>  
+      <pubDate>Sat, 03 Nov 2012 16:59:56 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>North Korea country profile</title>  
+      <description>Provides an overview of North Korea, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-15256929#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-15256929</guid>  
+      <pubDate>Wed, 13 Feb 2013 15:56:50 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>South Korea profile</title>  
+      <description>Provides an overview of South Korea, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-15289563#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-15289563</guid>  
+      <pubDate>Wed, 10 Oct 2012 10:45:25 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Kyrgyzstan profile</title>  
+      <description>Provides overview, key facts and events, timelines and leader profiles along with current news about Kyrgyzstan</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-16186907#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-16186907</guid>  
+      <pubDate>Wed, 10 Oct 2012 14:13:04 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Laos profile</title>  
+      <description>Provides an overview of Laos, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-15351898#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-15351898</guid>  
+      <pubDate>Mon, 05 Nov 2012 16:48:59 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Macau profile</title>  
+      <description>Provides an overview of Macau, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-16599919#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-16599919</guid>  
+      <pubDate>Sat, 01 Dec 2012 09:16:04 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Malaysia profile</title>  
+      <description>Provides an overview of Malaysia, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-15356257#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-15356257</guid>  
+      <pubDate>Wed, 10 Oct 2012 11:10:17 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Country profile: The Maldives</title>  
+      <description>Key facts, figures and dates.</description>  
+      <link>http://news.bbc.co.uk/1/hi/world/south_asia/country_profiles/1166511.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/1/hi/world/south_asia/country_profiles/1166511.stm</guid>  
+      <pubDate>Thu, 17 Feb 2011 16:18:33 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Marshall Islands profile</title>  
+      <description>Provides an overview of the Marshall Islands, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-15595431#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-15595431</guid>  
+      <pubDate>Tue, 31 Jul 2012 13:20:41 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Micronesia profile</title>  
+      <description>Provides an overview of Micronesia, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-15494620#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-15494620</guid>  
+      <pubDate>Tue, 31 Jul 2012 13:39:31 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Mongolia profile</title>  
+      <description>Summary: Provides an overview of Mongolia, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-15460525#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-15460525</guid>  
+      <pubDate>Wed, 05 Dec 2012 12:30:40 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Nauru profile</title>  
+      <description>Provides an overview of Nauru, including key events and facts about the world's smallest republic</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-15433616#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-15433616</guid>  
+      <pubDate>Thu, 28 Jun 2012 08:50:45 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Country profile: Nepal</title>  
+      <description>Key facts, figures and dates.</description>  
+      <link>http://news.bbc.co.uk/1/hi/world/south_asia/country_profiles/1166502.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/1/hi/world/south_asia/country_profiles/1166502.stm</guid>  
+      <pubDate>Fri, 04 Feb 2011 13:17:31 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>New Caledonia profile</title>  
+      <description>Provides an overview of New Caledonia, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-16740838#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-16740838</guid>  
+      <pubDate>Wed, 16 Jan 2013 16:32:19 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>New Zealand profile</title>  
+      <description>Provides an overview of New Zealand, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-15357770#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-15357770</guid>  
+      <pubDate>Tue, 17 Jul 2012 09:08:12 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Niue profile</title>  
+      <description>Provides an overview of Niue, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-16536890#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-16536890</guid>  
+      <pubDate>Wed, 07 Nov 2012 12:36:17 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Northern Mariana Islands profile</title>  
+      <description>Provides an overview and key facts about this self-governing territory politically linked to the United States</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-16931877#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-16931877</guid>  
+      <pubDate>Wed, 15 Feb 2012 10:58:30 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Country profile: Pakistan</title>  
+      <description>Key facts, figures and dates.</description>  
+      <link>http://news.bbc.co.uk/1/hi/world/south_asia/country_profiles/1157960.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/1/hi/world/south_asia/country_profiles/1157960.stm</guid>  
+      <pubDate>Sat, 14 May 2011 12:25:48 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Palau country profile</title>  
+      <description>Provides an overview of Palau , including key events and facts about this tropical island nation in the northern Pacific.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-15446659#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-15446659</guid>  
+      <pubDate>Fri, 02 Nov 2012 11:09:06 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Papua New Guinea profile</title>  
+      <description>Provides an overview of Papua New Guinea, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-15436981#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-15436981</guid>  
+      <pubDate>Wed, 01 Aug 2012 10:35:01 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Philippines profile</title>  
+      <description>Provides an overview of Philippines, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-15521300#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-15521300</guid>  
+      <pubDate>Tue, 18 Dec 2012 16:07:13 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Samoa profile</title>  
+      <description>Provides an overview of Samoa, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-15655855#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-15655855</guid>  
+      <pubDate>Tue, 17 Jul 2012 13:35:50 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Singapore profile</title>  
+      <description>Provides an overview of Singapore, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-15961759#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-15961759</guid>  
+      <pubDate>Thu, 05 Jul 2012 09:44:53 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Country profile: Sri Lanka</title>  
+      <description>Key facts, figures and dates.</description>  
+      <link>http://news.bbc.co.uk/1/hi/world/south_asia/country_profiles/1168427.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/1/hi/world/south_asia/country_profiles/1168427.stm</guid>  
+      <pubDate>Fri, 04 Feb 2011 14:24:47 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Solomon Islands country profile</title>  
+      <description>Provides an overview of Solomon Islands, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-15896396#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-15896396</guid>  
+      <pubDate>Thu, 07 Feb 2013 15:02:33 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Taiwan profile</title>  
+      <description>Provides key background, including facts and figures</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-16164639#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-16164639</guid>  
+      <pubDate>Tue, 17 Jul 2012 10:31:49 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Tajikistan profile</title>  
+      <description>Provides an overview of Tajikistan, including key events and facts about this mountainous Central Asian republic.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-16201032#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-16201032</guid>  
+      <pubDate>Tue, 17 Jul 2012 09:24:34 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Thailand country profile</title>  
+      <description>Provides an overview of Thailand, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-15581957#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-15581957</guid>  
+      <pubDate>Thu, 06 Dec 2012 16:39:22 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Tibet profile</title>  
+      <description>Provides an overview of Tibet, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-16689779#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-16689779</guid>  
+      <pubDate>Sat, 24 Nov 2012 15:22:23 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Tokelau profile</title>  
+      <description>Provides an overview of Tokelau, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-16962868#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-16962868</guid>  
+      <pubDate>Wed, 07 Nov 2012 10:27:50 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Tonga profile</title>  
+      <description>Provides an overview of Tonga, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-16197014#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-16197014</guid>  
+      <pubDate>Mon, 19 Mar 2012 08:54:36 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Turkmenistan profile</title>  
+      <description>Overview of Turkmenistan, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-16094646#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-16094646</guid>  
+      <pubDate>Wed, 17 Oct 2012 10:33:32 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Tuvalu Profile</title>  
+      <description>Provides an overview of Tuvalu, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-16340072#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-16340072</guid>  
+      <pubDate>Sat, 03 Nov 2012 15:11:48 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Uzbekistan country profile</title>  
+      <description>Provides an overview of Uzbekistan, including key events and facts about the country.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-16218112#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-16218112</guid>  
+      <pubDate>Mon, 16 Jul 2012 09:41:44 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Vanuatu country profile</title>  
+      <description>Provides an overview of Vanuatu, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-16426193#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-16426193</guid>  
+      <pubDate>Wed, 21 Nov 2012 12:32:34 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Vietnam country profile</title>  
+      <description>Provides an overview of Vietnam, including key events and facts about this east Asian country</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-16567315#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-16567315</guid>  
+      <pubDate>Tue, 29 Jan 2013 12:05:56 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Xinjiang profile</title>  
+      <description>Provides an overview of Xinjiang, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-pacific-16860974#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-pacific-16860974</guid>  
+      <pubDate>Tue, 23 Oct 2012 15:16:50 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>BHP Billiton boss Kloppers to retire</title>  
+      <description>Mining giant BHP Billiton's Marius Kloppers will retire in May</description>  
+      <link>http://www.bbc.co.uk/news/business-21514530#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21514530</guid>  
+      <pubDate>Tue, 19 Feb 2013 22:56:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968334_65967890.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968335_65967890.jpg"/> 
+    </item>  
+    <item> 
+      <title>Malaysia, Singapore in rail plan</title>  
+      <description>Singapore, Malaysia announce plans for a high-speed rail link</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21503408#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21503408</guid>  
+      <pubDate>Tue, 19 Feb 2013 08:26:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65950000/jpg/_65950676_017270240-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65950000/jpg/_65950677_017270240-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Is Australian sport badly broken?</title>  
+      <description>Damning reports put Australia's athletes in the spotlight</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21515264#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21515264</guid>  
+      <pubDate>Wed, 20 Feb 2013 05:27:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969910_161632129.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969911_161632129.jpg"/> 
+    </item>  
+    <item> 
+      <title>Putting a face to the conflict in Thailand's south</title>  
+      <description>Meeting the militants of Thailand's forgotten conflict</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21504125#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21504125</guid>  
+      <pubDate>Tue, 19 Feb 2013 12:22:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952696_thailandsouthnarathiwatmarket-1170559.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952697_thailandsouthnarathiwatmarket-1170559.jpg"/> 
+    </item>  
+    <item> 
+      <title>Amritsar massacre families: Cameron 'should have said sorry'</title>  
+      <description>Amritsar massacre victims' relatives react to Cameron</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-india-21519719#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-india-21519719</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:18:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978061_65977721.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978062_65977721.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sony PlayStation 4 faces challenges</title>  
+      <description>Japan's Sony prepares to unveil its new video games console</description>  
+      <link>http://www.bbc.co.uk/news/technology-21479858#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21479858</guid>  
+      <pubDate>Wed, 20 Feb 2013 00:00:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968601_littlke.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968602_littlke.jpg"/> 
+    </item>  
+    <item> 
+      <title>What David Cameron did not apologise for</title>  
+      <description>What David Cameron did not apologise for</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-india-21520173#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-india-21520173</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:11:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978402_2667487.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978403_2667487.jpg"/> 
+    </item>  
+    <item> 
+      <title>Gay Afghan defies tradition to expose identity</title>  
+      <description>Breaking Afghan taboos on homosexuality</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21426632#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21426632</guid>  
+      <pubDate>Wed, 20 Feb 2013 02:07:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65907000/jpg/_65907866_van%2C2005.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65907000/jpg/_65907867_van%2C2005.jpg"/> 
+    </item>  
+    <item> 
+      <title>Lost in Thailand shakes up China's movie industry</title>  
+      <description>Budget film that has taken cinemas by storm</description>  
+      <link>http://www.bbc.co.uk/news/business-21288965#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21288965</guid>  
+      <pubDate>Sun, 17 Feb 2013 21:59:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65637000/jpg/_65637275_stills_lostinthailand_01.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65637000/jpg/_65637276_stills_lostinthailand_01.jpg"/> 
+    </item>  
+    <item> 
+      <title>Do Man Utd really have 659m supporters?</title>  
+      <description>Does Manchester United really have 659 million supporters?</description>  
+      <link>http://www.bbc.co.uk/news/magazine-21478857#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-21478857</guid>  
+      <pubDate>Mon, 18 Feb 2013 00:35:14 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65920000/jpg/_65920587_rooneyafp320.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65920000/jpg/_65920668_rooneyafp320.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

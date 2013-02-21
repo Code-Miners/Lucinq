@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC Sport - Snooker</title>  
+    <link>http://www.bbc.co.uk/sport/0/snooker/</link>  
+    <description>The latest stories from the Snooker section of the BBC Sport web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Mon, 18 Feb 2013 10:28:19 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbc.co.uk/sol/shared/img/sport_120x60.gif</url>  
+      <title>BBC Sport - Snooker</title>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/sport/0/snooker/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Maguire wins Welsh Open thriller</title>  
+      <description>Stephen Maguire edges Stuart Bingham in a thrilling final session to win the Welsh Open at the Newport Centre.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21492076</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21492076</guid>  
+      <pubDate>Sun, 17 Feb 2013 23:27:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65936000/jpg/_65936004_stephen_maguire_getty2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65939000/jpg/_65939519_stephenmaguire.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bingham to play Maguire in final</title>  
+      <description>Stuart Bingham beats Ding Junhui and Stephen Maguire defeats Judd Trump to seal places in the Welsh Open final.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21487680</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21487680</guid>  
+      <pubDate>Sat, 16 Feb 2013 23:54:20 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65929000/jpg/_65929392_snooker-stuartbinghamgetty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65929000/jpg/_65929388_snooker-stuartbinghamgetty2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Welsh Open schedule and results</title>  
+      <description>Scores, match schedule and results for the 2013 Welsh Open ranking event, being held at the Newport Centre.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21402731</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21402731</guid>  
+      <pubDate>Mon, 11 Feb 2013 07:34:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65816000/jpg/_65816483_61287424.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/61287000/jpg/_61287423_61287418.jpg"/> 
+    </item>  
+    <item> 
+      <title>Trump ends Advani's historic run</title>  
+      <description>Pankaj Advani's historic run at the Welsh Open ends at the quarter-final stage after a 5-2 defeat by Judd Trump.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21478676</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21478676</guid>  
+      <pubDate>Fri, 15 Feb 2013 16:37:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65916000/jpg/_65916716_trump_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65916000/jpg/_65916714_trump_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Lee has 'case to answer' - WPBSA</title>  
+      <description>Stephen Lee has a "case to answer" over match-fixing allegations according to governing body WPBSA.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21458718</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21458718</guid>  
+      <pubDate>Thu, 14 Feb 2013 16:29:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65884000/jpg/_65884898_s_lee.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65897000/jpg/_65897134_s_lee.jpg"/> 
+    </item>  
+    <item> 
+      <title>India's Advani makes history</title>  
+      <description>Pankaj Advani becomes the first Indian to reach the quarter-finals of a world ranking event after a Welsh Open victory.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21466699</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21466699</guid>  
+      <pubDate>Thu, 14 Feb 2013 20:37:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65898000/jpg/_65898739_pankaj_advani_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65898000/jpg/_65898733_pankaj_advani_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ding defeats Allen at Welsh Open</title>  
+      <description>Antrim man Mark Allen is out of the Welsh Open in Newport after losing 4-2 against defending champion Ding Junhui.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21466194</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21466194</guid>  
+      <pubDate>Thu, 14 Feb 2013 19:43:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64517000/jpg/_64517426_markgetty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64517000/jpg/_64517424_markgetty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Perry stuns Selby at Welsh Open</title>  
+      <description>World number one Mark Selby makes an early exit at the Welsh Open with a heavy defeat by Joe Perry in Newport.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21453652</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21453652</guid>  
+      <pubDate>Wed, 13 Feb 2013 22:12:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65879000/jpg/_65879439_selby.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65879000/jpg/_65879435_selby.jpg"/> 
+    </item>  
+    <item> 
+      <title>Doherty beats Higgins in Newport</title>  
+      <description>Ken Doherty knocks out John Higgins while Shaun Murphy suffers a surprise loss to Indian Pankaj Advani.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21436086</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21436086</guid>  
+      <pubDate>Tue, 12 Feb 2013 20:30:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65855000/jpg/_65855876_ken_doherty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65855000/jpg/_65855878_ken_doherty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Selby beats Davis at Welsh Open</title>  
+      <description>Mark Selby underlines his Welsh Open title credentials with a 4-0 victory over Steve Davis to reach the last 32.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21419651</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21419651</guid>  
+      <pubDate>Mon, 11 Feb 2013 18:42:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65831000/jpg/_65831952_mark_selby_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65831000/jpg/_65831954_mark_selby_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ding Junhui wary of Selby threat</title>  
+      <description>Defending champion Ding Junhui believes Mark Selby will be the man to beat at this year's Welsh Open.</description>  
+      <link>http://www.bbc.co.uk/sport/0/wales/21383008</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/wales/21383008</guid>  
+      <pubDate>Fri, 08 Feb 2013 11:49:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65776000/jpg/_65776454_cdf_190212_dg_welsh_open_final05.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65776000/jpg/_65776456_cdf_190212_dg_welsh_open_final05.jpg"/> 
+    </item>  
+    <item> 
+      <title>Carter clinches German Masters</title>  
+      <description>Ali Carter wins the third ranking title of his career by beating Marco Fu 9-6 in the final of the German Masters in Berlin.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21323385</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21323385</guid>  
+      <pubDate>Mon, 04 Feb 2013 11:47:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65687000/jpg/_65687223_carter2_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65687000/jpg/_65687221_carter2_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Snooker shake-up</title>  
+      <description>Focus on Barry Hearn's controversial plans which will make the top 16 face lowly opponents in ranking events.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21127300</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21127300</guid>  
+      <pubDate>Tue, 22 Jan 2013 12:50:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65434000/jpg/_65434852_snooker.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65434000/jpg/_65434853_snooker.jpg"/> 
+    </item>  
+    <item> 
+      <title>Trump goes out in German Masters</title>  
+      <description>World number two Judd Trump is knocked out of the German Masters in the last 32 in Berlin.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21268498</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21268498</guid>  
+      <pubDate>Fri, 01 Feb 2013 00:10:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65636000/jpg/_65636319_trump.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65636000/jpg/_65636886_trump.jpg"/> 
+    </item>  
+    <item> 
+      <title>February deadline for O'Sullivan</title>  
+      <description>Ronnie O'Sullivan has until the end of February to decide whether he will return to snooker and defend his world title.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21124668</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21124668</guid>  
+      <pubDate>Mon, 21 Jan 2013 16:52:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65420000/jpg/_65420506_ronnie.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65420000/jpg/_65420449_ronnie.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Williams rubbishes retirement talk</title>  
+      <description>Mark Williams discusses retirement, Twitter and the forthcoming Welsh Open with Sport Wales’ Lisa Rogers.</description>  
+      <link>http://www.bbc.co.uk/sport/0/wales/21399558</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/wales/21399558</guid>  
+      <pubDate>Sun, 10 Feb 2013 11:43:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65803000/jpg/_65803109_mark.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65803000/jpg/_65803103_mark.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Best bits of the 2013 Masters</title>  
+      <description>A round-up of some of the best moments from the 2013 Masters leading up to the final between Mark Selby and Neil Robertson.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21112123</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21112123</guid>  
+      <pubDate>Mon, 21 Jan 2013 11:47:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65402000/jpg/_65402406_159715761.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65402000/jpg/_65402408_159715761.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: The moment Selby wins the Masters</title>  
+      <description>Mark Selby wins the Masters snooker title for the third time in six years with a 10-6 victory over defending champion Neil Robertson.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21121289</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21121289</guid>  
+      <pubDate>Mon, 21 Jan 2013 10:54:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65408000/jpg/_65408333_mmsnoselbypic.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65408000/jpg/_65408335_mmsnoselbypic.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Wonder shot sets up Robertson win</title>  
+      <description>Reigning Masters snooker champion Neil Robertson played a shot that he later described as "one of the finest of his career" to escape from a snooker by Mark Allen in the final frame of their match.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21069651</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21069651</guid>  
+      <pubDate>Thu, 17 Jan 2013 19:51:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65355000/jpg/_65355966_159416283.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65355000/jpg/_65355968_159416283.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Revived Dott discusses depression</title>  
+      <description>Graeme Dott talks openly with BBC Sport's Ken Doherty about his battle with depression and how he rediscovered his love for the game.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21105377</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21105377</guid>  
+      <pubDate>Sat, 19 Jan 2013 22:04:40 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65393000/jpg/_65393582_mmsnkdottondepression.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65393000/jpg/_65393584_mmsnkdottondepression.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Semi momentum swings on black</title>  
+      <description>Graeme Dott misses a black that would have put him 5-1 ahead, in his Masters semi-final defeat by Mark Selby.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21106510</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21106510</guid>  
+      <pubDate>Sat, 19 Jan 2013 23:40:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65393000/jpg/_65393773_mmsnksemimomentumswings.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65393000/jpg/_65393775_mmsnksemimomentumswings.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Dott hits century as he thrashes Trump</title>  
+      <description>Graeme Dott caps a shock 6-1 win over tournament favourite Judd Trump with a final-frame break of 111.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21085057</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21085057</guid>  
+      <pubDate>Fri, 18 Jan 2013 17:49:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65372000/jpg/_65372441_mmsnodotttrump.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65379000/jpg/_65379755_mmsnodotttrump.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Trump survives scare to beat Hawkins</title>  
+      <description>World number two Judd Trump survives a scare before rallying to defeat Barry Hawkins 6-5 in the first round of the Masters.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21029345</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21029345</guid>  
+      <pubDate>Tue, 15 Jan 2013 18:07:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65308000/jpg/_65308925_trump.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65308000/jpg/_65308927_trump.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Maguire concedes as Dott goes through</title>  
+      <description>Graeme Dott is through to the quarter-finals of the Masters, beating fellow Scot Stephen Maguire 6-5.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21020435</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21020435</guid>  
+      <pubDate>Tue, 15 Jan 2013 00:19:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65277000/png/_65277780_mmsnomaguireconcedespic.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65279000/png/_65279055_mmsnomaguireconcedespic.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Allen needs a rest at the Masters</title>  
+      <description>Mark Allen struggles with the extended rest in his first-round match at Alexandra Palace.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21006968</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21006968</guid>  
+      <pubDate>Sun, 13 Jan 2013 21:15:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65255000/jpg/_65255420_allenreststill.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65255000/jpg/_65255524_allenreststill.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Robertson roars after surviving scare</title>  
+      <description>Reigning champion Neil Robertson cannot hide his delight after coming from behind to beat Ding Junhui 6-5 in the first round of the Masters at Alexandra Palace.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21006198</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21006198</guid>  
+      <pubDate>Sun, 13 Jan 2013 18:19:40 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65254000/jpg/_65254389_robertsonstill.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65254000/jpg/_65254391_robertsonstill.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Snooker embraces global stage</title>  
+      <description>BBC Sport looks at the globalisation of snooker, which has seen an ever-growing number of tournaments across the world and players willing to travel huge distances to participate.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/20957976</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/20957976</guid>  
+      <pubDate>Fri, 11 Jan 2013 09:53:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65174000/png/_65174195_mmsnosnookergoesglobal2.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65174000/png/_65174191_mmsnosnookergoesglobal.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Meet snooker's new generation</title>  
+      <description>BBC Sport meets the young stars taking snooker by storm, including England's Jack Lisowski, Wales' Michael White, and Belgium's Luca Bracel.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/20957977</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/20957977</guid>  
+      <pubDate>Fri, 11 Jan 2013 09:55:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65175000/png/_65175226_mmsnosnookernextgeneration.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65175000/png/_65175222_mmsnosnookernextgeneration.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Snooker: Life without O'Sullivan</title>  
+      <description>BBC Sport examines how snooker is coping with the self-imposed exile of world champion Ronnie O'Sullivan.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/20957975</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/20957975</guid>  
+      <pubDate>Thu, 10 Jan 2013 09:42:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65174000/png/_65174071_mmsnoosullivanabsence.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65205000/png/_65205566_mmsnoosullivanabsence2.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: The race to be snooker's number one</title>  
+      <description>The contenders for snooker's world number one ranking discuss the challenges of reaching the top spot, and staying there.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/20957979</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/20957979</guid>  
+      <pubDate>Thu, 10 Jan 2013 09:41:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65176000/png/_65176468_mmsnoracefornumberone.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65205000/jpg/_65205560_65205559.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: China's snooker stars go west</title>  
+      <description>BBC Points West meets China's rising snooker stars who have been training at the South West Snooker Academy in Quedgeley, Gloucestershire.</description>  
+      <link>http://www.bbc.co.uk/sport/0/20733741</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/20733741</guid>  
+      <pubDate>Fri, 14 Dec 2012 16:52:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64775000/jpg/_64775434_snooker.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64775000/jpg/_64775432_snooker.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Selby wins title in late-night thriller</title>  
+      <description>World number one Mark Selby wins the biggest title of his career by defeating Shaun Murphy 10-6 in the final of the UK Championship.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/20661888</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/20661888</guid>  
+      <pubDate>Mon, 10 Dec 2012 00:50:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64664000/jpg/_64664492_mmsnosnookerfinal.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64663000/jpg/_64663647_mmsnosnookerfinal.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Snooker star's Celine Dion secret</title>  
+      <description>Shaun Murphy's girlfriend reveals that the snooker player listens to Celine Dion as a way to relax before a tournament.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/20661039</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/20661039</guid>  
+      <pubDate>Sun, 09 Dec 2012 22:49:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64664000/jpg/_64664092_mmsnomurphy%26apos%3Bscelinedionsecret.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64663000/jpg/_64663642_mmsnomurphy%26apos%3Bscelinedionsecret.jpg"/> 
+    </item>  
+    <item> 
+      <title>Selby conquers confidence demons</title>  
+      <description>Mark Selby tells BBC Sport how a turbulent and painful 2012 ended in smiles with victory at the UK Championship.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/20693797</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/20693797</guid>  
+      <pubDate>Fri, 14 Dec 2012 11:41:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64753000/jpg/_64753694_64753574.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64773000/jpg/_64773030_64747799.jpg"/> 
+    </item>  
+    <item> 
+      <title>Judd Trump to the rescue?</title>  
+      <description>Snooker's new top dog on rivalries, 'boring snooker' and ruining opponents</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/20522661</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/20522661</guid>  
+      <pubDate>Thu, 29 Nov 2012 11:05:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64425000/jpg/_64425869_trump.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64425000/jpg/_64425871_trump.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Maguire wins Welsh Open title</title>  
+      <description>Stephen Maguire wins the final frame against Stuart Bingham to edge a dramatic Welsh Open final 9-8 at the Newport Centre.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21495540</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21495540</guid>  
+      <pubDate>Mon, 18 Feb 2013 08:46:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65939000/png/_65939568_mmsnowelshopenfinale.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65939000/png/_65939570_mmsnowelshopenfinale.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Snooker's bizarre 'Harlem Shake' moment</title>  
+      <description>Snooker announcer Rob Walker leads an impromptu flash mob mimicking the recent internet dance craze the 'Harlem Shake' at the Welsh Open.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/21493784</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/21493784</guid>  
+      <pubDate>Sun, 17 Feb 2013 17:15:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65937000/png/_65937084_mmsnoharlemshakepic.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65937000/png/_65937085_mmsnoharlemshakepic.png"/> 
+    </item> 
+  </channel> 
+</rss>
