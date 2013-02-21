@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IQueryChainer.cs" />
+    <Compile Include="LuceneSearchResult.cs" />
+    <Compile Include="SearchResultBase.cs" />
     <Compile Include="QueryBuilderBase.cs" />
     <Compile Include="QueryBuilderExtensions.cs" />
     <Compile Include="QueryBuilder.cs" />

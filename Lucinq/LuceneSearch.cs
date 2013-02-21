@@ -1,14 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using System.IO;
-using System.Linq;
-using Lucene.Net.Documents;
 using Lucene.Net.Search;
 using Lucene.Net.Store;
 using Lucinq.Interfaces;
 
 namespace Lucinq
 {
-	public class LuceneSearch : ILuceneSearch
+	public class LuceneSearch : ILuceneSearch<LuceneSearchResult>, IDisposable
 	{
 		#region [ Constructors ]
 
@@ -27,26 +25,23 @@ namespace Lucinq
 
 		#region [ Methods ]
 
-		public TopDocs Execute(Query query, int noOfResults)
+		public LuceneSearchResult Execute(Query query, int noOfResults)
 		{
-			return IndexSearcher.Search(query, null, noOfResults);
+			TopDocs topDocs = IndexSearcher.Search(query, null, noOfResults);
+			LuceneSearchResult searchResult = new LuceneSearchResult(this, topDocs);
+			return searchResult;
 		}
 
-		public TopDocs Execute(IQueryBuilder queryBuilder, int noOfResults)
+		public LuceneSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults)
 		{
 			return Execute(queryBuilder.Build(), noOfResults);
 		}
 
-		public Document GetDocument(int documentId)
-		{
-			return IndexSearcher.Doc(documentId);
-		}
-
-		public List<Document> GetTopDocuments(TopDocs topDocs)
-		{
-			return topDocs == null ? null : (from ScoreDoc doc in topDocs.ScoreDocs select GetDocument(doc.doc)).ToList();
-		}
-
 		#endregion
+
+		public void Dispose()
+		{
+			IndexSearcher.Dispose();
+		}
 	}
 }

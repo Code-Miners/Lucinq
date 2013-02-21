@@ -55,27 +55,42 @@ namespace Lucinq
 
 		#endregion
 
-		#region [ Phrase Expressions ]
+		#region [ Fuzzy Expressions ]
 
-		public static PhraseQuery Phrase(this IQueryBuilder inputQueryBuilder, string field, string text, float? boost = null, BooleanClause.Occur occur = null, string key = null)
+		public static FuzzyQuery Fuzzy(this IQueryBuilder inputQueryBuilder, string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null)
 		{
-			PhraseQuery query = new PhraseQuery();
+			Term term = new Term(fieldName, fieldValue);
+			FuzzyQuery query = new FuzzyQuery(term);
 			SetOccurValue(inputQueryBuilder, ref occur);
-
-			if (!String.IsNullOrEmpty(field))
-			{
-				query.AddTerm(field, text);
-			}
-
 			SetBoostValue(query, boost);
 
 			inputQueryBuilder.Add(query, occur, key);
 			return query;
 		}
+		#endregion
 
-		public static PhraseQuery Phrase(this IQueryBuilder inputQueryBuilder, float? boost = null, BooleanClause.Occur occur = null, string key = null)
+		#region [ Phrase Expressions ]
+
+		public static PhraseQuery Phrase(this IQueryBuilder inputQueryBuilder, int slop, float? boost = null, BooleanClause.Occur occur = null, string key = null)
 		{
-			return inputQueryBuilder.Phrase(null, null, boost, occur, key);
+			PhraseQuery query = new PhraseQuery();
+			SetOccurValue(inputQueryBuilder, ref occur);
+
+			SetBoostValue(query, boost);
+			query.SetSlop(slop);
+
+			inputQueryBuilder.Add(query, occur, key);
+			return query;
+		}
+
+		public static IQueryBuilder Phrase(this IQueryBuilder inputQueryBuilder, string fieldName, string[] fieldValues, int slop, BooleanClause.Occur occur = null, float? boost = null)
+		{
+			PhraseQuery phrase = inputQueryBuilder.Phrase(slop, boost, occur);
+			foreach (var fieldValue in fieldValues)
+			{
+				phrase.AddTerm(fieldName, fieldValue);
+			}
+			return inputQueryBuilder;
 		}
 
 		#endregion

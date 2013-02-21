@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Lucene.Net.Documents;
 using Lucene.Net.Search;
 using Lucinq.Interfaces;
@@ -17,15 +18,21 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 		#region [ Properties ]
 
-		public LuceneSearch Search
+		[TestFixtureSetUp]
+		public void Setup()
 		{
-			get { return search ?? (search = new LuceneSearch(GeneralConstants.Paths.BBCIndex)); }
+			search = new  LuceneSearch(GeneralConstants.Paths.BBCIndex);
 		}
 
+		[TestFixtureTearDown]
+		public void TearDown()
+		{
+			search.Dispose();
+		}
 		#endregion
 
 		[Test]
-		public void SingleTermClauseSuccessful()
+		public void Term()
 		{
 			IQueryBuilder queryBuilder = new QueryBuilder();
 
@@ -38,12 +45,12 @@ namespace Lucinq.UnitTests.IntegrationTests
 			IQueryBuilder alternative = new QueryBuilder();
 			alternative.Where(x => x.Term("_name", "work"));
 
-			var results2 = Search.Execute(queryBuilder.Build(), 20);
+			var results2 = search.Execute(queryBuilder.Build(), 20);
 			Assert.AreEqual(results.TotalHits, results2.TotalHits);
 		}
 
 		[Test]
-		public void SingleTermSetupSuccessful()
+		public void SetupSyntax()
 		{
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup(x => x.Term(BBCFields.Title, "africa"));
@@ -117,13 +124,34 @@ namespace Lucinq.UnitTests.IntegrationTests
 		[Test]
 		public void PhraseDistance()
 		{
-			throw new NotImplementedException("Needs writing");
+			IQueryBuilder queryBuilder = new QueryBuilder();
+			queryBuilder.Phrase(2).AddTerm(BBCFields.Title, "wildlife").AddTerm(BBCFields.Title, "africa");
+			var results = ExecuteAndAssert(queryBuilder, 1);
+		}
+
+		[Test]
+		public void Fuzzy()
+		{
+			IQueryBuilder queryBuilder = new QueryBuilder();
+			queryBuilder.Fuzzy(BBCFields.Title, "afric");
+			var results = ExecuteAndAssert(queryBuilder, 16);
 		}
 
 		[Test]
 		public void Paging()
 		{
-			throw new NotImplementedException("Needs writing");
+			IQueryBuilder queryBuilder = new QueryBuilder();
+			queryBuilder.Setup(x => x.WildCard(BBCFields.Description, "a*"));
+
+			var results = ExecuteAndAssertPaged(queryBuilder, 902, 0, 10);
+			var documents = results.GetPagedDocuments(0, 10);
+			Assert.AreEqual(10, documents.Count);
+
+			var results2 = ExecuteAndAssertPaged(queryBuilder, 902, 1, 11);
+			var documents2 = results2.GetPagedDocuments(1, 11);
+			Assert.AreEqual(10, documents2.Count);
+
+			Assert.AreEqual(documents2[1].GetValues(BBCFields.Title)[0], documents[2].GetValues(BBCFields.Title)[0]);
 		}
 
 		[Test]
@@ -147,7 +175,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		}
 
 		[Test]
-		public void SimpleWildCardQuery()
+		public void WildCard()
 		{
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup(x => x.WildCard(BBCFields.Description, "a*"));
@@ -187,18 +215,35 @@ namespace Lucinq.UnitTests.IntegrationTests
 			throw new NotImplementedException("Needs finishing");
 		}
 
-		private TopDocs ExecuteAndAssert(IQueryBuilder queryBuilder, int numberOfHitsExpected)
+		private LuceneSearchResult ExecuteAndAssert(IQueryBuilder queryBuilder, int numberOfHitsExpected)
 		{
-			TopDocs results = Search.Execute(queryBuilder, 20);
+			var result = search.Execute(queryBuilder, 20);
 
-			foreach (Document document in Search.GetTopDocuments(results))
+
+			foreach (Document document in result.GetTopDocuments())
 			{
 				Console.WriteLine(document.GetValues(BBCFields.Title)[0]);
 			}
 
-			Assert.AreEqual(numberOfHitsExpected, results.TotalHits);
+			Assert.AreEqual(numberOfHitsExpected, result.TotalHits);
 			
-			return results;
+			return result;
+		}
+
+
+		private LuceneSearchResult ExecuteAndAssertPaged(IQueryBuilder queryBuilder, int numberOfHitsExpected, int start, int end)
+		{
+			// Search = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
+			var result = search.Execute(queryBuilder, 5);
+			List<Document> documents = result.GetPagedDocuments(start, end);
+			foreach (Document document in documents)
+			{
+				Console.WriteLine(document.GetValues(BBCFields.Title)[0]);
+			}
+
+			Assert.AreEqual(numberOfHitsExpected, result.TotalHits);
+
+			return result;
 		}
 	}
 }
