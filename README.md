@@ -10,7 +10,7 @@ Example Syntax
 ==============
 
 Further examples can be found in the integration tests, however here is a quick overview of how the syntax looks
-''''
+```C#
 LuceneSearch search = new LuceneSearch(indexPath));
 
 IQueryBuilder query = new QueryBuilder();
@@ -22,16 +22,16 @@ query.Or
 		x => x.Term("_name", "text")
 	);
 
-TopDocs results = search.Execute(query.Build(), 20);	
-foreach (Document document in Search.GetTopDocuments(results))
+LuceneSearchResult result = search.Execute(query.Build(), 20);	
+foreach (Document document in result.GetTopDocuments())
 {
 	Console.WriteLine(document.GetValues("field")[0]);
 }
-''''
+```
 
 OR
 
-''''
+```C#
 LuceneSearch search = new LuceneSearch(indexPath));
 
 IQueryBuilder query = new IQueryBuilder();
@@ -45,12 +45,12 @@ query.Setup(
 			)
 );
 
-TopDocs results = search.Execute(query.Build(), 20);	
-foreach (Document document in Search.GetTopDocuments(results))
+LuceneSearchResult results = search.Execute(query.Build(), 20);	
+foreach (Document document in result.GetTopDocuments())
 {
 	Console.WriteLine(document.GetValues("field")[0]);
 }
-''''
+```
 
 Further Projects
 ================
