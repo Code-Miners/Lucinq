@@ -1,6 +1,8 @@
 ﻿using System;
 using Lucene.Net.Index;
 using Lucene.Net.Search;
+using Lucinq.Extensions;
+using Lucinq.Querying;
 using NUnit.Framework;
 
 namespace Lucinq.UnitTests.UnitTests
@@ -81,7 +83,7 @@ namespace Lucinq.UnitTests.UnitTests
 
 			string queryString = originalQuery.ToString();
 
-			QueryBuilder builder = new QueryBuilder{ChildrenOccur = BooleanClause.Occur.SHOULD};
+			QueryBuilder builder = new QueryBuilder{DefaultChildrenOccur = BooleanClause.Occur.SHOULD};
 			builder.Setup
 				(
 					x => x.Term("_name", "value1"),

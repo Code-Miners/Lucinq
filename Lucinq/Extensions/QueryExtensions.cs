@@ -1,7 +1,7 @@
 ﻿using Lucene.Net.Index;
 using Lucene.Net.Search;
 
-namespace Lucinq
+namespace Lucinq.Extensions
 {
 	public static class QueryExtensions
 	{

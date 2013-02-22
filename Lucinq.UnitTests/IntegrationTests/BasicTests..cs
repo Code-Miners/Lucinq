@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using Lucene.Net.Documents;
 using Lucene.Net.Search;
+using Lucinq.Extensions;
 using Lucinq.Interfaces;
+using Lucinq.Querying;
 using NUnit.Framework;
 
 namespace Lucinq.UnitTests.IntegrationTests
@@ -157,13 +159,13 @@ namespace Lucinq.UnitTests.IntegrationTests
 		[Test]
 		public void Sorting()
 		{
-			throw new NotImplementedException("Needs writing");
+			throw new NotImplementedException("Sorting functionality needs writing");
 		}
 
 		[Test]
 		public void Range()
 		{
-			throw new NotImplementedException("Needs writing");
+			throw new NotImplementedException("Range functionality needs writing");
 		}
 
 		[Test]
@@ -202,17 +204,15 @@ namespace Lucinq.UnitTests.IntegrationTests
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup
 				(
-					x => x.WildCard("_name", "a*"),
-					x => x.Term("_name", "work"),
+					x => x.WildCard(BBCFields.Title, "africa"),
 					x => x.Group().Setup
 							(
-								y => y.Term("_name", "work")
+								y => y.Term(BBCFields.Description, "africa", BooleanClause.Occur.SHOULD),
+								y => y.Term(BBCFields.Description, "amazing", BooleanClause.Occur.SHOULD)
 							)
 				);
 
-			ExecuteAndAssert(queryBuilder, 4);
-
-			throw new NotImplementedException("Needs finishing");
+			ExecuteAndAssert(queryBuilder, 5);
 		}
 
 		private LuceneSearchResult ExecuteAndAssert(IQueryBuilder queryBuilder, int numberOfHitsExpected)

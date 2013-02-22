@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Lucene.Net.Documents;
 
-namespace Lucinq
+namespace Lucinq.Interfaces
 {
 	public interface ISearchResultBase<out T>
 	{

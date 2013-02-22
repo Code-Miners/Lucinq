@@ -4,7 +4,7 @@ using Lucene.Net.Search;
 using Lucene.Net.Store;
 using Lucinq.Interfaces;
 
-namespace Lucinq
+namespace Lucinq.Querying
 {
 	public class LuceneSearch : ILuceneSearch<LuceneSearchResult>, IDisposable
 	{

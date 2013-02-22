@@ -4,7 +4,7 @@ using Lucene.Net.Documents;
 using Lucene.Net.Search;
 using Lucinq.Interfaces;
 
-namespace Lucinq
+namespace Lucinq.Querying
 {
 	public class LuceneSearchResult : ISearchResultBase<TopDocs>
 	{
