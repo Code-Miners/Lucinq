@@ -25,16 +25,21 @@ namespace Lucinq.Querying
 
 		#region [ Methods ]
 
-		public LuceneSearchResult Execute(Query query, int noOfResults)
+		public LuceneSearchResult Execute(Query query, int noOfResults, Sort sort = null)
 		{
-			TopDocs topDocs = IndexSearcher.Search(query, null, noOfResults);
+			if (sort == null)
+			{
+				sort = Sort.RELEVANCE;
+			}
+
+			TopDocs topDocs = IndexSearcher.Search(query, null, noOfResults, sort);
 			LuceneSearchResult searchResult = new LuceneSearchResult(this, topDocs);
 			return searchResult;
 		}
 
-		public LuceneSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults)
+		public LuceneSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults, Sort sort = null)
 		{
-			return Execute(queryBuilder.Build(), noOfResults);
+			return Execute(queryBuilder.Build(), noOfResults, sort);
 		}
 
 		#endregion

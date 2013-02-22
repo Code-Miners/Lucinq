@@ -27,6 +27,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 				Console.WriteLine(newsArticle.Description);
 				Console.WriteLine(newsArticle.Copyright);
 				Console.WriteLine(newsArticle.Link);
+				Console.WriteLine(TestHelpers.GetDateString(newsArticle.PublishDateTime));
 				Console.WriteLine();
 			}
 		}
@@ -65,10 +66,12 @@ namespace Lucinq.UnitTests.IntegrationTests
 							Field copyrightField = new Field(BBCFields.Copyright, newsArticle.Copyright, Field.Store.NO, Field.Index.ANALYZED);
 							document.Add(copyrightField);
 						}
-
-
+						
 						Field linkField = new Field(BBCFields.Link, newsArticle.Link, Field.Store.YES, Field.Index.NOT_ANALYZED);
 						document.Add(linkField);
+
+						Field publishDateField = new Field(BBCFields.PublishDate, TestHelpers.GetDateString(newsArticle.PublishDateTime), Field.Store.YES, Field.Index.NOT_ANALYZED);
+						document.Add(publishDateField);
 
 						indexWriter.AddDocument(document);
 					}
@@ -109,6 +112,12 @@ namespace Lucinq.UnitTests.IntegrationTests
 					{
 						newsArticle.Link = linkElement.Value;
 					}
+
+					var publishDateElement = node.Element("pubDate");
+					if (publishDateElement != null)
+					{
+						newsArticle.PublishDateTime = DateTime.Parse(publishDateElement.Value);
+					}
 					newsArticles.Add(newsArticle);
 				}
 			}
@@ -121,6 +130,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		public string Title { get; set; }
 		public string Link { get; set; }
 		public string Copyright { get; set; }
-		public string Description { get; set; }	
+		public string Description { get; set; }
+		public DateTime PublishDateTime { get; set; }
 	}
 }

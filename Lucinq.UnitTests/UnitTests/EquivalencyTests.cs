@@ -69,6 +69,23 @@ namespace Lucinq.UnitTests.UnitTests
 		}
 
 		[Test]
+		public void SimpleTermRangeTests()
+		{
+			BooleanQuery originalQuery = new BooleanQuery();
+			TermRangeQuery termRangeQuery = new TermRangeQuery("field", "lower", "upper", true, true);
+			originalQuery.Add(termRangeQuery, BooleanClause.Occur.MUST);
+			string queryString = originalQuery.ToString();
+
+			QueryBuilder builder = new QueryBuilder();
+			builder.Setup(x => x.TermRange("field", "lower", "upper"));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		[Test]
 		public void SimpleOrTests()
 		{
 			BooleanQuery originalQuery = new BooleanQuery();

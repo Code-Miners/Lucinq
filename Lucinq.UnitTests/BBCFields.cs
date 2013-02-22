@@ -14,5 +14,7 @@ namespace Lucinq.UnitTests
 		public const string Copyright = "copyright";
 
 		public const string Link = "link";
+
+		public const string PublishDate = "publishdate";
 	}
 }

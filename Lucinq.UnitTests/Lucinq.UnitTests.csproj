@@ -53,6 +53,7 @@
     <Compile Include="IntegrationTests\BasicTests..cs" />
     <Compile Include="IntegrationTests\IndexRebuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestHelpers.cs" />
     <Compile Include="UnitTests\EquivalencyTests.cs" />
   </ItemGroup>
   <ItemGroup>

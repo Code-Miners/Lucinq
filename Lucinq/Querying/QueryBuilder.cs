@@ -249,6 +249,31 @@ namespace Lucinq.Querying
 
 		#endregion
 
+		#region [ Range Expressions ]
+
+		public virtual TermRangeQuery TermRange(string fieldName, string rangeStart, string rangeEnd, bool includeLower = true, bool includeUpper = true,
+										BooleanClause.Occur occur = null, float? boost = null, string key = null)
+		{
+			TermRangeQuery query = new TermRangeQuery(fieldName, rangeStart, rangeEnd, includeLower, includeUpper);
+			SetOccurValue(this, ref occur);
+			SetBoostValue(query, boost);
+			Add(query, occur, key);
+			return query;
+		}
+
+		#endregion
+
+		#region [ Sort Expressions ]
+
+		public virtual IQueryBuilder Sort(string fieldName)
+		{
+			SortField sortField = new SortField(fieldName, 1);
+			Sort sort = new Sort(sortField);
+			return this;
+		}
+
+		#endregion
+
 		#region [ Wildcard Expressions ]
 
 		/// <summary>
