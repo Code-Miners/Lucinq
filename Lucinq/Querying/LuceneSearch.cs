@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using Lucene.Net.Search;
 using Lucene.Net.Store;
@@ -27,13 +28,19 @@ namespace Lucinq.Querying
 
 		public virtual LuceneSearchResult Execute(Query query, int noOfResults = Int32.MaxValue - 1, Sort sort = null)
 		{
+			Stopwatch stopwatch = new Stopwatch();
+			stopwatch.Start();
 			if (sort == null)
 			{
 				sort = Sort.RELEVANCE;
 			}
 			
 			TopDocs topDocs = IndexSearcher.Search(query, null, noOfResults, sort);
-			LuceneSearchResult searchResult = new LuceneSearchResult(this, topDocs);
+			stopwatch.Stop();
+			LuceneSearchResult searchResult = new LuceneSearchResult(this, topDocs)
+				{
+					ElapsedTimeMs = stopwatch.ElapsedMilliseconds
+				};
 			return searchResult;
 		}
 

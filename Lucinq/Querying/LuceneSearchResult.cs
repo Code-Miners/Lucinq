@@ -27,6 +27,8 @@ namespace Lucinq.Querying
 
 		public TopDocs Results { get; private set; }
 
+		public long ElapsedTimeMs { get; set; }
+
 		#endregion
 
 		#region [ Methods ] 
@@ -51,7 +53,7 @@ namespace Lucinq.Querying
 				end = Results.TotalHits - 1;
 			}
 
-			for (var i = start; i < end; i++)
+			for (var i = start; i <= end; i++)
 			{
 				documents.Add(GetDocument(Results.ScoreDocs[i].doc));
 			}

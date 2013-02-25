@@ -162,14 +162,18 @@ namespace Lucinq.UnitTests.IntegrationTests
 			queryBuilder.Setup(x => x.WildCard(BBCFields.Description, "a*"));
 
 			var results = ExecuteAndAssertPaged(queryBuilder, 902, 0, 10);
-			var documents = results.GetPagedDocuments(0, 10);
+			var documents = results.GetPagedDocuments(0, 9);
 			Assert.AreEqual(10, documents.Count);
 
 			var results2 = ExecuteAndAssertPaged(queryBuilder, 902, 1, 11);
-			var documents2 = results2.GetPagedDocuments(1, 11);
+			var documents2 = results2.GetPagedDocuments(1, 10);
 			Assert.AreEqual(10, documents2.Count);
 
-			Assert.AreEqual(documents2[1].GetValues(BBCFields.Title)[0], documents[2].GetValues(BBCFields.Title)[0]);
+			for (var i = 0; i < documents.Count - 1; i++)
+			{
+				Assert.AreEqual(documents2[i].GetValues(BBCFields.Title).FirstOrDefault(), documents[i+1].GetValues(BBCFields.Title).FirstOrDefault());
+			}
+				
 		}
 
 		[Test]
@@ -244,7 +248,10 @@ namespace Lucinq.UnitTests.IntegrationTests
 			var result = search.Execute(queryBuilder);
 
 			var documents = result.GetTopDocuments();
-			
+
+			Console.WriteLine("Searched {0} documents in {1} ms", search.IndexSearcher.MaxDoc(), result.ElapsedTimeMs);
+			Console.WriteLine();
+
 			WriteDocuments(documents);
 
 			Assert.AreEqual(numberOfHitsExpected, result.TotalHits);
@@ -258,6 +265,9 @@ namespace Lucinq.UnitTests.IntegrationTests
 			// Search = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
 			var result = search.Execute(queryBuilder);
 			List<Document> documents = result.GetPagedDocuments(start, end);
+
+			Console.WriteLine("Searched {0} documents in {1} ms", search.IndexSearcher.MaxDoc(), result.ElapsedTimeMs);
+			Console.WriteLine();
 
 			WriteDocuments(documents);
 

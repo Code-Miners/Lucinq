@@ -382,7 +382,7 @@ namespace Lucinq.Querying
 
 		#region [ Other Expressions ]
 
-		public virtual Query Raw(string field, string queryText, BooleanClause.Occur occur = null, string key = null, Analyzer analyzer = null)
+		public virtual Query Raw(string field, string queryText, BooleanClause.Occur occur = null, float? boost = null,  string key = null, Analyzer analyzer = null)
 		{
 			if (analyzer == null)
 			{
@@ -390,6 +390,8 @@ namespace Lucinq.Querying
 			}
 			QueryParser queryParser = new QueryParser(Version.LUCENE_29, field, analyzer);
 			Query query = queryParser.Parse(queryText);
+			SetOccurValue(this, ref occur);
+			SetBoostValue(query, boost);
 			Add(query, occur, key);
 			return query;
 		}

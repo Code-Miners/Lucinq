@@ -139,7 +139,7 @@ namespace Lucinq.Interfaces
 		/// <param name="queries">The lamdba expressions showing queries</param>
 		IQueryBuilder Group(BooleanClause.Occur occur = null, BooleanClause.Occur childrenOccur = null, params Action<IQueryBuilder>[] queries);
 
-		Query Raw(string field, string queryText, BooleanClause.Occur occur = null, string key = null, Analyzer analyzer = null);
+		Query Raw(string field, string queryText, BooleanClause.Occur occur = null, float? boost = null, string key = null, Analyzer analyzer = null);
 
 		/// <summary>
 		/// Querys values to return results within the specified range of terms
