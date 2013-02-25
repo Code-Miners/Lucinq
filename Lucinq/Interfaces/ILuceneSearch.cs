@@ -1,16 +1,12 @@
-﻿using Lucene.Net.Search;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 namespace Lucinq.Interfaces
 {
-	public interface ILuceneSearch<T> : ILuceneSearch where T : class, ISearchResult
+	public interface ILuceneSearch<T> : ILuceneSearchExecutor<T>, ILuceneSearcherAccessor where T : class, ISearchResult
 	{
-		T Execute(Query query, int noOfResults, Sort sort = null);
 
-		T Execute(IQueryBuilder queryBuilder, int noOfResults, Sort sort = null);
-	}
-
-	public interface ILuceneSearch
-	{
-		IndexSearcher IndexSearcher { get; }
 	}
 }

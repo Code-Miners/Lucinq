@@ -25,7 +25,7 @@ namespace Lucinq.Querying
 
 		#region [ Methods ]
 
-		public LuceneSearchResult Execute(Query query, int noOfResults, Sort sort = null)
+		public virtual LuceneSearchResult Execute(Query query, int noOfResults = 20, Sort sort = null)
 		{
 			if (sort == null)
 			{
@@ -37,9 +37,9 @@ namespace Lucinq.Querying
 			return searchResult;
 		}
 
-		public LuceneSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults, Sort sort = null)
+		public LuceneSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults = 20)
 		{
-			return Execute(queryBuilder.Build(), noOfResults, sort);
+			return Execute(queryBuilder.Build(), noOfResults, queryBuilder.CurrentSort);
 		}
 
 		#endregion

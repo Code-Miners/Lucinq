@@ -66,6 +66,8 @@ namespace Lucinq.Querying
 		/// </summary>
 		public List<IQueryBuilder> Groups { get; private set; }
 
+		public Sort CurrentSort { get; set; }
+
 		#endregion
 
 		#region [ Build Methods ]
@@ -265,10 +267,15 @@ namespace Lucinq.Querying
 
 		#region [ Sort Expressions ]
 
-		public virtual IQueryBuilder Sort(string fieldName)
+		public virtual IQueryBuilder Sort(string fieldName, int? sortType = null)
 		{
-			SortField sortField = new SortField(fieldName, 1);
-			Sort sort = new Sort(sortField);
+			if (!sortType.HasValue)
+			{
+				sortType = SortField.STRING;
+			}
+
+			SortField sortField = new SortField(fieldName, sortType.Value);
+			CurrentSort = new Sort(sortField);
 			return this;
 		}
 

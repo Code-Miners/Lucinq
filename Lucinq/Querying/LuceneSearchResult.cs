@@ -6,14 +6,14 @@ using Lucinq.Interfaces;
 
 namespace Lucinq.Querying
 {
-	public class LuceneSearchResult : ISearchResult<TopDocs>
+	public class LuceneSearchResult : ILuceneSearchResult<TopDocs>
 	{
 		#region [ Constructors ]
 
-		public LuceneSearchResult(ILuceneSearch luceneSearch, TopDocs topDocs)
+		public LuceneSearchResult(ILuceneSearcherAccessor luceneSearcherAccessor, TopDocs topDocs)
 		{
 			Results = topDocs;
-			LuceneSearch = luceneSearch;
+			LuceneSearcherAccessor = luceneSearcherAccessor;
 		}
 
 		#endregion
@@ -31,7 +31,7 @@ namespace Lucinq.Querying
 
 		#region [ Methods ] 
 
-		protected ILuceneSearch LuceneSearch { get; private set; }
+		protected ILuceneSearcherAccessor LuceneSearcherAccessor { get; private set; }
 
 		public List<Document> GetTopDocuments()
 		{
@@ -61,7 +61,7 @@ namespace Lucinq.Querying
 
 		public Document GetDocument(int documentId)
 		{
-			return LuceneSearch.IndexSearcher.Doc(documentId);
+			return LuceneSearcherAccessor.IndexSearcher.Doc(documentId);
 		}
 
 		#endregion

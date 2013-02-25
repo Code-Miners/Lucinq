@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Lucene.Net.Documents;
 using Lucene.Net.Search;
 using Lucinq.Extensions;
@@ -47,7 +48,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 			IQueryBuilder alternative = new QueryBuilder();
 			alternative.Where(x => x.Term("_name", "work"));
 
-			var results2 = search.Execute(queryBuilder.Build(), 20);
+			var results2 = search.Execute(queryBuilder);
 			Assert.AreEqual(results.TotalHits, results2.TotalHits);
 		}
 
@@ -174,7 +175,21 @@ namespace Lucinq.UnitTests.IntegrationTests
 		[Test]
 		public void Sorting()
 		{
-			throw new NotImplementedException("Sorting functionality needs finishing");
+			IQueryBuilder queryBuilder = new QueryBuilder();
+			queryBuilder.Setup
+				(
+					x => x.WildCard(BBCFields.Description, "a*"),
+					x => x.Sort(BBCFields.Title)
+				);
+
+			ILuceneSearchResult result = ExecuteAndAssert(queryBuilder, 902);
+			List<Document> documents = result.GetPagedDocuments(0, 10);
+			for (var i = 1; i <= documents.Count; i++)
+			{
+				string thisDocumentTitle = documents[i].GetValues(BBCFields.Title).FirstOrDefault();
+				string lastDocumentTitle = documents[i - 1].GetValues(BBCFields.Title).FirstOrDefault();
+				Assert.IsTrue(String.Compare(thisDocumentTitle, lastDocumentTitle, StringComparison.Ordinal) >= 0);
+			}
 		}
 
 		[Test]
@@ -224,7 +239,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 			ExecuteAndAssert(queryBuilder, 5);
 		}
 
-		private ISearchResult ExecuteAndAssert(IQueryBuilder queryBuilder, int numberOfHitsExpected)
+		private ILuceneSearchResult ExecuteAndAssert(IQueryBuilder queryBuilder, int numberOfHitsExpected)
 		{
 			var result = search.Execute(queryBuilder, 20);
 
@@ -238,7 +253,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		}
 
 
-		private ISearchResult ExecuteAndAssertPaged(IQueryBuilder queryBuilder, int numberOfHitsExpected, int start, int end)
+		private ILuceneSearchResult ExecuteAndAssertPaged(IQueryBuilder queryBuilder, int numberOfHitsExpected, int start, int end)
 		{
 			// Search = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
 			var result = search.Execute(queryBuilder, 5);
@@ -258,7 +273,8 @@ namespace Lucinq.UnitTests.IntegrationTests
 				Console.WriteLine("Title:" + document.GetValues(BBCFields.Title)[0]);
 				Console.WriteLine("Description: " + document.GetValues(BBCFields.Description)[0]);
 				Console.WriteLine("Publish Date: " + document.GetValues(BBCFields.PublishDate)[0]);
-				Console.WriteLine("Url: " + document.GetValues(BBCFields.Link)[0]);
+				Console.WriteLine("Url: "+ document.GetValues(BBCFields.Link)[0]);
+				Console.WriteLine();
 			}
 		}
 	}
