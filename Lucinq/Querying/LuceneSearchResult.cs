@@ -6,7 +6,7 @@ using Lucinq.Interfaces;
 
 namespace Lucinq.Querying
 {
-	public class LuceneSearchResult : ISearchResultBase<TopDocs>
+	public class LuceneSearchResult : ISearchResult<TopDocs>
 	{
 		#region [ Constructors ]
 

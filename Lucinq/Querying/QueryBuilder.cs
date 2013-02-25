@@ -363,7 +363,7 @@ namespace Lucinq.Querying
 			{
 				occur = BooleanClause.Occur.MUST;
 			}
-			var groupedBooleanQuery = AddGroup(occur, childrenOccur, queries);
+			var groupedBooleanQuery = AddChildGroup(occur, childrenOccur, queries);
 			if (groupedBooleanQuery == null)
 			{
 				throw new Exception("An error occurred creating the inner query");
@@ -392,7 +392,7 @@ namespace Lucinq.Querying
 		#region [ Helper Methods ]
 
 
-		protected virtual IQueryBuilder AddGroup(BooleanClause.Occur occur = null, BooleanClause.Occur childrenOccur = null, params Action<IQueryBuilder>[] queries)
+		protected virtual IQueryBuilder AddChildGroup(BooleanClause.Occur occur = null, BooleanClause.Occur childrenOccur = null, params Action<IQueryBuilder>[] queries)
 		{
 			if (occur == null)
 			{
@@ -403,13 +403,18 @@ namespace Lucinq.Querying
 				childrenOccur = BooleanClause.Occur.MUST;
 			}
 
-			IQueryBuilder queryBuilder = new QueryBuilder(this) { Occur = occur, DefaultChildrenOccur = childrenOccur };
+			IQueryBuilder queryBuilder = CreateNewChildGroup(occur, childrenOccur);
 			foreach (var item in queries)
 			{
 				item(queryBuilder);
 			}
 			Groups.Add(queryBuilder);
 			return queryBuilder;
+		}
+
+		protected virtual IQueryBuilder CreateNewChildGroup(BooleanClause.Occur occur = null, BooleanClause.Occur childrenOccur = null)
+		{
+			return new QueryBuilder(this) {Occur = occur, DefaultChildrenOccur = childrenOccur};
 		}
 
 		protected virtual void SetBoostValue(Query query, float? boost)

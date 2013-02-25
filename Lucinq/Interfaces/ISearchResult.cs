@@ -3,12 +3,19 @@ using Lucene.Net.Documents;
 
 namespace Lucinq.Interfaces
 {
-	public interface ISearchResultBase<out T>
+	public interface ISearchResult<out T> : ISearchResult
+	{
+		T Results { get; }
+	}
+
+	public interface ISearchResult
 	{
 		int TotalHits { get; }
 
-		T Results { get; }
-
 		List<Document> GetTopDocuments();
+
+		List<Document> GetPagedDocuments(int start, int end);
+
+		Document GetDocument(int documentId);
 	}
 }

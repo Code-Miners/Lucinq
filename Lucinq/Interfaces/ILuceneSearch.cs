@@ -2,7 +2,7 @@
 
 namespace Lucinq.Interfaces
 {
-	public interface ILuceneSearch<T> : ILuceneSearch
+	public interface ILuceneSearch<T> : ILuceneSearch where T : class, ISearchResult
 	{
 		T Execute(Query query, int noOfResults, Sort sort = null);
 

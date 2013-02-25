@@ -224,7 +224,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 			ExecuteAndAssert(queryBuilder, 5);
 		}
 
-		private LuceneSearchResult ExecuteAndAssert(IQueryBuilder queryBuilder, int numberOfHitsExpected)
+		private ISearchResult ExecuteAndAssert(IQueryBuilder queryBuilder, int numberOfHitsExpected)
 		{
 			var result = search.Execute(queryBuilder, 20);
 
@@ -238,7 +238,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		}
 
 
-		private LuceneSearchResult ExecuteAndAssertPaged(IQueryBuilder queryBuilder, int numberOfHitsExpected, int start, int end)
+		private ISearchResult ExecuteAndAssertPaged(IQueryBuilder queryBuilder, int numberOfHitsExpected, int start, int end)
 		{
 			// Search = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
 			var result = search.Execute(queryBuilder, 5);
