@@ -10,7 +10,7 @@ Features
 
 - A fluent style api for working with lucene queries for most of the query types and grouping.
 - Paging
-- Sorting (coming soon)
+- Sorting
 - Query manipulation - remove terms and re-run for example.
 
 
