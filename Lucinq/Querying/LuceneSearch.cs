@@ -25,19 +25,19 @@ namespace Lucinq.Querying
 
 		#region [ Methods ]
 
-		public virtual LuceneSearchResult Execute(Query query, int noOfResults = 20, Sort sort = null)
+		public virtual LuceneSearchResult Execute(Query query, int noOfResults = Int32.MaxValue - 1, Sort sort = null)
 		{
 			if (sort == null)
 			{
 				sort = Sort.RELEVANCE;
 			}
-
+			
 			TopDocs topDocs = IndexSearcher.Search(query, null, noOfResults, sort);
 			LuceneSearchResult searchResult = new LuceneSearchResult(this, topDocs);
 			return searchResult;
 		}
 
-		public LuceneSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults = 20)
+		public LuceneSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1)
 		{
 			return Execute(queryBuilder.Build(), noOfResults, queryBuilder.CurrentSort);
 		}

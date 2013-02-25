@@ -184,7 +184,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 			ILuceneSearchResult result = ExecuteAndAssert(queryBuilder, 902);
 			List<Document> documents = result.GetPagedDocuments(0, 10);
-			for (var i = 1; i <= documents.Count; i++)
+			for (var i = 1; i < documents.Count; i++)
 			{
 				string thisDocumentTitle = documents[i].GetValues(BBCFields.Title).FirstOrDefault();
 				string lastDocumentTitle = documents[i - 1].GetValues(BBCFields.Title).FirstOrDefault();
@@ -241,7 +241,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 		private ILuceneSearchResult ExecuteAndAssert(IQueryBuilder queryBuilder, int numberOfHitsExpected)
 		{
-			var result = search.Execute(queryBuilder, 20);
+			var result = search.Execute(queryBuilder);
 
 			var documents = result.GetTopDocuments();
 			
@@ -256,7 +256,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		private ILuceneSearchResult ExecuteAndAssertPaged(IQueryBuilder queryBuilder, int numberOfHitsExpected, int start, int end)
 		{
 			// Search = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
-			var result = search.Execute(queryBuilder, 5);
+			var result = search.Execute(queryBuilder);
 			List<Document> documents = result.GetPagedDocuments(start, end);
 
 			WriteDocuments(documents);
@@ -268,14 +268,23 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 		private void WriteDocuments(List<Document> documents)
 		{
-			foreach (Document document in documents)
-			{
-				Console.WriteLine("Title:" + document.GetValues(BBCFields.Title)[0]);
-				Console.WriteLine("Description: " + document.GetValues(BBCFields.Description)[0]);
-				Console.WriteLine("Publish Date: " + document.GetValues(BBCFields.PublishDate)[0]);
-				Console.WriteLine("Url: "+ document.GetValues(BBCFields.Link)[0]);
-				Console.WriteLine();
-			}
+			int counter = 0;
+			Console.WriteLine("Showing the first 30 docs");
+			documents.ForEach(
+				document =>
+				{
+					if (counter >= 29)
+					{
+						return;
+					}
+					Console.WriteLine("Title: " + document.GetValues(BBCFields.Title)[0]);
+					Console.WriteLine("Description: " + document.GetValues(BBCFields.Description)[0]);
+					Console.WriteLine("Publish Date: " + document.GetValues(BBCFields.PublishDate)[0]);
+					Console.WriteLine("Url: "+ document.GetValues(BBCFields.Link)[0]);
+					Console.WriteLine();
+					counter++;
+				}
+			);
 		}
 	}
 }

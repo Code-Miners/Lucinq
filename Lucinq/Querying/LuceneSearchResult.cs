@@ -53,7 +53,7 @@ namespace Lucinq.Querying
 
 			for (var i = start; i < end; i++)
 			{
-				documents.Add(GetDocument(i));
+				documents.Add(GetDocument(Results.ScoreDocs[i].doc));
 			}
 
 			return documents;
