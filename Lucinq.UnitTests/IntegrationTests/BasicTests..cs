@@ -243,6 +243,54 @@ namespace Lucinq.UnitTests.IntegrationTests
 			ExecuteAndAssert(queryBuilder, 5);
 		}
 
+		[Test]
+		public void SpeedExample()
+		{
+			Console.WriteLine("A simple test to show Lucene getting quicker as queries are done");
+			Console.WriteLine("----------------------------------------------------------------");
+			Console.WriteLine();
+			Console.WriteLine("Pass 1");
+			SpeedExampleExecute("b");
+			Console.WriteLine();
+
+			Console.WriteLine("Pass 2");
+			SpeedExampleExecute("c");
+			Console.WriteLine();
+
+			Console.WriteLine("Pass 3");
+			SpeedExampleExecute("a");
+
+			Console.WriteLine();
+			Console.WriteLine("** Repeating Passes **");
+
+			Console.WriteLine("Repeat Pass 1");
+			SpeedExampleExecute("b");
+			Console.WriteLine();
+
+			Console.WriteLine("Repeat Pass 2");
+			SpeedExampleExecute("c");
+			Console.WriteLine();
+
+			Console.WriteLine("Repeat Pass 3");
+			SpeedExampleExecute("a");
+		}
+
+		public void SpeedExampleExecute(string startingCharacter)
+		{
+			// Chosen due to it being the slowest query
+
+			IQueryBuilder queryBuilder = new QueryBuilder();
+			queryBuilder.Setup
+				(
+					x => x.WildCard(BBCFields.Description, startingCharacter + "*"),
+					x => x.Term(BBCFields.Description, "sport")
+				);
+			var result = search.Execute(queryBuilder);
+
+			Console.WriteLine("Total Results: {0}", result.TotalHits);
+			Console.WriteLine("Elapsed Time: {0}", result.ElapsedTimeMs);
+		}
+
 		private ILuceneSearchResult ExecuteAndAssert(IQueryBuilder queryBuilder, int numberOfHitsExpected)
 		{
 			var result = search.Execute(queryBuilder);
