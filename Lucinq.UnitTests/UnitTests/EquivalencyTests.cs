@@ -30,6 +30,26 @@ namespace Lucinq.UnitTests.UnitTests
 		}
 
 		[Test]
+		public void AddLuceneApiQuery()
+		{
+			// shows you can add regular lucene queries to lucinq
+			BooleanQuery originalQuery = new BooleanQuery();
+			Term term = new Term("_name", "value");
+			TermQuery termQuery = new TermQuery(term);
+			originalQuery.Add(termQuery, BooleanClause.Occur.MUST);
+			string queryString = originalQuery.ToString();
+
+			QueryBuilder builder = new QueryBuilder();
+			TermQuery termQuery2 = new TermQuery(term);
+			builder.Add(termQuery2, BooleanClause.Occur.MUST);
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		[Test]
 		public void SimplePhraseTests()
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
