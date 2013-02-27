@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Building\DocumentExtensions.cs" />
     <Compile Include="Interfaces\IHeirarchicalQuery.cs" />
     <Compile Include="Interfaces\ILuceneExecutor.cs" />
     <Compile Include="Interfaces\ILuceneSearch.cs" />

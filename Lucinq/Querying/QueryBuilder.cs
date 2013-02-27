@@ -40,6 +40,11 @@ namespace Lucinq.Querying
 		public BooleanClause.Occur Occur { get; set; }
 
 		/// <summary>
+		/// Gets or sets whether the query is to be case sensitive
+		/// </summary>
+		public bool CaseSensitive { get; set; }
+
+		/// <summary>
 		/// Gets or sets the default occur value for child queries within the builder
 		/// </summary>
 		public BooleanClause.Occur DefaultChildrenOccur
@@ -139,7 +144,7 @@ namespace Lucinq.Querying
 		/// <returns>The input querybuilder</returns>
 		public virtual IQueryBuilder Setup(params Action<IQueryBuilder>[] queries)
 		{
-			foreach (var item in queries)
+			foreach (Action<IQueryBuilder> item in queries)
 			{
 				item(this);
 			}
@@ -162,7 +167,7 @@ namespace Lucinq.Querying
 		/// <returns>The generated term query</returns>
 		public virtual TermQuery Term(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null)
 		{
-			Term term = new Term(fieldName, fieldValue);
+			Term term = GetTerm(fieldName, fieldValue);
 			TermQuery query = new TermQuery(term);
 			SetOccurValue(this, ref occur);
 			SetBoostValue(query, boost);
@@ -205,7 +210,7 @@ namespace Lucinq.Querying
 		/// <returns>The generated fuzzy query object</returns>
 		public virtual FuzzyQuery Fuzzy(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null)
 		{
-			Term term = new Term(fieldName, fieldValue);
+			Term term = GetTerm(fieldName, fieldValue);
 			FuzzyQuery query = new FuzzyQuery(term);
 			SetOccurValue(this, ref occur);
 			SetBoostValue(query, boost);
@@ -294,7 +299,7 @@ namespace Lucinq.Querying
 		/// <returns>The generated wildcard query object</returns>
 		public virtual WildcardQuery WildCard(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null)
 		{
-			Term term = new Term(fieldName, fieldValue);
+			Term term = GetTerm(fieldName, fieldValue);
 			WildcardQuery query = new WildcardQuery(term);
 			SetOccurValue(this, ref occur);
 			SetBoostValue(query, boost);
@@ -400,6 +405,14 @@ namespace Lucinq.Querying
 
 		#region [ Helper Methods ]
 
+		protected virtual Term GetTerm(string field, string value)
+		{
+			if (!CaseSensitive)
+			{
+				value = value.ToLower();
+			}
+			return new Term(field, value);
+		}
 
 		protected virtual IQueryBuilder AddChildGroup(BooleanClause.Occur occur = null, BooleanClause.Occur childrenOccur = null, params Action<IQueryBuilder>[] queries)
 		{

@@ -7,6 +7,7 @@ using Lucene.Net.Analysis.Standard;
 using Lucene.Net.Documents;
 using Lucene.Net.Index;
 using Lucene.Net.Store;
+using Lucinq.Building;
 using NUnit.Framework;
 using Directory = System.IO.Directory;
 using Version = Lucene.Net.Util.Version;
@@ -56,22 +57,13 @@ namespace Lucinq.UnitTests.IntegrationTests
 					foreach (var newsArticle in newsArticles)
 					{
 						Document document = new Document();
-						Field titleField = new Field(BBCFields.Title, newsArticle.Title, Field.Store.YES, Field.Index.ANALYZED);
-						document.Add(titleField);
-						Field descriptionField = new Field(BBCFields.Description, newsArticle.Description, Field.Store.YES, Field.Index.ANALYZED);
-						document.Add(descriptionField);
-
-						if (!String.IsNullOrEmpty(newsArticle.Copyright))
-						{
-							Field copyrightField = new Field(BBCFields.Copyright, newsArticle.Copyright, Field.Store.NO, Field.Index.ANALYZED);
-							document.Add(copyrightField);
-						}
-						
-						Field linkField = new Field(BBCFields.Link, newsArticle.Link, Field.Store.YES, Field.Index.NOT_ANALYZED);
-						document.Add(linkField);
-
-						Field publishDateField = new Field(BBCFields.PublishDate, TestHelpers.GetDateString(newsArticle.PublishDateTime), Field.Store.YES, Field.Index.NOT_ANALYZED);
-						document.Add(publishDateField);
+						document.Setup(
+								x => x.AddAnalysedField(BBCFields.Title, newsArticle.Title, true),
+								x => x.AddAnalysedField(BBCFields.Description, newsArticle.Description, true),
+								x => x.AddAnalysedField(BBCFields.Copyright, newsArticle.Copyright),
+								x => x.AddStoredField(BBCFields.Link, newsArticle.Link),
+								x => x.AddNonAnalysedField(BBCFields.PublishDate, TestHelpers.GetDateString(newsArticle.PublishDateTime), true)
+							);
 
 						indexWriter.AddDocument(document);
 					}
