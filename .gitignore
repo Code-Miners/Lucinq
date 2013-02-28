@@ -215,5 +215,4 @@ pip-log.txt
 .mr.developer.cfg
 
 Lucinq/*.nupkg
-Lucinq/*.nuspec
 Lucinq/*.bat
