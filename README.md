@@ -13,6 +13,12 @@ Features
 - Sorting
 - Query manipulation - remove terms and re-run for example.
 
+Get it with NuGet
+=================
+
+You can find the Nuget Package here: http://nuget.org/packages/Lucinq/
+
+PM> Install-Package Lucinq
 
 Example Syntax
 ==============
