@@ -7,7 +7,7 @@ namespace Lucinq.Extensions
 	{
 		public static PhraseQuery AddTerm(this PhraseQuery query, string field, string value, bool? caseSensitive = null)
 		{
-			if (caseSensitive.HasValue && !caseSensitive.Value || !caseSensitive.HasValue)
+			if ((caseSensitive.HasValue && !caseSensitive.Value) || !caseSensitive.HasValue)
 			{
 				value = value.ToLowerInvariant();
 			}

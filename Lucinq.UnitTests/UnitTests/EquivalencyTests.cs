@@ -10,8 +10,10 @@ namespace Lucinq.UnitTests.UnitTests
 	[TestFixture]
 	public class EquivalencyTests
 	{
+		#region [ Terms Tests ]
+
 		[Test]
-		public void SimpleTermTests()
+		public void CaseInsensitiveMandatoryTerm()
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "value");
@@ -21,13 +23,91 @@ namespace Lucinq.UnitTests.UnitTests
 
 
 			QueryBuilder builder = new QueryBuilder();
-			builder.Setup(x => x.Term("_name", "value"));
+			builder.Setup(x => x.Term("_name", "Value"));
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
 			Assert.AreEqual(queryString, newQueryString);
 			Console.Write(queryString);
 		}
+
+		[Test]
+		public void CaseSensitiveMandatoryTerm()
+		{
+			BooleanQuery originalQuery = new BooleanQuery();
+			Term term = new Term("_name", "Value");
+			TermQuery termQuery = new TermQuery(term);
+			originalQuery.Add(termQuery, BooleanClause.Occur.MUST);
+			string queryString = originalQuery.ToString();
+
+
+			QueryBuilder builder = new QueryBuilder();
+			builder.Setup(x => x.Term("_name", "Value", caseSensitive:true));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		[Test]
+		public void QueryCaseSensitiveMandatoryTerm()
+		{
+			BooleanQuery originalQuery = new BooleanQuery();
+			Term term = new Term("_name", "Value");
+			TermQuery termQuery = new TermQuery(term);
+			originalQuery.Add(termQuery, BooleanClause.Occur.MUST);
+			string queryString = originalQuery.ToString();
+
+
+			QueryBuilder builder = new QueryBuilder{CaseSensitive = true};
+			builder.Setup(x => x.Term("_name", "Value"));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		[Test]
+		public void CaseInsensitiveNonMandatoryTerm()
+		{
+			BooleanQuery originalQuery = new BooleanQuery();
+			Term term = new Term("_name", "value");
+			TermQuery termQuery = new TermQuery(term);
+			originalQuery.Add(termQuery, BooleanClause.Occur.SHOULD);
+			string queryString = originalQuery.ToString();
+
+
+			QueryBuilder builder = new QueryBuilder();
+			builder.Setup(x => x.Term("_name", "Value", BooleanClause.Occur.SHOULD));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		[Test]
+		public void CaseSensitiveNonMandatoryTerm()
+		{
+			BooleanQuery originalQuery = new BooleanQuery();
+			Term term = new Term("_name", "Value");
+			TermQuery termQuery = new TermQuery(term);
+			originalQuery.Add(termQuery, BooleanClause.Occur.SHOULD);
+			string queryString = originalQuery.ToString();
+
+
+			QueryBuilder builder = new QueryBuilder();
+			builder.Setup(x => x.Term("_name", "Value", BooleanClause.Occur.SHOULD, caseSensitive: true));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		#endregion
 
 		[Test]
 		public void AddLuceneApiQuery()
@@ -49,8 +129,10 @@ namespace Lucinq.UnitTests.UnitTests
 			Console.Write(queryString);
 		}
 
+		#region [ Phrase Tests ]
+
 		[Test]
-		public void SimplePhraseTests()
+		public void CaseInsensitivePhrase()
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "value");
@@ -62,7 +144,7 @@ namespace Lucinq.UnitTests.UnitTests
 
 
 			QueryBuilder builder = new QueryBuilder();
-			builder.Setup(x => x.Phrase(2).AddTerm("_name", "value"));
+			builder.Setup(x => x.Phrase(2).AddTerm("_name", "Value"));
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
@@ -71,7 +153,53 @@ namespace Lucinq.UnitTests.UnitTests
 		}
 
 		[Test]
-		public void SimpleWildcardTests()
+		public void CaseSensitivePhrase()
+		{
+			BooleanQuery originalQuery = new BooleanQuery();
+			Term term = new Term("_name", "Value");
+			PhraseQuery phraseQuery = new PhraseQuery();
+			phraseQuery.SetSlop(2);
+			phraseQuery.Add(term);
+			originalQuery.Add(phraseQuery, BooleanClause.Occur.MUST);
+			string queryString = originalQuery.ToString();
+
+			QueryBuilder builder = new QueryBuilder{CaseSensitive = true};
+			builder.Setup(x => x.Phrase(2).AddTerm("_name", "Value", true));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		[Ignore("Phrase doesn't currently respect its parent query builder")]
+		[Test]
+		public void QueryCaseSensitivePhrase()
+		{
+			BooleanQuery originalQuery = new BooleanQuery();
+			Term term = new Term("_name", "Value");
+			PhraseQuery phraseQuery = new PhraseQuery();
+			phraseQuery.SetSlop(2);
+			phraseQuery.Add(term);
+			originalQuery.Add(phraseQuery, BooleanClause.Occur.MUST);
+			string queryString = originalQuery.ToString();
+
+
+			QueryBuilder builder = new QueryBuilder();
+			builder.Setup(x => x.Phrase(2).AddTerm("_name", "Value"));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		#endregion
+
+		#region [ WildCard Tests ]
+
+		[Test]
+		public void CaseInsensitiveMandatoryWildCard()
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "value*");
@@ -80,7 +208,7 @@ namespace Lucinq.UnitTests.UnitTests
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder();
-			builder.Setup(x => x.WildCard("_name", "value*"));
+			builder.Setup(x => x.WildCard("_name", "Value*"));
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
@@ -89,7 +217,81 @@ namespace Lucinq.UnitTests.UnitTests
 		}
 
 		[Test]
-		public void SimpleTermRangeTests()
+		public void CaseSensitiveMandatoryWildCard()
+		{
+			BooleanQuery originalQuery = new BooleanQuery();
+			Term term = new Term("_name", "Value*");
+			WildcardQuery wildcardQuery = new WildcardQuery(term);
+			originalQuery.Add(wildcardQuery, BooleanClause.Occur.MUST);
+			string queryString = originalQuery.ToString();
+
+			QueryBuilder builder = new QueryBuilder();
+			builder.Setup(x => x.WildCard("_name", "Value*", caseSensitive:true));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		[Test]
+		public void QueryCaseSensitiveMandatoryWildCard()
+		{
+			BooleanQuery originalQuery = new BooleanQuery();
+			Term term = new Term("_name", "Value*");
+			WildcardQuery wildcardQuery = new WildcardQuery(term);
+			originalQuery.Add(wildcardQuery, BooleanClause.Occur.MUST);
+			string queryString = originalQuery.ToString();
+
+			QueryBuilder builder = new QueryBuilder{CaseSensitive = true};
+			builder.Setup(x => x.WildCard("_name", "Value*"));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		[Test]
+		public void CaseInsensitiveNonMandatoryWildCard()
+		{
+			BooleanQuery originalQuery = new BooleanQuery();
+			Term term = new Term("_name", "value*");
+			WildcardQuery wildcardQuery = new WildcardQuery(term);
+			originalQuery.Add(wildcardQuery, BooleanClause.Occur.SHOULD);
+			string queryString = originalQuery.ToString();
+
+			QueryBuilder builder = new QueryBuilder();
+			builder.Setup(x => x.WildCard("_name", "Value*", BooleanClause.Occur.SHOULD));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		[Test]
+		public void CaseSensitiveNonMandatoryWildCard()
+		{
+			BooleanQuery originalQuery = new BooleanQuery();
+			Term term = new Term("_name", "Value*");
+			WildcardQuery wildcardQuery = new WildcardQuery(term);
+			originalQuery.Add(wildcardQuery, BooleanClause.Occur.MUST);
+			string queryString = originalQuery.ToString();
+
+			QueryBuilder builder = new QueryBuilder();
+			builder.Setup(x => x.WildCard("_name", "Value*", caseSensitive: true));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		#endregion
+
+		[Test]
+		public void TermRange()
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
 			TermRangeQuery termRangeQuery = new TermRangeQuery("field", "lower", "upper", true, true);
@@ -105,8 +307,10 @@ namespace Lucinq.UnitTests.UnitTests
 			Console.Write(queryString);
 		}
 
+		#region [ Grouping Tests ]
+
 		[Test]
-		public void SimpleOrTests()
+		public void Or()
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
 
@@ -157,7 +361,7 @@ namespace Lucinq.UnitTests.UnitTests
 		}
 
 		[Test]
-		public void SimpleOrExtensionTests()
+		public void OrExtension()
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
 			BooleanQuery innerQuery = new BooleanQuery();
@@ -187,7 +391,7 @@ namespace Lucinq.UnitTests.UnitTests
 		}
 
 		[Test]
-		public void SimpleAndExtensionTests()
+		public void AndExtension()
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
 			BooleanQuery innerQuery = new BooleanQuery();
@@ -215,6 +419,8 @@ namespace Lucinq.UnitTests.UnitTests
 			Assert.AreEqual(queryString, newQueryString);
 			Console.Write(queryString);
 		}
+
+		#endregion
 
 		[Test]
 		public void CompositeTermPhraseWildcardTests()

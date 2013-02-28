@@ -413,9 +413,16 @@ namespace Lucinq.Querying
 
 		protected virtual Term GetTerm(string field, string value, bool? caseSensitive = null)
 		{
-			if (!CaseSensitive || (caseSensitive.HasValue && !caseSensitive.Value))
+			if (caseSensitive.HasValue)
 			{
-				value = value.ToLower();
+				if (!caseSensitive.Value)
+				{
+					value = value.ToLowerInvariant();
+				}
+			}
+			else if (!CaseSensitive)
+			{
+				value = value.ToLowerInvariant();
 			}
 			return new Term(field, value);
 		}
