@@ -5,9 +5,13 @@ namespace Lucinq.Extensions
 {
 	public static class QueryExtensions
 	{
-		public static PhraseQuery AddTerm(this PhraseQuery query, string field, string text)
+		public static PhraseQuery AddTerm(this PhraseQuery query, string field, string value, bool? caseSensitive = null)
 		{
-			query.Add(new Term(field, text));
+			if (caseSensitive.HasValue && !caseSensitive.Value || !caseSensitive.HasValue)
+			{
+				value = value.ToLowerInvariant();
+			}
+			query.Add(new Term(field, value));
 			return query;
 		}
 	}

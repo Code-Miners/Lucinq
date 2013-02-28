@@ -54,19 +54,16 @@ namespace Lucinq.UnitTests.IntegrationTests
 					}
 					count ++;*/
 					var newsArticles = ReadFeed(rssFile);
-					foreach (var newsArticle in newsArticles)
-					{
-						Document document = new Document();
-						document.Setup(
+					newsArticles.ForEach(
+						newsArticle => 
+							indexWriter.AddDocument
+							(
 								x => x.AddAnalysedField(BBCFields.Title, newsArticle.Title, true),
 								x => x.AddAnalysedField(BBCFields.Description, newsArticle.Description, true),
 								x => x.AddAnalysedField(BBCFields.Copyright, newsArticle.Copyright),
 								x => x.AddStoredField(BBCFields.Link, newsArticle.Link),
-								x => x.AddNonAnalysedField(BBCFields.PublishDate, TestHelpers.GetDateString(newsArticle.PublishDateTime), true)
+								x => x.AddNonAnalysedField(BBCFields.PublishDate, TestHelpers.GetDateString(newsArticle.PublishDateTime), true))
 							);
-
-						indexWriter.AddDocument(document);
-					}
 				}
 
 				indexWriter.Optimize();

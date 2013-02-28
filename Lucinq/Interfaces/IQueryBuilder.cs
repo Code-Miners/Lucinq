@@ -52,8 +52,9 @@ namespace Lucinq.Interfaces
 		/// <param name="occur">Whether it must, must not or should occur in the field</param>
 		/// <param name="boost">A boost multiplier (1 is default / normal).</param>
 		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
+		/// <param name="caseSensitive"></param>
 		/// <returns>The generated term query</returns>
-		TermQuery Term(string fieldName, string fieldValue, BooleanClause.Occur occur = null,  float? boost = null, string key = null);
+		TermQuery Term(string fieldName, string fieldValue, BooleanClause.Occur occur = null,  float? boost = null, string key = null, bool? caseSensitive = null);
 
 		/// <summary>
 		/// Sets up term queries for each of the values specified
@@ -63,8 +64,9 @@ namespace Lucinq.Interfaces
 		/// <param name="fieldValues">The values to match</param>
 		/// <param name="occur">Whether it must, must not or should occur in the field</param>
 		/// <param name="boost">A boost multiplier (1 is default / normal).</param>
+		/// <param name="caseSensitive">Whether the value is explicitly case sensitive (else use the query builders value)</param>
 		/// <returns>The input query builder</returns>
-		IQueryBuilder Terms(string fieldName, string[] fieldValues, BooleanClause.Occur occur = null, float? boost = null);
+		IQueryBuilder Terms(string fieldName, string[] fieldValues, BooleanClause.Occur occur = null, float? boost = null, bool? caseSensitive = null);
 
 		/// <summary>
 		/// Sets up and adds a fuzzy query object allowing the search for an explcit term in the field
@@ -74,8 +76,9 @@ namespace Lucinq.Interfaces
 		/// <param name="occur">Whether it must, must not or should occur in the field</param>
 		/// <param name="boost">A boost multiplier (1 is default / normal).</param>
 		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
+		/// <param name="caseSensitive">Whether the value is explicitly case sensitive (else use the query builders value)</param>
 		/// <returns>The generated fuzzy query object</returns>
-		FuzzyQuery Fuzzy(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null);
+		FuzzyQuery Fuzzy(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null, bool? caseSensitive = null);
 
 		/// <summary>
 		/// Sets up and adds a phrase query object allowing the search for an explcit term in the field
@@ -88,7 +91,7 @@ namespace Lucinq.Interfaces
 		/// <returns>The generated phrase query object</returns>
 		PhraseQuery Phrase(int slop, float? boost = null, BooleanClause.Occur occur = null, string key = null);
 
-		IQueryBuilder Phrase(string fieldName, string[] fieldValues, int slop, BooleanClause.Occur occur = null, float? boost = null);
+		IQueryBuilder Phrase(string fieldName, string[] fieldValues, int slop, BooleanClause.Occur occur = null, float? boost = null, bool? caseSensitive = null);
 
 		/// <summary>
 		/// Sets up and adds a wildcard query object allowing the search for an explcit term in the field
@@ -98,11 +101,12 @@ namespace Lucinq.Interfaces
 		/// <param name="occur">Whether it must, must not or should occur in the field</param>
 		/// <param name="boost">A boost multiplier (1 is default / normal).</param>
 		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
+		/// <param name="caseSensitive">Whether the value is explicitly case sensitive (else use the query builders value)</param>
 		/// <returns>The generated wildcard query object</returns>
-		WildcardQuery WildCard(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null);
+		WildcardQuery WildCard(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null, bool? caseSensitive = null);
 
 		IQueryBuilder WildCards(string fieldName, string[] fieldValues, BooleanClause.Occur occur = null,
-		                                        float? boost = null);
+		                                        float? boost = null, bool? caseSensitive = null);
 
 		/// <summary>
 		/// Creates a simple group that MUST occur, each item of which MUST occur by default
@@ -152,10 +156,11 @@ namespace Lucinq.Interfaces
 		/// <param name="occur"></param>
 		/// <param name="boost"></param>
 		/// <param name="key"></param>
+		/// <param name="caseSensitive">Whether the value is explicitly case sensitive (else use the query builders value)</param>
 		/// <returns></returns>
 		TermRangeQuery TermRange(string fieldName, string rangeStart, string rangeEnd, bool includeLower = true,
 		                                        bool includeUpper = true,
-		                                        BooleanClause.Occur occur = null, float? boost = null, string key = null);
+		                                        BooleanClause.Occur occur = null, float? boost = null, string key = null, bool? caseSensitive = null);
 
 		IQueryBuilder Sort(string fieldName, int? sortType = null);
 

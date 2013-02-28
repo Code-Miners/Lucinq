@@ -165,9 +165,9 @@ namespace Lucinq.Querying
 		/// <param name="boost">A boost multiplier (1 is default / normal).</param>
 		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
 		/// <returns>The generated term query</returns>
-		public virtual TermQuery Term(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null)
+		public virtual TermQuery Term(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null, bool? caseSensitive = null)
 		{
-			Term term = GetTerm(fieldName, fieldValue);
+			Term term = GetTerm(fieldName, fieldValue, caseSensitive);
 			TermQuery query = new TermQuery(term);
 			SetOccurValue(this, ref occur);
 			SetBoostValue(query, boost);
@@ -185,12 +185,12 @@ namespace Lucinq.Querying
 		/// <param name="occur">Whether it must, must not or should occur in the field</param>
 		/// <param name="boost">A boost multiplier (1 is default / normal).</param>
 		/// <returns>The input query builder</returns>
-		public virtual IQueryBuilder Terms(string fieldName, string[] fieldValues, BooleanClause.Occur occur = null, float? boost = null)
+		public virtual IQueryBuilder Terms(string fieldName, string[] fieldValues, BooleanClause.Occur occur = null, float? boost = null, bool? caseSensitive = null)
 		{
 			var group = Group();
 			foreach (var fieldValue in fieldValues)
 			{
-				group.Term(fieldName, fieldValue, occur, boost);
+				group.Term(fieldName, fieldValue, occur, boost, caseSensitive:caseSensitive);
 			}
 			return this;
 		}
@@ -208,9 +208,9 @@ namespace Lucinq.Querying
 		/// <param name="boost">A boost multiplier (1 is default / normal).</param>
 		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
 		/// <returns>The generated fuzzy query object</returns>
-		public virtual FuzzyQuery Fuzzy(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null)
+		public virtual FuzzyQuery Fuzzy(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null, bool? caseSensitive = null)
 		{
-			Term term = GetTerm(fieldName, fieldValue);
+			Term term = GetTerm(fieldName, fieldValue, caseSensitive);
 			FuzzyQuery query = new FuzzyQuery(term);
 			SetOccurValue(this, ref occur);
 			SetBoostValue(query, boost);
@@ -244,12 +244,12 @@ namespace Lucinq.Querying
 			return query;
 		}
 
-		public virtual IQueryBuilder Phrase(string fieldName, string[] fieldValues, int slop, BooleanClause.Occur occur = null, float? boost = null)
+		public virtual IQueryBuilder Phrase(string fieldName, string[] fieldValues, int slop, BooleanClause.Occur occur = null, float? boost = null, bool? caseSensitive = null)
 		{
 			PhraseQuery phrase = Phrase(slop, boost, occur);
 			foreach (var fieldValue in fieldValues)
 			{
-				phrase.AddTerm(fieldName, fieldValue);
+				phrase.AddTerm(fieldName, fieldValue, caseSensitive);
 			}
 			return this;
 		}
@@ -259,8 +259,13 @@ namespace Lucinq.Querying
 		#region [ Range Expressions ]
 
 		public virtual TermRangeQuery TermRange(string fieldName, string rangeStart, string rangeEnd, bool includeLower = true, bool includeUpper = true,
-										BooleanClause.Occur occur = null, float? boost = null, string key = null)
+										BooleanClause.Occur occur = null, float? boost = null, string key = null, bool? caseSensitive = null)
 		{
+			if ((caseSensitive.HasValue && !caseSensitive.Value) || !caseSensitive.HasValue)
+			{
+				rangeStart = rangeStart.ToLowerInvariant();
+				rangeEnd = rangeEnd.ToLowerInvariant();
+			}
 			TermRangeQuery query = new TermRangeQuery(fieldName, rangeStart, rangeEnd, includeLower, includeUpper);
 			SetOccurValue(this, ref occur);
 			SetBoostValue(query, boost);
@@ -296,10 +301,11 @@ namespace Lucinq.Querying
 		/// <param name="occur">Whether it must, must not or should occur in the field</param>
 		/// <param name="boost">A boost multiplier (1 is default / normal).</param>
 		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
+		/// <param name="caseSensitive"></param>
 		/// <returns>The generated wildcard query object</returns>
-		public virtual WildcardQuery WildCard(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null)
+		public virtual WildcardQuery WildCard(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null, bool? caseSensitive = null)
 		{
-			Term term = GetTerm(fieldName, fieldValue);
+			Term term = GetTerm(fieldName, fieldValue, caseSensitive);
 			WildcardQuery query = new WildcardQuery(term);
 			SetOccurValue(this, ref occur);
 			SetBoostValue(query, boost);
@@ -309,12 +315,12 @@ namespace Lucinq.Querying
 		}
 
 		public virtual IQueryBuilder WildCards(string fieldName, string[] fieldValues, BooleanClause.Occur occur = null,
-								  float? boost = null)
+								  float? boost = null, bool? caseSensitive = null)
 		{
 			var group = Group();
 			foreach (var fieldValue in fieldValues)
 			{
-				group.WildCard(fieldName, fieldValue, occur, boost);
+				group.WildCard(fieldName, fieldValue, occur, boost, caseSensitive:caseSensitive);
 			}
 			return this;
 		}
@@ -405,9 +411,9 @@ namespace Lucinq.Querying
 
 		#region [ Helper Methods ]
 
-		protected virtual Term GetTerm(string field, string value)
+		protected virtual Term GetTerm(string field, string value, bool? caseSensitive = null)
 		{
-			if (!CaseSensitive)
+			if (!CaseSensitive || (caseSensitive.HasValue && !caseSensitive.Value))
 			{
 				value = value.ToLower();
 			}

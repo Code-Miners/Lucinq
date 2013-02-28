@@ -52,6 +52,10 @@ namespace Lucinq.Querying
 			{
 				end = Results.TotalHits - 1;
 			}
+			if (end > Results.ScoreDocs.Length)
+			{
+				end = Results.ScoreDocs.Length - 1;
+			}
 
 			for (var i = start; i <= end; i++)
 			{
