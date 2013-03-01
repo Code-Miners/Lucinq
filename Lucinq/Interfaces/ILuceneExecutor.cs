@@ -1,4 +1,5 @@
-﻿using Lucene.Net.Search;
+﻿using System;
+using Lucene.Net.Search;
 
 namespace Lucinq.Interfaces
 {
@@ -6,6 +7,6 @@ namespace Lucinq.Interfaces
 	{
 		T Execute(Query query, int noOfResults, Sort sort = null);
 
-		T Execute(IQueryBuilder queryBuilder, int noOfResults);
+		T Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1);
 	}
 }
