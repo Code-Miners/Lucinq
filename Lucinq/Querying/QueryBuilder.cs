@@ -164,6 +164,7 @@ namespace Lucinq.Querying
 		/// <param name="occur">Whether it must, must not or should occur in the field</param>
 		/// <param name="boost">A boost multiplier (1 is default / normal).</param>
 		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
+		/// <param name="caseSensitive">A boolean denoting whether or not to retain case</param>
 		/// <returns>The generated term query</returns>
 		public virtual TermQuery Term(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null, bool? caseSensitive = null)
 		{
@@ -184,6 +185,7 @@ namespace Lucinq.Querying
 		/// <param name="fieldValues">The values to match</param>
 		/// <param name="occur">Whether it must, must not or should occur in the field</param>
 		/// <param name="boost">A boost multiplier (1 is default / normal).</param>
+		/// <param name="caseSensitive">A boolean denoting whether or not to retain case</param>
 		/// <returns>The input query builder</returns>
 		public virtual IQueryBuilder Terms(string fieldName, string[] fieldValues, BooleanClause.Occur occur = null, float? boost = null, bool? caseSensitive = null)
 		{
@@ -207,6 +209,7 @@ namespace Lucinq.Querying
 		/// <param name="occur">Whether it must, must not or should occur in the field</param>
 		/// <param name="boost">A boost multiplier (1 is default / normal).</param>
 		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
+		/// <param name="caseSensitive">A boolean denoting whether or not to retain case</param>
 		/// <returns>The generated fuzzy query object</returns>
 		public virtual FuzzyQuery Fuzzy(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null, bool? caseSensitive = null)
 		{
@@ -244,12 +247,22 @@ namespace Lucinq.Querying
 			return query;
 		}
 
+		/// <summary>
+		/// Adds a phrase query with a number of pre-specified values
+		/// </summary>
+		/// <param name="fieldName">The field name to query</param>
+		/// <param name="fieldValues">The array of field values</param>
+		/// <param name="slop">The distance between values</param>
+		/// <param name="occur">The occurance for the query</param>
+		/// <param name="boost">The boost value for the query</param>
+		/// <param name="caseSensitive">A boolean denoting whether or not to retain case</param>
+		/// <returns>The input query builder</returns>
 		public virtual IQueryBuilder Phrase(string fieldName, string[] fieldValues, int slop, BooleanClause.Occur occur = null, float? boost = null, bool? caseSensitive = null)
 		{
 			PhraseQuery phrase = Phrase(slop, boost, occur);
 			foreach (var fieldValue in fieldValues)
 			{
-				phrase.AddTerm(fieldName, fieldValue, caseSensitive);
+				phrase.AddTerm(this, fieldName, fieldValue, caseSensitive);
 			}
 			return this;
 		}
@@ -261,7 +274,15 @@ namespace Lucinq.Querying
 		public virtual TermRangeQuery TermRange(string fieldName, string rangeStart, string rangeEnd, bool includeLower = true, bool includeUpper = true,
 										BooleanClause.Occur occur = null, float? boost = null, string key = null, bool? caseSensitive = null)
 		{
-			if ((caseSensitive.HasValue && !caseSensitive.Value) || !caseSensitive.HasValue)
+			if (caseSensitive.HasValue)
+			{
+				if (!caseSensitive.Value)
+				{
+					rangeStart = rangeStart.ToLowerInvariant();
+					rangeEnd = rangeEnd.ToLowerInvariant();
+				}
+			}
+			else if(!CaseSensitive)
 			{
 				rangeStart = rangeStart.ToLowerInvariant();
 				rangeEnd = rangeEnd.ToLowerInvariant();
@@ -271,6 +292,46 @@ namespace Lucinq.Querying
 			SetBoostValue(query, boost);
 			Add(query, occur, key);
 			return query;
+		}
+
+		public virtual NumericRangeQuery NumericRange(string fieldName, int minValue, int maxValue, BooleanClause.Occur occur = null, float? boost = null, 
+													int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null)
+		{
+			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewIntRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
+			SetOccurValue(this, ref occur);
+			SetBoostValue(numericRangeQuery, boost);
+			Add(numericRangeQuery, occur, key);
+			return numericRangeQuery;
+		}
+
+		public virtual NumericRangeQuery NumericRange(string fieldName, float minValue, float maxValue, BooleanClause.Occur occur = null, float? boost = null,
+													int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null)
+		{
+			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewFloatRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
+			SetOccurValue(this, ref occur);
+			SetBoostValue(numericRangeQuery, boost);
+			Add(numericRangeQuery, occur, key);
+			return numericRangeQuery;
+		}
+
+		public virtual NumericRangeQuery NumericRange(string fieldName, double minValue, double maxValue, BooleanClause.Occur occur = null, float? boost = null,
+											int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null)
+		{
+			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewDoubleRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
+			SetOccurValue(this, ref occur);
+			SetBoostValue(numericRangeQuery, boost);
+			Add(numericRangeQuery, occur, key);
+			return numericRangeQuery;
+		}
+
+		public virtual NumericRangeQuery NumericRange(string fieldName, long minValue, long maxValue, BooleanClause.Occur occur = null, float? boost = null,
+									int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null)
+		{
+			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewLongRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
+			SetOccurValue(this, ref occur);
+			SetBoostValue(numericRangeQuery, boost);
+			Add(numericRangeQuery, occur, key);
+			return numericRangeQuery;
 		}
 
 		#endregion

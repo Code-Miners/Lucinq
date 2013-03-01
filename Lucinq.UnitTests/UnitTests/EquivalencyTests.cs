@@ -32,6 +32,26 @@ namespace Lucinq.UnitTests.UnitTests
 		}
 
 		[Test]
+		public void BoostedCaseInsensitiveMandatoryTerm()
+		{
+			BooleanQuery originalQuery = new BooleanQuery();
+			Term term = new Term("_name", "value");
+			TermQuery termQuery = new TermQuery(term);
+			originalQuery.Add(termQuery, BooleanClause.Occur.MUST);
+			termQuery.SetBoost(10);
+			string queryString = originalQuery.ToString();
+
+
+			QueryBuilder builder = new QueryBuilder();
+			builder.Setup(x => x.Term("_name", "Value", boost:10));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		[Test]
 		public void CaseSensitiveMandatoryTerm()
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
@@ -109,6 +129,8 @@ namespace Lucinq.UnitTests.UnitTests
 
 		#endregion
 
+		#region [ Lucene Tests ]
+
 		[Test]
 		public void AddLuceneApiQuery()
 		{
@@ -129,6 +151,8 @@ namespace Lucinq.UnitTests.UnitTests
 			Console.Write(queryString);
 		}
 
+		#endregion
+
 		#region [ Phrase Tests ]
 
 		[Test]
@@ -145,6 +169,28 @@ namespace Lucinq.UnitTests.UnitTests
 
 			QueryBuilder builder = new QueryBuilder();
 			builder.Setup(x => x.Phrase(2).AddTerm("_name", "Value"));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		[Test]
+		public void BoostedCaseInsensitivePhrase()
+		{
+			BooleanQuery originalQuery = new BooleanQuery();
+			Term term = new Term("_name", "value");
+			PhraseQuery phraseQuery = new PhraseQuery();
+			phraseQuery.SetSlop(2);
+			phraseQuery.Add(term);
+			phraseQuery.SetBoost(10);
+			originalQuery.Add(phraseQuery, BooleanClause.Occur.MUST);
+			string queryString = originalQuery.ToString();
+
+
+			QueryBuilder builder = new QueryBuilder();
+			builder.Setup(x => x.Phrase(2, 10).AddTerm("_name", "Value"));
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
@@ -172,7 +218,6 @@ namespace Lucinq.UnitTests.UnitTests
 			Console.Write(queryString);
 		}
 
-		[Ignore("Phrase doesn't currently respect its parent query builder")]
 		[Test]
 		public void QueryCaseSensitivePhrase()
 		{
@@ -185,8 +230,8 @@ namespace Lucinq.UnitTests.UnitTests
 			string queryString = originalQuery.ToString();
 
 
-			QueryBuilder builder = new QueryBuilder();
-			builder.Setup(x => x.Phrase(2).AddTerm("_name", "Value"));
+			QueryBuilder builder = new QueryBuilder{CaseSensitive = true};
+			builder.Setup(x => x.Phrase(2).AddTerm(x, "_name", "Value"));
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
@@ -290,8 +335,10 @@ namespace Lucinq.UnitTests.UnitTests
 
 		#endregion
 
+		#region [ Term Range Tests ]
+
 		[Test]
-		public void TermRange()
+		public void CaseInSensitiveTermRange()
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
 			TermRangeQuery termRangeQuery = new TermRangeQuery("field", "lower", "upper", true, true);
@@ -299,13 +346,104 @@ namespace Lucinq.UnitTests.UnitTests
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder();
-			builder.Setup(x => x.TermRange("field", "lower", "upper"));
+			builder.Setup(x => x.TermRange("field", "Lower", "Upper"));
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
 			Assert.AreEqual(queryString, newQueryString);
 			Console.Write(queryString);
 		}
+
+		[Test]
+		public void CaseSensitiveTermRange()
+		{
+			BooleanQuery originalQuery = new BooleanQuery();
+			TermRangeQuery termRangeQuery = new TermRangeQuery("field", "Lower", "Upper", true, true);
+			originalQuery.Add(termRangeQuery, BooleanClause.Occur.MUST);
+			string queryString = originalQuery.ToString();
+
+			QueryBuilder builder = new QueryBuilder();
+			builder.Setup(x => x.TermRange("field", "Lower", "Upper", caseSensitive:true));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		[Test]
+		public void QueryCaseSensitiveTermRange()
+		{
+			BooleanQuery originalQuery = new BooleanQuery();
+			TermRangeQuery termRangeQuery = new TermRangeQuery("field", "Lower", "Upper", true, true);
+			originalQuery.Add(termRangeQuery, BooleanClause.Occur.MUST);
+			string queryString = originalQuery.ToString();
+
+			QueryBuilder builder = new QueryBuilder{CaseSensitive = true};
+			builder.Setup(x => x.TermRange("field", "Lower", "Upper"));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		#endregion
+
+		#region [ Numeric Range Tests ]
+
+		[Test]
+		public void IntegerRange()
+		{
+			BooleanQuery originalQuery = new BooleanQuery();
+			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewIntRange("field", 1, 0, 10, true, true);
+			originalQuery.Add(numericRangeQuery, BooleanClause.Occur.MUST);
+			string queryString = originalQuery.ToString();
+
+			QueryBuilder builder = new QueryBuilder();
+			builder.Setup(x => x.NumericRange("field", 0, 10));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		[Test]
+		public void DoubleRange()
+		{
+			BooleanQuery originalQuery = new BooleanQuery();
+			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewDoubleRange("field", 1, 0d, 10d, true, true);
+			originalQuery.Add(numericRangeQuery, BooleanClause.Occur.MUST);
+			string queryString = originalQuery.ToString();
+
+			QueryBuilder builder = new QueryBuilder();
+			builder.Setup(x => x.NumericRange("field", 0d, 10d));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		[Test]
+		public void LongRange()
+		{
+			BooleanQuery originalQuery = new BooleanQuery();
+			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewLongRange("field", 1, 0L, 10L, true, true);
+			originalQuery.Add(numericRangeQuery, BooleanClause.Occur.MUST);
+			string queryString = originalQuery.ToString();
+
+			QueryBuilder builder = new QueryBuilder();
+			builder.Setup(x => x.NumericRange("field", 0L, 10L));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		#endregion
 
 		#region [ Grouping Tests ]
 
@@ -422,6 +560,8 @@ namespace Lucinq.UnitTests.UnitTests
 
 		#endregion
 
+		#region [ Composite Tests ]
+
 		[Test]
 		public void CompositeTermPhraseWildcardTests()
 		{
@@ -455,5 +595,7 @@ namespace Lucinq.UnitTests.UnitTests
 			Assert.AreEqual(queryString, newQueryString);
 			Console.Write(queryString);
 		}
+
+		#endregion
 	}
 }

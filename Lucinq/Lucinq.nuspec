@@ -10,8 +10,10 @@
     <projectUrl>https://github.com/cardinal252/Lucinq</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Fluent API to drive lucene.net</description>
-    <releaseNotes>Intial Release built on Lucene.Net 2.9</releaseNotes>
-    <copyright>Copyright 2013</copyright>
-    <tags>lucene.net lucene lucinq text search information retrieval query </tags>
+    <copyright>Copyright 2013 Cardinal IT Solutions Ltd</copyright>
+    <tags>lucene.net lucene lucinq text search information retrieval query</tags>
+    <dependencies>
+        <dependency id="Lucene.Net" version="2.9.4.1"/>
+    </dependencies>
   </metadata>
 </package>
