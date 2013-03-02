@@ -52,6 +52,7 @@
     <Compile Include="Interfaces\ILuceneExecutor.cs" />
     <Compile Include="Interfaces\ILuceneSearch.cs" />
     <Compile Include="Interfaces\IQueryBuilder.cs" />
+    <Compile Include="Querying\LegacyLuceneSearchResult.cs" />
     <Compile Include="Querying\LuceneSearchResult.cs" />
     <Compile Include="Interfaces\ILuceneSearchResult.cs" />
     <Compile Include="Querying\QueryBuilder.cs" />
