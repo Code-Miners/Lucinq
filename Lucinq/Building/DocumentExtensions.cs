@@ -76,7 +76,12 @@ namespace Lucinq.Building
 				value = value.ToLower();
 			}
 
-			Field field = new Field(fieldName, value, store, Field.Index.ANALYZED);
+			if (index == null)
+			{
+				index = Field.Index.ANALYZED;
+			}
+
+			Field field = new Field(fieldName, value, store, index);
 			document.Add(field);
 			return document;
 		}
