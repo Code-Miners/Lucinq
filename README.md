@@ -5,6 +5,11 @@ This project gives fluent style API to Lucene.Net. The primary purpose of which 
 to accomplish most tasks whilst retaining the power and speed of Lucene. It has been designed with the goal with driving the
 existing lucene API, and keeping the abstraction to a minimum.
 
+For more information on the associated projects:
+
+- https://github.com/cardinal252/Lucinq.Glass.Sitecore
+- https://github.com/cardinal252/Lucinq.Sitecore
+
 Features
 ========
 
