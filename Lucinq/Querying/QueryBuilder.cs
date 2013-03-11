@@ -13,7 +13,13 @@ namespace Lucinq.Querying
 {
 	public class QueryBuilder : IQueryBuilder
 	{
+		#region [ Fields ]
+
 		private BooleanClause.Occur defaultChildrenOccur;
+
+		private KeywordAnalyzer keywordAnalyzer;
+
+		#endregion
 
 		#region [ Constructors ]
 
@@ -73,6 +79,11 @@ namespace Lucinq.Querying
 
 		public Sort CurrentSort { get; set; }
 
+		/// <summary>
+		/// Gets the keyword analyzer used by the keyword queries
+		/// </summary>
+		public KeywordAnalyzer KeywordAnalyzer { get { return keywordAnalyzer ?? (keywordAnalyzer = new KeywordAnalyzer()); } }
+
 		#endregion
 
 		#region [ Build Methods ]
@@ -89,6 +100,7 @@ namespace Lucinq.Querying
 			{
 				key = "Query_" + Queries.Count;
 			}
+			SetOccurValue(this, ref occur);
 			QueryReference queryReference = new QueryReference { Occur = occur, Query = query };
 			Queries.Add(key, queryReference);
 		}
@@ -170,7 +182,6 @@ namespace Lucinq.Querying
 		{
 			Term term = GetTerm(fieldName, fieldValue, caseSensitive);
 			TermQuery query = new TermQuery(term);
-			SetOccurValue(this, ref occur);
 			SetBoostValue(query, boost);
 
 			Add(query, occur, key);
@@ -199,6 +210,31 @@ namespace Lucinq.Querying
 
 		#endregion
 
+		#region [ Keywords ]
+
+		public virtual Query Keyword(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null,
+		                     bool? caseSensitive = null)
+		{
+			if (!caseSensitive.HasValue || !caseSensitive.Value)
+			{
+				fieldValue = fieldValue.ToLower();
+			}
+			return Raw(fieldName, fieldValue, occur, boost, key, KeywordAnalyzer);
+		}
+
+		public virtual IQueryBuilder Keywords(string fieldName, string[] fieldValues, BooleanClause.Occur occur = null, float? boost = null, string key = null,
+		                      bool? caseSensitive = null)
+		{
+			var group = Group();
+			foreach (var fieldValue in fieldValues)
+			{
+				group.Raw(fieldName, fieldValue, occur, boost, key, KeywordAnalyzer);
+			}
+			return this;
+		}
+
+		#endregion
+
 		#region [ Fuzzy Expressions ]
 
 		/// <summary>
@@ -215,7 +251,6 @@ namespace Lucinq.Querying
 		{
 			Term term = GetTerm(fieldName, fieldValue, caseSensitive);
 			FuzzyQuery query = new FuzzyQuery(term);
-			SetOccurValue(this, ref occur);
 			SetBoostValue(query, boost);
 
 			Add(query, occur, key);
@@ -238,7 +273,6 @@ namespace Lucinq.Querying
 		public virtual PhraseQuery Phrase(int slop, float? boost = null, BooleanClause.Occur occur = null, string key = null)
 		{
 			PhraseQuery query = new PhraseQuery();
-			SetOccurValue(this, ref occur);
 
 			SetBoostValue(query, boost);
 			query.SetSlop(slop);
@@ -288,7 +322,6 @@ namespace Lucinq.Querying
 				rangeEnd = rangeEnd.ToLowerInvariant();
 			}
 			TermRangeQuery query = new TermRangeQuery(fieldName, rangeStart, rangeEnd, includeLower, includeUpper);
-			SetOccurValue(this, ref occur);
 			SetBoostValue(query, boost);
 			Add(query, occur, key);
 			return query;
@@ -298,7 +331,6 @@ namespace Lucinq.Querying
 													int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null)
 		{
 			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewIntRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
-			SetOccurValue(this, ref occur);
 			SetBoostValue(numericRangeQuery, boost);
 			Add(numericRangeQuery, occur, key);
 			return numericRangeQuery;
@@ -308,7 +340,6 @@ namespace Lucinq.Querying
 													int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null)
 		{
 			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewFloatRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
-			SetOccurValue(this, ref occur);
 			SetBoostValue(numericRangeQuery, boost);
 			Add(numericRangeQuery, occur, key);
 			return numericRangeQuery;
@@ -318,7 +349,6 @@ namespace Lucinq.Querying
 											int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null)
 		{
 			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewDoubleRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
-			SetOccurValue(this, ref occur);
 			SetBoostValue(numericRangeQuery, boost);
 			Add(numericRangeQuery, occur, key);
 			return numericRangeQuery;
@@ -328,7 +358,6 @@ namespace Lucinq.Querying
 									int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null)
 		{
 			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewLongRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
-			SetOccurValue(this, ref occur);
 			SetBoostValue(numericRangeQuery, boost);
 			Add(numericRangeQuery, occur, key);
 			return numericRangeQuery;
@@ -368,7 +397,6 @@ namespace Lucinq.Querying
 		{
 			Term term = GetTerm(fieldName, fieldValue, caseSensitive);
 			WildcardQuery query = new WildcardQuery(term);
-			SetOccurValue(this, ref occur);
 			SetBoostValue(query, boost);
 
 			Add(query, occur, key);
@@ -462,7 +490,6 @@ namespace Lucinq.Querying
 			}
 			QueryParser queryParser = new QueryParser(Version.LUCENE_29, field, analyzer);
 			Query query = queryParser.Parse(queryText);
-			SetOccurValue(this, ref occur);
 			SetBoostValue(query, boost);
 			Add(query, occur, key);
 			return query;

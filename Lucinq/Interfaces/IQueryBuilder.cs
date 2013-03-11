@@ -10,6 +10,8 @@ namespace Lucinq.Interfaces
 
 		bool CaseSensitive { get; set; }
 
+		KeywordAnalyzer KeywordAnalyzer { get; }
+
 		#endregion
 
 		#region [ Methods ]
@@ -73,6 +75,30 @@ namespace Lucinq.Interfaces
 		/// <param name="caseSensitive">Whether the value is explicitly case sensitive (else use the query builders value)</param>
 		/// <returns>The input query builder</returns>
 		IQueryBuilder Terms(string fieldName, string[] fieldValues, BooleanClause.Occur occur = null, float? boost = null, bool? caseSensitive = null);
+
+		/// <summary>
+		/// Creates a query using the keyword analyzer
+		/// </summary>
+		/// <param name="fieldName"></param>
+		/// <param name="fieldValue"></param>
+		/// <param name="occur"></param>
+		/// <param name="boost"></param>
+		/// <param name="key"></param>
+		/// <param name="caseSensitive"></param>
+		/// <returns></returns>
+		Query Keyword(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null, bool? caseSensitive = null);
+		
+		/// <summary>
+		/// Creates a set of keywords
+		/// </summary>
+		/// <param name="fieldName"></param>
+		/// <param name="fieldValues"></param>
+		/// <param name="occur"></param>
+		/// <param name="boost"></param>
+		/// <param name="key"></param>s
+		/// <param name="caseSensitive"></param>
+		/// <returns></returns>
+		IQueryBuilder Keywords(string fieldName, string[] fieldValues, BooleanClause.Occur occur = null, float? boost = null, string key = null, bool? caseSensitive = null);
 
 		/// <summary>
 		/// Sets up and adds a fuzzy query object allowing the search for an explcit term in the field
@@ -149,6 +175,16 @@ namespace Lucinq.Interfaces
 		/// <param name="queries">The lamdba expressions showing queries</param>
 		IQueryBuilder Group(BooleanClause.Occur occur = null, BooleanClause.Occur childrenOccur = null, params Action<IQueryBuilder>[] queries);
 
+		/// <summary>
+		/// Creates a raw query lucene query
+		/// </summary>
+		/// <param name="field"></param>
+		/// <param name="queryText"></param>
+		/// <param name="occur"></param>
+		/// <param name="boost"></param>
+		/// <param name="key"></param>
+		/// <param name="analyzer"></param>
+		/// <returns></returns>
 		Query Raw(string field, string queryText, BooleanClause.Occur occur = null, float? boost = null, string key = null, Analyzer analyzer = null);
 
 		/// <summary>

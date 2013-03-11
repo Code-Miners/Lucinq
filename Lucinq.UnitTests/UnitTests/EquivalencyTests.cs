@@ -1,9 +1,11 @@
 ﻿using System;
 using Lucene.Net.Index;
+using Lucene.Net.QueryParsers;
 using Lucene.Net.Search;
 using Lucinq.Extensions;
 using Lucinq.Querying;
 using NUnit.Framework;
+using Version = Lucene.Net.Util.Version;
 
 namespace Lucinq.UnitTests.UnitTests
 {
@@ -381,6 +383,87 @@ namespace Lucinq.UnitTests.UnitTests
 
 			QueryBuilder builder = new QueryBuilder{CaseSensitive = true};
 			builder.Setup(x => x.TermRange("field", "Lower", "Upper"));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		#endregion
+
+		#region [ Keyword Tests ]
+
+		[Test]
+		public void CaseInsensitiveKeyword()
+		{
+			QueryBuilder builder = new QueryBuilder();
+
+			BooleanQuery originalQuery = new BooleanQuery();
+			QueryParser rawQueryParser = new QueryParser(Version.LUCENE_29, "_name", builder.KeywordAnalyzer);
+			originalQuery.Add(rawQueryParser.Parse("value"), BooleanClause.Occur.MUST);
+			string queryString = originalQuery.ToString();
+
+
+			builder.Setup(x => x.Keyword("_name", "Value"));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		[Test]
+		public void CaseSensitiveKeyword()
+		{
+			QueryBuilder builder = new QueryBuilder();
+
+			BooleanQuery originalQuery = new BooleanQuery();
+			QueryParser rawQueryParser = new QueryParser(Version.LUCENE_29, "_name", builder.KeywordAnalyzer);
+			originalQuery.Add(rawQueryParser.Parse("Value"), BooleanClause.Occur.MUST);
+			string queryString = originalQuery.ToString();
+
+
+			builder.Setup(x => x.Keyword("_name", "Value", caseSensitive:true));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+
+		[Test]
+		public void CaseInsensitiveNonMandatoryKeyword()
+		{
+			QueryBuilder builder = new QueryBuilder();
+
+			BooleanQuery originalQuery = new BooleanQuery();
+			QueryParser rawQueryParser = new QueryParser(Version.LUCENE_29, "_name", builder.KeywordAnalyzer);
+			originalQuery.Add(rawQueryParser.Parse("value"), BooleanClause.Occur.SHOULD);
+			string queryString = originalQuery.ToString();
+
+
+			builder.Setup(x => x.Keyword("_name", "Value", BooleanClause.Occur.SHOULD));
+			Query replacementQuery = builder.Build();
+			string newQueryString = replacementQuery.ToString();
+
+			Assert.AreEqual(queryString, newQueryString);
+			Console.Write(queryString);
+		}
+
+		[Test]
+		public void CaseSensitiveNonMandatoryKeyword()
+		{
+			QueryBuilder builder = new QueryBuilder();
+
+			BooleanQuery originalQuery = new BooleanQuery();
+			QueryParser rawQueryParser = new QueryParser(Version.LUCENE_29, "_name", builder.KeywordAnalyzer);
+			originalQuery.Add(rawQueryParser.Parse("Value"), BooleanClause.Occur.SHOULD);
+			string queryString = originalQuery.ToString();
+
+
+			builder.Setup(x => x.Keyword("_name", "Value", BooleanClause.Occur.SHOULD, caseSensitive: true));
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
