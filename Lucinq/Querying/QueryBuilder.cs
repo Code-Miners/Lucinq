@@ -367,14 +367,21 @@ namespace Lucinq.Querying
 
 		#region [ Sort Expressions ]
 
-		public virtual IQueryBuilder Sort(string fieldName, int? sortType = null)
+		/// <summary>
+		/// Sorts the results by the corresponding field
+		/// </summary>
+		/// <param name="fieldName"></param>
+		/// <param name="sortDescending"></param>
+		/// <param name="sortType"></param>
+		/// <returns></returns>
+		public virtual IQueryBuilder Sort(string fieldName, bool sortDescending = false, int? sortType = null)
 		{
 			if (!sortType.HasValue)
 			{
 				sortType = SortField.STRING;
 			}
 
-			SortField sortField = new SortField(fieldName, sortType.Value);
+			SortField sortField = new SortField(fieldName, sortType.Value, sortDescending);
 			CurrentSort = new Sort(sortField);
 			return this;
 		}
