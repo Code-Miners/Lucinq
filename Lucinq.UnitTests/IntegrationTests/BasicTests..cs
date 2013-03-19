@@ -190,9 +190,29 @@ namespace Lucinq.UnitTests.IntegrationTests
 			List<Document> documents = result.GetPagedDocuments(0, 10);
 			for (var i = 1; i < documents.Count; i++)
 			{
-				string thisDocumentTitle = documents[i].GetValues(BBCFields.Title).FirstOrDefault();
-				string lastDocumentTitle = documents[i - 1].GetValues(BBCFields.Title).FirstOrDefault();
-				Assert.IsTrue(String.Compare(thisDocumentTitle, lastDocumentTitle, StringComparison.Ordinal) >= 0);
+				string thisDocumentSortable = documents[i].GetValues(BBCFields.Sortable).FirstOrDefault();
+				string lastDocumentSortable = documents[i - 1].GetValues(BBCFields.Sortable).FirstOrDefault();
+				Assert.IsTrue(String.Compare(thisDocumentSortable, lastDocumentSortable, StringComparison.Ordinal) >= 0);
+			}
+		}
+
+		[Test]
+		public void SortDescending()
+		{
+			IQueryBuilder queryBuilder = new QueryBuilder();
+			queryBuilder.Setup
+				(
+					x => x.WildCard(BBCFields.Description, "a*"),
+					x => x.Sort(BBCFields.Title, true)
+				);
+
+			ILuceneSearchResult result = ExecuteAndAssert(queryBuilder, 902);
+			List<Document> documents = result.GetPagedDocuments(0, 10);
+			for (var i = 1; i < documents.Count; i++)
+			{
+				string thisDocumentSortable = documents[i].GetValues(BBCFields.Sortable).FirstOrDefault();
+				string lastDocumentSortable = documents[i - 1].GetValues(BBCFields.Sortable).FirstOrDefault();
+				Assert.IsTrue(String.Compare(thisDocumentSortable, lastDocumentSortable, StringComparison.Ordinal) <= 0);
 			}
 		}
 

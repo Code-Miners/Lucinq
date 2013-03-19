@@ -62,7 +62,8 @@ namespace Lucinq.UnitTests.IntegrationTests
 								x => x.AddAnalysedField(BBCFields.Description, newsArticle.Description, true),
 								x => x.AddAnalysedField(BBCFields.Copyright, newsArticle.Copyright),
 								x => x.AddStoredField(BBCFields.Link, newsArticle.Link),
-								x => x.AddNonAnalysedField(BBCFields.PublishDate, TestHelpers.GetDateString(newsArticle.PublishDateTime), true))
+								x => x.AddNonAnalysedField(BBCFields.PublishDate, TestHelpers.GetDateString(newsArticle.PublishDateTime), true),
+								x => x.AddNonAnalysedField(BBCFields.Sortable, newsArticle.Title)) // must be non-analysed to sort against it
 							);
 				}
 

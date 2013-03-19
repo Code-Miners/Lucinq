@@ -16,5 +16,7 @@ namespace Lucinq.UnitTests
 		public const string Link = "link";
 
 		public const string PublishDate = "publishdate";
+
+		public const string Sortable = "sortable";
 	}
 }
