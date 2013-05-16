@@ -39,20 +39,23 @@ namespace Lucinq.UnitTests.IntegrationTests
 		[Test]
 		public void BuildIndex()
 		{
+			// IF YOU WANT TO RUN THIS, DELETE THE CONTENTS OF THE EXISTING INDEX FIRST, OTHERWISE, IT WILL APPEND
+			
 			var indexFolder = FSDirectory.Open(new DirectoryInfo(GeneralConstants.Paths.BBCIndex));
 
 			Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_29);
 			using (IndexWriter indexWriter = new IndexWriter(indexFolder, analyzer, IndexWriter.MaxFieldLength.UNLIMITED))
 			{
 				string[] rssFiles = Directory.GetFiles(GeneralConstants.Paths.RSSFeed);
-				// int count = 0;
+				int count = 0;
 				foreach (var rssFile in rssFiles)
 				{
 					/*if (count > 4)
 					{
 						break;
-					}
-					count ++;*/
+					}*/
+					string secondarySort = count%2 == 0 ? "A" : "B";
+					count ++;
 					var newsArticles = ReadFeed(rssFile);
 					newsArticles.ForEach(
 						newsArticle => 
@@ -63,7 +66,8 @@ namespace Lucinq.UnitTests.IntegrationTests
 								x => x.AddAnalysedField(BBCFields.Copyright, newsArticle.Copyright),
 								x => x.AddStoredField(BBCFields.Link, newsArticle.Link),
 								x => x.AddNonAnalysedField(BBCFields.PublishDate, TestHelpers.GetDateString(newsArticle.PublishDateTime), true),
-								x => x.AddNonAnalysedField(BBCFields.Sortable, newsArticle.Title)) // must be non-analysed to sort against it
+								x => x.AddNonAnalysedField(BBCFields.Sortable, newsArticle.Title, true), // must be non-analysed to sort against it
+								x => x.AddNonAnalysedField(BBCFields.SecondarySort, secondarySort, true))
 							);
 				}
 

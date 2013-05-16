@@ -4,7 +4,7 @@ using Lucene.Net.Search;
 
 namespace Lucinq.Interfaces
 {
-	public interface IQueryBuilder : IHeirarchicalQueryGroup
+	public interface IQueryBuilder : IHierarchicalQueryGroup
 	{
 		#region [ Properties ]
 

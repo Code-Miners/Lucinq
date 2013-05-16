@@ -12,15 +12,36 @@ namespace Lucinq.Querying
 		#region [ Constructors ]
 
 		public LuceneSearch(string indexPath)
+			: this(indexPath, false)
 		{
-			IndexSearcher = new IndexSearcher(FSDirectory.Open(new DirectoryInfo(indexPath)), true);
+
 		}
 
+		public LuceneSearch(string indexPath, bool useRamDirectory)
+		{
+			UseRamDirectory = useRamDirectory;
+			FileSystemDirectory = FSDirectory.Open(new DirectoryInfo(indexPath));
+			if (useRamDirectory)
+			{
+				RamDirectory = new RAMDirectory(FileSystemDirectory);
+				IndexSearcher = new IndexSearcher(RamDirectory, true);
+			}
+			else
+			{
+				IndexSearcher = new IndexSearcher(FileSystemDirectory, true);
+			}
+		}
 		#endregion
 
 		#region [ Properties ]
 
 		public IndexSearcher IndexSearcher { get; private set; }
+
+		protected FSDirectory FileSystemDirectory { get; private set; }
+
+		protected RAMDirectory RamDirectory { get; private set; }
+
+		protected bool UseRamDirectory { get; private set; }
 
 		#endregion
 
@@ -49,11 +70,50 @@ namespace Lucinq.Querying
 			return Execute(queryBuilder.Build(), noOfResults, queryBuilder.CurrentSort);
 		}
 
+		public virtual void BuildSort()
+		{
+			
+		}
+
 		#endregion
 
 		public void Dispose()
 		{
-			IndexSearcher.Dispose();
+			try
+			{
+				if (FileSystemDirectory != null)
+				{
+					FileSystemDirectory.Close();
+				}
+			}
+			finally
+			{
+
+			}
+
+			try
+			{
+				if (RamDirectory != null)
+				{
+					RamDirectory.Close();
+				}
+			}
+			finally
+			{
+
+			}
+
+			try
+			{
+				if (IndexSearcher != null)
+				{
+					IndexSearcher.Close();
+				}
+			}
+			finally
+			{
+
+			}
 		}
 	}
 }

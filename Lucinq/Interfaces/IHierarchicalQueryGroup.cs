@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using Lucene.Net.Search;
 using Lucinq.Querying;
 
 namespace Lucinq.Interfaces
 {
-	public interface IHeirarchicalQueryGroup
+	public interface IHierarchicalQueryGroup
 	{
 		#region [ Properties ]
 

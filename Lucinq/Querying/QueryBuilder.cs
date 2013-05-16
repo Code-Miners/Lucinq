@@ -27,7 +27,8 @@ namespace Lucinq.Querying
 		{
 			Queries = new Dictionary<string, QueryReference>();
 			Groups = new List<IQueryBuilder>();
-			Occur = BooleanClause.Occur.MUST;		
+			Occur = BooleanClause.Occur.MUST;
+			SortFields = new List<SortField>();
 		}
 
 		public QueryBuilder(IQueryBuilder parentQueryBuilder)
@@ -77,6 +78,8 @@ namespace Lucinq.Querying
 		/// </summary>
 		public List<IQueryBuilder> Groups { get; private set; }
 
+		public List<SortField> SortFields { get; private set; }
+
 		public Sort CurrentSort { get; set; }
 
 		/// <summary>
@@ -121,6 +124,9 @@ namespace Lucinq.Querying
 			{
 				booleanQuery.Add(query.Build(), query.Occur);
 			}
+
+			BuildSort();
+
 			return booleanQuery;
 		}
 
@@ -131,6 +137,15 @@ namespace Lucinq.Querying
 		public virtual IQueryBuilder End()
 		{
 			return Parent;
+		}
+
+		public virtual void BuildSort()
+		{
+			if (SortFields.Count == 0)
+			{
+				return;
+			}
+			CurrentSort = new Sort(SortFields.ToArray());
 		}
 
 		#endregion
@@ -321,7 +336,7 @@ namespace Lucinq.Querying
 				rangeStart = rangeStart.ToLowerInvariant();
 				rangeEnd = rangeEnd.ToLowerInvariant();
 			}
-			TermRangeQuery query = new TermRangeQuery(fieldName, rangeStart, rangeEnd, includeLower, includeUpper);
+			TermRangeQuery query = new TermRangeQuery(QueryParser.Escape(fieldName), rangeStart, rangeEnd, includeLower, includeUpper);
 			SetBoostValue(query, boost);
 			Add(query, occur, key);
 			return query;
@@ -382,7 +397,7 @@ namespace Lucinq.Querying
 			}
 
 			SortField sortField = new SortField(fieldName, sortType.Value, sortDescending);
-			CurrentSort = new Sort(sortField);
+			SortFields.Add(sortField);
 			return this;
 		}
 
