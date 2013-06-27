@@ -1,6 +1,8 @@
-﻿namespace Lucinq.Interfaces
+﻿using System;
+
+namespace Lucinq.Interfaces
 {
-	public interface ILuceneSearch<T> : ILuceneSearchExecutor<T>, ILuceneSearcherAccessor where T : class, ISearchResult
+	public interface ILuceneSearch<T> : ILuceneSearchExecutor<T>, IDisposable, ILuceneSearcherAccessor where T : class, ISearchResult
 	{
 
 	}

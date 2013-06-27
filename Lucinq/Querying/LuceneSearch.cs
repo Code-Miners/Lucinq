@@ -7,7 +7,7 @@ using Lucinq.Interfaces;
 
 namespace Lucinq.Querying
 {
-	public class LuceneSearch : ILuceneSearch<LuceneSearchResult>, IDisposable
+	public class LuceneSearch : ILuceneSearch<LuceneSearchResult>
 	{
 		#region [ Constructors ]
 
