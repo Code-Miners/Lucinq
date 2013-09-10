@@ -1,10 +1,11 @@
 ﻿using Lucene.Net.Search;
+using Lucinq.Enums;
 
 namespace Lucinq.Querying
 {
 	public class QueryReference
 	{
-		public BooleanClause.Occur Occur { get; set; }
+		public Equality Occur { get; set; }
 
 		public Query Query { get; set; }
 	}

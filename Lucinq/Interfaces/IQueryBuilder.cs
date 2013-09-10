@@ -1,6 +1,7 @@
 ﻿using System;
 using Lucene.Net.Analysis;
 using Lucene.Net.Search;
+using Lucinq.Enums;
 
 namespace Lucinq.Interfaces
 {
@@ -22,7 +23,7 @@ namespace Lucinq.Interfaces
 		/// <param name="query">The query to add</param>
 		/// <param name="occur">The occur value for the query</param>
 		/// <param name="key">A key to allow manipulation from the dictionary later on (a default key will be generated if none is specified</param>
-		void Add(Query query, BooleanClause.Occur occur, string key = null);
+        void Add(Query query, Equality occur, string key = null);
 
 		/// <summary>
 		/// Builds the query
@@ -62,7 +63,7 @@ namespace Lucinq.Interfaces
 		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
 		/// <param name="caseSensitive"></param>
 		/// <returns>The generated term query</returns>
-		TermQuery Term(string fieldName, string fieldValue, BooleanClause.Occur occur = null,  float? boost = null, string key = null, bool? caseSensitive = null);
+        TermQuery Term(string fieldName, string fieldValue, Equality occur = Equality.NotSet, float? boost = null, string key = null, bool? caseSensitive = null);
 
 		/// <summary>
 		/// Sets up term queries for each of the values specified
@@ -74,7 +75,7 @@ namespace Lucinq.Interfaces
 		/// <param name="boost">A boost multiplier (1 is default / normal).</param>
 		/// <param name="caseSensitive">Whether the value is explicitly case sensitive (else use the query builders value)</param>
 		/// <returns>The input query builder</returns>
-		IQueryBuilder Terms(string fieldName, string[] fieldValues, BooleanClause.Occur occur = null, float? boost = null, bool? caseSensitive = null);
+        IQueryBuilder Terms(string fieldName, string[] fieldValues, Equality occur = Equality.NotSet, float? boost = null, bool? caseSensitive = null);
 
 		/// <summary>
 		/// Creates a query using the keyword analyzer
@@ -86,7 +87,7 @@ namespace Lucinq.Interfaces
 		/// <param name="key"></param>
 		/// <param name="caseSensitive"></param>
 		/// <returns></returns>
-		Query Keyword(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null, bool? caseSensitive = null);
+        Query Keyword(string fieldName, string fieldValue, Equality occur = Equality.NotSet, float? boost = null, string key = null, bool? caseSensitive = null);
 		
 		/// <summary>
 		/// Creates a set of keywords
@@ -98,7 +99,7 @@ namespace Lucinq.Interfaces
 		/// <param name="key"></param>s
 		/// <param name="caseSensitive"></param>
 		/// <returns></returns>
-		IQueryBuilder Keywords(string fieldName, string[] fieldValues, BooleanClause.Occur occur = null, float? boost = null, string key = null, bool? caseSensitive = null);
+        IQueryBuilder Keywords(string fieldName, string[] fieldValues, Equality occur = Equality.NotSet, float? boost = null, string key = null, bool? caseSensitive = null);
 
 		/// <summary>
 		/// Sets up and adds a fuzzy query object allowing the search for an explcit term in the field
@@ -110,7 +111,7 @@ namespace Lucinq.Interfaces
 		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
 		/// <param name="caseSensitive">Whether the value is explicitly case sensitive (else use the query builders value)</param>
 		/// <returns>The generated fuzzy query object</returns>
-		FuzzyQuery Fuzzy(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null, bool? caseSensitive = null);
+        FuzzyQuery Fuzzy(string fieldName, string fieldValue, Equality occur = Equality.NotSet, float? boost = null, string key = null, bool? caseSensitive = null);
 
 		/// <summary>
 		/// Sets up and adds a phrase query object allowing the search for an explcit term in the field
@@ -121,9 +122,9 @@ namespace Lucinq.Interfaces
 		/// <param name="boost">A boost multiplier (1 is default / normal).</param>
 		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
 		/// <returns>The generated phrase query object</returns>
-		PhraseQuery Phrase(int slop, float? boost = null, BooleanClause.Occur occur = null, string key = null);
+        PhraseQuery Phrase(int slop, float? boost = null, Equality occur = Equality.NotSet, string key = null);
 
-		IQueryBuilder Phrase(string fieldName, string[] fieldValues, int slop, BooleanClause.Occur occur = null, float? boost = null, bool? caseSensitive = null);
+        IQueryBuilder Phrase(string fieldName, string[] fieldValues, int slop, Equality occur = Equality.NotSet, float? boost = null, bool? caseSensitive = null);
 
 		/// <summary>
 		/// Sets up and adds a wildcard query object allowing the search for an explcit term in the field
@@ -135,9 +136,9 @@ namespace Lucinq.Interfaces
 		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
 		/// <param name="caseSensitive">Whether the value is explicitly case sensitive (else use the query builders value)</param>
 		/// <returns>The generated wildcard query object</returns>
-		WildcardQuery WildCard(string fieldName, string fieldValue, BooleanClause.Occur occur = null, float? boost = null, string key = null, bool? caseSensitive = null);
+		WildcardQuery WildCard(string fieldName, string fieldValue, Equality occur = Equality.NotSet, float? boost = null, string key = null, bool? caseSensitive = null);
 
-		IQueryBuilder WildCards(string fieldName, string[] fieldValues, BooleanClause.Occur occur = null,
+        IQueryBuilder WildCards(string fieldName, string[] fieldValues, Equality occur = Equality.NotSet,
 		                                        float? boost = null, bool? caseSensitive = null);
 
 		/// <summary>
@@ -152,7 +153,7 @@ namespace Lucinq.Interfaces
 		/// </summary>
 		/// <param name="occur">Whether the group must / should occur</param>
 		/// <param name="queries">The lamdba expressions showing queries</param>
-		IQueryBuilder And(BooleanClause.Occur occur = null, params Action<IQueryBuilder>[] queries);
+        IQueryBuilder And(Equality occur = Equality.NotSet, params Action<IQueryBuilder>[] queries);
 
 		/// <summary>
 		/// Creates a simple group that MUST occur, each item of which SHOULD occur by default
@@ -165,7 +166,7 @@ namespace Lucinq.Interfaces
 		/// </summary>
 		/// <param name="occur">Whether the group must / should occur</param>
 		/// <param name="queries">The lamdba expressions showing queries</param>
-		IQueryBuilder Or(BooleanClause.Occur occur = null, params Action<IQueryBuilder>[] queries);
+        IQueryBuilder Or(Equality occur = Equality.NotSet, params Action<IQueryBuilder>[] queries);
 
 		/// <summary>
 		/// Creates a simple group allowing the specification of whether it should occur, and specification of each items occurance.
@@ -173,7 +174,7 @@ namespace Lucinq.Interfaces
 		/// <param name="occur">Whether the group must / should occur</param>
 		/// <param name="childrenOccur">Whether the child query should occur by default</param>
 		/// <param name="queries">The lamdba expressions showing queries</param>
-		IQueryBuilder Group(BooleanClause.Occur occur = null, BooleanClause.Occur childrenOccur = null, params Action<IQueryBuilder>[] queries);
+        IQueryBuilder Group(Equality occur = Equality.NotSet, Equality childrenOccur = Equality.NotSet, params Action<IQueryBuilder>[] queries);
 
 		/// <summary>
 		/// Creates a raw query lucene query
@@ -185,7 +186,7 @@ namespace Lucinq.Interfaces
 		/// <param name="key"></param>
 		/// <param name="analyzer"></param>
 		/// <returns></returns>
-		Query Raw(string field, string queryText, BooleanClause.Occur occur = null, float? boost = null, string key = null, Analyzer analyzer = null);
+        Query Raw(string field, string queryText, Equality occur = Equality.NotSet, float? boost = null, string key = null, Analyzer analyzer = null);
 
 		/// <summary>
 		/// Querys values to return results within the specified range of terms
@@ -202,18 +203,18 @@ namespace Lucinq.Interfaces
 		/// <returns></returns>
 		TermRangeQuery TermRange(string fieldName, string rangeStart, string rangeEnd, bool includeLower = true,
 		                                        bool includeUpper = true,
-		                                        BooleanClause.Occur occur = null, float? boost = null, string key = null, bool? caseSensitive = null);
+                                                Equality occur = Equality.NotSet, float? boost = null, string key = null, bool? caseSensitive = null);
 
-		NumericRangeQuery NumericRange(string fieldName, int minValue, int maxValue, BooleanClause.Occur occur = null, float? boost = null,
+        NumericRangeQuery<int> NumericRange(string fieldName, int minValue, int maxValue, Equality occur = Equality.NotSet, float? boost = null,
 													int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null);
 
-		NumericRangeQuery NumericRange(string fieldName, float minValue, float maxValue, BooleanClause.Occur occur = null, float? boost = null,
+        NumericRangeQuery<float> NumericRange(string fieldName, float minValue, float maxValue, Equality occur = Equality.NotSet, float? boost = null,
 													int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null);
 
-		NumericRangeQuery NumericRange(string fieldName, double minValue, double maxValue, BooleanClause.Occur occur = null, float? boost = null,
+        NumericRangeQuery<double> NumericRange(string fieldName, double minValue, double maxValue, Equality occur = Equality.NotSet, float? boost = null,
 											int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null);
 
-		NumericRangeQuery NumericRange(string fieldName, long minValue, long maxValue, BooleanClause.Occur occur = null, float? boost = null,
+        NumericRangeQuery<long> NumericRange(string fieldName, long minValue, long maxValue, Equality occur = Equality.NotSet, float? boost = null,
 									int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null);
 
 		IQueryBuilder Sort(string fieldName, bool sortDescending = false, int? sortType = null);

@@ -37,7 +37,7 @@ namespace Lucinq.Querying
 
 		public List<Document> GetTopDocuments()
 		{
-			return Results == null ? null : (from ScoreDoc doc in Results.ScoreDocs select GetDocument(doc.doc)).ToList();
+			return Results == null ? null : (from ScoreDoc doc in Results.ScoreDocs select GetDocument(doc.Doc)).ToList();
 		}
 
 		public List<Document> GetPagedDocuments(int start, int end)
@@ -59,7 +59,7 @@ namespace Lucinq.Querying
 
 			for (var i = start; i <= end; i++)
 			{
-				documents.Add(GetDocument(Results.ScoreDocs[i].doc));
+				documents.Add(GetDocument(Results.ScoreDocs[i].Doc));
 			}
 
 			return documents;

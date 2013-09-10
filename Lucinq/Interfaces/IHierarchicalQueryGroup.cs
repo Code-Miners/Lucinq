@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Lucene.Net.Search;
+using Lucinq.Enums;
 using Lucinq.Querying;
 
 namespace Lucinq.Interfaces
@@ -11,12 +12,12 @@ namespace Lucinq.Interfaces
 		/// <summary>
 		/// Gets or sets the occurance value for the query builder
 		/// </summary>
-		BooleanClause.Occur Occur { get; set; }
+		Equality Occur { get; set; }
 
 		/// <summary>
 		/// Gets or sets the default occur value for child queries within the builder
 		/// </summary>
-		BooleanClause.Occur DefaultChildrenOccur { get; set; }
+        Equality DefaultChildrenOccur { get; set; }
 
 		/// <summary>
 		/// Gets the parent query builder

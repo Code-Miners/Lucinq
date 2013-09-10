@@ -2,6 +2,7 @@
 using Lucene.Net.Index;
 using Lucene.Net.QueryParsers;
 using Lucene.Net.Search;
+using Lucinq.Enums;
 using Lucinq.Extensions;
 using Lucinq.Querying;
 using NUnit.Framework;
@@ -20,7 +21,7 @@ namespace Lucinq.UnitTests.UnitTests
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "value");
 			TermQuery termQuery = new TermQuery(term);
-			originalQuery.Add(termQuery, BooleanClause.Occur.MUST);
+            originalQuery.Add(termQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 
@@ -39,8 +40,8 @@ namespace Lucinq.UnitTests.UnitTests
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "value");
 			TermQuery termQuery = new TermQuery(term);
-			originalQuery.Add(termQuery, BooleanClause.Occur.MUST);
-			termQuery.SetBoost(10);
+            originalQuery.Add(termQuery, Occur.MUST);
+			termQuery.Boost = 10;
 			string queryString = originalQuery.ToString();
 
 
@@ -59,7 +60,7 @@ namespace Lucinq.UnitTests.UnitTests
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "Value");
 			TermQuery termQuery = new TermQuery(term);
-			originalQuery.Add(termQuery, BooleanClause.Occur.MUST);
+            originalQuery.Add(termQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 
@@ -78,7 +79,7 @@ namespace Lucinq.UnitTests.UnitTests
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "Value");
 			TermQuery termQuery = new TermQuery(term);
-			originalQuery.Add(termQuery, BooleanClause.Occur.MUST);
+            originalQuery.Add(termQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 
@@ -97,12 +98,12 @@ namespace Lucinq.UnitTests.UnitTests
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "value");
 			TermQuery termQuery = new TermQuery(term);
-			originalQuery.Add(termQuery, BooleanClause.Occur.SHOULD);
+			originalQuery.Add(termQuery, Occur.SHOULD);
 			string queryString = originalQuery.ToString();
 
 
 			QueryBuilder builder = new QueryBuilder();
-			builder.Setup(x => x.Term("_name", "Value", BooleanClause.Occur.SHOULD));
+			builder.Setup(x => x.Term("_name", "Value", Equality.Sometimes));
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
@@ -116,12 +117,12 @@ namespace Lucinq.UnitTests.UnitTests
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "Value");
 			TermQuery termQuery = new TermQuery(term);
-			originalQuery.Add(termQuery, BooleanClause.Occur.SHOULD);
+            originalQuery.Add(termQuery, Occur.SHOULD);
 			string queryString = originalQuery.ToString();
 
 
 			QueryBuilder builder = new QueryBuilder();
-			builder.Setup(x => x.Term("_name", "Value", BooleanClause.Occur.SHOULD, caseSensitive: true));
+			builder.Setup(x => x.Term("_name", "Value", Equality.Sometimes, caseSensitive: true));
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
@@ -140,12 +141,12 @@ namespace Lucinq.UnitTests.UnitTests
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "value");
 			TermQuery termQuery = new TermQuery(term);
-			originalQuery.Add(termQuery, BooleanClause.Occur.MUST);
+            originalQuery.Add(termQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder();
 			TermQuery termQuery2 = new TermQuery(term);
-			builder.Add(termQuery2, BooleanClause.Occur.MUST);
+            builder.Add(termQuery2, Equality.Always);
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
@@ -163,9 +164,9 @@ namespace Lucinq.UnitTests.UnitTests
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "value");
 			PhraseQuery phraseQuery = new PhraseQuery();
-			phraseQuery.SetSlop(2);
+			phraseQuery.Slop = 2;
 			phraseQuery.Add(term);
-			originalQuery.Add(phraseQuery, BooleanClause.Occur.MUST);
+            originalQuery.Add(phraseQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 
@@ -184,10 +185,10 @@ namespace Lucinq.UnitTests.UnitTests
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "value");
 			PhraseQuery phraseQuery = new PhraseQuery();
-			phraseQuery.SetSlop(2);
+		    phraseQuery.Slop = 2;
 			phraseQuery.Add(term);
-			phraseQuery.SetBoost(10);
-			originalQuery.Add(phraseQuery, BooleanClause.Occur.MUST);
+			phraseQuery.Boost = 10;
+            originalQuery.Add(phraseQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 
@@ -206,9 +207,9 @@ namespace Lucinq.UnitTests.UnitTests
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "Value");
 			PhraseQuery phraseQuery = new PhraseQuery();
-			phraseQuery.SetSlop(2);
+			phraseQuery.Slop = 2;
 			phraseQuery.Add(term);
-			originalQuery.Add(phraseQuery, BooleanClause.Occur.MUST);
+            originalQuery.Add(phraseQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder{CaseSensitive = true};
@@ -226,9 +227,9 @@ namespace Lucinq.UnitTests.UnitTests
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "Value");
 			PhraseQuery phraseQuery = new PhraseQuery();
-			phraseQuery.SetSlop(2);
+			phraseQuery.Slop = 2;
 			phraseQuery.Add(term);
-			originalQuery.Add(phraseQuery, BooleanClause.Occur.MUST);
+            originalQuery.Add(phraseQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 
@@ -251,7 +252,7 @@ namespace Lucinq.UnitTests.UnitTests
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "value*");
 			WildcardQuery wildcardQuery = new WildcardQuery(term);
-			originalQuery.Add(wildcardQuery, BooleanClause.Occur.MUST);
+            originalQuery.Add(wildcardQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder();
@@ -269,7 +270,7 @@ namespace Lucinq.UnitTests.UnitTests
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "Value*");
 			WildcardQuery wildcardQuery = new WildcardQuery(term);
-			originalQuery.Add(wildcardQuery, BooleanClause.Occur.MUST);
+            originalQuery.Add(wildcardQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder();
@@ -287,7 +288,7 @@ namespace Lucinq.UnitTests.UnitTests
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "Value*");
 			WildcardQuery wildcardQuery = new WildcardQuery(term);
-			originalQuery.Add(wildcardQuery, BooleanClause.Occur.MUST);
+            originalQuery.Add(wildcardQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder{CaseSensitive = true};
@@ -305,11 +306,11 @@ namespace Lucinq.UnitTests.UnitTests
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "value*");
 			WildcardQuery wildcardQuery = new WildcardQuery(term);
-			originalQuery.Add(wildcardQuery, BooleanClause.Occur.SHOULD);
+            originalQuery.Add(wildcardQuery, Occur.SHOULD);
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder();
-			builder.Setup(x => x.WildCard("_name", "Value*", BooleanClause.Occur.SHOULD));
+			builder.Setup(x => x.WildCard("_name", "Value*", Equality.Sometimes));
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
@@ -323,7 +324,7 @@ namespace Lucinq.UnitTests.UnitTests
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "Value*");
 			WildcardQuery wildcardQuery = new WildcardQuery(term);
-			originalQuery.Add(wildcardQuery, BooleanClause.Occur.MUST);
+            originalQuery.Add(wildcardQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder();
@@ -344,7 +345,7 @@ namespace Lucinq.UnitTests.UnitTests
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
 			TermRangeQuery termRangeQuery = new TermRangeQuery("field", "lower", "upper", true, true);
-			originalQuery.Add(termRangeQuery, BooleanClause.Occur.MUST);
+            originalQuery.Add(termRangeQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder();
@@ -361,7 +362,7 @@ namespace Lucinq.UnitTests.UnitTests
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
 			TermRangeQuery termRangeQuery = new TermRangeQuery("field", "Lower", "Upper", true, true);
-			originalQuery.Add(termRangeQuery, BooleanClause.Occur.MUST);
+            originalQuery.Add(termRangeQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder();
@@ -378,7 +379,7 @@ namespace Lucinq.UnitTests.UnitTests
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
 			TermRangeQuery termRangeQuery = new TermRangeQuery("field", "Lower", "Upper", true, true);
-			originalQuery.Add(termRangeQuery, BooleanClause.Occur.MUST);
+            originalQuery.Add(termRangeQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder{CaseSensitive = true};
@@ -401,7 +402,7 @@ namespace Lucinq.UnitTests.UnitTests
 
 			BooleanQuery originalQuery = new BooleanQuery();
 			QueryParser rawQueryParser = new QueryParser(Version.LUCENE_29, "_name", builder.KeywordAnalyzer);
-			originalQuery.Add(rawQueryParser.Parse("value"), BooleanClause.Occur.MUST);
+            originalQuery.Add(rawQueryParser.Parse("value"), Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 
@@ -420,7 +421,7 @@ namespace Lucinq.UnitTests.UnitTests
 
 			BooleanQuery originalQuery = new BooleanQuery();
 			QueryParser rawQueryParser = new QueryParser(Version.LUCENE_29, "_name", builder.KeywordAnalyzer);
-			originalQuery.Add(rawQueryParser.Parse("Value"), BooleanClause.Occur.MUST);
+            originalQuery.Add(rawQueryParser.Parse("Value"), Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 
@@ -440,11 +441,11 @@ namespace Lucinq.UnitTests.UnitTests
 
 			BooleanQuery originalQuery = new BooleanQuery();
 			QueryParser rawQueryParser = new QueryParser(Version.LUCENE_29, "_name", builder.KeywordAnalyzer);
-			originalQuery.Add(rawQueryParser.Parse("value"), BooleanClause.Occur.SHOULD);
+            originalQuery.Add(rawQueryParser.Parse("value"), Occur.SHOULD);
 			string queryString = originalQuery.ToString();
 
 
-			builder.Setup(x => x.Keyword("_name", "Value", BooleanClause.Occur.SHOULD));
+			builder.Setup(x => x.Keyword("_name", "Value", Equality.Sometimes));
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
@@ -459,11 +460,11 @@ namespace Lucinq.UnitTests.UnitTests
 
 			BooleanQuery originalQuery = new BooleanQuery();
 			QueryParser rawQueryParser = new QueryParser(Version.LUCENE_29, "_name", builder.KeywordAnalyzer);
-			originalQuery.Add(rawQueryParser.Parse("Value"), BooleanClause.Occur.SHOULD);
+            originalQuery.Add(rawQueryParser.Parse("Value"), Occur.SHOULD);
 			string queryString = originalQuery.ToString();
 
 
-			builder.Setup(x => x.Keyword("_name", "Value", BooleanClause.Occur.SHOULD, caseSensitive: true));
+			builder.Setup(x => x.Keyword("_name", "Value", Equality.Sometimes, caseSensitive: true));
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
@@ -479,8 +480,8 @@ namespace Lucinq.UnitTests.UnitTests
 		public void IntegerRange()
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
-			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewIntRange("field", 1, 0, 10, true, true);
-			originalQuery.Add(numericRangeQuery, BooleanClause.Occur.MUST);
+			NumericRangeQuery<int> numericRangeQuery = NumericRangeQuery.NewIntRange("field", 1, 0, 10, true, true);
+            originalQuery.Add(numericRangeQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder();
@@ -496,8 +497,8 @@ namespace Lucinq.UnitTests.UnitTests
 		public void DoubleRange()
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
-			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewDoubleRange("field", 1, 0d, 10d, true, true);
-			originalQuery.Add(numericRangeQuery, BooleanClause.Occur.MUST);
+			NumericRangeQuery<double> numericRangeQuery = NumericRangeQuery.NewDoubleRange("field", 1, 0d, 10d, true, true);
+            originalQuery.Add(numericRangeQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder();
@@ -513,8 +514,8 @@ namespace Lucinq.UnitTests.UnitTests
 		public void LongRange()
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
-			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewLongRange("field", 1, 0L, 10L, true, true);
-			originalQuery.Add(numericRangeQuery, BooleanClause.Occur.MUST);
+			NumericRangeQuery<long> numericRangeQuery = NumericRangeQuery.NewLongRange("field", 1, 0L, 10L, true, true);
+            originalQuery.Add(numericRangeQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder();
@@ -537,15 +538,15 @@ namespace Lucinq.UnitTests.UnitTests
 
 			Term term = new Term("_name", "value1");
 			TermQuery termQuery1 = new TermQuery(term);
-			originalQuery.Add(termQuery1, BooleanClause.Occur.SHOULD);
+            originalQuery.Add(termQuery1, Occur.SHOULD);
 
 			Term term2 = new Term("_name", "value2");
 			TermQuery termQuery2 = new TermQuery(term2);
-			originalQuery.Add(termQuery2, BooleanClause.Occur.SHOULD);
+            originalQuery.Add(termQuery2, Occur.SHOULD);
 
 			string queryString = originalQuery.ToString();
 
-			QueryBuilder builder = new QueryBuilder{DefaultChildrenOccur = BooleanClause.Occur.SHOULD};
+			QueryBuilder builder = new QueryBuilder{DefaultChildrenOccur = Equality.Sometimes};
 			builder.Setup
 				(
 					x => x.Term("_name", "value1"),
@@ -559,8 +560,8 @@ namespace Lucinq.UnitTests.UnitTests
 			QueryBuilder builder2 = new QueryBuilder();
 			builder2.Setup
 				(
-					x => x.Term("_name", "value1", BooleanClause.Occur.SHOULD),
-					x => x.Term("_name", "value2", BooleanClause.Occur.SHOULD)
+					x => x.Term("_name", "value1", Equality.Sometimes),
+					x => x.Term("_name", "value2", Equality.Sometimes)
 				);
 			Query replacementQuery2 = builder2.Build();
 			string newQueryString2 = replacementQuery2.ToString();
@@ -589,13 +590,13 @@ namespace Lucinq.UnitTests.UnitTests
 			
 			Term term = new Term("_name", "value1");
 			TermQuery termQuery1 = new TermQuery(term);
-			innerQuery.Add(termQuery1, BooleanClause.Occur.SHOULD);
+            innerQuery.Add(termQuery1, Occur.SHOULD);
 
 			Term term2 = new Term("_name", "value2");
 			TermQuery termQuery2 = new TermQuery(term2);
-			innerQuery.Add(termQuery2, BooleanClause.Occur.SHOULD);
-			
-			originalQuery.Add(innerQuery, BooleanClause.Occur.MUST);
+            innerQuery.Add(termQuery2, Occur.SHOULD);
+
+            originalQuery.Add(innerQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder();
@@ -619,13 +620,13 @@ namespace Lucinq.UnitTests.UnitTests
 
 			Term term = new Term("_name", "value1");
 			TermQuery termQuery1 = new TermQuery(term);
-			innerQuery.Add(termQuery1, BooleanClause.Occur.MUST);
+            innerQuery.Add(termQuery1, Occur.MUST);
 
 			Term term2 = new Term("_name", "value2");
 			TermQuery termQuery2 = new TermQuery(term2);
-			innerQuery.Add(termQuery2, BooleanClause.Occur.MUST);
+            innerQuery.Add(termQuery2, Occur.MUST);
 
-			originalQuery.Add(innerQuery, BooleanClause.Occur.MUST);
+            originalQuery.Add(innerQuery, Occur.MUST);
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder();
@@ -651,16 +652,16 @@ namespace Lucinq.UnitTests.UnitTests
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "value");
 			TermQuery termQuery = new TermQuery(term);
-			originalQuery.Add(termQuery, BooleanClause.Occur.MUST);
+            originalQuery.Add(termQuery, Occur.MUST);
 			PhraseQuery phraseQuery = new PhraseQuery();
 			Term phraseTerm = new Term("_name", "phrase");
-			phraseQuery.SetSlop(2);
+		    phraseQuery.Slop = 2;
 			phraseQuery.Add(phraseTerm);
-			originalQuery.Add(phraseQuery, BooleanClause.Occur.MUST);
+            originalQuery.Add(phraseQuery, Occur.MUST);
 
 			Term wildcardTerm = new Term("_name", "*wildcard*");
 			WildcardQuery wildcardQuery = new WildcardQuery(wildcardTerm);
-			originalQuery.Add(wildcardQuery, BooleanClause.Occur.SHOULD);
+            originalQuery.Add(wildcardQuery, Occur.SHOULD);
 
 			string queryString = originalQuery.ToString();
 
@@ -670,7 +671,7 @@ namespace Lucinq.UnitTests.UnitTests
 				(
 					x => x.Term("_name", "value"),
 					x => x.Phrase(2).AddTerm("_name", "phrase"),
-					x => x.WildCard("_name", "*wildcard*", BooleanClause.Occur.SHOULD)
+					x => x.WildCard("_name", "*wildcard*", Equality.Sometimes)
 				);
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();

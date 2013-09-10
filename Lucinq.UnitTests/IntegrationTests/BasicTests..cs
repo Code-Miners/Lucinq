@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Lucene.Net.Documents;
 using Lucene.Net.Search;
+using Lucinq.Enums;
 using Lucinq.Extensions;
 using Lucinq.Interfaces;
 using Lucinq.Querying;
@@ -129,7 +130,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		public void EasyOr(LuceneSearch luceneSearch)
 		{
 			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Terms(BBCFields.Title, new[] {"europe", "africa"}, BooleanClause.Occur.SHOULD);
+			queryBuilder.Terms(BBCFields.Title, new[] {"europe", "africa"}, Equality.Sometimes);
 			ExecuteAndAssert(luceneSearch, queryBuilder, 12);
 		}
 
@@ -269,7 +270,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		public void EasyAnd(LuceneSearch luceneSearch)
 		{
 			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Terms(BBCFields.Title, new[] { "africa", "road" }, occur: BooleanClause.Occur.MUST);
+			queryBuilder.Terms(BBCFields.Title, new[] { "africa", "road" }, occur: Equality.Always);
 			ExecuteAndAssert(luceneSearch, queryBuilder, 1);
 		}
 
@@ -304,8 +305,8 @@ namespace Lucinq.UnitTests.IntegrationTests
 					x => x.WildCard(BBCFields.Title, "africa"),
 					x => x.Group().Setup
 							(
-								y => y.Term(BBCFields.Description, "africa", BooleanClause.Occur.SHOULD),
-								y => y.Term(BBCFields.Description, "amazing", BooleanClause.Occur.SHOULD)
+								y => y.Term(BBCFields.Description, "africa", Equality.Always),
+								y => y.Term(BBCFields.Description, "amazing", Equality.Always)
 							)
 				);
 
@@ -366,7 +367,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 			var documents = result.GetTopDocuments();
 
-			Console.WriteLine("Searched {0} documents in {1} ms", luceneSearch.IndexSearcher.MaxDoc(), result.ElapsedTimeMs);
+			Console.WriteLine("Searched {0} documents in {1} ms", luceneSearch.IndexSearcher.MaxDoc, result.ElapsedTimeMs);
 			Console.WriteLine();
 
 			WriteDocuments(documents);
@@ -382,7 +383,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 			var result = luceneSearch.Execute(queryBuilder);
 			List<Document> documents = result.GetPagedDocuments(start, end);
 
-			Console.WriteLine("Searched {0} documents in {1} ms", luceneSearch.IndexSearcher.MaxDoc(), result.ElapsedTimeMs);
+			Console.WriteLine("Searched {0} documents in {1} ms", luceneSearch.IndexSearcher.MaxDoc, result.ElapsedTimeMs);
 			Console.WriteLine();
 
 			WriteDocuments(documents);
