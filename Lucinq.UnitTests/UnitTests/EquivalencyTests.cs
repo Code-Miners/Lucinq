@@ -103,7 +103,7 @@ namespace Lucinq.UnitTests.UnitTests
 
 
 			QueryBuilder builder = new QueryBuilder();
-			builder.Setup(x => x.Term("_name", "Value", Equality.Sometimes));
+			builder.Setup(x => x.Term("_name", "Value", Matches.Sometimes));
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
@@ -122,7 +122,7 @@ namespace Lucinq.UnitTests.UnitTests
 
 
 			QueryBuilder builder = new QueryBuilder();
-			builder.Setup(x => x.Term("_name", "Value", Equality.Sometimes, caseSensitive: true));
+			builder.Setup(x => x.Term("_name", "Value", Matches.Sometimes, caseSensitive: true));
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
@@ -146,7 +146,7 @@ namespace Lucinq.UnitTests.UnitTests
 
 			QueryBuilder builder = new QueryBuilder();
 			TermQuery termQuery2 = new TermQuery(term);
-            builder.Add(termQuery2, Equality.Always);
+            builder.Add(termQuery2, Matches.Always);
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
@@ -310,7 +310,7 @@ namespace Lucinq.UnitTests.UnitTests
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder();
-			builder.Setup(x => x.WildCard("_name", "Value*", Equality.Sometimes));
+			builder.Setup(x => x.WildCard("_name", "Value*", Matches.Sometimes));
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
@@ -445,7 +445,7 @@ namespace Lucinq.UnitTests.UnitTests
 			string queryString = originalQuery.ToString();
 
 
-			builder.Setup(x => x.Keyword("_name", "Value", Equality.Sometimes));
+			builder.Setup(x => x.Keyword("_name", "Value", Matches.Sometimes));
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
@@ -464,7 +464,7 @@ namespace Lucinq.UnitTests.UnitTests
 			string queryString = originalQuery.ToString();
 
 
-			builder.Setup(x => x.Keyword("_name", "Value", Equality.Sometimes, caseSensitive: true));
+			builder.Setup(x => x.Keyword("_name", "Value", Matches.Sometimes, caseSensitive: true));
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
@@ -546,7 +546,7 @@ namespace Lucinq.UnitTests.UnitTests
 
 			string queryString = originalQuery.ToString();
 
-			QueryBuilder builder = new QueryBuilder{DefaultChildrenOccur = Equality.Sometimes};
+			QueryBuilder builder = new QueryBuilder{DefaultChildrenOccur = Matches.Sometimes};
 			builder.Setup
 				(
 					x => x.Term("_name", "value1"),
@@ -560,8 +560,8 @@ namespace Lucinq.UnitTests.UnitTests
 			QueryBuilder builder2 = new QueryBuilder();
 			builder2.Setup
 				(
-					x => x.Term("_name", "value1", Equality.Sometimes),
-					x => x.Term("_name", "value2", Equality.Sometimes)
+					x => x.Term("_name", "value1", Matches.Sometimes),
+					x => x.Term("_name", "value2", Matches.Sometimes)
 				);
 			Query replacementQuery2 = builder2.Build();
 			string newQueryString2 = replacementQuery2.ToString();
@@ -671,7 +671,7 @@ namespace Lucinq.UnitTests.UnitTests
 				(
 					x => x.Term("_name", "value"),
 					x => x.Phrase(2).AddTerm("_name", "phrase"),
-					x => x.WildCard("_name", "*wildcard*", Equality.Sometimes)
+					x => x.WildCard("_name", "*wildcard*", Matches.Sometimes)
 				);
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();

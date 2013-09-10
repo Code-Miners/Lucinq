@@ -12,12 +12,12 @@ namespace Lucinq.Interfaces
 		/// <summary>
 		/// Gets or sets the occurance value for the query builder
 		/// </summary>
-		Equality Occur { get; set; }
+		Matches Occur { get; set; }
 
 		/// <summary>
 		/// Gets or sets the default occur value for child queries within the builder
 		/// </summary>
-        Equality DefaultChildrenOccur { get; set; }
+        Matches DefaultChildrenOccur { get; set; }
 
 		/// <summary>
 		/// Gets the parent query builder

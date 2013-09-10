@@ -16,7 +16,7 @@ namespace Lucinq.Querying
 	{
 		#region [ Fields ]
 
-        private Equality defaultChildrenOccur;
+        private Matches defaultChildrenOccur;
 
 		private KeywordAnalyzer keywordAnalyzer;
 
@@ -28,7 +28,7 @@ namespace Lucinq.Querying
 		{
 			Queries = new Dictionary<string, QueryReference>();
 			Groups = new List<IQueryBuilder>();
-			Occur = Equality.Always;
+			Occur = Matches.Always;
 			SortFields = new List<SortField>();
 		}
 
@@ -45,7 +45,7 @@ namespace Lucinq.Querying
 		/// <summary>
 		/// Gets or sets the occurance value for the query builder
 		/// </summary>
-		public Equality Occur { get; set; }
+		public Matches Occur { get; set; }
 
 		/// <summary>
 		/// Gets or sets whether the query is to be case sensitive
@@ -55,7 +55,7 @@ namespace Lucinq.Querying
 		/// <summary>
 		/// Gets or sets the default occur value for child queries within the builder
 		/// </summary>
-		public Equality DefaultChildrenOccur
+		public Matches DefaultChildrenOccur
 		{
 			get
 			{
@@ -98,7 +98,7 @@ namespace Lucinq.Querying
 		/// <param name="query">The query to add</param>
 		/// <param name="occur">The occur value for the query</param>
 		/// <param name="key">A key to allow manipulation from the dictionary later on (a default key will be generated if none is specified</param>
-		public virtual void Add(Query query, Equality occur, string key = null)
+		public virtual void Add(Query query, Matches occur, string key = null)
 		{
 			if (key == null)
 			{
@@ -131,13 +131,13 @@ namespace Lucinq.Querying
 			return booleanQuery;
 		}
 
-        public virtual Occur GetLuceneOccur(Equality equality)
+        public virtual Occur GetLuceneOccur(Matches matches)
         {
-            switch (equality)
+            switch (matches)
             {
-                case Equality.Never:
+                case Matches.Never:
                     return Lucene.Net.Search.Occur.MUST_NOT;
-                case Equality.Sometimes:
+                case Matches.Sometimes:
                     return Lucene.Net.Search.Occur.SHOULD;
                 default:
                     return Lucene.Net.Search.Occur.MUST;
@@ -207,7 +207,7 @@ namespace Lucinq.Querying
 		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
 		/// <param name="caseSensitive">A boolean denoting whether or not to retain case</param>
 		/// <returns>The generated term query</returns>
-        public virtual TermQuery Term(string fieldName, string fieldValue, Equality occur = Equality.NotSet, float? boost = null, string key = null, bool? caseSensitive = null)
+        public virtual TermQuery Term(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null, string key = null, bool? caseSensitive = null)
 		{
 			Term term = GetTerm(fieldName, fieldValue, caseSensitive);
 			TermQuery query = new TermQuery(term);
@@ -227,7 +227,7 @@ namespace Lucinq.Querying
 		/// <param name="boost">A boost multiplier (1 is default / normal).</param>
 		/// <param name="caseSensitive">A boolean denoting whether or not to retain case</param>
 		/// <returns>The input query builder</returns>
-        public virtual IQueryBuilder Terms(string fieldName, string[] fieldValues, Equality occur = Equality.NotSet, float? boost = null, bool? caseSensitive = null)
+        public virtual IQueryBuilder Terms(string fieldName, string[] fieldValues, Matches occur = Matches.NotSet, float? boost = null, bool? caseSensitive = null)
 		{
 			var group = Group();
 			foreach (var fieldValue in fieldValues)
@@ -241,7 +241,7 @@ namespace Lucinq.Querying
 
 		#region [ Keywords ]
 
-        public virtual Query Keyword(string fieldName, string fieldValue, Equality occur = Equality.NotSet, float? boost = null, string key = null,
+        public virtual Query Keyword(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null, string key = null,
 		                     bool? caseSensitive = null)
 		{
 			if (!caseSensitive.HasValue || !caseSensitive.Value)
@@ -251,7 +251,7 @@ namespace Lucinq.Querying
 			return Raw(fieldName, fieldValue, occur, boost, key, KeywordAnalyzer);
 		}
 
-        public virtual IQueryBuilder Keywords(string fieldName, string[] fieldValues, Equality occur = Equality.NotSet, float? boost = null, string key = null,
+        public virtual IQueryBuilder Keywords(string fieldName, string[] fieldValues, Matches occur = Matches.NotSet, float? boost = null, string key = null,
 		                      bool? caseSensitive = null)
 		{
 			var group = Group();
@@ -276,7 +276,7 @@ namespace Lucinq.Querying
 		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
 		/// <param name="caseSensitive">A boolean denoting whether or not to retain case</param>
 		/// <returns>The generated fuzzy query object</returns>
-        public virtual FuzzyQuery Fuzzy(string fieldName, string fieldValue, Equality occur = Equality.NotSet, float? boost = null, string key = null, bool? caseSensitive = null)
+        public virtual FuzzyQuery Fuzzy(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null, string key = null, bool? caseSensitive = null)
 		{
 			Term term = GetTerm(fieldName, fieldValue, caseSensitive);
 			FuzzyQuery query = new FuzzyQuery(term);
@@ -299,7 +299,7 @@ namespace Lucinq.Querying
 		/// <param name="boost">A boost multiplier (1 is default / normal).</param>
 		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
 		/// <returns>The generated phrase query object</returns>
-        public virtual PhraseQuery Phrase(int slop, float? boost = null, Equality occur = Equality.NotSet, string key = null)
+        public virtual PhraseQuery Phrase(int slop, float? boost = null, Matches occur = Matches.NotSet, string key = null)
 		{
 			PhraseQuery query = new PhraseQuery();
 
@@ -320,7 +320,7 @@ namespace Lucinq.Querying
 		/// <param name="boost">The boost value for the query</param>
 		/// <param name="caseSensitive">A boolean denoting whether or not to retain case</param>
 		/// <returns>The input query builder</returns>
-        public virtual IQueryBuilder Phrase(string fieldName, string[] fieldValues, int slop, Equality occur = Equality.NotSet, float? boost = null, bool? caseSensitive = null)
+        public virtual IQueryBuilder Phrase(string fieldName, string[] fieldValues, int slop, Matches occur = Matches.NotSet, float? boost = null, bool? caseSensitive = null)
 		{
 			PhraseQuery phrase = Phrase(slop, boost, occur);
 			foreach (var fieldValue in fieldValues)
@@ -335,7 +335,7 @@ namespace Lucinq.Querying
 		#region [ Range Expressions ]
 
 		public virtual TermRangeQuery TermRange(string fieldName, string rangeStart, string rangeEnd, bool includeLower = true, bool includeUpper = true,
-                                        Equality occur = Equality.NotSet, float? boost = null, string key = null, bool? caseSensitive = null)
+                                        Matches occur = Matches.NotSet, float? boost = null, string key = null, bool? caseSensitive = null)
 		{
 			if (caseSensitive.HasValue)
 			{
@@ -356,7 +356,7 @@ namespace Lucinq.Querying
 			return query;
 		}
 
-        public virtual NumericRangeQuery<int> NumericRange(string fieldName, int minValue, int maxValue, Equality occur = Equality.NotSet, float? boost = null, 
+        public virtual NumericRangeQuery<int> NumericRange(string fieldName, int minValue, int maxValue, Matches occur = Matches.NotSet, float? boost = null, 
 													int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null)
 		{
 			NumericRangeQuery<int> numericRangeQuery = NumericRangeQuery.NewIntRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
@@ -365,7 +365,7 @@ namespace Lucinq.Querying
 			return numericRangeQuery;
 		}
 
-        public virtual NumericRangeQuery<float> NumericRange(string fieldName, float minValue, float maxValue, Equality occur = Equality.NotSet, float? boost = null,
+        public virtual NumericRangeQuery<float> NumericRange(string fieldName, float minValue, float maxValue, Matches occur = Matches.NotSet, float? boost = null,
 													int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null)
 		{
 			NumericRangeQuery<float> numericRangeQuery = NumericRangeQuery.NewFloatRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
@@ -374,7 +374,7 @@ namespace Lucinq.Querying
 			return numericRangeQuery;
 		}
 
-        public virtual NumericRangeQuery<double> NumericRange(string fieldName, double minValue, double maxValue, Equality occur = Equality.NotSet, float? boost = null,
+        public virtual NumericRangeQuery<double> NumericRange(string fieldName, double minValue, double maxValue, Matches occur = Matches.NotSet, float? boost = null,
 											int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null)
 		{
 			NumericRangeQuery<double> numericRangeQuery = NumericRangeQuery.NewDoubleRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
@@ -383,7 +383,7 @@ namespace Lucinq.Querying
 			return numericRangeQuery;
 		}
 
-        public virtual NumericRangeQuery<long> NumericRange(string fieldName, long minValue, long maxValue, Equality occur = Equality.NotSet, float? boost = null,
+        public virtual NumericRangeQuery<long> NumericRange(string fieldName, long minValue, long maxValue, Matches occur = Matches.NotSet, float? boost = null,
 									int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null)
 		{
 			NumericRangeQuery<long> numericRangeQuery = NumericRangeQuery.NewLongRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
@@ -429,7 +429,7 @@ namespace Lucinq.Querying
 		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
 		/// <param name="caseSensitive"></param>
 		/// <returns>The generated wildcard query object</returns>
-        public virtual WildcardQuery WildCard(string fieldName, string fieldValue, Equality occur = Equality.NotSet, float? boost = null, string key = null, bool? caseSensitive = null)
+        public virtual WildcardQuery WildCard(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null, string key = null, bool? caseSensitive = null)
 		{
 			Term term = GetTerm(fieldName, fieldValue, caseSensitive);
 			WildcardQuery query = new WildcardQuery(term);
@@ -439,7 +439,7 @@ namespace Lucinq.Querying
 			return query;
 		}
 
-        public virtual IQueryBuilder WildCards(string fieldName, string[] fieldValues, Equality occur = Equality.NotSet,
+        public virtual IQueryBuilder WildCards(string fieldName, string[] fieldValues, Matches occur = Matches.NotSet,
 								  float? boost = null, bool? caseSensitive = null)
 		{
 			var group = Group();
@@ -460,7 +460,7 @@ namespace Lucinq.Querying
 		/// <returns></returns>
 		public virtual IQueryBuilder And(params Action<IQueryBuilder>[] queries)
 		{
-			Group(Equality.Always, Equality.Always, queries);
+			Group(Matches.Always, Matches.Always, queries);
 			return this;
 		}
 
@@ -469,9 +469,9 @@ namespace Lucinq.Querying
 		/// </summary>
 		/// <param name="occur">Whether the group must / should occur</param>
 		/// <param name="queries">The lamdba expressions showing queries</param>
-        public virtual IQueryBuilder And(Equality occur = Equality.NotSet, params Action<IQueryBuilder>[] queries)
+        public virtual IQueryBuilder And(Matches occur = Matches.NotSet, params Action<IQueryBuilder>[] queries)
 		{
-			Group(occur, Equality.Always, queries);
+			Group(occur, Matches.Always, queries);
 			return this;
 		}
 
@@ -481,7 +481,7 @@ namespace Lucinq.Querying
 		/// <param name="queries">The lamdba expressions showing queries</param>
 		public virtual IQueryBuilder Or(params Action<IQueryBuilder>[] queries)
 		{
-			return Group(Equality.Always, Equality.Sometimes, queries).Parent;
+			return Group(Matches.Always, Matches.Sometimes, queries).Parent;
 		}
 
 		/// <summary>
@@ -489,9 +489,9 @@ namespace Lucinq.Querying
 		/// </summary>
 		/// <param name="occur">Whether the group must / should occur</param>
 		/// <param name="queries">The lamdba expressions showing queries</param>
-        public virtual IQueryBuilder Or(Equality occur = Equality.NotSet, params Action<IQueryBuilder>[] queries)
+        public virtual IQueryBuilder Or(Matches occur = Matches.NotSet, params Action<IQueryBuilder>[] queries)
 		{
-			return Group(occur, Equality.Sometimes, queries).Parent;
+			return Group(occur, Matches.Sometimes, queries).Parent;
 		}
 
 		/// <summary>
@@ -500,11 +500,11 @@ namespace Lucinq.Querying
 		/// <param name="occur">Whether the group must / should occur</param>
 		/// <param name="childrenOccur">Whether the child query should occur by default</param>
 		/// <param name="queries">The lamdba expressions showing queries</param>
-        public virtual IQueryBuilder Group(Equality occur = Equality.NotSet, Equality childrenOccur = Equality.NotSet, params Action<IQueryBuilder>[] queries)
+        public virtual IQueryBuilder Group(Matches occur = Matches.NotSet, Matches childrenOccur = Matches.NotSet, params Action<IQueryBuilder>[] queries)
 		{
-            if (occur == Equality.NotSet)
+            if (occur == Matches.NotSet)
 			{
-				occur = Equality.Always;
+				occur = Matches.Always;
 			}
 			var groupedBooleanQuery = AddChildGroup(occur, childrenOccur, queries);
 			if (groupedBooleanQuery == null)
@@ -518,7 +518,7 @@ namespace Lucinq.Querying
 
 		#region [ Other Expressions ]
 
-        public virtual Query Raw(string field, string queryText, Equality occur = Equality.NotSet, float? boost = null, string key = null, Analyzer analyzer = null)
+        public virtual Query Raw(string field, string queryText, Matches occur = Matches.NotSet, float? boost = null, string key = null, Analyzer analyzer = null)
 		{
 			if (analyzer == null)
 			{
@@ -551,15 +551,15 @@ namespace Lucinq.Querying
 			return new Term(field, value);
 		}
 
-        protected virtual IQueryBuilder AddChildGroup(Equality occur = Equality.NotSet, Equality childrenOccur = Equality.NotSet, params Action<IQueryBuilder>[] queries)
+        protected virtual IQueryBuilder AddChildGroup(Matches occur = Matches.NotSet, Matches childrenOccur = Matches.NotSet, params Action<IQueryBuilder>[] queries)
 		{
-            if (occur == Equality.NotSet)
+            if (occur == Matches.NotSet)
 			{
-				occur = Equality.Always;
+				occur = Matches.Always;
 			}
-            if (childrenOccur == Equality.NotSet)
+            if (childrenOccur == Matches.NotSet)
 			{
-				childrenOccur = Equality.Always;
+				childrenOccur = Matches.Always;
 			}
 
 			IQueryBuilder queryBuilder = CreateNewChildGroup(occur, childrenOccur);
@@ -571,7 +571,7 @@ namespace Lucinq.Querying
 			return queryBuilder;
 		}
 
-        protected virtual IQueryBuilder CreateNewChildGroup(Equality occur = Equality.NotSet, Equality childrenOccur = Equality.NotSet)
+        protected virtual IQueryBuilder CreateNewChildGroup(Matches occur = Matches.NotSet, Matches childrenOccur = Matches.NotSet)
 		{
 			return new QueryBuilder(this) {Occur = occur, DefaultChildrenOccur = childrenOccur};
 		}
@@ -585,25 +585,25 @@ namespace Lucinq.Querying
 			query.Boost = boost.Value;
 		}
 
-		protected virtual void SetOccurValue(IQueryBuilder inputQueryBuilder, ref Equality occur)
+		protected virtual void SetOccurValue(IQueryBuilder inputQueryBuilder, ref Matches occur)
 		{
-            if (occur != Equality.NotSet)
+            if (occur != Matches.NotSet)
 			{
 				return;
 			}
 
-			occur = inputQueryBuilder != null ? inputQueryBuilder.DefaultChildrenOccur : Equality.Always;
+			occur = inputQueryBuilder != null ? inputQueryBuilder.DefaultChildrenOccur : Matches.Always;
 		}
 
 		/// <summary>
 		/// Gets the default child occur value
 		/// </summary>
 		/// <returns></returns>
-		protected virtual Equality GetDefaultChildrenOccur()
+		protected virtual Matches GetDefaultChildrenOccur()
 		{
-		    if (defaultChildrenOccur == Equality.NotSet)
+		    if (defaultChildrenOccur == Matches.NotSet)
 		    {
-		        defaultChildrenOccur = Equality.Always;
+		        defaultChildrenOccur = Matches.Always;
 		    }
 		    return defaultChildrenOccur;
 		}

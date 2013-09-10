@@ -130,7 +130,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		public void EasyOr(LuceneSearch luceneSearch)
 		{
 			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Terms(BBCFields.Title, new[] {"europe", "africa"}, Equality.Sometimes);
+			queryBuilder.Terms(BBCFields.Title, new[] {"europe", "africa"}, Matches.Sometimes);
 			ExecuteAndAssert(luceneSearch, queryBuilder, 12);
 		}
 
@@ -270,7 +270,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		public void EasyAnd(LuceneSearch luceneSearch)
 		{
 			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Terms(BBCFields.Title, new[] { "africa", "road" }, occur: Equality.Always);
+			queryBuilder.Terms(BBCFields.Title, new[] { "africa", "road" }, occur: Matches.Always);
 			ExecuteAndAssert(luceneSearch, queryBuilder, 1);
 		}
 
@@ -305,8 +305,8 @@ namespace Lucinq.UnitTests.IntegrationTests
 					x => x.WildCard(BBCFields.Title, "africa"),
 					x => x.Group().Setup
 							(
-								y => y.Term(BBCFields.Description, "africa", Equality.Always),
-								y => y.Term(BBCFields.Description, "amazing", Equality.Always)
+								y => y.Term(BBCFields.Description, "africa", Matches.Sometimes),
+                                y => y.Term(BBCFields.Description, "amazing", Matches.Sometimes)
 							)
 				);
 

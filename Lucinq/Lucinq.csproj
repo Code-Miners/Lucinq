@@ -49,7 +49,7 @@
   <ItemGroup>
     <Compile Include="Building\DocumentExtensions.cs" />
     <Compile Include="Building\IndexExtensions.cs" />
-    <Compile Include="Enums\Equality.cs" />
+    <Compile Include="Enums\Matches.cs" />
     <Compile Include="Interfaces\IHierarchicalQueryGroup.cs" />
     <Compile Include="Interfaces\ILuceneExecutor.cs" />
     <Compile Include="Interfaces\ILuceneSearch.cs" />
