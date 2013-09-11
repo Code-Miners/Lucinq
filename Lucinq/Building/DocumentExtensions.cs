@@ -66,19 +66,10 @@ namespace Lucinq.Building
 				return document;
 			}
 
-			if (store == null)
-			{
-				store = Field.Store.NO;
-			}
 
 			if (!caseSensitive)
 			{
 				value = value.ToLower();
-			}
-
-			if (index == null)
-			{
-				index = Field.Index.ANALYZED;
 			}
 
 			Field field = new Field(fieldName, value, store, index);

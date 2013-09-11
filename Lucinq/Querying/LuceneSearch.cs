@@ -83,7 +83,7 @@ namespace Lucinq.Querying
 			{
 				if (FileSystemDirectory != null)
 				{
-					FileSystemDirectory.Close();
+					FileSystemDirectory.Dispose();
 				}
 			}
 			finally
@@ -95,7 +95,7 @@ namespace Lucinq.Querying
 			{
 				if (RamDirectory != null)
 				{
-					RamDirectory.Close();
+					RamDirectory.Dispose();
 				}
 			}
 			finally
@@ -107,7 +107,7 @@ namespace Lucinq.Querying
 			{
 				if (IndexSearcher != null)
 				{
-					IndexSearcher.Close();
+                    IndexSearcher.Dispose();
 				}
 			}
 			finally
