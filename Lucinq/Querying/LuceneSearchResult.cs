@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using Lucene.Net.Documents;
 using Lucene.Net.Search;
@@ -6,11 +7,17 @@ using Lucinq.Interfaces;
 
 namespace Lucinq.Querying
 {
-	public class LuceneSearchResult : ILuceneSearchResult<TopDocs>
-	{
-		#region [ Constructors ]
+	public class LuceneSearchResult : ILuceneSearchResult<TopDocs>, IEnumerable<Document>
+    {
+        #region [ Fields ]
 
-		public LuceneSearchResult(ILuceneSearcherAccessor luceneSearcherAccessor, TopDocs topDocs)
+         
+
+        #endregion
+
+        #region [ Constructors ]
+
+        public LuceneSearchResult(ILuceneSearcherAccessor luceneSearcherAccessor, TopDocs topDocs)
 		{
 			Results = topDocs;
 			LuceneSearcherAccessor = luceneSearcherAccessor;
@@ -71,5 +78,19 @@ namespace Lucinq.Querying
 		}
 
 		#endregion
-	}
+
+        #region [ IEnumerable Methods ]
+
+        public IEnumerator<Document> GetEnumerator()
+	    {
+	        return Results.ScoreDocs.Select(scoreDoc => GetDocument(scoreDoc.Doc)).GetEnumerator();
+	    }
+
+	    IEnumerator IEnumerable.GetEnumerator()
+	    {
+	        return GetEnumerator();
+        }
+
+        #endregion
+    }
 }

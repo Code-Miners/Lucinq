@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using Lucene.Net.Documents;
 
 namespace Lucinq.Interfaces
 {
-	public interface ILuceneSearchResult<out T> : ILuceneSearchResult
+    public interface ILuceneSearchResult<out T> : ILuceneSearchResult, IEnumerable
 	{
 		/// <summary>
 		/// The results returned from the index

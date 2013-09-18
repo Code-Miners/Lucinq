@@ -56,8 +56,12 @@
     <Compile Include="Interfaces\ILuceneSearcherAccessor.cs" />
     <Compile Include="Interfaces\ILuceneSearchResult.cs" />
     <Compile Include="Interfaces\IQueryBuilder.cs" />
+    <Compile Include="Interfaces\IQueryBuilderGroup.cs" />
+    <Compile Include="Interfaces\IQueryBuilderIndividual.cs" />
+    <Compile Include="Interfaces\IQueryOperatorContainer.cs" />
     <Compile Include="Querying\LuceneSearchResult.cs" />
-    <Compile Include="Querying\QueryBuilder.cs" />
+    <Compile Include="Querying\QueryBuilderIndividual.cs" />
+    <Compile Include="Querying\QueryBuilderGroup.cs" />
     <Compile Include="Querying\QueryReference.cs" />
     <Compile Include="Querying\LuceneSearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -72,7 +72,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 				}
 
 				indexWriter.Optimize();
-				indexWriter.Close();
+				indexWriter.Dispose();
 			}
 		}
 

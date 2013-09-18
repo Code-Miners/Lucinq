@@ -12,15 +12,15 @@ using NUnit.Framework;
 namespace Lucinq.UnitTests.IntegrationTests
 {
 	[TestFixture]
-	public class BasicTests
+	public class BasicTests : IntegrationTestBase
 	{
-		#region [ Fields ]
+        #region [ Fields ]
 
-		private static readonly LuceneSearch memorySearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex, true);
-		private static LuceneSearch filesystemSearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
-		static LuceneSearch[] searches = new []{filesystemSearch, memorySearch};
-		
-		#endregion
+        private static readonly LuceneSearch memorySearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex, true);
+        private static LuceneSearch filesystemSearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
+        private static readonly LuceneSearch[] searches = { filesystemSearch, memorySearch };
+
+        #endregion
 
 		#region [ Properties ]
 
@@ -345,6 +345,30 @@ namespace Lucinq.UnitTests.IntegrationTests
 			SpeedExampleExecute(luceneSearch, "a");
 		}
 
+	    [Test, TestCaseSource("searches")]
+        public void Enumerable(LuceneSearch luceneSearch)
+	    {
+            IQueryBuilder queryBuilder = new QueryBuilder();
+
+            queryBuilder.Term(BBCFields.Title, "africa");
+
+            var result = luceneSearch.Execute(queryBuilder);
+            WriteDocuments(result);
+            Assert.AreEqual(8, result.Count());
+	    }
+
+        [Test, TestCaseSource("searches")]
+        public void EnumerableWithWhere(LuceneSearch luceneSearch)
+        {
+            IQueryBuilder queryBuilder = new QueryBuilder();
+
+            queryBuilder.Term(BBCFields.Title, "africa");
+
+            var result = luceneSearch.Execute(queryBuilder).Where(doc => doc.GetField(BBCFields.Title).StringValue.IndexOf("your", StringComparison.OrdinalIgnoreCase) >= 0);
+            WriteDocuments(result);
+            Assert.AreEqual(1, result.Count());
+        }
+
 		public void SpeedExampleExecute(LuceneSearch luceneSearch, string startingCharacter)
 		{
 			// Chosen due to it being the slowest query
@@ -393,14 +417,13 @@ namespace Lucinq.UnitTests.IntegrationTests
 			return result;
 		}
 
-		private void WriteDocuments(List<Document> documents)
+		private void WriteDocuments(IEnumerable<Document> documents)
 		{
 			int counter = 0;
 			Console.WriteLine("Showing the first 30 docs");
-			documents.ForEach(
-				document =>
-				{
-					if (counter >= 29)
+		    foreach (var document in documents)
+		    {
+		       if (counter >= 29)
 					{
 						return;
 					}
@@ -410,9 +433,8 @@ namespace Lucinq.UnitTests.IntegrationTests
 					Console.WriteLine("Publish Date: " + document.GetValues(BBCFields.PublishDate)[0]);
 					Console.WriteLine("Url: "+ document.GetValues(BBCFields.Link)[0]);
 					Console.WriteLine();
-					counter++;
-				}
-			);
+					counter++; 
+		    }
 		}
 	}
 }

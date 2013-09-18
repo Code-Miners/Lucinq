@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
+using Lucene.Net.Documents;
 using Lucene.Net.Search;
 using Lucene.Net.Store;
 using Lucinq.Interfaces;
@@ -74,6 +76,11 @@ namespace Lucinq.Querying
 		{
 			
 		}
+
+        /*public virtual IQueryable<Document> GetQueryable()
+	    {
+	        return new LuceneQueryable<Document>(this);
+	    }*/
 
 		#endregion
 
