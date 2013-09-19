@@ -61,11 +61,10 @@ namespace Lucinq.Building
 		/// <returns>The input document object</returns>
 		public static Document AddField(this Document document, string fieldName, string value, bool caseSensitive, Field.Store store, Field.Index index)
 		{
-			if (value == null)
+			if (value == null || String.IsNullOrEmpty(fieldName))
 			{
 				return document;
 			}
-
 
 			if (!caseSensitive)
 			{
