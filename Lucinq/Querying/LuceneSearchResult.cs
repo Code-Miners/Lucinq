@@ -7,7 +7,7 @@ using Lucinq.Interfaces;
 
 namespace Lucinq.Querying
 {
-	public class LuceneSearchResult : ILuceneSearchResult<TopDocs>, IEnumerable<Document>
+	public class LuceneSearchResult : ILuceneSearchResult<TopDocs>
     {
         #region [ Fields ]
 

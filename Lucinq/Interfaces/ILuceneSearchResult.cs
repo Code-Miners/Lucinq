@@ -4,7 +4,7 @@ using Lucene.Net.Documents;
 
 namespace Lucinq.Interfaces
 {
-    public interface ILuceneSearchResult<out T> : ILuceneSearchResult, IEnumerable
+    public interface ILuceneSearchResult<out T> : ILuceneSearchResult, IEnumerable<Document>
 	{
 		/// <summary>
 		/// The results returned from the index
