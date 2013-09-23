@@ -681,5 +681,24 @@ namespace Lucinq.UnitTests.UnitTests
 		}
 
 		#endregion
-	}
+
+        #region [ Constructor Tests ]
+
+        [Test]
+	    public void SetupConstructorTest()
+	    {
+            QueryBuilder setupBuilder = new QueryBuilder();
+            setupBuilder.Setup(x => x.Term("_name", "Value"));
+            Query setupQuery = setupBuilder.Build();
+            string setupQueryString = setupQuery.ToString();
+
+            QueryBuilder constructorBuilder = new QueryBuilder(x => x.Term("_name", "Value"));
+            Query constructorQuery = constructorBuilder.Build();
+            string constructorQueryString = constructorQuery.ToString();
+
+            Assert.AreEqual(setupQueryString, constructorQueryString);
+        }
+
+        #endregion
+    }
 }

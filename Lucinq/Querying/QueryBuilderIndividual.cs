@@ -38,6 +38,12 @@ namespace Lucinq.Querying
 			Parent = parentQueryBuilder;
 		}
 
+        public QueryBuilder(params Action<IQueryBuilder>[] queries)
+            : this()
+        {
+            AddQueries(queries);
+        }
+
 		#endregion
 
 		#region [ Properties ]
@@ -111,12 +117,17 @@ namespace Lucinq.Querying
 		/// <returns>The input querybuilder</returns>
 		public virtual IQueryBuilder Setup(params Action<IQueryBuilder>[] queries)
 		{
-			foreach (Action<IQueryBuilder> item in queries)
-			{
-				item(this);
-			}
+			AddQueries(queries);
 			return this;
 		}
+
+	    protected void AddQueries(params Action<IQueryBuilder>[] queries)
+	    {
+            foreach (Action<IQueryBuilder> item in queries)
+            {
+                item(this);
+            }
+	    }
 
 		#endregion
 
