@@ -47,6 +47,29 @@ namespace Lucinq.Querying
 
 		#region [ Methods ]
 
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="query"></param>
+		/// <param name="customCollector"></param>
+		/// <param name="filter"></param>
+		public virtual void Collect(Query query, Collector customCollector, Filter filter = null)
+		{
+			Stopwatch stopwatch = new Stopwatch();
+			stopwatch.Start();
+
+			if (filter == null)
+			{
+				IndexSearcher.Search(query, customCollector);
+			}
+			else
+			{
+				IndexSearcher.Search(query, filter, customCollector);
+			}
+
+			stopwatch.Stop();
+		}
+
 		public virtual LuceneSearchResult Execute(Query query, int noOfResults = Int32.MaxValue - 1, Sort sort = null)
 		{
 			Stopwatch stopwatch = new Stopwatch();
