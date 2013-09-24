@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Lucinq</id>
+    <version>1.0.4864.13446</version>
+    <title>Lucinq For Lucene.Net</title>
+    <authors>Nathanael Mann,  Simon Proctor</authors>
+    <owners>Nathanael Mann,  Simon Proctor</owners>
+    <licenseUrl>http://www.gnu.org/licenses/</licenseUrl>
+    <projectUrl>https://github.com/cardinal252/Lucinq</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Fluent API to drive lucene.net</description>
+    <copyright>Copyright 2013 Cardinal IT Solutions Ltd</copyright>
+    <tags>lucene.net lucene lucinq text search information retrieval query</tags>
+    <dependencies>
+      <dependency id="Lucene.Net" version="2.9.4.1" />
+    </dependencies>
+  </metadata>
+</package>

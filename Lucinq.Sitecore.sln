@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.SitecoreIntegration", "Lucinq.Sitecore\Lucinq.SitecoreIntegration.csproj", "{DDD54B05-9498-4A96-BBDC-8563F4FA44B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.SitecoreIntegration.UnitTests", "Unit Tests\Lucinq.Sitecore.UnitTests\Lucinq.SitecoreIntegration.UnitTests.csproj", "{84C1B842-27B6-45ED-8063-1A27D687E1BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq", "Lucinq\Lucinq.csproj", "{4A37D121-9AC6-489D-B565-C353D85AFB73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{1BB7A22E-BE5C-4C05-87AA-A38E39FEEFA7}"
+	ProjectSection(SolutionItems) = preProject
+		Unit Tests\Lucinq.UnitTests\Lucinq.UnitTests.csproj = Unit Tests\Lucinq.UnitTests\Lucinq.UnitTests.csproj
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDD54B05-9498-4A96-BBDC-8563F4FA44B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD54B05-9498-4A96-BBDC-8563F4FA44B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD54B05-9498-4A96-BBDC-8563F4FA44B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD54B05-9498-4A96-BBDC-8563F4FA44B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84C1B842-27B6-45ED-8063-1A27D687E1BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84C1B842-27B6-45ED-8063-1A27D687E1BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84C1B842-27B6-45ED-8063-1A27D687E1BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84C1B842-27B6-45ED-8063-1A27D687E1BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A37D121-9AC6-489D-B565-C353D85AFB73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A37D121-9AC6-489D-B565-C353D85AFB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A37D121-9AC6-489D-B565-C353D85AFB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A37D121-9AC6-489D-B565-C353D85AFB73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{84C1B842-27B6-45ED-8063-1A27D687E1BD} = {1BB7A22E-BE5C-4C05-87AA-A38E39FEEFA7}
+	EndGlobalSection
+EndGlobal

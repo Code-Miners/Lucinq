@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq", "Lucinq\Lucinq.csproj", "{4A37D121-9AC6-489D-B565-C353D85AFB73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.UnitTests", "Lucinq.UnitTests\Lucinq.UnitTests.csproj", "{A65CD9B7-DC30-414B-83F5-A8A5DD5FCDE8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.UnitTests", "Unit Tests\Lucinq.UnitTests\Lucinq.UnitTests.csproj", "{A65CD9B7-DC30-414B-83F5-A8A5DD5FCDE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

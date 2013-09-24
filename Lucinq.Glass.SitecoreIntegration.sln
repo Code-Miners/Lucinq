@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.GlassMapper.SitecoreIntegration", "Lucinq.GlassMapper.Sitecore\Lucinq.GlassMapper.SitecoreIntegration.csproj", "{0DBDAE07-AF06-4657-8E18-FA2CF3F06791}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.GlassMapper.Sitecore.UnitTests", "Unit Tests\Lucinq.GlassMapper.Sitecore.UnitTests\Lucinq.GlassMapper.Sitecore.UnitTests.csproj", "{60CC5496-B514-4C76-B992-20D2E252F095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.SitecoreIntegration", "Lucinq.Sitecore\Lucinq.SitecoreIntegration.csproj", "{DDD54B05-9498-4A96-BBDC-8563F4FA44B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq", "Lucinq\Lucinq.csproj", "{4A37D121-9AC6-489D-B565-C353D85AFB73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{065F237A-4E24-4F77-BF4A-8FAE6573C274}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{786AFC4A-FA6F-4A8F-A56E-2CD9B4078E24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DBDAE07-AF06-4657-8E18-FA2CF3F06791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBDAE07-AF06-4657-8E18-FA2CF3F06791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DBDAE07-AF06-4657-8E18-FA2CF3F06791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBDAE07-AF06-4657-8E18-FA2CF3F06791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60CC5496-B514-4C76-B992-20D2E252F095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60CC5496-B514-4C76-B992-20D2E252F095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60CC5496-B514-4C76-B992-20D2E252F095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60CC5496-B514-4C76-B992-20D2E252F095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDD54B05-9498-4A96-BBDC-8563F4FA44B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD54B05-9498-4A96-BBDC-8563F4FA44B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD54B05-9498-4A96-BBDC-8563F4FA44B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD54B05-9498-4A96-BBDC-8563F4FA44B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A37D121-9AC6-489D-B565-C353D85AFB73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A37D121-9AC6-489D-B565-C353D85AFB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A37D121-9AC6-489D-B565-C353D85AFB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A37D121-9AC6-489D-B565-C353D85AFB73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

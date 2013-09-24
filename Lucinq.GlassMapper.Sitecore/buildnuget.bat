@@ -1,0 +1,1 @@
+nuget pack Lucinq.Glass.SitecoreIntegration.csproj -Prop Configuration=Release
