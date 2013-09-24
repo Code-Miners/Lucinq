@@ -13,7 +13,7 @@ namespace Lucinq.SitecoreIntegration.Extensions.Sitecore7
     {
         #region [ Terms ]
 
-        public static TermQuery Term<T>(this IQueryBuilderIndividual queryBuilder, Expression<Func<T, object>> expression, string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null,
+        public static TermQuery Term<T>(this IQueryBuilderIndividual queryBuilder, Expression<Func<T, object>> expression, string fieldValue, Matches occur = Matches.NotSet, float? boost = null,
             string key = null, bool? caseSensitive = null)
         {
             return queryBuilder.Term(GetFieldName(expression), fieldValue, occur, boost, key, caseSensitive);
@@ -23,7 +23,7 @@ namespace Lucinq.SitecoreIntegration.Extensions.Sitecore7
 
         #region [ WildCard ]
 
-        public static WildcardQuery WildCard<T>(this IQueryBuilderIndividual queryBuilder, Expression<Func<T, object>> expression, string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null,
+        public static WildcardQuery WildCard<T>(this IQueryBuilderIndividual queryBuilder, Expression<Func<T, object>> expression, string fieldValue, Matches occur = Matches.NotSet, float? boost = null,
             string key = null, bool? caseSensitive = null)
         {
             return queryBuilder.WildCard(GetFieldName(expression), fieldValue, occur, boost, key, caseSensitive);
@@ -33,7 +33,7 @@ namespace Lucinq.SitecoreIntegration.Extensions.Sitecore7
 
         #region [ Field ]
 
-        public static Query Field<T>(this IQueryBuilderIndividual queryBuilder, Expression<Func<T, object>> expression, string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null,
+        public static Query Field<T>(this IQueryBuilderIndividual queryBuilder, Expression<Func<T, object>> expression, string fieldValue, Matches occur = Matches.NotSet, float? boost = null,
             string key = null, bool? caseSensitive = null, int slop = 1)
         {
             return queryBuilder.Field(GetFieldName(expression), fieldValue, occur, boost, key, slop);
@@ -51,7 +51,9 @@ namespace Lucinq.SitecoreIntegration.Extensions.Sitecore7
         public static string GetFieldName<T>(Expression<Func<T, object>> field)
         {
             if (field.Parameters.Count > 1)
+            {
                 throw new ApplicationException(String.Format("To many parameters in linq expression {0}", field.Body));
+            }
 
             MemberExpression memberExpression;
 

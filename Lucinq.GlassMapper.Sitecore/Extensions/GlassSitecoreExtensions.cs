@@ -13,7 +13,9 @@ using Lucinq.SitecoreIntegration.Extensions;
 
 namespace Lucinq.GlassMapper.SitecoreIntegration.Extensions
 {
-	public static class GlassSitecoreExtensions
+    using Sitecore.Data;
+
+    public static class GlassSitecoreExtensions
 	{
 		#region [ Fields ]
 

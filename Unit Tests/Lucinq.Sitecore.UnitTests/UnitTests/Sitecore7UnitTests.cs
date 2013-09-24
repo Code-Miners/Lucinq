@@ -38,7 +38,12 @@ namespace Lucinq.Sitecore.UnitTests.UnitTests
         public void Term()
         {
             IQueryBuilder queryBuilder = new QueryBuilder();
-            throw new NotImplementedException("Needs writing");
+            queryBuilder.Term<TestSitecore7Class>(t => t.Content, "value");
+
+            IQueryBuilder queryBuilder2 = new QueryBuilder();
+            queryBuilder2.Term("_content", "value");
+
+            Assert.AreEqual(queryBuilder2.Build().ToString(), queryBuilder.Build().ToString());
         }
 
         [Test]
@@ -50,7 +55,13 @@ namespace Lucinq.Sitecore.UnitTests.UnitTests
         [Test]
         public void WildCard()
         {
-         throw new NotImplementedException("Needs writing");   
+            IQueryBuilder queryBuilder = new QueryBuilder();
+            queryBuilder.WildCard<TestSitecore7Class>(t => t.Content, "value*");
+
+            IQueryBuilder queryBuilder2 = new QueryBuilder();
+            queryBuilder2.WildCard("_content", "value*");
+
+            Assert.AreEqual(queryBuilder2.Build().ToString(), queryBuilder.Build().ToString());
         }
 
         #endregion
