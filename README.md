@@ -5,6 +5,9 @@ This project gives fluent style API to Lucene.Net. The primary purpose of which 
 to accomplish most tasks whilst retaining the power and speed of Lucene. It has been designed with the goal with driving the
 existing lucene API, and keeping the abstraction to a minimum.
 
+Wiki
+====
+
 More complete documentation can be found in the wiki which can be found here:
 https://github.com/cardinal252/Lucinq/wiki
 
