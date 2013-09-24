@@ -67,7 +67,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lucinq\Lucinq.csproj">
+    <ProjectReference Include="..\..\Lucinq\Lucinq.csproj">
       <Project>{4A37D121-9AC6-489D-B565-C353D85AFB73}</Project>
       <Name>Lucinq</Name>
     </ProjectReference>

@@ -132,15 +132,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Lucinq.Sitecore\Lucinq.Sitecore\Lucinq.SitecoreIntegration.csproj">
+    <ProjectReference Include="..\..\Lucinq.Sitecore\Lucinq.SitecoreIntegration.csproj">
       <Project>{ddd54b05-9498-4a96-bbdc-8563f4fa44b6}</Project>
       <Name>Lucinq.SitecoreIntegration</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Lucinq\Lucinq\Lucinq.csproj">
+    <ProjectReference Include="..\..\Lucinq\Lucinq.csproj">
       <Project>{4a37d121-9ac6-489d-b565-c353d85afb73}</Project>
       <Name>Lucinq</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lucinq.Glass.SitecoreIntegration\Lucinq.GlassMapper.SitecoreIntegration.csproj">
+    <ProjectReference Include="..\..\Lucinq.GlassMapper.Sitecore\Lucinq.GlassMapper.SitecoreIntegration.csproj">
       <Project>{0dbdae07-af06-4657-8e18-fa2cf3f06791}</Project>
       <Name>Lucinq.GlassMapper.SitecoreIntegration</Name>
     </ProjectReference>
