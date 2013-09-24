@@ -53,7 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BBCFields.cs" />
+    <Compile Include="DateCollector.cs" />
     <Compile Include="GeneralConstants.cs" />
+    <Compile Include="IntegrationTests\BasicCollectorTests.cs" />
     <Compile Include="IntegrationTests\BasicTests..cs" />
     <Compile Include="IntegrationTests\IndexRebuilder.cs" />
     <Compile Include="IntegrationTests\IntegrationTestBase.cs" />
