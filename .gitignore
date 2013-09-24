@@ -216,3 +216,6 @@ pip-log.txt
 
 Lucinq/*.nupkg
 Lucinq/*.bat
+Libraries/sitecore/*.lic
+Libraries/sitecore/*.xml
+Libraries/sitecore/*.dll
