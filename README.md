@@ -11,11 +11,6 @@ Wiki
 More complete documentation can be found in the wiki which can be found here:
 https://github.com/cardinal252/Lucinq/wiki
 
-For more information on the associated projects:
-
-- https://github.com/cardinal252/Lucinq.Glass.Sitecore
-- https://github.com/cardinal252/Lucinq.Sitecore
-
 Features
 ========
 
