@@ -41,6 +41,16 @@ namespace Lucinq.SitecoreIntegration.Extensions.Sitecore7
 
         #endregion
 
+        #region [ Keyword ]
+
+        public static Query Keyword<T>(this IQueryBuilderIndividual queryBuilder, Expression<Func<T, object>> expression, string fieldValue, Matches occur = Matches.NotSet, float? boost = null,
+            string key = null, bool? caseSensitive = null)
+        {
+            return queryBuilder.Keyword(GetFieldName(expression), fieldValue, occur, boost, key, caseSensitive);
+        }
+
+        #endregion
+
         #region [ Field Name Extensions ]
 
         public static string GetFieldName<T>(this T target, Expression<Func<T, object>> field)

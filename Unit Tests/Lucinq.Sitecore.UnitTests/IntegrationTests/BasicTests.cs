@@ -77,7 +77,6 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup(x => x.TemplateId(templateId));
-			// queryBuilder.TemplateId(templateId);
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder, 20);
 
