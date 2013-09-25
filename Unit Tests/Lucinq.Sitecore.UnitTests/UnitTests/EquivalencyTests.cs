@@ -45,7 +45,7 @@ namespace Lucinq.Sitecore.UnitTests.UnitTests
             IQueryBuilder expectedQueryBuilder =
                 new QueryBuilder(x => x.Term(SitecoreFields.TemplatePath, homeItemId.ToLuceneId()));
 
-            ISitecoreQueryBuilder actualQueryBuilder = new SitecoreQueryBuilder(x => x.BaseTemplateId(homeItemId));
+            ISitecoreQueryBuilder actualQueryBuilder = new SitecoreQueryBuilder(x => x.TemplateDescendsFrom(homeItemId));
             Assert.AreEqual(expectedQueryBuilder.Build().ToString(), actualQueryBuilder.Build().ToString());
         }
 

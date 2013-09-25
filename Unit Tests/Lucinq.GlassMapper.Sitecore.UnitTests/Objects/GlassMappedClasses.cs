@@ -27,6 +27,19 @@ namespace Lucinq.GlassMapper.Sitecore.UnitTests.Objects
 		public string DifferentName { get; set; }
 	}
 
+    [SitecoreType(AutoMap = true)]
+    public class PageContent
+    {
+        [SitecoreId]
+        public Guid Id { get; set; }
+
+        [SitecoreField("Page Title")]
+        public string PageTitle { get; set; }
+
+        [SitecoreField("Page Subtitle")]
+        public string PageSubtitle { get; set; }
+    }
+
 	public class GlassMappedTestClass
 	{
 		public string Text { get; set; }

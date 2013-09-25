@@ -51,6 +51,10 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 			Assert.Greater(sitecoreSearchResult.LuceneSearchResult.TotalHits, 0);
 
 			ISitecoreItemResult sitecoreItemResult = sitecoreSearchResult.GetPagedItems(0, 10);
+		    foreach (Item item in sitecoreItemResult)
+		    {
+		        
+		    }
 
 			Console.WriteLine("Lucene Elapsed Time: {0}", sitecoreSearchResult.ElapsedTimeMs);
 			Console.WriteLine("Sitecore Elapsed Time: {0}", sitecoreItemResult.ElapsedTimeMs);
@@ -358,7 +362,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
             ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
 
 			ID templateId = new ID(Constants.DerivedTemplateId);
-			queryBuilder.Setup(x => x.BaseTemplateId(templateId));
+            queryBuilder.Setup(x => x.TemplateDescendsFrom(templateId));
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder);
 			Assert.Greater(sitecoreSearchResult.TotalHits, 0);

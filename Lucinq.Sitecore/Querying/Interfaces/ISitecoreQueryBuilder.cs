@@ -47,7 +47,7 @@ namespace Lucinq.SitecoreIntegration.Querying.Interfaces
         /// <param name="boost"></param>
         /// <param name="key"></param>
         /// <returns></returns>
-        TermQuery BaseTemplateId(ID templateId, Matches occur = Matches.NotSet, float? boost = null, string key = null);
+        TermQuery TemplateDescendsFrom(ID templateId, Matches occur = Matches.NotSet, float? boost = null, string key = null);
 
         /// <summary>
         /// Gets items by their name

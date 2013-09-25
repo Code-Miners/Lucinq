@@ -223,7 +223,7 @@ namespace Lucinq.SitecoreIntegration.Querying
         /// <param name="boost"></param>
         /// <param name="key"></param>
         /// <returns></returns>
-        public TermQuery BaseTemplateId(ID templateId, Matches occur = Matches.NotSet, float? boost = null, string key = null)
+        public TermQuery TemplateDescendsFrom(ID templateId, Matches occur = Matches.NotSet, float? boost = null, string key = null)
         {
             string luceneTemplateId = templateId.ToLuceneId();
             string fieldName = GetFieldName<SearchResultItem>(SitecoreFields.TemplatePath, t => t.TemplateId);
