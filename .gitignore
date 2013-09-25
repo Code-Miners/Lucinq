@@ -219,3 +219,4 @@ Lucinq/*.bat
 Libraries/sitecore/*.lic
 Libraries/sitecore/*.xml
 Libraries/sitecore/*.dll
+/Lucinq.Glass.SitecoreIntegration.sln.DotSettings
