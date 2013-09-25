@@ -1,8 +1,6 @@
 ﻿using System;
-using Lucinq.Interfaces;
-using Lucinq.Querying;
+using System.Linq;
 using Lucinq.SitecoreIntegration.DatabaseManagement;
-using Lucinq.SitecoreIntegration.Extensions;
 using Lucinq.SitecoreIntegration.Querying;
 using Lucinq.SitecoreIntegration.Querying.Interfaces;
 using NUnit.Framework;
@@ -87,11 +85,8 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 			Console.WriteLine("Lucene Elapsed Time: {0}", sitecoreSearchResult.ElapsedTimeMs);
 			Console.WriteLine("Sitecore Elapsed Time: {0}", sitecoreItemResult.ElapsedTimeMs);
 
-		    foreach (Item item in sitecoreItemResult)
-		    {
-		        Assert.AreEqual(sitecoreItemResult.Items[0], item);
-		    }
-			Assert.Greater(sitecoreItemResult.Items.Count, 0);
+	        Assert.AreEqual(sitecoreItemResult.Items.FirstOrDefault(), sitecoreItemResult.FirstOrDefault());
+            Assert.AreEqual(sitecoreItemResult.Items.Count, sitecoreItemResult.Count());
 	    }
 
         #endregion
