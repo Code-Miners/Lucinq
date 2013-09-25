@@ -1,8 +1,11 @@
 ﻿using System;
+using Lucinq.Extensions;
 using Lucinq.Interfaces;
 using Lucinq.Querying;
 using Lucinq.SitecoreIntegration.Extensions;
 using Lucinq.SitecoreIntegration.Extensions.Sitecore7;
+using Lucinq.SitecoreIntegration.Querying;
+using Lucinq.SitecoreIntegration.Querying.Interfaces;
 using NUnit.Framework;
 
 namespace Lucinq.Sitecore.UnitTests.UnitTests
@@ -37,7 +40,7 @@ namespace Lucinq.Sitecore.UnitTests.UnitTests
         [Test]
         public void Term()
         {
-            IQueryBuilder queryBuilder = new QueryBuilder();
+            ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
             queryBuilder.Term<TestSitecore7Class>(t => t.Content, "value");
 
             IQueryBuilder queryBuilder2 = new QueryBuilder();
@@ -47,9 +50,30 @@ namespace Lucinq.Sitecore.UnitTests.UnitTests
         }
 
         [Test]
+        public void Fuzzy()
+        {
+            ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
+            queryBuilder.Fuzzy<TestSitecore7Class>(t => t.DatabaseName, "value");
+
+            IQueryBuilder queryBuilder2 = new QueryBuilder();
+            queryBuilder2.Fuzzy("_database", "value");
+
+            Assert.AreEqual(queryBuilder2.Build().ToString(), queryBuilder.Build().ToString());
+        }
+
+        [Test]
         public void Phrase()
         {
-            throw new NotImplementedException("Needs writing");
+            ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
+            var phrase = queryBuilder.Phrase(2);
+            phrase.AddTerm<TestSitecore7Class>(t => t.Content, "value");
+
+            IQueryBuilder queryBuilder2 = new QueryBuilder();
+            var phrase2 = queryBuilder2.Phrase(2);
+            phrase2.AddTerm("_content", "value");
+
+            Assert.AreEqual(queryBuilder2.Build().ToString(), queryBuilder.Build().ToString());
+            
         }
 
         [Test]

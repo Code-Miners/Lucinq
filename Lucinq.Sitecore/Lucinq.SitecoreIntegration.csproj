@@ -54,6 +54,9 @@
     <Reference Include="Sitecore.ContentSearch">
       <HintPath>..\Libraries\Sitecore\Sitecore.ContentSearch.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.ContentSearch.Client">
+      <HintPath>..\Libraries\Sitecore\Sitecore.ContentSearch.Client.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.ContentSearch.Linq">
       <HintPath>..\Libraries\Sitecore\Sitecore.ContentSearch.Linq.dll</HintPath>
     </Reference>
@@ -85,10 +88,12 @@
     <Compile Include="Indexing\IndexOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Constants\SitecoreFields.cs" />
+    <Compile Include="Querying\Interfaces\ISitecoreQueryBuilder.cs" />
     <Compile Include="Querying\Interfaces\ISitecoreSearch.cs" />
     <Compile Include="Querying\Interfaces\ISitecoreItemResult.cs" />
     <Compile Include="Querying\Interfaces\ISitecoreSearchResult.cs" />
     <Compile Include="Querying\SitecoreItemResult.cs" />
+    <Compile Include="Querying\SitecoreQueryBuilder.cs" />
     <Compile Include="Querying\SitecoreSearch.cs" />
     <Compile Include="Querying\SitecoreSearchResult.cs" />
   </ItemGroup>

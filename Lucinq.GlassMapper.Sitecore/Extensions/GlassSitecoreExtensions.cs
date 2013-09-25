@@ -10,6 +10,7 @@ using Lucinq.Enums;
 using Lucinq.Interfaces;
 using Lucinq.SitecoreIntegration.Constants;
 using Lucinq.SitecoreIntegration.Extensions;
+using Lucinq.SitecoreIntegration.Querying.Interfaces;
 
 namespace Lucinq.GlassMapper.SitecoreIntegration.Extensions
 {
@@ -33,26 +34,26 @@ namespace Lucinq.GlassMapper.SitecoreIntegration.Extensions
 
 		#region [ Field Extensions ]
 
-		public static Query Field<T>(this IQueryBuilder inputQueryBuilder, Expression<Func<T, object>> field, 
+        public static Query Field<T>(this ISitecoreQueryBuilder inputQueryBuilder, Expression<Func<T, object>> field, 
 			string value, Matches occur = Matches.NotSet, float? boost = null, string key = null, int slop = 1)
 		{
 			return Field(inputQueryBuilder, field, SitecoreService, value, occur, boost, key, slop);
 		}
 
-		public static Query Field<T>(this IQueryBuilder inputQueryBuilder, Expression<Func<T, object>> field,
+        public static Query Field<T>(this ISitecoreQueryBuilder inputQueryBuilder, Expression<Func<T, object>> field,
                                      ISitecoreService service, string value, Matches occur = Matches.NotSet, float? boost = null, string key = null, int slop = 1)
 		{
 			string fieldName = GetFieldName(field, service);
 			return inputQueryBuilder.Field(fieldName, value, occur, boost, key, slop);
 		}
 
-		public static Query Field<T>(this IQueryBuilder inputQueryBuilder, Expression<Func<T, object>> field,
+        public static Query Field<T>(this ISitecoreQueryBuilder inputQueryBuilder, Expression<Func<T, object>> field,
             ID value, Matches occur = Matches.NotSet, float? boost = null, string key = null)
 		{
 			return Field(inputQueryBuilder, field, SitecoreService, value, occur, boost, key);
 		}
 
-		public static Query Field<T>(this IQueryBuilder inputQueryBuilder, Expression<Func<T, object>> field,
+        public static Query Field<T>(this ISitecoreQueryBuilder inputQueryBuilder, Expression<Func<T, object>> field,
                                      ISitecoreService service, ID value, Matches occur = Matches.NotSet, float? boost = null, string key = null)
 		{
 			string fieldName = GetFieldName(field, service);

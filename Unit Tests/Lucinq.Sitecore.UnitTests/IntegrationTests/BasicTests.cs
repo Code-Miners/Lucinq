@@ -44,7 +44,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		{
 			ID templateId = new ID(Constants.TestTemplateId);
 
-			IQueryBuilder queryBuilder = new QueryBuilder();
+            ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
 			queryBuilder.Setup(x => x.TemplateId(templateId));
 			// queryBuilder.TemplateId(templateId);
 
@@ -75,7 +75,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 	    {
 			ID templateId = new ID(Constants.TestTemplateId);
 
-			IQueryBuilder queryBuilder = new QueryBuilder();
+            ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
 			queryBuilder.Setup(x => x.TemplateId(templateId));
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder, 20);
@@ -103,7 +103,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		{
 			ID templateId = new ID(Constants.TestTemplateId);
 
-			QueryBuilder queryBuilder = new QueryBuilder();
+            ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
 			queryBuilder.Setup(x => x.TemplateId(templateId));
 			// queryBuilder.TemplateId(templateId);
 
@@ -133,7 +133,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		[Test]
 		public void GetById()
 		{
-			QueryBuilder queryBuilder = new QueryBuilder();
+            ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
 			ID itemId = new ID(Constants.HomeItemId);
 			queryBuilder.Setup(x => x.Id(itemId));
 
@@ -160,7 +160,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		[Test]
 		public void GetByName()
 		{
-			QueryBuilder queryBuilder = new QueryBuilder();
+            ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
 			queryBuilder.Setup(x => x.Name("whites"));
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder);
@@ -182,7 +182,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		[Test]
 		public void GetByNameWildCard()
 		{
-			QueryBuilder queryBuilder = new QueryBuilder();
+            ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
 			queryBuilder.Setup(x => x.Field("title", "t*"), x => x.Language(Language.Parse("en")));
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder);
@@ -219,7 +219,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		[Test]
 		public void GetByLanguage()
 		{
-			QueryBuilder queryBuilder = new QueryBuilder();
+            ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
 			Language language = Language.Parse("en");
 			queryBuilder.Setup(x => x.Language(language));
 
@@ -246,7 +246,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		[Test]
 		public void GetByFieldValue()
 		{
-			QueryBuilder queryBuilder = new QueryBuilder();
+            ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
             queryBuilder.Setup(x => x.Field("title", "contact us"));
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder);
@@ -272,7 +272,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		[Test]
 		public void GetFirstItem()
 		{
-			QueryBuilder queryBuilder = new QueryBuilder();
+            ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
 			queryBuilder.Setup(x => x.Field("title", "contact"));
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder);
@@ -286,7 +286,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		[Test]
 		public void GetItemOutsideIndex()
 		{
-			QueryBuilder queryBuilder = new QueryBuilder();
+            ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
 			queryBuilder.Setup(x => x.Field("title", "contact"));
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder);
@@ -309,8 +309,8 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 
 		private void Ancestor(bool displayOutput = true)
 		{
-			QueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Setup(x => x.Ancestor(new ID(Constants.HomeItemId)));
+            ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
+			queryBuilder.Setup(x => x.DescendantOf(new ID(Constants.HomeItemId)));
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder);
 
@@ -337,9 +337,9 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		[Test]
 		public void GetByParent()
 		{
-			QueryBuilder queryBuilder = new QueryBuilder();
+            SitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
 			ID parentId = new ID(Constants.HomeItemId);
-			queryBuilder.Setup(x => x.Parent(parentId));
+			queryBuilder.Setup(x => x.ChildOf(parentId));
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder);
 			Assert.Greater(sitecoreSearchResult.TotalHits, 0);
@@ -360,7 +360,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		[Test]
 		public void GetFromDerivedTemplate()
 		{
-			QueryBuilder queryBuilder = new QueryBuilder();
+            ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
 
 			ID templateId = new ID(Constants.DerivedTemplateId);
 			queryBuilder.Setup(x => x.BaseTemplateId(templateId));
@@ -408,8 +408,8 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		[Test]
 		public  void Paging()
 		{
-			QueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Setup(x => x.Ancestor(new ID(Constants.HomeItemId)));
+            ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
+			queryBuilder.Setup(x => x.DescendantOf(new ID(Constants.HomeItemId)));
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder);
 
