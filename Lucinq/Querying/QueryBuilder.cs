@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Lucene.Net.Analysis;
 using Lucene.Net.Analysis.Standard;
 using Lucene.Net.Index;
@@ -591,5 +592,10 @@ namespace Lucinq.Querying
 		}
 
 		#endregion
+
+		public override string ToString()
+		{
+			return String.Join(Environment.NewLine, Queries.Values.Select(x => x.Query.ToString()));
+		}
 	}
 }
