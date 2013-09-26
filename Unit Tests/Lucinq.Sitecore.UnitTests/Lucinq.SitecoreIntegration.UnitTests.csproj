@@ -45,28 +45,16 @@
       <HintPath>..\..\packages\Lucene.Net.3.0.3\lib\NET40\Lucene.Net.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Analytics">
-      <HintPath>..\Sitecore\Sitecore.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Apps.Loader">
-      <HintPath>..\Sitecore\Sitecore.Apps.Loader.dll</HintPath>
+      <HintPath>..\..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.ContentSearch">
-      <HintPath>..\Sitecore\Sitecore.ContentSearch.dll</HintPath>
+      <HintPath>..\..\Libraries\Sitecore\Sitecore.ContentSearch.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Kernel, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Sitecore\Sitecore.Kernel.dll</HintPath>
-      <Private>True</Private>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="Sitecore.Logging">
-      <HintPath>..\Sitecore\Sitecore.Logging.dll</HintPath>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\..\Libraries\Sitecore\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="sitecore.nexus">
-      <HintPath>..\Sitecore\sitecore.nexus.dll</HintPath>
+      <HintPath>..\..\Libraries\Sitecore\sitecore.nexus.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
