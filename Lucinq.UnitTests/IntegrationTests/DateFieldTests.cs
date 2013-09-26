@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Xml.Linq;
+using AutoMapper;
 using Lucene.Net.Analysis;
 using Lucene.Net.Analysis.Standard;
 using Lucene.Net.Documents;
@@ -18,8 +19,51 @@ namespace Lucinq.UnitTests.IntegrationTests
 	[TestFixture]
 	public class DateFieldTests
 	{
-		#region build index methods
+		private static readonly LuceneSearch MemorySearch = new LuceneSearch(GeneralConstants.Paths.DateIndex, true);
+		private static readonly LuceneSearch[] Searches = new[] { MemorySearch };
+
+		/// <summary>
+		/// Simple constructor, only job is to setup the mappings from document to strong type.
+		/// </summary>
+		public DateFieldTests()
+		{
+			// Map the lucene document back to our news article.
+			Mapper.CreateMap<Document, NewsArticle>()
+				.ForMember(x => x.Title, opt => opt.MapFrom(y => y.GetValues(BBCFields.Title)[0]))
+				.ForMember(x => x.Description, opt => opt.MapFrom(y => y.GetValues(BBCFields.Description)[0]))
+				.ForMember(x => x.Copyright, opt => opt.MapFrom(y => y.GetValues(BBCFields.Copyright)[0]))
+				.ForMember(x => x.PublishDateTime, opt => opt.MapFrom(y => FromTicks(y.GetValues(BBCFields.PublishDate)[0])))
+				.ForMember(x => x.Link, opt => opt.MapFrom(y => y.GetValues(BBCFields.Link)[0]));
+		}
+
+		/// <summary>
+		/// Pull out all the articles within a particular date range and dump them to the error console.
+		/// </summary>
+		/// <param name="luceneSearch"></param>
 		[Test]
+		[TestCaseSource("Searches")]
+		public void GetArticlesWithDateTest(LuceneSearch luceneSearch)
+		{
+			IQueryBuilder queryBuilder = new QueryBuilder();
+			DateTime february = DateTime.Parse("01/02/2013");
+
+			queryBuilder.Setup(
+				x => x.DateRange(BBCFields.PublishDate, february, february.AddDays(28))
+			);
+
+			LuceneSearchResult result = luceneSearch.Execute(queryBuilder);
+			List<NewsArticle> data = Mapper.Map<List<Document>, List<NewsArticle>>(result.GetTopDocuments());
+
+			WriteDocuments(data);
+
+			Console.WriteLine("Searched {0} documents in {1} ms", luceneSearch.IndexSearcher.MaxDoc(), result.ElapsedTimeMs);
+			Console.WriteLine();
+
+			Assert.AreNotEqual(0, result.TotalHits);
+		}
+
+		#region build index methods
+		[Ignore]
 		public void BuildIndex()
 		{
 			var indexFolder = FSDirectory.Open(new DirectoryInfo(GeneralConstants.Paths.DateIndex));
@@ -31,10 +75,6 @@ namespace Lucinq.UnitTests.IntegrationTests
 				int count = 0;
 				foreach (var rssFile in rssFiles)
 				{
-					/*if (count > 4)
-					{
-						break;
-					}*/
 					Console.Error.WriteLine("Adding record.");
 					string secondarySort = count % 2 == 0 ? "A" : "B";
 					count++;
@@ -107,54 +147,33 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 		#endregion
 
-		private static readonly LuceneSearch memorySearch = new LuceneSearch(GeneralConstants.Paths.DateIndex, true);
-		private static LuceneSearch filesystemSearch = new LuceneSearch(GeneralConstants.Paths.DateIndex);
-		static LuceneSearch[] searches = new[] { memorySearch };
+		#region helper methods
 
-		[TestFixtureSetUp]
-		public void Setup()
+		/// <summary>
+		/// Helper to convert back from the value in the index to a DateTime
+		/// </summary>
+		/// <param name="ticks"></param>
+		/// <returns></returns>
+		private DateTime FromTicks(String ticks)
 		{
-			//filesystemSearch = new LuceneSearch(GeneralConstants.Paths.DateIndex);
+			long temp;
+
+			if (!Int64.TryParse(ticks, out temp))
+			{
+				return DateTime.MinValue;
+			}
+
+			return new DateTime(temp);
 		}
 
-		[TestFixtureTearDown]
-		public void TearDown()
-		{
-			//filesystemSearch.Dispose();
-		}
-
-		[Test]
-		[TestCaseSource("searches")]
-		public void GetArticlesWithDateTest(LuceneSearch luceneSearch)
-		{
-			IQueryBuilder queryBuilder = new QueryBuilder();
-
-			DateTime february = DateTime.Parse("01/02/2013");
-
-			queryBuilder.Setup(
-				x => x.NumericRange(BBCFields.PublishDate, february.Ticks, february.AddDays(28).Ticks)
-			);
-
-			Console.Error.WriteLine(queryBuilder.ToString());
-			//Console.Error.WriteLine(queryBuilder.);
-
-			var result = luceneSearch.Execute(queryBuilder);
-
-			var documents = result.GetTopDocuments();
-			WriteDocuments(documents);
-
-			Console.WriteLine("Searched {0} documents in {1} ms", luceneSearch.IndexSearcher.MaxDoc(), result.ElapsedTimeMs);
-			Console.WriteLine();
-	
-
-			Assert.AreNotEqual(0, result.TotalHits);
-
-		}
-
-		private void WriteDocuments(List<Document> documents)
+		/// <summary>
+		/// Dump the list of news articles to the error console
+		/// </summary>
+		/// <param name="documents"></param>
+		private void WriteDocuments(List<NewsArticle> documents)
 		{
 			int counter = 0;
-			Console.WriteLine("Showing the first 30 docs");
+			Console.Error.WriteLine("Showing the first 30 docs");
 			documents.ForEach(
 				document =>
 				{
@@ -162,15 +181,17 @@ namespace Lucinq.UnitTests.IntegrationTests
 					{
 						return;
 					}
-					Console.WriteLine("Title: " + document.GetValues(BBCFields.Title)[0]);
-					Console.WriteLine("Secondary Sort:" + document.GetValues(BBCFields.SecondarySort)[0]);
-					Console.WriteLine("Description: " + document.GetValues(BBCFields.Description)[0]);
-					Console.WriteLine("Publish Date: " + document.GetValues(BBCFields.PublishDate)[0]);
-					Console.WriteLine("Url: " + document.GetValues(BBCFields.Link)[0]);
-					Console.WriteLine();
+					Console.Error.WriteLine("Title: " + document.Title);
+					Console.Error.WriteLine("Description: " + document.Description);
+					Console.Error.WriteLine("Copyright: " + document.Copyright);
+					Console.Error.WriteLine("Publish Date: " + document.PublishDateTime.ToShortDateString());
+					Console.Error.WriteLine("Url: " + document.Link);
+					Console.Error.WriteLine();
 					counter++;
 				}
 			);
 		}
+
+		#endregion
 	}
 }

@@ -216,6 +216,9 @@ namespace Lucinq.Interfaces
 		NumericRangeQuery NumericRange(string fieldName, long minValue, long maxValue, BooleanClause.Occur occur = null, float? boost = null,
 									int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null);
 
+		NumericRangeQuery DateRange(String fieldName, DateTime minValue, DateTime maxValue, BooleanClause.Occur occur = null,
+		                            float? boost = null, int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null);
+
 		IQueryBuilder Sort(string fieldName, bool sortDescending = false, int? sortType = null);
 
 		#endregion

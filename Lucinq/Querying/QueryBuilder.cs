@@ -379,6 +379,17 @@ namespace Lucinq.Querying
 			return numericRangeQuery;
 		}
 
+		public virtual NumericRangeQuery DateRange(string fieldName, DateTime minValue, DateTime maxValue, BooleanClause.Occur occur = null, float? boost = null,
+									int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null)
+		{
+			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewLongRange(fieldName, precisionStep, minValue.Ticks, maxValue.Ticks, includeMin, includeMax);
+			SetBoostValue(numericRangeQuery, boost);
+			Add(numericRangeQuery, occur, key);
+			return numericRangeQuery;
+		}
+
+
+
 		#endregion
 
 		#region [ Sort Expressions ]
