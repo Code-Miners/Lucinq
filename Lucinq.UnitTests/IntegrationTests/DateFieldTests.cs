@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Xml.Linq;
 using AutoMapper;
@@ -7,6 +8,7 @@ using Lucene.Net.Analysis;
 using Lucene.Net.Analysis.Standard;
 using Lucene.Net.Documents;
 using Lucene.Net.Index;
+using Lucene.Net.Search;
 using Lucene.Net.Store;
 using Lucinq.Building;
 using Lucinq.Interfaces;
@@ -19,9 +21,6 @@ namespace Lucinq.UnitTests.IntegrationTests
 	[TestFixture]
 	public class DateFieldTests
 	{
-		private static readonly LuceneSearch MemorySearch = new LuceneSearch(GeneralConstants.Paths.DateIndex, true);
-		private static readonly LuceneSearch[] Searches = new[] { MemorySearch };
-
 		/// <summary>
 		/// Simple constructor, only job is to setup the mappings from document to strong type.
 		/// </summary>
@@ -31,19 +30,21 @@ namespace Lucinq.UnitTests.IntegrationTests
 			Mapper.CreateMap<Document, NewsArticle>()
 				.ForMember(x => x.Title, opt => opt.MapFrom(y => y.GetValues(BBCFields.Title)[0]))
 				.ForMember(x => x.Description, opt => opt.MapFrom(y => y.GetValues(BBCFields.Description)[0]))
-				.ForMember(x => x.Copyright, opt => opt.MapFrom(y => y.GetValues(BBCFields.Copyright)[0]))
 				.ForMember(x => x.PublishDateTime, opt => opt.MapFrom(y => FromTicks(y.GetValues(BBCFields.PublishDate)[0])))
-				.ForMember(x => x.Link, opt => opt.MapFrom(y => y.GetValues(BBCFields.Link)[0]));
+				.ForMember(x => x.Link, opt => opt.MapFrom(y => y.GetValues(BBCFields.Link)[0]))
+				.ForMember(x => x.Copyright, opt => opt.Ignore());
+
+			Mapper.AssertConfigurationIsValid();
 		}
 
 		/// <summary>
 		/// Pull out all the articles within a particular date range and dump them to the error console.
 		/// </summary>
-		/// <param name="luceneSearch"></param>
 		[Test]
-		[TestCaseSource("Searches")]
-		public void GetArticlesWithDateTest(LuceneSearch luceneSearch)
+		public void GetArticlesWithDateTest()
 		{
+			LuceneSearch luceneSearch = new LuceneSearch(GeneralConstants.Paths.DateIndex, true);
+
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			DateTime february = DateTime.Parse("01/02/2013");
 
@@ -62,11 +63,38 @@ namespace Lucinq.UnitTests.IntegrationTests
 			Assert.AreNotEqual(0, result.TotalHits);
 		}
 
+		/// <summary>
+		/// Search all the articles within a particular date range and dump them to the error console.
+		/// </summary>
+		[Test]
+		public void SearchArticlesWithinDateRangeTest()
+		{
+			LuceneSearch luceneSearch = new LuceneSearch(GeneralConstants.Paths.DateIndex, true);
+
+			IQueryBuilder queryBuilder = new QueryBuilder();
+			DateTime week = DateTime.Parse("14/02/2013");
+
+			queryBuilder.Setup(
+				x => x.DateRange(BBCFields.PublishDate, week, week.AddDays(2)),
+				x => x.WildCard(BBCFields.Description, "food")
+			);
+
+			LuceneSearchResult result = luceneSearch.Execute(queryBuilder);
+			List<NewsArticle> data = Mapper.Map<List<Document>, List<NewsArticle>>(result.GetTopDocuments());
+
+			WriteDocuments(data);
+
+			Console.WriteLine("Searched {0} documents in {1} ms", luceneSearch.IndexSearcher.MaxDoc(), result.ElapsedTimeMs);
+			Console.WriteLine();
+
+			Assert.AreNotEqual(0, result.TotalHits);
+		}
+
 		#region build index methods
-		[Ignore]
+		[Test]
 		public void BuildIndex()
 		{
-			var indexFolder = FSDirectory.Open(new DirectoryInfo(GeneralConstants.Paths.DateIndex));
+			FSDirectory indexFolder = FSDirectory.Open(new DirectoryInfo(GeneralConstants.Paths.DateIndex));
 
 			Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_29);
 			using (IndexWriter indexWriter = new IndexWriter(indexFolder, analyzer, IndexWriter.MaxFieldLength.UNLIMITED))
@@ -122,6 +150,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 					{
 						newsArticle.Description = descriptionElement.Value.Trim();
 					}
+
 					var titleElement = node.Element("title");
 					if (titleElement != null)
 					{
@@ -181,9 +210,9 @@ namespace Lucinq.UnitTests.IntegrationTests
 					{
 						return;
 					}
+
 					Console.Error.WriteLine("Title: " + document.Title);
 					Console.Error.WriteLine("Description: " + document.Description);
-					Console.Error.WriteLine("Copyright: " + document.Copyright);
 					Console.Error.WriteLine("Publish Date: " + document.PublishDateTime.ToShortDateString());
 					Console.Error.WriteLine("Url: " + document.Link);
 					Console.Error.WriteLine();
