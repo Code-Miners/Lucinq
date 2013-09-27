@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.3.0.0\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\packages\AutoMapper.3.0.0\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>..\..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
@@ -58,6 +64,7 @@
     <Compile Include="GeneralConstants.cs" />
     <Compile Include="IntegrationTests\BasicCollectorTests.cs" />
     <Compile Include="IntegrationTests\BasicTests..cs" />
+    <Compile Include="IntegrationTests\DateFieldTests.cs" />
     <Compile Include="IntegrationTests\IndexRebuilder.cs" />
     <Compile Include="IntegrationTests\IntegrationTestBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

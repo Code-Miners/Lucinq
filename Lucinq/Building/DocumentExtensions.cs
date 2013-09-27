@@ -38,6 +38,75 @@ namespace Lucinq.Building
 		}
 
 		/// <summary>
+		/// Adds a non analysed field to the index - the field acts as a complete value in the index, therefore will not be stripped of punctuation / whitespace
+		/// and can be searched in its original entirity
+		/// </summary>
+		/// <param name="document">The document to add the field to </param>
+		/// <param name="fieldName">The name of the field to add</param>
+		/// <param name="value">The value of the field</param>
+		/// <param name="store">A boolean denoting whether to store the value in the index - allows retrieval of the original value from the index</param>
+		/// <returns>The input document object</returns>
+		public static Document AddNonAnalysedField(this Document document, String fieldName, DateTime value, bool store = false)
+		{
+			return AddNonAnalysedField(document, fieldName, value.Ticks, store);
+		}
+
+		/// <summary>
+		/// Adds a non analysed field to the index - the field acts as a complete value in the index, therefore will not be stripped of punctuation / whitespace
+		/// and can be searched in its original entirity
+		/// </summary>
+		/// <param name="document">The document to add the field to </param>
+		/// <param name="fieldName">The name of the field to add</param>
+		/// <param name="value">The value of the field</param>
+		/// <param name="store">A boolean denoting whether to store the value in the index - allows retrieval of the original value from the index</param>
+		/// <returns>The input document object</returns>
+		public static Document AddNonAnalysedField(this Document document, String fieldName, double value, bool store = false)
+		{
+			Field.Store luceneStore = GetStoreValue(store);
+
+			document.Add(new NumericField(fieldName, luceneStore, true).SetDoubleValue(value));
+
+			return document;
+		}
+
+		/// <summary>
+		/// Adds a non analysed field to the index - the field acts as a complete value in the index, therefore will not be stripped of punctuation / whitespace
+		/// and can be searched in its original entirity
+		/// </summary>
+		/// <param name="document">The document to add the field to </param>
+		/// <param name="fieldName">The name of the field to add</param>
+		/// <param name="value">The value of the field</param>
+		/// <param name="store">A boolean denoting whether to store the value in the index - allows retrieval of the original value from the index</param>
+		/// <returns>The input document object</returns>
+		public static Document AddNonAnalysedField(this Document document, String fieldName, int value, bool store = false)
+		{
+			Field.Store luceneStore = GetStoreValue(store);
+
+			document.Add(new NumericField(fieldName, luceneStore, true).SetIntValue(value));
+
+			return document;
+		}
+
+		/// <summary>
+		/// Adds a non analysed field to the index - the field acts as a complete value in the index, therefore will not be stripped of punctuation / whitespace
+		/// and can be searched in its original entirity
+		/// </summary>
+		/// <param name="document">The document to add the field to </param>
+		/// <param name="fieldName">The name of the field to add</param>
+		/// <param name="value">The value of the field</param>
+		/// <param name="store">A boolean denoting whether to store the value in the index - allows retrieval of the original value from the index</param>
+		/// <returns>The input document object</returns>
+		public static Document AddNonAnalysedField(this Document document, String fieldName, long value, bool store = false)
+		{
+			Field.Store luceneStore = GetStoreValue(store);
+
+			document.Add(new NumericField(fieldName, luceneStore, true).SetLongValue(value));
+
+			return document;
+		}
+
+
+		/// <summary>
 		/// Stores the value in the index without indexing it - RETRIEVAL FIELDS ONLY
 		/// </summary>
 		/// <param name="document">The document to add the field to </param>
