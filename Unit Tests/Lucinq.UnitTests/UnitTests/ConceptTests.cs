@@ -1,8 +1,13 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using Lucene.Net.Index;
+using Lucene.Net.Search;
 using Lucene.Net.Store;
 using Lucene.Net.Util;
+using Lucinq.Enums;
+using Lucinq.Interfaces;
+using Lucinq.Querying;
 using NUnit.Framework;
 
 namespace Lucinq.UnitTests.UnitTests
@@ -42,6 +47,24 @@ namespace Lucinq.UnitTests.UnitTests
             OpeningClosingObjects();
             OpeningClosingObjects();
             OpeningClosingObjects();
+        }
+
+        [Test]
+        public void LuceneObjectsIntoLucinq()
+        {
+            LuceneSearch search = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
+            // raw lucene object
+            TermQuery query = new TermQuery(new Term(BBCFields.Title, "africa"));
+            
+            // executed directly by the search
+            LuceneSearchResult result = search.Execute(query);
+            Assert.AreEqual(8, result.TotalHits);
+
+            // or by through a querybuilder
+            IQueryBuilder queryBuilder = new QueryBuilder();
+            queryBuilder.Add(query, Matches.Always);
+            LuceneSearchResult result2 = search.Execute(queryBuilder);
+            Assert.AreEqual(8, result2.TotalHits);
         }
 
         private void WriteTime(Stopwatch stopwatch)
