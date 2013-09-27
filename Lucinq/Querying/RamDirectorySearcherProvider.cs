@@ -7,10 +7,13 @@ namespace Lucinq.Querying
 {
     public class RamDirectorySearcherProvider : IIndexSearcherProvider
     {
+        private readonly FSDirectory fileSystemDirectory;
+        private readonly RAMDirectory ramDirectory;
+
         public RamDirectorySearcherProvider(string indexPath)
         {
-            var fileSystemDirectory = FSDirectory.Open(indexPath);
-            var ramDirectory = new RAMDirectory(fileSystemDirectory);
+            fileSystemDirectory = FSDirectory.Open(indexPath);
+            ramDirectory = new RAMDirectory(fileSystemDirectory);
 
             IndexSearcher = new IndexSearcher(ramDirectory);
         }
@@ -18,6 +21,8 @@ namespace Lucinq.Querying
         public void Dispose()
         {
             IndexSearcher.Dispose();
+            ramDirectory.Dispose();
+            fileSystemDirectory.Dispose();
         }
 
         public IndexSearcher IndexSearcher { get; private set; }

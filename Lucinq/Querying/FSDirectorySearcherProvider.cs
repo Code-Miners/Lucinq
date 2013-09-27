@@ -7,15 +7,18 @@ namespace Lucinq.Querying
 {
     public class FSDirectorySearcherProvider : IIndexSearcherProvider
     {
+        private readonly FSDirectory fileSystemDirectory;
+
         public FSDirectorySearcherProvider(string indexPath)
         {
-            var fileSystemDirectory = FSDirectory.Open(indexPath);
+            fileSystemDirectory = FSDirectory.Open(indexPath);
             IndexSearcher = new IndexSearcher(fileSystemDirectory);
         }
 
         public void Dispose()
         {
             IndexSearcher.Dispose();
+            fileSystemDirectory.Dispose();
         }
 
         public IndexSearcher IndexSearcher { get; private set; }
