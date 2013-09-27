@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using Lucinq.GlassMapper.SitecoreIntegration.Interfaces;
 
 namespace Lucinq.GlassMapper.SitecoreIntegration
@@ -24,5 +25,19 @@ namespace Lucinq.GlassMapper.SitecoreIntegration
 		public List<T> Items { get; private set; }
 
 		#endregion
-	}
+
+        #region [ Enumerable Methods ]
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            return Items.GetEnumerator();
+        }
+
+	    IEnumerator IEnumerable.GetEnumerator()
+	    {
+	        return GetEnumerator();
+        }
+
+        #endregion
+    }
 }

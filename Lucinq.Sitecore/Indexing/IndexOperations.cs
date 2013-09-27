@@ -1,24 +1,14 @@
 ﻿using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using HtmlAgilityPack;
 using Lucene.Net.Documents;
 using Lucene.Net.Index;
 using Lucinq.Building;
-using Lucinq.SitecoreIntegration.Constants;
-using Lucinq.SitecoreIntegration.Extensions;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.Diagnostics;
 using Sitecore.ContentSearch.LuceneProvider;
-using Sitecore.ContentSearch.Pipelines.IndexingFilters;
-using Sitecore.Data;
-using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
-using Sitecore.Events;
-using DateField = Sitecore.Data.Fields.DateField;
 using Field = Sitecore.Data.Fields.Field;
 
 namespace Lucinq.SitecoreIntegration.Indexing
@@ -47,6 +37,8 @@ namespace Lucinq.SitecoreIntegration.Indexing
         }
 
         #endregion
+
+        #region [ Methods ]
 
         public virtual void Update(IIndexable indexable, IProviderUpdateContext context, ProviderIndexConfiguration indexConfiguration)
         {
@@ -116,6 +108,9 @@ namespace Lucinq.SitecoreIntegration.Indexing
             Document document = new Document();
 
             AddFields(document, sitecoreIndexableItem.Item);
+            
+            // add the unique identifier field
+            document.AddAnalysedField("_uniqueid", indexable.UniqueId.Value.ToString());
 
             return document; 
         }
@@ -129,16 +124,7 @@ namespace Lucinq.SitecoreIntegration.Indexing
             }
             else
             {
-                valid = false;
-                foreach (string indexingRootPath in rootPaths)
-                {
-                    if (indexable.AbsolutePath.IndexOf(indexingRootPath, StringComparison.OrdinalIgnoreCase) < 0)
-                    {
-                        continue;
-                    }
-                    valid = true;
-                    break;
-                }
+                valid = rootPaths.Any(indexingRootPath => indexable.AbsolutePath.IndexOf(indexingRootPath, StringComparison.OrdinalIgnoreCase) >= 0);
             }
             return valid;
         }
@@ -160,6 +146,8 @@ namespace Lucinq.SitecoreIntegration.Indexing
         {
             return item.Fields.ToList();
         }
+
+        #endregion
     }
 }
 

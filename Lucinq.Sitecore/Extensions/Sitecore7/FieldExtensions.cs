@@ -2,9 +2,11 @@
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
+using Lucene.Net.Index;
 using Lucene.Net.Search;
 using Lucinq.Enums;
 using Lucinq.Interfaces;
+using Lucinq.SitecoreIntegration.Querying.Interfaces;
 using Sitecore.ContentSearch;
 
 namespace Lucinq.SitecoreIntegration.Extensions.Sitecore7
@@ -13,7 +15,7 @@ namespace Lucinq.SitecoreIntegration.Extensions.Sitecore7
     {
         #region [ Terms ]
 
-        public static TermQuery Term<T>(this IQueryBuilderIndividual queryBuilder, Expression<Func<T, object>> expression, string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null,
+        public static TermQuery Term<T>(this ISitecoreQueryBuilder queryBuilder, Expression<Func<T, object>> expression, string fieldValue, Matches occur = Matches.NotSet, float? boost = null,
             string key = null, bool? caseSensitive = null)
         {
             return queryBuilder.Term(GetFieldName(expression), fieldValue, occur, boost, key, caseSensitive);
@@ -23,7 +25,7 @@ namespace Lucinq.SitecoreIntegration.Extensions.Sitecore7
 
         #region [ WildCard ]
 
-        public static WildcardQuery WildCard<T>(this IQueryBuilderIndividual queryBuilder, Expression<Func<T, object>> expression, string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null,
+        public static WildcardQuery WildCard<T>(this IQueryBuilderIndividual queryBuilder, Expression<Func<T, object>> expression, string fieldValue, Matches occur = Matches.NotSet, float? boost = null,
             string key = null, bool? caseSensitive = null)
         {
             return queryBuilder.WildCard(GetFieldName(expression), fieldValue, occur, boost, key, caseSensitive);
@@ -33,10 +35,64 @@ namespace Lucinq.SitecoreIntegration.Extensions.Sitecore7
 
         #region [ Field ]
 
-        public static Query Field<T>(this IQueryBuilderIndividual queryBuilder, Expression<Func<T, object>> expression, string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null,
+        public static Query Field<T>(this ISitecoreQueryBuilder queryBuilder, Expression<Func<T, object>> expression, string fieldValue, Matches occur = Matches.NotSet, float? boost = null,
             string key = null, bool? caseSensitive = null, int slop = 1)
         {
             return queryBuilder.Field(GetFieldName(expression), fieldValue, occur, boost, key, slop);
+        }
+
+        #endregion
+
+        #region [ Fuzzy ]
+
+        /// <summary>
+        /// Gets a fuzzy query object based on the field specified
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="queryBuilder"></param>
+        /// <param name="expression"></param>
+        /// <param name="fieldValue"></param>
+        /// <param name="occur"></param>
+        /// <param name="boost"></param>
+        /// <param name="key"></param>
+        /// <param name="caseSensitive"></param>
+        /// <returns></returns>
+        public static FuzzyQuery Fuzzy<T>(this ISitecoreQueryBuilder queryBuilder, Expression<Func<T, object>> expression, string fieldValue, Matches occur = Matches.NotSet, float? boost = null,
+            string key = null, bool? caseSensitive = null)
+        {
+            return queryBuilder.Fuzzy(GetFieldName(expression), fieldValue, occur, boost, key, caseSensitive);
+        }
+
+        #endregion
+
+        #region [ Phrase Extensions ]
+
+        /// <summary>
+        /// Adds a term to an existing phrase query
+        /// </summary>
+        /// <param name="query">The phrase query to add the term to</param>
+        /// <param name="expression">The field</param>
+        /// <param name="value">The value</param>
+        /// <param name="caseSensitive">A boolean denoting whether or not the field should retain case</param>
+        /// <returns>The input phrase query object</returns>
+        public static PhraseQuery AddTerm<T>(this PhraseQuery query, Expression<Func<T, object>> expression, string value, bool caseSensitive = false)
+        {
+            if (!caseSensitive)
+            {
+                value = value.ToLowerInvariant();
+            }
+            query.Add(new Term(GetFieldName(expression), value));
+            return query;
+        }
+
+        #endregion
+
+        #region [ Keyword ]
+
+        public static Query Keyword<T>(this IQueryBuilderIndividual queryBuilder, Expression<Func<T, object>> expression, string fieldValue, Matches occur = Matches.NotSet, float? boost = null,
+            string key = null, bool? caseSensitive = null)
+        {
+            return queryBuilder.Keyword(GetFieldName(expression), fieldValue, occur, boost, key, caseSensitive);
         }
 
         #endregion
@@ -51,7 +107,9 @@ namespace Lucinq.SitecoreIntegration.Extensions.Sitecore7
         public static string GetFieldName<T>(Expression<Func<T, object>> field)
         {
             if (field.Parameters.Count > 1)
+            {
                 throw new ApplicationException(String.Format("To many parameters in linq expression {0}", field.Body));
+            }
 
             MemberExpression memberExpression;
 

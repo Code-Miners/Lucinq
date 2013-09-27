@@ -2,7 +2,7 @@
 {
 	public class Constants
 	{
-        public const string IndexPath = @"C:\Work\Lucinq.Sitecore\TestIndex\lucinq_web_index";
+        public const string IndexPath = @"..\..\..\..\indexes\lucinq_web_index";
 
         public const string HomeItemId = "{2825870E-7737-4FDC-A252-62934F0AEC1F}";
 

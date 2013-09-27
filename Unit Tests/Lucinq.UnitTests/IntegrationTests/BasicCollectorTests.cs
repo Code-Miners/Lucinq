@@ -1,11 +1,12 @@
 ﻿using System;
 using Lucinq.Interfaces;
 using Lucinq.Querying;
-using NUnit.Framework;
 
 namespace Lucinq.UnitTests.IntegrationTests
 {
-	[TestFixture]
+    using NUnit.Framework;
+
+    [TestFixture]
 	public class BasicCollectorTests
 	{
 		private static readonly LuceneSearch MemorySearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex, true);

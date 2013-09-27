@@ -64,9 +64,15 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.ContentSearch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Sitecore\Sitecore.ContentSearch.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel">
-      <HintPath>..\Sitecore\Sitecore.Kernel.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\Libraries\Sitecore\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="sitecore.nexus">
+      <HintPath>..\Libraries\Sitecore\sitecore.nexus.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -97,7 +103,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Lucinq.Sitecore\Lucinq.Sitecore\Lucinq.SitecoreIntegration.csproj">
+    <ProjectReference Include="..\Lucinq.Sitecore\Lucinq.SitecoreIntegration.csproj">
       <Project>{ddd54b05-9498-4a96-bbdc-8563f4fa44b6}</Project>
       <Name>Lucinq.SitecoreIntegration</Name>
     </ProjectReference>

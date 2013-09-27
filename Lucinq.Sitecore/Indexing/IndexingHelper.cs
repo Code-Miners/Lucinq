@@ -17,6 +17,9 @@ using Field = Sitecore.Data.Fields.Field;
 
 namespace Lucinq.SitecoreIntegration.Indexing
 {
+    /// <summary>
+    /// This is a helper class to perform basic indexing.
+    /// </summary>
     public class IndexingHelper
     {
         #region [ Fields ]

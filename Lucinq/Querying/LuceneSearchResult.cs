@@ -42,12 +42,12 @@ namespace Lucinq.Querying
 
 		protected ILuceneSearcherAccessor LuceneSearcherAccessor { get; private set; }
 
-		public List<Document> GetTopDocuments()
+		public virtual List<Document> GetTopDocuments()
 		{
 			return Results == null ? null : (from ScoreDoc doc in Results.ScoreDocs select GetDocument(doc.Doc)).ToList();
 		}
 
-		public List<Document> GetPagedDocuments(int start, int end)
+		public virtual List<Document> GetPagedDocuments(int start, int end)
 		{
 			List<Document> documents = new List<Document>();
 			if (start < 0)
@@ -72,7 +72,7 @@ namespace Lucinq.Querying
 			return documents;
 		}
 
-		public Document GetDocument(int documentId)
+		public virtual Document GetDocument(int documentId)
 		{
 			return LuceneSearcherAccessor.IndexSearcher.Doc(documentId);
 		}
