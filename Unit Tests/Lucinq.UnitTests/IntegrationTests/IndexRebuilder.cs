@@ -39,7 +39,12 @@ namespace Lucinq.UnitTests.IntegrationTests
 		public void BuildIndex()
 		{
 			// IF YOU WANT TO RUN THIS, DELETE THE CONTENTS OF THE EXISTING INDEX FIRST, OTHERWISE, IT WILL APPEND
-			
+
+		    if (Directory.Exists(GeneralConstants.Paths.BBCIndex))
+		    {
+                Directory.Delete(GeneralConstants.Paths.BBCIndex, true);
+		    }
+
 			var indexFolder = FSDirectory.Open(new DirectoryInfo(GeneralConstants.Paths.BBCIndex));
 
 			Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_29);
@@ -64,7 +69,8 @@ namespace Lucinq.UnitTests.IntegrationTests
 								x => x.AddAnalysedField(BBCFields.Description, newsArticle.Description, true),
 								x => x.AddAnalysedField(BBCFields.Copyright, newsArticle.Copyright),
 								x => x.AddStoredField(BBCFields.Link, newsArticle.Link),
-								x => x.AddNonAnalysedField(BBCFields.PublishDate, TestHelpers.GetDateString(newsArticle.PublishDateTime), true),
+								x => x.AddNonAnalysedField(BBCFields.PublishDateString, TestHelpers.GetDateString(newsArticle.PublishDateTime), true),
+                                x => x.AddNonAnalysedField(BBCFields.PublishDateObject, newsArticle.PublishDateTime, true),
 								x => x.AddNonAnalysedField(BBCFields.Sortable, newsArticle.Title, true), // must be non-analysed to sort against it
 								x => x.AddNonAnalysedField(BBCFields.SecondarySort, secondarySort, true))
 							);

@@ -15,7 +15,9 @@ namespace Lucinq.UnitTests
 
 		public const string Link = "link";
 
-		public const string PublishDate = "publishdate";
+		public const string PublishDateString = "publishdatestring";
+
+        public const string PublishDateObject = "publishdateobject";
 
 		public const string Sortable = "sortable";
 

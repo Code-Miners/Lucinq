@@ -64,7 +64,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 			DateTime startDate = new DateTime(2012, 12, 1);
 			DateTime endDate = new DateTime(2013, 1, 1);
 
-			queryBuilder.TermRange(BBCFields.PublishDate, TestHelpers.GetDateString(startDate), TestHelpers.GetDateString(endDate));
+            queryBuilder.TermRange(BBCFields.PublishDateString, TestHelpers.GetDateString(startDate), TestHelpers.GetDateString(endDate));
 
 			ExecuteAndAssert(luceneSearch, queryBuilder, 60);
 
@@ -430,7 +430,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 					Console.WriteLine("Title: " + document.GetValues(BBCFields.Title)[0]);
 					Console.WriteLine("Secondary Sort:" + document.GetValues(BBCFields.SecondarySort)[0]);
 					Console.WriteLine("Description: " + document.GetValues(BBCFields.Description)[0]);
-					Console.WriteLine("Publish Date: " + document.GetValues(BBCFields.PublishDate)[0]);
+                    Console.WriteLine("Publish Date: " + document.GetValues(BBCFields.PublishDateString)[0]);
 					Console.WriteLine("Url: "+ document.GetValues(BBCFields.Link)[0]);
 					Console.WriteLine();
 					counter++; 

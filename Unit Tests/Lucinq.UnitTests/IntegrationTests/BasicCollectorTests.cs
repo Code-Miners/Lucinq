@@ -31,7 +31,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup
 				(
-					x => x.WildCard(BBCFields.PublishDate, "*")
+					x => x.WildCard(BBCFields.PublishDateString, "*")
 				);
 
 			DateCollector collector = new DateCollector();

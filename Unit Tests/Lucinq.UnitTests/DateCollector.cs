@@ -57,7 +57,7 @@ namespace Lucinq.UnitTests
 
 		public override void SetNextReader(IndexReader reader, int docBase)
 		{
-			dates = FieldCache_Fields.DEFAULT.GetStrings(reader, BBCFields.PublishDate);
+            dates = FieldCache_Fields.DEFAULT.GetStrings(reader, BBCFields.PublishDateString);
 		}
 
 	    public override bool AcceptsDocsOutOfOrder
