@@ -35,7 +35,8 @@ namespace Lucinq.UnitTests.IntegrationTests
 		/// <summary>
 		/// Before you say - not robust - just does enough to get the job done ;)
 		/// </summary>
-		[Test]
+		[Ignore("Don't build this under normal unit test conditions")]
+        [Test]
 		public void BuildIndex()
 		{
 			// IF YOU WANT TO RUN THIS, DELETE THE CONTENTS OF THE EXISTING INDEX FIRST, OTHERWISE, IT WILL APPEND

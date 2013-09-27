@@ -33,7 +33,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		[Test]
 		public void GetArticlesWithDateTest()
 		{
-			LuceneSearch luceneSearch = new LuceneSearch(GeneralConstants.Paths.DateIndex, true);
+			LuceneSearch luceneSearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex, true);
 
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			DateTime february = DateTime.Parse("01/02/2013");
