@@ -15,9 +15,8 @@ namespace Lucinq.UnitTests.IntegrationTests
 	{
         #region [ Fields ]
 
-        private static readonly LuceneSearch memorySearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex, true);
         private static LuceneSearch filesystemSearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
-        private static readonly LuceneSearch[] searches = { filesystemSearch, memorySearch };
+        private static readonly LuceneSearch[] searches = { filesystemSearch };
 
         #endregion
 

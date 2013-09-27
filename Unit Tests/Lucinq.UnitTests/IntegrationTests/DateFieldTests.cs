@@ -33,7 +33,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		[Test]
 		public void GetArticlesWithDateTest()
 		{
-			LuceneSearch luceneSearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex, true);
+			LuceneSearch luceneSearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
 
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			DateTime february = DateTime.Parse("01/02/2013");
@@ -59,7 +59,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		[Test]
 		public void SearchArticlesWithinDateRangeTest()
 		{
-			LuceneSearch luceneSearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex, true);
+			LuceneSearch luceneSearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
 
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			DateTime month = DateTime.Parse("01/02/2013");

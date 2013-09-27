@@ -10,23 +10,16 @@ namespace Lucinq.Querying
         #region [ Fields ]  
 
 	    private readonly string indexPath;
-	    private readonly bool useRamDirectory;
 
         #endregion
 
         #region [ Constructors ]
 
         public LuceneSearch(string indexPath)
-			: this(indexPath, false)
-		{
+        {
+            this.indexPath = indexPath;
+        }
 
-		}
-
-		public LuceneSearch(string indexPath, bool useRamDirectory)
-		{
-		    this.indexPath = indexPath;
-			this.useRamDirectory = useRamDirectory;
-		}
 		#endregion
 
 		#region [ Methods ]
@@ -74,10 +67,6 @@ namespace Lucinq.Querying
 
         public virtual IIndexSearcherProvider GetIndexSearcherProvider()
         {
-            if (useRamDirectory)
-            {
-                return new RamDirectorySearcherProvider(indexPath);
-            }
             return new FSDirectorySearcherProvider(indexPath);
         }
 

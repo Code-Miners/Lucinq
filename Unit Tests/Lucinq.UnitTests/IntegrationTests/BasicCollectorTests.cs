@@ -9,9 +9,8 @@ namespace Lucinq.UnitTests.IntegrationTests
     [TestFixture]
 	public class BasicCollectorTests
 	{
-		private static readonly LuceneSearch MemorySearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex, true);
 		private static LuceneSearch filesystemSearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
-		static readonly LuceneSearch[] Searches = new[] { filesystemSearch, MemorySearch };
+		static readonly LuceneSearch[] Searches = new[] { filesystemSearch };
 
 		[TestFixtureSetUp]
 		public void Setup()
