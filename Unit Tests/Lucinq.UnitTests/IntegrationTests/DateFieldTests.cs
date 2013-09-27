@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.IO;
 using System.Xml.Linq;
 using AutoMapper;
@@ -8,7 +7,6 @@ using Lucene.Net.Analysis;
 using Lucene.Net.Analysis.Standard;
 using Lucene.Net.Documents;
 using Lucene.Net.Index;
-using Lucene.Net.Search;
 using Lucene.Net.Store;
 using Lucinq.Building;
 using Lucinq.Interfaces;
@@ -57,7 +55,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 			WriteDocuments(data);
 
-			Console.WriteLine("Searched {0} documents in {1} ms", luceneSearch.IndexSearcher.MaxDoc(), result.ElapsedTimeMs);
+			Console.WriteLine("Searched {0} documents in {1} ms", luceneSearch.IndexSearcher.MaxDoc, result.ElapsedTimeMs);
 			Console.WriteLine();
 
 			Assert.AreNotEqual(0, result.TotalHits);
@@ -72,10 +70,10 @@ namespace Lucinq.UnitTests.IntegrationTests
 			LuceneSearch luceneSearch = new LuceneSearch(GeneralConstants.Paths.DateIndex, true);
 
 			IQueryBuilder queryBuilder = new QueryBuilder();
-			DateTime week = DateTime.Parse("14/02/2013");
+			DateTime month = DateTime.Parse("01/02/2013");
 
 			queryBuilder.Setup(
-				x => x.DateRange(BBCFields.PublishDate, week, week.AddDays(2)),
+				x => x.DateRange(BBCFields.PublishDate, month, month.AddDays(28)),
 				x => x.WildCard(BBCFields.Description, "food")
 			);
 
@@ -84,7 +82,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 			WriteDocuments(data);
 
-			Console.WriteLine("Searched {0} documents in {1} ms", luceneSearch.IndexSearcher.MaxDoc(), result.ElapsedTimeMs);
+			Console.WriteLine("Searched {0} documents in {1} ms", luceneSearch.IndexSearcher.MaxDoc, result.ElapsedTimeMs);
 			Console.WriteLine();
 
 			Assert.AreNotEqual(0, result.TotalHits);
