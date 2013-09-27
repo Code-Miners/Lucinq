@@ -27,12 +27,6 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 			search = new SitecoreSearch(Constants.IndexPath, new TestDatabaseHelper());
 		}
 
-		[TestFixtureTearDown]
-		public void TearDown()
-		{
-			search.Dispose();
-		}
-
 		#endregion
 
 		#region [ Template Tests ]

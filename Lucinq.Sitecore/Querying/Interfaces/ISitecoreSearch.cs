@@ -5,7 +5,7 @@ using Lucinq.Querying;
 
 namespace Lucinq.SitecoreIntegration.Querying.Interfaces
 {
-	public interface ISitecoreSearch : IDisposable
+	public interface ISitecoreSearch
 	{
 		/// <summary>
 		/// Gets the lucinq lucene search object

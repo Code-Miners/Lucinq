@@ -30,11 +30,6 @@ namespace Lucinq.UnitTests.IntegrationTests
 			filesystemSearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
 		}
 
-		[TestFixtureTearDown]
-		public void TearDown()
-		{
-			filesystemSearch.Dispose();
-		}
 		#endregion
 
 		[Test, TestCaseSource("searches")]
@@ -47,12 +42,6 @@ namespace Lucinq.UnitTests.IntegrationTests
 			var results = ExecuteAndAssert(luceneSearch, queryBuilder, 8);
 
 			Assert.AreEqual(8, results.TotalHits);
-
-			IQueryBuilder alternative = new QueryBuilder();
-			alternative.Where(x => x.Term("_name", "work"));
-
-			var results2 = luceneSearch.Execute(queryBuilder);
-			Assert.AreEqual(results.TotalHits, results2.TotalHits);
 		}
 
 
@@ -391,7 +380,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 			var documents = result.GetTopDocuments();
 
-			Console.WriteLine("Searched {0} documents in {1} ms", luceneSearch.IndexSearcher.MaxDoc, result.ElapsedTimeMs);
+			Console.WriteLine("Searched documents in {0} ms", result.ElapsedTimeMs);
 			Console.WriteLine();
 
 			WriteDocuments(documents);
@@ -407,7 +396,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 			var result = luceneSearch.Execute(queryBuilder);
 			List<Document> documents = result.GetPagedDocuments(start, end);
 
-			Console.WriteLine("Searched {0} documents in {1} ms", luceneSearch.IndexSearcher.MaxDoc, result.ElapsedTimeMs);
+            Console.WriteLine("Searched documents in {0} ms", result.ElapsedTimeMs);
 			Console.WriteLine();
 
 			WriteDocuments(documents);

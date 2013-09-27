@@ -38,12 +38,6 @@ namespace Lucinq.GlassMapper.Sitecore.UnitTests.IntegrationTests
             service = new SitecoreService("web");
 		}
 
-        [TestFixtureTearDown]
-	    public void TearDown()
-	    {
-	        search.Dispose();
-	    }
-
 		private const string IndexPath = @"C:\Work\BoltonWanderers\Source\Websites\Sitecore\App_Data\SitecoreData\indexes\lucinq_web_index";
 
         #region [ Mapping Tests ]

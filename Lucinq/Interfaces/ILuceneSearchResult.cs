@@ -4,15 +4,7 @@ using Lucene.Net.Documents;
 
 namespace Lucinq.Interfaces
 {
-    public interface ILuceneSearchResult<out T> : ILuceneSearchResult, IEnumerable<Document>
-	{
-		/// <summary>
-		/// The results returned from the index
-		/// </summary>
-		T Results { get; }
-	}
-
-	public interface ILuceneSearchResult : ISearchResult
+	public interface ILuceneSearchResult : ISearchResult, IEnumerable<Document>
 	{
 		/// <summary>
 		/// Gets the top documents returned from the query in the natural lucene scoring order.
@@ -27,13 +19,6 @@ namespace Lucinq.Interfaces
 		/// <param name="end">The last document to use</param>
 		/// <returns></returns>
 		List<Document> GetPagedDocuments(int start, int end);
-
-		/// <summary>
-		/// Gets a document from the index
-		/// </summary>
-		/// <param name="documentId"></param>
-		/// <returns></returns>
-		Document GetDocument(int documentId);
 	}
 
 	public interface ISearchResult

@@ -66,11 +66,6 @@ namespace Lucinq.SitecoreIntegration.Querying
 			return Execute(queryBuilder.Build(), noOfResults, sort);
 		}
 
-		public void Dispose()
-		{
-			LuceneSearch.IndexSearcher.Dispose();
-		}
-
 		#endregion
 	}
 }

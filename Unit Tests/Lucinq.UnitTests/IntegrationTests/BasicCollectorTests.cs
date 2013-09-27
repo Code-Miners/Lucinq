@@ -19,11 +19,6 @@ namespace Lucinq.UnitTests.IntegrationTests
 			filesystemSearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
 		}
 
-		[TestFixtureTearDown]
-		public void TearDown()
-		{
-			filesystemSearch.Dispose();
-		}
 
 		[Test, TestCaseSource("Searches")]
 		public void CollectDailyCount(LuceneSearch luceneSearch)
@@ -37,6 +32,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 			DateCollector collector = new DateCollector();
 			luceneSearch.Collect(queryBuilder.Build(), collector);
 
+            Assert.Greater(collector.DailyCount.Keys.Count, 0);
 			foreach (String day in collector.DailyCount.Keys)
 			{
 				Console.Error.WriteLine("Day: {0} had {1} documents", day, collector.DailyCount[day]);

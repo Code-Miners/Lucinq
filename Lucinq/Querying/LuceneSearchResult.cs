@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using Lucene.Net.Documents;
 using Lucene.Net.Search;
@@ -7,21 +8,27 @@ using Lucinq.Interfaces;
 
 namespace Lucinq.Querying
 {
-	public class LuceneSearchResult : ILuceneSearchResult<TopDocs>
+	public class LuceneSearchResult : ILuceneSearchResult
     {
         #region [ Fields ]
 
-         
+	    private readonly Query query;
+	    private Sort sort;
+	    private int totalHits;
+	    private bool searchExecuted;
+	    private TopDocs topDocs;
+	    private IIndexSearcherAccessor searcherAccessor;
 
         #endregion
 
         #region [ Constructors ]
 
-        public LuceneSearchResult(ILuceneSearcherAccessor luceneSearcherAccessor, TopDocs topDocs)
-		{
-			Results = topDocs;
-			LuceneSearcherAccessor = luceneSearcherAccessor;
-		}
+        public LuceneSearchResult(IIndexSearcherAccessor searcherAccessor, Query query, Sort sort)
+        {
+            this.query = query;
+            this.sort = sort;
+            this.searcherAccessor = searcherAccessor;
+        }
 
 		#endregion
 
@@ -29,10 +36,15 @@ namespace Lucinq.Querying
 
 		public int TotalHits
 		{
-			get { return Results.TotalHits; }
+		    get
+		    {
+		        if (!searchExecuted)
+		        {
+                    ExecuteSearch();
+		        }
+		        return totalHits;
+		    }
 		}
-
-		public TopDocs Results { get; private set; }
 
 		public long ElapsedTimeMs { get; set; }
 
@@ -40,50 +52,89 @@ namespace Lucinq.Querying
 
 		#region [ Methods ] 
 
-		protected ILuceneSearcherAccessor LuceneSearcherAccessor { get; private set; }
-
 		public virtual List<Document> GetTopDocuments()
 		{
-			return Results == null ? null : (from ScoreDoc doc in Results.ScoreDocs select GetDocument(doc.Doc)).ToList();
+            using (var indexSearcherProvider = searcherAccessor.GetIndexSearcherProvider())
+		    {
+		        ExecuteSearch(indexSearcherProvider);
+		        return topDocs == null
+		            ? null
+		            : (from ScoreDoc doc in topDocs.ScoreDocs select GetDocument(doc.Doc, indexSearcherProvider.IndexSearcher)).ToList();
+		    }
 		}
 
 		public virtual List<Document> GetPagedDocuments(int start, int end)
 		{
-			List<Document> documents = new List<Document>();
-			if (start < 0)
-			{
-				start = 0;
-			}
+            using (var indexSearcherProvider = searcherAccessor.GetIndexSearcherProvider())
+		    {
+		        ExecuteSearch(indexSearcherProvider);
+		        List<Document> documents = new List<Document>();
+		        if (start < 0)
+		        {
+		            start = 0;
+		        }
 
-			if (end > Results.TotalHits - 1)
-			{
-				end = Results.TotalHits - 1;
-			}
-			if (end > Results.ScoreDocs.Length)
-			{
-				end = Results.ScoreDocs.Length - 1;
-			}
+		        if (end > topDocs.TotalHits - 1)
+		        {
+                    end = topDocs.TotalHits - 1;
+		        }
+                if (end > topDocs.ScoreDocs.Length)
+		        {
+                    end = topDocs.ScoreDocs.Length - 1;
+		        }
 
-			for (var i = start; i <= end; i++)
-			{
-				documents.Add(GetDocument(Results.ScoreDocs[i].Doc));
-			}
+		        for (var i = start; i <= end; i++)
+		        {
+                    documents.Add(GetDocument(topDocs.ScoreDocs[i].Doc, indexSearcherProvider.IndexSearcher));
+		        }
 
-			return documents;
+		        return documents;
+		    }
 		}
 
-		public virtual Document GetDocument(int documentId)
+		protected virtual Document GetDocument(int documentId, IndexSearcher indexSearcher)
 		{
-			return LuceneSearcherAccessor.IndexSearcher.Doc(documentId);
+			return indexSearcher.Doc(documentId);
 		}
+
+        private void ExecuteSearch(IIndexSearcherProvider indexSearcherProvider = null)
+	    {
+            if (searchExecuted)
+            {
+                return;
+            }
+            searchExecuted = true;
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+            if (sort == null)
+            {
+                sort = Sort.RELEVANCE;
+            }
+
+            if (indexSearcherProvider == null)
+            {
+                using (var tempSearcherProvider = searcherAccessor.GetIndexSearcherProvider())
+                {
+                    topDocs = tempSearcherProvider.IndexSearcher.Search(query, null, int.MaxValue, sort);
+                }
+            }
+            else
+            {
+                topDocs = indexSearcherProvider.IndexSearcher.Search(query, null, int.MaxValue, sort);
+            }
+            totalHits = topDocs.TotalHits;
+            stopwatch.Stop();
+	        ElapsedTimeMs = stopwatch.ElapsedMilliseconds;
+	    }
 
 		#endregion
 
         #region [ IEnumerable Methods ]
 
         public IEnumerator<Document> GetEnumerator()
-	    {
-	        return Results.ScoreDocs.Select(scoreDoc => GetDocument(scoreDoc.Doc)).GetEnumerator();
+        {
+            List<Document> topDocs = GetTopDocuments();
+            return topDocs.GetEnumerator();
 	    }
 
 	    IEnumerator IEnumerable.GetEnumerator()

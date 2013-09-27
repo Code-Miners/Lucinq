@@ -1,19 +1,22 @@
 ﻿using System;
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using Lucene.Net.Documents;
 using Lucene.Net.Search;
-using Lucene.Net.Store;
 using Lucinq.Interfaces;
 
 namespace Lucinq.Querying
 {
-	public class LuceneSearch : ILuceneSearch<LuceneSearchResult>
-	{
-		#region [ Constructors ]
+	public class LuceneSearch : ILuceneSearch<LuceneSearchResult>, IIndexSearcherAccessor
+    {
+        #region [ Fields ]  
 
-		public LuceneSearch(string indexPath)
+	    private readonly string indexPath;
+	    private readonly bool useRamDirectory;
+
+        #endregion
+
+        #region [ Constructors ]
+
+        public LuceneSearch(string indexPath)
 			: this(indexPath, false)
 		{
 
@@ -21,30 +24,9 @@ namespace Lucinq.Querying
 
 		public LuceneSearch(string indexPath, bool useRamDirectory)
 		{
-			UseRamDirectory = useRamDirectory;
-			FileSystemDirectory = FSDirectory.Open(new DirectoryInfo(indexPath));
-			if (useRamDirectory)
-			{
-				RamDirectory = new RAMDirectory(FileSystemDirectory);
-				IndexSearcher = new IndexSearcher(RamDirectory, true);
-			}
-			else
-			{
-				IndexSearcher = new IndexSearcher(FileSystemDirectory, true);
-			}
+		    this.indexPath = indexPath;
+			this.useRamDirectory = useRamDirectory;
 		}
-		#endregion
-
-		#region [ Properties ]
-
-		public IndexSearcher IndexSearcher { get; private set; }
-
-		protected FSDirectory FileSystemDirectory { get; private set; }
-
-		protected RAMDirectory RamDirectory { get; private set; }
-
-		protected bool UseRamDirectory { get; private set; }
-
 		#endregion
 
 		#region [ Methods ]
@@ -60,34 +42,24 @@ namespace Lucinq.Querying
 			Stopwatch stopwatch = new Stopwatch();
 			stopwatch.Start();
 
-			if (filter == null)
-			{
-				IndexSearcher.Search(query, customCollector);
-			}
-			else
-			{
-				IndexSearcher.Search(query, filter, customCollector);
-			}
+		    using (var indexSearcherProvider = GetIndexSearcherProvider())
+		    {
+		        if (filter == null)
+		        {
+                    indexSearcherProvider.IndexSearcher.Search(query, customCollector);
+		        }
+		        else
+		        {
+                    indexSearcherProvider.IndexSearcher.Search(query, filter, customCollector);
+		        }
 
-			stopwatch.Stop();
+		        stopwatch.Stop();
+		    }
 		}
 
 		public virtual LuceneSearchResult Execute(Query query, int noOfResults = Int32.MaxValue - 1, Sort sort = null)
 		{
-			Stopwatch stopwatch = new Stopwatch();
-			stopwatch.Start();
-			if (sort == null)
-			{
-				sort = Sort.RELEVANCE;
-			}
-			
-			TopDocs topDocs = IndexSearcher.Search(query, null, noOfResults, sort);
-			stopwatch.Stop();
-			LuceneSearchResult searchResult = new LuceneSearchResult(this, topDocs)
-				{
-					ElapsedTimeMs = stopwatch.ElapsedMilliseconds
-				};
-			return searchResult;
+		    return new LuceneSearchResult(this, query, sort);
 		}
 
 		public LuceneSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1)
@@ -100,50 +72,20 @@ namespace Lucinq.Querying
 			
 		}
 
+        public virtual IIndexSearcherProvider GetIndexSearcherProvider()
+        {
+            if (useRamDirectory)
+            {
+                return new RamDirectorySearcherProvider(indexPath);
+            }
+            return new FSDirectorySearcherProvider(indexPath);
+        }
+
         /*public virtual IQueryable<Document> GetQueryable()
 	    {
 	        return new LuceneQueryable<Document>(this);
 	    }*/
 
 		#endregion
-
-		public void Dispose()
-		{
-			try
-			{
-				if (FileSystemDirectory != null)
-				{
-					FileSystemDirectory.Dispose();
-				}
-			}
-			finally
-			{
-
-			}
-
-			try
-			{
-				if (RamDirectory != null)
-				{
-					RamDirectory.Dispose();
-				}
-			}
-			finally
-			{
-
-			}
-
-			try
-			{
-				if (IndexSearcher != null)
-				{
-                    IndexSearcher.Dispose();
-				}
-			}
-			finally
-			{
-
-			}
-		}
 	}
 }

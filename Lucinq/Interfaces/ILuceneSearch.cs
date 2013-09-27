@@ -1,10 +1,14 @@
 ﻿using System;
-using System.Linq;
+using Lucene.Net.Search;
 
 namespace Lucinq.Interfaces
 {
-	public interface ILuceneSearch<T> : ILuceneSearchExecutor<T>, IDisposable, ILuceneSearcherAccessor where T : class, ISearchResult
+	public interface ILuceneSearch<T> where T : class, ISearchResult
 	{
-        // IQueryable<IQueryOperatorContainer> GetQueryable();
+		T Execute(Query query, int noOfResults, Sort sort = null);
+
+		T Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1);
+
+	    void Collect(Query query, Collector customCollector, Filter filter = null);
 	}
 }

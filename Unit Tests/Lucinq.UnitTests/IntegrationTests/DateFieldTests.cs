@@ -47,7 +47,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 			WriteDocuments(data);
 
-			Console.WriteLine("Searched {0} documents in {1} ms", luceneSearch.IndexSearcher.MaxDoc, result.ElapsedTimeMs);
+            Console.WriteLine("Searched {0} documents in {1} ms", result.TotalHits, result.ElapsedTimeMs);
 			Console.WriteLine();
 
 			Assert.AreNotEqual(0, result.TotalHits);
@@ -74,7 +74,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 			WriteDocuments(data);
 
-			Console.WriteLine("Searched {0} documents in {1} ms", luceneSearch.IndexSearcher.MaxDoc, result.ElapsedTimeMs);
+            Console.WriteLine("Searched {0} documents in {1} ms", result.TotalHits, result.ElapsedTimeMs);
 			Console.WriteLine();
 
 			Assert.AreNotEqual(0, result.TotalHits);
