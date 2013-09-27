@@ -38,10 +38,7 @@ namespace Lucinq.Querying
 		{
 		    get
 		    {
-		        if (!searchExecuted)
-		        {
-                    ExecuteSearch();
-		        }
+                ExecuteSearch();
 		        return totalHits;
 		    }
 		}
