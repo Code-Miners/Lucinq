@@ -51,6 +51,7 @@
     <Compile Include="Building\DocumentExtensions.cs" />
     <Compile Include="Building\IndexExtensions.cs" />
     <Compile Include="Enums\Matches.cs" />
+    <Compile Include="Querying\DateRangeFilter.cs" />
     <Compile Include="Interfaces\IHierarchicalQueryGroup.cs" />
     <Compile Include="Interfaces\IIndexSearcherAccessor.cs" />
     <Compile Include="Interfaces\ILuceneSearch.cs" />
