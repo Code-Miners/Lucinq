@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using Lucene.Net.Documents;
 using Lucene.Net.Search;
 using Lucene.Net.Store;
 using Lucinq.Interfaces;
@@ -72,7 +70,7 @@ namespace Lucinq.Querying
 			stopwatch.Stop();
 		}
 
-		public virtual LuceneSearchResult Execute(Query query, int noOfResults = Int32.MaxValue - 1, Sort sort = null)
+		public virtual LuceneSearchResult Execute(Query query, int noOfResults = Int32.MaxValue - 1, Sort sort = null, Filter filter = null)
 		{
 			Stopwatch stopwatch = new Stopwatch();
 			stopwatch.Start();
@@ -81,7 +79,7 @@ namespace Lucinq.Querying
 				sort = Sort.RELEVANCE;
 			}
 			
-			TopDocs topDocs = IndexSearcher.Search(query, null, noOfResults, sort);
+			TopDocs topDocs = IndexSearcher.Search(query, filter, noOfResults, sort);
 			stopwatch.Stop();
 			LuceneSearchResult searchResult = new LuceneSearchResult(this, topDocs)
 				{
@@ -92,7 +90,7 @@ namespace Lucinq.Querying
 
 		public LuceneSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1)
 		{
-			return Execute(queryBuilder.Build(), noOfResults, queryBuilder.CurrentSort);
+			return Execute(queryBuilder.Build(), noOfResults, queryBuilder.CurrentSort, queryBuilder.CurrentFilter);
 		}
 
 		public virtual void BuildSort()

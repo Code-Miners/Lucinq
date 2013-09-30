@@ -95,6 +95,8 @@ namespace Lucinq.Querying
 		/// </summary>
 		public KeywordAnalyzer KeywordAnalyzer { get { return keywordAnalyzer ?? (keywordAnalyzer = new KeywordAnalyzer()); } }
 
+		public Filter CurrentFilter { get; private set; }
+
 		#endregion
 
 		#region [ Setup Expressions ]
@@ -339,7 +341,12 @@ namespace Lucinq.Querying
 			return numericRangeQuery;
 		}
 
+		public virtual void Filter(Filter filter)
+		{
+			Add(filter);
+		}
 
+		
 
 		#endregion
 
