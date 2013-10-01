@@ -12,7 +12,10 @@ namespace Lucinq.SitecoreIntegration.Querying.Interfaces
 		/// </summary>
 		ILuceneSearch<LuceneSearchResult> LuceneSearch { get; }
 
-		ISitecoreSearchResult Execute(Query query, int noOfResults = Int32.MaxValue - 1, Sort sort = null);
-		ISitecoreSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1, Sort sort = null);
+        ISitecoreSearchResult Execute(Query query, int noOfResults = Int32.MaxValue - 1, Sort sort = null, SitecoreMode sitecoreMode = SitecoreMode.Lucinq);
+
+	    ISitecoreSearchResult Execute(ISitecoreQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1,
+	        Sort sort = null);
+        ISitecoreSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1, Sort sort = null, SitecoreMode sitecoreMode = SitecoreMode.Lucinq);
 	}
 }

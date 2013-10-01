@@ -16,7 +16,7 @@ namespace Lucinq.SitecoreIntegration.Querying
 		/// Convenience constructor with a default context database helper
 		/// </summary>
 		/// <param name="indexPath">The path to the index</param>
-		public SitecoreSearch(string indexPath) : this(indexPath, new ContextDatabaseHelper())
+		public SitecoreSearch(string indexPath) : this(indexPath, new DatabaseHelper())
 		{
 			
 		}
@@ -55,15 +55,20 @@ namespace Lucinq.SitecoreIntegration.Querying
 
 		#region [ Methods ]
 
-		public ISitecoreSearchResult Execute(Query query, int noOfResults = Int32.MaxValue - 1, Sort sort = null)
+        public ISitecoreSearchResult Execute(Query query, int noOfResults = Int32.MaxValue - 1, Sort sort = null, SitecoreMode sitecoreMode = SitecoreMode.Lucinq)
 		{
 			var luceneResult = LuceneSearch.Execute(query, noOfResults, sort);
-			return new SitecoreSearchResult(luceneResult, DatabaseHelper) { ElapsedTimeMs = luceneResult.ElapsedTimeMs };
+            return new SitecoreSearchResult(luceneResult, DatabaseHelper, sitecoreMode) { ElapsedTimeMs = luceneResult.ElapsedTimeMs };
 		}
 
-		public ISitecoreSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1, Sort sort = null)
+        public ISitecoreSearchResult Execute(ISitecoreQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1, Sort sort = null)
+        {
+            return Execute(queryBuilder.Build(), noOfResults, sort, queryBuilder.SitecoreMode);
+        }
+
+        public ISitecoreSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1, Sort sort = null, SitecoreMode sitecoreMode = SitecoreMode.Lucinq)
 		{
-			return Execute(queryBuilder.Build(), noOfResults, sort);
+            return Execute(queryBuilder.Build(), noOfResults, sort, sitecoreMode);
 		}
 
 		#endregion

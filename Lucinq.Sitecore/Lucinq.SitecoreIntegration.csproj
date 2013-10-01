@@ -75,8 +75,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DatabaseManagement\ContextDatabaseHelper.cs" />
-    <Compile Include="DatabaseManagement\TestDatabaseHelper.cs" />
+    <Compile Include="DatabaseManagement\DatabaseHelper.cs" />
     <Compile Include="Extensions\Sitecore7\FieldExtensions.cs" />
     <Compile Include="Extensions\SitecoreQueryBuilderExtensions.cs" />
     <Compile Include="Indexing\FieldConfiguration.cs" />

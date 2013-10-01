@@ -24,7 +24,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		[TestFixtureSetUp]
 		public void Setup()
 		{
-			search = new SitecoreSearch(Constants.IndexPath, new TestDatabaseHelper());
+			search = new SitecoreSearch(Constants.IndexPath, new DatabaseHelper("web"));
 		}
 
 		#endregion
