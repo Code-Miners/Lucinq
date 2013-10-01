@@ -19,15 +19,18 @@ namespace Lucinq.Querying
 	    private TopDocs topDocs;
 	    private IIndexSearcherAccessor searcherAccessor;
 
+		private readonly Filter filter;
+
         #endregion
 
         #region [ Constructors ]
 
-        public LuceneSearchResult(IIndexSearcherAccessor searcherAccessor, Query query, Sort sort)
+        public LuceneSearchResult(IIndexSearcherAccessor searcherAccessor, Query query, Sort sort, Filter filter = null)
         {
             this.query = query;
             this.sort = sort;
             this.searcherAccessor = searcherAccessor;
+	        this.filter = filter;
         }
 
 		#endregion
@@ -112,12 +115,12 @@ namespace Lucinq.Querying
             {
                 using (var tempSearcherProvider = searcherAccessor.GetIndexSearcherProvider())
                 {
-                    topDocs = tempSearcherProvider.IndexSearcher.Search(query, null, int.MaxValue, sort);
+                    topDocs = tempSearcherProvider.IndexSearcher.Search(query, filter, int.MaxValue, sort);
                 }
             }
             else
             {
-                topDocs = indexSearcherProvider.IndexSearcher.Search(query, null, int.MaxValue, sort);
+                topDocs = indexSearcherProvider.IndexSearcher.Search(query, filter, int.MaxValue, sort);
             }
             totalHits = topDocs.TotalHits;
             stopwatch.Stop();

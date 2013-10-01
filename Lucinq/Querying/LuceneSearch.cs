@@ -50,14 +50,14 @@ namespace Lucinq.Querying
 		    }
 		}
 
-		public virtual LuceneSearchResult Execute(Query query, int noOfResults = Int32.MaxValue - 1, Sort sort = null)
+		public virtual LuceneSearchResult Execute(Query query, int noOfResults = Int32.MaxValue - 1, Sort sort = null, Filter filter = null)
 		{
-		    return new LuceneSearchResult(this, query, sort);
+		    return new LuceneSearchResult(this, query, sort, filter);
 		}
 
 		public LuceneSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1)
 		{
-			return Execute(queryBuilder.Build(), noOfResults, queryBuilder.CurrentSort);
+			return Execute(queryBuilder.Build(), noOfResults, queryBuilder.CurrentSort, queryBuilder.CurrentFilter);
 		}
 
 		public virtual void BuildSort()

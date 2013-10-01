@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using AutoMapper;
 using Lucene.Net.Documents;
+using Lucene.Net.Search;
+using Lucinq.Enums;
 using Lucinq.Interfaces;
 using Lucinq.Querying;
 using NUnit.Framework;
@@ -11,6 +13,8 @@ namespace Lucinq.UnitTests.IntegrationTests
 	[TestFixture]
 	public class DateFieldTests
 	{
+		
+
 		/// <summary>
 		/// Simple constructor, only job is to setup the mappings from document to strong type.
 		/// </summary>
@@ -48,6 +52,34 @@ namespace Lucinq.UnitTests.IntegrationTests
 			WriteDocuments(data);
 
             Console.WriteLine("Searched {0} documents in {1} ms", result.TotalHits, result.ElapsedTimeMs);
+			Console.WriteLine();
+
+			Assert.AreNotEqual(0, result.TotalHits);
+		}
+
+		/// <summary>
+		/// Pull out all the articles within a particular date range and dump them to the error console.
+		/// </summary>
+		[Test]
+		public void SearchArticlesWithDateFilterTest()
+		{
+			LuceneSearch luceneSearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
+
+			IQueryBuilder queryBuilder = new QueryBuilder();
+			DateTime february = DateTime.Parse("01/02/2013");
+			DateTime end = DateTime.Parse("28/02/2013");
+
+			queryBuilder.Setup(
+				x => x.WildCard(BBCFields.Description, "food", Matches.Always),
+				x => x.Filter(DateRangeFilter.Filter(BBCFields.PublishDateObject, february, end))
+			);
+
+			LuceneSearchResult result = luceneSearch.Execute(queryBuilder);
+			List<NewsArticle> data = Mapper.Map<List<Document>, List<NewsArticle>>(result.GetTopDocuments());
+
+			WriteDocuments(data);
+
+			Console.WriteLine("Searched {0} documents in {1} ms", result.TotalHits, result.ElapsedTimeMs);
 			Console.WriteLine();
 
 			Assert.AreNotEqual(0, result.TotalHits);

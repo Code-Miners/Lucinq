@@ -26,6 +26,11 @@ namespace Lucinq.Querying
             Queries.Add(key, queryReference);
         }
 
+		  private void Add(Filter filter)
+		  {
+			  CurrentFilter = filter;
+		  }
+
         /// <summary>
         /// Builds the query
         /// </summary>
