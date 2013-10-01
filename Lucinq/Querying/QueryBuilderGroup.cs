@@ -1,6 +1,7 @@
 ﻿using System;
 using Lucene.Net.Search;
 using Lucinq.Enums;
+using Lucinq.Extensions;
 using Lucinq.Interfaces;
 
 namespace Lucinq.Querying
@@ -55,15 +56,7 @@ namespace Lucinq.Querying
 
         public virtual Occur GetLuceneOccur(Matches matches)
         {
-            switch (matches)
-            {
-                case Matches.Never:
-                    return Lucene.Net.Search.Occur.MUST_NOT;
-                case Matches.Sometimes:
-                    return Lucene.Net.Search.Occur.SHOULD;
-                default:
-                    return Lucene.Net.Search.Occur.MUST;
-            }
+            return matches.GetLuceneOccurance();
         }
 
         /// <summary>
