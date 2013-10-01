@@ -49,6 +49,7 @@
       <HintPath>..\..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -60,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BBCFields.cs" />
+    <Compile Include="CarDataFields.cs" />
     <Compile Include="DateCollector.cs" />
     <Compile Include="GeneralConstants.cs" />
     <Compile Include="IntegrationTests\BasicCollectorTests.cs" />
@@ -73,6 +75,7 @@
     <Compile Include="UnitTests\EquivalencyTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

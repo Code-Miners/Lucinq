@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.IO;
 using System.Xml.Linq;
 using Lucene.Net.Analysis;
@@ -16,8 +19,10 @@ namespace Lucinq.UnitTests.IntegrationTests
 	[TestFixture]
 	[Ignore]
 	public class IndexRebuilder
-	{
-		[Test]
+    {
+        #region [ BBC News Indexing ]
+
+        [Test]
 		public void ReadFeedAndDisplay()
 		{
 			var newsArticles = ReadFeed(String.Format("{0}{1}", GeneralConstants.Paths.RSSFeed, @"\Business.xml"));
@@ -37,7 +42,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		/// </summary>
 		[Ignore("Don't build this under normal unit test conditions")]
         [Test]
-		public void BuildIndex()
+		public void BuildBBCIndex()
 		{
 			// IF YOU WANT TO RUN THIS, DELETE THE CONTENTS OF THE EXISTING INDEX FIRST, OTHERWISE, IT WILL APPEND
 
@@ -122,8 +127,120 @@ namespace Lucinq.UnitTests.IntegrationTests
 				}
 			}
 			return newsArticles;
-		}
-	}
+        }
+
+        #endregion
+
+        [Ignore("Indexing is not part of the normal tests")]
+        [Test]
+	    public void BuildCarDataIndex()
+	    {
+            List<CarDataItem> carDataItems = new List<CarDataItem>();
+            
+            using (SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CarData"].ConnectionString))
+            {
+                using (SqlCommand command = new SqlCommand("usp_LucinqTestData", connection))
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        // ignore data with no price
+                        if (reader["Price"] == DBNull.Value)
+                        {
+                            continue;
+                        }
+                        CarDataItem item = new CarDataItem
+                        {
+                            AdvertId = (Guid)reader["AdvertId"],
+                            Created = (DateTime)reader["DateCreated"],
+                            MakeId = (int)reader["MakeId"],
+                            ModelId = (int)reader["ModelId"],
+                            Code = reader["Code"].ToString(),
+                            Make = reader["Make"].ToString(),
+                            Model = reader["Model"].ToString(),
+                            Variant = reader.GetValueOrDefault<string>("Variant"),
+                            Options = reader.GetValueOrDefault<string>("Options"),
+                            FuelType = reader.GetValueOrDefault<string>("FuelType"),
+                            AdvertTypeId = (int)reader["AdvertTypeId"],
+                            AdvertType = reader["AdvertType"].ToString(),
+                            AdvertStatusId = (int)reader["AdvertStatusId"],
+                            AdvertStatus = reader["AdvertStatus"].ToString(),
+                            Town = reader.GetValueOrDefault<string>("Town"),
+                            County = reader.GetValueOrDefault<string>("County"),
+                            Postcode = reader.GetValueOrDefault<string>("Postcode"),
+                            Price = reader.GetValueOrDefault<decimal>("Price"),
+                            Mileage = reader.GetValueOrDefault<decimal?>("Mileage")
+                        };
+                        carDataItems.Add(item);
+                    }
+
+                }
+            }
+
+            if (carDataItems.Count == 0)
+            {
+                Assert.Fail("No Car Data Items Were Found");
+            }
+
+            if (Directory.Exists(GeneralConstants.Paths.BBCIndex))
+		    {
+                Directory.Delete(GeneralConstants.Paths.BBCIndex, true);
+		    }
+
+			var indexFolder = FSDirectory.Open(new DirectoryInfo(GeneralConstants.Paths.CarDataIndex));
+
+			Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_30);
+	        using (IndexWriter indexWriter = new IndexWriter(indexFolder, analyzer, IndexWriter.MaxFieldLength.UNLIMITED))
+	        {
+	            foreach (var carDataItem in carDataItems)
+	            {
+	                indexWriter.AddDocument(
+	                    x => x.AddAnalysedField(CarDataFields.AdvertId, carDataItem.AdvertId.ToString().ToLower()),
+	                    x => x.AddNonAnalysedField(CarDataFields.MakeId, carDataItem.MakeId),
+	                    x => x.AddNonAnalysedField(CarDataFields.ModelId, carDataItem.ModelId),
+	                    x => x.AddNonAnalysedField(CarDataFields.Code, carDataItem.Code),
+	                    x => x.AddAnalysedField(CarDataFields.Make, carDataItem.Make),
+	                    x => x.AddAnalysedField(CarDataFields.Model, carDataItem.Make),
+	                    x => x.AddAnalysedField(CarDataFields.Options, carDataItem.Options),
+	                    x => x.AddNonAnalysedField(CarDataFields.AdvertTypeId, carDataItem.AdvertTypeId),
+	                    x => x.AddAnalysedField(CarDataFields.AdvertType, carDataItem.AdvertType),
+	                    x => x.AddNonAnalysedField(CarDataFields.IsLive, carDataItem.AdvertStatusId > 1 ? "1" : "0"),
+	                    x => x.AddNonAnalysedField(CarDataFields.DateCreated, carDataItem.Created),
+	                    x => x.AddAnalysedField(CarDataFields.Town, carDataItem.Town),
+	                    x => x.AddAnalysedField(CarDataFields.County, carDataItem.County),
+	                    x => x.AddAnalysedField(CarDataFields.Postcode, carDataItem.Postcode),
+	                    x => x.AddAnalysedField(CarDataFields.FuelType, carDataItem.FuelType),
+	                    x => x.AddNonAnalysedField(CarDataFields.Mileage, carDataItem.Mileage.ToString()),
+	                    x => x.AddAnalysedField(CarDataFields.Price, carDataItem.Price.ToString(), true)
+	                    );
+	            }
+	        }
+	    }
+    }
+
+    public class CarDataItem
+    {
+        public Guid AdvertId { get; set; }
+        public DateTime Created { get; set; }
+        public int MakeId { get; set; }
+        public int ModelId { get; set; }
+        public string Code { get; set; }
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public string Variant { get; set; }
+        public string Options { get; set; }
+        public int AdvertTypeId { get; set; }
+        public string AdvertType { get; set; }
+        public int AdvertStatusId { get; set; }
+        public string AdvertStatus { get; set; }
+        public string Town { get; set; }
+        public string County { get; set; }
+        public decimal Price { get; set; }
+        public decimal? Mileage { get; set; }
+        public string FuelType { get; set; }
+        public string Postcode { get; set; }
+    }
 
 	public class NewsArticle
 	{
@@ -133,4 +250,16 @@ namespace Lucinq.UnitTests.IntegrationTests
 		public string Description { get; set; }
 		public DateTime PublishDateTime { get; set; }
 	}
+
+    public static class ReaderExtensions
+    {
+        public static T GetValueOrDefault<T>(this SqlDataReader reader, string fieldName)
+        {
+            if (reader[fieldName] == DBNull.Value)
+            {
+                return default(T);
+            }
+            return (T)reader[fieldName];
+        }
+    }
 }
