@@ -47,7 +47,7 @@ namespace Lucinq.UnitTests.UnitTests
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
             Console.WriteLine("Opening FS Dir");
-            FSDirectory fileSystemDirectory = FSDirectory.Open(new DirectoryInfo(GeneralConstants.Paths.BBCIndex));
+            FSDirectory fileSystemDirectory = FSDirectory.Open(new DirectoryInfo(GeneralConstants.Paths.CarDataIndex));
             WriteTime(stopwatch);
             fileSystemDirectory.Dispose();
             WriteTime(stopwatch);
