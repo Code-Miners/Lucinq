@@ -15,14 +15,16 @@ namespace Lucinq.UnitTests.UnitTests
     [TestFixture]
     public class ConceptTests
     {
+        /// <summary>
+        /// Test to show the speed of opening / closing ram directory
+        /// </summary>
         [Test]
         public void OpeningClosingAll()
         {
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
             Console.WriteLine("Opening FS Dir");
-            string indexPath = @"C:\tfs\3chillies.visualstudio.com\TwoBirds\Data\indexes\ContentIndex";
-            FSDirectory fileSystemDirectory = FSDirectory.Open(new DirectoryInfo(GeneralConstants.Paths.BBCIndex));
+            FSDirectory fileSystemDirectory = FSDirectory.Open(new DirectoryInfo(GeneralConstants.Paths.CarDataIndex));
             WriteTime(stopwatch);
             Console.WriteLine("Opening Ram Dir");
             RAMDirectory ramDirectory = new RAMDirectory(fileSystemDirectory);
@@ -36,6 +38,9 @@ namespace Lucinq.UnitTests.UnitTests
             stopwatch.Stop();
         }
 
+        /// <summary>
+        /// Test to show the speed of opening / closing fs directory
+        /// </summary>
         [Test]
         public void OpeningClosingFsOnlyObjects()
         {
@@ -53,28 +58,28 @@ namespace Lucinq.UnitTests.UnitTests
         [Test]
         public void OpenCloseOpenClose()
         {
-            OpeningClosingFsOnlyObjects();
-            OpeningClosingFsOnlyObjects();
-            OpeningClosingFsOnlyObjects();
-            OpeningClosingFsOnlyObjects();
-            OpeningClosingFsOnlyObjects();
-            OpeningClosingFsOnlyObjects();
-            OpeningClosingFsOnlyObjects();
-            OpeningClosingFsOnlyObjects();
-            OpeningClosingFsOnlyObjects();
+            OpeningClosingAll();
+            OpeningClosingAll();
+            OpeningClosingAll();
+            OpeningClosingAll();
+            OpeningClosingAll();
+            OpeningClosingAll();
+            OpeningClosingAll();
+            OpeningClosingAll();
+            OpeningClosingAll();
         }
 
         [Test]
         public void OpenCloseFsOnly()
         {
-            OpenCloseFsOnly();
-            OpenCloseFsOnly();
-            OpenCloseFsOnly();
-            OpenCloseFsOnly();
-            OpenCloseFsOnly();
-            OpenCloseFsOnly();
-            OpenCloseFsOnly();
-            OpenCloseFsOnly();
+            OpeningClosingFsOnlyObjects();
+            OpeningClosingFsOnlyObjects();
+            OpeningClosingFsOnlyObjects();
+            OpeningClosingFsOnlyObjects();
+            OpeningClosingFsOnlyObjects();
+            OpeningClosingFsOnlyObjects();
+            OpeningClosingFsOnlyObjects();
+            OpeningClosingFsOnlyObjects();
         }
 
         [Test]
