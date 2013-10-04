@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using AutoMapper;
 using Lucene.Net.Documents;
 using Lucene.Net.QueryParsers;
+using Lucene.Net.Store;
 using Lucinq.Enums;
 using Lucinq.Interfaces;
 using Lucinq.Querying;
@@ -11,22 +12,11 @@ using NUnit.Framework;
 namespace Lucinq.UnitTests.IntegrationTests
 {
 	[TestFixture]
-	public class PrefixTests
+	public class PrefixTests : BaseTestFixture
 	{
-		/// <summary>
-		/// Simple constructor, only job is to setup the mappings from document to strong type.
-		/// </summary>
 		public PrefixTests()
 		{
-			// Map the lucene document back to our news article.
-			Mapper.CreateMap<Document, NewsArticle>()
-				.ForMember(x => x.Title, opt => opt.MapFrom(y => y.GetValues(BBCFields.Title)[0]))
-				.ForMember(x => x.Description, opt => opt.MapFrom(y => y.GetValues(BBCFields.Description)[0]))
-				.ForMember(x => x.PublishDateTime, opt => opt.MapFrom(y => FromTicks(y.GetValues(BBCFields.PublishDateObject)[0])))
-				.ForMember(x => x.Link, opt => opt.MapFrom(y => y.GetValues(BBCFields.Link)[0]))
-				.ForMember(x => x.Copyright, opt => opt.Ignore());
-
-			Mapper.AssertConfigurationIsValid();
+			
 		}
 
 		/// <summary>
@@ -36,7 +26,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		[Test]
 		public void InPicturesTest()
 		{
-			LuceneSearch luceneSearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
+			LuceneSearch luceneSearch = new LuceneSearch(IndexDirectory);
 
 			IQueryBuilder queryBuilder = new QueryBuilder();
 
@@ -63,7 +53,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		[Test]
 		public void InPicturesWithSearchAndFilterTest()
 		{
-			LuceneSearch luceneSearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
+			LuceneSearch luceneSearch = new LuceneSearch(IndexDirectory);
 
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			DateTime february = DateTime.Parse("01/01/2013");
@@ -86,53 +76,5 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 			Assert.AreNotEqual(0, result.TotalHits);
 		}
-
-
-		#region helper methods
-
-		/// <summary>
-		/// Helper to convert back from the value in the index to a DateTime
-		/// </summary>
-		/// <param name="ticks"></param>
-		/// <returns></returns>
-		private DateTime FromTicks(String ticks)
-		{
-			long temp;
-
-			if (!Int64.TryParse(ticks, out temp))
-			{
-				return DateTime.MinValue;
-			}
-
-			return new DateTime(temp);
-		}
-
-		/// <summary>
-		/// Dump the list of news articles to the error console
-		/// </summary>
-		/// <param name="documents"></param>
-		private void WriteDocuments(List<NewsArticle> documents)
-		{
-			int counter = 0;
-			Console.Error.WriteLine("Showing the first 30 docs");
-			documents.ForEach(
-				document =>
-				{
-					if (counter >= 29)
-					{
-						return;
-					}
-
-					Console.Error.WriteLine("Title: " + document.Title);
-					Console.Error.WriteLine("Description: " + document.Description);
-					Console.Error.WriteLine("Publish Date: " + document.PublishDateTime.ToShortDateString());
-					Console.Error.WriteLine("Url: " + document.Link);
-					Console.Error.WriteLine();
-					counter++;
-				}
-			);
-		}
-
-		#endregion
 	}
 }

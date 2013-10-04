@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using Lucene.Net.Search;
+using Lucene.Net.Store;
 using Lucinq.Interfaces;
 
 namespace Lucinq.Querying
@@ -11,14 +12,21 @@ namespace Lucinq.Querying
 
 	    private readonly string indexPath;
 
+		 private Directory IndexDirectory { get; set; }
+
         #endregion
 
         #region [ Constructors ]
 
-        public LuceneSearch(string indexPath)
+        public LuceneSearch(String indexPath)
         {
             this.indexPath = indexPath;
         }
+
+		public LuceneSearch(Directory indexDirectory)
+		{
+			IndexDirectory = indexDirectory;
+		}
 
 		#endregion
 
@@ -67,13 +75,14 @@ namespace Lucinq.Querying
 
         public virtual IIndexSearcherProvider GetIndexSearcherProvider()
         {
-            return new FSDirectorySearcherProvider(indexPath);
+			  if (IndexDirectory == null)
+			  {
+				  return new FSDirectorySearcherProvider(indexPath);
+			  }
+
+			  return new DirectorySearchProvider(IndexDirectory);
         }
 
-        /*public virtual IQueryable<Document> GetQueryable()
-	    {
-	        return new LuceneQueryable<Document>(this);
-	    }*/
 
 		#endregion
 	}

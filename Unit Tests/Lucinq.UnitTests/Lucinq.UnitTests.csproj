@@ -62,6 +62,7 @@
     <Compile Include="BBCFields.cs" />
     <Compile Include="DateCollector.cs" />
     <Compile Include="GeneralConstants.cs" />
+    <Compile Include="IntegrationTests\BaseTestFixture.cs" />
     <Compile Include="IntegrationTests\BasicCollectorTests.cs" />
     <Compile Include="IntegrationTests\BasicTests..cs" />
     <Compile Include="IntegrationTests\DateFieldTests.cs" />
