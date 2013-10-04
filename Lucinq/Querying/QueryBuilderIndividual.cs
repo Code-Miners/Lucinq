@@ -136,6 +136,16 @@ namespace Lucinq.Querying
 
 		#region [ Term Expressions ]
 
+		 public virtual PrefixQuery PrefixedWith(String fieldname, String value, Matches occur = Matches.NotSet, float? boost = null, String key = null)
+		{
+			PrefixQuery query = new PrefixQuery(new Term(fieldname, value));
+			SetBoostValue(query, boost);
+
+			Add(query, occur, key);
+
+			return query;
+		}
+
 		/// <summary>
 		/// Sets up and adds a term query object allowing the search for an explcit term in the field
 		/// Note: Wildcards should use the wildcard query type.

@@ -1,27 +1,24 @@
 ﻿using System;
 using Lucinq.Interfaces;
 using Lucinq.Querying;
+using NUnit.Framework;
 
 namespace Lucinq.UnitTests.IntegrationTests
 {
-    using NUnit.Framework;
-
-    [TestFixture]
-	public class BasicCollectorTests
+	/// <summary>
+	/// 
+	/// </summary>
+   [TestFixture]
+	public class BasicCollectorTests : BaseTestFixture
 	{
-		private static LuceneSearch filesystemSearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
-		static readonly LuceneSearch[] Searches = new[] { filesystemSearch };
-
-		[TestFixtureSetUp]
-		public void Setup()
+		/// <summary>
+		/// 
+		/// </summary>
+		[Test]
+		public void CollectDailyCount()
 		{
-			filesystemSearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
-		}
+			LuceneSearch luceneSearch = new LuceneSearch(IndexDirectory);
 
-
-		[Test, TestCaseSource("Searches")]
-		public void CollectDailyCount(LuceneSearch luceneSearch)
-		{
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup
 				(
@@ -40,10 +37,14 @@ namespace Lucinq.UnitTests.IntegrationTests
 			Console.WriteLine();
 		}
 
-
-		[Test, TestCaseSource("Searches")]
-		public void CollectDailyWithFilterCount(LuceneSearch luceneSearch)
+		/// <summary>
+		/// 
+		/// </summary>
+		[Test]
+		public void CollectDailyWithFilterCount()
 		{
+			LuceneSearch luceneSearch = new LuceneSearch(IndexDirectory);
+
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup
 				(
