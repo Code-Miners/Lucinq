@@ -12,7 +12,7 @@ namespace Lucinq.Querying
 
         private readonly string indexPath;
 
-        private IIndexSearcherProvider IndexSearcherProvider { get; set; }
+        private readonly IIndexSearcherProvider indexSearcherProvider;
 
         #endregion
 
@@ -25,12 +25,12 @@ namespace Lucinq.Querying
 
         public LuceneSearch(Directory indexDirectory)
         {
-            IndexSearcherProvider = new DirectorySearchProvider(indexDirectory);
+            indexSearcherProvider = new DirectorySearchProvider(indexDirectory);
         }
 
-        public LuceneSearch(IIndexSearcherProvider indexSearchProvider)
+        public LuceneSearch(IIndexSearcherProvider indexSearcherProvider)
         {
-            IndexSearcherProvider = indexSearchProvider;
+            this.indexSearcherProvider = indexSearcherProvider;
         }
 
         #endregion
@@ -80,12 +80,12 @@ namespace Lucinq.Querying
 
         public virtual IIndexSearcherProvider GetIndexSearcherProvider()
         {
-            if (IndexSearcherProvider == null)
+            if (indexSearcherProvider == null)
             {
                 return new FSDirectorySearcherProvider(indexPath);
             }
 
-            return IndexSearcherProvider;
+            return indexSearcherProvider;
         }
 
 

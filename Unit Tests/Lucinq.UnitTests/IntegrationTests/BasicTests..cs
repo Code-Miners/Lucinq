@@ -11,28 +11,21 @@ using NUnit.Framework;
 namespace Lucinq.UnitTests.IntegrationTests
 {
 	[TestFixture]
-	public class BasicTests : IntegrationTestBase
+	public class BasicTests : BaseTestFixture
 	{
-        #region [ Fields ]
-
-        private static LuceneSearch filesystemSearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
-        private static readonly LuceneSearch[] searches = { filesystemSearch };
-
-        #endregion
-
 		#region [ Properties ]
 
 		[TestFixtureSetUp]
 		public void Setup()
 		{
-			filesystemSearch = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
 		}
 
 		#endregion
 
-		[Test, TestCaseSource("searches")]
-		public void Term(LuceneSearch luceneSearch)
+		[Test]
+		public void Term()
 		{
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 
 			queryBuilder.Term(BBCFields.Title, "africa");
@@ -43,9 +36,10 @@ namespace Lucinq.UnitTests.IntegrationTests
 		}
 
 
-		[Test, TestCaseSource("searches")]
-		public void TermRange(LuceneSearch luceneSearch)
+		[Test]
+		public void TermRange()
 		{
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 
 			DateTime startDate = new DateTime(2012, 12, 1);
@@ -57,18 +51,20 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 		}
 
-		[Test, TestCaseSource("searches")]
-		public void SetupSyntax(LuceneSearch luceneSearch)
+		[Test]
+		public void SetupSyntax()
 		{
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup(x => x.Term(BBCFields.Title, "africa"));
 
 			ExecuteAndAssert(luceneSearch, queryBuilder, 8);
 		}
 
-		[Test, TestCaseSource("searches")]
-		public void SimpleOrClauseSuccessful(LuceneSearch luceneSearch)
+		[Test]
+		public void SimpleOrClauseSuccessful()
 		{
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 
 			queryBuilder.Or
@@ -80,9 +76,10 @@ namespace Lucinq.UnitTests.IntegrationTests
 			ExecuteAndAssert(luceneSearch, queryBuilder, 12);
 		}
 
-		[Test, TestCaseSource("searches")]
-		public void SimpleAndClauseSuccessful(LuceneSearch luceneSearch)
+		[Test]
+		public void SimpleAndClauseSuccessful()
 		{
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 
 			queryBuilder.And
@@ -94,9 +91,10 @@ namespace Lucinq.UnitTests.IntegrationTests
 			ExecuteAndAssert(luceneSearch, queryBuilder, 1);
 		}
 
-		[Test, TestCaseSource("searches")]
-		public void RemoveAndReexecute(LuceneSearch luceneSearch)
+		[Test]
+		public void RemoveAndReexecute()
 		{
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 
 			queryBuilder.Term(BBCFields.Title, "africa", key: "africacriteria");
@@ -113,9 +111,10 @@ namespace Lucinq.UnitTests.IntegrationTests
 			Assert.AreNotEqual(results.TotalHits, results2.TotalHits);
 		}
 
-		[Test, TestCaseSource("searches")]
-		public void EasyOr(LuceneSearch luceneSearch)
+		[Test]
+		public void EasyOr()
 		{
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Terms(BBCFields.Title, new[] {"europe", "africa"}, Matches.Sometimes);
 			ExecuteAndAssert(luceneSearch, queryBuilder, 12);
@@ -129,25 +128,28 @@ namespace Lucinq.UnitTests.IntegrationTests
 			var results = ExecuteAndAssert(queryBuilder, 12);
 		}*/
 
-		[Test, TestCaseSource("searches")]
-		public void PhraseDistance(LuceneSearch luceneSearch)
+		[Test]
+		public void PhraseDistance()
 		{
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Phrase(2).AddTerm(BBCFields.Title, "wildlife").AddTerm(BBCFields.Title, "africa");
 			var results = ExecuteAndAssert(luceneSearch, queryBuilder, 1);
 		}
 
-		[Test, TestCaseSource("searches")]
-		public void Fuzzy(LuceneSearch luceneSearch)
+		[Test]
+		public void Fuzzy()
 		{
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Fuzzy(BBCFields.Title, "afric");
 			var results = ExecuteAndAssert(luceneSearch, queryBuilder, 16);
 		}
 
-		[Test, TestCaseSource("searches")]
-		public void Paging(LuceneSearch luceneSearch)
+		[Test]
+		public void Paging()
 		{
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup(x => x.WildCard(BBCFields.Description, "a*"));
 
@@ -166,9 +168,10 @@ namespace Lucinq.UnitTests.IntegrationTests
 				
 		}
 
-		[Test, TestCaseSource("searches")]
-		public void Sorting(LuceneSearch luceneSearch)
+		[Test]
+		public void Sorting()
 		{
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup
 				(
@@ -186,9 +189,10 @@ namespace Lucinq.UnitTests.IntegrationTests
 			}
 		}
 
-		[Test, TestCaseSource("searches")]
-		public void MultipleSorting(LuceneSearch luceneSearch)
+		[Test]
+		public void MultipleSorting()
 		{
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup
 				(
@@ -207,9 +211,10 @@ namespace Lucinq.UnitTests.IntegrationTests
 			}
 		}
 
-		[Test, TestCaseSource("searches")]
-		public void MultipleSortingDescending(LuceneSearch luceneSearch)
+		[Test]
+		public void MultipleSortingDescending()
 		{
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup
 				(
@@ -233,9 +238,10 @@ namespace Lucinq.UnitTests.IntegrationTests
 			return String.Format("{0}_{1}", document.GetValues(BBCFields.SecondarySort).FirstOrDefault(), document.GetValues(BBCFields.Sortable).FirstOrDefault());	
 		}
 
-		[Test, TestCaseSource("searches")]
-		public void SortDescending(LuceneSearch luceneSearch)
+		[Test]
+		public void SortDescending()
 		{
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup
 				(
@@ -253,26 +259,29 @@ namespace Lucinq.UnitTests.IntegrationTests
 			}
 		}
 
-		[Test, TestCaseSource("searches")]
-		public void EasyAnd(LuceneSearch luceneSearch)
+		[Test]
+		public void EasyAnd()
 		{
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Terms(BBCFields.Title, new[] { "africa", "road" }, occur: Matches.Always);
 			ExecuteAndAssert(luceneSearch, queryBuilder, 1);
 		}
 
-		[Test, TestCaseSource("searches")]
-		public void WildCard(LuceneSearch luceneSearch)
+		[Test]
+		public void WildCard()
 		{
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup(x => x.WildCard(BBCFields.Description, "a*"));
 
 			ExecuteAndAssert(luceneSearch, queryBuilder, 902);
 		}
 
-		[Test, TestCaseSource("searches")]
-		public void ChainedTerms(LuceneSearch luceneSearch)
+		[Test]
+		public void ChainedTerms()
 		{
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup
 				(
@@ -283,9 +292,10 @@ namespace Lucinq.UnitTests.IntegrationTests
 			ExecuteAndAssert(luceneSearch, queryBuilder, 17);
 		}
 
-		[Test, TestCaseSource("searches")]
-		public void Group(LuceneSearch luceneSearch)
+		[Test]
+		public void Group()
 		{
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup
 				(
@@ -300,9 +310,10 @@ namespace Lucinq.UnitTests.IntegrationTests
 			ExecuteAndAssert(luceneSearch, queryBuilder, 5);
 		}
 
-		[Test, TestCaseSource("searches")]
-		public void SpeedExample(LuceneSearch luceneSearch)
+		[Test]
+		public void SpeedExample()
 		{
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
 			Console.WriteLine("A simple test to show Lucene getting quicker as queries are done");
 			Console.WriteLine("----------------------------------------------------------------");
 			Console.WriteLine();
@@ -332,9 +343,10 @@ namespace Lucinq.UnitTests.IntegrationTests
 			SpeedExampleExecute(luceneSearch, "a");
 		}
 
-	    [Test, TestCaseSource("searches")]
-        public void Enumerable(LuceneSearch luceneSearch)
-	    {
+	    [Test]
+        public void Enumerable()
+        {
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
             IQueryBuilder queryBuilder = new QueryBuilder();
 
             queryBuilder.Term(BBCFields.Title, "africa");
@@ -344,9 +356,10 @@ namespace Lucinq.UnitTests.IntegrationTests
             Assert.AreEqual(8, result.Count());
 	    }
 
-        [Test, TestCaseSource("searches")]
-        public void EnumerableWithWhere(LuceneSearch luceneSearch)
+        [Test]
+        public void EnumerableWithWhere()
         {
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
             IQueryBuilder queryBuilder = new QueryBuilder();
 
             queryBuilder.Term(BBCFields.Title, "africa");
