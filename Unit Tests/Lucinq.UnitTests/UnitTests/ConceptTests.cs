@@ -8,12 +8,13 @@ using Lucene.Net.Util;
 using Lucinq.Enums;
 using Lucinq.Interfaces;
 using Lucinq.Querying;
+using Lucinq.UnitTests.IntegrationTests;
 using NUnit.Framework;
 
 namespace Lucinq.UnitTests.UnitTests
 {
     [TestFixture]
-    public class ConceptTests
+    public class ConceptTests : BaseTestFixture
     {
         /// <summary>
         /// Test to show the speed of opening / closing ram directory
@@ -54,6 +55,7 @@ namespace Lucinq.UnitTests.UnitTests
             Console.WriteLine("Disposed FS Dir");
             stopwatch.Stop();
         }
+
 
         [Test]
         public void OpenCloseOpenClose()
@@ -99,6 +101,17 @@ namespace Lucinq.UnitTests.UnitTests
             LuceneSearchResult result2 = search.Execute(queryBuilder);
             Assert.AreEqual(8, result2.TotalHits);
         }
+
+        [Test]
+        public void BuiltIndexDisposed()
+        {
+            LuceneSearch luceneSearch = new LuceneSearch(IndexDirectory);
+            QueryBuilder qb = new QueryBuilder(x => x.Term(BBCFields.Title, "africa"));
+            var result = luceneSearch.Execute(qb);
+            result.GetPagedDocuments(0, 10);
+            result.GetTopDocuments();
+        }
+
 
         private void WriteTime(Stopwatch stopwatch)
         {

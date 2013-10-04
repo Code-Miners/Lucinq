@@ -17,7 +17,8 @@ namespace Lucinq.Querying
 		public void Dispose()
 		{
 			IndexSearcher.Dispose();
-			CurrentDirectory.Dispose();
+            // Cannot dispose of this, as it doesn't work.
+			//CurrentDirectory.Dispose();
 		}
 
 		public IndexSearcher IndexSearcher { get; private set; }

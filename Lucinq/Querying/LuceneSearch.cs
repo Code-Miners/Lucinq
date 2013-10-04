@@ -6,13 +6,13 @@ using Lucinq.Interfaces;
 
 namespace Lucinq.Querying
 {
-	public class LuceneSearch : ILuceneSearch<LuceneSearchResult>, IIndexSearcherAccessor
+    public class LuceneSearch : ILuceneSearch<LuceneSearchResult>, IIndexSearcherAccessor
     {
-        #region [ Fields ]  
+        #region [ Fields ]
 
-	    private readonly string indexPath;
+        private readonly string indexPath;
 
-		 private Directory IndexDirectory { get; set; }
+        private IIndexSearcherProvider IndexSearcherProvider { get; set; }
 
         #endregion
 
@@ -23,67 +23,72 @@ namespace Lucinq.Querying
             this.indexPath = indexPath;
         }
 
-		public LuceneSearch(Directory indexDirectory)
-		{
-			IndexDirectory = indexDirectory;
-		}
+        public LuceneSearch(Directory indexDirectory)
+        {
+            IndexSearcherProvider = new DirectorySearchProvider(indexDirectory);
+        }
 
-		#endregion
+        public LuceneSearch(IIndexSearcherProvider indexSearchProvider)
+        {
+            IndexSearcherProvider = indexSearchProvider;
+        }
 
-		#region [ Methods ]
+        #endregion
 
-		/// <summary>
-		/// 
-		/// </summary>
-		/// <param name="query"></param>
-		/// <param name="customCollector"></param>
-		/// <param name="filter"></param>
-		public virtual void Collect(Query query, Collector customCollector, Filter filter = null)
-		{
-			Stopwatch stopwatch = new Stopwatch();
-			stopwatch.Start();
+        #region [ Methods ]
 
-		    using (var indexSearcherProvider = GetIndexSearcherProvider())
-		    {
-		        if (filter == null)
-		        {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="query"></param>
+        /// <param name="customCollector"></param>
+        /// <param name="filter"></param>
+        public virtual void Collect(Query query, Collector customCollector, Filter filter = null)
+        {
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+
+            using (var indexSearcherProvider = GetIndexSearcherProvider())
+            {
+                if (filter == null)
+                {
                     indexSearcherProvider.IndexSearcher.Search(query, customCollector);
-		        }
-		        else
-		        {
+                }
+                else
+                {
                     indexSearcherProvider.IndexSearcher.Search(query, filter, customCollector);
-		        }
+                }
 
-		        stopwatch.Stop();
-		    }
-		}
+                stopwatch.Stop();
+            }
+        }
 
-		public virtual LuceneSearchResult Execute(Query query, int noOfResults = Int32.MaxValue - 1, Sort sort = null, Filter filter = null)
-		{
-		    return new LuceneSearchResult(this, query, sort, filter);
-		}
+        public virtual LuceneSearchResult Execute(Query query, int noOfResults = Int32.MaxValue - 1, Sort sort = null, Filter filter = null)
+        {
+            return new LuceneSearchResult(this, query, sort, filter);
+        }
 
-		public LuceneSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1)
-		{
-			return Execute(queryBuilder.Build(), noOfResults, queryBuilder.CurrentSort, queryBuilder.CurrentFilter);
-		}
+        public LuceneSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1)
+        {
+            return Execute(queryBuilder.Build(), noOfResults, queryBuilder.CurrentSort, queryBuilder.CurrentFilter);
+        }
 
-		public virtual void BuildSort()
-		{
-			
-		}
+        public virtual void BuildSort()
+        {
+
+        }
 
         public virtual IIndexSearcherProvider GetIndexSearcherProvider()
         {
-			  if (IndexDirectory == null)
-			  {
-				  return new FSDirectorySearcherProvider(indexPath);
-			  }
+            if (IndexSearcherProvider == null)
+            {
+                return new FSDirectorySearcherProvider(indexPath);
+            }
 
-			  return new DirectorySearchProvider(IndexDirectory);
+            return IndexSearcherProvider;
         }
 
 
-		#endregion
-	}
+        #endregion
+    }
 }
