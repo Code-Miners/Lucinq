@@ -87,7 +87,7 @@ namespace Lucinq.UnitTests.UnitTests
         [Test]
         public void LuceneObjectsIntoLucinq()
         {
-            LuceneSearch search = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
+            LuceneSearch search = new LuceneSearch(new DirectorySearchProvider(IndexDirectory));
             // raw lucene object
             TermQuery query = new TermQuery(new Term(BBCFields.Title, "africa"));
             

@@ -17,7 +17,7 @@ using Version = Lucene.Net.Util.Version;
 namespace Lucinq.UnitTests.IntegrationTests
 {
 	[TestFixture]
-	[Ignore]
+	[Ignore ("Index Rebuilding is specific, run the individual tests.")]
 	public class IndexRebuilder
     {
         #region [ BBC News Indexing ]
