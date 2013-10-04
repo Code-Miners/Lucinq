@@ -6,6 +6,8 @@ namespace Lucinq.Interfaces
 {
     public interface IQueryBuilderIndividual
     {
+	    PrefixQuery PrefixedWith(String fieldname, String value, Matches occur = Matches.NotSet, float? boost = null, String key = null);
+
         /// <summary>
         /// Creates a query using the keyword analyzer
         /// </summary>

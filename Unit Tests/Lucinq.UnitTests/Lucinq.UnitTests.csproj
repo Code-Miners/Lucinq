@@ -67,6 +67,7 @@
     <Compile Include="IntegrationTests\DateFieldTests.cs" />
     <Compile Include="IntegrationTests\IndexRebuilder.cs" />
     <Compile Include="IntegrationTests\IntegrationTestBase.cs" />
+    <Compile Include="IntegrationTests\PrefixTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestHelpers.cs" />
     <Compile Include="UnitTests\ConceptTests.cs" />
