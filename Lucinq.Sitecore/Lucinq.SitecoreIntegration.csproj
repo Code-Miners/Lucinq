@@ -39,29 +39,19 @@
     <Reference Include="HtmlAgilityPack">
       <HintPath>..\Libraries\Sitecore\HtmlAgilityPack.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
-    <Reference Include="Lucene.Net">
-      <HintPath>..\packages\Lucene.Net.3.0.3\lib\NET40\Lucene.Net.dll</HintPath>
+    <Reference Include="Lucene.Net, Version=2.9.4.1, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Lucene.Net.2.9.4.1\lib\net40\Lucene.Net.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Apps.Loader">
       <HintPath>..\Libraries\Sitecore\Sitecore.Apps.Loader.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Client">
       <HintPath>..\Libraries\Sitecore\Sitecore.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.ContentSearch">
-      <HintPath>..\Libraries\Sitecore\Sitecore.ContentSearch.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.ContentSearch.Client">
-      <HintPath>..\Libraries\Sitecore\Sitecore.ContentSearch.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.ContentSearch.Linq">
-      <HintPath>..\Libraries\Sitecore\Sitecore.ContentSearch.Linq.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.ContentSearch.LuceneProvider">
-      <HintPath>..\Libraries\Sitecore\Sitecore.ContentSearch.LuceneProvider.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\Libraries\Sitecore\Sitecore.Kernel.dll</HintPath>
@@ -76,15 +66,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseManagement\DatabaseHelper.cs" />
-    <Compile Include="Extensions\Sitecore7\FieldExtensions.cs" />
     <Compile Include="Extensions\SitecoreQueryBuilderExtensions.cs" />
     <Compile Include="Indexing\FieldConfiguration.cs" />
     <Compile Include="Indexing\IndexingHelper.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
     </Compile>
-    <Compile Include="Indexing\LucinqIndex.cs" />
     <Compile Include="DatabaseManagement\Interfaces\IDatabaseHelper.cs" />
-    <Compile Include="Indexing\IndexOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Constants\SitecoreFields.cs" />
     <Compile Include="Querying\Interfaces\ISitecoreQueryBuilder.cs" />

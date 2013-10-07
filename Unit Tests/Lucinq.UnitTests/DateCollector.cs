@@ -63,9 +63,9 @@ namespace Lucinq.UnitTests
             dates = FieldCache_Fields.DEFAULT.GetLongs(reader, BBCFields.PublishDateObject);
 		}
 
-	    public override bool AcceptsDocsOutOfOrder
+	    public override bool AcceptsDocsOutOfOrder()
 	    {
-            get { return true; }
+            return true;
 	    }
 	}
 }

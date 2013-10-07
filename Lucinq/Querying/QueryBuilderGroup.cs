@@ -54,7 +54,7 @@ namespace Lucinq.Querying
             return booleanQuery;
         }
 
-        public virtual Occur GetLuceneOccur(Matches matches)
+        public virtual BooleanClause.Occur GetLuceneOccur(Matches matches)
         {
             return matches.GetLuceneOccurance();
         }

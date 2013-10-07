@@ -364,7 +364,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 
             queryBuilder.Term(BBCFields.Title, "africa");
 
-            var result = luceneSearch.Execute(queryBuilder).Where(doc => doc.GetField(BBCFields.Title).StringValue.IndexOf("your", StringComparison.OrdinalIgnoreCase) >= 0);
+            var result = luceneSearch.Execute(queryBuilder).Where(doc => doc.GetField(BBCFields.Title).StringValue().IndexOf("your", StringComparison.OrdinalIgnoreCase) >= 0);
             WriteDocuments(result);
             Assert.AreEqual(1, result.Count());
         }

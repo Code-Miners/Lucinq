@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq.Expressions;
-using Lucene.Net.Analysis;
 using Lucene.Net.Search;
 using Lucinq.Enums;
 using Lucinq.Extensions;
@@ -10,7 +8,6 @@ using Lucinq.Querying;
 using Lucinq.SitecoreIntegration.Constants;
 using Lucinq.SitecoreIntegration.Extensions;
 using Lucinq.SitecoreIntegration.Querying.Interfaces;
-using Sitecore.ContentSearch.SearchTypes;
 using Sitecore.Data;
 using Sitecore.Globalization;
 
@@ -105,9 +102,8 @@ namespace Lucinq.SitecoreIntegration.Querying
 
         public virtual TermQuery Id(ID itemId, Matches occur = Matches.NotSet, float? boost = null, string key = null)
         {
-            string fieldName = GetFieldName<SearchResultItem>(SitecoreFields.Id, t => t.ItemId);
             string luceneItemId = itemId.ToLuceneId();
-            return Term(fieldName, luceneItemId, occur, boost, key);
+            return Term(SitecoreFields.Id, luceneItemId, occur, boost, key);
         }
 
         public virtual IQueryBuilder Ids(ID[] itemIds, float? boost = null, Matches occur = Matches.NotSet, Matches childrenOccur = Matches.NotSet, string key = null)
@@ -193,8 +189,7 @@ namespace Lucinq.SitecoreIntegration.Querying
         public TermQuery TemplateId(ID templateId, Matches occur = Matches.NotSet, float? boost = null, string key = null)
         {
             string luceneTemplateId = templateId.ToLuceneId();
-            string fieldName = GetFieldName<SearchResultItem>(SitecoreFields.TemplateId, t => t.TemplateId);
-            return Term(fieldName, luceneTemplateId, occur, boost, key);
+            return Term(SitecoreFields.TemplateId, luceneTemplateId, occur, boost, key);
         }
 
         /// <summary>
@@ -226,8 +221,7 @@ namespace Lucinq.SitecoreIntegration.Querying
         public TermQuery TemplateDescendsFrom(ID templateId, Matches occur = Matches.NotSet, float? boost = null, string key = null)
         {
             string luceneTemplateId = templateId.ToLuceneId();
-            string fieldName = GetFieldName<SearchResultItem>(SitecoreFields.TemplatePath, t => t.TemplateId);
-            return Term(fieldName, luceneTemplateId, occur, boost, key);
+            return Term(SitecoreFields.TemplatePath, luceneTemplateId, occur, boost, key);
         }
 
         #endregion
@@ -244,8 +238,7 @@ namespace Lucinq.SitecoreIntegration.Querying
         /// <returns></returns>
         public Query Name(string value, Matches occur = Matches.NotSet, float? boost = null, string key = null)
         {
-            string fieldName = GetFieldName<SearchResultItem>(SitecoreFields.Name, t => t.Name);
-            return Term(fieldName, value, occur, boost, key);
+            return Term(SitecoreFields.Name, value, occur, boost, key);
         }
 
         /// <summary>
@@ -258,10 +251,9 @@ namespace Lucinq.SitecoreIntegration.Querying
         /// <returns></returns>
         public IQueryBuilder Names(string[] values, Matches occur = Matches.NotSet, float? boost = null, string key = null)
         {
-            string fieldName = GetFieldName<SearchResultItem>(SitecoreFields.TemplateId, t => t.TemplateId);
             foreach (string templateId in values)
             {
-                Term(fieldName, templateId, occur, boost, key);
+                Term(SitecoreFields.TemplateId, templateId, occur, boost, key);
             }
             return this;
         }
@@ -281,8 +273,7 @@ namespace Lucinq.SitecoreIntegration.Querying
         public Query Language(Language language, Matches occur = Matches.NotSet, float? boost = null, string key = null)
         {
             string languageString = language.CultureInfo.Name.ToLower();
-            string fieldName = GetFieldName<SearchResultItem>(SitecoreFields.Language, t => t.Language);
-            return Keyword(fieldName, languageString, occur, boost, key);
+            return Keyword(SitecoreFields.Language, languageString, occur, boost, key);
         }
 
         public IQueryBuilder Languages(Language[] languages, Matches occur = Matches.NotSet, float? boost = null, string key = null)
@@ -308,8 +299,7 @@ namespace Lucinq.SitecoreIntegration.Querying
         public TermQuery DescendantOf(ID ancestorId, Matches occur = Matches.NotSet, float? boost = null, string key = null)
         {
             string ancestorIdString = ancestorId.ToLuceneId();
-            string fieldName = GetFieldName<SearchResultItem>(SitecoreFields.Path, t => t.Paths);
-            return Term(fieldName, ancestorIdString, occur, boost, key);
+            return Term(SitecoreFields.Path, ancestorIdString, occur, boost, key);
         }
         
         /// <summary>
@@ -323,8 +313,7 @@ namespace Lucinq.SitecoreIntegration.Querying
         public TermQuery ChildOf(ID parentId, Matches occur = Matches.NotSet, float? boost = null, string key = null)
         {
             string parentIdString = parentId.ToLuceneId();
-            string fieldName = GetFieldName<SearchResultItem>(SitecoreFields.Parent, t => t.Parent);
-            return Term(fieldName, parentIdString, occur, boost, key);
+            return Term(SitecoreFields.Parent, parentIdString, occur, boost, key);
         }
 
         #endregion
@@ -369,29 +358,7 @@ namespace Lucinq.SitecoreIntegration.Querying
         /// <returns></returns>
         public Query Database(string value, Matches occur = Matches.NotSet, float? boost = null, string key = null)
         {
-            string fieldName = GetFieldName<SearchResultItem>(SitecoreFields.Database, t => t.DatabaseName);
-            return Term(fieldName, value.ToLower(), occur, boost, key);
-        }
-
-        #endregion
-
-        #region [ Field Name Extensions ]
-
-        /// <summary>
-        /// Gets the field name depending on what mode the query builder is running in
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="defaultFieldName"></param>
-        /// <param name="field"></param>
-        /// <returns></returns>
-        public string GetFieldName<T>(string defaultFieldName, Expression<Func<T, object>> field)
-        {
-            string fieldName = defaultFieldName;
-            if (SitecoreMode == SitecoreMode.Sitecore7)
-            {
-                fieldName = Extensions.Sitecore7.FieldExtensions.GetFieldName(field);
-            }
-            return fieldName;
+            return Term(SitecoreFields.Database, value.ToLower(), occur, boost, key);
         }
 
         #endregion

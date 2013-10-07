@@ -7,7 +7,6 @@ using Lucene.Net.Documents;
 using Lucinq.GlassMapper.SitecoreIntegration.Interfaces;
 using Lucinq.Interfaces;
 using Lucinq.SitecoreIntegration.Constants;
-using Sitecore.ContentSearch.SearchTypes;
 using Sitecore.Data;
 using Sitecore.Globalization;
 
@@ -101,11 +100,6 @@ namespace Lucinq.GlassMapper.SitecoreIntegration
 
 		protected virtual T GetItem<T>(Document document) where T : class
 		{
-		    Type type = typeof (T);
-		    if (type.IsAssignableFrom(typeof(SearchResultItem)))
-		    {
-		        
-		    }
             string itemShortId = document.GetValues(SitecoreFields.Id).FirstOrDefault();
 			if (String.IsNullOrEmpty(itemShortId))
 			{

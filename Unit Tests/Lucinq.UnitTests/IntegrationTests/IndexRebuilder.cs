@@ -190,7 +190,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 			var indexFolder = FSDirectory.Open(new DirectoryInfo(GeneralConstants.Paths.CarDataIndex));
 
-			Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_30);
+			Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_29);
 	        using (IndexWriter indexWriter = new IndexWriter(indexFolder, analyzer, IndexWriter.MaxFieldLength.UNLIMITED))
 	        {
 	            foreach (var carDataItem in carDataItems)

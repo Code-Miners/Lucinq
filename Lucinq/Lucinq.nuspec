@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Lucinq-30</id>
+    <id>Lucinq</id>
     <version>$version$</version>
-    <title>Lucinq For Lucene.Net 3.x</title>
+    <title>Lucinq For Lucene.Net 2.9</title>
     <authors>Nathanael Mann, Simon Proctor</authors>
     <owners>Nathanael Mann, Simon Proctor</owners>
     <licenseUrl>http://www.gnu.org/licenses/</licenseUrl>
@@ -13,7 +13,7 @@
     <copyright>Copyright 2013 Cardinal IT Solutions Ltd</copyright>
     <tags>lucene.net lucene lucinq text search information retrieval query</tags>
     <dependencies>
-        <dependency id="Lucene.Net" version="3.0.3"/>
+        <dependency id="Lucene.Net" version="[2.9.4.1]"/>
     </dependencies>
   </metadata>
 </package>

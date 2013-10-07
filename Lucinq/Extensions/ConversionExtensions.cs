@@ -5,16 +5,16 @@ namespace Lucinq.Extensions
 {
     public static class ConversionExtensions
     {
-        public static Occur GetLuceneOccurance(this Matches matches)
+        public static BooleanClause.Occur GetLuceneOccurance(this Matches matches)
         {
             switch (matches)
             {
                 case Matches.Never:
-                    return Occur.MUST_NOT;
+                    return BooleanClause.Occur.MUST_NOT;
                 case Matches.Sometimes:
-                    return Occur.SHOULD;
+                    return BooleanClause.Occur.SHOULD;
                 default:
-                    return Occur.MUST;
+                    return BooleanClause.Occur.MUST;
             }
         }
     }

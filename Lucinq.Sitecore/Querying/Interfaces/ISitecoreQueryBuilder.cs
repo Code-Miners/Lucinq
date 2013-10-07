@@ -107,15 +107,6 @@ namespace Lucinq.SitecoreIntegration.Querying.Interfaces
         Query Database(string value, Matches occur = Matches.NotSet, float? boost = null, string key = null);
 
         /// <summary>
-        /// Gets the field name depending on what mode the query builder is running in
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="defaultFieldName"></param>
-        /// <param name="field"></param>
-        /// <returns></returns>
-        string GetFieldName<T>(string defaultFieldName, Expression<Func<T, object>> field);
-
-        /// <summary>
         /// Creates a simple group that MUST occur, each item of which SHOULD occur by default
         /// </summary>
         /// <param name="queries">The lamdba expressions showing queries</param>

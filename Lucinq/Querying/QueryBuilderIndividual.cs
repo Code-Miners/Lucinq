@@ -254,7 +254,7 @@ namespace Lucinq.Querying
 			PhraseQuery query = new PhraseQuery();
 
 			SetBoostValue(query, boost);
-			query.Slop = slop;
+			query.SetSlop(slop);
 
 			Add(query, occur, key);
 			return query;
@@ -306,46 +306,46 @@ namespace Lucinq.Querying
 			return query;
 		}
 
-        public virtual NumericRangeQuery<int> NumericRange(string fieldName, int minValue, int maxValue, Matches occur = Matches.NotSet, float? boost = null, 
+        public virtual NumericRangeQuery NumericRange(string fieldName, int minValue, int maxValue, Matches occur = Matches.NotSet, float? boost = null, 
 													int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null)
 		{
-			NumericRangeQuery<int> numericRangeQuery = NumericRangeQuery.NewIntRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
+			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewIntRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
 			SetBoostValue(numericRangeQuery, boost);
 			Add(numericRangeQuery, occur, key);
 			return numericRangeQuery;
 		}
 
-        public virtual NumericRangeQuery<float> NumericRange(string fieldName, float minValue, float maxValue, Matches occur = Matches.NotSet, float? boost = null,
+        public virtual NumericRangeQuery NumericRange(string fieldName, float minValue, float maxValue, Matches occur = Matches.NotSet, float? boost = null,
 													int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null)
 		{
-			NumericRangeQuery<float> numericRangeQuery = NumericRangeQuery.NewFloatRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
+			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewFloatRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
 			SetBoostValue(numericRangeQuery, boost);
 			Add(numericRangeQuery, occur, key);
 			return numericRangeQuery;
 		}
 
-        public virtual NumericRangeQuery<double> NumericRange(string fieldName, double minValue, double maxValue, Matches occur = Matches.NotSet, float? boost = null,
+        public virtual NumericRangeQuery NumericRange(string fieldName, double minValue, double maxValue, Matches occur = Matches.NotSet, float? boost = null,
 											int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null)
 		{
-			NumericRangeQuery<double> numericRangeQuery = NumericRangeQuery.NewDoubleRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
+			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewDoubleRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
 			SetBoostValue(numericRangeQuery, boost);
 			Add(numericRangeQuery, occur, key);
 			return numericRangeQuery;
 		}
 
-        public virtual NumericRangeQuery<long> NumericRange(string fieldName, long minValue, long maxValue, Matches occur = Matches.NotSet, float? boost = null,
+        public virtual NumericRangeQuery NumericRange(string fieldName, long minValue, long maxValue, Matches occur = Matches.NotSet, float? boost = null,
 									int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null)
 		{
-			NumericRangeQuery<long> numericRangeQuery = NumericRangeQuery.NewLongRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
+			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewLongRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
 			SetBoostValue(numericRangeQuery, boost);
 			Add(numericRangeQuery, occur, key);
 			return numericRangeQuery;
 		}
 
-		  public virtual NumericRangeQuery<long> DateRange(string fieldName, DateTime minValue, DateTime maxValue, Matches occur = Matches.NotSet, float? boost = null,
+		  public virtual NumericRangeQuery DateRange(string fieldName, DateTime minValue, DateTime maxValue, Matches occur = Matches.NotSet, float? boost = null,
 									int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null)
 		{
-			NumericRangeQuery<long> numericRangeQuery = NumericRangeQuery.NewLongRange(fieldName, precisionStep, minValue.Ticks, maxValue.Ticks, includeMin, includeMax);
+			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewLongRange(fieldName, precisionStep, minValue.Ticks, maxValue.Ticks, includeMin, includeMax);
 			SetBoostValue(numericRangeQuery, boost);
 			Add(numericRangeQuery, occur, key);
 			return numericRangeQuery;
@@ -458,7 +458,7 @@ namespace Lucinq.Querying
 			{
 				return;
 			}
-			query.Boost = boost.Value;
+			query.SetBoost(boost.Value);
 		}
 
 		protected virtual void SetOccurValue(IQueryBuilder inputQueryBuilder, ref Matches occur)

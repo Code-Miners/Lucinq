@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Lucene.Net.Store;
 
 namespace Lucinq.Querying
@@ -24,7 +25,7 @@ namespace Lucinq.Querying
 
 	public class FSDirectorySearcherProvider : DirectorySearchProvider
 	{
-		public FSDirectorySearcherProvider(String indexPath) : base(FSDirectory.Open(indexPath))
+		public FSDirectorySearcherProvider(String indexPath) : base(FSDirectory.Open(new DirectoryInfo(indexPath)))
 		{
 			
 		}

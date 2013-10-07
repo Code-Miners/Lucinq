@@ -59,7 +59,7 @@ namespace Lucinq.Querying
 		        ExecuteSearch(indexSearcherProvider);
 		        return topDocs == null
 		            ? null
-		            : (from ScoreDoc doc in topDocs.ScoreDocs select GetDocument(doc.Doc, indexSearcherProvider.IndexSearcher)).ToList();
+		            : (from ScoreDoc doc in topDocs.ScoreDocs select GetDocument(doc.doc, indexSearcherProvider.IndexSearcher)).ToList();
 		    }
 		}
 
@@ -85,7 +85,7 @@ namespace Lucinq.Querying
 
 		        for (var i = start; i <= end; i++)
 		        {
-                    documents.Add(GetDocument(topDocs.ScoreDocs[i].Doc, indexSearcherProvider.IndexSearcher));
+                    documents.Add(GetDocument(topDocs.ScoreDocs[i].doc, indexSearcherProvider.IndexSearcher));
 		        }
 
 		        return documents;
