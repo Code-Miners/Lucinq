@@ -1,14 +1,5 @@
 ﻿using System;
-using System.Linq.Expressions;
-using Lucene.Net.Search;
-using Lucinq.Enums;
-using Lucinq.Extensions;
-using Lucinq.Interfaces;
-using Lucinq.SitecoreIntegration.Constants;
-using Lucinq.SitecoreIntegration.Querying;
-using Sitecore.ContentSearch.SearchTypes;
 using Sitecore.Data;
-using Sitecore.Globalization;
 
 namespace Lucinq.SitecoreIntegration.Extensions
 {

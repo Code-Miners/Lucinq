@@ -37,6 +37,12 @@ namespace Lucinq.Querying
 
         #region [ Methods ]
 
+
+        public virtual void Collect(IQueryBuilder queryBuilder, Collector customCollector, Filter filter = null)
+        {
+            Collect(queryBuilder.Build(), customCollector, filter);
+        }
+
         /// <summary>
         /// 
         /// </summary>
@@ -48,15 +54,15 @@ namespace Lucinq.Querying
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
 
-            using (var indexSearcherProvider = GetIndexSearcherProvider())
+            using (var collectorSearcherProvider = GetIndexSearcherProvider())
             {
                 if (filter == null)
                 {
-                    indexSearcherProvider.IndexSearcher.Search(query, customCollector);
+                    collectorSearcherProvider.IndexSearcher.Search(query, customCollector);
                 }
                 else
                 {
-                    indexSearcherProvider.IndexSearcher.Search(query, filter, customCollector);
+                    collectorSearcherProvider.IndexSearcher.Search(query, filter, customCollector);
                 }
 
                 stopwatch.Stop();
