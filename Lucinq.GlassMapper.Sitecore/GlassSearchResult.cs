@@ -4,8 +4,8 @@ using System.Diagnostics;
 using System.Linq;
 using Glass.Mapper.Sc;
 using Lucene.Net.Documents;
-using Lucinq.GlassMapper.SitecoreIntegration.Interfaces;
 using Lucinq.Interfaces;
+using Lucinq.Querying;
 using Lucinq.SitecoreIntegration.Constants;
 using Sitecore.ContentSearch.SearchTypes;
 using Sitecore.Data;
@@ -13,7 +13,7 @@ using Sitecore.Globalization;
 
 namespace Lucinq.GlassMapper.SitecoreIntegration
 {
-	public class GlassSearchResult : IGlassSearchResult
+	public class GlassSearchResult<T> : ISearchResult<T> where T : class
 	{
 		#region [ Constructors ]
 
@@ -47,7 +47,7 @@ namespace Lucinq.GlassMapper.SitecoreIntegration
 		/// <param name="end"></param>
 		/// <param name="multiplier"></param>
 		/// <returns></returns>
-		public IGlassItemResult<T> GetPagedItems<T>(int start, int end, int multiplier = 3) where T : class
+		public IItemResult<T> GetPagedItems(int start, int end, int multiplier = 3)
 		{
 			List<T> items = new List<T>();
 			Stopwatch stopwatch = new Stopwatch();
@@ -71,35 +71,35 @@ namespace Lucinq.GlassMapper.SitecoreIntegration
 					numberAdded++;
 				});
 			stopwatch.Stop();
-			return new GlassItemResult<T>(items, LuceneSearchResult.TotalHits) { ElapsedTimeMs = stopwatch.ElapsedMilliseconds };
+			return new ItemResult<T>(items, LuceneSearchResult.TotalHits) { ElapsedTimeMs = stopwatch.ElapsedMilliseconds };
 		}
 
-		/// <summary>
-		/// Gets all of the items related to the top documents
-		/// </summary>
-		/// <typeparam name="T"></typeparam>
-		/// <returns></returns>
-		public IGlassItemResult<T> GetTopItems<T>() where T : class
+	    /// <summary>
+	    /// Gets all of the items related to the top documents
+	    /// </summary>
+	    /// <typeparam name="T"></typeparam>
+	    /// <returns></returns>
+	    public IItemResult<T> GetTopItems()
 		{
 			List<T> items = new List<T>();
 			Stopwatch stopwatch = new Stopwatch();
 			stopwatch.Start();
 			LuceneSearchResult.GetTopDocuments().ForEach(document => AddItem(document, items));
 			stopwatch.Stop();
-			return new GlassItemResult<T>(items, LuceneSearchResult.TotalHits) { ElapsedTimeMs = stopwatch.ElapsedMilliseconds };
+			return new ItemResult<T>(items, LuceneSearchResult.TotalHits) { ElapsedTimeMs = stopwatch.ElapsedMilliseconds };
 		}
 
-		public T GetItem<T>(int index = 0) where T : class
+		public T GetItem(int index = 0)
 		{
 			var topDocs = LuceneSearchResult.GetTopDocuments();
 			if (index < 0 || index > topDocs.Count - 1)
 			{
 				return null;
 			}
-			return GetItem<T>(topDocs[index]);
+			return GetItem(topDocs[index]);
 		}
 
-		protected virtual T GetItem<T>(Document document) where T : class
+		protected virtual T GetItem(Document document)
 		{
 		    Type type = typeof (T);
 		    if (type.IsAssignableFrom(typeof(SearchResultItem)))
@@ -122,9 +122,9 @@ namespace Lucinq.GlassMapper.SitecoreIntegration
 			return SitecoreService.GetItem<T>(itemId.ToGuid(), itemLanguage);
 		}
 
-		private bool AddItem<T>(Document document, ICollection<T> items) where T : class
+		private bool AddItem(Document document, ICollection<T> items)
 		{
-			T item = GetItem<T>(document);
+			T item = GetItem(document);
 			if (item == null)
 			{
 				return false;

@@ -33,10 +33,10 @@ namespace Lucinq.GlassMapper.Sitecore.UnitTests.Objects
         [SitecoreId]
         public Guid Id { get; set; }
 
-        [SitecoreField("Page Title")]
+        [SitecoreField("Title")]
         public string PageTitle { get; set; }
 
-        [SitecoreField("Page Subtitle")]
+        [SitecoreField("Subtitle")]
         public string PageSubtitle { get; set; }
     }
 

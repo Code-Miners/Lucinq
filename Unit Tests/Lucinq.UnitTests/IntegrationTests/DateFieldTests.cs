@@ -57,7 +57,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 			);
 
 			LuceneSearchResult result = luceneSearch.Execute(queryBuilder);
-			List<NewsArticle> data = Mapper.Map<List<Document>, List<NewsArticle>>(result.GetTopDocuments());
+            List<NewsArticle> data = Mapper.Map<List<Document>, List<NewsArticle>>(result.GetTopDocuments());
 
 			WriteDocuments(data);
 
@@ -84,7 +84,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 			);
 
 			LuceneSearchResult result = luceneSearch.Execute(queryBuilder);
-			List<NewsArticle> data = Mapper.Map<List<Document>, List<NewsArticle>>(result.GetTopDocuments());
+            List<NewsArticle> data = Mapper.Map<List<Document>, List<NewsArticle>>(result.GetTopDocuments());
 
 			WriteDocuments(data);
 

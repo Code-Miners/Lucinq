@@ -50,7 +50,7 @@ namespace Lucinq.Querying
 
 		#endregion
 
-		#region [ Methods ] 
+		#region [ Methods ]
 
 		public virtual List<Document> GetTopDocuments()
 		{

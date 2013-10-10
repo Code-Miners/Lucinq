@@ -1,14 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Lucinq.GlassMapper.SitecoreIntegration.Interfaces;
+using Lucinq.Interfaces;
 
-namespace Lucinq.GlassMapper.SitecoreIntegration
+namespace Lucinq.Querying
 {
-	public class GlassItemResult<T> : IGlassItemResult<T>
+	public class ItemResult<T> : IItemResult<T>
 	{
 		#region [ Constructors ]
 
-		public GlassItemResult(List<T> items, int totalHits)
+		public ItemResult(List<T> items, int totalHits)
 		{
 			Items = items;
 			TotalHits = totalHits;

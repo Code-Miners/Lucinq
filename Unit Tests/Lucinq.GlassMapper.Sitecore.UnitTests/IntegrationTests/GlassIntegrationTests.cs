@@ -6,7 +6,7 @@ using Lucinq.GlassMapper.Sitecore.UnitTests.App_Start;
 using Lucinq.GlassMapper.Sitecore.UnitTests.Objects;
 using Lucinq.GlassMapper.SitecoreIntegration;
 using Lucinq.GlassMapper.SitecoreIntegration.Extensions;
-using Lucinq.GlassMapper.SitecoreIntegration.Interfaces;
+using Lucinq.Interfaces;
 using Lucinq.Querying;
 using Lucinq.SitecoreIntegration.Constants;
 using Lucinq.SitecoreIntegration.Querying;
@@ -31,11 +31,10 @@ namespace Lucinq.GlassMapper.Sitecore.UnitTests.IntegrationTests
             _context.Load(GlassMapperScCustom.GlassLoaders());
             GlassMapperScCustom.PostLoad();
             _context.Load();
-            search = new LuceneSearch(IndexPath);
-            service = new SitecoreService("web");
+            search = new LuceneSearch(global::Sitecore.Configuration.Settings.IndexFolder + "\\lucinq_master_index");
+            service = new SitecoreService("master");
 		}
 
-		private const string IndexPath = @"C:\Work\BoltonWanderers\Source\Websites\Sitecore\App_Data\SitecoreData\indexes\lucinq_web_index";
 
         #region [ Mapping Tests ]
 
@@ -64,11 +63,13 @@ namespace Lucinq.GlassMapper.Sitecore.UnitTests.IntegrationTests
 	    public void GetItemsUsingGlass()
 	    {
             ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
-            queryBuilder.Field<PageContent>(t => t.PageTitle, "*new*");
-            IGlassSearchResult sitecoreSearchResult = new GlassSearchResult(service, search.Execute(queryBuilder));
-            IGlassItemResult<PageContent> result = sitecoreSearchResult.GetPagedItems<PageContent>(0, 20);
+            queryBuilder.Field<PageContent>(t => t.PageTitle, "ford");
+            ISearchResult<PageContent> sitecoreSearchResult = new GlassSearchResult<PageContent>(service, search.Execute(queryBuilder));
+            IItemResult<PageContent> result = sitecoreSearchResult.GetPagedItems(0, 19);
+            Assert.AreEqual(20, result.Items.Count);
             foreach (PageContent item in result)
             {
+                Assert.IsTrue(item.PageTitle.IndexOf("ford", StringComparison.InvariantCultureIgnoreCase) >= 0);
                 Console.WriteLine("Page Title: " + item.PageTitle);
                 Console.WriteLine("Page Subtitle: " + item.PageSubtitle);
                 Console.WriteLine("Id: " + item.Id);

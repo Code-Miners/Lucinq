@@ -91,7 +91,7 @@ namespace Lucinq.SitecoreIntegration.UnitTests.IntegrationTests
 		public void MoreResultsThanLuceneHits()
 		{
             ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
-			queryBuilder.Setup(x => x.Field("page_title", "ford"));
+			queryBuilder.Setup(x => x.Field("page_title", "lucinq*"));
 			// queryBuilder.TemplateId(templateId);
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder, 20);
@@ -103,7 +103,7 @@ namespace Lucinq.SitecoreIntegration.UnitTests.IntegrationTests
 			Console.WriteLine("Lucene Elapsed Time: {0}", sitecoreSearchResult.ElapsedTimeMs);
 			Console.WriteLine("Sitecore Elapsed Time: {0}", sitecoreItemResult.ElapsedTimeMs);
 
-			Assert.AreEqual(2, sitecoreItemResult.Items.Count);
+			Assert.AreEqual(1, sitecoreItemResult.Items.Count);
 
 			sitecoreItemResult.Items.ForEach(
 					item => Console.WriteLine(item.Name));
