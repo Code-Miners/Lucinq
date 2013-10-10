@@ -28,12 +28,12 @@ namespace Lucinq.SitecoreIntegration.Indexing
 
         #region [ Constructors ]
 
-        public IndexOperations(ILuceneProviderIndex index, string[] rootPath)
+        public IndexOperations(ILuceneProviderIndex index, string[] rootPaths)
         {
             Assert.ArgumentNotNull(index, "index");
             Assert.IsNotNull(index.Schema, "Index schema not available.");
             this.index = index;
-            this.rootPaths = rootPath;
+            this.rootPaths = rootPaths;
         }
 
         #endregion
@@ -43,6 +43,14 @@ namespace Lucinq.SitecoreIntegration.Indexing
         public virtual void Update(IIndexable indexable, IProviderUpdateContext context, ProviderIndexConfiguration indexConfiguration)
         {
             Document document = GetIndexData(indexable, context);
+
+            bool valid = ItemIsValid(indexable);
+
+            if (!valid)
+            {
+                return;
+            }
+
             if (document == null)
             {
                 CrawlingLog.Log.Warn(
@@ -117,6 +125,12 @@ namespace Lucinq.SitecoreIntegration.Indexing
 
         private bool ItemIsValid(IIndexable indexable)
         {
+            SitecoreIndexableItem sitecoreIndexableItem = indexable as SitecoreIndexableItem;
+            if(sitecoreIndexableItem == null)
+            {
+                return false;
+            }
+
             bool valid;
             if (rootPaths == null || rootPaths.Length == 0)
             {
@@ -124,7 +138,7 @@ namespace Lucinq.SitecoreIntegration.Indexing
             }
             else
             {
-                valid = rootPaths.Any(indexingRootPath => indexable.AbsolutePath.IndexOf(indexingRootPath, StringComparison.OrdinalIgnoreCase) >= 0);
+                valid = rootPaths.Any(indexingRootPath => sitecoreIndexableItem.Item.Paths.FullPath.IndexOf(indexingRootPath, StringComparison.OrdinalIgnoreCase) >= 0);
             }
             return valid;
         }

@@ -80,7 +80,7 @@ namespace Lucinq.SitecoreIntegration.Indexing
             AddItemPath(item, pathBuilder);
 
             document.Setup(
-                    x => x.AddAnalysedField(SitecoreFields.Id, item.ID.ToLuceneId(), true),
+                    x => x.AddNonAnalysedField(SitecoreFields.Id, item.ID.ToLuceneId(), true),
                     x => x.AddNonAnalysedField(SitecoreFields.Language, item.Language.Name, true),
                     x => x.AddNonAnalysedField(SitecoreFields.TemplateId, item.TemplateID.ToLuceneId(), true),
                     x => x.AddAnalysedField(SitecoreFields.Name, item.Name, true),

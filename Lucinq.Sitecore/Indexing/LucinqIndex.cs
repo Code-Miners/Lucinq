@@ -1,6 +1,4 @@
-﻿using System;
-using System.Linq;
-using Sitecore.ContentSearch;
+﻿using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.LuceneProvider;
 using Sitecore.ContentSearch.Maintenance;
 
@@ -38,21 +36,12 @@ namespace Lucinq.SitecoreIntegration.Indexing
         {
             if (input.Contains("|"))
             {
-                rootPaths = input.Split('|').Select(GetPath).ToArray();
+                rootPaths = input.Split('|');
                 return;
             }
-
-            rootPaths = new[] {GetPath(input)};
+            rootPaths = new[] {input};
         }
 
-        private string GetPath(string input)
-        {
-            if (input.IndexOf("/sitecore/content", StringComparison.OrdinalIgnoreCase) >= 0)
-            {
-                return input.Substring(17);
-            }
-            return input;
-        }
         
         #endregion
     }

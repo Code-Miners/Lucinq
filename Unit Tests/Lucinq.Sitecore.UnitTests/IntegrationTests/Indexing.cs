@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using Sitecore.Search;
 
-namespace Lucinq.Sitecore.UnitTests.IntegrationTests
+namespace Lucinq.SitecoreIntegration.UnitTests.IntegrationTests
 {
 	[TestFixture]
 	public class Indexing

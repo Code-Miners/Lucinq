@@ -8,7 +8,7 @@ using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Globalization;
 
-namespace Lucinq.Sitecore.UnitTests.IntegrationTests
+namespace Lucinq.SitecoreIntegration.UnitTests.IntegrationTests
 {
 	[TestFixture]
 	public class QueryTests
@@ -24,7 +24,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		[TestFixtureSetUp]
 		public void Setup()
 		{
-			search = new SitecoreSearch(Constants.IndexPath, new DatabaseHelper("web"));
+			search = new SitecoreSearch(Sitecore.Configuration.Settings.IndexFolder + "\\lucinq_master_index", new DatabaseHelper("master"));
 		}
 
 		#endregion
@@ -34,7 +34,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		[Test]
 		public void GetByTemplateId()
 		{
-			ID templateId = new ID(Constants.TestTemplateId);
+            ID templateId = SitecoreIds.AdvertTemplateId;
 
             ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
 			queryBuilder.Setup(x => x.TemplateId(templateId));
@@ -45,10 +45,6 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 			Assert.Greater(sitecoreSearchResult.LuceneSearchResult.TotalHits, 0);
 
 			ISitecoreItemResult sitecoreItemResult = sitecoreSearchResult.GetPagedItems(0, 10);
-		    foreach (Item item in sitecoreItemResult)
-		    {
-		        
-		    }
 
 			Console.WriteLine("Lucene Elapsed Time: {0}", sitecoreSearchResult.ElapsedTimeMs);
 			Console.WriteLine("Sitecore Elapsed Time: {0}", sitecoreItemResult.ElapsedTimeMs);
@@ -57,7 +53,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 					item =>
 					{
 						Console.WriteLine(item.Name);
-						Assert.AreEqual(Constants.TestTemplateId, item.TemplateID.ToString());
+                        Assert.AreEqual(SitecoreIds.AdvertTemplateId, item.TemplateID);
 					});
 			Assert.Greater(sitecoreItemResult.Items.Count, 0);
 		}
@@ -69,7 +65,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 	    [Test]
 	    public void GetEnumerableItems()
 	    {
-			ID templateId = new ID(Constants.TestTemplateId);
+            ID templateId = SitecoreIds.AdvertTemplateId;
 
             ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
 			queryBuilder.Setup(x => x.TemplateId(templateId));
@@ -94,10 +90,8 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
         [Test]
 		public void MoreResultsThanLuceneHits()
 		{
-			ID templateId = new ID(Constants.TestTemplateId);
-
             ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
-			queryBuilder.Setup(x => x.TemplateId(templateId));
+			queryBuilder.Setup(x => x.Field("page_title", "ford"));
 			// queryBuilder.TemplateId(templateId);
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder, 20);
@@ -112,10 +106,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 			Assert.AreEqual(2, sitecoreItemResult.Items.Count);
 
 			sitecoreItemResult.Items.ForEach(
-					item =>
-					{
-						Console.WriteLine(item.Name);
-					});
+					item => Console.WriteLine(item.Name));
 			Assert.Greater(sitecoreItemResult.Items.Count, 0);
 		}
 
@@ -127,8 +118,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		public void GetById()
 		{
             ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
-			ID itemId = new ID(Constants.HomeItemId);
-			queryBuilder.Setup(x => x.Id(itemId));
+            queryBuilder.Setup(x => x.Id(SitecoreIds.HomeItemId));
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder);
 			Assert.Greater(sitecoreSearchResult.TotalHits, 0);
@@ -141,7 +131,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 				item =>
 				{
 					Console.WriteLine(item.Name);
-					Assert.AreEqual(itemId, item.ID);
+                    Assert.AreEqual(SitecoreIds.HomeItemId, item.ID);
 				});
 			Assert.Greater(sitecoreItemResult.Items.Count, 0);
 		}
@@ -154,7 +144,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		public void GetByName()
 		{
             ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
-			queryBuilder.Setup(x => x.Name("whites"));
+			queryBuilder.Setup(x => x.Name("ford"));
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder);
 			Assert.Greater(sitecoreSearchResult.TotalHits, 0);
@@ -167,7 +157,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 				item =>
 				{
 					Console.WriteLine(item.Name);
-					Assert.IsTrue(item.Name.IndexOf("whites", StringComparison.InvariantCultureIgnoreCase) >= 0);
+					Assert.IsTrue(item.Name.IndexOf("ford", StringComparison.InvariantCultureIgnoreCase) >= 0);
 				});
 			Assert.Greater(sitecoreItemResult.Items.Count, 0);
 		}
@@ -240,7 +230,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		public void GetByFieldValue()
 		{
             ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
-            queryBuilder.Setup(x => x.Field("title", "contact us"));
+            queryBuilder.Setup(x => x.Field("page_title", "ford"));
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder);
 			Assert.Greater(sitecoreSearchResult.TotalHits, 0);
@@ -253,7 +243,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 				item =>
 				{
 					Console.WriteLine(item.Name);
-                    Assert.IsTrue(item["title"].IndexOf("contact us", StringComparison.InvariantCultureIgnoreCase) >= 0);
+                    Assert.IsTrue(item["page title"].IndexOf("ford", StringComparison.InvariantCultureIgnoreCase) >= 0);
 				});
 			Assert.Greater(sitecoreItemResult.Items.Count, 0);
 		}
@@ -266,13 +256,13 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		public void GetFirstItem()
 		{
             ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
-			queryBuilder.Setup(x => x.Field("title", "contact"));
+			queryBuilder.Setup(x => x.Field("page_title", "ford"));
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder);
 			Assert.Greater(sitecoreSearchResult.TotalHits, 0);
 			Item item = sitecoreSearchResult.GetItem();
 			Console.WriteLine(item.Name);
-			Assert.IsTrue(item["title"].IndexOf("contact", StringComparison.InvariantCultureIgnoreCase) >= 0);
+			Assert.IsTrue(item["page title"].IndexOf("ford", StringComparison.InvariantCultureIgnoreCase) >= 0);
 			Console.WriteLine("Lucene Elapsed Time: {0}", sitecoreSearchResult.ElapsedTimeMs);
 		}
 
@@ -280,7 +270,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		public void GetItemOutsideIndex()
 		{
             ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
-			queryBuilder.Setup(x => x.Field("title", "contact"));
+			queryBuilder.Setup(x => x.Field("page_title", "ford"));
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder);
 			Assert.Greater(sitecoreSearchResult.TotalHits, 0);
@@ -303,7 +293,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		private void Ancestor(bool displayOutput = true)
 		{
             ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
-			queryBuilder.Setup(x => x.DescendantOf(new ID(Constants.HomeItemId)));
+			queryBuilder.Setup(x => x.DescendantOf(SitecoreIds.MakesPageId));
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder);
 
@@ -317,10 +307,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 			if (displayOutput)
 			{
 				sitecoreItemResult.Items.ForEach(
-					item =>
-						{
-							Console.WriteLine(item.Name);
-						});
+					item => Console.WriteLine(item.Name));
 			}
 
 			Assert.Greater(sitecoreItemResult.Items.Count, 0);
@@ -331,8 +318,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		public void GetByParent()
 		{
             SitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
-			ID parentId = new ID(Constants.HomeItemId);
-			queryBuilder.Setup(x => x.ChildOf(parentId));
+            queryBuilder.Setup(x => x.ChildOf(SitecoreIds.HomeItemId));
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder);
 			Assert.Greater(sitecoreSearchResult.TotalHits, 0);
@@ -345,7 +331,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 				item =>
 				{
 					Console.WriteLine(item.Name);
-					Assert.AreEqual(parentId, item.Parent.ID);
+                    Assert.AreEqual(SitecoreIds.HomeItemId, item.Parent.ID);
 				});
 			Assert.Greater(sitecoreItemResult.Items.Count, 0);
 		}
@@ -355,8 +341,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		{
             ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
 
-			ID templateId = new ID(Constants.DerivedTemplateId);
-            queryBuilder.Setup(x => x.TemplateDescendsFrom(templateId));
+            queryBuilder.Setup(x => x.TemplateDescendsFrom(SitecoreIds.AdvertTemplateId));
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder);
 			Assert.Greater(sitecoreSearchResult.TotalHits, 0);
@@ -366,10 +351,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 			Console.WriteLine("Sitecore Elapsed Time: {0}", sitecoreItemResult.ElapsedTimeMs);
 
 			sitecoreItemResult.Items.ForEach(
-				item =>
-				{
-					Console.WriteLine(item.Name);
-				});
+				item => Console.WriteLine(item.Name));
 			Assert.Greater(sitecoreItemResult.Items.Count, 0);
 		}
 
@@ -402,7 +384,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
 		public  void Paging()
 		{
             ISitecoreQueryBuilder queryBuilder = new SitecoreQueryBuilder();
-			queryBuilder.Setup(x => x.DescendantOf(new ID(Constants.HomeItemId)));
+			queryBuilder.Setup(x => x.DescendantOf(SitecoreIds.MakesPageId));
 
 			ISitecoreSearchResult sitecoreSearchResult = search.Execute(queryBuilder);
 

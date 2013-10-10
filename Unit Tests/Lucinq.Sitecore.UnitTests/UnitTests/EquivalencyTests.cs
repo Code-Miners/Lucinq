@@ -1,14 +1,13 @@
 ﻿using Lucinq.SitecoreIntegration.Querying;
 using Lucinq.SitecoreIntegration.Querying.Interfaces;
 using NUnit.Framework;
-using Sitecore.Data;
 using Lucinq.Interfaces;
 using Lucinq.Querying;
 using Lucinq.SitecoreIntegration.Constants;
 using Lucinq.SitecoreIntegration.Extensions;
 using Sitecore.Globalization;
 
-namespace Lucinq.Sitecore.UnitTests.UnitTests
+namespace Lucinq.SitecoreIntegration.UnitTests.UnitTests
 {
     [TestFixture]
     public class EquivalencyTests
@@ -16,11 +15,10 @@ namespace Lucinq.Sitecore.UnitTests.UnitTests
         [Test]
         public void IdEquivalent()
         {
-            ID homeItemId = new ID(Constants.HomeItemId);
             IQueryBuilder expectedQueryBuilder =
-                new QueryBuilder(x => x.Term(SitecoreFields.Id, homeItemId.ToLuceneId()));
+                new QueryBuilder(x => x.Term(SitecoreFields.Id, SitecoreIds.HomeItemId.ToLuceneId()));
 
-            ISitecoreQueryBuilder actualQueryBuilder = new SitecoreQueryBuilder(x => x.Id(homeItemId));
+            ISitecoreQueryBuilder actualQueryBuilder = new SitecoreQueryBuilder(x => x.Id(SitecoreIds.HomeItemId));
             Assert.AreEqual(expectedQueryBuilder.Build().ToString(), actualQueryBuilder.Build().ToString());
         }
 
@@ -30,47 +28,43 @@ namespace Lucinq.Sitecore.UnitTests.UnitTests
         [Test]
         public void AncestorEquivalent()
         {
-            ID homeItemId = new ID(Constants.HomeItemId);
             IQueryBuilder expectedQueryBuilder =
-                new QueryBuilder(x => x.Term(SitecoreFields.Path, homeItemId.ToLuceneId()));
+                new QueryBuilder(x => x.Term(SitecoreFields.Path, SitecoreIds.HomeItemId.ToLuceneId()));
 
-            ISitecoreQueryBuilder actualQueryBuilder = new SitecoreQueryBuilder(x => x.DescendantOf(homeItemId));
+            ISitecoreQueryBuilder actualQueryBuilder = new SitecoreQueryBuilder(x => x.DescendantOf(SitecoreIds.HomeItemId));
             Assert.AreEqual(expectedQueryBuilder.Build().ToString(), actualQueryBuilder.Build().ToString());
         }
 
         [Test]
         public void BaseTemplateEquivalent()
         {
-            ID homeItemId = new ID(Constants.HomeItemId);
             IQueryBuilder expectedQueryBuilder =
-                new QueryBuilder(x => x.Term(SitecoreFields.TemplatePath, homeItemId.ToLuceneId()));
+                new QueryBuilder(x => x.Term(SitecoreFields.TemplatePath, SitecoreIds.HomeItemId.ToLuceneId()));
 
-            ISitecoreQueryBuilder actualQueryBuilder = new SitecoreQueryBuilder(x => x.TemplateDescendsFrom(homeItemId));
+            ISitecoreQueryBuilder actualQueryBuilder = new SitecoreQueryBuilder(x => x.TemplateDescendsFrom(SitecoreIds.HomeItemId));
             Assert.AreEqual(expectedQueryBuilder.Build().ToString(), actualQueryBuilder.Build().ToString());
         }
 
         [Test]
         public void TemplateEquivalent()
         {
-            ID homeItemId = new ID(Constants.HomeItemId);
             IQueryBuilder expectedQueryBuilder =
-                new QueryBuilder(x => x.Term(SitecoreFields.TemplateId, homeItemId.ToLuceneId()));
+                new QueryBuilder(x => x.Term(SitecoreFields.TemplateId, SitecoreIds.HomeItemId.ToLuceneId()));
 
-            ISitecoreQueryBuilder actualQueryBuilder = new SitecoreQueryBuilder(x => x.TemplateId(homeItemId));
+            ISitecoreQueryBuilder actualQueryBuilder = new SitecoreQueryBuilder(x => x.TemplateId(SitecoreIds.HomeItemId));
             Assert.AreEqual(expectedQueryBuilder.Build().ToString(), actualQueryBuilder.Build().ToString());
         }
 
         [Test]
         public void TemplateIdsEquivalent()
         {
-            ID homeItemId = new ID(Constants.HomeItemId);
             IQueryBuilder expectedQueryBuilder =
                 new QueryBuilder(
                     x => x.And(
-                        y => y.Term(SitecoreFields.TemplateId, homeItemId.ToLuceneId()),
-                        y => y.Term(SitecoreFields.TemplateId, homeItemId.ToLuceneId())));
+                        y => y.Term(SitecoreFields.TemplateId, SitecoreIds.HomeItemId.ToLuceneId()),
+                        y => y.Term(SitecoreFields.TemplateId, SitecoreIds.HomeItemId.ToLuceneId())));
 
-            var templateIds = new[] {homeItemId, homeItemId};
+            var templateIds = new[] { SitecoreIds.HomeItemId, SitecoreIds.HomeItemId };
             ISitecoreQueryBuilder actualQueryBuilder = new SitecoreQueryBuilder(x => x.TemplateIds(templateIds));
             Assert.AreEqual(expectedQueryBuilder.Build().ToString(), actualQueryBuilder.Build().ToString());
         }
@@ -98,18 +92,16 @@ namespace Lucinq.Sitecore.UnitTests.UnitTests
         [Test]
         public void ParentEquivalent()
         {
-            ID homeItemId = new ID(Constants.HomeItemId);
             ISitecoreQueryBuilder expectedQueryBuilder =
-                new SitecoreQueryBuilder(x => x.Term(SitecoreFields.Parent, homeItemId.ToLuceneId()));
+                new SitecoreQueryBuilder(x => x.Term(SitecoreFields.Parent, SitecoreIds.HomeItemId.ToLuceneId()));
 
-            ISitecoreQueryBuilder actualQueryBuilder = new SitecoreQueryBuilder(x => x.ChildOf(homeItemId));
+            ISitecoreQueryBuilder actualQueryBuilder = new SitecoreQueryBuilder(x => x.ChildOf(SitecoreIds.HomeItemId));
             Assert.AreEqual(expectedQueryBuilder.Build().ToString(), actualQueryBuilder.Build().ToString());
         }
 
         [Test]
         public void NameEquivalent()
         {
-            ID homeItemId = new ID(Constants.HomeItemId);
             IQueryBuilder expectedQueryBuilder =
                 new QueryBuilder(x => x.Term(SitecoreFields.Name, "value"));
 

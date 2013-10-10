@@ -8,7 +8,7 @@ using Lucinq.SitecoreIntegration.Querying;
 using Lucinq.SitecoreIntegration.Querying.Interfaces;
 using NUnit.Framework;
 
-namespace Lucinq.Sitecore.UnitTests.UnitTests
+namespace Lucinq.SitecoreIntegration.UnitTests.UnitTests
 {
     [TestFixture]
     public class Sitecore7UnitTests

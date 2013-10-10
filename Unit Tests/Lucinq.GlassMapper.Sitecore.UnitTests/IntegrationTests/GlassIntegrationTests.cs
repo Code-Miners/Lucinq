@@ -2,7 +2,6 @@
 using Glass.Mapper;
 using Glass.Mapper.Sc;
 using Glass.Mapper.Sc.CastleWindsor;
-using Glass.Mapper.Sc.Configuration.Attributes;
 using Lucinq.GlassMapper.Sitecore.UnitTests.App_Start;
 using Lucinq.GlassMapper.Sitecore.UnitTests.Objects;
 using Lucinq.GlassMapper.SitecoreIntegration;
@@ -10,11 +9,9 @@ using Lucinq.GlassMapper.SitecoreIntegration.Extensions;
 using Lucinq.GlassMapper.SitecoreIntegration.Interfaces;
 using Lucinq.Querying;
 using Lucinq.SitecoreIntegration.Constants;
-using Lucinq.SitecoreIntegration.DatabaseManagement;
 using Lucinq.SitecoreIntegration.Querying;
 using Lucinq.SitecoreIntegration.Querying.Interfaces;
 using NUnit.Framework;
-using Sitecore.Data;
 
 namespace Lucinq.GlassMapper.Sitecore.UnitTests.IntegrationTests
 {

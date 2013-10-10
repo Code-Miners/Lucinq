@@ -10,14 +10,12 @@ using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.SecurityModel;
 
-namespace Lucinq.Sitecore.UnitTests.IntegrationTests
+namespace Lucinq.SitecoreIntegration.UnitTests.IntegrationTests
 {
     [TestFixture]
     [Ignore("This fixture is solely for the purposes of creating a test setup on a blank sitecore db with the base setup package.")]
     public class Creation
     {
-        private readonly ID homepageItemId = new ID("{82386E72-2F86-4495-9C93-43D68C98132C}");
-        private readonly ID makesPageId = new ID("{CF059C5C-DE5B-4C6B-9794-C00CE5A5F140}");
         private readonly TemplateID makePageTemplateId = new TemplateID(new ID("{A78D0869-DE46-40C7-AB7D-FED5718BEF3C}"));
         private readonly TemplateID modelPageTemplateId = new TemplateID(new ID("{C867C440-7590-4DE8-987D-4E28CDEC9764}"));
         private readonly TemplateID usedTemplateId = new TemplateID(new ID("{EF967FFC-CD37-4B04-93AD-82F288BF0468}"));
@@ -26,8 +24,6 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
         private Item homepageItem;
         private readonly Dictionary<int, ID> modelIds = new Dictionary<int, ID>();
 
-        private readonly ID usedCarsId = new ID("{D55E800F-2BB1-4CD4-9638-ECD6DED040A5}");
-        private readonly ID leaseCarsId = new ID("{EECFC055-5F8A-48C1-81C9-00D485752E28}");
         private Item leaseCarsItem;
         private Item usedCarsItem;
         private Item makesPageItem;
@@ -45,7 +41,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
         {
             get
             {
-                return homepageItem ?? ( homepageItem = MasterDatabase.GetItem(homepageItemId));
+                return homepageItem ?? ( homepageItem = MasterDatabase.GetItem(SitecoreIds.HomepageItemId));
             }
         }
 
@@ -53,7 +49,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
         {
             get
             {
-                return leaseCarsItem ?? (leaseCarsItem = MasterDatabase.GetItem(leaseCarsId));
+                return leaseCarsItem ?? (leaseCarsItem = MasterDatabase.GetItem(SitecoreIds.LeaseCarsId));
             }
         }
 
@@ -61,7 +57,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
         {
             get
             {
-                return usedCarsItem ?? (usedCarsItem = MasterDatabase.GetItem(usedCarsId));
+                return usedCarsItem ?? (usedCarsItem = MasterDatabase.GetItem(SitecoreIds.UsedCarsId));
             }
         }
 
@@ -69,7 +65,7 @@ namespace Lucinq.Sitecore.UnitTests.IntegrationTests
         {
             get
             {
-                return makesPageItem ?? (makesPageItem = MasterDatabase.GetItem(makesPageId));
+                return makesPageItem ?? (makesPageItem = MasterDatabase.GetItem(SitecoreIds.MakesPageId));
             }
         }
 
