@@ -135,57 +135,16 @@ namespace Lucinq.UnitTests.IntegrationTests
         [Test]
 	    public void BuildCarDataIndex()
 	    {
-            List<CarDataItem> carDataItems = new List<CarDataItem>();
-            
-            using (SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CarData"].ConnectionString))
-            {
-                using (SqlCommand command = new SqlCommand("usp_LucinqTestData", connection))
-                {
-                    connection.Open();
-                    SqlDataReader reader = command.ExecuteReader();
-                    while (reader.Read())
-                    {
-                        // ignore data with no price
-                        if (reader["Price"] == DBNull.Value)
-                        {
-                            continue;
-                        }
-                        CarDataItem item = new CarDataItem
-                        {
-                            AdvertId = (Guid)reader["AdvertId"],
-                            Created = (DateTime)reader["DateCreated"],
-                            MakeId = (int)reader["MakeId"],
-                            ModelId = (int)reader["ModelId"],
-                            Code = reader["Code"].ToString(),
-                            Make = reader["Make"].ToString(),
-                            Model = reader["Model"].ToString(),
-                            Variant = reader.GetValueOrDefault<string>("Variant"),
-                            Options = reader.GetValueOrDefault<string>("Options"),
-                            FuelType = reader.GetValueOrDefault<string>("FuelType"),
-                            AdvertTypeId = (int)reader["AdvertTypeId"],
-                            AdvertType = reader["AdvertType"].ToString(),
-                            AdvertStatusId = (int)reader["AdvertStatusId"],
-                            AdvertStatus = reader["AdvertStatus"].ToString(),
-                            Town = reader.GetValueOrDefault<string>("Town"),
-                            County = reader.GetValueOrDefault<string>("County"),
-                            Postcode = reader.GetValueOrDefault<string>("Postcode"),
-                            Price = reader.GetValueOrDefault<decimal>("Price"),
-                            Mileage = reader.GetValueOrDefault<decimal?>("Mileage")
-                        };
-                        carDataItems.Add(item);
-                    }
-
-                }
-            }
+            var carDataItems = GetCarDataItems();
 
             if (carDataItems.Count == 0)
             {
                 Assert.Fail("No Car Data Items Were Found");
             }
 
-            if (Directory.Exists(GeneralConstants.Paths.BBCIndex))
+            if (Directory.Exists(GeneralConstants.Paths.CarDataIndex))
 		    {
-                Directory.Delete(GeneralConstants.Paths.BBCIndex, true);
+                Directory.Delete(GeneralConstants.Paths.CarDataIndex, true);
 		    }
 
 			var indexFolder = FSDirectory.Open(new DirectoryInfo(GeneralConstants.Paths.CarDataIndex));
@@ -216,6 +175,54 @@ namespace Lucinq.UnitTests.IntegrationTests
 	                    );
 	            }
 	        }
+	    }
+
+	    private static List<CarDataItem> GetCarDataItems()
+	    {
+	        List<CarDataItem> carDataItems = new List<CarDataItem>();
+
+	        using (
+	            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CarData"].ConnectionString)
+	            )
+	        {
+	            using (SqlCommand command = new SqlCommand("usp_LucinqTestData", connection))
+	            {
+	                connection.Open();
+	                SqlDataReader reader = command.ExecuteReader();
+	                while (reader.Read())
+	                {
+	                    // ignore data with no price
+	                    if (reader["Price"] == DBNull.Value)
+	                    {
+	                        continue;
+	                    }
+	                    CarDataItem item = new CarDataItem
+	                    {
+	                        AdvertId = (Guid) reader["AdvertId"],
+	                        Created = (DateTime) reader["DateCreated"],
+	                        MakeId = (int) reader["MakeId"],
+	                        ModelId = (int) reader["ModelId"],
+	                        Code = reader["Code"].ToString(),
+	                        Make = reader["Make"].ToString(),
+	                        Model = reader["Model"].ToString(),
+	                        Variant = reader.GetValueOrDefault<string>("Variant"),
+	                        Options = reader.GetValueOrDefault<string>("Options"),
+	                        FuelType = reader.GetValueOrDefault<string>("FuelType"),
+	                        AdvertTypeId = (int) reader["AdvertTypeId"],
+	                        AdvertType = reader["AdvertType"].ToString(),
+	                        AdvertStatusId = (int) reader["AdvertStatusId"],
+	                        AdvertStatus = reader["AdvertStatus"].ToString(),
+	                        Town = reader.GetValueOrDefault<string>("Town"),
+	                        County = reader.GetValueOrDefault<string>("County"),
+	                        Postcode = reader.GetValueOrDefault<string>("Postcode"),
+	                        Price = reader.GetValueOrDefault<decimal>("Price"),
+	                        Mileage = reader.GetValueOrDefault<decimal?>("Mileage")
+	                    };
+	                    carDataItems.Add(item);
+	                }
+	            }
+	        }
+	        return carDataItems;
 	    }
     }
 

@@ -389,7 +389,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		{
 			var result = luceneSearch.Execute(queryBuilder);
 
-			var documents = result.GetTopDocuments();
+            var documents = result.GetTopDocuments();
 
 			Console.WriteLine("Searched documents in {0} ms", result.ElapsedTimeMs);
 			Console.WriteLine();
