@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq", "Lucinq\Lucinq.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.UnitTests", "Unit Tests\Lucinq.UnitTests\Lucinq.UnitTests.csproj", "{A65CD9B7-DC30-414B-83F5-A8A5DD5FCDE8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{88383E66-E660-4306-8B70-5B19AF34F0CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A65CD9B7-DC30-414B-83F5-A8A5DD5FCDE8} = {88383E66-E660-4306-8B70-5B19AF34F0CF}
 	EndGlobalSection
 EndGlobal
