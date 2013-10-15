@@ -48,6 +48,8 @@ namespace Lucinq.Querying
 
 		public long ElapsedTimeMs { get; set; }
 
+        protected List<Document> Documents { get; set; }
+
 		#endregion
 
 		#region [ Methods ]
@@ -57,6 +59,10 @@ namespace Lucinq.Querying
             using (var indexSearcherProvider = searcherAccessor.GetIndexSearcherProvider())
 		    {
 		        ExecuteSearch(indexSearcherProvider);
+		        if (Documents != null)
+		        {
+		            return Documents;
+		        }
 		        return topDocs == null
 		            ? null
 		            : (from ScoreDoc doc in topDocs.ScoreDocs select GetDocument(doc.doc, indexSearcherProvider.IndexSearcher)).ToList();
@@ -68,7 +74,6 @@ namespace Lucinq.Querying
             using (var indexSearcherProvider = searcherAccessor.GetIndexSearcherProvider())
 		    {
 		        ExecuteSearch(indexSearcherProvider);
-		        List<Document> documents = new List<Document>();
 		        if (start < 0)
 		        {
 		            start = 0;
@@ -83,11 +88,20 @@ namespace Lucinq.Querying
                     end = topDocs.ScoreDocs.Length - 1;
 		        }
 
-		        for (var i = start; i <= end; i++)
+		        if (Documents != null)
 		        {
-                    documents.Add(GetDocument(topDocs.ScoreDocs[i].doc, indexSearcherProvider.IndexSearcher));
+		            return Documents.Skip(start).Take(end - start).ToList();
 		        }
 
+		        List<Document> documents = new List<Document>();
+		        for (var i = start; i <= end; i++)
+		        {
+
+		            {
+		                documents.Add(GetDocument(topDocs.ScoreDocs[i].doc, indexSearcherProvider.IndexSearcher));
+		            }
+
+		        }
 		        return documents;
 		    }
 		}
@@ -116,18 +130,34 @@ namespace Lucinq.Querying
                 using (var tempSearcherProvider = searcherAccessor.GetIndexSearcherProvider())
                 {
                     topDocs = tempSearcherProvider.IndexSearcher.Search(query, filter, int.MaxValue, sort);
+                    PopulateDocuments(tempSearcherProvider);
                 }
             }
             else
             {
                 topDocs = indexSearcherProvider.IndexSearcher.Search(query, filter, int.MaxValue, sort);
+                PopulateDocuments(indexSearcherProvider);
             }
             totalHits = topDocs.TotalHits;
             stopwatch.Stop();
 	        ElapsedTimeMs = stopwatch.ElapsedMilliseconds;
 	    }
 
-		#endregion
+	    private void PopulateDocuments(IIndexSearcherProvider tempSearcherProvider)
+	    {
+	        if (!tempSearcherProvider.ClosesDirectory)
+	        {
+	            return;
+	        }
+
+	        Documents = new List<Document>();
+	        foreach (var scoreDoc in topDocs.ScoreDocs)
+	        {
+	            Documents.Add(GetDocument(scoreDoc.doc, tempSearcherProvider.IndexSearcher));
+	        }
+	    }
+
+	    #endregion
 
         #region [ IEnumerable Methods ]
 
