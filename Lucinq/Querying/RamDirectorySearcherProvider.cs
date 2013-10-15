@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Lucene.Net.Search;
 using Lucene.Net.Store;
 using Lucinq.Interfaces;
@@ -28,14 +29,9 @@ namespace Lucinq.Querying
 	 //	 public IndexSearcher IndexSearcher { get; private set; }
 	 //}
 
-	public class RamDirectorySearcherProvider : DirectorySearchProvider
+	public class RamDirectorySearcherProvider : DirectorySearcherProvider
 	{
-		public RamDirectorySearcherProvider() : base(new RAMDirectory())
-		{
-			
-		}
-
-		public RamDirectorySearcherProvider(string indexPath) : base(new RAMDirectory(FSDirectory.Open(indexPath)))
+		public RamDirectorySearcherProvider(string indexPath) : base(new RAMDirectory(FSDirectory.Open(new DirectoryInfo(indexPath))))
 		{
 
 		}

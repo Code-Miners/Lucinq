@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Diagnostics;
+using System.IO;
 using Lucene.Net.Search;
 using Lucene.Net.Store;
 using Lucinq.Interfaces;
+using Directory = Lucene.Net.Store.Directory;
 
 namespace Lucinq.Querying
 {
@@ -25,7 +27,7 @@ namespace Lucinq.Querying
 
         public LuceneSearch(Directory indexDirectory)
         {
-            indexSearcherProvider = new DirectorySearchProvider(indexDirectory);
+            indexSearcherProvider = new DirectorySearcherProvider(indexDirectory, false);
         }
 
         public LuceneSearch(IIndexSearcherProvider indexSearcherProvider)
@@ -88,7 +90,7 @@ namespace Lucinq.Querying
         {
             if (indexSearcherProvider == null)
             {
-                return new FSDirectorySearcherProvider(indexPath);
+                return new DirectorySearcherProvider(FSDirectory.Open(new DirectoryInfo(indexPath)));
             }
 
             return indexSearcherProvider;

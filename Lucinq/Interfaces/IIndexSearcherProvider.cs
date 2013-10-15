@@ -6,5 +6,7 @@ namespace Lucinq.Interfaces
     public interface IIndexSearcherProvider : IDisposable
     {
         IndexSearcher IndexSearcher { get; }
+
+        bool ClosesDirectory { get; }
     }
 }
