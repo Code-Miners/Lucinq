@@ -17,7 +17,7 @@ namespace Lucinq.Querying
 	    private int totalHits;
 	    private bool searchExecuted;
 	    private TopDocs topDocs;
-	    private IIndexSearcherAccessor searcherAccessor;
+	    private readonly IIndexSearcherAccessor searcherAccessor;
 
 		private readonly Filter filter;
 
@@ -100,8 +100,8 @@ namespace Lucinq.Querying
 		            {
 		                documents.Add(GetDocument(topDocs.ScoreDocs[i].Doc, indexSearcherProvider.IndexSearcher));
 		            }
-
 		        }
+
 		        return documents;
 		    }
 		}
@@ -163,8 +163,7 @@ namespace Lucinq.Querying
 
         public IEnumerator<Document> GetEnumerator()
         {
-            List<Document> topDocs = GetTopDocuments();
-            return topDocs.GetEnumerator();
+            return GetTopDocuments().GetEnumerator();
 	    }
 
 	    IEnumerator IEnumerable.GetEnumerator()

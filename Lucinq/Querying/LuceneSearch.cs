@@ -81,11 +81,6 @@ namespace Lucinq.Querying
             return Execute(queryBuilder.Build(), noOfResults, queryBuilder.CurrentSort, queryBuilder.CurrentFilter);
         }
 
-        public virtual void BuildSort()
-        {
-
-        }
-
         public virtual IIndexSearcherProvider GetIndexSearcherProvider()
         {
             if (indexSearcherProvider == null)

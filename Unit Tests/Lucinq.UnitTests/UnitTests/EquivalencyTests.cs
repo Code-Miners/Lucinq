@@ -130,6 +130,44 @@ namespace Lucinq.UnitTests.UnitTests
 			Console.Write(queryString);
 		}
 
+        [Test]
+        public void CaseInsensitiveNotTerm()
+        {
+            BooleanQuery originalQuery = new BooleanQuery();
+            Term term = new Term("_name", "value");
+            TermQuery termQuery = new TermQuery(term);
+            originalQuery.Add(termQuery, Matches.Never.GetLuceneOccurance());
+            string queryString = originalQuery.ToString();
+
+
+            QueryBuilder builder = new QueryBuilder();
+            builder.Setup(x => x.Term("_name", "Value", Matches.Never));
+            Query replacementQuery = builder.Build();
+            string newQueryString = replacementQuery.ToString();
+
+            Assert.AreEqual(queryString, newQueryString);
+            Console.Write(queryString);
+        }
+
+        [Test]
+        public void CaseSensitiveNotTerm()
+        {
+            BooleanQuery originalQuery = new BooleanQuery();
+            Term term = new Term("_name", "Value");
+            TermQuery termQuery = new TermQuery(term);
+            originalQuery.Add(termQuery, Matches.Never.GetLuceneOccurance());
+            string queryString = originalQuery.ToString();
+
+
+            QueryBuilder builder = new QueryBuilder();
+            builder.Setup(x => x.Term("_name", "Value", Matches.Never, caseSensitive: true));
+            Query replacementQuery = builder.Build();
+            string newQueryString = replacementQuery.ToString();
+
+            Assert.AreEqual(queryString, newQueryString);
+            Console.Write(queryString);
+        }
+
 		#endregion
 
 		#region [ Lucene Tests ]
