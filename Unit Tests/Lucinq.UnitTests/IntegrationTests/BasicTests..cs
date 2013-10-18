@@ -126,13 +126,24 @@ namespace Lucinq.UnitTests.IntegrationTests
 		}
 
 		[Test]
-		public void EasyOr()
+		public void TermsOr()
 		{
             LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Terms(BBCFields.Title, new[] {"europe", "africa"}, Matches.Sometimes);
 			ExecuteAndAssert(luceneSearch, queryBuilder, 12);
 		}
+
+        [Test]
+        public void EasyOr()
+        {
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false));
+            IQueryBuilder queryBuilder = new QueryBuilder();
+            queryBuilder.Or(
+                x => x.Term(BBCFields.Title, "europe"),
+                x => x.Term(BBCFields.Title, "africa"));
+            ExecuteAndAssert(luceneSearch, queryBuilder, 12);
+        }
 
 		/*[Test]
 		public void SimpleNot()
@@ -274,13 +285,24 @@ namespace Lucinq.UnitTests.IntegrationTests
 		}
 
 		[Test]
-		public void EasyAnd()
+		public void TermsAnd()
 		{
             LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Terms(BBCFields.Title, new[] { "africa", "road" }, occur: Matches.Always);
 			ExecuteAndAssert(luceneSearch, queryBuilder, 1);
 		}
+
+        [Test]
+        public void EasyAnd()
+        {
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false));
+            IQueryBuilder queryBuilder = new QueryBuilder();
+            queryBuilder.And(
+                x => x.Term(BBCFields.Title, "road"),
+                x => x.Term(BBCFields.Title, "africa"));
+            ExecuteAndAssert(luceneSearch, queryBuilder, 1);
+        }
 
 		[Test]
 		public void WildCard()

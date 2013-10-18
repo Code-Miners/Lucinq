@@ -33,14 +33,13 @@ namespace Lucinq.Querying
 
         public void Dispose()
 		{
-		    if (indexSearcher == null)
-		    {
-		        return;
-		    }
-			indexSearcher.Dispose();
-		    indexSearcher = null;
-		    // Cannot dispose of this, as it doesn't work.
-            if (ClosesDirectory)
+            if (indexSearcher != null)
+            {
+                indexSearcher.Dispose();
+                indexSearcher = null;
+            }
+            // Cannot dispose of this, as it doesn't work.
+            if (ClosesDirectory && currentDirectory != null)
             {
                 currentDirectory.Dispose();  
             }

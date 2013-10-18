@@ -70,6 +70,7 @@
     <Compile Include="IntegrationTests\BasicCollectorTests.cs" />
     <Compile Include="IntegrationTests\BasicTests..cs" />
     <Compile Include="IntegrationTests\DateFieldTests.cs" />
+    <Compile Include="IntegrationTests\FilesystemDirectoryTests.cs" />
     <Compile Include="IntegrationTests\IndexRebuilder.cs" />
     <Compile Include="IntegrationTests\PrefixTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
