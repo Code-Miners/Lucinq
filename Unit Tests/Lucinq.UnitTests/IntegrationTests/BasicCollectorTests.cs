@@ -63,5 +63,31 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 			Console.WriteLine();
 		}
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Test]
+        public void CollectDailyCountFromQueryBuilder()
+        {
+            LuceneSearch luceneSearch = new LuceneSearch(IndexDirectory);
+
+            IQueryBuilder queryBuilder = new QueryBuilder();
+            queryBuilder.Setup
+                (
+                    x => x.WildCard(BBCFields.PublishDateString, "*")
+                );
+
+            DateCollector collector = new DateCollector();
+            luceneSearch.Collect(queryBuilder, collector);
+
+            Assert.Greater(collector.DailyCount.Keys.Count, 0);
+            foreach (String day in collector.DailyCount.Keys)
+            {
+                Console.Error.WriteLine("Day: {0} had {1} documents", day, collector.DailyCount[day]);
+            }
+
+            Console.WriteLine();
+        }
 	}
 }

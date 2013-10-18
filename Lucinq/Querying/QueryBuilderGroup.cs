@@ -59,15 +59,6 @@ namespace Lucinq.Querying
             return matches.GetLuceneOccurance();
         }
 
-        /// <summary>
-        /// Ends the current query set returning to the parent query builder
-        /// </summary>
-        /// <returns></returns>
-        public virtual IQueryBuilder End()
-        {
-            return Parent;
-        }
-
         public virtual void BuildSort()
         {
             if (SortFields.Count == 0)

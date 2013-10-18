@@ -68,7 +68,6 @@
     <Compile Include="Interfaces\IIndexSearcherProvider.cs" />
     <Compile Include="Querying\DirectorySearcherProvider.cs" />
     <Compile Include="Querying\ItemResult.cs" />
-    <Compile Include="Querying\RamDirectorySearcherProvider.cs" />
     <Compile Include="Querying\LuceneSearchResult.cs" />
     <Compile Include="Querying\QueryBuilderIndividual.cs" />
     <Compile Include="Querying\QueryBuilderGroup.cs" />
