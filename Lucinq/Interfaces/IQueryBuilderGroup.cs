@@ -32,12 +32,6 @@ namespace Lucinq.Interfaces
 		Query Build();
 
 		/// <summary>
-		/// Ends the current query set returning to the parent query builder
-		/// </summary>
-		/// <returns></returns>
-		IQueryBuilder End();
-
-		/// <summary>
 		/// A setup method to aid multiple query setup
 		/// </summary>
 		/// <param name="queries">Comma seperated lambda actions</param>
@@ -121,14 +115,6 @@ namespace Lucinq.Interfaces
 		IQueryBuilder Sort(string fieldName, bool sortDescending = false, int? sortType = null);
 
         IQueryBuilder Phrase(string fieldName, string[] fieldValues, int slop, Matches occur = Matches.NotSet, float? boost = null, bool? caseSensitive = null);
-
-        /// <summary>
-        /// A simple single item setup method
-        /// Usage .Where(x => x.Term("field", "value));
-        /// </summary>
-        /// <param name="inputExpression">The lambda expression to be executed</param>
-        /// <returns>The input querybuilder</returns>
-        IQueryBuilder Where(Action<IQueryBuilder> inputExpression);
 
 		#endregion
 	}

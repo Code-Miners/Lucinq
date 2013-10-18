@@ -1,4 +1,5 @@
 ﻿using System;
+using Lucene.Net.Analysis;
 using Lucene.Net.Index;
 using Lucene.Net.QueryParsers;
 using Lucene.Net.Search;
@@ -374,6 +375,31 @@ namespace Lucinq.UnitTests.UnitTests
 			Console.Write(queryString);
 		}
 
+
+        [Test]
+        public void CaseInsensitiveWildCards()
+        {
+            BooleanQuery originalQuery = new BooleanQuery();
+            BooleanQuery innerQuery = new BooleanQuery();
+            Term term = new Term("_name", "value*");
+            WildcardQuery wildcardQuery = new WildcardQuery(term);
+            innerQuery.Add(wildcardQuery, Matches.Always.GetLuceneOccurance());
+
+            Term term2 = new Term("_name", "value2*");
+            WildcardQuery wildcardQuery2 = new WildcardQuery(term2);
+            innerQuery.Add(wildcardQuery2, Matches.Always.GetLuceneOccurance());
+            originalQuery.Add(innerQuery, Matches.Always.GetLuceneOccurance());
+            string queryString = originalQuery.ToString();
+
+            QueryBuilder builder = new QueryBuilder();
+            builder.Setup(x => x.WildCards("_name", new []{"Value*", "Value2*"}));
+            Query replacementQuery = builder.Build();
+            string newQueryString = replacementQuery.ToString();
+
+            Assert.AreEqual(queryString, newQueryString);
+            Console.Write(queryString);
+        }
+
 		#endregion
 
 		#region [ Term Range Tests ]
@@ -411,6 +437,23 @@ namespace Lucinq.UnitTests.UnitTests
 			Assert.AreEqual(queryString, newQueryString);
 			Console.Write(queryString);
 		}
+
+        [Test]
+        public void CaseInsensitiveTermRange()
+        {
+            BooleanQuery originalQuery = new BooleanQuery();
+            TermRangeQuery termRangeQuery = new TermRangeQuery("field", "lower", "upper", true, true);
+            originalQuery.Add(termRangeQuery, Matches.Always.GetLuceneOccurance());
+            string queryString = originalQuery.ToString();
+
+            QueryBuilder builder = new QueryBuilder();
+            builder.Setup(x => x.TermRange("field", "Lower", "Upper", caseSensitive: false));
+            Query replacementQuery = builder.Build();
+            string newQueryString = replacementQuery.ToString();
+
+            Assert.AreEqual(queryString, newQueryString);
+            Console.Write(queryString);
+        }
 
 		[Test]
 		public void QueryCaseSensitiveTermRange()
@@ -509,6 +552,29 @@ namespace Lucinq.UnitTests.UnitTests
 			Assert.AreEqual(queryString, newQueryString);
 			Console.Write(queryString);
 		}
+
+        [Test]
+        public void CaseInsensitiveKeywords()
+        {
+            QueryBuilder builder = new QueryBuilder();
+
+            BooleanQuery originalQuery = new BooleanQuery();
+            BooleanQuery innerQuery = new BooleanQuery();
+            QueryParser rawQueryParser = new QueryParser(Version.LUCENE_29, "_name", builder.KeywordAnalyzer);
+            innerQuery.Add(rawQueryParser.Parse("value"), Matches.Always.GetLuceneOccurance());
+            innerQuery.Add(rawQueryParser.Parse("value2"), Matches.Always.GetLuceneOccurance());
+            innerQuery.Add(rawQueryParser.Parse("value3"), Matches.Always.GetLuceneOccurance());
+            originalQuery.Add(innerQuery, Occur.MUST);
+            string queryString = originalQuery.ToString();
+            originalQuery.Add(rawQueryParser.Parse("value2"), Matches.Always.GetLuceneOccurance());
+
+            builder.Setup(x => x.Keywords("_name", new []{"Value", "Value2", "Value3"}));
+            Query replacementQuery = builder.Build();
+            string newQueryString = replacementQuery.ToString();
+
+            Assert.AreEqual(queryString, newQueryString);
+            Console.Write(queryString);
+        }
 
 		#endregion
 
@@ -619,6 +685,37 @@ namespace Lucinq.UnitTests.UnitTests
 			
 			Console.Write(queryString);
 		}
+
+        [Test]
+	    public void OptionalOr()
+	    {
+            BooleanQuery originalQuery = new BooleanQuery();
+
+            BooleanQuery innerQuery = new BooleanQuery();
+
+            Term term = new Term("_name", "value1");
+            TermQuery termQuery1 = new TermQuery(term);
+            innerQuery.Add(termQuery1, Matches.Sometimes.GetLuceneOccurance());
+
+            Term term2 = new Term("_name", "value2");
+            TermQuery termQuery2 = new TermQuery(term2);
+            innerQuery.Add(termQuery2, Matches.Sometimes.GetLuceneOccurance());
+            originalQuery.Add(innerQuery, Occur.SHOULD);
+
+            string queryString = originalQuery.ToString();
+
+            QueryBuilder builder = new QueryBuilder { DefaultChildrenOccur = Matches.Sometimes };
+            builder.Or
+                (
+                    Matches.Sometimes,
+                    x => x.Term("_name", "value1"),
+                    x => x.Term("_name", "value2")
+                );
+            Query replacementQuery1 = builder.Build();
+            string newQueryString1 = replacementQuery1.ToString();
+
+            Assert.AreEqual(queryString, newQueryString1);
+	    }
 
 		[Test]
 		public void OrExtension()
@@ -735,6 +832,47 @@ namespace Lucinq.UnitTests.UnitTests
             string constructorQueryString = constructorQuery.ToString();
 
             Assert.AreEqual(setupQueryString, constructorQueryString);
+        }
+
+        #endregion
+
+        #region [ Raw Tests ]
+
+        [Test]
+	    public void RawWithAnalyzer()
+	    {
+            QueryBuilder builder = new QueryBuilder();
+
+            BooleanQuery originalQuery = new BooleanQuery();
+            QueryParser rawQueryParser = new QueryParser(Version.LUCENE_29, "_name", builder.KeywordAnalyzer);
+            originalQuery.Add(rawQueryParser.Parse("value"), Matches.Always.GetLuceneOccurance());
+            string queryString = originalQuery.ToString();
+
+            KeywordAnalyzer analyzer = new KeywordAnalyzer();
+            builder.Setup(x => x.Raw("_name", "value", Matches.Always, analyzer: analyzer));
+            Query replacementQuery = builder.Build();
+            string newQueryString = replacementQuery.ToString();
+
+            Assert.AreEqual(queryString, newQueryString);
+            Console.Write(queryString);
+	    }
+
+        [Test]
+        public void RawWithoutAnalyzer()
+        {
+            QueryBuilder builder = new QueryBuilder();
+
+            BooleanQuery originalQuery = new BooleanQuery();
+            TermQuery termQuery = new TermQuery(new Term("_name", "value"));
+            originalQuery.Add(termQuery, Matches.Always.GetLuceneOccurance());
+            string queryString = originalQuery.ToString();
+
+            builder.Setup(x => x.Raw("_name", "value", Matches.Always));
+            Query replacementQuery = builder.Build();
+            string newQueryString = replacementQuery.ToString();
+
+            Assert.AreEqual(queryString, newQueryString);
+            Console.Write(queryString);
         }
 
         #endregion

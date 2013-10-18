@@ -102,18 +102,6 @@ namespace Lucinq.Querying
 		#region [ Setup Expressions ]
 
 		/// <summary>
-		/// A simple single item setup method
-		/// Usage .Where(x => x.Term("field", "value));
-		/// </summary>
-		/// <param name="inputExpression">The lambda expression to be executed</param>
-		/// <returns>The input querybuilder</returns>
-		public virtual IQueryBuilder Where(Action<IQueryBuilder> inputExpression)
-		{
-			inputExpression(this);
-			return this;
-		}
-
-		/// <summary>
 		/// A setup method to aid multiple query setup
 		/// </summary>
 		/// <param name="queries">Comma seperated lambda actions</param>
@@ -207,7 +195,7 @@ namespace Lucinq.Querying
 			var group = Group();
 			foreach (var fieldValue in fieldValues)
 			{
-				group.Raw(fieldName, fieldValue, occur, boost, key, KeywordAnalyzer);
+				group.Keyword(fieldName, fieldValue, occur, boost, key, caseSensitive);
 			}
 			return this;
 		}
@@ -485,10 +473,5 @@ namespace Lucinq.Querying
 		}
 
 		#endregion
-
-		public override string ToString()
-		{
-			return String.Join(Environment.NewLine, Queries.Values.Select(x => x.Query.ToString()));
-		}
 	}
 }
