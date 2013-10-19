@@ -564,7 +564,7 @@ namespace Lucinq.UnitTests.UnitTests
             innerQuery.Add(rawQueryParser.Parse("value"), Matches.Always.GetLuceneOccurance());
             innerQuery.Add(rawQueryParser.Parse("value2"), Matches.Always.GetLuceneOccurance());
             innerQuery.Add(rawQueryParser.Parse("value3"), Matches.Always.GetLuceneOccurance());
-            originalQuery.Add(innerQuery, Occur.MUST);
+            originalQuery.Add(innerQuery, Matches.Always.GetLuceneOccurance());
             string queryString = originalQuery.ToString();
             originalQuery.Add(rawQueryParser.Parse("value2"), Matches.Always.GetLuceneOccurance());
 
@@ -700,7 +700,7 @@ namespace Lucinq.UnitTests.UnitTests
             Term term2 = new Term("_name", "value2");
             TermQuery termQuery2 = new TermQuery(term2);
             innerQuery.Add(termQuery2, Matches.Sometimes.GetLuceneOccurance());
-            originalQuery.Add(innerQuery, Occur.SHOULD);
+            originalQuery.Add(innerQuery, Matches.Sometimes.GetLuceneOccurance());
 
             string queryString = originalQuery.ToString();
 
