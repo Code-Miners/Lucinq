@@ -1,4 +1,5 @@
-﻿using Lucene.Net.Store;
+﻿using System.IO;
+using Lucene.Net.Store;
 using Lucinq.Querying;
 using NUnit.Framework;
 
@@ -19,7 +20,7 @@ namespace Lucinq.UnitTests.IntegrationTests
         [Test]
         public void OpenAndSearchOnFileSystemUsingFSDirectory()
         {
-            using (var directory = FSDirectory.Open(GeneralConstants.Paths.CarDataIndex))
+            using (var directory = FSDirectory.Open(new FileInfo(GeneralConstants.Paths.CarDataIndex)))
             {
                 LuceneSearch search = new LuceneSearch(directory);
                 QueryBuilder builder = new QueryBuilder(x => x.Term(CarDataFields.Make, "ford"));
