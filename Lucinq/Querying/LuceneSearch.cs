@@ -82,7 +82,7 @@ namespace Lucinq.Querying
             return Execute(queryBuilder.Build(), noOfResults, queryBuilder.CurrentSort, queryBuilder.CurrentFilter);
         }
 
-        public virtual TItemResult Execute<TItemResult, T>(IQueryBuilder queryBuilder, Func<ILuceneSearchResult<Document>, TItemResult> creator, int noOfResults = Int32.MaxValue - 1) where TItemResult : ItemResult<T>
+        public virtual TItemResult Execute<TItemResult, T>(IQueryBuilder queryBuilder, Func<ILuceneSearchResult<Document>, TItemResult> creator, int noOfResults = Int32.MaxValue - 1) where TItemResult : ItemSearchResult<T>
         {
             ILuceneSearchResult<Document> luceneSearchResult = Execute(queryBuilder.Build(), noOfResults,
                 queryBuilder.CurrentSort, queryBuilder.CurrentFilter);
@@ -100,5 +100,28 @@ namespace Lucinq.Querying
         }
 
         #endregion
+    }
+
+    public abstract class LuceneItemSearch<TItemResult, T> : LuceneSearch where TItemResult : ItemSearchResult<T>
+    {
+        protected LuceneItemSearch(string indexPath) : base(indexPath)
+        {
+        }
+
+        protected LuceneItemSearch(Directory indexDirectory) : base(indexDirectory)
+        {
+        }
+
+        protected LuceneItemSearch(IIndexSearcherProvider indexSearcherProvider)
+            : base(indexSearcherProvider)
+        {
+        }
+
+        public virtual TItemResult ExecuteItems(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1) 
+        {
+            return Execute<TItemResult, T>(queryBuilder, GetItemCreator, noOfResults);
+        }
+
+        protected abstract TItemResult GetItemCreator(ILuceneSearchResult<Document> searchResult);
     }
 }

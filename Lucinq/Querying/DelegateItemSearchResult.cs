@@ -4,11 +4,11 @@ using Lucinq.Interfaces;
 
 namespace Lucinq.Querying
 {
-    public class DelegateItemResult<T> : ItemResult<T>
+    public class DelegateItemSearchResult<T> : ItemSearchResult<T>
     {
         private readonly Func<Document, T> function;
 
-        public DelegateItemResult(ILuceneSearchResult<Document> luceneSearchResult, Func<Document, T> function)
+        public DelegateItemSearchResult(ILuceneSearchResult<Document> luceneSearchResult, Func<Document, T> function)
             : base(luceneSearchResult)
         {
             this.function = function;
