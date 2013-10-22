@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Lucene.Net.Documents;
 
 namespace Lucinq.Interfaces
 {
@@ -17,6 +16,23 @@ namespace Lucinq.Interfaces
 		/// <param name="start">The start index to use</param>
 		/// <param name="end">The last document to use</param>
 		/// <returns></returns>
-		List<T> GetPagedItems(int start, int end);
+        List<T> GetPagedItems(int start, int end);
 	}
+
+    public interface IItemSearchResult<T> : ISearchResult, IEnumerable<T>
+    {
+        /// <summary>
+        /// Gets the top documents returned from the query in the natural lucene scoring order.
+        /// </summary>
+        /// <returns></returns>
+        IItemResult<T> GetTopItems();
+
+        /// <summary>
+        /// Gets a paged set of documents from the index - zero based index
+        /// </summary>
+        /// <param name="start">The start index to use</param>
+        /// <param name="end">The last document to use</param>
+        /// <returns></returns>
+        IItemResult<T> GetPagedItems(int start, int end);
+    }
 }
