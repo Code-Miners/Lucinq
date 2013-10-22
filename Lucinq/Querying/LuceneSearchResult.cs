@@ -8,7 +8,7 @@ using Lucinq.Interfaces;
 
 namespace Lucinq.Querying
 {
-	public class LuceneSearchResult : ILuceneSearchResult
+	public class LuceneSearchResult : ILuceneSearchResult<Document>
     {
         #region [ Fields ]
 
@@ -54,7 +54,7 @@ namespace Lucinq.Querying
 
 		#region [ Methods ]
 
-		public virtual List<Document> GetTopDocuments()
+		public virtual List<Document> GetTopItems()
 		{
             using (var indexSearcherProvider = searcherAccessor.GetIndexSearcherProvider())
 		    {
@@ -69,7 +69,7 @@ namespace Lucinq.Querying
 		    }
 		}
 
-		public virtual List<Document> GetPagedDocuments(int start, int end)
+		public virtual List<Document> GetPagedItems(int start, int end)
 		{
             using (var indexSearcherProvider = searcherAccessor.GetIndexSearcherProvider())
 		    {
@@ -163,7 +163,7 @@ namespace Lucinq.Querying
 
         public IEnumerator<Document> GetEnumerator()
         {
-            return GetTopDocuments().GetEnumerator();
+            return GetTopItems().GetEnumerator();
 	    }
 
 	    IEnumerator IEnumerable.GetEnumerator()

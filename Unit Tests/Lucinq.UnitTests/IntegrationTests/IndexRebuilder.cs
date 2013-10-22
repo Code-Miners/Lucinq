@@ -256,6 +256,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		public string Copyright { get; set; }
 		public string Description { get; set; }
 		public DateTime PublishDateTime { get; set; }
+        public string FileName { get; set; }
 	}
 
     public static class ReaderExtensions

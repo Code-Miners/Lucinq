@@ -64,6 +64,7 @@
     <Compile Include="Interfaces\IQueryBuilderIndividual.cs" />
     <Compile Include="Interfaces\IQueryOperatorContainer.cs" />
     <Compile Include="Interfaces\IIndexSearcherProvider.cs" />
+    <Compile Include="Querying\DelegateItemResult.cs" />
     <Compile Include="Querying\DirectorySearcherProvider.cs" />
     <Compile Include="Querying\ItemResult.cs" />
     <Compile Include="Querying\LuceneSearchResult.cs" />

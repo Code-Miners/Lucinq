@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using Lucene.Net.Documents;
 using Lucene.Net.Index;
 using Lucene.Net.Search;
 using Lucene.Net.Store;
@@ -91,13 +92,13 @@ namespace Lucinq.UnitTests.UnitTests
             TermQuery query = new TermQuery(new Term(BBCFields.Title, "africa"));
             
             // executed directly by the search
-            LuceneSearchResult result = search.Execute(query);
+            ILuceneSearchResult<Document> result = search.Execute(query);
             Assert.AreEqual(8, result.TotalHits);
 
             // or by through a querybuilder
             IQueryBuilder queryBuilder = new QueryBuilder();
             queryBuilder.Add(query, Matches.Always);
-            LuceneSearchResult result2 = search.Execute(queryBuilder);
+            ILuceneSearchResult<Document> result2 = search.Execute(queryBuilder);
             Assert.AreEqual(8, result2.TotalHits);
         }
 
@@ -107,8 +108,8 @@ namespace Lucinq.UnitTests.UnitTests
             LuceneSearch luceneSearch = new LuceneSearch(IndexDirectory);
             QueryBuilder qb = new QueryBuilder(x => x.Term(BBCFields.Title, "africa"));
             var result = luceneSearch.Execute(qb);
-            result.GetPagedDocuments(0, 10);
-            result.GetTopDocuments();
+            result.GetPagedItems(0, 10);
+            result.GetTopItems();
         }
 
 

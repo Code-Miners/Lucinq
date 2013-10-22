@@ -30,7 +30,8 @@ namespace Lucinq.UnitTests.IntegrationTests
 				.ForMember(x => x.Description, opt => opt.MapFrom(y => y.GetValues(BBCFields.Description)[0]))
 				.ForMember(x => x.PublishDateTime, opt => opt.MapFrom(y => FromTicks(y.GetValues(BBCFields.PublishDateObject)[0])))
 				.ForMember(x => x.Link, opt => opt.MapFrom(y => y.GetValues(BBCFields.Link)[0]))
-				.ForMember(x => x.Copyright, opt => opt.Ignore());
+                .ForMember(x => x.FileName, opt => opt.MapFrom(y => y.GetValues(BBCFields.FileName)[0]))
+                .ForMember(x => x.Copyright, opt => opt.Ignore());
 
 			Mapper.AssertConfigurationIsValid();
 		}
@@ -75,7 +76,9 @@ namespace Lucinq.UnitTests.IntegrationTests
 								x => x.AddNonAnalysedField(BBCFields.PublishDateString, TestHelpers.GetDateString(newsArticle.PublishDateTime), true),
 								x => x.AddNonAnalysedField(BBCFields.PublishDateObject, newsArticle.PublishDateTime, true),
 								x => x.AddNonAnalysedField(BBCFields.Sortable, newsArticle.Title, true), // must be non-analysed to sort against it
-								x => x.AddNonAnalysedField(BBCFields.SecondarySort, secondarySort, true))
+								x => x.AddNonAnalysedField(BBCFields.SecondarySort, secondarySort, true),
+                                x => x.AddStoredField(BBCFields.FileName, rssFile))
+
 							);
 				}
 

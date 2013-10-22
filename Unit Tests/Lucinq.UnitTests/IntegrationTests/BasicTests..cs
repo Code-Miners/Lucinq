@@ -179,11 +179,11 @@ namespace Lucinq.UnitTests.IntegrationTests
 			queryBuilder.Setup(x => x.WildCard(BBCFields.Description, "a*"));
 
 			var results = ExecuteAndAssertPaged(luceneSearch, queryBuilder, 902, 0, 10);
-			var documents = results.GetPagedDocuments(0, 9);
+			var documents = results.GetPagedItems(0, 9);
 			Assert.AreEqual(10, documents.Count);
 
 			var results2 = ExecuteAndAssertPaged(luceneSearch, queryBuilder, 902, 1, 11);
-			var documents2 = results2.GetPagedDocuments(1, 10);
+			var documents2 = results2.GetPagedItems(1, 10);
 			Assert.AreEqual(10, documents2.Count);
 
 			for (var i = 0; i < documents.Count - 1; i++)
@@ -204,8 +204,8 @@ namespace Lucinq.UnitTests.IntegrationTests
 					x => x.Sort(BBCFields.Sortable)
 				);
 
-			ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
-			List<Document> documents = result.GetPagedDocuments(0, 100);
+            ILuceneSearchResult<Document> result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
+			List<Document> documents = result.GetPagedItems(0, 100);
 			for (var i = 1; i < documents.Count; i++)
 			{
 				string thisDocumentSortable = documents[i].GetValues(BBCFields.Sortable).FirstOrDefault();
@@ -226,8 +226,8 @@ namespace Lucinq.UnitTests.IntegrationTests
 					x => x.Sort(BBCFields.Sortable)
 				);
 
-			ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
-			List<Document> documents = result.GetPagedDocuments(0, 1000);
+            ILuceneSearchResult<Document> result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
+			List<Document> documents = result.GetPagedItems(0, 1000);
 			for (var i = 1; i < documents.Count; i++)
 			{
 				string thisDocumentSortable = GetSecondarySortString(documents[i]);
@@ -248,8 +248,8 @@ namespace Lucinq.UnitTests.IntegrationTests
 					x => x.Sort(BBCFields.Sortable, true)
 				);
 
-			ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
-			List<Document> documents = result.GetPagedDocuments(0, 1000);
+            ILuceneSearchResult<Document> result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
+			List<Document> documents = result.GetPagedItems(0, 1000);
 			for (var i = 1; i < documents.Count; i++)
 			{
 				string thisDocumentSortable = GetSecondarySortString(documents[i]);
@@ -274,8 +274,8 @@ namespace Lucinq.UnitTests.IntegrationTests
 					x => x.Sort(BBCFields.Sortable, true)
 				);
 
-			ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
-			List<Document> documents = result.GetPagedDocuments(0, 10);
+            ILuceneSearchResult<Document> result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
+			List<Document> documents = result.GetPagedItems(0, 10);
 			for (var i = 1; i < documents.Count; i++)
 			{
 				string thisDocumentSortable = documents[i].GetValues(BBCFields.Sortable).FirstOrDefault();
@@ -421,11 +421,11 @@ namespace Lucinq.UnitTests.IntegrationTests
 			Console.WriteLine("Elapsed Time: {0}", result.ElapsedTimeMs);
 		}
 
-		private ILuceneSearchResult ExecuteAndAssert(LuceneSearch luceneSearch, IQueryBuilder queryBuilder, int numberOfHitsExpected)
+		private ILuceneSearchResult<Document> ExecuteAndAssert(LuceneSearch luceneSearch, IQueryBuilder queryBuilder, int numberOfHitsExpected)
 		{
 			var result = luceneSearch.Execute(queryBuilder);
 
-            var documents = result.GetTopDocuments();
+            var documents = result.GetTopItems();
 
 			Console.WriteLine("Searched documents in {0} ms", result.ElapsedTimeMs);
 			Console.WriteLine();
@@ -437,11 +437,11 @@ namespace Lucinq.UnitTests.IntegrationTests
 			return result;
 		}
 
-		private ILuceneSearchResult ExecuteAndAssertPaged(LuceneSearch luceneSearch, IQueryBuilder queryBuilder, int numberOfHitsExpected, int start, int end)
+		private ILuceneSearchResult<Document> ExecuteAndAssertPaged(LuceneSearch luceneSearch, IQueryBuilder queryBuilder, int numberOfHitsExpected, int start, int end)
 		{
 			// Search = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
 			var result = luceneSearch.Execute(queryBuilder);
-			List<Document> documents = result.GetPagedDocuments(start, end);
+			List<Document> documents = result.GetPagedItems(start, end);
 
             Console.WriteLine("Searched documents in {0} ms", result.ElapsedTimeMs);
 			Console.WriteLine();

@@ -22,5 +22,7 @@ namespace Lucinq.UnitTests
 		public const string Sortable = "sortable";
 
 		public const string SecondarySort = "secondary_sort";
+
+	    public const string FileName = "filename";
 	}
 }
