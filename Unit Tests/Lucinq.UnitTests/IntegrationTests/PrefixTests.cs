@@ -35,7 +35,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 				x => x.PrefixedWith(BBCFields.Sortable, QueryParser.Escape("in pictures"), Matches.Always)
 			);
 
-            ILuceneSearchResult<Document> result = luceneSearch.Execute(queryBuilder);
+            ILuceneSearchResult result = luceneSearch.Execute(queryBuilder);
 			List<NewsArticle> data = Mapper.Map<List<Document>, List<NewsArticle>>(result.GetTopItems());
 
 			WriteDocuments(data);
@@ -66,7 +66,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 				x => x.Filter(DateRangeFilter.Filter(BBCFields.PublishDateObject, february, end))
 			);
 
-            ILuceneSearchResult<Document> result = luceneSearch.Execute(queryBuilder);
+            ILuceneSearchResult result = luceneSearch.Execute(queryBuilder);
             List<NewsArticle> data = Mapper.Map<List<Document>, List<NewsArticle>>(result.GetTopItems());
 
 			WriteDocuments(data);

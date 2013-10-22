@@ -8,7 +8,7 @@ using Lucinq.Interfaces;
 
 namespace Lucinq.Querying
 {
-	public class LuceneSearchResult : ILuceneSearchResult<Document>
+	public class LuceneSearchResult : ILuceneSearchResult
     {
         #region [ Fields ]
 

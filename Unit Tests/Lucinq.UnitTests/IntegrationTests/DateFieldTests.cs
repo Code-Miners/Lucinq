@@ -28,7 +28,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 				x => x.DateRange(BBCFields.PublishDateObject, february, february.AddDays(28))
 			);
 
-			ILuceneSearchResult<Document> result = luceneSearch.Execute(queryBuilder);
+			ILuceneSearchResult result = luceneSearch.Execute(queryBuilder);
 			List<NewsArticle> data = Mapper.Map<List<Document>, List<NewsArticle>>(result.GetTopItems());
 
 			WriteDocuments(data);
@@ -56,7 +56,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 				x => x.Filter(DateRangeFilter.Filter(BBCFields.PublishDateObject, february, end))
 			);
 
-            ILuceneSearchResult<Document> result = luceneSearch.Execute(queryBuilder);
+            ILuceneSearchResult result = luceneSearch.Execute(queryBuilder);
             List<NewsArticle> data = Mapper.Map<List<Document>, List<NewsArticle>>(result.GetTopItems());
 
 			WriteDocuments(data);
@@ -83,7 +83,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 				x => x.WildCard(BBCFields.Description, "food")
 			);
 
-            ILuceneSearchResult<Document> result = luceneSearch.Execute(queryBuilder);
+            ILuceneSearchResult result = luceneSearch.Execute(queryBuilder);
             List<NewsArticle> data = Mapper.Map<List<Document>, List<NewsArticle>>(result.GetTopItems());
 
 			WriteDocuments(data);
