@@ -11,7 +11,7 @@ namespace Lucinq.Querying
 	{
 		#region [ Constructors ]
 
-	    protected ItemSearchResult(ILuceneSearchResult<Document> luceneSearchResult)
+	    protected ItemSearchResult(ILuceneSearchResult luceneSearchResult)
 		{
 		    LuceneSearchResult = luceneSearchResult;
 		} 
@@ -30,7 +30,7 @@ namespace Lucinq.Querying
 
 		public List<T> Items { get; private set; }
 
-        protected ILuceneSearchResult<Document> LuceneSearchResult { get; private set; } 
+        protected ILuceneSearchResult LuceneSearchResult { get; private set; } 
 
 		#endregion
 

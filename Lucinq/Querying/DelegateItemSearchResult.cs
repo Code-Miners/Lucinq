@@ -8,7 +8,7 @@ namespace Lucinq.Querying
     {
         private readonly Func<Document, T> function;
 
-        public DelegateItemSearchResult(ILuceneSearchResult<Document> luceneSearchResult, Func<Document, T> function)
+        public DelegateItemSearchResult(ILuceneSearchResult luceneSearchResult, Func<Document, T> function)
             : base(luceneSearchResult)
         {
             this.function = function;
@@ -18,5 +18,21 @@ namespace Lucinq.Querying
         {
             return function(document);
         }
+    }
+
+    public class DelegateSearchResultFactory<T>
+    {
+        private readonly Func<Document, T> function;
+
+        public DelegateSearchResultFactory(Func<Document, T> function)
+        {
+            this.function = function;
+        }
+
+        public DelegateItemSearchResult<T> GetItemResult(ILuceneSearchResult luceneSearchResult)
+        {
+            return new DelegateItemSearchResult<T>(luceneSearchResult, function);
+        }
+
     }
 }

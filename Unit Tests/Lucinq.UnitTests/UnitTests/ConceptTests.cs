@@ -92,13 +92,13 @@ namespace Lucinq.UnitTests.UnitTests
             TermQuery query = new TermQuery(new Term(BBCFields.Title, "africa"));
             
             // executed directly by the search
-            ILuceneSearchResult<Document> result = search.Execute(query);
+            ILuceneSearchResult result = search.Execute(query);
             Assert.AreEqual(8, result.TotalHits);
 
             // or by through a querybuilder
             IQueryBuilder queryBuilder = new QueryBuilder();
             queryBuilder.Add(query, Matches.Always);
-            ILuceneSearchResult<Document> result2 = search.Execute(queryBuilder);
+            ILuceneSearchResult result2 = search.Execute(queryBuilder);
             Assert.AreEqual(8, result2.TotalHits);
         }
 

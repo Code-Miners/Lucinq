@@ -4,11 +4,9 @@ namespace Lucinq.Interfaces
 {
     public interface ISearchResult<T> : ISearchResult where T : class
     {
-        IItemResult<T> GetPagedItems(int start, int end, int multiplier = 3);
+        IItemResult<T> GetPagedItems(int start, int end);
 
         IItemResult<T> GetTopItems();
-
-        T GetItem(int index = 0);
     }
 
     public interface ISearchResult

@@ -52,7 +52,8 @@ namespace Lucinq.UnitTests.UnitTests
             IQueryBuilder queryBuilder = new QueryBuilder();
 
             queryBuilder.Term(BBCFields.Title, "africa");
-            var results = luceneSearch.Execute<DelegateItemSearchResult<NewsArticle>, NewsArticle>(queryBuilder, x => new DelegateItemSearchResult<NewsArticle>(x, GetNewsArticleFromDocument));
+            DelegateSearchResultFactory<NewsArticle> articleFactory = new DelegateSearchResultFactory<NewsArticle>(GetNewsArticleFromDocument);
+            var results = luceneSearch.Execute<DelegateItemSearchResult<NewsArticle>, NewsArticle>(queryBuilder, articleFactory.GetItemResult);
             var newsArticles = results.GetPagedItems(0, 2);
             Assert.Greater(results.TotalHits, newsArticles.Items.Count);
             foreach (var newsArticle in newsArticles)
@@ -104,7 +105,7 @@ namespace Lucinq.UnitTests.UnitTests
 
             IQueryBuilder queryBuilder = new QueryBuilder();
             queryBuilder.Term(BBCFields.Title, "africa");
-            var results = newsArticleSearch.ExecuteItems(queryBuilder);
+            var results = newsArticleSearch.Execute(queryBuilder);
             var newsArticles = results.GetPagedItems(0, 2);
             Assert.Greater(results.TotalHits, newsArticles.Items.Count);
             Assert.Greater(newsArticles.ElapsedTimeMs, 0);
@@ -128,7 +129,7 @@ namespace Lucinq.UnitTests.UnitTests
 
         public class NewsArticleItemResult : ItemSearchResult<NewsArticle>
         {
-            public NewsArticleItemResult(ILuceneSearchResult<Document> luceneSearchResult) : base(luceneSearchResult)
+            public NewsArticleItemResult(ILuceneSearchResult luceneSearchResult) : base(luceneSearchResult)
             {
             }
 
@@ -152,7 +153,7 @@ namespace Lucinq.UnitTests.UnitTests
             {
             }
 
-            protected override NewsArticleItemResult GetItemCreator(ILuceneSearchResult<Document> searchResult)
+            protected override NewsArticleItemResult GetItemCreator(ILuceneSearchResult searchResult)
             {
                 return new NewsArticleItemResult(searchResult);
             }

@@ -204,7 +204,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 					x => x.Sort(BBCFields.Sortable)
 				);
 
-            ILuceneSearchResult<Document> result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
+            ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
 			List<Document> documents = result.GetPagedItems(0, 100);
 			for (var i = 1; i < documents.Count; i++)
 			{
@@ -226,7 +226,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 					x => x.Sort(BBCFields.Sortable)
 				);
 
-            ILuceneSearchResult<Document> result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
+            ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
 			List<Document> documents = result.GetPagedItems(0, 1000);
 			for (var i = 1; i < documents.Count; i++)
 			{
@@ -248,7 +248,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 					x => x.Sort(BBCFields.Sortable, true)
 				);
 
-            ILuceneSearchResult<Document> result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
+            ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
 			List<Document> documents = result.GetPagedItems(0, 1000);
 			for (var i = 1; i < documents.Count; i++)
 			{
@@ -274,7 +274,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 					x => x.Sort(BBCFields.Sortable, true)
 				);
 
-            ILuceneSearchResult<Document> result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
+            ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
 			List<Document> documents = result.GetPagedItems(0, 10);
 			for (var i = 1; i < documents.Count; i++)
 			{
@@ -421,7 +421,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 			Console.WriteLine("Elapsed Time: {0}", result.ElapsedTimeMs);
 		}
 
-		private ILuceneSearchResult<Document> ExecuteAndAssert(LuceneSearch luceneSearch, IQueryBuilder queryBuilder, int numberOfHitsExpected)
+		private ILuceneSearchResult ExecuteAndAssert(LuceneSearch luceneSearch, IQueryBuilder queryBuilder, int numberOfHitsExpected)
 		{
 			var result = luceneSearch.Execute(queryBuilder);
 
@@ -437,7 +437,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 			return result;
 		}
 
-		private ILuceneSearchResult<Document> ExecuteAndAssertPaged(LuceneSearch luceneSearch, IQueryBuilder queryBuilder, int numberOfHitsExpected, int start, int end)
+		private ILuceneSearchResult ExecuteAndAssertPaged(LuceneSearch luceneSearch, IQueryBuilder queryBuilder, int numberOfHitsExpected, int start, int end)
 		{
 			// Search = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
 			var result = luceneSearch.Execute(queryBuilder);
