@@ -267,7 +267,7 @@ namespace Lucinq.UnitTests.UnitTests
             Term term = new Term("_name", "Value");
             Term term2 = new Term("_name", "Value2");
             PhraseQuery phraseQuery = new PhraseQuery();
-            phraseQuery.Slop = 2;
+            phraseQuery.SetSlop(2);
             phraseQuery.Add(term);
             phraseQuery.Add(term2);
             originalQuery.Add(phraseQuery, Matches.Always.GetLuceneOccurance());
@@ -289,7 +289,7 @@ namespace Lucinq.UnitTests.UnitTests
             Term term = new Term("_name", "value");
             Term term2 = new Term("_name", "value2");
             PhraseQuery phraseQuery = new PhraseQuery();
-            phraseQuery.Slop = 2;
+            phraseQuery.SetSlop(2);
             phraseQuery.Add(term);
             phraseQuery.Add(term2);
             originalQuery.Add(phraseQuery, Matches.Always.GetLuceneOccurance());
