@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using Lucene.Net.Documents;
 using Lucene.Net.Search;
 using Lucene.Net.Store;
 using Lucinq.Interfaces;
@@ -8,7 +9,7 @@ using Directory = Lucene.Net.Store.Directory;
 
 namespace Lucinq.Querying
 {
-    public class LuceneSearch : ILuceneSearch<LuceneSearchResult>, IIndexSearcherAccessor
+    public class LuceneSearch : ILuceneSearch<ILuceneSearchResult<Document>>, IIndexSearcherAccessor
     {
         #region [ Fields ]
 
@@ -71,14 +72,21 @@ namespace Lucinq.Querying
             }
         }
 
-        public virtual LuceneSearchResult Execute(Query query, int noOfResults = Int32.MaxValue - 1, Sort sort = null, Filter filter = null)
+        public virtual ILuceneSearchResult<Document> Execute(Query query, int noOfResults = Int32.MaxValue - 1, Sort sort = null, Filter filter = null)
         {
             return new LuceneSearchResult(this, query, sort, filter);
         }
 
-        public LuceneSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1)
+        public virtual ILuceneSearchResult<Document> Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1)
         {
             return Execute(queryBuilder.Build(), noOfResults, queryBuilder.CurrentSort, queryBuilder.CurrentFilter);
+        }
+
+        public virtual TItemResult Execute<TItemResult, T>(IQueryBuilder queryBuilder, Func<ILuceneSearchResult<Document>, TItemResult> creator, int noOfResults = Int32.MaxValue - 1) where TItemResult : ItemResult<T>
+        {
+            ILuceneSearchResult<Document> luceneSearchResult = Execute(queryBuilder.Build(), noOfResults,
+                queryBuilder.CurrentSort, queryBuilder.CurrentFilter);
+            return creator(luceneSearchResult);
         }
 
         public virtual IIndexSearcherProvider GetIndexSearcherProvider()
@@ -90,7 +98,6 @@ namespace Lucinq.Querying
 
             return indexSearcherProvider;
         }
-
 
         #endregion
     }

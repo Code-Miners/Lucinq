@@ -260,6 +260,50 @@ namespace Lucinq.UnitTests.UnitTests
 			Console.Write(queryString);
 		}
 
+        [Test]
+        public void CaseSensitivePhraseFromArray()
+        {
+            BooleanQuery originalQuery = new BooleanQuery();
+            Term term = new Term("_name", "Value");
+            Term term2 = new Term("_name", "Value2");
+            PhraseQuery phraseQuery = new PhraseQuery();
+            phraseQuery.Slop = 2;
+            phraseQuery.Add(term);
+            phraseQuery.Add(term2);
+            originalQuery.Add(phraseQuery, Matches.Always.GetLuceneOccurance());
+            string queryString = originalQuery.ToString();
+
+            QueryBuilder builder = new QueryBuilder { CaseSensitive = true };
+            builder.Setup(x => x.Phrase("_name", new[]{"Value", "Value2"}, 2, caseSensitive:true));
+            Query replacementQuery = builder.Build();
+            string newQueryString = replacementQuery.ToString();
+
+            Assert.AreEqual(queryString, newQueryString);
+            Console.Write(queryString);
+        }
+
+        [Test]
+        public void CaseInSensitivePhraseFromArray()
+        {
+            BooleanQuery originalQuery = new BooleanQuery();
+            Term term = new Term("_name", "value");
+            Term term2 = new Term("_name", "value2");
+            PhraseQuery phraseQuery = new PhraseQuery();
+            phraseQuery.Slop = 2;
+            phraseQuery.Add(term);
+            phraseQuery.Add(term2);
+            originalQuery.Add(phraseQuery, Matches.Always.GetLuceneOccurance());
+            string queryString = originalQuery.ToString();
+
+            QueryBuilder builder = new QueryBuilder();
+            builder.Setup(x => x.Phrase("_name", new[] { "Value", "Value2" }, 2));
+            Query replacementQuery = builder.Build();
+            string newQueryString = replacementQuery.ToString();
+
+            Assert.AreEqual(queryString, newQueryString);
+            Console.Write(queryString);
+        }
+
 		[Test]
 		public void QueryCaseSensitivePhrase()
 		{
@@ -776,6 +820,37 @@ namespace Lucinq.UnitTests.UnitTests
 			Assert.AreEqual(queryString, newQueryString);
 			Console.Write(queryString);
 		}
+
+        [Test]
+        public void OptionalAndExtension()
+        {
+            BooleanQuery originalQuery = new BooleanQuery();
+            BooleanQuery innerQuery = new BooleanQuery();
+
+            Term term = new Term("_name", "value1");
+            TermQuery termQuery1 = new TermQuery(term);
+            innerQuery.Add(termQuery1, Matches.Always.GetLuceneOccurance());
+
+            Term term2 = new Term("_name", "value2");
+            TermQuery termQuery2 = new TermQuery(term2);
+            innerQuery.Add(termQuery2, Matches.Always.GetLuceneOccurance());
+
+            originalQuery.Add(innerQuery, Matches.Sometimes.GetLuceneOccurance());
+            string queryString = originalQuery.ToString();
+
+            QueryBuilder builder = new QueryBuilder();
+            builder.And
+                (
+                    Matches.Sometimes,
+                    x => x.Term("_name", "value1"),
+                    x => x.Term("_name", "value2")
+                );
+            Query replacementQuery = builder.Build();
+            string newQueryString = replacementQuery.ToString();
+
+            Assert.AreEqual(queryString, newQueryString);
+            Console.Write(queryString);
+        }
 
 		#endregion
 
