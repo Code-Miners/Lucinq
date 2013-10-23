@@ -69,6 +69,12 @@ namespace Lucinq.Querying
 		    }
 		}
 
+        /// <summary>
+        /// Gets paged items on a zero based index
+        /// </summary>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
+        /// <returns></returns>
 		public virtual List<Document> GetPagedItems(int start, int end)
 		{
             using (var indexSearcherProvider = searcherAccessor.GetIndexSearcherProvider())
@@ -79,19 +85,21 @@ namespace Lucinq.Querying
 		            start = 0;
 		        }
 
-		        if (end > topDocs.TotalHits - 1)
-		        {
-                    end = topDocs.TotalHits - 1;
-		        }
-                if (end > topDocs.ScoreDocs.Length)
-		        {
-                    end = topDocs.ScoreDocs.Length - 1;
-		        }
-
 		        if (Documents != null)
 		        {
-		            return Documents.Skip(start).Take(end - start).ToList();
+		            end = end + 1;
+		            int take = end - start;
+                    return Documents.Skip(start).Take(take).ToList();
 		        }
+
+                if (end > topDocs.TotalHits - 1)
+                {
+                    end = topDocs.TotalHits - 1;
+                }
+                if (end > topDocs.ScoreDocs.Length)
+                {
+                    end = topDocs.ScoreDocs.Length - 1;
+                }
 
 		        List<Document> documents = new List<Document>();
 		        for (var i = start; i <= end; i++)
