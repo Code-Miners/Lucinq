@@ -350,7 +350,20 @@ namespace Lucinq.Querying
 
 		#region [ Sort Expressions ]
 
-		/// <summary>
+
+        /// <summary>
+        /// A convenience helper for sorting to make it more readable.
+        /// </summary>
+        /// <param name="fieldName"></param>
+        /// <param name="sortDescending"></param>
+        /// <param name="sortType"></param>
+        /// <returns></returns>
+	    public virtual IQueryBuilder Sort(string fieldName, bool sortDescending = false, SortType sortType = SortType.String)
+	    {
+	        return Sort(fieldName, sortDescending, (int) sortType);
+	    }
+
+        /// <summary>
 		/// Sorts the results by the corresponding field
 		/// </summary>
 		/// <param name="fieldName"></param>

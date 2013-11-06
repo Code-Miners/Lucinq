@@ -1,6 +1,4 @@
-﻿using Lucene.Net.Search;
-
-namespace Lucinq.Enums
+﻿namespace Lucinq.Enums
 {
     public enum Matches
     {

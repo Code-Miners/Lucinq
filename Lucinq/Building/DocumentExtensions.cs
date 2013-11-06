@@ -145,6 +145,78 @@ namespace Lucinq.Building
 			return document;
 		}
 
+        /// <summary>
+        /// Adds a field with a double data type
+        /// </summary>
+        /// <param name="document"></param>
+        /// <param name="value"></param>
+        /// <param name="caseSensitive"></param>
+        /// <param name="store"></param>
+        /// <param name="index"></param>
+        /// <param name="precisionStep"></param>
+        /// <returns></returns>
+        public static Document AddField(this Document document, string fieldName, double value, bool index = true, Field.Store store = Field.Store.YES, int precisionStep = Int32.MaxValue)
+        {
+            NumericField field = new NumericField(fieldName, precisionStep, store, index);
+            field.SetDoubleValue(value);
+            document.Add(field);
+            return document;
+        }
+
+        /// <summary>
+        /// Adds a field with a float data type
+        /// </summary>
+        /// <param name="document"></param>
+        /// <param name="fieldName"></param>
+        /// <param name="value"></param>
+        /// <param name="store"></param>
+        /// <param name="index"></param>
+        /// <param name="precisionStep"></param>
+        /// <returns></returns>
+        public static Document AddField(this Document document, string fieldName, float value, bool index = true, Field.Store store = Field.Store.YES, int precisionStep = Int32.MaxValue)
+        {
+            NumericField field = new NumericField(fieldName, precisionStep, store, index);
+            field.SetFloatValue(value);
+            document.Add(field);
+            return document;
+        }
+
+        /// <summary>
+        /// Adds a field with a float data type
+        /// </summary>
+        /// <param name="document"></param>
+        /// <param name="fieldName"></param>
+        /// <param name="value"></param>
+        /// <param name="store"></param>
+        /// <param name="index"></param>
+        /// <param name="precisionStep"></param>
+        /// <returns></returns>
+        public static Document AddField(this Document document, string fieldName, int value, bool index = true, Field.Store store = Field.Store.YES, int precisionStep = Int32.MaxValue)
+        {
+            NumericField field = new NumericField(fieldName, precisionStep, store, index);
+            field.SetIntValue(value);
+            document.Add(field);
+            return document;
+        }
+
+        /// <summary>
+        /// Adds a field with a long data type
+        /// </summary>
+        /// <param name="document"></param>
+        /// <param name="fieldName"></param>
+        /// <param name="value"></param>
+        /// <param name="store"></param>
+        /// <param name="index"></param>
+        /// <param name="precisionStep"></param>
+        /// <returns></returns>
+        public static Document AddField(this Document document, string fieldName, long value, bool index = true, Field.Store store = Field.Store.YES, int precisionStep = Int32.MaxValue)
+        {
+            NumericField field = new NumericField(fieldName, precisionStep, store, index);
+            field.SetLongValue(value);
+            document.Add(field);
+            return document;
+        }
+
 		/// <summary>
 		/// Sets up an already existing document with the specified actions
 		/// </summary>
