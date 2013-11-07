@@ -73,20 +73,20 @@ namespace Lucinq.Interfaces
                                                 Matches occur = Matches.NotSet, float? boost = null, string key = null, bool? caseSensitive = null);
 
         NumericRangeQuery<int> NumericRange(string fieldName, int minValue, int maxValue, Matches occur = Matches.NotSet, float? boost = null,
-                                                    int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null);
+                                                    int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null);
 
         NumericRangeQuery<float> NumericRange(string fieldName, float minValue, float maxValue, Matches occur = Matches.NotSet, float? boost = null,
-                                                    int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null);
+                                                    int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null);
 
         NumericRangeQuery<double> NumericRange(string fieldName, double minValue, double maxValue, Matches occur = Matches.NotSet, float? boost = null,
-                                            int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null);
+                                            int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null);
 
         NumericRangeQuery<long> NumericRange(string fieldName, long minValue, long maxValue, Matches occur = Matches.NotSet, float? boost = null,
-                                    int precisionStep = 1, bool includeMin = true, bool includeMax = true, string key = null);
+                                    int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null);
 
 
 		  NumericRangeQuery<long> DateRange(String fieldName, DateTime minValue, DateTime maxValue, Matches occur = Matches.NotSet,
-												float? boost = null, int precisionStep = 1, bool includeMin = true, bool includeMax = true, String key = null);
+                                                float? boost = null, int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, String key = null);
 
         TermQuery Term(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null,
             string key = null, bool? caseSensitive = null);
