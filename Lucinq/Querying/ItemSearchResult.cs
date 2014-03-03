@@ -61,7 +61,7 @@ namespace Lucinq.Querying
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
 	        var results = GetResults(topItems);
-            return new ItemResult<T>(results) { ElapsedTimeMs = stopwatch.ElapsedMilliseconds };
+            return new ItemResult<T>(results, LuceneSearchResult.TotalHits) { ElapsedTimeMs = stopwatch.ElapsedMilliseconds };
 
 	    }
 
@@ -77,7 +77,7 @@ namespace Lucinq.Querying
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
             var results = GetResults(pagedItems);
-            return new ItemResult<T>(results){ElapsedTimeMs = stopwatch.ElapsedMilliseconds};
+            return new ItemResult<T>(results, LuceneSearchResult.TotalHits) { ElapsedTimeMs = stopwatch.ElapsedMilliseconds };
 	    }
 
 	    public abstract T GetItem(Document document);
