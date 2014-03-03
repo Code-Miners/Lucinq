@@ -108,6 +108,7 @@ namespace Lucinq.UnitTests.UnitTests
             var results = newsArticleSearch.Execute(queryBuilder);
             var newsArticles = results.GetPagedItems(0, 2);
             Assert.Greater(results.TotalHits, newsArticles.Items.Count);
+            Assert.Greater(newsArticles.TotalHits, newsArticles.Items.Count);
             Assert.Greater(newsArticles.ElapsedTimeMs, 0);
             Console.WriteLine("Lucene Search Took {0}ms", results.ElapsedTimeMs);
             Console.WriteLine("News Population Took {0}ms", newsArticles.ElapsedTimeMs);
