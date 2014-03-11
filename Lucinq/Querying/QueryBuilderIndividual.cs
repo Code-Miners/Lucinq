@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+
 using Lucene.Net.Analysis;
 using Lucene.Net.Analysis.Standard;
 using Lucene.Net.Index;
@@ -424,9 +424,9 @@ namespace Lucinq.Querying
 		{
 			if (analyzer == null)
 			{
-				analyzer = new StandardAnalyzer(Version.LUCENE_29);
+                analyzer = new StandardAnalyzer(Version.LUCENE_30);
 			}
-			QueryParser queryParser = new QueryParser(Version.LUCENE_29, field, analyzer);
+			QueryParser queryParser = new QueryParser(Version.LUCENE_30, field, analyzer);
 			Query query = queryParser.Parse(queryText);
 			SetBoostValue(query, boost);
 			Add(query, occur, key);

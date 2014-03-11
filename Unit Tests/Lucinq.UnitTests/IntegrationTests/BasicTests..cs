@@ -159,7 +159,7 @@ namespace Lucinq.UnitTests.IntegrationTests
             LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Phrase(2).AddTerm(BBCFields.Title, "wildlife").AddTerm(BBCFields.Title, "africa");
-			var results = ExecuteAndAssert(luceneSearch, queryBuilder, 1);
+			ExecuteAndAssert(luceneSearch, queryBuilder, 1);
 		}
 
 		[Test]
@@ -168,7 +168,7 @@ namespace Lucinq.UnitTests.IntegrationTests
             LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false));
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Fuzzy(BBCFields.Title, "afric");
-			var results = ExecuteAndAssert(luceneSearch, queryBuilder, 16);
+			ExecuteAndAssert(luceneSearch, queryBuilder, 16);
 		}
 
 		[Test]
@@ -179,11 +179,11 @@ namespace Lucinq.UnitTests.IntegrationTests
 			queryBuilder.Setup(x => x.WildCard(BBCFields.Description, "a*"));
 
 			var results = ExecuteAndAssertPaged(luceneSearch, queryBuilder, 902, 0, 10);
-			var documents = results.GetPagedItems(0, 9);
+            var documents = results.GetRange(0, 9);
 			Assert.AreEqual(10, documents.Count);
 
 			var results2 = ExecuteAndAssertPaged(luceneSearch, queryBuilder, 902, 1, 11);
-			var documents2 = results2.GetPagedItems(1, 10);
+			var documents2 = results2.GetRange(1, 10);
 			Assert.AreEqual(10, documents2.Count);
 
 			for (var i = 0; i < documents.Count - 1; i++)
@@ -205,7 +205,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 				);
 
             ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
-			List<Document> documents = result.GetPagedItems(0, 100);
+            List<Document> documents = result.GetRange(0, 100);
 			for (var i = 1; i < documents.Count; i++)
 			{
 				string thisDocumentSortable = documents[i].GetValues(BBCFields.Sortable).FirstOrDefault();
@@ -227,7 +227,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 				);
 
             ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
-			List<Document> documents = result.GetPagedItems(0, 1000);
+            List<Document> documents = result.GetRange(0, 1000);
 			for (var i = 1; i < documents.Count; i++)
 			{
 				string thisDocumentSortable = GetSecondarySortString(documents[i]);
@@ -249,7 +249,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 				);
 
             ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
-			List<Document> documents = result.GetPagedItems(0, 1000);
+            List<Document> documents = result.GetRange(0, 1000);
 			for (var i = 1; i < documents.Count; i++)
 			{
 				string thisDocumentSortable = GetSecondarySortString(documents[i]);
@@ -275,7 +275,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 				);
 
             ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
-			List<Document> documents = result.GetPagedItems(0, 10);
+            List<Document> documents = result.GetRange(0, 10);
 			for (var i = 1; i < documents.Count; i++)
 			{
 				string thisDocumentSortable = documents[i].GetValues(BBCFields.Sortable).FirstOrDefault();
@@ -289,7 +289,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		{
             LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false));
 			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Terms(BBCFields.Title, new[] { "africa", "road" }, occur: Matches.Always);
+			queryBuilder.Terms(BBCFields.Title, new[] { "africa", "road" }, Matches.Always);
 			ExecuteAndAssert(luceneSearch, queryBuilder, 1);
 		}
 
@@ -400,7 +400,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 
             queryBuilder.Term(BBCFields.Title, "africa");
 
-            var result = luceneSearch.Execute(queryBuilder).Where(doc => doc.GetField(BBCFields.Title).StringValue.IndexOf("your", StringComparison.OrdinalIgnoreCase) >= 0);
+            var result = luceneSearch.Execute(queryBuilder).Where(doc => doc.GetField(BBCFields.Title).StringValue.IndexOf("your", StringComparison.OrdinalIgnoreCase) >= 0).ToArray();
             WriteDocuments(result);
             Assert.AreEqual(1, result.Count());
         }
@@ -441,7 +441,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 		{
 			// Search = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
 			var result = luceneSearch.Execute(queryBuilder);
-			List<Document> documents = result.GetPagedItems(start, end);
+            List<Document> documents = result.GetRange(start, end);
 
             Console.WriteLine("Searched documents in {0} ms", result.ElapsedTimeMs);
 			Console.WriteLine();

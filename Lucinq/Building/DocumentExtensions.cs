@@ -145,17 +145,17 @@ namespace Lucinq.Building
 			return document;
 		}
 
-        /// <summary>
-        /// Adds a field with a double data type
-        /// </summary>
-        /// <param name="document"></param>
-        /// <param name="value"></param>
-        /// <param name="caseSensitive"></param>
-        /// <param name="store"></param>
-        /// <param name="index"></param>
-        /// <param name="precisionStep"></param>
-        /// <returns></returns>
-        public static Document AddField(this Document document, string fieldName, double value, bool index = true, Field.Store store = Field.Store.YES, int precisionStep = Int32.MaxValue)
+	    /// <summary>
+	    /// Adds a field with a double data type
+	    /// </summary>
+	    /// <param name="document"></param>
+	    /// <param name="fieldName"></param>
+	    /// <param name="value"></param>
+	    /// <param name="store"></param>
+	    /// <param name="index"></param>
+	    /// <param name="precisionStep"></param>
+	    /// <returns></returns>
+	    public static Document AddField(this Document document, string fieldName, double value, bool index = true, Field.Store store = Field.Store.YES, int precisionStep = Int32.MaxValue)
         {
             NumericField field = new NumericField(fieldName, precisionStep, store, index);
             field.SetDoubleValue(value);

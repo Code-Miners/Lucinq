@@ -73,14 +73,48 @@ namespace Lucinq.Querying
         #region [ Group Expressions ]
 
         /// <summary>
+        /// Creates a new instance of an and group.
+        /// </summary>
+        /// <returns>The new instance</returns>
+        public virtual IQueryBuilder CreateAndGroup(params Action<IQueryBuilder>[] queries)
+        {
+            return CreateAndGroup(Matches.Always, queries);
+        }
+
+        /// <summary>
+        /// Gets a new instance of an and group
+        /// </summary>
+        /// <param name="occur">Whether the group should occur</param>
+        /// <param name="queries">The queries</param>
+        /// <returns></returns>
+        public virtual IQueryBuilder CreateAndGroup(Matches occur, params Action<IQueryBuilder>[] queries)
+        {
+            return Group(occur, Matches.Always, queries);
+        }
+
+        /// <summary>
+        /// Creates a new instance of an or group that MUST occur
+        /// </summary>
+        /// <param name="queries"></param>
+        /// <returns></returns>
+        public virtual IQueryBuilder CreateOrGroup(params Action<IQueryBuilder>[] queries)
+        {
+            return CreateOrGroup(Matches.Always, queries);
+        }
+
+        public virtual IQueryBuilder CreateOrGroup(Matches occur, params Action<IQueryBuilder>[] queries)
+        {
+            return Group(occur, Matches.Sometimes, queries);
+        }
+
+        /// <summary>
         /// Creates a simple group that MUST occur, each item of which MUST occur by default
         /// </summary>
         /// <param name="queries">The lamdba expressions showing queries</param>
-        /// <returns></returns>
+        /// <returns>The original query builder</returns>
         public virtual IQueryBuilder And(params Action<IQueryBuilder>[] queries)
         {
-            Group(Matches.Always, Matches.Always, queries);
-            return this;
+            return And(Matches.Always, queries);
         }
 
         /// <summary>
@@ -88,9 +122,9 @@ namespace Lucinq.Querying
         /// </summary>
         /// <param name="occur">Whether the group must / should occur</param>
         /// <param name="queries">The lamdba expressions showing queries</param>
-        public virtual IQueryBuilder And(Matches occur = Matches.NotSet, params Action<IQueryBuilder>[] queries)
+        public virtual IQueryBuilder And(Matches occur, params Action<IQueryBuilder>[] queries)
         {
-            Group(occur, Matches.Always, queries);
+            CreateAndGroup(occur, queries);
             return this;
         }
 
@@ -100,7 +134,7 @@ namespace Lucinq.Querying
         /// <param name="queries">The lamdba expressions showing queries</param>
         public virtual IQueryBuilder Or(params Action<IQueryBuilder>[] queries)
         {
-            return Group(Matches.Always, Matches.Sometimes, queries).Parent;
+            return Or(Matches.Always, queries);
         }
 
         /// <summary>
@@ -108,9 +142,10 @@ namespace Lucinq.Querying
         /// </summary>
         /// <param name="occur">Whether the group must / should occur</param>
         /// <param name="queries">The lamdba expressions showing queries</param>
-        public virtual IQueryBuilder Or(Matches occur = Matches.NotSet, params Action<IQueryBuilder>[] queries)
+        public virtual IQueryBuilder Or(Matches occur, params Action<IQueryBuilder>[] queries)
         {
-            return Group(occur, Matches.Sometimes, queries).Parent;
+            CreateOrGroup(occur, queries);
+            return this;
         }
 
         /// <summary>

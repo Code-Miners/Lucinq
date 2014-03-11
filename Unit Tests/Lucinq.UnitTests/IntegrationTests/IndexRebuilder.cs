@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Data;
 using System.Data.SqlClient;
+using System.Globalization;
 using System.IO;
 using System.Xml.Linq;
 using Lucene.Net.Analysis;
@@ -152,8 +152,9 @@ namespace Lucinq.UnitTests.IntegrationTests
 			Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_30);
 	        using (IndexWriter indexWriter = new IndexWriter(indexFolder, analyzer, IndexWriter.MaxFieldLength.UNLIMITED))
 	        {
-	            foreach (var carDataItem in carDataItems)
+	            foreach (var originalDataItem in carDataItems)
 	            {
+	                var carDataItem = originalDataItem;
 	                indexWriter.AddDocument(
 	                    x => x.AddAnalysedField(CarDataFields.AdvertId, carDataItem.AdvertId.ToString().ToLower()),
 	                    x => x.AddNonAnalysedField(CarDataFields.MakeId, carDataItem.MakeId),
@@ -171,7 +172,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 	                    x => x.AddAnalysedField(CarDataFields.Postcode, carDataItem.Postcode),
 	                    x => x.AddAnalysedField(CarDataFields.FuelType, carDataItem.FuelType),
 	                    x => x.AddNonAnalysedField(CarDataFields.Mileage, carDataItem.Mileage.ToString()),
-	                    x => x.AddAnalysedField(CarDataFields.Price, carDataItem.Price.ToString(), true)
+	                    x => x.AddAnalysedField(CarDataFields.Price, carDataItem.Price.ToString(CultureInfo.InvariantCulture), true)
 	                    );
 	            }
 	        }

@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Lucinq.Interfaces
+﻿namespace Lucinq.Interfaces
 {
     public interface ISearchResult<T> : ISearchResult where T : class
     {

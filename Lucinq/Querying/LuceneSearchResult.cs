@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -69,13 +70,19 @@ namespace Lucinq.Querying
 		    }
 		}
 
+        [Obsolete("GetPagedItems is being deprecated, Use GetRange instead")]
+        public List<Document> GetPagedItems(int start, int end)
+        {
+            return GetRange(start, end);
+        }
+
         /// <summary>
-        /// Gets paged items on a zero based index
+        /// Gets a range of items on a zero based index
         /// </summary>
         /// <param name="start"></param>
         /// <param name="end"></param>
         /// <returns></returns>
-		public virtual List<Document> GetPagedItems(int start, int end)
+		public virtual List<Document> GetRange(int start, int end)
 		{
             using (var indexSearcherProvider = searcherAccessor.GetIndexSearcherProvider())
 		    {

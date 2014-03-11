@@ -202,9 +202,8 @@ namespace Lucinq.UnitTests.UnitTests
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "value");
-			PhraseQuery phraseQuery = new PhraseQuery();
-			phraseQuery.Slop = 2;
-			phraseQuery.Add(term);
+			PhraseQuery phraseQuery = new PhraseQuery {Slop = 2};
+		    phraseQuery.Add(term);
             originalQuery.Add(phraseQuery, Matches.Always.GetLuceneOccurance());
 			string queryString = originalQuery.ToString();
 
@@ -223,9 +222,8 @@ namespace Lucinq.UnitTests.UnitTests
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "value");
-			PhraseQuery phraseQuery = new PhraseQuery();
-		    phraseQuery.Slop = 2;
-			phraseQuery.Add(term);
+			PhraseQuery phraseQuery = new PhraseQuery {Slop = 2};
+		    phraseQuery.Add(term);
 			phraseQuery.Boost = 10;
             originalQuery.Add(phraseQuery, Matches.Always.GetLuceneOccurance());
 			string queryString = originalQuery.ToString();
@@ -245,9 +243,8 @@ namespace Lucinq.UnitTests.UnitTests
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "Value");
-			PhraseQuery phraseQuery = new PhraseQuery();
-			phraseQuery.Slop = 2;
-			phraseQuery.Add(term);
+			PhraseQuery phraseQuery = new PhraseQuery {Slop = 2};
+		    phraseQuery.Add(term);
             originalQuery.Add(phraseQuery, Matches.Always.GetLuceneOccurance());
 			string queryString = originalQuery.ToString();
 
@@ -266,8 +263,7 @@ namespace Lucinq.UnitTests.UnitTests
             BooleanQuery originalQuery = new BooleanQuery();
             Term term = new Term("_name", "Value");
             Term term2 = new Term("_name", "Value2");
-            PhraseQuery phraseQuery = new PhraseQuery();
-            phraseQuery.Slop = 2;
+            PhraseQuery phraseQuery = new PhraseQuery {Slop = 2};
             phraseQuery.Add(term);
             phraseQuery.Add(term2);
             originalQuery.Add(phraseQuery, Matches.Always.GetLuceneOccurance());
@@ -288,8 +284,7 @@ namespace Lucinq.UnitTests.UnitTests
             BooleanQuery originalQuery = new BooleanQuery();
             Term term = new Term("_name", "value");
             Term term2 = new Term("_name", "value2");
-            PhraseQuery phraseQuery = new PhraseQuery();
-            phraseQuery.Slop = 2;
+            PhraseQuery phraseQuery = new PhraseQuery {Slop = 2};
             phraseQuery.Add(term);
             phraseQuery.Add(term2);
             originalQuery.Add(phraseQuery, Matches.Always.GetLuceneOccurance());
@@ -309,9 +304,8 @@ namespace Lucinq.UnitTests.UnitTests
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
 			Term term = new Term("_name", "Value");
-			PhraseQuery phraseQuery = new PhraseQuery();
-			phraseQuery.Slop = 2;
-			phraseQuery.Add(term);
+			PhraseQuery phraseQuery = new PhraseQuery {Slop = 2};
+		    phraseQuery.Add(term);
             originalQuery.Add(phraseQuery, Matches.Always.GetLuceneOccurance());
 			string queryString = originalQuery.ToString();
 
@@ -779,17 +773,50 @@ namespace Lucinq.UnitTests.UnitTests
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder();
-			builder.Or
+			var builder2 = builder.Or
 				(
 					x => x.Term("_name", "value1"),
 					x => x.Term("_name", "value2")
 				);
+
+            Assert.AreEqual(builder2, builder);
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
 			Assert.AreEqual(queryString, newQueryString);
 			Console.Write(queryString);
 		}
+
+        [Test]
+        public void CreateOrExtension()
+        {
+            BooleanQuery originalQuery = new BooleanQuery();
+            BooleanQuery innerQuery = new BooleanQuery();
+
+            Term term = new Term("_name", "value1");
+            TermQuery termQuery1 = new TermQuery(term);
+            innerQuery.Add(termQuery1, Matches.Sometimes.GetLuceneOccurance());
+
+            Term term2 = new Term("_name", "value2");
+            TermQuery termQuery2 = new TermQuery(term2);
+            innerQuery.Add(termQuery2, Matches.Sometimes.GetLuceneOccurance());
+
+            originalQuery.Add(innerQuery, Matches.Always.GetLuceneOccurance());
+            string queryString = originalQuery.ToString();
+
+            QueryBuilder builder = new QueryBuilder();
+            var group = builder.CreateOrGroup
+                (
+                    x => x.Term("_name", "value1"),
+                    x => x.Term("_name", "value2")
+                );
+            Assert.AreNotEqual(group, builder);
+            Query replacementQuery = builder.Build();
+            string newQueryString = replacementQuery.ToString();
+
+            Assert.AreEqual(queryString, newQueryString);
+            Console.Write(queryString);
+        }
 
 		[Test]
 		public void AndExtension()
@@ -809,17 +836,51 @@ namespace Lucinq.UnitTests.UnitTests
 			string queryString = originalQuery.ToString();
 
 			QueryBuilder builder = new QueryBuilder();
-			builder.And
+			var builder2 = builder.And
 				(
 					x => x.Term("_name", "value1"),
 					x => x.Term("_name", "value2")
 				);
+
+            Assert.AreEqual(builder2, builder);
 			Query replacementQuery = builder.Build();
 			string newQueryString = replacementQuery.ToString();
 
 			Assert.AreEqual(queryString, newQueryString);
 			Console.Write(queryString);
 		}
+
+        [Test]
+        public void CreateAndExtension()
+        {
+            BooleanQuery originalQuery = new BooleanQuery();
+            BooleanQuery innerQuery = new BooleanQuery();
+
+            Term term = new Term("_name", "value1");
+            TermQuery termQuery1 = new TermQuery(term);
+            innerQuery.Add(termQuery1, Matches.Always.GetLuceneOccurance());
+
+            Term term2 = new Term("_name", "value2");
+            TermQuery termQuery2 = new TermQuery(term2);
+            innerQuery.Add(termQuery2, Matches.Always.GetLuceneOccurance());
+
+            originalQuery.Add(innerQuery, Matches.Always.GetLuceneOccurance());
+            string queryString = originalQuery.ToString();
+
+            QueryBuilder builder = new QueryBuilder();
+            var builder2 = builder.CreateAndGroup
+                (
+                    x => x.Term("_name", "value1"),
+                    x => x.Term("_name", "value2")
+                );
+
+            Assert.AreNotEqual(builder2, builder);
+            Query replacementQuery = builder.Build();
+            string newQueryString = replacementQuery.ToString();
+
+            Assert.AreEqual(queryString, newQueryString);
+            Console.Write(queryString);
+        }
 
         [Test]
         public void OptionalAndExtension()
