@@ -6,7 +6,7 @@ namespace Lucinq.Interfaces
 {
     public interface IQueryBuilderIndividual
     {
-	    PrefixQuery PrefixedWith(String fieldname, String value, Matches occur = Matches.NotSet, float? boost = null, String key = null);
+        PrefixQuery PrefixedWith(String fieldname, String value, Matches occur = Matches.NotSet, float? boost = null, String key = null);
 
         /// <summary>
         /// Creates a query using the keyword analyzer
@@ -85,8 +85,8 @@ namespace Lucinq.Interfaces
                                     int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null);
 
 
-		  NumericRangeQuery<long> DateRange(String fieldName, DateTime minValue, DateTime maxValue, Matches occur = Matches.NotSet,
-                                                float? boost = null, int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, String key = null);
+        NumericRangeQuery<long> DateRange(String fieldName, DateTime minValue, DateTime maxValue, Matches occur = Matches.NotSet,
+                                              float? boost = null, int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, String key = null);
 
         TermQuery Term(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null,
             string key = null, bool? caseSensitive = null);

@@ -131,6 +131,17 @@ namespace Lucinq.UnitTests.UnitTests
 
         public class Conversion : ConversionBase<Query>
         {
+            public Conversion()
+                : this(new QueryOperations())
+            {
+                
+            }
+
+            public Conversion(IQueryOperations operations)
+            {
+                QueryOperations = operations;
+            }
+
             public FuzzyQuery Fuzzy1()
             {
                 FuzzyQuery query = new FuzzyQuery(new Term("fred"));
@@ -154,13 +165,7 @@ namespace Lucinq.UnitTests.UnitTests
                 return new QueryWrapper<T>(query);
             }
 
-            protected override IQueryOperations QueryOperations
-            {
-                get
-                {
-                    return new QueryOperations();
-                }
-            }
+            protected override IQueryOperations QueryOperations { get; set; }
 
             protected override void SetBoostValue(Query query, float boost)
             {
@@ -170,7 +175,7 @@ namespace Lucinq.UnitTests.UnitTests
 
         public abstract class ConversionBase<TQuery>
         {
-            protected abstract IQueryOperations QueryOperations { get; }
+            protected abstract IQueryOperations QueryOperations { get; set; }
             
             protected TActualQuery GetFuzzy1<TActualQuery>(TActualQuery query, float boost)
                 where TActualQuery : class, TQuery
