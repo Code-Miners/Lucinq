@@ -110,7 +110,7 @@ namespace Lucinq.UnitTests.UnitTests
             LuceneSearch luceneSearch = new LuceneSearch(IndexDirectory);
             QueryBuilder qb = new QueryBuilder(x => x.Term(BBCFields.Title, "africa"));
             var result = luceneSearch.Execute(qb);
-            result.GetPagedItems(0, 10);
+            result.GetRange(0, 10);
             result.GetTopItems();
         }
 

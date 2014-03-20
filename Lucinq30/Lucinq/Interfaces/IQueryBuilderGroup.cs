@@ -112,10 +112,22 @@ namespace Lucinq.Interfaces
 		/// <returns></returns>
         Query Raw(string field, string queryText, Matches occur = Matches.NotSet, float? boost = null, string key = null, Analyzer analyzer = null);
 
-		IQueryBuilder Sort(string fieldName, bool sortDescending = false, int? sortType = null);
+        IQueryBuilder Sort(string fieldName, bool sortDescending = false, SortType sortType = SortType.String);
 
         IQueryBuilder Phrase(string fieldName, string[] fieldValues, int slop, Matches occur = Matches.NotSet, float? boost = null, bool? caseSensitive = null);
 
 		#endregion
+
+        #region [ Creation ]
+
+        IQueryBuilder CreateAndGroup(params Action<IQueryBuilder>[] queries);
+
+        IQueryBuilder CreateAndGroup(Matches occur, params Action<IQueryBuilder>[] queries);
+
+        IQueryBuilder CreateOrGroup(params Action<IQueryBuilder>[] queries);
+
+        IQueryBuilder CreateOrGroup(Matches occur, params Action<IQueryBuilder>[] queries);
+
+        #endregion
 	}
 }

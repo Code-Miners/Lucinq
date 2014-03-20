@@ -53,6 +53,8 @@
     <Compile Include="Building\DocumentExtensions.cs" />
     <Compile Include="Building\IndexExtensions.cs" />
     <Compile Include="Enums\Matches.cs" />
+    <Compile Include="Enums\SortType.cs" />
+    <Compile Include="Enums\Store.cs" />
     <Compile Include="Extensions\ConversionExtensions.cs" />
     <Compile Include="Interfaces\IItemResult.cs" />
     <Compile Include="Interfaces\ILuceneSearchResult.cs" />

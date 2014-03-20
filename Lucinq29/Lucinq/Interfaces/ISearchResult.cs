@@ -1,9 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
 
 namespace Lucinq.Interfaces
 {
     public interface ISearchResult<T> : ISearchResult where T : class
     {
+        IItemResult<T> GetRange(int start, int end);
+
+        [Obsolete("GetPagedItems is being deprecated, use GetRange instead")]
         IItemResult<T> GetPagedItems(int start, int end);
 
         IItemResult<T> GetTopItems();

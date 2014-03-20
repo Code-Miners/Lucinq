@@ -17,6 +17,8 @@ namespace Lucinq.Querying
 	{
 		#region [ Fields ]
 
+        private Version CurrentVersion = Version.LUCENE_29;
+
         private Matches defaultChildrenOccur;
 
 		private KeywordAnalyzer keywordAnalyzer;
@@ -350,24 +352,22 @@ namespace Lucinq.Querying
 
 		#region [ Sort Expressions ]
 
-		/// <summary>
-		/// Sorts the results by the corresponding field
-		/// </summary>
-		/// <param name="fieldName"></param>
-		/// <param name="sortDescending"></param>
-		/// <param name="sortType"></param>
-		/// <returns></returns>
-		public virtual IQueryBuilder Sort(string fieldName, bool sortDescending = false, int? sortType = null)
-		{
-			if (!sortType.HasValue)
-			{
-				sortType = SortField.STRING;
-			}
 
-			SortField sortField = new SortField(fieldName, sortType.Value, sortDescending);
-			SortFields.Add(sortField);
-			return this;
-		}
+        /// <summary>
+        /// A convenience helper for sorting to make it more readable.
+        /// </summary>
+        /// <param name="fieldName"></param>
+        /// <param name="sortDescending"></param>
+        /// <param name="sortType"></param>
+        /// <returns></returns>
+	    public virtual IQueryBuilder Sort(string fieldName, bool sortDescending = false, SortType sortType = SortType.String)
+        {
+            int sortValue = (int)sortType;
+
+            SortField sortField = new SortField(fieldName, sortValue, sortDescending);
+            SortFields.Add(sortField);
+            return this;
+	    }
 
 		#endregion
 
@@ -411,9 +411,9 @@ namespace Lucinq.Querying
 		{
 			if (analyzer == null)
 			{
-				analyzer = new StandardAnalyzer(Version.LUCENE_29);
+                analyzer = new StandardAnalyzer(CurrentVersion);
 			}
-			QueryParser queryParser = new QueryParser(Version.LUCENE_29, field, analyzer);
+            QueryParser queryParser = new QueryParser(CurrentVersion, field, analyzer);
 			Query query = queryParser.Parse(queryText);
 			SetBoostValue(query, boost);
 			Add(query, occur, key);

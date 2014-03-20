@@ -7,7 +7,9 @@ using Lucinq.Interfaces;
 
 namespace Lucinq.Querying
 {
-	public abstract class ItemSearchResult<T> : IItemResult<T>
+    using System;
+
+    public abstract class ItemSearchResult<T> : IItemResult<T>
 	{
 		#region [ Constructors ]
 
@@ -61,7 +63,7 @@ namespace Lucinq.Querying
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
 	        var results = GetResults(topItems);
-            return new ItemResult<T>(results) { ElapsedTimeMs = stopwatch.ElapsedMilliseconds };
+            return new ItemResult<T>(results, LuceneSearchResult.TotalHits) { ElapsedTimeMs = stopwatch.ElapsedMilliseconds };
 
 	    }
 
@@ -70,15 +72,27 @@ namespace Lucinq.Querying
 	        return items == null ? null : items.Select(GetItem).ToList();
 	    }
 
-        public virtual IItemResult<T> GetPagedItems(int start, int end)
+        /// <summary>
+        /// Gets a range of items.
+        /// </summary>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
+        /// <returns></returns>
+	    public virtual IItemResult<T> GetRange(int start, int end)
 	    {
-            var pagedItems = LuceneSearchResult.GetPagedItems(start, end);
+            var pagedItems = LuceneSearchResult.GetRange(start, end);
             ElapsedTimeMs = LuceneSearchResult.ElapsedTimeMs;
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
             var results = GetResults(pagedItems);
-            return new ItemResult<T>(results){ElapsedTimeMs = stopwatch.ElapsedMilliseconds};
+            return new ItemResult<T>(results, LuceneSearchResult.TotalHits) { ElapsedTimeMs = stopwatch.ElapsedMilliseconds };
 	    }
+
+        [Obsolete("GetPagedItems is being deprecated, use GetRange instead")]
+        public virtual IItemResult<T> GetPagedItems(int start, int end)
+        {
+            return GetRange(start, end);
+        }
 
 	    public abstract T GetItem(Document document);
 

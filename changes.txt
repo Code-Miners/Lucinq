@@ -1,0 +1,33 @@
+
+C:\Work\lucinq\lucinq>c:\apichange\apichange -diff -old Lucinq29\lucinq\bin\debug\lucinq.dll -new Lucinq30\lucinq\bin\debug\lucinq.dll 
+Compare from C:\Work\lucinq\lucinq\Lucinq29\lucinq\bin\debug against C:\Work\lucinq\lucinq\Lucinq30\lucinq\bin\debug
+Lucinq.dll has 24 changes
+	public class Lucinq.Extensions.ConversionExtensions
+		+ public static Lucene.Net.Search.Occur GetLuceneOccurance(Matches matches)
+		- public static Lucene.Net.Search.BooleanClause/Occur GetLuceneOccurance(Matches matches)
+	public class Lucinq.Querying.DateRangeFilter
+		+ public static NumericRangeFilter<long> Filter(String field,DateTime start,DateTime end)
+		- public static Lucene.Net.Search.NumericRangeFilter Filter(String field,DateTime start,DateTime end)
+	public interface Lucinq.Interfaces.IQueryBuilderIndividual
+		+ public NumericRangeQuery<int> NumericRange(String fieldName,Int32 minValue,Int32 maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+		+ public NumericRangeQuery<float> NumericRange(String fieldName,Single minValue,Single maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+		+ public NumericRangeQuery<double> NumericRange(String fieldName,Double minValue,Double maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+		+ public NumericRangeQuery<long> NumericRange(String fieldName,Int64 minValue,Int64 maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+		+ public NumericRangeQuery<long> DateRange(String fieldName,DateTime minValue,DateTime maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+		- public Lucene.Net.Search.NumericRangeQuery NumericRange(String fieldName,Int32 minValue,Int32 maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+		- public Lucene.Net.Search.NumericRangeQuery NumericRange(String fieldName,Single minValue,Single maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+		- public Lucene.Net.Search.NumericRangeQuery NumericRange(String fieldName,Double minValue,Double maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+		- public Lucene.Net.Search.NumericRangeQuery NumericRange(String fieldName,Int64 minValue,Int64 maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+		- public Lucene.Net.Search.NumericRangeQuery DateRange(String fieldName,DateTime minValue,DateTime maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+	public class Lucinq.Querying.QueryBuilder
+		+ public virtual NumericRangeQuery<int> NumericRange(String fieldName,Int32 minValue,Int32 maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+		+ public virtual NumericRangeQuery<float> NumericRange(String fieldName,Single minValue,Single maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+		+ public virtual NumericRangeQuery<double> NumericRange(String fieldName,Double minValue,Double maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+		+ public virtual NumericRangeQuery<long> NumericRange(String fieldName,Int64 minValue,Int64 maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+		+ public virtual NumericRangeQuery<long> DateRange(String fieldName,DateTime minValue,DateTime maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+		- public virtual Lucene.Net.Search.NumericRangeQuery NumericRange(String fieldName,Int32 minValue,Int32 maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+		- public virtual Lucene.Net.Search.NumericRangeQuery NumericRange(String fieldName,Single minValue,Single maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+		- public virtual Lucene.Net.Search.NumericRangeQuery NumericRange(String fieldName,Double minValue,Double maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+		- public virtual Lucene.Net.Search.NumericRangeQuery NumericRange(String fieldName,Int64 minValue,Int64 maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+		- public virtual Lucene.Net.Search.NumericRangeQuery DateRange(String fieldName,DateTime minValue,DateTime maxValue,Matches occur,Nullable<float> boost,Int32 precisionStep,Boolean includeMin,Boolean includeMax,String key)
+From 1 assemblies were 0 types removed and 4 changed.

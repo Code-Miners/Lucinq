@@ -7,7 +7,9 @@ using Lucinq.Interfaces;
 
 namespace Lucinq.Querying
 {
-	public abstract class ItemSearchResult<T> : IItemResult<T>
+    using System;
+
+    public abstract class ItemSearchResult<T> : IItemResult<T>
 	{
 		#region [ Constructors ]
 
@@ -86,6 +88,7 @@ namespace Lucinq.Querying
             return new ItemResult<T>(results, LuceneSearchResult.TotalHits) { ElapsedTimeMs = stopwatch.ElapsedMilliseconds };
 	    }
 
+        [Obsolete("GetPagedItems is being deprecated, use GetRange instead")]
         public virtual IItemResult<T> GetPagedItems(int start, int end)
         {
             return GetRange(start, end);

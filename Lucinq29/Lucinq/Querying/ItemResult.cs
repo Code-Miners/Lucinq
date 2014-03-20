@@ -6,9 +6,10 @@ namespace Lucinq.Querying
 {
     public class ItemResult<T> : IItemResult<T>
     {
-        public ItemResult(List<T> items)
+        public ItemResult(List<T> items, int totalHits)
         {
             Items = items;
+            TotalHits = totalHits;
         }
 
         public int TotalHits { get; private set; }

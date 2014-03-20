@@ -1,9 +1,11 @@
 ﻿using System;
 using Lucene.Net.Documents;
+using Lucinq.Enums;
+using Lucinq.Extensions;
 
 namespace Lucinq.Building
 {
-	public static class DocumentExtensions
+    public static class DocumentExtensions
 	{
 		/// <summary>
 		/// Adds a field to the index analysing its content according to the index writer's analyzer
@@ -155,9 +157,10 @@ namespace Lucinq.Building
 	    /// <param name="index"></param>
 	    /// <param name="precisionStep"></param>
 	    /// <returns></returns>
-	    public static Document AddField(this Document document, string fieldName, double value, bool index = true, Field.Store store = Field.Store.YES, int precisionStep = Int32.MaxValue)
-        {
-            NumericField field = new NumericField(fieldName, precisionStep, store, index);
+	    public static Document AddField(this Document document, string fieldName, double value, bool index = true, Store store = Store.Yes, int precisionStep = Int32.MaxValue)
+	    {
+	        var luceneStore = store.GetLuceneStorage();
+            NumericField field = new NumericField(fieldName, precisionStep, luceneStore, index);
             field.SetDoubleValue(value);
             document.Add(field);
             return document;
@@ -173,9 +176,10 @@ namespace Lucinq.Building
         /// <param name="index"></param>
         /// <param name="precisionStep"></param>
         /// <returns></returns>
-        public static Document AddField(this Document document, string fieldName, float value, bool index = true, Field.Store store = Field.Store.YES, int precisionStep = Int32.MaxValue)
+        public static Document AddField(this Document document, string fieldName, float value, bool index = true, Store store = Store.Yes, int precisionStep = Int32.MaxValue)
         {
-            NumericField field = new NumericField(fieldName, precisionStep, store, index);
+            var luceneStore = store.GetLuceneStorage();
+            NumericField field = new NumericField(fieldName, precisionStep, luceneStore, index);
             field.SetFloatValue(value);
             document.Add(field);
             return document;
@@ -191,9 +195,10 @@ namespace Lucinq.Building
         /// <param name="index"></param>
         /// <param name="precisionStep"></param>
         /// <returns></returns>
-        public static Document AddField(this Document document, string fieldName, int value, bool index = true, Field.Store store = Field.Store.YES, int precisionStep = Int32.MaxValue)
+        public static Document AddField(this Document document, string fieldName, int value, bool index = true, Store store = Store.Yes, int precisionStep = Int32.MaxValue)
         {
-            NumericField field = new NumericField(fieldName, precisionStep, store, index);
+            var luceneStore = store.GetLuceneStorage();
+            NumericField field = new NumericField(fieldName, precisionStep, luceneStore, index);
             field.SetIntValue(value);
             document.Add(field);
             return document;
@@ -209,9 +214,10 @@ namespace Lucinq.Building
         /// <param name="index"></param>
         /// <param name="precisionStep"></param>
         /// <returns></returns>
-        public static Document AddField(this Document document, string fieldName, long value, bool index = true, Field.Store store = Field.Store.YES, int precisionStep = Int32.MaxValue)
+        public static Document AddField(this Document document, string fieldName, long value, bool index = true, Store store = Store.Yes, int precisionStep = Int32.MaxValue)
         {
-            NumericField field = new NumericField(fieldName, precisionStep, store, index);
+            var luceneStore = store.GetLuceneStorage();
+            NumericField field = new NumericField(fieldName, precisionStep, luceneStore, index);
             field.SetLongValue(value);
             document.Add(field);
             return document;

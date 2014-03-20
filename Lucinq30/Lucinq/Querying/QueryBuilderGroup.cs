@@ -41,22 +41,17 @@ namespace Lucinq.Querying
             BooleanQuery booleanQuery = new BooleanQuery();
             foreach (QueryReference query in Queries.Values)
             {
-                booleanQuery.Add(query.Query, GetLuceneOccur(query.Occur));
+                booleanQuery.Add(query.Query, query.Occur.GetLuceneOccurance());
             }
 
             foreach (IQueryBuilder query in Groups)
             {
-                booleanQuery.Add(query.Build(), GetLuceneOccur(query.Occur));
+                booleanQuery.Add(query.Build(), query.Occur.GetLuceneOccurance());
             }
 
             BuildSort();
 
             return booleanQuery;
-        }
-
-        public virtual Occur GetLuceneOccur(Matches matches)
-        {
-            return matches.GetLuceneOccurance();
         }
 
         public virtual void BuildSort()
@@ -71,41 +66,6 @@ namespace Lucinq.Querying
         #endregion
 
         #region [ Group Expressions ]
-
-        /// <summary>
-        /// Creates a new instance of an and group.
-        /// </summary>
-        /// <returns>The new instance</returns>
-        public virtual IQueryBuilder CreateAndGroup(params Action<IQueryBuilder>[] queries)
-        {
-            return CreateAndGroup(Matches.Always, queries);
-        }
-
-        /// <summary>
-        /// Gets a new instance of an and group
-        /// </summary>
-        /// <param name="occur">Whether the group should occur</param>
-        /// <param name="queries">The queries</param>
-        /// <returns></returns>
-        public virtual IQueryBuilder CreateAndGroup(Matches occur, params Action<IQueryBuilder>[] queries)
-        {
-            return Group(occur, Matches.Always, queries);
-        }
-
-        /// <summary>
-        /// Creates a new instance of an or group that MUST occur
-        /// </summary>
-        /// <param name="queries"></param>
-        /// <returns></returns>
-        public virtual IQueryBuilder CreateOrGroup(params Action<IQueryBuilder>[] queries)
-        {
-            return CreateOrGroup(Matches.Always, queries);
-        }
-
-        public virtual IQueryBuilder CreateOrGroup(Matches occur, params Action<IQueryBuilder>[] queries)
-        {
-            return Group(occur, Matches.Sometimes, queries);
-        }
 
         /// <summary>
         /// Creates a simple group that MUST occur, each item of which MUST occur by default
@@ -191,6 +151,45 @@ namespace Lucinq.Querying
         protected virtual IQueryBuilder CreateNewChildGroup(Matches occur = Matches.NotSet, Matches childrenOccur = Matches.NotSet)
         {
             return new QueryBuilder(this) { Occur = occur, DefaultChildrenOccur = childrenOccur };
+        }
+
+        #endregion
+
+        #region [ Creation ]
+
+        /// <summary>
+        /// Creates a new instance of an and group.
+        /// </summary>
+        /// <returns>The new instance</returns>
+        public virtual IQueryBuilder CreateAndGroup(params Action<IQueryBuilder>[] queries)
+        {
+            return CreateAndGroup(Matches.Always, queries);
+        }
+
+        /// <summary>
+        /// Gets a new instance of an and group
+        /// </summary>
+        /// <param name="occur">Whether the group should occur</param>
+        /// <param name="queries">The queries</param>
+        /// <returns></returns>
+        public virtual IQueryBuilder CreateAndGroup(Matches occur, params Action<IQueryBuilder>[] queries)
+        {
+            return Group(occur, Matches.Always, queries);
+        }
+
+        /// <summary>
+        /// Creates a new instance of an or group that MUST occur
+        /// </summary>
+        /// <param name="queries"></param>
+        /// <returns></returns>
+        public virtual IQueryBuilder CreateOrGroup(params Action<IQueryBuilder>[] queries)
+        {
+            return CreateOrGroup(Matches.Always, queries);
+        }
+
+        public virtual IQueryBuilder CreateOrGroup(Matches occur, params Action<IQueryBuilder>[] queries)
+        {
+            return Group(occur, Matches.Sometimes, queries);
         }
 
         #endregion
