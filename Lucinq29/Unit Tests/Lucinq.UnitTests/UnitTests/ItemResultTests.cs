@@ -54,7 +54,7 @@ namespace Lucinq.UnitTests.UnitTests
             queryBuilder.Term(BBCFields.Title, "africa");
             DelegateSearchResultFactory<NewsArticle> articleFactory = new DelegateSearchResultFactory<NewsArticle>(GetNewsArticleFromDocument);
             var results = luceneSearch.Execute<DelegateItemSearchResult<NewsArticle>, NewsArticle>(queryBuilder, articleFactory.GetItemResult);
-            var newsArticles = results.GetPagedItems(0, 2);
+            var newsArticles = results.GetRange(0, 2);
             Assert.Greater(results.TotalHits, newsArticles.Items.Count);
             foreach (var newsArticle in newsArticles)
             {
@@ -71,7 +71,7 @@ namespace Lucinq.UnitTests.UnitTests
             IQueryBuilder queryBuilder = new QueryBuilder();
             queryBuilder.Term(BBCFields.Title, "africa");
             var results = luceneSearch.Execute<NewsArticleItemResult, NewsArticle>(queryBuilder, x => new NewsArticleItemResult(x));
-            var newsArticles = results.GetPagedItems(0, 2);
+            var newsArticles = results.GetRange(0, 2);
             Assert.Greater(results.TotalHits, newsArticles.Items.Count);
             foreach (var newsArticle in newsArticles)
             {
@@ -106,8 +106,9 @@ namespace Lucinq.UnitTests.UnitTests
             IQueryBuilder queryBuilder = new QueryBuilder();
             queryBuilder.Term(BBCFields.Title, "africa");
             var results = newsArticleSearch.Execute(queryBuilder);
-            var newsArticles = results.GetPagedItems(0, 2);
+            var newsArticles = results.GetRange(0, 2);
             Assert.Greater(results.TotalHits, newsArticles.Items.Count);
+            Assert.Greater(newsArticles.TotalHits, newsArticles.Items.Count);
             Assert.Greater(newsArticles.ElapsedTimeMs, 0);
             Console.WriteLine("Lucene Search Took {0}ms", results.ElapsedTimeMs);
             Console.WriteLine("News Population Took {0}ms", newsArticles.ElapsedTimeMs);

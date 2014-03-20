@@ -1,9 +1,11 @@
 
 C:\Work\lucinq\lucinq>c:\apichange\apichange -diff -old Lucinq29\lucinq\bin\debug\lucinq.dll -new Lucinq30\lucinq\bin\debug\lucinq.dll 
 Compare from C:\Work\lucinq\lucinq\Lucinq29\lucinq\bin\debug against C:\Work\lucinq\lucinq\Lucinq30\lucinq\bin\debug
-Lucinq.dll has 24 changes
+Lucinq.dll has 26 changes
 	public class Lucinq.Extensions.ConversionExtensions
 		+ public static Lucene.Net.Search.Occur GetLuceneOccurance(Matches matches)
+		+ public static void SetSlop(PhraseQuery phraseQuery,Int32 slop)
+		+ public static void SetBoost(Query query,Single boost)
 		- public static Lucene.Net.Search.BooleanClause/Occur GetLuceneOccurance(Matches matches)
 	public class Lucinq.Querying.DateRangeFilter
 		+ public static NumericRangeFilter<long> Filter(String field,DateTime start,DateTime end)

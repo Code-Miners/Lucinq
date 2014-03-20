@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Lucinq.UnitTests
+﻿namespace Lucinq.UnitTests
 {
 	internal class BBCFields
 	{

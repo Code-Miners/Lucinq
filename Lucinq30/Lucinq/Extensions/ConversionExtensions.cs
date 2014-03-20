@@ -31,5 +31,19 @@ namespace Lucinq.Extensions
                     return Field.Store.NO;
             }
         }
+
+        #region [ Api Compatibility Conversions]
+
+        public static void SetSlop(this PhraseQuery phraseQuery, int slop)
+        {
+            phraseQuery.Slop = slop;
+        }
+
+        public static void SetBoost(this Query query, float boost)
+        {
+            query.Boost = boost;
+        }
+
+        #endregion
     }
 }

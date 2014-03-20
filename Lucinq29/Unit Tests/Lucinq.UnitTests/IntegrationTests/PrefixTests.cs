@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using AutoMapper;
 using Lucene.Net.Documents;
 using Lucene.Net.QueryParsers;
-using Lucene.Net.Store;
 using Lucinq.Enums;
 using Lucinq.Interfaces;
 using Lucinq.Querying;
@@ -14,12 +13,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 	[TestFixture]
 	public class PrefixTests : BaseTestFixture
 	{
-		public PrefixTests()
-		{
-			
-		}
-
-		/// <summary>
+	    /// <summary>
 		/// Grab all articles that have titles that are prefixed with 'in pictures' and then perform
 		/// a wildcard search against those. Pre-filter the documents with a date range
 		/// </summary>
