@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - US &amp; Canada</title>  
+    <link>http://www.bbc.co.uk/news/world/us_and_canada/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the US &amp; Canada section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 19:54:42 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - US &amp; Canada</title>  
+      <link>http://www.bbc.co.uk/news/world/us_and_canada/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Jesse Jackson Jr guilty of fraud</title>  
+      <description>Former congressman Jesse Jackson Jr faces up to five years in prison after pleading guilty to misuse of about $750,000 (£490,000) in campaign money.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21525383#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21525383</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:20:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65984000/jpg/_65984533_65984524.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65984000/jpg/_65984726_65984524.jpg"/> 
+    </item>  
+    <item> 
+      <title>Body found after US diner blast</title>  
+      <description>Search crews picking through rubble of a restaurant destroyed by a gas explosion in Kansas City, Missouri find a body.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21515081#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21515081</guid>  
+      <pubDate>Wed, 20 Feb 2013 18:02:53 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969434_65967937.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969435_65967937.jpg"/> 
+    </item>  
+    <item> 
+      <title>New Google Glass features unveiled</title>  
+      <description>Google reveals more details about its smart glasses project and invites "creative individuals" to try out the device.</description>  
+      <link>http://www.bbc.co.uk/news/technology-21519859#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21519859</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:28:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65979000/jpg/_65979619_65977785.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65979000/jpg/_65979620_65977785.jpg"/> 
+    </item>  
+    <item> 
+      <title>Armstrong refuses Usada interview</title>  
+      <description>Lance Armstrong refuses the opportunity to be interviewed under oath and will not have his lifetime ban overturned.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cycling/21523597</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cycling/21523597</guid>  
+      <pubDate>Wed, 20 Feb 2013 18:49:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981450_lance_armstrong_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981444_lance_armstrong_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>US to roll out trade-theft measures</title>  
+      <description>The White House is to announce a raft of anti-trade theft measures, a day after a report linked China's military to prolific cyber-theft.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21523473#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21523473</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:58:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983646_017270774-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983647_017270774-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Student in LA carjack killing spree</title>  
+      <description>A 20-year-old student killed three and injured multiple others on a carjacking and shooting spree in California before killing himself, police say.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21508661#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21508661</guid>  
+      <pubDate>Wed, 20 Feb 2013 02:43:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65980000/jpg/_65980980_65980973.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65980000/jpg/_65980981_65980973.jpg"/> 
+    </item>  
+    <item> 
+      <title>Obama warns 'cuts mean job losses'</title>  
+      <description>US President Barack Obama warns that deep, across-the-board spending cuts due to take effect next month will cause job losses.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21508658#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21508658</guid>  
+      <pubDate>Tue, 19 Feb 2013 19:48:20 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65963000/jpg/_65963923_65963687.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65963000/jpg/_65963924_65963687.jpg"/> 
+    </item>  
+    <item> 
+      <title>Office Depot and OfficeMax to merge</title>  
+      <description>Office Depot agrees to buy its rival OfficeMax for about $1.2bn (£785m) in the first move towards consolidation in the US office supplies industry.</description>  
+      <link>http://www.bbc.co.uk/news/business-21524411#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21524411</guid>  
+      <pubDate>Wed, 20 Feb 2013 18:06:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985766_65984604.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985767_65984604.jpg"/> 
+    </item>  
+    <item> 
+      <title>Montreal city hall raided by police</title>  
+      <description>Anti-corruption police raid Montreal city hall in an ongoing investigation into fraud and false documents in the Canadian province of Quebec.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21513364#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21513364</guid>  
+      <pubDate>Wed, 20 Feb 2013 02:04:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969405_65969192.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969406_65969192.jpg"/> 
+    </item>  
+    <item> 
+      <title>Crime writer wins $51m lawsuit</title>  
+      <description>Crime writer Patricia Cornwell wins a $51m (£33m) lawsuit against her former financial managers, after a jury agrees their negligence cost her millions.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21511617#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21511617</guid>  
+      <pubDate>Tue, 19 Feb 2013 22:08:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967150_65964758.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967151_65964758.jpg"/> 
+    </item>  
+    <item> 
+      <title>Russia probes 'murder' of US adoptee</title>  
+      <description>Russia opens a murder inquiry into the death of a three-year-old Russian boy adopted in the US, but the US says abuse allegations remain unproven.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21503299#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21503299</guid>  
+      <pubDate>Tue, 19 Feb 2013 12:43:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65955000/jpg/_65955040_3b33a448-1af0-431c-a01e-abf1f37c2820.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65955000/jpg/_65955041_3b33a448-1af0-431c-a01e-abf1f37c2820.jpg"/> 
+    </item>  
+    <item> 
+      <title>Michael Jackson's son is US TV host</title>  
+      <description>The late singer's teenage son, Prince, signs up as a reporter for the Entertainment Tonight television show.</description>  
+      <link>http://www.bbc.co.uk/newsbeat/21516626#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/newsbeat/21516626</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:40:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974116_reuters_jackson2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974118_reuters_jackson.jpg"/> 
+    </item>  
+    <item> 
+      <title>Kelly Clarkson slams 'false rumours'</title>  
+      <description>The former American Idol winner hits back at allegations made in book by record producer, Clive Davis.</description>  
+      <link>http://www.bbc.co.uk/newsbeat/21514602#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/newsbeat/21514602</guid>  
+      <pubDate>Wed, 20 Feb 2013 06:41:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968972_kellyclarkson1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968974_kellyclarkson1.jpg"/> 
+    </item>  
+    <item> 
+      <title>FBI to investigate Heinz trades</title>  
+      <description>The Federal Bureau of Investigation joins an investigation into suspicious share trading ahead of the Heinz takeover deal last week.</description>  
+      <link>http://www.bbc.co.uk/news/business-21516258#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21516258</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:05:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973153_heinz.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973154_heinz.jpg"/> 
+    </item>  
+    <item> 
+      <title>Dell sales fall ahead of buyout</title>  
+      <description>Computer maker Dell reports a drop in sales but its earnings still beat expectations, in what could be its last set of results as a public company.</description>  
+      <link>http://www.bbc.co.uk/news/business-21514023#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21514023</guid>  
+      <pubDate>Tue, 19 Feb 2013 22:09:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967883_65967545.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967884_65967545.jpg"/> 
+    </item>  
+    <item> 
+      <title>Canada country profile</title>  
+      <description>Provides an overview of Canada, including key events and facts about the world's second-largest country</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-16841111#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-16841111</guid>  
+      <pubDate>Thu, 08 Nov 2012 18:32:19 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Puerto Rico profile</title>  
+      <description>Provides and overview as well as facts and figures for this small dependency of the United States situated in the Caribbean</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-17139243#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-17139243</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:24:00 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>St Pierre and Miquelon profile</title>  
+      <description>Provides an overview of what remains of France's once-extensive possessions in North America</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-17142538#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-17142538</guid>  
+      <pubDate>Thu, 23 Feb 2012 17:03:36 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>United States country profile</title>  
+      <description>Provides an overview of the United States, including key events and facts about this superpower</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-16761057#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-16761057</guid>  
+      <pubDate>Tue, 18 Dec 2012 14:46:25 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>VIDEO: Kansas City burns victims treated</title>  
+      <description>Jill Chadwick, spokeswoman for the University of Kansas Hospital, describes the extent of people's injuries after a suspected gas explosion triggers a huge blaze in a shopping district in Kansas City, Missouri.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21515129#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21515129</guid>  
+      <pubDate>Wed, 20 Feb 2013 05:00:58 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969891_patientre.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969892_patientre.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'Houdini Horse' in bolt for freedom</title>  
+      <description>A horse with an ability for opening stable doors at a farm in the US state of Michigan has become an internet hit.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21515125#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21515125</guid>  
+      <pubDate>Wed, 20 Feb 2013 03:43:14 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969645_hoss1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969646_hoss1.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'Nothing foreign about foreign policy'</title>  
+      <description>Secretary of State John Kerry has made a speech at the University of Virginia in which he said that foreign policies create a "current" in the US and that decisions "matter more than ever before to our everyday lives".</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21524075#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21524075</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:54:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65984000/jpg/_65984756_65983203.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65984000/jpg/_65984757_65983203.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Original Iwo Jima statue auctioned</title>  
+      <description>The original sculpture commemorating the moment US Marines raised the stars and stripes on the Japanese island of Iwo Jima is being put up for auction.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21483222#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21483222</guid>  
+      <pubDate>Sat, 16 Feb 2013 10:57:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65922000/jpg/_65922717_de01.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65922000/jpg/_65922718_de01.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Disabled piglet gets tiny wheelchair</title>  
+      <description>A month-old piglet from Florida, born without the use of his back legs, is now sporting a custom-built wheelchair to get around.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21469524#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21469524</guid>  
+      <pubDate>Fri, 15 Feb 2013 07:23:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65901000/jpg/_65901364_65901245.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65901000/jpg/_65901365_65901245.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Emin's neon words light up Times Sq</title>  
+      <description>A number of Tracey Emin's neon signs are spreading a message of love on billboards in Time Square.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21475569#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21475569</guid>  
+      <pubDate>Fri, 15 Feb 2013 17:23:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65918000/jpg/_65918142_65917140.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65918000/jpg/_65918143_65917140.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Crippled cruise ship reaches land</title>  
+      <description>A crippled cruise ship with 3,200 people aboard has reached land, four days after an engine fire knocked out the vessel's power.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21468632#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21468632</guid>  
+      <pubDate>Fri, 15 Feb 2013 22:54:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65921000/jpg/_65921340_65921338.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65921000/jpg/_65921341_65921338.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Dorner 'said he would not kill us'</title>  
+      <description>A couple taken hostage by former Los Angeles policeman Christopher Dorner who is accused of murder, have spoken out about what happened.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21455839#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21455839</guid>  
+      <pubDate>Thu, 14 Feb 2013 08:02:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65881000/jpg/_65881377_65881169.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65881000/jpg/_65881378_65881169.jpg"/> 
+    </item>  
+    <item> 
+      <title>Should sperm donors have parental duties?</title>  
+      <description>How can the law distinguish sperm donors from dads?</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21482099#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21482099</guid>  
+      <pubDate>Wed, 20 Feb 2013 01:05:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65921000/jpg/_65921905_65921094.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65921000/jpg/_65921927_65921094.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sony PlayStation 4 faces challenges</title>  
+      <description>As Sony gets set to announce its next-gen console - what can gamers expect?</description>  
+      <link>http://www.bbc.co.uk/news/technology-21479858#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21479858</guid>  
+      <pubDate>Wed, 20 Feb 2013 00:00:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968601_littlke.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968602_littlke.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: US college aims to keep fit after ending sport</title>  
+      <description>Why a black women’s college is dumping competitive sports</description>  
+      <link>http://www.bbc.co.uk/news/magazine-21509875#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-21509875</guid>  
+      <pubDate>Wed, 20 Feb 2013 01:41:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968541_spelman2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968542_spelman2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Tony Mendez, the real CIA spy in Argo</title>  
+      <description>How a CIA spy gave Ben Affleck the story of Argo</description>  
+      <link>http://www.bbc.co.uk/news/magazine-21504409#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-21504409</guid>  
+      <pubDate>Wed, 20 Feb 2013 00:35:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971428_argo320.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971429_argo320.jpg"/> 
+    </item>  
+    <item> 
+      <title>Duck hunting decline is quackers</title>  
+      <description>Why decline in hunting licences is bad news for ducks</description>  
+      <link>http://www.bbc.co.uk/news/science-environment-21365324#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/science-environment-21365324</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:53:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972611_c0139300-ducks_on_a_pond_in_winter-spl.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972612_c0139300-ducks_on_a_pond_in_winter-spl.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: From Nasa to a Scottish bookshop</title>  
+      <description>One woman's journey from Nasa to a Scottish bookshop</description>  
+      <link>http://www.bbc.co.uk/news/magazine-21472543#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-21472543</guid>  
+      <pubDate>Tue, 19 Feb 2013 00:20:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65918000/jpg/_65918608_65914757.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65918000/jpg/_65918609_65914757.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

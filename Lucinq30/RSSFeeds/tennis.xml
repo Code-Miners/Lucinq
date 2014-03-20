@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC Sport - Tennis</title>  
+    <link>http://www.bbc.co.uk/sport/0/tennis/</link>  
+    <description>The latest stories from the Tennis section of the BBC Sport web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 19:42:47 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbc.co.uk/sol/shared/img/sport_120x60.gif</url>  
+      <title>BBC Sport - Tennis</title>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/sport/0/tennis/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Injured Serena pulls out of Dubai</title>  
+      <description>World number one Serena Williams withdraws from the Dubai Tennis Championships because of a lower back problem.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21524209</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21524209</guid>  
+      <pubDate>Wed, 20 Feb 2013 19:41:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981790_65981789.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981792_65981791.jpg"/> 
+    </item>  
+    <item> 
+      <title>Robson makes early exit in Dubai</title>  
+      <description>Great Britain's Laura Robson is knocked out in the first round of the Dubai Championship by Yulia Putintseva.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21500183</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21500183</guid>  
+      <pubDate>Tue, 19 Feb 2013 10:38:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65946000/jpg/_65946862_laura_robson_getty1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65946000/jpg/_65946868_laura_robson_getty1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Nadal takes title at Brazil Open</title>  
+      <description>Rafael Nadal wins his first title since last year's French Open as he beats David Nalbandian in the Brazil Open final.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21494601</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21494601</guid>  
+      <pubDate>Sun, 17 Feb 2013 18:11:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65938000/jpg/_65938675_trophy_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65938000/jpg/_65938311_nadal_ap.jpg"/> 
+    </item>  
+    <item> 
+      <title>Serena is oldest world number one</title>  
+      <description>Serena Williams, a 15-time Grand Slam champion, becomes the oldest woman to top the world rankings.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21496894</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21496894</guid>  
+      <pubDate>Mon, 18 Feb 2013 12:51:20 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65942000/jpg/_65942357_serena_willams9.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65942000/jpg/_65942359_serena_willams9.jpg"/> 
+    </item>  
+    <item> 
+      <title>Azarenka beats Williams in Qatar</title>  
+      <description>Victoria Azarenka gains revenge for losing the top ranking to Serena Williams by beating the American to win the Qatar Open.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21493193</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21493193</guid>  
+      <pubDate>Sun, 17 Feb 2013 17:49:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65938000/jpg/_65938518_az_trophy.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65938000/jpg/_65938514_az_trophy.jpg"/> 
+    </item>  
+    <item> 
+      <title>Watson wins thriller in Memphis</title>  
+      <description>British number one Heather Watson battles past Galina Voskoboeva to reach round two of the US Indoor Championships.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21495165</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21495165</guid>  
+      <pubDate>Sun, 17 Feb 2013 21:19:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65939000/jpg/_65939176_watson_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65939000/jpg/_65939174_watson_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Nadal through to final in Brazil</title>  
+      <description>Rafael Nadal is through to his second successive final since his returnafter beating Martin Alund at the Brazil Open.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21488797</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21488797</guid>  
+      <pubDate>Sat, 16 Feb 2013 22:11:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65931000/jpg/_65931029_n.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65931000/jpg/_65931035_n.jpg"/> 
+    </item>  
+    <item> 
+      <title>Williams and Azarenka reach final</title>  
+      <description>Serena Williams beats Maria Sharapova to set up a final against top seed Victoria Azarenka at the Qatar Open in Doha.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21488023</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21488023</guid>  
+      <pubDate>Sat, 16 Feb 2013 18:14:58 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65929000/jpg/_65929713_ser_ap.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65930000/jpg/_65930790_161594532.jpg"/> 
+    </item>  
+    <item> 
+      <title>Benneteau upsets top seed Federer</title>  
+      <description>Defending champion Roger Federer loses to France's Julien Benneteau at the World Indoor Tournament in Rotterdam.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21481833</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21481833</guid>  
+      <pubDate>Sat, 16 Feb 2013 07:47:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65921000/jpg/_65921032_fed_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65920000/jpg/_65920768_fed_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Nadal comeback continues with win</title>  
+      <description>Rafael Nadal beats world number 140 Joao Souza in Brazil as he continues his return to competition after a knee injury.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21468152</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21468152</guid>  
+      <pubDate>Fri, 15 Feb 2013 07:52:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65900000/jpg/_65900480_nadal_reuters.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65900000/jpg/_65900478_nadal_reuters.jpg"/> 
+    </item>  
+    <item> 
+      <title>Zahlavova Strycova tests positive</title>  
+      <description>Czech player Barbora Zahlavova Strycova gets a six-month back-dated ban after testing positive for a banned stimulant.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21466448</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21466448</guid>  
+      <pubDate>Thu, 14 Feb 2013 19:39:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65897000/jpg/_65897383_152597826.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65896000/jpg/_65896756_152597829.jpg"/> 
+    </item>  
+    <item> 
+      <title>Williams one win from top ranking</title>  
+      <description>Serena Williams beats Urszula Radwanska in the Qatar Open and is one win from returning to the world number one spot.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21466313</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21466313</guid>  
+      <pubDate>Thu, 14 Feb 2013 19:49:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65899000/jpg/_65899222_williams_reuters.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65899000/jpg/_65899220_williams_reuters.jpg"/> 
+    </item>  
+    <item> 
+      <title>Azarenka returns with win in Doha</title>  
+      <description>Victoria Azarenka beats Romina Oprandi at the Qatar Open in her first match since winning the Australian Open.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21450638</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21450638</guid>  
+      <pubDate>Wed, 13 Feb 2013 19:27:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65876000/jpg/_65876443_aza.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65876000/jpg/_65876429_aza.jpg"/> 
+    </item>  
+    <item> 
+      <title>Nadal doctor urges gentle return</title>  
+      <description>Rafael Nadal's doctor warns the Spaniard against playing too much tennis after recovering from a serious knee injury.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21447998</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21447998</guid>  
+      <pubDate>Wed, 13 Feb 2013 20:18:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65876000/jpg/_65876176_65876067.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65878000/jpg/_65878161_tennis-rafaelnadalgetty2.jpg"/> 
+    </item>  
+    <item> 
+      <title>GB to face Argentina in Fed Cup</title>  
+      <description>Great Britain's Fed Cup team face an away tie against Argentina in the World Group II play-off on 20-21 April.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21443604</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21443604</guid>  
+      <pubDate>Wed, 13 Feb 2013 11:10:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65805000/jpg/_65805484_65805483.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65806000/jpg/_65806172_65806171.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bates is new women's tennis chief</title>  
+      <description>Iain Bates is named as the new head of British women's tennis with Jeremy Bates becoming the lead coach.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21445102</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21445102</guid>  
+      <pubDate>Wed, 13 Feb 2013 14:39:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65870000/jpg/_65870895_tennis-iainbatesgetty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65871000/jpg/_65871538_women%26apos%3Bstennisgetty.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Murray targets clay improvement</title>  
+      <description>Andy Murray says he needs to focus on improving his clay-court game in order to give a chance of winning the French Open in May.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21334823</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21334823</guid>  
+      <pubDate>Tue, 05 Feb 2013 10:31:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65706000/png/_65706361_mmtenmurrayint050213.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65706000/png/_65706357_mmtenmurrayint050213.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Djokovic wins fourth Australian Open title</title>  
+      <description>The story of how world number one Novak Djokovic won his fourth Australian Open title by defeating Britain's Andy Murray in Melbourne.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21222748</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21222748</guid>  
+      <pubDate>Sun, 27 Jan 2013 14:35:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65537000/jpg/_65537404_160157351.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65537000/jpg/_65537406_160157351.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Murray gracious in defeat</title>  
+      <description>World number three Andy Murray congratulates Novak Djokovic on winning his third straight Australian Open title and describes the Serb as "a very well deserved champion".</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21220838</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21220838</guid>  
+      <pubDate>Sun, 27 Jan 2013 14:21:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65536000/jpg/_65536984_160156730.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65536000/jpg/_65536986_160156730.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'Incredible feeling' for Djokovic</title>  
+      <description>Australian Open champion Novak Djokovic says winning his fourth title at the Rod Laver Arena is an "incredible feeling".</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21219582</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21219582</guid>  
+      <pubDate>Sun, 27 Jan 2013 13:28:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65536000/jpg/_65536461_mmtendjokovicpost-matchinterviewcopy.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65536000/jpg/_65536463_mmtendjokovicpost-matchinterviewcopy.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Djokovic breaks twice to win title</title>  
+      <description>Novak Djokovic finds an extra gear to break Andy Murray's resolve and win the Australian Open for a fourth time.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21219581</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21219581</guid>  
+      <pubDate>Sun, 27 Jan 2013 12:45:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65535000/jpg/_65535796_160156501.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65535000/jpg/_65535798_160156501.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Djokovic breaks Murray in third set</title>  
+      <description>Novak Djokovic breaks Andy Murray's serve for the first time in the third set to move ahead in the Australian Open final.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21219580</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21219580</guid>  
+      <pubDate>Sun, 27 Jan 2013 12:04:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65535000/jpg/_65535062_160154622.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65535000/jpg/_65535145_160154622.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Djokovic wins second set on tie-break</title>  
+      <description>Novak Djokovic pounces on a small lapse of form from Andy Murray to level the Australian Open final at one set apiece.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21219579</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21219579</guid>  
+      <pubDate>Sun, 27 Jan 2013 11:19:53 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65534000/jpg/_65534562_160153143.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65534000/jpg/_65534564_160153143.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Murray dominates first set tie-break</title>  
+      <description>Andy Murray dominates the first set tie-break in his Australian Open final against Novak Djokovic.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21219577</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21219577</guid>  
+      <pubDate>Sun, 27 Jan 2013 10:17:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65533000/jpg/_65533262_160151046.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65533000/jpg/_65533264_160151046.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Murray ready for 'big occasion'</title>  
+      <description>Andy Murray says he feels relaxed and in good form ahead of his Australian Open final against Novak Djokovic.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21212015</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21212015</guid>  
+      <pubDate>Sat, 26 Jan 2013 14:20:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65525000/png/_65525835_mmmurraysotsstill.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65525000/png/_65525837_mmmurraysotsstill.png"/> 
+    </item>  
+    <item> 
+      <title>Judy Murray's Fed Cup column</title>  
+      <description>Britain's Judy Murray on the fabulous effort of the team, their strength in depth and challenging for the World Group.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21343610</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21343610</guid>  
+      <pubDate>Sun, 10 Feb 2013 17:47:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65810000/jpg/_65810357_65807584.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65810000/jpg/_65810355_65807584.jpg"/> 
+    </item>  
+    <item> 
+      <title>Anne Keothavong's Fed Cup column</title>  
+      <description>Britain's Anne Keothavong on her frustrating foot injury and GB's strength in depth</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21343536</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21343536</guid>  
+      <pubDate>Sat, 09 Feb 2013 17:01:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65795000/jpg/_65795725_65795717.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65795000/jpg/_65795723_65795717.jpg"/> 
+    </item>  
+    <item> 
+      <title>Laura Robson's Fed Cup column</title>  
+      <description>Britain's Laura Robson on dealing with nerves, playing doubles with Heather Watson and maintaining the Pictionary run</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21343170</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21343170</guid>  
+      <pubDate>Fri, 08 Feb 2013 18:39:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65789000/jpg/_65789187_65789149.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65789000/jpg/_65789181_65789149.jpg"/> 
+    </item>  
+    <item> 
+      <title>Johanna Konta's Fed Cup column</title>  
+      <description>Britain's Johanna Konta on her dream Fed Cup debut, bonding with her new team-mates and winning at Pictionary.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21343055</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21343055</guid>  
+      <pubDate>Thu, 07 Feb 2013 17:59:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65767000/jpg/_65767074_65767073.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65767000/jpg/_65767050_65767045.jpg"/> 
+    </item>  
+    <item> 
+      <title>Heather Watson's Fed Cup column</title>  
+      <description>The British number one lifts the lid on team initiation ceremonies, the aims for 2013 and her desire to play more singles matches</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21341505</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21341505</guid>  
+      <pubDate>Tue, 05 Feb 2013 14:31:48 GMT</pubDate>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65713000/jpg/_65713586_fedcup_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Tennis stars are humans not robots</title>  
+      <description>Novak Djokovic's unspectacular victory over Andy Murray proves tennis super heroes are only human, says BBC Sport's Jonathan Overend</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21236060</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21236060</guid>  
+      <pubDate>Mon, 28 Jan 2013 16:01:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65555000/jpg/_65555658_65553950.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65555000/jpg/_65555656_65553950.jpg"/> 
+    </item>  
+    <item> 
+      <title>British tennis aims to serve up more aces</title>  
+      <description>The LTA's Simon Long faces the dual challenge of increasing tennis participation while developing new commercial strategies.</description>  
+      <link>http://www.bbc.co.uk/news/21040629#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/21040629</guid>  
+      <pubDate>Mon, 28 Jan 2013 23:48:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65562000/jpg/_65562333_65436712.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65562000/jpg/_65562334_65436712.jpg"/> 
+    </item>  
+    <item> 
+      <title>Murray outplayed in final - Becker</title>  
+      <description>"The lesson we've learnt is that there's another level with Djokovic," says Boris Becker of the men's Australian Open final.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21221921</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21221921</guid>  
+      <pubDate>Sun, 27 Jan 2013 15:02:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65536000/jpg/_65536643_65536642.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65536000/jpg/_65536651_65536650.jpg"/> 
+    </item>  
+    <item> 
+      <title>Nadal ready for latest comeback attempt</title>  
+      <description>BBC Sport's Piers Newbery reviews Rafael Nadal's long road back from knee injury, and the former world number one's prospects of getting back to the top</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21309064</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21309064</guid>  
+      <pubDate>Mon, 04 Feb 2013 06:48:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65669000/jpg/_65669701_147369900.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65669000/jpg/_65669699_147369900.jpg"/> 
+    </item>  
+    <item> 
+      <title>In pictures: Andy Murray's journey to his US Open win</title>  
+      <description>We look back at the images of Andy Murray's journey to his US Open title victory</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/19555391</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/19555391</guid>  
+      <pubDate>Tue, 11 Sep 2012 11:42:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/62815000/jpg/_62815582_murray_young_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/62821000/jpg/_62821497_murray_young_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Improving GB ready for Argentina</title>  
+      <description>Judy Murray's progressing side have a good chance of beating Argentina in the Fed Cup World Group II play-off, says Jonathan Overend</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21449769</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21449769</guid>  
+      <pubDate>Wed, 13 Feb 2013 16:55:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65872000/jpg/_65872436_britishtennis2_getty_160875651.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65875000/jpg/_65875253_tennis-robsonandmurraygetty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Vergeer quits after 100% decade</title>  
+      <description>Wheelchair tennis champion Esther Vergeer retires after going over 10 years unbeaten, winning her last 470 matches.</description>  
+      <link>http://www.bbc.co.uk/sport/0/disability-sport/21426554</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/disability-sport/21426554</guid>  
+      <pubDate>Tue, 12 Feb 2013 15:33:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65839000/jpg/_65839713_151430052.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65839000/jpg/_65839709_151432419.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

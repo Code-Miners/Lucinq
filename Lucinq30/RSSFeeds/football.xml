@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC Sport - Football</title>  
+    <link>http://www.bbc.co.uk/sport/0/football/</link>  
+    <description>The latest stories from the Football section of the BBC Sport web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 19:57:37 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbc.co.uk/sol/shared/img/sport_120x60.gif</url>  
+      <title>BBC Sport - Football</title>  
+      <link>http://www.bbc.co.uk/sport/0/football/</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/sport/0/football/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Gill to step down as Man Utd chief</title>  
+      <description>David Gill is to step down as Manchester United chief executive on 30 June, the Premier League club confirms.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21519522</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21519522</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:29:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65976000/jpg/_65976155_david-gill3.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65976000/jpg/_65976153_david-gill3.jpg"/> 
+    </item>  
+    <item> 
+      <title>Don't sack Wenger says Vermaelen</title>  
+      <description>Arsenal captain Thomas Vermaelen says manager Arsene Wenger is still the "right man for the job".</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21521390</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21521390</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:03:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65982000/jpg/_65982169_thomas_vermaelen.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65982000/jpg/_65982171_thomas_vermaelen.jpg"/> 
+    </item>  
+    <item> 
+      <title>AC Milan v Barcelona</title>  
+      <description>Preview of Wednesday's Champions League match between AC Milan and Barcelona.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21498968</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21498968</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:26:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975075_massimilano_allegri_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975077_massimilano_allegri_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Galatasaray v Schalke</title>  
+      <description>Preview of Wednesday's Champions League match between Galatasaray and Schalke.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21499567</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21499567</guid>  
+      <pubDate>Mon, 18 Feb 2013 18:06:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65946000/jpg/_65946570_didierdrogbaone.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65946000/jpg/_65946568_didierdrogbaone.jpg"/> 
+    </item>  
+    <item> 
+      <title>Leeds v Blackpool</title>  
+      <description>Preview followed by live coverage of Wednesday's game between Leeds and Blackpool in the Championship.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21448858</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21448858</guid>  
+      <pubDate>Tue, 19 Feb 2013 23:48:58 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65961000/jpg/_65961438_65961435.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65961000/jpg/_65961442_65961441.jpg"/> 
+    </item>  
+    <item> 
+      <title>Crewe v Coventry (agg 3-0)</title>  
+      <description>Preview followed by live coverage of Wednesday's game between Crewe and Coventry in the Football League Trophy.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21449195</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21449195</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:47:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951782_football-624x351.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951781_football-624x351.jpg"/> 
+    </item>  
+    <item> 
+      <title>Southend v L Orient (agg 1-0)</title>  
+      <description>Preview followed by live coverage of Wednesday's game between Southend and Leyton Orient in the Football League Trophy.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21449291</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21449291</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:53:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951782_football-624x351.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951781_football-624x351.jpg"/> 
+    </item>  
+    <item> 
+      <title>Suarez is 'among world's best'</title>  
+      <description>Steven Gerrard says "only one or two" players in the world have out-performed Liverpool team-mate Luis Suarez this term.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21521903</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21521903</guid>  
+      <pubDate>Wed, 20 Feb 2013 19:00:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65980000/jpg/_65980869_159718282.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65980000/jpg/_65980867_159718282.jpg"/> 
+    </item>  
+    <item> 
+      <title>Liverpool v Zenit St P'sbg</title>  
+      <description>Preview followed by live coverage of Thursday's game between Liverpool and Zenit St Petersburg in the Europa League.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21455139</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21455139</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:58:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65984000/jpg/_65984985_luis_suarez.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65984000/jpg/_65984946_luis_suarez.jpg"/> 
+    </item>  
+    <item> 
+      <title>Lampard waits for double century</title>  
+      <description>Frank Lampard is rested for Chelsea's Europa League game against Sparta Prague so must wait for his 200th goal for the club.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21455163</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21455163</guid>  
+      <pubDate>Wed, 20 Feb 2013 15:42:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981019_frank_lampard_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981017_frank_lampard_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Metalist Kharkiv v Newcastle</title>  
+      <description>Preview followed by live coverage of Thursday's game between Metalist Kharkiv and Newcastle in the Europa League.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21455111</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21455111</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:48:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983599_65983594.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983595_65983594.jpg"/> 
+    </item>  
+    <item> 
+      <title>Miller and Ward to lead Swindon</title>  
+      <description>Swindon Town announce that midfielder Tommy Miller and defender Darren Ward will take temporary charge of the club.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21522255</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21522255</guid>  
+      <pubDate>Wed, 20 Feb 2013 18:31:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986313_tommy_miller.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986311_tommy_miller.jpg"/> 
+    </item>  
+    <item> 
+      <title>Calderwood 'happy' to talk to Dundee</title>  
+      <description>Jimmy Calderwood says he would be happy to speak to Dundee about their managerial vacancy "if the offer came".</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21525142</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21525142</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:34:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985350_jimmy_calderwood.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985348_jimmy_calderwood.jpg"/> 
+    </item>  
+    <item> 
+      <title>Strachan keen for Fletcher return</title>  
+      <description>Scotland manager Gordon Strachan says he is eager to welcome captain Darren Fletcher back into the national squad.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21506587</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21506587</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:59:20 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65956000/jpg/_65956802_156897811.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65956000/jpg/_65956800_156897811.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bantams 'realistic' on Parkinson</title>  
+      <description>Bradford City joint-chairman Mark Lawn says the club want to keep Phil Parkinson but are "realistic" about him leaving.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21523836</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21523836</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:40:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65980000/jpg/_65980897_65450151.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65450000/jpg/_65450434_65450151.jpg"/> 
+    </item>  
+    <item> 
+      <title>Hammers plan Bobby Moore tributes</title>  
+      <description>West Ham plan to mark the 20th anniversary of legendary skipper Bobby Moore's death with a series of memorial events.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21519115</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21519115</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:14:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65976000/jpg/_65976668_moore_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65976000/jpg/_65976666_moore_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Saunders fears Wolves 'disaster'</title>  
+      <description>Manager Dean Saunders warns relegation from the Championship would be a 'disaster' for Wolves.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21522004</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21522004</guid>  
+      <pubDate>Wed, 20 Feb 2013 15:07:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65828000/jpg/_65828772_160439355.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65828000/jpg/_65828768_160439355.jpg"/> 
+    </item>  
+    <item> 
+      <title>Zola defends Watford loan policy</title>  
+      <description>Watford boss Gianfranco Zola says he is disappointed by criticism of his club's loan policy.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21522843</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21522843</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:54:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/44936000/gif/_44936486_watford_66x49.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981046_zola.jpg"/> 
+    </item>  
+    <item> 
+      <title>Leeds owners asking for patience</title>  
+      <description>Leeds United owners GFH Capital ask fans to be patient as they look to secure new investment in the club.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21518552</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21518552</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:38:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64868000/jpg/_64868660_152577417.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64868000/jpg/_64868662_152577417.jpg"/> 
+    </item>  
+    <item> 
+      <title>Manager Smith exits Dundee post</title>  
+      <description>Scottish Premier League club Dundee have parted company with manager Barry Smith.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21521521</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21521521</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:47:48 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978190_8345585.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978191_8345585.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Action needed' on football fixing</title>  
+      <description>Football officials say countries and organisations must do more to tackle corruption, at a conference on match-fixing in Kuala Lumpur.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-21515491#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-21515491</guid>  
+      <pubDate>Wed, 20 Feb 2013 07:27:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970415_65970163.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970416_65970163.jpg"/> 
+    </item>  
+    <item> 
+      <title>Syria footballer 'killed by mortars'</title>  
+      <description>A Syrian footballer has been killed in a mortar strike near a stadium in the capital, Damascus, a state news outlet says.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-21516957#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-21516957</guid>  
+      <pubDate>Wed, 20 Feb 2013 15:05:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986245_65986240.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986266_65986240.jpg"/> 
+    </item>  
+    <item> 
+      <title>Robins 'devastated' by thrashing</title>  
+      <description>Huddersfield Town boss Mark Robins says his side's 6-1 defeat by Nottingham Forest left him "devastated and embarrassed".</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21518544</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21518544</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:42:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973621_pa-15784946.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973623_pa-15784946.jpg"/> 
+    </item>  
+    <item> 
+      <title>Torquay name Knill interim boss</title>  
+      <description>League Two side Torquay United appoint former Bury and Scunthorpe boss Alan Knill as interim manager at Plainmoor.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21519406</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21519406</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:39:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975109_alan_knill.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975172_alan_knill.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Benitez delays Lampard milestone</title>  
+      <description>Rafael Benitez reveals Frank Lampard will have to wait for his 200th Chelsea goal as he will rest him for their Europa League game with Sparta Prague.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21526023</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21526023</guid>  
+      <pubDate>Wed, 20 Feb 2013 18:08:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65985000/png/_65985614_benitez2.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65985000/png/_65985616_benitez2.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: The greatest League Cup upset ever?</title>  
+      <description>Watch highlights of the 1967 League Cup final, when third division QPR came back from 2-0 down to beat top-flight side West Bromwich Albion 3-2.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21423401</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21423401</guid>  
+      <pubDate>Wed, 20 Feb 2013 06:27:40 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65837000/jpg/_65837563_1967_qpr_trophy_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965783_1967_qpr_trophy_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Why Yorath backs Bradford for the Cup</title>  
+      <description>Former Swansea City and Bradford manager Terry Yorath talks about his memories of both clubs, the Bradford fire and the loss of his son Daniel.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21509713</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21509713</guid>  
+      <pubDate>Tue, 19 Feb 2013 17:46:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65964000/jpg/_65964237_terryyorath.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65964000/jpg/_65964233_terryyorath.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Highlights - St Johnstone 1-1 Celtic</title>  
+      <description>Efe Ambrose gives Celtic a deserved lead at McDiarmid Park but St Johnstone respond strongly after the break and level through Nigel Hasselbaink.</description>  
+      <link>http://www.bbc.co.uk/sport/0/scotland/21514646</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/scotland/21514646</guid>  
+      <pubDate>Wed, 20 Feb 2013 00:00:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969014_hasselbaink_sns.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969012_hasselbaink_sns.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Highlights - Motherwell 0-1 Dundee Utd</title>  
+      <description>Dundee United claim a narrow Scottish Premier League victory against Motherwell (UK users only).</description>  
+      <link>http://www.bbc.co.uk/sport/0/scotland/21525139</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/scotland/21525139</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:42:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983670_russell-hutchinson.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Qualification will be tough - Wenger</title>  
+      <description>Arsenal manager Arsene Wenger says that progress to the quarter-finals of the Champions League will be "difficult" following their 1-3 defeat to Bayern Munich.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21517187</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21517187</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:03:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971695_wengerstill.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971697_wengerstill.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Time for Wenger to go - Piers Morgan</title>  
+      <description>Arsenal fan Piers Morgan tells BBC Radio 5 live that he believes the time has come for manager Arsene Wenger to resign.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21517190</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21517190</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:16:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971819_65971814.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972830_65971814.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Mum's text revealed Ince appointment</title>  
+      <description>Blackpool winger Thomas Ince reveals he found out his father, Paul, was about to become the club's new manager in a text from his mother.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21504859</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21504859</guid>  
+      <pubDate>Tue, 19 Feb 2013 11:22:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65953000/jpg/_65953042_65953038.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65953000/jpg/_65953044_65953038.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Ince frustrated by managerial exile</title>  
+      <description>New Blackpool boss Paul Ince says two years away from management has been a frustrating time for him.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21503795</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21503795</guid>  
+      <pubDate>Tue, 19 Feb 2013 11:19:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952195_65952192.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952197_65952192.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Angry Wenger denies contract reports</title>  
+      <description>Arsenal boss Arsene Wenger strenuously denies reports he is about to sign a two-year contract extension during a hot-tempered press conference.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21499782</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21499782</guid>  
+      <pubDate>Mon, 18 Feb 2013 17:43:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65947000/gif/_65947526_wenger640.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65947000/gif/_65947485_wenger640.gif"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Highlights - Celtic 6-2 Dundee United</title>  
+      <description>Scottish Premier League leaders Celtic thrash Dundee United in a game that has eight goals and two penalties. BBC Scotland's Liam McLeod describes the action (UK only).</description>  
+      <link>http://www.bbc.co.uk/sport/0/scotland/21491962</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/scotland/21491962</guid>  
+      <pubDate>Sun, 17 Feb 2013 18:04:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65934000/jpg/_65934727_8376570.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65934000/jpg/_65934725_8376570.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Preston have potential - Grayson</title>  
+      <description>New manager Simon Grayson tells BBC Radio Lancashire that Preston North End have the potential to match his ambition of returning to the Championship.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21503793</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21503793</guid>  
+      <pubDate>Tue, 19 Feb 2013 09:38:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951040_159722286.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951824_159722286.jpg"/> 
+    </item>  
+    <item> 
+      <title>Barcelona's fate is in safe hands</title>  
+      <description>Why the presence of Jordi Roura means Barcelona have hardly missed absent coach Tito Vilanova</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21491986</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21491986</guid>  
+      <pubDate>Tue, 19 Feb 2013 07:42:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65934000/jpg/_65934892_jordiroura-getty.pg.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65934000/jpg/_65934902_jordiroura-ap.jpg"/> 
+    </item>  
+    <item> 
+      <title>Big decisions ahead for Arsenal</title>  
+      <description>Arsenal have some big decisions to make if they are to be a force in football once more, says chief football writer Phil McNulty</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21516576</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21516576</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:59:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972294_arsene-wenger2-reuters.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972211_arsene-wenger-reuters.jpg"/> 
+    </item>  
+    <item> 
+      <title>Egyptian trio an instant hit at Hull</title>  
+      <description>A trio of Egyptians are providing their country's fans and Hull City supporters with a boost, writes BBC Sport's Stephen Fottrell.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21523997</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21523997</guid>  
+      <pubDate>Wed, 20 Feb 2013 18:24:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985848_gedo_hull.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985849_gedo_hull.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bantams gearing up for Wembley</title>  
+      <description>Bradford does not do cup fever but fans believe their side can win the League Cup final, writes BBC Sport's Ben Smith</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21509661</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21509661</guid>  
+      <pubDate>Wed, 20 Feb 2013 07:19:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65960000/jpg/_65960216_york-getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65960000/jpg/_65960602_york-getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Six of Swansea City's biggest games</title>  
+      <description>As Swansea City prepare for their first major English League Cup final, BBC Wales Sport's Richard Williams looks at other big fixtures in their history</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21206985</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21206985</guid>  
+      <pubDate>Wed, 20 Feb 2013 07:55:49 GMT</pubDate>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65898000/jpg/_65898420_swanscelebrate.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sporting spotlight: Gaizka Mendieta</title>  
+      <description>From playing for Spain to lifting trophies with Middlesbrough, BBC Sport puts Gaizka Mendieta under the sporting spotlight</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21379802</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21379802</guid>  
+      <pubDate>Wed, 20 Feb 2013 07:41:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65938000/jpg/_65938184_mendieta_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65945000/jpg/_65945730_ss_gaizka_mendieta_3.jpg"/> 
+    </item>  
+    <item> 
+      <title>Dunfermline share issue 'delayed'</title>  
+      <description>Dunfermline cancel the launch of a new share issue due on Wednesday but say the offer will go ahead soon.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21522345</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21522345</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:43:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65979000/gif/_65979577_44935687.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65979000/gif/_65979576_44944163.gif"/> 
+    </item>  
+    <item> 
+      <title>Penalty decision wrong says Mackay</title>  
+      <description>Malky Mackay claims referee Keith Stroud was wrong not to award a penalty to Cardiff in their 2-0 home defeat by Brighton.</description>  
+      <link>http://www.bbc.co.uk/sport/0/wales/21509716</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/wales/21509716</guid>  
+      <pubDate>Wed, 20 Feb 2013 07:13:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969276_angrymackay.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969275_malky.jpg"/> 
+    </item>  
+    <item> 
+      <title>Green light for Windsor upgrade</title>  
+      <description>Work on the Windsor Park redevelopment is set to begin after planning permission for the £29.2m project is granted.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21510912</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21510912</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:49:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/53448000/jpg/_53448585__51630239_cup_final_poster-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/53447000/jpg/_53447084__51630239_cup_final_poster-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ryan Giggs's Premier League goals</title>  
+      <description>Ryan Giggs's goal against Everton ensures he has scored in every Premier League season, here is a gallery of his strikes.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21405928</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21405928</guid>  
+      <pubDate>Mon, 11 Feb 2013 17:44:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65825000/jpg/_65825486_giggs1994_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65825000/jpg/_65825488_giggs1994_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Africa Cup of Nations 2013 in pictures</title>  
+      <description>BBC Sport's selection of images from Africa Cup of Nations 2013 in South Africa.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21281993</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21281993</guid>  
+      <pubDate>Thu, 31 Jan 2013 18:58:09 GMT</pubDate>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65811000/jpg/_65811740_nigeria__.jpg"/> 
+    </item>  
+    <item> 
+      <title>BBC Sport launches Android app</title>  
+      <description>BBC Sport brings you all the breaking news on its new free smartphone app - now available for Android as well as Apple users.</description>  
+      <link>http://www.bbc.co.uk/sport/0/20928565</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/20928565</guid>  
+      <pubDate>Wed, 20 Feb 2013 07:29:53 GMT</pubDate>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65956000/jpg/_65956877_mobiel.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Manchester City's Harlem Shake</title>  
+      <description>Manchester City are the latest group of people to perform their version of online dance craze the Harlem Shake.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21526028</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21526028</guid>  
+      <pubDate>Wed, 20 Feb 2013 18:53:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65986000/png/_65986538_harlem1.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65986000/png/_65986540_harlem1.png"/> 
+    </item> 
+  </channel> 
+</rss>

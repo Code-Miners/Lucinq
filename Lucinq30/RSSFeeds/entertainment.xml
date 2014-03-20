@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Entertainment &amp; Arts</title>  
+    <link>http://www.bbc.co.uk/news/entertainment_and_arts/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Entertainment &amp; Arts section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 18:57:29 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Entertainment &amp; Arts</title>  
+      <link>http://www.bbc.co.uk/news/entertainment_and_arts/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Stars gather for Brit Awards 2013</title>  
+      <description>Emeli Sande, Mumford and Sons and One Direction are among the big names vying for the limelight at this year's Brit Awards in London.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21525222#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21525222</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:22:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985471_emeliget.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985472_emeliget.jpg"/> 
+    </item>  
+    <item> 
+      <title>Kevin Ayers of Soft Machine dies</title>  
+      <description>Kevin Ayers, a pioneer of British psychedelia in the 1960s who had worked with Brian Eno, Syd Barrett and John Cale, dies aged 68.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21517041#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21517041</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:56:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65982000/jpg/_65982724_kevinayers1_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65982000/jpg/_65982725_kevinayers1_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Mantel to receive literature medal</title>  
+      <description>Two-time Booker winner Hilary Mantel - criticised this week over comments she made about the Duchess of Cambridge - is to be honoured next month at the Oxford Literary Festival.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21520939#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21520939</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:54:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985605_mantelkate1_320paafp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985606_mantelkate1_320paafp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Willis defies critics at UK cinemas</title>  
+      <description>Bruce Willis action sequel A Good Day to Die Hard tops the UK and Ireland box office chart, despite receiving a frosty response from critics last week.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21519231#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21519231</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:58:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65976000/jpg/_65976284_diehard1_320.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65976000/jpg/_65976285_diehard1_320.jpg"/> 
+    </item>  
+    <item> 
+      <title>Action urged over Banksy mural sale</title>  
+      <description>Haringey Council asks the Arts Council to help prevent the US sale of a Banksy mural taken from a wall in the London borough.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21517034#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21517034</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:19:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972108_untitled.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972109_untitled.jpg"/> 
+    </item>  
+    <item> 
+      <title>Kelly Clarkson slams 'false rumours'</title>  
+      <description>The former American Idol winner hits back at allegations made in book by record producer, Clive Davis.</description>  
+      <link>http://www.bbc.co.uk/newsbeat/21514602#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/newsbeat/21514602</guid>  
+      <pubDate>Wed, 20 Feb 2013 06:41:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968972_kellyclarkson1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65968000/jpg/_65968974_kellyclarkson1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Costume awards for Anna and Skyfall</title>  
+      <description>The costumes seen in James Bond film Skyfall, period drama Anna Karenina and TV's Downton Abbey are among those recognised at the Costume Designers Guild Awards in Los Angeles.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21518016#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21518016</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:31:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972487_anna-karenina-2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972488_anna-karenina-2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Man charged with Salvador Dali theft</title>  
+      <description>A man from Athens pleads not guilty to stealing a Salvador Dali painting from a New York gallery last June.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21517045#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21517045</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:19:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972095_untitled-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972096_untitled-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>£100m art collection left to nation</title>  
+      <description>A collection of paintings worth £100m built up by the late art historian Sir Denis Mahon is left to the nation through an art charity.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21514561#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21514561</guid>  
+      <pubDate>Wed, 20 Feb 2013 04:50:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969323_65969310.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969324_65969310.jpg"/> 
+    </item>  
+    <item> 
+      <title>STV sees profits rise and debt cut</title>  
+      <description>Media group STV increases it profits by 3% and cut its debt and says it has moved on from its dispute with ITV.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-business-21517058#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-business-21517058</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:25:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972054__51405890__49555437_stv226-1-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972055__51405890__49555437_stv226-1-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Crime writer wins $51m lawsuit</title>  
+      <description>Crime writer Patricia Cornwell wins a $51m (£33m) suit against her former financial managers, after a jury agrees their negligence cost her millions.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21511617#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21511617</guid>  
+      <pubDate>Tue, 19 Feb 2013 22:08:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967150_65964758.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967151_65964758.jpg"/> 
+    </item>  
+    <item> 
+      <title>Norton's Big Chat line-up revealed</title>  
+      <description>Ronnie Corbett, Steve Jones, Elle Macpherson, Lee Mack, Keith Lemon and Heston Blumenthal lined up for Graham Norton's Comic Relief Big Chat marathon on BBC Three.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21517036#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21517036</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:40:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973450_65972150.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973451_65972150.jpg"/> 
+    </item>  
+    <item> 
+      <title>Michael Jackson's son is US TV host</title>  
+      <description>The late singer's teenage son, Prince, signs up as a reporter for the Entertainment Tonight television show.</description>  
+      <link>http://www.bbc.co.uk/newsbeat/21516626#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/newsbeat/21516626</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:40:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974116_reuters_jackson2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974118_reuters_jackson.jpg"/> 
+    </item>  
+    <item> 
+      <title>Full Monty play scores with critics</title>  
+      <description>A stage version of 1997 film The Full Monty is hailed as hit after its opening night in Sheffield.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21506295#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21506295</guid>  
+      <pubDate>Tue, 19 Feb 2013 17:59:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965063_kennydoughty(gaz)%2Crogermorlidge(dave)bytristramkenton.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965116_kennydoughty(gaz)%2Crogermorlidge(dave)bytristramkenton.jpg"/> 
+    </item>  
+    <item> 
+      <title>Cameron: Mantel was 'wrong' on Kate</title>  
+      <description>Prime Minister David Cameron defends the Duchess of Cambridge, saying author Hilary Mantel was "completely wrong" to compare her with a "shop-window mannequin".</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21502937#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21502937</guid>  
+      <pubDate>Tue, 19 Feb 2013 13:39:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65956000/jpg/_65956099_mantel_pa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65956000/jpg/_65956100_mantel_pa.jpg"/> 
+    </item>  
+    <item> 
+      <title>Egg artist wins £15,000 art prize</title>  
+      <description>Ruth Stage, who uses the ancient painting technique egg tempera, wins the £15,000 Lynn Painter-Stainers prize.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21499549#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21499549</guid>  
+      <pubDate>Mon, 18 Feb 2013 19:08:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65947000/jpg/_65947322_65946315.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65947000/jpg/_65947323_65946315.jpg"/> 
+    </item>  
+    <item> 
+      <title>Olympic show 'easier' than movies</title>  
+      <description>It was one of the biggest live shows of all time but Danny Boyle admits directing the Olympics opening ceremony was less stressful than making a movie.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21499614#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21499614</guid>  
+      <pubDate>Tue, 19 Feb 2013 11:36:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952289_dannyboyle_smilegetty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952290_dannyboyle_smilegetty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Argo scoops Writers Guild award</title>  
+      <description>CIA thrillers Argo and Zero Dark Thirty win the top screenplay honours from the Writers Guild of America.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21496393#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21496393</guid>  
+      <pubDate>Mon, 18 Feb 2013 09:00:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65940000/jpg/_65940581_65940521.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65940000/jpg/_65940582_65940521.jpg"/> 
+    </item>  
+    <item> 
+      <title>Tom Cruise 'curry night' the movie</title>  
+      <description>Hollywood star Tom Cruise's visit to a Hertfordshire curry house is turned into a film.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-beds-bucks-herts-21491574#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-beds-bucks-herts-21491574</guid>  
+      <pubDate>Sun, 17 Feb 2013 15:42:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65936000/jpg/_65936524_tomcruiseap.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65936000/jpg/_65936525_tomcruiseap.jpg"/> 
+    </item>  
+    <item> 
+      <title>Cole receives front page apology</title>  
+      <description>Now magazine makes a formal apology and pays damages to Cheryl Cole for printing a false story about a relationship between the singer and former So Solid Crew-member MC Harvey.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21510590#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21510590</guid>  
+      <pubDate>Tue, 19 Feb 2013 17:25:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952782_65962526.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952783_65962526.jpg"/> 
+    </item>  
+    <item> 
+      <title>BBC Three documentary upsets locals</title>  
+      <description>Residents of Manchester suburb Harpurhey complain that a BBC fly-on-the-wall documentary gives a distorted impression of their area.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21506291#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21506291</guid>  
+      <pubDate>Tue, 19 Feb 2013 15:12:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65958000/jpg/_65958647_3546453-low-people-like-us.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65958000/jpg/_65958648_3546453-low-people-like-us.jpg"/> 
+    </item>  
+    <item> 
+      <title>Rivera posthumous novel planned</title>  
+      <description>A memoir penned before the multimillion-selling grupera singer Jenni Rivera was killed in a plane crash, will be published in July.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21503574#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21503574</guid>  
+      <pubDate>Tue, 19 Feb 2013 13:10:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65956000/jpg/_65956310_65956305.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65956000/jpg/_65956311_65956305.jpg"/> 
+    </item>  
+    <item> 
+      <title>Jonathan Wall appointed 5 live boss</title>  
+      <description>Acting deputy of BBC Radio 5 live, Jonathan Wall, is appointed the new controller of the station, taking over from Adrian Van Klaveren.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21507593#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21507593</guid>  
+      <pubDate>Tue, 19 Feb 2013 15:59:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65960000/jpg/_65960900_608.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65960000/jpg/_65960901_608.jpg"/> 
+    </item>  
+    <item> 
+      <title>BBC to dramatise War and Peace</title>  
+      <description>The BBC is to return to Leo Tolstoy's War and Peace after 40 years with a new adaptation of the epic love story.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21502934#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21502934</guid>  
+      <pubDate>Tue, 19 Feb 2013 09:51:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952669_65952662.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952670_65952662.jpg"/> 
+    </item>  
+    <item> 
+      <title>Mr &amp; Mrs host Derek Batey dies at 84</title>  
+      <description>Derek Batey, host of ITV gameshow Mr &amp; Mrs in the 1970s and 1980s, dies at the age of 84, his former employers at ITV Border Television announce.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21501873#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21501873</guid>  
+      <pubDate>Tue, 19 Feb 2013 03:31:30 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949308_65949235.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949309_65949235.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Minchin and Mel C to tour Australia</title>  
+      <description>Jesus Christ Superstar will tour Australia before returning to the UK for an arena tour in October, it has been announced.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21523668#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21523668</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:33:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983444_65981701.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983445_65981701.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Mumford &amp; Sons to 'justify success'</title>  
+      <description>Mumford &amp; Sons are up for three awards at the Brits including British album of the year and British group. Marcus Mumford and Winston Marshall tell BBC News they have surpassed any expectations they had as musicians.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21525089#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21525089</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:30:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985078_65984722.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985079_65984722.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Brit Awards red carpet glamour</title>  
+      <description>Music stars tread the red carpet at the Brit Awards</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21527023#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21527023</guid>  
+      <pubDate>Wed, 20 Feb 2013 19:55:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65987000/jpg/_65987760_65987751.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65987000/jpg/_65987842_65987751.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Artist Quentin Blake is knighted</title>  
+      <description>Artist Quentin Blake is knighted at Buckingham Palace for his work as an illustrator.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21523663#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21523663</guid>  
+      <pubDate>Wed, 20 Feb 2013 15:53:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981528_65980698.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981529_65980698.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: The Brits are go and more award news</title>  
+      <description>The stars arrive for this year's Brit awards, plus the rest of the day's top entertainment stories</description>  
+      <link>http://www.bbc.co.uk/news/10317943#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/10317943</guid>  
+      <pubDate>Wed, 20 Feb 2013 20:01:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978088_jex_1611778_de36-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65978000/jpg/_65978089_jex_1611778_de36-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: British music's 'incredible place'</title>  
+      <description>The BBC's arts editor Will Gompertz hears from Brits chairman David Joseph, boss of the UK arm of the globe-spanning Universal Music.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21516356#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21516356</guid>  
+      <pubDate>Wed, 20 Feb 2013 07:41:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970788_65970656.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970789_65970656.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Oscars: Shortest film ever nominated</title>  
+      <description>Stop frame animation film Guacamole is the shortest film ever to be nominated for an Oscar.</description>  
+      <link>http://www.bbc.co.uk/news/world-21516368#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-21516368</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:09:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973009_65972601.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973010_65972601.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Jackson brothers to tour UK</title>  
+      <description>Jackie, Jermaine, Marlon and Tito Jackson are performing on stage for the first time since their brother's death.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21516370#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21516370</guid>  
+      <pubDate>Wed, 20 Feb 2013 12:11:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65976000/jpg/_65976759_65974572.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65976000/jpg/_65976760_65974572.jpg"/> 
+    </item>  
+    <item> 
+      <title>In pictures: Brit Awards 2013</title>  
+      <description>Music stars tread the red carpet at the Brit Awards</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21525225#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21525225</guid>  
+      <pubDate>Wed, 20 Feb 2013 18:51:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986887_taylorap.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986888_taylorap.jpg"/> 
+    </item>  
+    <item> 
+      <title>Oscars: best foreign film contenders</title>  
+      <description>A look at the contenders for this year's best foreign film Oscar</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21367208#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21367208</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:59:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973334_foreignfilmcomposite.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973335_foreignfilmcomposite.jpg"/> 
+    </item>  
+    <item> 
+      <title>Emeli Sande: 'Last year was surreal'</title>  
+      <description>Brit nominee Emile Sande on the highs and lows of fame</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21503470#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21503470</guid>  
+      <pubDate>Wed, 20 Feb 2013 08:19:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65952000/jpg/_65952843_65952679.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65953000/jpg/_65953015_65952679.jpg"/> 
+    </item>  
+    <item> 
+      <title>Tony Mendez, the real CIA spy in Argo</title>  
+      <description>How a CIA spy gave Ben Affleck the story of Argo</description>  
+      <link>http://www.bbc.co.uk/news/magazine-21504409#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-21504409</guid>  
+      <pubDate>Wed, 20 Feb 2013 00:35:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971428_argo320.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971429_argo320.jpg"/> 
+    </item>  
+    <item> 
+      <title>Consider this: How film-makers court the Oscar voters</title>  
+      <description>How film makers court the Oscars</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21412228#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21412228</guid>  
+      <pubDate>Tue, 19 Feb 2013 07:00:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65961000/jpg/_65961104_65956980.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65961000/jpg/_65961105_65956980.jpg"/> 
+    </item>  
+    <item> 
+      <title>The Sound and the Fury</title>  
+      <description>BBC Four series examines how war shaped 20th Century music.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21503510#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21503510</guid>  
+      <pubDate>Tue, 19 Feb 2013 09:27:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951803_65951172.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65951000/jpg/_65951804_65951172.jpg"/> 
+    </item>  
+    <item> 
+      <title>Obituary: Mindy McCready</title>  
+      <description>The turbulent life of the late US country singer Mindy McCready</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-21497167#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-21497167</guid>  
+      <pubDate>Mon, 18 Feb 2013 12:14:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65942000/jpg/_65942614_mccready_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65942000/jpg/_65942615_mccready_getty.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

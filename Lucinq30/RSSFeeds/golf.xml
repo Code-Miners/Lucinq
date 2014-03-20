@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC Sport - Golf</title>  
+    <link>http://www.bbc.co.uk/sport/0/golf/</link>  
+    <description>The latest stories from the Golf section of the BBC Sport web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 19:30:46 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbc.co.uk/sol/shared/img/sport_120x60.gif</url>  
+      <title>BBC Sport - Golf</title>  
+      <link>http://www.bbc.co.uk/sport/0/golf/</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/sport/0/golf/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>World Match Play halted by snow</title>  
+      <description>The opening day of the WGC Match Play Championship in Arizona is suspended because of heavy snow at Dove Mountain.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21523833</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21523833</guid>  
+      <pubDate>Wed, 20 Feb 2013 19:30:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65987000/jpg/_65987381_graeme_mcdowell_reuters.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65987000/jpg/_65987379_graeme_mcdowell_reuters.jpg"/> 
+    </item>  
+    <item> 
+      <title>Putting fallout concerns Poulter</title>  
+      <description>Ian Poulter fears a fallout among golf's governing bodies if putting rule changes are rejected by the PGA Tour.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21516795</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21516795</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:06:40 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971931_ian_poulter2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65973000/jpg/_65973104_ian_poulter2.jpg"/> 
+    </item>  
+    <item> 
+      <title>McIlroy in groove for Match Play</title>  
+      <description>Rory McIlroy is confident of playing well at the WGC Match Play Championship, despite missing the cut in Abu Dhabi.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21512816</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21512816</guid>  
+      <pubDate>Tue, 19 Feb 2013 20:40:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967240_ro-getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967238_ro-getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Arizona Match Play draw revealed</title>  
+      <description>World number one Rory McIlroy will play Shane Lowry in round one of the WGC Match Play Championship in Arizona.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21496311</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21496311</guid>  
+      <pubDate>Mon, 18 Feb 2013 08:59:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65940000/jpg/_65940678_65940033.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65940000/jpg/_65940680_65940033.jpg"/> 
+    </item>  
+    <item> 
+      <title>Merrick wins Northern Trust Open</title>  
+      <description>John Merrick wins his first US PGA Tour title at Riviera Country Club, after beating Charlie Beljan in a play-off.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21496137</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21496137</guid>  
+      <pubDate>Mon, 18 Feb 2013 09:21:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65940000/jpg/_65940223_john_merrick.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65940000/jpg/_65940225_john_merrick.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ko, 15, third in Australian Open</title>  
+      <description>New Zealander Lydia Ko comes third at the Australian Women's Open as South Korean Jiyai Shin claims victory.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21491427</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21491427</guid>  
+      <pubDate>Sun, 17 Feb 2013 12:02:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65884000/jpg/_65884286_lydia_ko_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65933000/jpg/_65933536_lydia_ko_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Golfer Hall set for first major</title>  
+      <description>Young Bournemouth golfer Georgia Hall is invited to compete in her first major - the Kraft Nabisco Championship.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21428017</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21428017</guid>  
+      <pubDate>Tue, 12 Feb 2013 11:31:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65842000/jpg/_65842123_hall.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65842000/jpg/_65842125_hall.jpg"/> 
+    </item>  
+    <item> 
+      <title>Snedeker in Pebble Beach victory</title>  
+      <description>Brandt Snedeker climbs two places up the rankings to fourth in the world after victory at the Pebble Beach National.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21406236</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21406236</guid>  
+      <pubDate>Sun, 10 Feb 2013 23:48:40 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65811000/jpg/_65811971_bran-getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65811000/jpg/_65811969_bran-getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sterne wins at Johannesburg Open</title>  
+      <description>Richard Sterne finishes seven shots ahead of fellow South African Charl Schwartzel to win the Johannesburg Open.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21401888</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21401888</guid>  
+      <pubDate>Sun, 10 Feb 2013 11:52:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65806000/jpg/_65806338_65806253.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65806000/jpg/_65806256_65806253.jpg"/> 
+    </item>  
+    <item> 
+      <title>Lyle dreaming of Ryder Cup role</title>  
+      <description>Former US Masters and Open champion Sandy Lyle has not given up on one day captaining Europe's Ryder Cup team.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21346550</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21346550</guid>  
+      <pubDate>Tue, 05 Feb 2013 20:20:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65722000/jpg/_65722099_148946186.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65722000/jpg/_65722101_148946186.jpg"/> 
+    </item>  
+    <item> 
+      <title>Russian in for Stupples at Wilson</title>  
+      <description>One week after ending their contract with Britain's Karen Stupples, Wilson announce the signing of Maria Balikoeva.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21330823</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21330823</guid>  
+      <pubDate>Mon, 04 Feb 2013 19:51:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65699000/jpg/_65699803_stupples.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65699000/jpg/_65699801_stupples.jpg"/> 
+    </item>  
+    <item> 
+      <title>Gallacher seals victory in Dubai</title>  
+      <description>Scotland's Stephen Gallacher wins for the first time since October 2004 as he triumphs at the Dubai Desert Classic.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21313941</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21313941</guid>  
+      <pubDate>Sun, 03 Feb 2013 15:56:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65675000/jpg/_65675203_golf-stephengallachergetty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65675000/jpg/_65675201_golf-stephengallachergetty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Mickelson just misses PGA record</title>  
+      <description>Phil Mickelson shoots 60 in the Phoenix Open first round to miss equalling the PGA Tour record by one shot.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21287195</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21287195</guid>  
+      <pubDate>Thu, 31 Jan 2013 21:14:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65635000/jpg/_65635412_phil_mickelson_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65635000/jpg/_65635411_phil_mickelson_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Singh withdraws from Phoenix Open</title>  
+      <description>Former world number one Vijay Singh pulls out of the Phoenix Open event citing a back injury.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21284455</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21284455</guid>  
+      <pubDate>Thu, 31 Jan 2013 18:35:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65629000/jpg/_65629351_150102627.jpg"/>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65631000/jpg/_65631326_150102627.jpg"/> 
+    </item>  
+    <item> 
+      <title>Volunteer search on for Ryder Cup</title>  
+      <description>Organisers of the 2014 Ryder Cup at Gleneagles launch a search for 1,800 volunteers to work at the event.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-tayside-central-21265288#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-tayside-central-21265288</guid>  
+      <pubDate>Thu, 31 Jan 2013 00:31:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65601000/jpg/_65601113_ryder_golfer2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65601000/jpg/_65601114_ryder_golfer2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Singh angry at use of deer spray</title>  
+      <description>Golfer Vijay Singh could face a suspension after admitting to using deer antler spray which contains a banned substance.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21273128</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21273128</guid>  
+      <pubDate>Thu, 31 Jan 2013 09:24:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65589000/jpg/_65589225_vijaysingh_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65589000/jpg/_65589943_vijaysingh_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>PGA to investigate Singh claims</title>  
+      <description>PGA Tour officials will investigate claims that former world number one Vijay Singh used a banned supplement.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21259615</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21259615</guid>  
+      <pubDate>Wed, 30 Jan 2013 21:56:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65614000/jpg/_65614333_006972298-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65614000/jpg/_65614335_006972298-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: McIlroy positive despite poor start</title>  
+      <description>World number one Rory McIlroy says there were a "few good signs" in his opening 75 at the Abu Dhabi Championship.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21060248</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21060248</guid>  
+      <pubDate>Thu, 17 Jan 2013 14:40:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65349000/jpg/_65349412_159599323_10.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65349000/jpg/_65349410_159599323_10.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Famous sporting confessions</title>  
+      <description>BBC Sport looks back at some famous sporting confessions ahead of Lance Armstrong's highly-anticipated interview by Oprah Winfrey.</description>  
+      <link>http://www.bbc.co.uk/sport/0/21042166</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/21042166</guid>  
+      <pubDate>Wed, 16 Jan 2013 19:55:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65332000/jpg/_65332287_tigerwoodsapology.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65332000/jpg/_65332289_tigerwoodsapology.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: McGinley putts to win Ryder Cup</title>  
+      <description>Paul McGinley holes the winning putt for Europe in the 2002 Ryder Cup before celebrating by jumping into a lake at The Belfry.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21042710</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21042710</guid>  
+      <pubDate>Wed, 16 Jan 2013 12:25:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65321000/jpg/_65321108_3mmglfmcginleywins2002rydercup.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65330000/jpg/_65330422_1464170.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: McIlroy thrilled with McGinley as captain</title>  
+      <description>World number one Rory McIlroy believes Paul McGinley is the right choice for Ryder Cup captain.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21043835</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21043835</guid>  
+      <pubDate>Wed, 16 Jan 2013 11:49:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65319000/jpg/_65319288_91169164_10.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65319000/jpg/_65319266_91169164_10.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: McGinley humbled by players' backing</title>  
+      <description>Irish golfer Paul McGinley feels "humbled" by the support he received from the Europe players to be the 2014 Ryder Cup captain.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21036399</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21036399</guid>  
+      <pubDate>Tue, 15 Jan 2013 22:11:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65311000/jpg/_65311789_mmglfmcginleymcilroypic2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65311000/jpg/_65311791_mmglfmcginleymcilroypic2.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: McIlroy backs McGinley captaincy</title>  
+      <description>World number one Rory McIlroy says he will be "disappointed" if Paul McGinley is not named Europe's 2014 Ryder Cup captain.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21024164</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21024164</guid>  
+      <pubDate>Tue, 15 Jan 2013 15:16:20 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65301000/jpg/_65301585_mmglfmcilroyonmcginley.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65301000/jpg/_65301583_mmglfmcilroyonmcginley.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: US move will boost McIlroy - Woods</title>  
+      <description>Tiger Woods thinks Rory McIlroy will benefit by moving to the United States as the Northern Irishman will be able to practice in good weather all year round.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21030182</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21030182</guid>  
+      <pubDate>Tue, 15 Jan 2013 18:02:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65306000/jpg/_65306869_mmglfwoodspresser.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65308000/jpg/_65308291_mmglfwoodspresser.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Rory McIlroy nets Nike deal</title>  
+      <description>Rory McIlroy has been unveiled as Nike's new brand ambassador in Abu Dhabi, making him one of the highest paid sports stars in the world.</description>  
+      <link>http://www.bbc.co.uk/news/uk-21018146#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-21018146</guid>  
+      <pubDate>Mon, 14 Jan 2013 17:20:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65275000/jpg/_65275131_65272781.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65275000/jpg/_65275132_65272781.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Harrington sympathy for McIlroy on Olympics</title>  
+      <description>Padraig Harrington says he has massive sympathy for Rory McIlroy over his choice of which country to represent at the 2016 Olympics.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/20966272</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/20966272</guid>  
+      <pubDate>Wed, 09 Jan 2013 20:11:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65195000/jpg/_65195008_inpho_00652133.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65194000/jpg/_65194973_inpho_00652133.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Clarke keen on Ryder Cup captaincy</title>  
+      <description>Former Open champion Darren Clarke says he would "dearly love" to be captain of the European Ryder Cup team at Gleneagles in 2014</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/20782490</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/20782490</guid>  
+      <pubDate>Wed, 19 Dec 2012 12:49:53 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64849000/jpg/_64849620_pe_00269630.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64849000/jpg/_64849619_pe_00269630.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: My best is yet to come - Woods</title>  
+      <description>Former world number one Tiger Woods feels he still has "some of his best golf to play" ahead of the end of season World Challenge event at the Sherwood Country Club.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/20526296</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/20526296</guid>  
+      <pubDate>Wed, 28 Nov 2012 13:31:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64430000/jpg/_64430617_mmglftigerwoodsonmcilroy.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64430000/jpg/_64430619_mmglftigerwoodsonmcilroy.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: McDowell seals dramatic Europe win</title>  
+      <description>Graeme McDowell sinks a 15-foot putt to spark jubilant scenes at the 16th hole and when Hunter Mahan concedes at the 17th green the Northern Irishman is engulfed by both team-mates and fans. UK users only.</description>  
+      <link>http://news.bbc.co.uk/sport1/hi/golf/9060383.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/sport1/hi/golf/9060383.stm</guid>  
+      <pubDate>Mon, 04 Oct 2010 20:31:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/49368000/jpg/_49368438_mcdowellfinalputts66.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/63074000/jpg/_63074227_mcdowellfinalputts.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: 2006: Europe win emotional Ryder Cup</title>  
+      <description>Europe beat the USA 18 ½-9 ½ to win the Ryder Cup for a record third time in a row after dominating the singles. It will be remembered for Darren Clarke's tearful celebration, as the victory came a month after his wife Heather died of cancer.</description>  
+      <link>http://news.bbc.co.uk/sport1/hi/golf/9027279.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/sport1/hi/golf/9027279.stm</guid>  
+      <pubDate>Wed, 12 Sep 2012 15:58:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/49219000/jpg/_49219463_woosie_clarke2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/62858000/jpg/_62858247_woosie_clarke2.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: 1995: Europe snatch victory in final holes</title>  
+      <description>Europe claim a 13½-14½ victory at Oak Hill, New York, with Irishman Philip Walton sealing the win.</description>  
+      <link>http://news.bbc.co.uk/sport1/hi/golf/9027373.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/sport1/hi/golf/9027373.stm</guid>  
+      <pubDate>Wed, 12 Sep 2012 16:04:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/49220000/jpg/_49220218_1995_ryder-cup_203.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/62858000/jpg/_62858252_1995_ryder-cup_203.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Ryder Cup 1991 - Langer v Irwin at Kiawah Island</title>  
+      <description>The 1991 Ryder Cup is decided on the final hole of the final match at Kiawah Island in a classic singles encounter between Bernhard Langer and Hale Irwin. (UK users only)</description>  
+      <link>http://news.bbc.co.uk/sport1/hi/golf/9044534.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/sport1/hi/golf/9044534.stm</guid>  
+      <pubDate>Sun, 16 Sep 2012 12:04:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/49296000/jpg/_49296801_1991_kiawahisland_640.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/49296000/jpg/_49296802_1991_kiawahisland_640.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Ryder Cup 1987 - Europe's first win in US</title>  
+      <description>Harry Carpenter reviews the action as Tony Jacklin captains Europe to their first win on US soil in Ryder Cup history, with Seve Ballesteros sinking the winning putt.</description>  
+      <link>http://news.bbc.co.uk/sport1/hi/golf/9038032.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/sport1/hi/golf/9038032.stm</guid>  
+      <pubDate>Wed, 12 Sep 2012 15:55:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/49274000/jpg/_49274689_ryder_cupollie2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/62858000/jpg/_62858246_ryder_cupollie2.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Ryder Cup 1985 - Torrance seals first win for 28 years</title>  
+      <description>Sam Torrance sinks an 18 foot putt to win back the Ryder Cup for Europe for the first time since 1957.</description>  
+      <link>http://news.bbc.co.uk/sport1/hi/golf/9038035.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/sport1/hi/golf/9038035.stm</guid>  
+      <pubDate>Wed, 12 Sep 2012 15:55:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/49267000/jpg/_49267584_torrancecopy.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/62858000/jpg/_62858245_st85.jpg"/> 
+    </item>  
+    <item> 
+      <title>Duels in the desert</title>  
+      <description>The WGC Match Play Championship offers a refreshing dose of head-to-head combat, says BBC golf correspondent Iain Carter</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21513351</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21513351</guid>  
+      <pubDate>Tue, 19 Feb 2013 20:21:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966836_65966832.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966838_65966832.jpg"/> 
+    </item>  
+    <item> 
+      <title>Little time to bask in Dubai win</title>  
+      <description>Stephen Gallacher explains why he won't rest on his laurels after Tour win</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21375453</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21375453</guid>  
+      <pubDate>Thu, 07 Feb 2013 19:31:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65649000/jpg/_65649778_stephen_gallacher.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65649000/jpg/_65649831_stephen_gallacher.jpg"/> 
+    </item>  
+    <item> 
+      <title>Deer antlers, big bucks and Vijay</title>  
+      <description>BBC golf correspondent Iain Carter examines if antler spray could cost former number one Vijay Singh deer</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21314046</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21314046</guid>  
+      <pubDate>Sun, 03 Feb 2013 16:18:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65675000/jpg/_65675513_vijay_singh_getty66.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65675000/jpg/_65675511_vijay_singh_getty144.jpg"/> 
+    </item>  
+    <item> 
+      <title>Westwood needs a big win in 2013</title>  
+      <description>Former world number one Lee Westwood must win one of the sport's major titles, says BBC Sport’s golf correspondent Iain Carter</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21230665</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21230665</guid>  
+      <pubDate>Mon, 28 Jan 2013 12:46:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65547000/jpg/_65547036_westwood_getty_146486366.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65547000/jpg/_65547052_westwood_getty_146486366.jpg"/> 
+    </item>  
+    <item> 
+      <title>Donaldson proves strength of European Tour</title>  
+      <description>BBC Sport's golf correspondent Iain Carter says Jamie Donaldson's win in Abu Dhabi shows the depth of the European Tour.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21110887</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21110887</guid>  
+      <pubDate>Mon, 21 Jan 2013 06:24:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65401000/jpg/_65401208_65399964.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65401000/jpg/_65401206_65399964.jpg"/> 
+    </item>  
+    <item> 
+      <title>Players' choice McGinley proves his credentials</title>  
+      <description>Iain Carter on why on-course achievements are not everything when it comes to identifying a good Ryder Cup captain</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21032127</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21032127</guid>  
+      <pubDate>Tue, 15 Jan 2013 20:03:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65310000/jpg/_65310127_paulmcginley_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65310000/jpg/_65310125_paulmcginley_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>New year, new clubs</title>  
+      <description>BBC Sport's golf correspondent Iain Carter on Rory McIlroy's decision to change the formula that took him to the top.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21016110</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21016110</guid>  
+      <pubDate>Mon, 14 Jan 2013 18:06:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65269000/jpg/_65269545_65269518.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65276000/jpg/_65276036_65276015.jpg"/> 
+    </item>  
+    <item> 
+      <title>Why McIlroy the brand ticks Nike's boxes</title>  
+      <description>How global appeal, a clean-cut image and the potential to be at the top for years to come made Rory McIlroy the must-have name for Nike</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21018786</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21018786</guid>  
+      <pubDate>Mon, 14 Jan 2013 18:26:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65273000/jpg/_65273658_rory_mcilroy_getty2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65273000/jpg/_65273656_rory_mcilroy_getty2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Golfing predictions for 2013</title>  
+      <description>What lies ahead in the coming year? BBC golf correspondent Iain Carter looks ahead to 2013</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/20877134</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/20877134</guid>  
+      <pubDate>Mon, 31 Dec 2012 16:33:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/62025000/jpg/_62025483_rorymcilroy3.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65024000/jpg/_65024187_156889936.jpg"/> 
+    </item>  
+    <item> 
+      <title>Campbell ready to scale Everest again</title>  
+      <description>Former US Open champion Michael Campbell on his fall and latest rise</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21471881</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21471881</guid>  
+      <pubDate>Sun, 17 Feb 2013 08:09:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65903000/jpg/_65903408_campbell.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65903000/jpg/_65903894_campbell.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ko rips up golf's record books</title>  
+      <description>Fifteen-year-old Lydia Ko, who has already won three professional events, is golf's most exciting young talent, says Iain Carter</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/21413535</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/21413535</guid>  
+      <pubDate>Tue, 12 Feb 2013 06:19:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65826000/jpg/_65826296_lydiakogetty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65826000/jpg/_65826290_lydiakogetty2.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

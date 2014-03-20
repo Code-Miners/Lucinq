@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Africa</title>  
+    <link>http://www.bbc.co.uk/news/world/africa/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Africa section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 19:11:37 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Africa</title>  
+      <link>http://www.bbc.co.uk/news/world/africa/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/world/africa/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Pistorius police evidence challenged</title>  
+      <description>Sprinter Oscar Pistorius's lawyers challenge a detective who told a bail hearing that the athlete deliberately shot his girlfriend Reeva Steenkamp.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21522673#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21522673</guid>  
+      <pubDate>Wed, 20 Feb 2013 18:38:58 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986033_65980049.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986356_65980049.jpg"/> 
+    </item>  
+    <item> 
+      <title>Kenya's chief justice 'threatened'</title>  
+      <description>Kenya's chief justice says he was threatened in a "poison-pen letter" should presidential candidate Uhuru Kenyatta be barred from contesting March's poll.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21519868#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21519868</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:49:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65980000/jpg/_65980186_65974518.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65980000/jpg/_65980187_65974518.jpg"/> 
+    </item>  
+    <item> 
+      <title>Strike shuts down Malawi's airports</title>  
+      <description>Malawi's airports are shut because of a civil servants' wage strike, the biggest since Joyce Banda became president last year, leaving passengers stranded.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21525570#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21525570</guid>  
+      <pubDate>Wed, 20 Feb 2013 18:41:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986681_142588090.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65986000/jpg/_65986682_142588090.jpg"/> 
+    </item>  
+    <item> 
+      <title>Zambia seizes Chinese-owned mine</title>  
+      <description>The Zambian government takes over the running of a troubled Chinese-owned coal mine after revoking its licence because of safety lapses.</description>  
+      <link>http://www.bbc.co.uk/news/business-21520478#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21520478</guid>  
+      <pubDate>Wed, 20 Feb 2013 15:34:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981121_collummine.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981122_collummine.jpg"/> 
+    </item>  
+    <item> 
+      <title>Crowdfunders win African app prize</title>  
+      <description>SliceBiz, a Ghana-based service which seeks to popularise crowdfunded investment in Africa, is among the latest Apps4Africa winners.</description>  
+      <link>http://www.bbc.co.uk/news/technology-21513287#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21513287</guid>  
+      <pubDate>Wed, 20 Feb 2013 04:09:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969556_kitche.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969557_kitche.jpg"/> 
+    </item>  
+    <item> 
+      <title>France urges Cameroon evacuation</title>  
+      <description>France urges its citizens to leave north Cameroon "as quickly as possible" after seven of its nationals were kidnapped by gunmen on Tuesday.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21518116#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21518116</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:11:14 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/gif/_65972986_cameroon_nigeria_022013.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/gif/_65972987_cameroon_nigeria_022013.gif"/> 
+    </item>  
+    <item> 
+      <title>Tunisia PM Hamadi Jebali resigns</title>  
+      <description>Tunisian Prime Minister Hamadi Jebali resigns after failing to form a new government following a political assassination.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21508498#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21508498</guid>  
+      <pubDate>Tue, 19 Feb 2013 22:36:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969630_017274624.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969631_017274624.jpg"/> 
+    </item>  
+    <item> 
+      <title>Penis size matters to female moles</title>  
+      <description>Female Hottentot golden moles, from sub-Saharan Africa, use penis size to gauge the suitability of male partners, scientists discover.</description>  
+      <link>http://www.bbc.co.uk/nature/21321171</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/nature/21321171</guid>  
+      <pubDate>Wed, 20 Feb 2013 09:46:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965079_dpp_889(2).jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965080_dpp_889(2).jpg"/> 
+    </item>  
+    <item> 
+      <title>Ex-President Gbagbo appears at ICC</title>  
+      <description>Ivorian ex-President Laurent Gbagbo appears at the International Criminal Court at a hearing to decide whether he could stand trial over post-election violence.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21508474#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21508474</guid>  
+      <pubDate>Tue, 19 Feb 2013 17:48:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65963000/jpg/_65963199_65962372.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65963000/jpg/_65963200_65962372.jpg"/> 
+    </item>  
+    <item> 
+      <title>French soldier dies in Mali fighting</title>  
+      <description>A French soldier is killed in fighting with Islamist rebels in northern Mali, President Francois Hollande says.</description>  
+      <link>http://www.bbc.co.uk/news/world-21508494#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-21508494</guid>  
+      <pubDate>Tue, 19 Feb 2013 18:12:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65964000/jpg/_65964741_65964297.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65964000/jpg/_65964742_65964297.jpg"/> 
+    </item>  
+    <item> 
+      <title>SA's ANC dismisses new opposition</title>  
+      <description>South Africa's governing African National Congress (ANC) dismisses the launch of a new party by former mining magnate Mamphela Ramphele.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21504435#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21504435</guid>  
+      <pubDate>Tue, 19 Feb 2013 11:11:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65953000/jpg/_65953658_mam.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65953000/jpg/_65953659_mam.jpg"/> 
+    </item>  
+    <item> 
+      <title>Nigeria charges Russia 'gun dealers'</title>  
+      <description>Fifteen Russian sailors are charged in a court in Nigeria's main city, Lagos, with illegally bringing weapons into the country.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21509535#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21509535</guid>  
+      <pubDate>Tue, 19 Feb 2013 15:27:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65959000/gif/_65959951_nigeria_togo_benin304.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65959000/gif/_65959952_nigeria_togo_benin304.gif"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Dining out on 'reject' food</title>  
+      <description>Approximately 500 diplomats, United Nations officials and environment ministers have been treated to an official dinner, where the food used was Kenyan produce that would have been thrown away for not meeting supermarket appearance standards</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21524479#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21524479</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:13:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65982000/jpg/_65982986_65982906.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65982000/jpg/_65982987_65982906.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Apps4Africa winners are announced</title>  
+      <description>The three winners of the latest Apps4Africa competition are announced on the BBC World Service.</description>  
+      <link>http://www.bbc.co.uk/news/technology-21518532#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-21518532</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:35:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975121_kitche.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65975000/jpg/_65975122_kitche.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Pistorius 'very much in love'</title>  
+      <description>Oscar Pistoprius had no intention of killing his girlfriend, and the couple were very much in love, his defence team has told a court in Pretoria.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21503456#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21503456</guid>  
+      <pubDate>Tue, 19 Feb 2013 14:18:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65958000/jpg/_65958947_jex_1610998_de27-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65958000/jpg/_65958948_jex_1610998_de27-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Family tribute to Reeva Steenkamp</title>  
+      <description>The family of Reeva Steenkamp have given brief statements following a private memorial and cremation service in her hometown of Port Elizabeth.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21503452#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21503452</guid>  
+      <pubDate>Tue, 19 Feb 2013 10:34:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65954000/jpg/_65954003_jex_1610841_de27copy.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65954000/jpg/_65954004_jex_1610841_de27copy.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: South Africa's new party leader</title>  
+      <description>South African anti-apartheid activist Dr Mamphela Ramphele has set out her much-anticipated plans for a new political party whose first order of business would be to call for electoral reform.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21501949#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21501949</guid>  
+      <pubDate>Tue, 19 Feb 2013 05:12:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949388_safrc.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949389_safrc.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'I'm closing for the Kenya election'</title>  
+      <description>Nairobi hairdresser Agnes Warengi on why she is planning to shift stock out of the premises ahead of the election on 4 March.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21472544#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21472544</guid>  
+      <pubDate>Tue, 19 Feb 2013 01:22:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65919000/jpg/_65919049_65918616.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65919000/jpg/_65919050_65918616.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Workers shot in SA mine dispute</title>  
+      <description>At least five miners have been reported shot by security guards at the Anglo American platinum mine in Rustenburg.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21498646#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21498646</guid>  
+      <pubDate>Mon, 18 Feb 2013 17:05:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65946000/jpg/_65946323_rustenburgafp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65946000/jpg/_65946324_rustenburgafp.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Fear returns to Mali amid clashes</title>  
+      <description>The military presence has been beefed up in the northern Malian town of Gao following two suicide bomb attacks last week and heavy fighting against Jihadi fighters.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21469673#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21469673</guid>  
+      <pubDate>Fri, 15 Feb 2013 07:40:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65901000/jpg/_65901338_65901329.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65901000/jpg/_65901402_65901329.jpg"/> 
+    </item>  
+    <item> 
+      <title>African viewpoint: Which leaders are Twitter savvy?</title>  
+      <description>Which African presidents have the most followers?</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21434229#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21434229</guid>  
+      <pubDate>Wed, 13 Feb 2013 17:54:48 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65918000/jpg/_65918935_img_0391.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65918000/jpg/_65918936_img_0391.jpg"/> 
+    </item>  
+    <item> 
+      <title>African viewpoint: A three-day week for Ghana?</title>  
+      <description>Should Ghana work a three-day week to allow for funerals?</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21326829#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21326829</guid>  
+      <pubDate>Tue, 05 Feb 2013 17:06:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65773000/jpg/_65773926_ohene144.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65773000/jpg/_65773927_ohene144.jpg"/> 
+    </item>  
+    <item> 
+      <title>An eye clinic with a long vision</title>  
+      <description>Kenya's female doctors with a vision to make big profits</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21444319#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21444319</guid>  
+      <pubDate>Thu, 14 Feb 2013 16:03:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65878000/jpg/_65878801_drkimani.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65878000/jpg/_65878802_drkimani.jpg"/> 
+    </item>  
+    <item> 
+      <title>Why being a blind music producer helps</title>  
+      <description>Why being blind helps a Nigerian music producer</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21362490#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21362490</guid>  
+      <pubDate>Fri, 08 Feb 2013 11:42:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65768000/jpg/_65768028_cobhams-playing-the-piano.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65768000/jpg/_65768029_cobhams-playing-the-piano.jpg"/> 
+    </item>  
+    <item> 
+      <title>Is satellite TV killing African football?</title>  
+      <description>Why a Nigerian prefers Manchester to Katsina United</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21206500#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21206500</guid>  
+      <pubDate>Tue, 29 Jan 2013 01:33:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65556000/jpg/_65556542_manu2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65556000/jpg/_65556543_manu2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Viewpoint: How tribalism stunts African democracy</title>  
+      <description>How tribalism stunts African democracy</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-20465752#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-20465752</guid>  
+      <pubDate>Tue, 27 Nov 2012 09:44:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64402000/jpg/_64402748_64342360.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64402000/jpg/_64402749_64342360.jpg"/> 
+    </item>  
+    <item> 
+      <title>In pictures: Why Malians now love France</title>  
+      <description>Mali welcome French moves to oust Islamist militants</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21265752#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21265752</guid>  
+      <pubDate>Thu, 31 Jan 2013 02:29:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65613000/jpg/_65613890_11-mopti-market.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65613000/jpg/_65613891_11-mopti-market.jpg"/> 
+    </item>  
+    <item> 
+      <title>In pictures: Voices from Diabaly after Mali rebel battle</title>  
+      <description>Mali townspeople on coming face-to-face with Islamist rebels</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21144600#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21144600</guid>  
+      <pubDate>Tue, 22 Jan 2013 14:46:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65440000/jpg/_65440624_binta.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65440000/jpg/_65440625_binta.jpg"/> 
+    </item>  
+    <item> 
+      <title>Your pictures: On the road in Africa</title>  
+      <description>Photographs sent in by BBC News website readers of life on the roads in Africa.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-20949444#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-20949444</guid>  
+      <pubDate>Wed, 09 Jan 2013 00:26:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65162000/jpg/_65162125_14_liberia_monvia_cecil.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65162000/jpg/_65162126_14_liberia_monvia_cecil.jpg"/> 
+    </item>  
+    <item> 
+      <title>In pictures: Sand mining in Sierra Leone</title>  
+      <description>Images of Sierra Leone's pristine beaches under threat</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-20897658#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-20897658</guid>  
+      <pubDate>Mon, 07 Jan 2013 01:31:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65110000/jpg/_65110828_dsc_0578.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65110000/jpg/_65110829_dsc_0578.jpg"/> 
+    </item>  
+    <item> 
+      <title>In pictures: Focus on Africa in 2012</title>  
+      <description>Beach holidays and historic moments in focus</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-20725681#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-20725681</guid>  
+      <pubDate>Fri, 28 Dec 2012 08:29:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64768000/jpg/_64768878_12_somalia_reuters.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64768000/jpg/_64768879_12_somalia_reuters.jpg"/> 
+    </item>  
+    <item> 
+      <title>The amazing wildlife of Africa</title>  
+      <description>Close encounters from the heart of Africa</description>  
+      <link>http://www.bbc.co.uk/nature/20784813</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/nature/20784813</guid>  
+      <pubDate>Fri, 28 Dec 2012 03:24:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64873000/jpg/_64873474_0105_wright_morocco_macaques-7457(5).jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64873000/jpg/_64873475_0105_wright_morocco_macaques-7457(5).jpg"/> 
+    </item>  
+    <item> 
+      <title>In pictures: Ben Ali riches sold</title>  
+      <description>Tunisia auctions off ousted leader Ben Ali's riches</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-20826073#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-20826073</guid>  
+      <pubDate>Sat, 22 Dec 2012 20:59:48 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64920000/jpg/_64920858_64920851.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64920000/jpg/_64920859_64920851.jpg"/> 
+    </item>  
+    <item> 
+      <title>Algeria profile</title>  
+      <description>Provides overview, key facts and events, timelines and leader profiles along with current news about Algeria</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14118852#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14118852</guid>  
+      <pubDate>Thu, 17 Jan 2013 08:20:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/61633000/jpg/_61633822_bouteflika_afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/61633000/jpg/_61633823_bouteflika_afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Angola profile</title>  
+      <description>Provides an overview, key facts and history of this south-west African country which has been a major oil producer</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13036732#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13036732</guid>  
+      <pubDate>Tue, 04 Sep 2012 11:17:21 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Benin country profile</title>  
+      <description>Provides an overview, facts and figures and history of this West African nation seen as one of the continent's most stable countries</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13037572#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13037572</guid>  
+      <pubDate>Mon, 21 Jan 2013 16:07:38 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Botswana profile</title>  
+      <description>Provides an overview, key facts and history of Botswana, a major diamond producer in Southern Africa</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13040376#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13040376</guid>  
+      <pubDate>Thu, 09 Aug 2012 13:14:02 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Burkina Faso profile</title>  
+      <description>Provides an overview, key facts and history of this West African nation</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13072774#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13072774</guid>  
+      <pubDate>Wed, 05 Dec 2012 14:05:54 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Burundi country profile</title>  
+      <description>Provides an overview, basic facts and key events for Burundi, this small country in Africa</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13085064#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13085064</guid>  
+      <pubDate>Thu, 29 Nov 2012 12:38:14 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Cameroon country profile</title>  
+      <description>Provides an overview of Cameroon, including key events and facts about this former French and British colony in Africa</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13146029#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13146029</guid>  
+      <pubDate>Wed, 05 Dec 2012 15:15:40 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Cape Verde profile</title>  
+      <description>Key facts, figures and dates</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13148486#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13148486</guid>  
+      <pubDate>Tue, 11 Dec 2012 13:30:18 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Central African Republic profile</title>  
+      <description>Provides an overview, basic information and key dates for this land-locked African country</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13150040#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13150040</guid>  
+      <pubDate>Tue, 15 Jan 2013 11:58:34 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Chad profile</title>  
+      <description>Provides an overview of Chad, including key events and facts about this African country</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13164686#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13164686</guid>  
+      <pubDate>Mon, 17 Dec 2012 10:10:47 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Comoros country profile</title>  
+      <description>Provides an overview of the Comoros, including key events and facts about this island nation off the coast of Africa</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13229685#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13229685</guid>  
+      <pubDate>Tue, 11 Dec 2012 15:22:48 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Republic of Congo profile</title>  
+      <description>Provides an overview, basic information and key events for this African country</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14121191#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14121191</guid>  
+      <pubDate>Tue, 11 Dec 2012 15:36:08 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Democratic Republic of Congo profile</title>  
+      <description>Key facts, figures and dates</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13283212#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13283212</guid>  
+      <pubDate>Tue, 05 Feb 2013 17:50:00 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Djibouti profile</title>  
+      <description>Provides an overview of Djibouti, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13231761#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13231761</guid>  
+      <pubDate>Tue, 11 Dec 2012 15:45:35 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Egypt profile</title>  
+      <description>Provides an overview of Egypt, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13313370#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13313370</guid>  
+      <pubDate>Tue, 15 Jan 2013 11:21:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/61634000/jpg/_61634262_egy_sphinx3_afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/61634000/jpg/_61634263_egy_sphinx3_afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Equatorial Guinea profile</title>  
+      <description>Provides overview, key facts and events, timelines and leader profiles along with current news about Equatorial Guinea</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13317174#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13317174</guid>  
+      <pubDate>Tue, 11 Dec 2012 15:58:01 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Eritrea profile</title>  
+      <description>Provides an overview of Eritrea, including key events and facts for this country on the Horn of Africa.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13349078#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13349078</guid>  
+      <pubDate>Mon, 21 Jan 2013 13:58:55 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Ethiopia profile</title>  
+      <description>Provides an overview of Ethiopia, including key events and facts about this ancient former Christian empire in northeast Africa.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13349398#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13349398</guid>  
+      <pubDate>Wed, 19 Dec 2012 11:47:53 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Gabon country profile</title>  
+      <description>Provides an overview, basic facts and key events for this west African country</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13376333#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13376333</guid>  
+      <pubDate>Thu, 14 Feb 2013 18:39:28 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>The Gambia profile</title>  
+      <description>Provides overview, key facts and events, timelines and leader profiles along with current news about The Gambia.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13376517#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13376517</guid>  
+      <pubDate>Tue, 11 Dec 2012 16:34:31 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Ghana country profile</title>  
+      <description>Provides an overview, basic facts and key events for this west African country</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13433790#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13433790</guid>  
+      <pubDate>Mon, 10 Dec 2012 17:23:39 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Guinea country profile</title>  
+      <description>Provides an overview, basic information and key events for this west African country.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13442051#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13442051</guid>  
+      <pubDate>Tue, 19 Jun 2012 14:19:06 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Guinea-Bissau profile</title>  
+      <description>Provides an overview as well as key facts, figures and dates for this west African country</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13443186#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13443186</guid>  
+      <pubDate>Sun, 23 Dec 2012 10:56:18 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Ivory Coast profile</title>  
+      <description>Provides an overview of Ivory Coast, including key events and facts about this west African country recently plagued by civil war.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13287216#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13287216</guid>  
+      <pubDate>Fri, 16 Nov 2012 14:40:03 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Kenya country profile</title>  
+      <description>Provides an overview of Kenya, including key events and facts of this East African country.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13681341#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13681341</guid>  
+      <pubDate>Mon, 03 Dec 2012 18:08:20 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Lesotho country profile</title>  
+      <description>Provides an overview, key facts and history of his small country completely surrounded by South Africa</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13728324#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13728324</guid>  
+      <pubDate>Sun, 23 Dec 2012 11:32:16 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Liberia profile</title>  
+      <description>Provides an overview of Liberia, including key events and facts about this West African country</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13729504#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13729504</guid>  
+      <pubDate>Sun, 23 Dec 2012 11:56:34 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Libya country profile</title>  
+      <description>Provides an overview of Libya, including key events and facts about this major oil producer which was ruled by Colonel Gaddafi for 42 years.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13754897#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13754897</guid>  
+      <pubDate>Mon, 10 Dec 2012 17:43:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/61635000/jpg/_61635054_libya_gaddafi_afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/61635000/jpg/_61635055_libya_gaddafi_afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Madagascar country profile</title>  
+      <description>Provides an overview, basic information and key events for this island nation which lies off Africa</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13861843#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13861843</guid>  
+      <pubDate>Mon, 21 Jan 2013 17:06:37 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Malawi country profile</title>  
+      <description>Provides overview, key facts and events, timelines and leader profiles along with current news about Malawi</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13864367#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13864367</guid>  
+      <pubDate>Mon, 05 Nov 2012 17:24:47 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Mali country profile</title>  
+      <description>Concise information about Mali and its people, including figures for area, population, main languages, religions, exports, and more.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13881370#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13881370</guid>  
+      <pubDate>Tue, 29 Jan 2013 12:18:04 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Mauritania country profile</title>  
+      <description>Provides an overview, basic information and key events for this oil-producing, mainly desert country in west Africa</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13881985#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13881985</guid>  
+      <pubDate>Sun, 25 Nov 2012 16:39:51 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Mauritius country profile - Overview</title>  
+      <description>Provides an overview of Mauritius, including key events and facts about this ethnically diverse Indian Ocean island nation</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13882233#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13882233</guid>  
+      <pubDate>Sun, 23 Dec 2012 13:57:26 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Morocco country profile - Overview</title>  
+      <description>Provides an overview of Morocco, including key events and facts about this mountainous kingdom at the far end of the Maghreb</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14121438#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14121438</guid>  
+      <pubDate>Mon, 28 May 2012 14:28:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/61636000/jpg/_61636217_kingmohamedvi_afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/61636000/jpg/_61636218_kingmohamedvi_afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Mozambique country profile</title>  
+      <description>Provides an overview of Mozambique, including key events and facts about this former Portuguese colony and its recovery from a long civil war in the 1980s.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13890416#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13890416</guid>  
+      <pubDate>Thu, 13 Dec 2012 10:53:28 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Namibia country profile</title>  
+      <description>Provides an overview of Namibia, including key events and facts about this sparsely populated but stable country on Africa's south-west coast.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13890726#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13890726</guid>  
+      <pubDate>Tue, 26 Jun 2012 14:34:30 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Niger country profile</title>  
+      <description>Provides an overview of Niger, including key events and facts about this arid state on the southern rim of the Sahara.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13943662#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13943662</guid>  
+      <pubDate>Thu, 28 Jun 2012 10:56:50 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Nigeria profile</title>  
+      <description>Provides an overview of Nigeria, including key events and facts about this oil-rich country with multiple ethnic and religious divides.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-13949550#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-13949550</guid>  
+      <pubDate>Wed, 16 Jan 2013 12:00:46 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Rwanda country profile - Overview</title>  
+      <description>Provides an overview of Rwanda, including key events and facts about this East African country that is still recovering from the genocide of 1994.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14093238#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14093238</guid>  
+      <pubDate>Tue, 05 Feb 2013 17:32:54 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Sao Tome and Principe profile</title>  
+      <description>Provides an overview of Sao Tome and Principe, including key events and facts about this oil-rich island nation - one of Africa's smallest states.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14093493#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14093493</guid>  
+      <pubDate>Thu, 20 Dec 2012 16:20:31 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Senegal profile</title>  
+      <description>Provides an overview of Senegal, including key events and facts about this west African country</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14093674#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14093674</guid>  
+      <pubDate>Thu, 12 Jul 2012 12:37:45 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Seychelles profile</title>  
+      <description>Provides an overview as well as facts and figures on this island state situated off the coast of Africa</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14093816#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14093816</guid>  
+      <pubDate>Wed, 08 Aug 2012 10:19:15 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Sierra Leone country profile</title>  
+      <description>Provides an overview, basic information and key dates for this west African country</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14094194#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14094194</guid>  
+      <pubDate>Sun, 25 Nov 2012 16:22:26 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Somalia profile</title>  
+      <description>Provides an overview of Somalia, including key events and facts about this civil war-wracked country on the Horn of Africa.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14094503#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14094503</guid>  
+      <pubDate>Wed, 24 Oct 2012 09:48:08 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>South Africa profile</title>  
+      <description>Provides an overview of South Africa, including key events and facts about this diverse country on Africa's southern tip.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14094760#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14094760</guid>  
+      <pubDate>Mon, 06 Aug 2012 10:02:31 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>South Sudan profile</title>  
+      <description>Provides an overview of South Sudan, including key events and facts about Africa's newest nation</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14069082#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14069082</guid>  
+      <pubDate>Wed, 22 Feb 2012 11:02:43 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Sudan country profile</title>  
+      <description>Provides an overview, basic information and key events for this African country</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14094995#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14094995</guid>  
+      <pubDate>Wed, 03 Oct 2012 11:41:59 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Swaziland profile</title>  
+      <description>Provides an overview, basic facts and key events for this small southern African kingdom</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14095303#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14095303</guid>  
+      <pubDate>Tue, 20 Nov 2012 12:16:08 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Tanzania country profile</title>  
+      <description>Provides an overview of Tanzania, including key facts and events as well as news</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14095776#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14095776</guid>  
+      <pubDate>Wed, 17 Oct 2012 10:35:18 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Togo profile</title>  
+      <description>Provides overview, key facts and events, timelines and leader profiles along with current news about Togo</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14106781#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14106781</guid>  
+      <pubDate>Thu, 14 Jun 2012 09:50:49 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Tunisia profile</title>  
+      <description>Provides overview, key facts and events, timelines and leader profiles along with current news about Tunisia</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14107241#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14107241</guid>  
+      <pubDate>Thu, 07 Feb 2013 11:45:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/61636000/jpg/_61636663_tunisia_demo_feb2011afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/61636000/jpg/_61636664_tunisia_demo_feb2011afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Uganda profile</title>  
+      <description>Provides overview, key facts and events, timelines and leader profiles along with current news about Uganda.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14107906#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14107906</guid>  
+      <pubDate>Wed, 08 Aug 2012 08:34:50 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Zambia profile</title>  
+      <description>Provides overview, key facts and events, timelines and leader profiles along with current news about Zambia.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14112449#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14112449</guid>  
+      <pubDate>Mon, 06 Aug 2012 10:50:16 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Zimbabwe profile</title>  
+      <description>Provides overview, key facts and events, timelines and leader profiles along with current news about Zimbabwe.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14113249#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14113249</guid>  
+      <pubDate>Thu, 14 Feb 2013 17:33:24 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Ceuta, Melilla profile</title>  
+      <description>An overview</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14114627#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14114627</guid>  
+      <pubDate>Wed, 12 Sep 2012 08:30:51 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Puntland profile</title>  
+      <description>An overview</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14114727#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14114727</guid>  
+      <pubDate>Tue, 11 Sep 2012 11:36:03 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Reunion profile</title>  
+      <description>An overview</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14114856#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14114856</guid>  
+      <pubDate>Fri, 09 Dec 2011 15:22:26 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Somaliland profile</title>  
+      <description>An overview</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14115069#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14115069</guid>  
+      <pubDate>Thu, 21 Jun 2012 09:55:37 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>St Helena, Ascension, Tristan da Cunha profiles</title>  
+      <description>An overview</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14123532#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14123532</guid>  
+      <pubDate>Fri, 09 Dec 2011 15:36:29 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Western Sahara profile</title>  
+      <description>An overview</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14115273#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14115273</guid>  
+      <pubDate>Fri, 09 Dec 2011 15:52:41 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Zanzibar profile</title>  
+      <description>An overview</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-14115176#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-14115176</guid>  
+      <pubDate>Wed, 18 Jul 2012 14:56:10 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Galatasaray v Schalke</title>  
+      <description>Preview of Wednesday's Champions League match between Galatasaray and Schalke.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21499567</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21499567</guid>  
+      <pubDate>Mon, 18 Feb 2013 18:06:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65946000/jpg/_65946570_didierdrogbaone.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65946000/jpg/_65946568_didierdrogbaone.jpg"/> 
+    </item>  
+    <item> 
+      <title>Metalist Kharkiv v Newcastle</title>  
+      <description>Preview followed by live coverage of Thursday's game between Metalist Kharkiv and Newcastle in the Europa League.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21455111</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21455111</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:48:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983599_65983594.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65983000/jpg/_65983595_65983594.jpg"/> 
+    </item>  
+    <item> 
+      <title>In pictures: Renegades</title>  
+      <description>Pictures of Botswana's heavy metal renegades</description>  
+      <link>http://www.bbc.co.uk/news/in-pictures-21509571#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/in-pictures-21509571</guid>  
+      <pubDate>Wed, 20 Feb 2013 11:03:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65962000/jpg/_65962881_frank-marshall-large-index.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65962000/jpg/_65962882_frank-marshall-large-index.jpg"/> 
+    </item>  
+    <item> 
+      <title>The man who has treated 30,000 rape victims</title>  
+      <description>The man who has treated 30,000 rape victims</description>  
+      <link>http://www.bbc.co.uk/news/magazine-21499068#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-21499068</guid>  
+      <pubDate>Tue, 19 Feb 2013 01:04:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65947000/jpg/_65947726_victim_afp624.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65947000/jpg/_65947727_victim_afp624.jpg"/> 
+    </item>  
+    <item> 
+      <title>Pistorius fall-out: Brand damage?</title>  
+      <description>The fall-out for corporate sponsors of Oscar Pistorius</description>  
+      <link>http://www.bbc.co.uk/news/business-21472843#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21472843</guid>  
+      <pubDate>Fri, 15 Feb 2013 23:58:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65920000/jpg/_65920704_65920547.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65920000/jpg/_65920705_65920547.jpg"/> 
+    </item>  
+    <item> 
+      <title>Africa in pictures: 8-14 February 2013</title>  
+      <description>Bumper harvests, river rapids and a baker's dozen</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21476679#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21476679</guid>  
+      <pubDate>Fri, 15 Feb 2013 18:09:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65917000/jpg/_65917697_zimtobaccofarmer_reuters.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65917000/jpg/_65917698_zimtobaccofarmer_reuters.jpg"/> 
+    </item>  
+    <item> 
+      <title>Slow rebirth for post-Gaddafi Libya</title>  
+      <description>Two years on from uprising, Libyans want faster progress</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21457879#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21457879</guid>  
+      <pubDate>Sun, 17 Feb 2013 00:52:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65919000/jpg/_65919780_65919617.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65919000/jpg/_65919781_65919617.jpg"/> 
+    </item>  
+    <item> 
+      <title>Mali prisoner: 'Militants cut off my hand with a knife'</title>  
+      <description>Malian man whose hand was cut off for stealing a mattress</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21467982#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21467982</guid>  
+      <pubDate>Fri, 15 Feb 2013 10:12:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65903000/jpg/_65903725_65897691.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65903000/jpg/_65903726_65897691.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

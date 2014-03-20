@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Europe</title>  
+    <link>http://www.bbc.co.uk/news/world/europe/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Europe section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Wed, 20 Feb 2013 19:30:22 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Europe</title>  
+      <link>http://www.bbc.co.uk/news/world/europe/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/world/europe/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Bulgaria PM to resign over protests</title>  
+      <description>Bulgaria's government is resigning following nationwide protests against austerity and high electricity prices, PM Boiko Borisov says.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21516658#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21516658</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:53:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972446_65971245.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972447_65971245.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ukraine ex-leader accused over death</title>  
+      <description>A Ukrainian prosecutor says the there is evidence former President Leonid Kuchma was involved in the 2000 killing of journalist Georgy Gongadze.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21525593#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21525593</guid>  
+      <pubDate>Wed, 20 Feb 2013 19:24:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65987000/jpg/_65987256_65987086.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65987000/jpg/_65987257_65987086.jpg"/> 
+    </item>  
+    <item> 
+      <title>Outrage over Berlusconi tax letter</title>  
+      <description>Opponents accuse Silvio Berlusconi of trying to buy votes in Sunday's election by sending out letters promising a tax rebate.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21521877#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21521877</guid>  
+      <pubDate>Wed, 20 Feb 2013 14:36:48 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65979000/jpg/_65979672_65974103.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65979000/jpg/_65979673_65974103.jpg"/> 
+    </item>  
+    <item> 
+      <title>Putin ally quits over foreign homes</title>  
+      <description>A senior figure in Russian President Vladimir Putin's party resigns after anti-corruption campaigners accuse him of owning homes in the US.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21525364#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21525364</guid>  
+      <pubDate>Wed, 20 Feb 2013 18:03:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985340_65979799.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65985000/jpg/_65985341_65979799.jpg"/> 
+    </item>  
+    <item> 
+      <title>Pope studying conclave rules changes</title>  
+      <description>The Pope is considering changes to Catholic Church rules, which may speed up the process to select his successor, the Vatican says.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21522069#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21522069</guid>  
+      <pubDate>Wed, 20 Feb 2013 15:06:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65979000/jpg/_65979956_65979232.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65979000/jpg/_65979957_65979232.jpg"/> 
+    </item>  
+    <item> 
+      <title>France urges Cameroon evacuation</title>  
+      <description>France urges its citizens to leave north Cameroon "as quickly as possible" after seven of its nationals were kidnapped by gunmen on Tuesday.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-21518116#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-21518116</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:11:14 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/gif/_65972986_cameroon_nigeria_022013.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/gif/_65972987_cameroon_nigeria_022013.gif"/> 
+    </item>  
+    <item> 
+      <title>Beheading suspect 'looked inhuman'</title>  
+      <description>A British couple tell a court in Tenerife the man accused of stabbing a 60-year-old grandmother to death and decapitating her 'did not look human'.</description>  
+      <link>http://www.bbc.co.uk/news/uk-21522876#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-21522876</guid>  
+      <pubDate>Wed, 20 Feb 2013 15:21:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981344_ljm9skwj.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65981000/jpg/_65981345_ljm9skwj.jpg"/> 
+    </item>  
+    <item> 
+      <title>Greece hit by fresh strike chaos</title>  
+      <description>Widespread disruption hits Greece as thousands of people join the first general strike of 2013 against austerity measures.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21515012#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21515012</guid>  
+      <pubDate>Wed, 20 Feb 2013 16:06:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65982000/jpg/_65982128_65982028.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65982000/jpg/_65982129_65982028.jpg"/> 
+    </item>  
+    <item> 
+      <title>Top US General John Allen to retire</title>  
+      <description>US General John Allen has decided to retire instead of taking over as Nato's supreme commander in Europe, citing concerns about his wife's health.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-21508476#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-21508476</guid>  
+      <pubDate>Tue, 19 Feb 2013 23:51:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965942_65449626.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965943_65449626.jpg"/> 
+    </item>  
+    <item> 
+      <title>Huge diamond robbery in Brussels</title>  
+      <description>Armed robbers disguised as police escape with a massive haul of diamonds after a rapid raid at Brussels Airport, Belgian police say.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21504112#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21504112</guid>  
+      <pubDate>Tue, 19 Feb 2013 16:00:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65959000/jpg/_65959453_65959446.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65959000/jpg/_65959454_65959446.jpg"/> 
+    </item>  
+    <item> 
+      <title>Irish PM in apology over laundries</title>  
+      <description>The Irish Prime Minister, Enda Kenny, formally apologises on behalf of the Irish state for its role in the Magdalene laundries.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21510281#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21510281</guid>  
+      <pubDate>Tue, 19 Feb 2013 22:41:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65964000/jpg/_65964999__52213069_ek.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65965000/jpg/_65965000__52213069_ek.jpg"/> 
+    </item>  
+    <item> 
+      <title>Russia probes 'murder' of US adoptee</title>  
+      <description>Russia opens a murder inquiry into the death of a three-year-old Russian boy adopted in the US, but the US says abuse allegations remain unproven.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21503299#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21503299</guid>  
+      <pubDate>Tue, 19 Feb 2013 12:43:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65955000/jpg/_65955040_3b33a448-1af0-431c-a01e-abf1f37c2820.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65955000/jpg/_65955041_3b33a448-1af0-431c-a01e-abf1f37c2820.jpg"/> 
+    </item>  
+    <item> 
+      <title>Norway TV's slow-burning wood drama</title>  
+      <description>Norwegian public television broadcasts a special programme which features a burning fireplace - for 12 hours.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21482313#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21482313</guid>  
+      <pubDate>Sat, 16 Feb 2013 01:28:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65922000/jpg/_65922008_65921997.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65922000/jpg/_65922009_65921997.jpg"/> 
+    </item>  
+    <item> 
+      <title>Romanian film wins top Berlin prize</title>  
+      <description>The Romanian film Child's Pose picks up the Golden Bear for best film at the Berlin film festival, while an unemployed Bosnian Roma wins best actor.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21485735#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21485735</guid>  
+      <pubDate>Sat, 16 Feb 2013 21:24:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65930000/jpg/_65930982_65927820.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65930000/jpg/_65930983_65927820.jpg"/> 
+    </item>  
+    <item> 
+      <title>UK unemployment total falls to 2.5m</title>  
+      <description>UK unemployment fell in the three months to December, while the number in work also jumped to a new record, official figures show.</description>  
+      <link>http://www.bbc.co.uk/news/business-21517854#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21517854</guid>  
+      <pubDate>Wed, 20 Feb 2013 13:17:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972034_325l4k8x.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65972000/jpg/_65972035_325l4k8x.jpg"/> 
+    </item>  
+    <item> 
+      <title>Record loss at Credit Agricole</title>  
+      <description>French bank Credit Agricole reports a worse-than-expected annual loss after an unexpected tax charge pushes it deeper into the red.</description>  
+      <link>http://www.bbc.co.uk/news/business-21516253#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21516253</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:40:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970557_creditagricole.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970558_creditagricole.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: European Commission</title>  
+      <description>The Taxation Commissioner announces details of EU financial transaction tax.</description>  
+      <link>http://www.bbc.co.uk/democracylive/house-of-commons-21457630</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/democracylive/house-of-commons-21457630</guid>  
+      <pubDate>Thu, 14 Feb 2013 15:35:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65891000/jpg/_65891698_65886620.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65891000/jpg/_65891699_65886620.jpg"/> 
+    </item>  
+    <item> 
+      <title>Albania profile</title>  
+      <description>Provides an overview of Albania, including key events and facts about this European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17679574#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17679574</guid>  
+      <pubDate>Tue, 05 Feb 2013 17:45:32 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Andorra country profile</title>  
+      <description>Provides an overview of Andorra, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17028050#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17028050</guid>  
+      <pubDate>Wed, 19 Dec 2012 11:08:54 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Armenia country profile</title>  
+      <description>Provides an overview of Armenia, including key events and facts about this eastern European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17398605#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17398605</guid>  
+      <pubDate>Tue, 05 Feb 2013 15:11:51 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Austria country profile</title>  
+      <description>Provides an overview of Austria, including key events and facts about this European country.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17405422#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17405422</guid>  
+      <pubDate>Tue, 03 Jul 2012 14:35:17 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Azerbaijan country profile</title>  
+      <description>Provides an overview of Azerbaijan, including key events and facts.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17043424#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17043424</guid>  
+      <pubDate>Tue, 20 Mar 2012 10:43:50 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Belarus country profile</title>  
+      <description>Provides an overview of Belarus, including key events and facts about this east European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17941131#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17941131</guid>  
+      <pubDate>Sun, 23 Sep 2012 15:28:41 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Belgium country profile</title>  
+      <description>Provides an overview of Belgium, including key events and facts about this European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17205436#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17205436</guid>  
+      <pubDate>Wed, 29 Feb 2012 12:39:25 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Bosnia-Hercegovina</title>  
+      <description>Provides an overview of Bosnia, including key events and facts about this European country which used to form part of Yugoslavia.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17211415#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17211415</guid>  
+      <pubDate>Wed, 12 Dec 2012 15:48:14 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Bulgaria country profile</title>  
+      <description>Provides an overview of Bulgaria, including key events and facts about this eastern European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17202996#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17202996</guid>  
+      <pubDate>Tue, 05 Feb 2013 16:05:17 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Croatia country profile</title>  
+      <description>Provides an overview of Croatia, including key events and facts about this European country which used to be part of Yugoslavia</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17212572#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17212572</guid>  
+      <pubDate>Sat, 17 Nov 2012 16:44:47 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Cyprus profile</title>  
+      <description>Provides an overview of Cyprus, including key events and facts about this bitterly divided island.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17217956#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17217956</guid>  
+      <pubDate>Mon, 03 Dec 2012 16:00:47 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Czech Republic profile</title>  
+      <description>Provides an overview of the Czech Republic, including key events and facts about this European country which was part of the former Czechoslovakia.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17220018#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17220018</guid>  
+      <pubDate>Tue, 08 Jan 2013 14:50:51 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Denmark country profile</title>  
+      <description>Provides an overview of Denmark, including key events and facts about this European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17929661#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17929661</guid>  
+      <pubDate>Tue, 29 May 2012 09:04:49 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Estonia country profile</title>  
+      <description>Provides an overview of Estonia, including key events and facts about this small country on the Baltic sea</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17220810#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17220810</guid>  
+      <pubDate>Tue, 05 Feb 2013 16:59:05 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Finland country profile</title>  
+      <description>Provides an overview of Finland, including key events and facts about this northern European country.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17288360#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17288360</guid>  
+      <pubDate>Mon, 22 Oct 2012 15:25:20 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>France country profile</title>  
+      <description>Provides an overview of France, including key events and facts about this European country.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17298730#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17298730</guid>  
+      <pubDate>Tue, 14 Aug 2012 09:39:02 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Georgia country profile</title>  
+      <description>Provides an overview of Georgia, including key events and facts</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17301647#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17301647</guid>  
+      <pubDate>Tue, 02 Oct 2012 14:48:11 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Germany country profile</title>  
+      <description>Provides an overview of Germany, including key events and facts about this European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17299607#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17299607</guid>  
+      <pubDate>Sat, 08 Dec 2012 12:35:00 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Greece country profile</title>  
+      <description>Provides an overview of Greece, including key events and facts about this European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17372520#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17372520</guid>  
+      <pubDate>Fri, 30 Nov 2012 12:40:49 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Hungary country profile</title>  
+      <description>Provides an overview of Hungary, including key events and facts about this eastern European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17380792#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17380792</guid>  
+      <pubDate>Tue, 04 Dec 2012 14:00:15 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Iceland country profile</title>  
+      <description>Provides an overview of Iceland, including key events and facts about this</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17383525#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17383525</guid>  
+      <pubDate>Tue, 29 Jan 2013 12:46:44 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Ireland country profile</title>  
+      <description>Concise information about Ireland and its people, including figures for area, population, main languages, religions, exports, and more.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17473476#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17473476</guid>  
+      <pubDate>Wed, 26 Sep 2012 09:36:43 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Italy country profile</title>  
+      <description>Provides an overview of Italy, including key events and facts about this European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17433142#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17433142</guid>  
+      <pubDate>Wed, 13 Feb 2013 12:24:14 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Latvia country profile</title>  
+      <description>Provides an overview of Latvia, including key events and facts about this country which lies on the Baltic Sea</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17522134#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17522134</guid>  
+      <pubDate>Tue, 05 Feb 2013 17:09:33 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Liechtenstein country profile</title>  
+      <description>Provides an overview of Liechtenstein, including key events and facts about this tiny European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17535108#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17535108</guid>  
+      <pubDate>Tue, 05 Feb 2013 12:31:47 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Lithuania country profile</title>  
+      <description>Provides an overview of Lithuania, including key events and facts about this small country on the Baltic Sea</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17536867#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17536867</guid>  
+      <pubDate>Sat, 19 Jan 2013 16:40:17 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Luxembourg country profile</title>  
+      <description>Provides an overview of Luxembourg, including key events and facts about this tiny but very wealthy European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17548470#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17548470</guid>  
+      <pubDate>Thu, 29 Mar 2012 09:13:57 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Macedonia country profile</title>  
+      <description>Provides an overview of Macedonia, including key events and facts about this European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17550407#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17550407</guid>  
+      <pubDate>Tue, 23 Oct 2012 09:16:11 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Malta country profile</title>  
+      <description>Provides an overview of Malta, including key events and facts about this small island state in the Mediterranean Sea</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17597837#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17597837</guid>  
+      <pubDate>Tue, 03 Apr 2012 11:02:19 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Moldova country profile</title>  
+      <description>Provides an overview of Moldova, including key events and facts about this small eastern European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17601580#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17601580</guid>  
+      <pubDate>Thu, 14 Feb 2013 18:29:14 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Monaco country profile</title>  
+      <description>Provides an overview of Monaco, including key events and facts about tiny kingdom on the Mediterranean Sea</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17615784#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17615784</guid>  
+      <pubDate>Thu, 05 Apr 2012 12:11:00 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Montenegro country profile</title>  
+      <description>Provides an overview of Montenegro, including key events and facts about this Mediterranean country which used to be part of the former Yugoslavia</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17667132#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17667132</guid>  
+      <pubDate>Sat, 08 Dec 2012 11:46:44 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Netherlands profile</title>  
+      <description>Provides an overview of the Netherlands, including key events and facts about this European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17740800#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17740800</guid>  
+      <pubDate>Tue, 29 Jan 2013 10:05:42 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Norway profile</title>  
+      <description>Provides an overview of Norway, including key events and facts about this north European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17743896#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17743896</guid>  
+      <pubDate>Tue, 17 Apr 2012 15:06:48 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Poland country profile</title>  
+      <description>Provides an overview of Poland, including key events and facts about this European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17753718#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17753718</guid>  
+      <pubDate>Wed, 30 May 2012 10:43:52 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Portugal profile</title>  
+      <description>Provides an overview of Portugal, including key events and facts about this European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17758217#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17758217</guid>  
+      <pubDate>Fri, 30 Nov 2012 15:01:16 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Romania profile</title>  
+      <description>Provides an overview of Romania, including key events and facts about this European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17776265#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17776265</guid>  
+      <pubDate>Mon, 10 Dec 2012 16:41:02 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Russia country profile</title>  
+      <description>Provides an overview of Russia, including key events and facts about this major world power</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17839672#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17839672</guid>  
+      <pubDate>Wed, 26 Dec 2012 16:40:50 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>San Marino country profile</title>  
+      <description>Provides an overview of San Marino, including key events and facts about this tiny European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17842338#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17842338</guid>  
+      <pubDate>Wed, 25 Apr 2012 14:49:51 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Serbia country profile</title>  
+      <description>Provides an overview of Serbia, including key events and facts about this European country which used to be part of Yugoslavia</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17907947#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17907947</guid>  
+      <pubDate>Tue, 15 Jan 2013 15:00:15 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Slovakia country profile</title>  
+      <description>Provides an overview of Slovakia, including key events and facts about this European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17847682#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17847682</guid>  
+      <pubDate>Tue, 08 Jan 2013 16:20:00 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Slovenia country profile</title>  
+      <description>Provides an overview of Slovenia, including key events and facts about this European country which used to be part of Yugoslavia</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17846376#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17846376</guid>  
+      <pubDate>Sat, 19 Jan 2013 12:49:30 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Spain country profile</title>  
+      <description>Provides an overview of Spain, including key events and facts about this tropical island off India's southern tip.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17941641#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17941641</guid>  
+      <pubDate>Sun, 25 Nov 2012 12:13:35 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Sweden country profile</title>  
+      <description>Provides an overview of Sweden, including key events and facts about this European country.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17955808#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17955808</guid>  
+      <pubDate>Fri, 04 May 2012 14:52:36 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Switzerland country profile</title>  
+      <description>Provides an overview of Switzerland, including key events and facts about this European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17980650#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17980650</guid>  
+      <pubDate>Sun, 04 Nov 2012 13:12:48 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Turkey country profile</title>  
+      <description>Provides an overview of Turkey, including key events and facts about this country which straddles Europe and Asia</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17988453#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17988453</guid>  
+      <pubDate>Wed, 17 Oct 2012 09:41:10 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Ukraine country profile</title>  
+      <description>Provides an overview of Ukraine, including key events and facts about Europe's second biggest country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-18018002#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-18018002</guid>  
+      <pubDate>Tue, 30 Oct 2012 14:55:52 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>United Kingdom country profile</title>  
+      <description>Provides an overview of the United Kingdom, including key events and facts about this European country</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-18023389#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-18023389</guid>  
+      <pubDate>Thu, 24 Jan 2013 11:03:31 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Vatican country profile</title>  
+      <description>Provides an overview of the Vatican, including key events and facts about the world's smallest independent state</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-17994868#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-17994868</guid>  
+      <pubDate>Wed, 20 Feb 2013 15:52:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65822000/jpg/_65822793_vatican_aerial_g.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65822000/jpg/_65822794_vatican_aerial_g.jpg"/> 
+    </item>  
+    <item> 
+      <title>Abkhazia profile</title>  
+      <description>A profile of Abkhazia, which declared itself independent but which Georgia considers a break-away region</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-18175030#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-18175030</guid>  
+      <pubDate>Wed, 23 May 2012 11:21:53 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Regions and territories: Ajaria</title>  
+      <description>An overview of Ajaria including key facts, political leaders and notes on the media</description>  
+      <link>http://news.bbc.co.uk/1/hi/world/europe/country_profiles/3520322.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/1/hi/world/europe/country_profiles/3520322.stm</guid>  
+      <pubDate>Tue, 22 Nov 2011 11:39:05 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Catalonia profile - Overview</title>  
+      <description>Provides an overview of Catalonia, including key events and facts about this culturally and politically distinct region of Spain.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-20345071#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-20345071</guid>  
+      <pubDate>Tue, 27 Nov 2012 11:51:37 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Regions and territories: Ceuta, Melilla</title>  
+      <description>A profile of the Spanish north African enclaves of Ceuta and Melilla</description>  
+      <link>http://news.bbc.co.uk/1/hi/world/europe/country_profiles/4209538.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/1/hi/world/europe/country_profiles/4209538.stm</guid>  
+      <pubDate>Thu, 28 Apr 2011 09:31:31 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Channel Islands profile</title>  
+      <description>An overview of the Channel Islands, which are possessions of the British Crown and have independent administrations</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-18175986#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-18175986</guid>  
+      <pubDate>Wed, 23 May 2012 13:33:41 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Chechnya profile</title>  
+      <description>Provides an overview, key facts and history of this Russian republic which was the scene of a major separatist conflict in the 1990s</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-18188085#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-18188085</guid>  
+      <pubDate>Thu, 24 May 2012 10:10:13 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Regions and territories: Corsica</title>  
+      <description>An overview of Corsica including key facts and notes on the media</description>  
+      <link>http://news.bbc.co.uk/1/hi/world/europe/country_profiles/3028038.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/1/hi/world/europe/country_profiles/3028038.stm</guid>  
+      <pubDate>Tue, 10 Jan 2012 14:24:08 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Crimea profile</title>  
+      <description>Provides and overview, basic facts and key events for the semi-autonomous region of Ukraine</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-18287223#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-18287223</guid>  
+      <pubDate>Thu, 31 May 2012 16:01:25 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Dagestan profile - Overview</title>  
+      <description>Provides an overview of Dagestan, including key events and facts about this diverse and volatile republic in Russia's North Caucasus.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-20593383#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-20593383</guid>  
+      <pubDate>Wed, 05 Dec 2012 15:25:21 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Faroe Islands profile</title>  
+      <description>Provides an overview, basic facts and key events for this island belonging of Denmark</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-20424993#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-20424993</guid>  
+      <pubDate>Wed, 21 Nov 2012 11:02:24 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Gibraltar profile</title>  
+      <description>Provides and overview of Gibraltar, plus key facts and dates for this British territory which is claimed by Spain</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-18219307#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-18219307</guid>  
+      <pubDate>Thu, 07 Jun 2012 10:31:23 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Greenland profile</title>  
+      <description>Provides an overview of Greenland, including key events and facts about this Danish dependent territory</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-18249474#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-18249474</guid>  
+      <pubDate>Tue, 29 May 2012 10:09:04 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Ingushetia profile - Overview</title>  
+      <description>Provides an overview of Ingushetia, including key events and facts about this republic in Russia's North Caucasus.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-20615790#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-20615790</guid>  
+      <pubDate>Mon, 10 Dec 2012 15:57:08 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Isle of Man profile</title>  
+      <description>Provides an overview of the Isle of Man, including key events and facts about this wealthy possession of the British Crown</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-18251379#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-18251379</guid>  
+      <pubDate>Tue, 29 May 2012 13:15:16 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Kabardino-Balkaria profile</title>  
+      <description>Provides an overview, basic information and key events for this Russian republic</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-20594299#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-20594299</guid>  
+      <pubDate>Tue, 04 Dec 2012 11:36:07 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Kaliningrad profile</title>  
+      <description>Provides an overview, basic facts and key events for this Russian exclave</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-18284828#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-18284828</guid>  
+      <pubDate>Thu, 31 May 2012 13:41:52 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Regions and territories: Kalmykia</title>  
+      <description>Key facts, dates and events</description>  
+      <link>http://news.bbc.co.uk/1/hi/world/europe/country_profiles/4580467.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/1/hi/world/europe/country_profiles/4580467.stm</guid>  
+      <pubDate>Tue, 29 Nov 2011 09:56:08 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Karachay-Cherkessia profile</title>  
+      <description>Provides an overview, basic facts and key dates for this Russian republic</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-20594308#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-20594308</guid>  
+      <pubDate>Tue, 04 Dec 2012 13:31:16 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Kosovo profile</title>  
+      <description>Provides an overview, basic facts and key events for this territory which unilaterally declared independence from Serbia</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-18328859#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-18328859</guid>  
+      <pubDate>Tue, 15 Jan 2013 14:46:28 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Nagorno-Karabakh profile</title>  
+      <description>Provides an overview, basic facts and key events in this break-away republic completely surrounded by Azerbaijan</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-18270325#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-18270325</guid>  
+      <pubDate>Wed, 30 May 2012 15:29:14 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>North Ossetia profile</title>  
+      <description>Provides and overview, basic facts and key events for this territory</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-20210708#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-20210708</guid>  
+      <pubDate>Tue, 06 Nov 2012 14:58:20 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>South Ossetia profile</title>  
+      <description>Provides and overview, basic facts and key events for this territory which has claimed independence from Georgia</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-18269210#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-18269210</guid>  
+      <pubDate>Wed, 30 May 2012 14:12:59 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>Trans-Dniester profile</title>  
+      <description>Provides and overview, basic facts and key events for this break-away region which has proclaimed independence from Moldova</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-18284837#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-18284837</guid>  
+      <pubDate>Thu, 31 May 2012 14:35:47 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>VIDEO: Dementia: Pioneering city of Bruges</title>  
+      <description>Bruges is recognised as a pioneering city in how it deals with dementia.</description>  
+      <link>http://www.bbc.co.uk/news/health-21516365#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-21516365</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:15:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971155_65970963.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65971000/jpg/_65971156_65970963.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Foreign sailors 'stranded' in UK</title>  
+      <description>The Russian captain and Ukrainian crew of a British-owned freighter 'trapped' in the port of Rye Wharf in south-east England following a legal dispute say they have run out of money and have no way to return home.</description>  
+      <link>http://www.bbc.co.uk/news/uk-21524846#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-21524846</guid>  
+      <pubDate>Wed, 20 Feb 2013 17:46:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65984000/jpg/_65984482_sialors.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65984000/jpg/_65984483_sialors.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Greece faces fresh strike chaos</title>  
+      <description>Greece's two biggest labour unions will bring much of the country to a standstill on Wednesday during a 24-hour strike over austerity measures.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21515630#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21515630</guid>  
+      <pubDate>Wed, 20 Feb 2013 06:52:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970035_poster.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65970000/jpg/_65970036_poster.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Irish PM's tearful laundries apology</title>  
+      <description>Irish Prime Minister Enda Kenny has formally apologised on behalf of the state for its role in the Magdalene laundries.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21510497#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21510497</guid>  
+      <pubDate>Tue, 19 Feb 2013 19:53:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966905_65966873.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966906_65966873.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Voters' views from a 'broken' Italy</title>  
+      <description>The BBC's Katya Adler reports from the Tuscan seaside town of Viareggio on how people are feeling ahead of Italy's general election.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21502027#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21502027</guid>  
+      <pubDate>Tue, 19 Feb 2013 06:49:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949576_italy.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65949000/jpg/_65949577_italy.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'We slept in the sewers with rats'</title>  
+      <description>Newsnight's Paul Mason reports on one man, 26-year-old Mohamed Lamhoud from Morocco, who has spent more than a year on the road trying to claim asylum in Greece.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21514711#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21514711</guid>  
+      <pubDate>Wed, 20 Feb 2013 00:05:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969241_65969216.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65969000/jpg/_65969242_65969216.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'Gigantic' diamond heist in Brussels</title>  
+      <description>Armed robbers have made off with a "gigantic" haul of diamonds after a rapid raid at Brussels Airport.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21512986#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21512986</guid>  
+      <pubDate>Tue, 19 Feb 2013 18:55:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966426_65966422.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966457_65966422.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Iberia workers strike over cuts</title>  
+      <description>Workers at the Spanish airline Iberia have begun a five-day strike in protest at planned cuts to jobs and salaries.</description>  
+      <link>http://www.bbc.co.uk/news/business-21499435#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21499435</guid>  
+      <pubDate>Mon, 18 Feb 2013 18:23:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967863_65946132.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65967000/jpg/_65967864_65946132.jpg"/> 
+    </item>  
+    <item> 
+      <title>Italy: Berlusconi spots his opening</title>  
+      <description>Europe nervous as Berlusconi hits campaign trail</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21517181#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21517181</guid>  
+      <pubDate>Wed, 20 Feb 2013 10:24:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974024_65973754.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65974000/jpg/_65974025_65973754.jpg"/> 
+    </item>  
+    <item> 
+      <title>Is nepotism holding Italy back?</title>  
+      <description>How nepotism keeps talented young Italians out of work</description>  
+      <link>http://www.bbc.co.uk/news/magazine-21507168#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-21507168</guid>  
+      <pubDate>Wed, 20 Feb 2013 00:31:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966252_father_and_son320think.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65966000/jpg/_65966253_father_and_son320think.jpg"/> 
+    </item>  
+    <item> 
+      <title>Greece asylum: Journey through a broken system</title>  
+      <description>One migrant's story of trying to claim asylum on Europe's frontier</description>  
+      <link>http://www.bbc.co.uk/news/world-21509198#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-21509198</guid>  
+      <pubDate>Tue, 19 Feb 2013 17:49:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65962000/jpg/_65962861_bbc464lahmoud.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65962000/jpg/_65962862_bbc464lahmoud.jpg"/> 
+    </item>  
+    <item> 
+      <title>Murder epidemic stains Corsica's image</title>  
+      <description>The killings staining an island's picture postcard image</description>  
+      <link>http://www.bbc.co.uk/news/magazine-21473100#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-21473100</guid>  
+      <pubDate>Mon, 18 Feb 2013 01:40:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65919000/jpg/_65919086_sept_afp_forensics624.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65919000/jpg/_65919325_sept_afp_forensics624.jpg"/> 
+    </item>  
+    <item> 
+      <title>Chinese buy up Bordeaux's wines</title>  
+      <description>How China's consumers are turning to Bordeaux</description>  
+      <link>http://www.bbc.co.uk/news/business-21292824#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-21292824</guid>  
+      <pubDate>Sun, 17 Feb 2013 23:26:48 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65729000/jpg/_65729417_chinesestudents.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65729000/jpg/_65729418_chinesestudents.jpg"/> 
+    </item>  
+    <item> 
+      <title>Kosovo celebrates fifth birthday</title>  
+      <description>Kosovo marks independence birthday, but not all are celebrating</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-21492473#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-21492473</guid>  
+      <pubDate>Sun, 17 Feb 2013 17:54:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65938000/jpg/_65938066_65937327.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65938000/jpg/_65938120_65937327.jpg"/> 
+    </item>  
+    <item> 
+      <title>How the horse is at the heart of Romanian life</title>  
+      <description>How the noble horse is at the heart of Romanian life</description>  
+      <link>http://www.bbc.co.uk/news/magazine-21471747#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-21471747</guid>  
+      <pubDate>Sun, 17 Feb 2013 00:24:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65914000/jpg/_65914921_dsc00207.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65914000/jpg/_65914922_dsc00207.jpg"/> 
+    </item> 
+  </channel> 
+</rss>
