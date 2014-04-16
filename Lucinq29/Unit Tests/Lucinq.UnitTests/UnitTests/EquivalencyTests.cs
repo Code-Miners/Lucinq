@@ -628,7 +628,7 @@ namespace Lucinq.UnitTests.UnitTests
 		public void IntegerRange()
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
-			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewIntRange("field", 1, 0, 10, true, true);
+			var numericRangeQuery = NumericRangeQuery.NewIntRange("field", 1, 0, 10, true, true);
             originalQuery.Add(numericRangeQuery, Matches.Always.GetLuceneOccurance());
 			string queryString = originalQuery.ToString();
 
@@ -645,7 +645,7 @@ namespace Lucinq.UnitTests.UnitTests
 		public void DoubleRange()
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
-			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewDoubleRange("field", 1, 0d, 10d, true, true);
+			var numericRangeQuery = NumericRangeQuery.NewDoubleRange("field", 1, 0d, 10d, true, true);
             originalQuery.Add(numericRangeQuery, Matches.Always.GetLuceneOccurance());
 			string queryString = originalQuery.ToString();
 
@@ -662,7 +662,7 @@ namespace Lucinq.UnitTests.UnitTests
 		public void LongRange()
 		{
 			BooleanQuery originalQuery = new BooleanQuery();
-			NumericRangeQuery numericRangeQuery = NumericRangeQuery.NewLongRange("field", 1, 0L, 10L, true, true);
+			var numericRangeQuery = NumericRangeQuery.NewLongRange("field", 1, 0L, 10L, true, true);
             originalQuery.Add(numericRangeQuery, Matches.Always.GetLuceneOccurance());
 			string queryString = originalQuery.ToString();
 

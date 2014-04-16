@@ -56,7 +56,10 @@
     <Compile Include="Extensions\ConversionExtensions.cs" />
     <Compile Include="Interfaces\IItemResult.cs" />
     <Compile Include="Interfaces\ILuceneSearchResult.cs" />
+    <Compile Include="Interfaces\IQueryBuilderApiSpecific.cs" />
+    <Compile Include="Interfaces\IQueryReference.cs" />
     <Compile Include="Interfaces\ISearchResult.cs" />
+    <Compile Include="Querying\ApiAgnosticExtensions.cs" />
     <Compile Include="Querying\DateRangeFilter.cs" />
     <Compile Include="Interfaces\IHierarchicalQueryGroup.cs" />
     <Compile Include="Interfaces\IIndexSearcherAccessor.cs" />
@@ -71,6 +74,7 @@
     <Compile Include="Querying\ItemResult.cs" />
     <Compile Include="Querying\ItemSearchResult.cs" />
     <Compile Include="Querying\LuceneSearchResult.cs" />
+    <Compile Include="Querying\QueryBuilderApiSpecific.cs" />
     <Compile Include="Querying\QueryBuilderIndividual.cs" />
     <Compile Include="Querying\QueryBuilderGroup.cs" />
     <Compile Include="Querying\QueryReference.cs" />

@@ -16,7 +16,9 @@ using Version = Lucene.Net.Util.Version;
 
 namespace Lucinq.UnitTests.IntegrationTests
 {
-	[TestFixture]
+    using Lucinq.Querying;
+
+    [TestFixture]
 	[Ignore ("Index Rebuilding is specific, run the individual tests.")]
 	public class IndexRebuilder
     {
@@ -149,7 +151,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 
 			var indexFolder = FSDirectory.Open(new DirectoryInfo(GeneralConstants.Paths.CarDataIndex));
 
-			Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_30);
+			Analyzer analyzer = new StandardAnalyzer(QueryBuilder.CurrentVersion);
 	        using (IndexWriter indexWriter = new IndexWriter(indexFolder, analyzer, IndexWriter.MaxFieldLength.UNLIMITED))
 	        {
 	            foreach (var originalDataItem in carDataItems)

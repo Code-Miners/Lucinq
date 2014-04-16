@@ -27,13 +27,21 @@ namespace Lucinq.Interfaces
 		/// <summary>
 		/// Gets the child queries in the builder
 		/// </summary>
-		Dictionary<string, QueryReference> Queries { get; }
+        Dictionary<string, IQueryReference> Queries { get; }
 
 		/// <summary>
 		/// Gets the child groups in the builder
 		/// </summary>
 		List<IQueryBuilder> Groups { get; }
 
+        /// <summary>
+        /// Gets the sort fields
+        /// </summary>
+        List<SortField> SortFields { get; }
+
+        /// <summary>
+        /// Gets the current sort 
+        /// </summary>
 		Sort CurrentSort { get; set; }
 
 		#endregion

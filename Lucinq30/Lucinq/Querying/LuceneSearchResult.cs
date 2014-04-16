@@ -66,7 +66,7 @@ namespace Lucinq.Querying
 		        }
 		        return topDocs == null
 		            ? null
-		            : (from ScoreDoc doc in topDocs.ScoreDocs select GetDocument(doc.Doc, indexSearcherProvider.IndexSearcher)).ToList();
+		            : (from ScoreDoc doc in topDocs.ScoreDocs select GetDocument(doc.GetDocumentIndex(), indexSearcherProvider.IndexSearcher)).ToList();
 		    }
 		}
 
@@ -113,7 +113,7 @@ namespace Lucinq.Querying
 		        {
 
 		            {
-		                documents.Add(GetDocument(topDocs.ScoreDocs[i].Doc, indexSearcherProvider.IndexSearcher));
+		                documents.Add(GetDocument(topDocs.ScoreDocs[i].GetDocumentIndex(), indexSearcherProvider.IndexSearcher));
 		            }
 		        }
 
@@ -168,7 +168,7 @@ namespace Lucinq.Querying
 	        Documents = new List<Document>();
 	        foreach (var scoreDoc in topDocs.ScoreDocs)
 	        {
-	            Documents.Add(GetDocument(scoreDoc.Doc, tempSearcherProvider.IndexSearcher));
+	            Documents.Add(GetDocument(scoreDoc.GetDocumentIndex(), tempSearcherProvider.IndexSearcher));
 	        }
 	    }
 

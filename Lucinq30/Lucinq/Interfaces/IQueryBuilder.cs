@@ -2,7 +2,7 @@
 
 namespace Lucinq.Interfaces
 {
-    public interface IQueryBuilder : IQueryBuilderGroup, IQueryBuilderIndividual, IHierarchicalQueryGroup
+    public interface IQueryBuilder : IQueryBuilderGroup, IQueryBuilderIndividual, IHierarchicalQueryGroup, IQueryBuilderApiSpecific
     {
 	    void Filter(Filter filter);
 

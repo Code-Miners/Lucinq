@@ -23,7 +23,7 @@ namespace Lucinq.Querying
                 key = "Query_" + Queries.Count;
             }
             SetOccurValue(this, ref occur);
-            QueryReference queryReference = new QueryReference { Occur = occur, Query = query };
+            IQueryReference queryReference = new QueryReference { Occur = occur, Query = query };
             Queries.Add(key, queryReference);
         }
 
@@ -39,7 +39,7 @@ namespace Lucinq.Querying
         public virtual Query Build()
         {
             BooleanQuery booleanQuery = new BooleanQuery();
-            foreach (QueryReference query in Queries.Values)
+            foreach (IQueryReference query in Queries.Values)
             {
                 booleanQuery.Add(query.Query, query.Occur.GetLuceneOccurance());
             }

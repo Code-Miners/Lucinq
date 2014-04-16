@@ -17,8 +17,6 @@ namespace Lucinq.Querying
 	{
 		#region [ Fields ]
 
-	    private const Version CurrentVersion = Version.LUCENE_30;
-
         private Matches defaultChildrenOccur;
 
 		private KeywordAnalyzer keywordAnalyzer;
@@ -29,7 +27,7 @@ namespace Lucinq.Querying
 
 		public QueryBuilder()
 		{
-			Queries = new Dictionary<string, QueryReference>();
+            Queries = new Dictionary<string, IQueryReference>();
 			Groups = new List<IQueryBuilder>();
 			Occur = Matches.Always;
 			SortFields = new List<SortField>();
@@ -81,15 +79,21 @@ namespace Lucinq.Querying
 		/// <summary>
 		/// Gets the child queries in the builder
 		/// </summary>
-		public Dictionary<string, QueryReference> Queries { get; private set; }
+        public Dictionary<string, IQueryReference> Queries { get; private set; }
 
 		/// <summary>
 		/// Gets the child groups in the builder
 		/// </summary>
 		public List<IQueryBuilder> Groups { get; private set; }
 
+        /// <summary>
+        /// Gets the sort fields
+        /// </summary>
 		public List<SortField> SortFields { get; private set; }
 
+        /// <summary>
+        /// Gets the current sort
+        /// </summary>
 		public Sort CurrentSort { get; set; }
 
 		/// <summary>
@@ -244,7 +248,7 @@ namespace Lucinq.Querying
 			PhraseQuery query = new PhraseQuery();
 
 			SetBoostValue(query, boost);
-			query.Slop = slop;
+			query.SetSlop(slop);
 
 			Add(query, occur, key);
 			return query;
@@ -294,51 +298,6 @@ namespace Lucinq.Querying
 			SetBoostValue(query, boost);
 			Add(query, occur, key);
 			return query;
-		}
-
-        public virtual NumericRangeQuery<int> NumericRange(string fieldName, int minValue, int maxValue, Matches occur = Matches.NotSet, float? boost = null,
-                                                    int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null)
-		{
-			NumericRangeQuery<int> numericRangeQuery = NumericRangeQuery.NewIntRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
-			SetBoostValue(numericRangeQuery, boost);
-			Add(numericRangeQuery, occur, key);
-			return numericRangeQuery;
-		}
-
-        public virtual NumericRangeQuery<float> NumericRange(string fieldName, float minValue, float maxValue, Matches occur = Matches.NotSet, float? boost = null,
-                                                    int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null)
-		{
-			NumericRangeQuery<float> numericRangeQuery = NumericRangeQuery.NewFloatRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
-			SetBoostValue(numericRangeQuery, boost);
-			Add(numericRangeQuery, occur, key);
-			return numericRangeQuery;
-		}
-
-        public virtual NumericRangeQuery<double> NumericRange(string fieldName, double minValue, double maxValue, Matches occur = Matches.NotSet, float? boost = null,
-                                            int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null)
-		{
-			NumericRangeQuery<double> numericRangeQuery = NumericRangeQuery.NewDoubleRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
-			SetBoostValue(numericRangeQuery, boost);
-			Add(numericRangeQuery, occur, key);
-			return numericRangeQuery;
-		}
-
-        public virtual NumericRangeQuery<long> NumericRange(string fieldName, long minValue, long maxValue, Matches occur = Matches.NotSet, float? boost = null,
-									int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null)
-		{
-			NumericRangeQuery<long> numericRangeQuery = NumericRangeQuery.NewLongRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
-			SetBoostValue(numericRangeQuery, boost);
-			Add(numericRangeQuery, occur, key);
-			return numericRangeQuery;
-		}
-
-		  public virtual NumericRangeQuery<long> DateRange(string fieldName, DateTime minValue, DateTime maxValue, Matches occur = Matches.NotSet, float? boost = null,
-                                    int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null)
-		{
-			NumericRangeQuery<long> numericRangeQuery = NumericRangeQuery.NewLongRange(fieldName, precisionStep, minValue.Ticks, maxValue.Ticks, includeMin, includeMax);
-			SetBoostValue(numericRangeQuery, boost);
-			Add(numericRangeQuery, occur, key);
-			return numericRangeQuery;
 		}
 
 		public virtual void Filter(Filter filter)
@@ -413,6 +372,7 @@ namespace Lucinq.Querying
 			{
                 analyzer = new StandardAnalyzer(CurrentVersion);
 			}
+
             QueryParser queryParser = new QueryParser(CurrentVersion, field, analyzer);
 			Query query = queryParser.Parse(queryText);
 			SetBoostValue(query, boost);
@@ -446,7 +406,7 @@ namespace Lucinq.Querying
 			{
 				return;
 			}
-			query.Boost = boost.Value;
+			query.SetBoost(boost.Value);
 		}
 
 		protected virtual void SetOccurValue(IQueryBuilder inputQueryBuilder, ref Matches occur)

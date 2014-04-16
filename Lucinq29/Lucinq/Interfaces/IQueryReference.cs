@@ -1,22 +1,21 @@
 ﻿using Lucene.Net.Search;
 using Lucinq.Enums;
-using Lucinq.Interfaces;
 
-namespace Lucinq.Querying
+namespace Lucinq.Interfaces
 {
     /// <summary>
-    /// The query reference
+    /// The query reference interface
     /// </summary>
-	public class QueryReference : IQueryReference
-	{
+    public interface IQueryReference
+    {
         /// <summary>
         /// Gets or sets the matches value for the reference
         /// </summary>
-		public Matches Occur { get; set; }
+        Matches Occur { get; set; }
 
         /// <summary>
         /// Gets or sets the query
         /// </summary>
-		public Query Query { get; set; }
-	}
+        Query Query { get; set; }
+    }
 }
