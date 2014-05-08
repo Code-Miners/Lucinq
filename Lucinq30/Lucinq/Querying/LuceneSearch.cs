@@ -71,12 +71,12 @@ namespace Lucinq.Querying
             }
         }
 
-        public virtual ILuceneSearchResult Execute(Query query, int noOfResults = Int32.MaxValue - 1, Sort sort = null, Filter filter = null)
+        public virtual ILuceneSearchResult Execute(Query query, int noOfResults = Int32.MaxValue, Sort sort = null, Filter filter = null)
         {
             return new LuceneSearchResult(this, query, sort, filter);
         }
 
-        public virtual ILuceneSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1)
+        public virtual ILuceneSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue)
         {
             return Execute(queryBuilder.Build(), noOfResults, queryBuilder.CurrentSort, queryBuilder.CurrentFilter);
         }
@@ -111,7 +111,7 @@ namespace Lucinq.Querying
         {
         }
 
-        public new virtual TItemResult Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1) 
+        public new virtual TItemResult Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue) 
         {
             return Execute<TItemResult, T>(queryBuilder, GetItemCreator, noOfResults);
         }

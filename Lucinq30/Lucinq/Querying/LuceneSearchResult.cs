@@ -94,7 +94,11 @@ namespace Lucinq.Querying
 
 		        if (Documents != null)
 		        {
-		            end = end + 1;
+		            if (end != Int32.MaxValue)
+		            {
+                        end = end + 1;   
+		            }
+
 		            int take = end - start;
                     return Documents.Skip(start).Take(take).ToList();
 		        }

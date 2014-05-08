@@ -7,7 +7,7 @@ namespace Lucinq.Interfaces
 	{
 		T Execute(Query query, int noOfResults, Sort sort = null, Filter filter = null);
 
-		T Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1);
+		T Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue);
 
 	    void Collect(Query query, Collector customCollector, Filter filter = null);
 	}
