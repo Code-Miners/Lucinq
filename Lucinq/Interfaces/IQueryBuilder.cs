@@ -1,11 +1,11 @@
-﻿using Lucene.Net.Search;
+﻿using Lucinq.Core.Querying;
 
-namespace Lucinq.Interfaces
+namespace Lucinq.Core.Interfaces
 {
     public interface IQueryBuilder : IQueryBuilderGroup, IQueryBuilderIndividual, IHierarchicalQueryGroup
     {
-	    void Filter(Filter filter);
+	    void Filter(LucinqFilter filter);
 
-	    Filter CurrentFilter { get; }
+        bool CaseSensitive { get; set; }
     }
 }

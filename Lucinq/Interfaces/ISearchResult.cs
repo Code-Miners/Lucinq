@@ -1,10 +1,12 @@
-﻿namespace Lucinq.Interfaces
-{
-    public interface ISearchResult<T> : ISearchResult where T : class
-    {
-        IItemResult<T> GetPagedItems(int start, int end);
+﻿using System.Collections.Generic;
 
-        IItemResult<T> GetTopItems();
+namespace Lucinq.Core.Interfaces
+{
+    public interface ISearchResult<T> : ISearchResult, IEnumerable<T> where T : class
+    {
+        IList<T> GetRange(int start, int end);
+
+        IList<T> GetTopItems();
     }
 
     public interface ISearchResult

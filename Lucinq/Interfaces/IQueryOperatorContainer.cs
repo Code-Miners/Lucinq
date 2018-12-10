@@ -1,6 +1,6 @@
-﻿using Lucinq.Enums;
+﻿using Lucinq.Core.Enums;
 
-namespace Lucinq.Interfaces
+namespace Lucinq.Core.Interfaces
 {
     public interface IQueryOperatorContainer
     {

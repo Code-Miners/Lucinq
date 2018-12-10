@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Lucinq.Interfaces;
+using Lucinq.Core.Interfaces;
 
-namespace Lucinq.Querying
+namespace Lucinq.Core.Querying
 {
     public class ItemResult<T> : IItemResult<T>
     {

@@ -9,12 +9,12 @@ using Lucene.Net.Analysis;
 using Lucene.Net.Analysis.Standard;
 using Lucene.Net.Index;
 using Lucene.Net.Store;
-using Lucinq.Building;
+using Lucinq.Lucene30.Building;
 using NUnit.Framework;
 using Directory = System.IO.Directory;
 using Version = Lucene.Net.Util.Version;
 
-namespace Lucinq.UnitTests.IntegrationTests
+namespace Lucinq.Lucene30.UnitTests.IntegrationTests
 {
 	[TestFixture]
 	[Ignore ("Index Rebuilding is specific, run the individual tests.")]

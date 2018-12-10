@@ -1,35 +1,25 @@
 ﻿using System;
-using Lucene.Net.Analysis;
-using Lucene.Net.Search;
-using Lucinq.Enums;
+using Lucinq.Core.Enums;
+using Lucinq.Core.Querying;
 
-namespace Lucinq.Interfaces
+namespace Lucinq.Core.Interfaces
 {
     public interface IQueryBuilderGroup
 	{
-		#region [ Properties ]
-
-		bool CaseSensitive { get; set; }
-
-		KeywordAnalyzer KeywordAnalyzer { get; }
-
-		#endregion
-
 		#region [ Methods ]
 
 		/// <summary>
 		/// Adds a query to the current group
 		/// </summary>
 		/// <param name="query">The query to add</param>
-		/// <param name="occur">The occur value for the query</param>
 		/// <param name="key">A key to allow manipulation from the dictionary later on (a default key will be generated if none is specified</param>
-        void Add(Query query, Matches occur, string key = null);
+        void Add(LucinqQuery query, string key = null);
 
-		/// <summary>
-		/// Builds the query
-		/// </summary>
-		/// <returns>The query built from the queries and groups that have been added</returns>
-		Query Build();
+        /// <summary>
+        /// Builds the query
+        /// </summary>
+        /// <returns>The query built from the queries and groups that have been added</returns>
+        LucinqQueryModel Build();
 
 		/// <summary>
 		/// A setup method to aid multiple query setup
@@ -100,21 +90,9 @@ namespace Lucinq.Interfaces
 		/// <param name="queries">The lamdba expressions showing queries</param>
         IQueryBuilder Group(Matches occur = Matches.NotSet, Matches childrenOccur = Matches.NotSet, params Action<IQueryBuilder>[] queries);
 
-		/// <summary>
-		/// Creates a raw query lucene query
-		/// </summary>
-		/// <param name="field"></param>
-		/// <param name="queryText"></param>
-		/// <param name="occur"></param>
-		/// <param name="boost"></param>
-		/// <param name="key"></param>
-		/// <param name="analyzer"></param>
-		/// <returns></returns>
-        Query Raw(string field, string queryText, Matches occur = Matches.NotSet, float? boost = null, string key = null, Analyzer analyzer = null);
+        // todo: NM - solve raw querying
 
 		IQueryBuilder Sort(string fieldName, bool sortDescending = false, int? sortType = null);
-
-        IQueryBuilder Phrase(string fieldName, string[] fieldValues, int slop, Matches occur = Matches.NotSet, float? boost = null, bool? caseSensitive = null);
 
 		#endregion
 	}

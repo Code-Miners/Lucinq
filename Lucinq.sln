@@ -1,11 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq", "Lucinq\Lucinq.csproj", "{4A37D121-9AC6-489D-B565-C353D85AFB73}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.Core", "Lucinq\Lucinq.Core.csproj", "{4A37D121-9AC6-489D-B565-C353D85AFB73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.UnitTests", "Unit Tests\Lucinq.UnitTests\Lucinq.UnitTests.csproj", "{A65CD9B7-DC30-414B-83F5-A8A5DD5FCDE8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.Lucene30.UnitTests", "Unit Tests\Lucinq.UnitTests\Lucinq.Lucene30.UnitTests.csproj", "{A65CD9B7-DC30-414B-83F5-A8A5DD5FCDE8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{88383E66-E660-4306-8B70-5B19AF34F0CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.Lucene30", "Lucinq.Lucene30\Lucinq.Lucene30.csproj", "{8FC26DB5-0277-49C8-9345-D53DA0059A64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.AzureSearch", "Lucinq.AzureSearch\Lucinq.AzureSearch.csproj", "{D2BF79F6-C47A-4692-89D2-CD1AF1897258}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.AzureSearch.UnitTests", "Unit Tests\Lucinq.AzureSearch.UnitTests\Lucinq.AzureSearch.UnitTests.csproj", "{EDC17715-2614-4D76-8F4E-EBE341E3A198}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,11 +29,27 @@ Global
 		{A65CD9B7-DC30-414B-83F5-A8A5DD5FCDE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A65CD9B7-DC30-414B-83F5-A8A5DD5FCDE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A65CD9B7-DC30-414B-83F5-A8A5DD5FCDE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FC26DB5-0277-49C8-9345-D53DA0059A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FC26DB5-0277-49C8-9345-D53DA0059A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FC26DB5-0277-49C8-9345-D53DA0059A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FC26DB5-0277-49C8-9345-D53DA0059A64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2BF79F6-C47A-4692-89D2-CD1AF1897258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2BF79F6-C47A-4692-89D2-CD1AF1897258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2BF79F6-C47A-4692-89D2-CD1AF1897258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2BF79F6-C47A-4692-89D2-CD1AF1897258}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDC17715-2614-4D76-8F4E-EBE341E3A198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDC17715-2614-4D76-8F4E-EBE341E3A198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDC17715-2614-4D76-8F4E-EBE341E3A198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDC17715-2614-4D76-8F4E-EBE341E3A198}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A65CD9B7-DC30-414B-83F5-A8A5DD5FCDE8} = {88383E66-E660-4306-8B70-5B19AF34F0CF}
+		{EDC17715-2614-4D76-8F4E-EBE341E3A198} = {88383E66-E660-4306-8B70-5B19AF34F0CF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EE19508-E078-41E4-9122-8FE59A97F84E}
 	EndGlobalSection
 EndGlobal

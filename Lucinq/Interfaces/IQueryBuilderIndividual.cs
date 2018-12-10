@@ -1,12 +1,12 @@
 ﻿using System;
-using Lucene.Net.Search;
-using Lucinq.Enums;
+using System.Collections.Generic;
+using Lucinq.Core.Enums;
 
-namespace Lucinq.Interfaces
+namespace Lucinq.Core.Interfaces
 {
     public interface IQueryBuilderIndividual
     {
-        PrefixQuery PrefixedWith(String fieldname, String value, Matches occur = Matches.NotSet, float? boost = null, String key = null);
+        void PrefixedWith(String fieldname, String value, Matches occur = Matches.NotSet, float? boost = null, String key = null);
 
         /// <summary>
         /// Creates a query using the keyword analyzer
@@ -18,19 +18,20 @@ namespace Lucinq.Interfaces
         /// <param name="key"></param>
         /// <param name="caseSensitive"></param>
         /// <returns></returns>
-        Query Keyword(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null, string key = null, bool? caseSensitive = null);
+        void Keyword(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null, string key = null, bool? caseSensitive = null);
 
         /// <summary>
         /// Sets up and adds a fuzzy query object allowing the search for an explcit term in the field
         /// </summary>
         /// <param name="fieldName">The field name to search within</param>
         /// <param name="fieldValue">The value to match</param>
+        /// <param name="minSimilarity">The min level of similarity</param>
         /// <param name="occur">Whether it must, must not or should occur in the field</param>
         /// <param name="boost">A boost multiplier (1 is default / normal).</param>
         /// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
         /// <param name="caseSensitive">Whether the value is explicitly case sensitive (else use the query builders value)</param>
         /// <returns>The generated fuzzy query object</returns>
-        FuzzyQuery Fuzzy(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null, string key = null, bool? caseSensitive = null);
+        void Fuzzy(string fieldName, string fieldValue, float minSimilarity, Matches occur = Matches.NotSet, float? boost = null, string key = null, bool? caseSensitive = null);
 
         /// <summary>
         /// Sets up and adds a phrase query object allowing the search for an explcit term in the field
@@ -41,7 +42,7 @@ namespace Lucinq.Interfaces
         /// <param name="boost">A boost multiplier (1 is default / normal).</param>
         /// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
         /// <returns>The generated phrase query object</returns>
-        PhraseQuery Phrase(int slop, float? boost = null, Matches occur = Matches.NotSet, string key = null);
+        void Phrase(int slop, KeyValuePair<string, string>[] fields, float? boost = null, Matches occur = Matches.NotSet, string key = null, bool? caseSensitive = null);
 
         /// <summary>
         /// Sets up and adds a wildcard query object allowing the search for an explcit term in the field
@@ -53,7 +54,7 @@ namespace Lucinq.Interfaces
         /// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
         /// <param name="caseSensitive">Whether the value is explicitly case sensitive (else use the query builders value)</param>
         /// <returns>The generated wildcard query object</returns>
-        WildcardQuery WildCard(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null, string key = null, bool? caseSensitive = null);
+        void WildCard(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null, string key = null, bool? caseSensitive = null);
 
         /// <summary>
         /// Querys values to return results within the specified range of terms
@@ -68,27 +69,27 @@ namespace Lucinq.Interfaces
         /// <param name="key"></param>
         /// <param name="caseSensitive">Whether the value is explicitly case sensitive (else use the query builders value)</param>
         /// <returns></returns>
-        TermRangeQuery TermRange(string fieldName, string rangeStart, string rangeEnd, bool includeLower = true,
+        void TermRange(string fieldName, string rangeStart, string rangeEnd, bool includeLower = true,
                                                 bool includeUpper = true,
                                                 Matches occur = Matches.NotSet, float? boost = null, string key = null, bool? caseSensitive = null);
 
-        NumericRangeQuery<int> NumericRange(string fieldName, int minValue, int maxValue, Matches occur = Matches.NotSet, float? boost = null,
+        void NumericRange(string fieldName, int minValue, int maxValue, Matches occur = Matches.NotSet, float? boost = null,
                                                     int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null);
 
-        NumericRangeQuery<float> NumericRange(string fieldName, float minValue, float maxValue, Matches occur = Matches.NotSet, float? boost = null,
+        void NumericRange(string fieldName, float minValue, float maxValue, Matches occur = Matches.NotSet, float? boost = null,
                                                     int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null);
 
-        NumericRangeQuery<double> NumericRange(string fieldName, double minValue, double maxValue, Matches occur = Matches.NotSet, float? boost = null,
+        void NumericRange(string fieldName, double minValue, double maxValue, Matches occur = Matches.NotSet, float? boost = null,
                                             int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null);
 
-        NumericRangeQuery<long> NumericRange(string fieldName, long minValue, long maxValue, Matches occur = Matches.NotSet, float? boost = null,
+        void NumericRange(string fieldName, long minValue, long maxValue, Matches occur = Matches.NotSet, float? boost = null,
                                     int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null);
 
 
-        NumericRangeQuery<long> DateRange(String fieldName, DateTime minValue, DateTime maxValue, Matches occur = Matches.NotSet,
+        void DateRange(String fieldName, DateTime minValue, DateTime maxValue, Matches occur = Matches.NotSet,
                                               float? boost = null, int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, String key = null);
 
-        TermQuery Term(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null,
+        void Term(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null,
             string key = null, bool? caseSensitive = null);
     }
 }
