@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lucinq.UnitTests
+namespace Lucinq.Lucene30.UnitTests
 {
 	class TestHelpers
 	{

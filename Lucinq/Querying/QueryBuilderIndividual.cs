@@ -1,43 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using Lucinq.Core.Enums;
+using Lucinq.Core.Interfaces;
 
-using Lucene.Net.Analysis;
-using Lucene.Net.Analysis.Standard;
-using Lucene.Net.Index;
-using Lucene.Net.QueryParsers;
-using Lucene.Net.Search;
-using Lucinq.Enums;
-using Lucinq.Extensions;
-using Lucinq.Interfaces;
-using Version = Lucene.Net.Util.Version;
-
-namespace Lucinq.Querying
+namespace Lucinq.Core.Querying
 {
 	public partial class QueryBuilder
 	{
 		#region [ Fields ]
 
         private Matches defaultChildrenOccur;
-
-		private KeywordAnalyzer keywordAnalyzer;
+	    private Func<LucinqGroupQuery> groupQueryFunc;
 
 		#endregion
 
 		#region [ Constructors ]
 
-		public QueryBuilder()
+		public QueryBuilder() : this(() => new LucinqQueryRoot {Matches = Matches.Sometimes})
 		{
-			Queries = new Dictionary<string, QueryReference>();
-			Groups = new List<IQueryBuilder>();
-			Occur = Matches.Always;
-			SortFields = new List<SortField>();
 		}
 
-		public QueryBuilder(IQueryBuilder parentQueryBuilder)
-			: this()
+	    private void Initialise(Func<LucinqGroupQuery> queryFunc)
+	    {
+	        this.groupQueryFunc = queryFunc;
+	        Queries = new Dictionary<string, LucinqQuery>();
+	        Groups = new List<IQueryBuilder>();
+	        Occur = Matches.Always;
+	        SortFields = new List<LucinqSortField>();
+	    }
+
+	    public QueryBuilder(Func<LucinqGroupQuery> queryFunc)
 		{
-			Parent = parentQueryBuilder;
-		}
+		    Initialise(queryFunc);
+        }
 
         public QueryBuilder(params Action<IQueryBuilder>[] queries)
             : this()
@@ -72,30 +68,18 @@ namespace Lucinq.Querying
 		}
 
 		/// <summary>
-		/// Gets the parent query builder
-		/// </summary>
-		public IQueryBuilder Parent { get; private set; }
-
-		/// <summary>
 		/// Gets the child queries in the builder
 		/// </summary>
-		public Dictionary<string, QueryReference> Queries { get; private set; }
+		public Dictionary<string, LucinqQuery> Queries { get; private set; }
 
 		/// <summary>
 		/// Gets the child groups in the builder
 		/// </summary>
 		public List<IQueryBuilder> Groups { get; private set; }
 
-		public List<SortField> SortFields { get; private set; }
+		public List<LucinqSortField> SortFields { get; private set; }
 
-		public Sort CurrentSort { get; set; }
-
-		/// <summary>
-		/// Gets the keyword analyzer used by the keyword queries
-		/// </summary>
-		public KeywordAnalyzer KeywordAnalyzer { get { return keywordAnalyzer ?? (keywordAnalyzer = new KeywordAnalyzer()); } }
-
-		public Filter CurrentFilter { get; private set; }
+		public LucinqFilter CurrentFilter { get; private set; }
 
 		#endregion
 
@@ -124,14 +108,13 @@ namespace Lucinq.Querying
 
 		#region [ Term Expressions ]
 
-		 public virtual PrefixQuery PrefixedWith(String fieldname, String value, Matches occur = Matches.NotSet, float? boost = null, String key = null)
+		 public virtual void PrefixedWith(String fieldname, String value, Matches occur = Matches.NotSet, float? boost = null, String key = null)
 		{
-			PrefixQuery query = new PrefixQuery(new Term(fieldname, value));
+		    LucinqPrefixQuery query = new LucinqPrefixQuery(new LucinqTerm(fieldname, value));
+		    query.Matches = occur;
 			SetBoostValue(query, boost);
 
-			Add(query, occur, key);
-
-			return query;
+			Add(query, key);
 		}
 
 		/// <summary>
@@ -145,14 +128,17 @@ namespace Lucinq.Querying
 		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
 		/// <param name="caseSensitive">A boolean denoting whether or not to retain case</param>
 		/// <returns>The generated term query</returns>
-        public virtual TermQuery Term(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null, string key = null, bool? caseSensitive = null)
+        public virtual void Term(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null, string key = null, bool? caseSensitive = null)
 		{
-			Term term = GetTerm(fieldName, fieldValue, caseSensitive);
-			TermQuery query = new TermQuery(term);
-			SetBoostValue(query, boost);
+			LucinqTerm term = GetTerm(fieldName, fieldValue, caseSensitive);
+		    LucinqTermQuery query = new LucinqTermQuery(term)
+		    {
+		        Matches = occur
+		    };
 
-			Add(query, occur, key);
-			return query;
+		    SetBoostValue(query, boost);
+
+			Add(query, key);
 		}
 
 		/// <summary>
@@ -167,7 +153,7 @@ namespace Lucinq.Querying
 		/// <returns>The input query builder</returns>
         public virtual IQueryBuilder Terms(string fieldName, string[] fieldValues, Matches occur = Matches.NotSet, float? boost = null, bool? caseSensitive = null)
 		{
-			var group = Group();
+			var group = Group(childrenOccur:occur);
 			foreach (var fieldValue in fieldValues)
 			{
 				group.Term(fieldName, fieldValue, occur, boost, caseSensitive:caseSensitive);
@@ -179,14 +165,17 @@ namespace Lucinq.Querying
 
 		#region [ Keywords ]
 
-        public virtual Query Keyword(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null, string key = null,
+        public virtual void Keyword(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null, string key = null,
 		                     bool? caseSensitive = null)
 		{
-			if (!caseSensitive.HasValue || !caseSensitive.Value)
-			{
-				fieldValue = fieldValue.ToLower();
-			}
-			return Raw(fieldName, fieldValue, occur, boost, key, KeywordAnalyzer);
+		    LucinqTerm term = GetTerm(fieldName, fieldValue, caseSensitive);
+		    LucinqKeywordQuery query = new LucinqKeywordQuery(term)
+		    {
+                Matches = occur
+		    };
+
+            SetBoostValue(query, boost);
+		    Add(query, key);
 		}
 
         public virtual IQueryBuilder Keywords(string fieldName, string[] fieldValues, Matches occur = Matches.NotSet, float? boost = null, string key = null,
@@ -214,65 +203,50 @@ namespace Lucinq.Querying
 		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
 		/// <param name="caseSensitive">A boolean denoting whether or not to retain case</param>
 		/// <returns>The generated fuzzy query object</returns>
-        public virtual FuzzyQuery Fuzzy(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null, string key = null, bool? caseSensitive = null)
+        public virtual void Fuzzy(string fieldName, string fieldValue, float minSimilarity, Matches occur = Matches.NotSet, float? boost = null, string key = null, bool? caseSensitive = null)
 		{
-			Term term = GetTerm(fieldName, fieldValue, caseSensitive);
-			FuzzyQuery query = new FuzzyQuery(term);
+			LucinqTerm term = GetTerm(fieldName, fieldValue, caseSensitive);
+		    LucinqFuzzyQuery query = new LucinqFuzzyQuery(term, minSimilarity)
+		    {
+                Matches = occur
+		    };
 			SetBoostValue(query, boost);
 
-			Add(query, occur, key);
-			return query;
+			Add(query, key);
 		}
 
 		#endregion
 
 		#region [ Phrase Expressions ]
 
-		/// <summary>
-		/// Sets up and adds a phrase query object allowing the search for an explcit term in the field
-		/// To add terms, use the AddTerm() query extension
-		/// </summary>
-		/// <param name="occur">Whether it must, must not or should occur in the field</param>
-		/// <param name="slop">The allowed distance between the terms</param>
-		/// <param name="boost">A boost multiplier (1 is default / normal).</param>
-		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
-		/// <returns>The generated phrase query object</returns>
-        public virtual PhraseQuery Phrase(int slop, float? boost = null, Matches occur = Matches.NotSet, string key = null)
+	    /// <summary>
+	    /// Sets up and adds a phrase query object allowing the search for an explcit term in the field
+	    /// To add terms, use the AddTerm() query extension
+	    /// </summary>
+	    /// <param name="occur">Whether it must, must not or should occur in the field</param>
+	    /// <param name="slop">The allowed distance between the terms</param>
+	    /// <param name="fieldValues">The fields to use</param>
+	    /// <param name="boost">A boost multiplier (1 is default / normal).</param>
+	    /// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
+	    /// <returns>The generated phrase query object</returns>
+	    public virtual void Phrase(int slop, KeyValuePair<string, string>[] fieldValues, float? boost = null, Matches occur = Matches.NotSet, string key = null, bool? caseSensitive = null)
 		{
-			PhraseQuery query = new PhraseQuery();
+			LucinqPhraseQuery query = new LucinqPhraseQuery(fieldValues.Select(x => GetTerm(x.Key, x.Value, caseSensitive)).ToArray())
+			{
+                Matches = occur
+			};
 
 			SetBoostValue(query, boost);
 			query.Slop = slop;
 
-			Add(query, occur, key);
-			return query;
-		}
-
-		/// <summary>
-		/// Adds a phrase query with a number of pre-specified values
-		/// </summary>
-		/// <param name="fieldName">The field name to query</param>
-		/// <param name="fieldValues">The array of field values</param>
-		/// <param name="slop">The distance between values</param>
-		/// <param name="occur">The occurance for the query</param>
-		/// <param name="boost">The boost value for the query</param>
-		/// <param name="caseSensitive">A boolean denoting whether or not to retain case</param>
-		/// <returns>The input query builder</returns>
-        public virtual IQueryBuilder Phrase(string fieldName, string[] fieldValues, int slop, Matches occur = Matches.NotSet, float? boost = null, bool? caseSensitive = null)
-		{
-			PhraseQuery phrase = Phrase(slop, boost, occur);
-			foreach (var fieldValue in fieldValues)
-			{
-				phrase.AddTerm(this, fieldName, fieldValue, caseSensitive);
-			}
-			return this;
+			Add(query, key);
 		}
 
 		#endregion
 
 		#region [ Range Expressions ]
 
-		public virtual TermRangeQuery TermRange(string fieldName, string rangeStart, string rangeEnd, bool includeLower = true, bool includeUpper = true,
+		public virtual void TermRange(string fieldName, string rangeStart, string rangeEnd, bool includeLower = true, bool includeUpper = true,
                                         Matches occur = Matches.NotSet, float? boost = null, string key = null, bool? caseSensitive = null)
 		{
 			if (caseSensitive.HasValue)
@@ -288,58 +262,71 @@ namespace Lucinq.Querying
 				rangeStart = rangeStart.ToLowerInvariant();
 				rangeEnd = rangeEnd.ToLowerInvariant();
 			}
-			TermRangeQuery query = new TermRangeQuery(QueryParser.Escape(fieldName), rangeStart, rangeEnd, includeLower, includeUpper);
-			SetBoostValue(query, boost);
-			Add(query, occur, key);
-			return query;
+
+		    LucinqRangeQuery<string> rangeQuery = new LucinqRangeQuery<string>(fieldName, rangeStart, rangeEnd, includeLower, includeUpper, LucinqConstants.AdapterKeys.StringRangeQuery)
+		    {
+                Matches = occur
+		    };
+			SetBoostValue(rangeQuery, boost);
+			Add(rangeQuery, key);
 		}
 
-        public virtual NumericRangeQuery<int> NumericRange(string fieldName, int minValue, int maxValue, Matches occur = Matches.NotSet, float? boost = null,
+        public virtual void NumericRange(string fieldName, int minValue, int maxValue, Matches occur = Matches.NotSet, float? boost = null,
                                                     int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null)
 		{
-			NumericRangeQuery<int> numericRangeQuery = NumericRangeQuery.NewIntRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
-			SetBoostValue(numericRangeQuery, boost);
-			Add(numericRangeQuery, occur, key);
-			return numericRangeQuery;
+		    LucinqRangeQuery<int> rangeQuery = new LucinqRangeQuery<int>(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax, LucinqConstants.AdapterKeys.IntRangeQuery)
+		    {
+                Matches = occur
+		    };
+			SetBoostValue(rangeQuery, boost);
+			Add(rangeQuery, key);
 		}
 
-        public virtual NumericRangeQuery<float> NumericRange(string fieldName, float minValue, float maxValue, Matches occur = Matches.NotSet, float? boost = null,
+        public virtual void NumericRange(string fieldName, float minValue, float maxValue, Matches occur = Matches.NotSet, float? boost = null,
                                                     int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null)
 		{
-			NumericRangeQuery<float> numericRangeQuery = NumericRangeQuery.NewFloatRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
-			SetBoostValue(numericRangeQuery, boost);
-			Add(numericRangeQuery, occur, key);
-			return numericRangeQuery;
+		    LucinqRangeQuery<float> rangeQuery = new LucinqRangeQuery<float>(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax, LucinqConstants.AdapterKeys.FloatRangeQuery)
+		    {
+                Matches = occur
+		    };
+			SetBoostValue(rangeQuery, boost);
+			Add(rangeQuery, key);
 		}
 
-        public virtual NumericRangeQuery<double> NumericRange(string fieldName, double minValue, double maxValue, Matches occur = Matches.NotSet, float? boost = null,
+        public virtual void NumericRange(string fieldName, double minValue, double maxValue, Matches occur = Matches.NotSet, float? boost = null,
                                             int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null)
 		{
-			NumericRangeQuery<double> numericRangeQuery = NumericRangeQuery.NewDoubleRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
-			SetBoostValue(numericRangeQuery, boost);
-			Add(numericRangeQuery, occur, key);
-			return numericRangeQuery;
+		    LucinqRangeQuery<double> rangeQuery = new LucinqRangeQuery<double>(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax, LucinqConstants.AdapterKeys.DoubleRangeQuery)
+		    {
+                Matches = occur
+		    };
+			SetBoostValue(rangeQuery, boost);
+			Add(rangeQuery, key);
 		}
 
-        public virtual NumericRangeQuery<long> NumericRange(string fieldName, long minValue, long maxValue, Matches occur = Matches.NotSet, float? boost = null,
+        public virtual void NumericRange(string fieldName, long minValue, long maxValue, Matches occur = Matches.NotSet, float? boost = null,
 									int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null)
 		{
-			NumericRangeQuery<long> numericRangeQuery = NumericRangeQuery.NewLongRange(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax);
-			SetBoostValue(numericRangeQuery, boost);
-			Add(numericRangeQuery, occur, key);
-			return numericRangeQuery;
+		    LucinqRangeQuery<long> rangeQuery = new LucinqRangeQuery<long>(fieldName, precisionStep, minValue, maxValue, includeMin, includeMax, LucinqConstants.AdapterKeys.LongRangeQuery)
+		    {
+                Matches = occur
+		    };
+			SetBoostValue(rangeQuery, boost);
+			Add(rangeQuery, key);
 		}
 
-		  public virtual NumericRangeQuery<long> DateRange(string fieldName, DateTime minValue, DateTime maxValue, Matches occur = Matches.NotSet, float? boost = null,
+		 public virtual void DateRange(string fieldName, DateTime minValue, DateTime maxValue, Matches occur = Matches.NotSet, float? boost = null,
                                     int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null)
 		{
-			NumericRangeQuery<long> numericRangeQuery = NumericRangeQuery.NewLongRange(fieldName, precisionStep, minValue.Ticks, maxValue.Ticks, includeMin, includeMax);
-			SetBoostValue(numericRangeQuery, boost);
-			Add(numericRangeQuery, occur, key);
-			return numericRangeQuery;
+            LucinqRangeQuery<float> rangeQuery = new LucinqRangeQuery<float>(fieldName, precisionStep, minValue.Ticks, maxValue.Ticks, includeMin, includeMax, LucinqConstants.AdapterKeys.FloatRangeQuery)
+            {
+                Matches = occur
+            };
+			SetBoostValue(rangeQuery, boost);
+			Add(rangeQuery, key);
 		}
 
-		public virtual void Filter(Filter filter)
+		public virtual void Filter(LucinqFilter filter)
 		{
 			Add(filter);
 		}
@@ -374,10 +361,10 @@ namespace Lucinq.Querying
 		{
 			if (!sortType.HasValue)
 			{
-				sortType = SortField.STRING;
+				sortType = (int)SortType.String;
 			}
 
-			SortField sortField = new SortField(fieldName, sortType.Value, sortDescending);
+			LucinqSortField sortField = new LucinqSortField(fieldName, sortType.Value, sortDescending);
 			SortFields.Add(sortField);
 			return this;
 		}
@@ -396,14 +383,16 @@ namespace Lucinq.Querying
 		/// <param name="key">The dictionary key to allow reference beyond the initial scope</param>
 		/// <param name="caseSensitive"></param>
 		/// <returns>The generated wildcard query object</returns>
-        public virtual WildcardQuery WildCard(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null, string key = null, bool? caseSensitive = null)
+        public virtual void WildCard(string fieldName, string fieldValue, Matches occur = Matches.NotSet, float? boost = null, string key = null, bool? caseSensitive = null)
 		{
-			Term term = GetTerm(fieldName, fieldValue, caseSensitive);
-			WildcardQuery query = new WildcardQuery(term);
+			LucinqTerm term = GetTerm(fieldName, fieldValue, caseSensitive);
+			LucinqWildcardQuery query = new LucinqWildcardQuery(term)
+			{
+                Matches = occur
+			};
 			SetBoostValue(query, boost);
 
-			Add(query, occur, key);
-			return query;
+			Add(query, key);
 		}
 
         public virtual IQueryBuilder WildCards(string fieldName, string[] fieldValues, Matches occur = Matches.NotSet,
@@ -420,24 +409,24 @@ namespace Lucinq.Querying
 
 		#region [ Other Expressions ]
 
-        public virtual Query Raw(string field, string queryText, Matches occur = Matches.NotSet, float? boost = null, string key = null, Analyzer analyzer = null)
+        /*public virtual LucinqQuery Raw(string field, string queryText, Matches occur = Matches.NotSet, float? boost = null, string key = null, Analyzer analyzer = null)
 		{
 			if (analyzer == null)
 			{
                 analyzer = new StandardAnalyzer(Version.LUCENE_30);
 			}
 			QueryParser queryParser = new QueryParser(Version.LUCENE_30, field, analyzer);
-			Query query = queryParser.Parse(queryText);
+			LucinqQuery query = queryParser.Parse(queryText);
 			SetBoostValue(query, boost);
 			Add(query, occur, key);
 			return query;
-		}
+		}*/
 
 		#endregion
 
 		#region [ Helper Methods ]
 
-		protected virtual Term GetTerm(string field, string value, bool? caseSensitive = null)
+		protected virtual LucinqTerm GetTerm(string field, string value, bool? caseSensitive = null)
 		{
 			if (caseSensitive.HasValue)
 			{
@@ -450,15 +439,16 @@ namespace Lucinq.Querying
 			{
 				value = value.ToLowerInvariant();
 			}
-			return new Term(field, value);
+			return new LucinqTerm(field, value);
 		}
 
-		protected virtual void SetBoostValue(Query query, float? boost)
+		protected virtual void SetBoostValue(LucinqQuery query, float? boost)
 		{
 			if (!boost.HasValue)
 			{
 				return;
 			}
+
 			query.Boost = boost.Value;
 		}
 

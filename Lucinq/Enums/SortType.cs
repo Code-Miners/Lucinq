@@ -1,4 +1,4 @@
-﻿namespace Lucinq.Enums
+﻿namespace Lucinq.Core.Enums
 {
     public enum SortType
     {

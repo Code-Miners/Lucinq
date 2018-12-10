@@ -8,11 +8,11 @@ using Lucene.Net.Analysis.Standard;
 using Lucene.Net.Documents;
 using Lucene.Net.Index;
 using Lucene.Net.Store;
-using Lucinq.Building;
+using Lucinq.Lucene30.Building;
 using NUnit.Framework;
 using Version = Lucene.Net.Util.Version;
 
-namespace Lucinq.UnitTests.IntegrationTests
+namespace Lucinq.Lucene30.UnitTests.IntegrationTests
 {
 	[TestFixture]
 	public abstract class BaseTestFixture
@@ -58,7 +58,7 @@ namespace Lucinq.UnitTests.IntegrationTests
 			Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_29);
 			using (IndexWriter indexWriter = new IndexWriter(directory, analyzer, IndexWriter.MaxFieldLength.UNLIMITED))
 			{
-				string[] rssFiles = System.IO.Directory.GetFiles(GeneralConstants.Paths.RSSFeed);
+				string[] rssFiles = System.IO.Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory + "\\" + GeneralConstants.Paths.RSSFeed);
 				int count = 0;
 				foreach (var rssFile in rssFiles)
 				{
@@ -152,11 +152,11 @@ namespace Lucinq.UnitTests.IntegrationTests
 		/// Dump the list of news articles to the error console
 		/// </summary>
 		/// <param name="documents"></param>
-		protected void WriteDocuments(List<NewsArticle> documents)
+		protected void WriteDocuments(IList<NewsArticle> documents)
 		{
 			int counter = 0;
 			Console.Error.WriteLine("Showing the first 30 docs");
-			documents.ForEach(
+			documents.Each(
 				document =>
 				{
 					if (counter >= 29)

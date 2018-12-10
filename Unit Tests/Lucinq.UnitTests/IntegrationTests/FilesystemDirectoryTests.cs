@@ -1,8 +1,9 @@
 ﻿using Lucene.Net.Store;
-using Lucinq.Querying;
+using Lucinq.Core.Querying;
+using Lucinq.Lucene30.Querying;
 using NUnit.Framework;
 
-namespace Lucinq.UnitTests.IntegrationTests
+namespace Lucinq.Lucene30.UnitTests.IntegrationTests
 {
     [TestFixture]
     public class FilesystemDirectoryTests

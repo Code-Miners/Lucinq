@@ -1,10 +1,8 @@
 ﻿using System;
-using Lucene.Net.Search;
-using Lucinq.Enums;
-using Lucinq.Extensions;
-using Lucinq.Interfaces;
+using Lucinq.Core.Enums;
+using Lucinq.Core.Interfaces;
 
-namespace Lucinq.Querying
+namespace Lucinq.Core.Querying
 {
     public partial class QueryBuilder : IQueryBuilder
     {
@@ -16,18 +14,22 @@ namespace Lucinq.Querying
         /// <param name="query">The query to add</param>
         /// <param name="occur">The occur value for the query</param>
         /// <param name="key">A key to allow manipulation from the dictionary later on (a default key will be generated if none is specified</param>
-        public virtual void Add(Query query, Matches occur, string key = null)
+        public virtual void Add(LucinqQuery query, string key = null)
         {
             if (key == null)
             {
                 key = "Query_" + Queries.Count;
             }
-            SetOccurValue(this, ref occur);
-            QueryReference queryReference = new QueryReference { Occur = occur, Query = query };
-            Queries.Add(key, queryReference);
+
+            if (query.Matches == Matches.NotSet)
+            {
+                query.Matches = DefaultChildrenOccur != Matches.NotSet ? DefaultChildrenOccur : Matches.Always;
+            }
+
+            Queries.Add(key, query);
         }
 
-		  private void Add(Filter filter)
+		  private void Add(LucinqFilter filter)
 		  {
 			  CurrentFilter = filter;
 		  }
@@ -36,36 +38,26 @@ namespace Lucinq.Querying
         /// Builds the query
         /// </summary>
         /// <returns>The query built from the queries and groups that have been added</returns>
-        public virtual Query Build()
+        public virtual LucinqQueryModel Build()
         {
-            BooleanQuery booleanQuery = new BooleanQuery();
-            foreach (QueryReference query in Queries.Values)
+            LucinqGroupQuery groupQuery = groupQueryFunc();
+            foreach (LucinqQuery query in Queries.Values)
             {
-                booleanQuery.Add(query.Query, GetLuceneOccur(query.Occur));
+                groupQuery.Queries.Add(query);
             }
 
             foreach (IQueryBuilder query in Groups)
             {
-                booleanQuery.Add(query.Build(), GetLuceneOccur(query.Occur));
+                groupQuery.Queries.Add(query.Build().Query);
             }
 
-            BuildSort();
-
-            return booleanQuery;
+            LucinqQueryModel model = new LucinqQueryModel(groupQuery, BuildSort(), null);
+            return model;
         }
 
-        public virtual Occur GetLuceneOccur(Matches matches)
+        public virtual LucinqSort BuildSort()
         {
-            return matches.GetLuceneOccurance();
-        }
-
-        public virtual void BuildSort()
-        {
-            if (SortFields.Count == 0)
-            {
-                return;
-            }
-            CurrentSort = new Sort(SortFields.ToArray());
+            return SortFields.Count == 0 ? null : new LucinqSort(SortFields.ToArray());
         }
 
         #endregion
@@ -160,6 +152,7 @@ namespace Lucinq.Querying
             {
                 occur = Matches.Always;
             }
+
             var groupedBooleanQuery = AddChildGroup(occur, childrenOccur, queries);
             if (groupedBooleanQuery == null)
             {
@@ -179,18 +172,28 @@ namespace Lucinq.Querying
                 childrenOccur = Matches.Always;
             }
 
-            IQueryBuilder queryBuilder = CreateNewChildGroup(occur, childrenOccur);
+            Func<LucinqGroupQuery> targetQueryFunc;
+            if (childrenOccur == Matches.Always)
+            {
+                targetQueryFunc = () => new LucinqAndQuery { Matches = occur };
+            }
+            else
+            {
+                targetQueryFunc = () => new LucinqOrQuery { Matches = occur };
+            }
+
+
+            IQueryBuilder queryBuilder = new QueryBuilder(targetQueryFunc);
+            queryBuilder.DefaultChildrenOccur = childrenOccur;
+            //CreateNewChildGroup(occur, childrenOccur);
+
             foreach (var item in queries)
             {
                 item(queryBuilder);
             }
+
             Groups.Add(queryBuilder);
             return queryBuilder;
-        }
-
-        protected virtual IQueryBuilder CreateNewChildGroup(Matches occur = Matches.NotSet, Matches childrenOccur = Matches.NotSet)
-        {
-            return new QueryBuilder(this) { Occur = occur, DefaultChildrenOccur = childrenOccur };
         }
 
         #endregion

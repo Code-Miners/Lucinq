@@ -213,6 +213,8 @@ pip-log.txt
 #Translations
 *.mo
 
+.vs/
+
 #Mr Developer
 .mr.developer.cfg
 

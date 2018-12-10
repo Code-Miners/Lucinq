@@ -1,4 +1,4 @@
-﻿namespace Lucinq.UnitTests
+﻿namespace Lucinq.Lucene30.UnitTests
 {
     public class CarDataFields
     {
