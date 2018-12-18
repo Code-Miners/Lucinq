@@ -435,7 +435,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
 		{
 			QueryBuilder builder = new QueryBuilder();
 
-		    string queryString = "";
+		    string queryString = "+_name:\"value\"";
 
 
             builder.Setup(x => x.Keyword("_name", "Value"));
@@ -453,7 +453,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
 		{
 			QueryBuilder builder = new QueryBuilder();
 
-		    string queryString = "";
+		    string queryString = "+_name:\"Value\"";
 
 
             builder.Setup(x => x.Keyword("_name", "Value", caseSensitive:true));
@@ -472,7 +472,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
 		{
 			QueryBuilder builder = new QueryBuilder();
 
-		    string queryString = "";
+		    string queryString = "_name:\"value\"";
 
             builder.Setup(x => x.Keyword("_name", "Value", Matches.Sometimes));
 			LucinqQueryModel replacementQuery = builder.Build();
@@ -488,7 +488,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
 		{
 			QueryBuilder builder = new QueryBuilder();
 
-		    string queryString = "";
+		    string queryString = "_name:\"Value\"";
 
             builder.Setup(x => x.Keyword("_name", "Value", Matches.Sometimes, caseSensitive: true));
 			LucinqQueryModel replacementQuery = builder.Build();
@@ -505,7 +505,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
         {
             QueryBuilder builder = new QueryBuilder();
 
-            string queryString = "";
+            string queryString = "+_name:\"value\" AND +_name:\"value2\" AND +_name:\"value3\"";
 
             builder.Setup(x => x.Keywords("_name", new []{"Value", "Value2", "Value3"}));
             LucinqQueryModel replacementQuery = builder.Build();
