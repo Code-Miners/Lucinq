@@ -73,7 +73,7 @@
     <Compile Include="Adapters\AzureSearchAdapter.cs" />
     <Compile Include="Querying\AzureItemSearch.cs" />
     <Compile Include="Querying\AzureSearch.cs" />
-    <Compile Include="Querying\AzureSearchModel.cs" />
+    <Compile Include="Adapters\AzureSearchModel.cs" />
     <Compile Include="Querying\AzureSearchResult.cs" />
     <Compile Include="Querying\AzureSearchDetails.cs" />
     <Compile Include="Querying\IAzureSearch.cs" />

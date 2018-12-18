@@ -155,7 +155,7 @@ namespace Lucinq.AzureSearch.Adapters
 
         protected virtual void VisitKeyword(LucinqKeywordQuery query, StringBuilder stringBuilder)
         {
-            throw new NotImplementedException();
+            stringBuilder.Append(GetTermQueryString(query, true, stringBuilder));
         }
 
         protected virtual void VisitPrefix(LucinqPrefixQuery query, StringBuilder stringBuilder)
