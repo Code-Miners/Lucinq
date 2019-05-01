@@ -1,25 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Lucinq.AzureSearch.Querying;
-using Lucinq.Core.Enums;
-using Lucinq.Core.Interfaces;
-using Lucinq.Core.Querying;
-using Microsoft.Azure.Search.Models;
-using NUnit.Framework;
-
-namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
+﻿namespace Lucinq.Solr.UnitTests.IntegrationTests
 {
-	[TestFixture]
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using Core.Enums;
+    using Core.Interfaces;
+    using Core.Querying;
+    using Lucene.Net.Documents;
+    using Lucene30.Adapters;
+    using Lucene30.Querying;
+    using NUnit.Framework;
+
+    [TestFixture]
 	public class BasicTests : BaseTestFixture
 	{
-	    private const string adminApiKey = "B016F5DF8C6C794746BB9668B7A42EA3";
-	    private const string searchServiceName = "icaew-sitecore-dev-azs";
-	    private const string indexName = "bbc-index";
+		#region [ Properties ]
 
-        #region [ Properties ]
-
-        [OneTimeSetUp]
+		[OneTimeSetUp]
 		public void Setup()
 		{
 		}
@@ -29,26 +26,26 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 		[Test]
 		public void Term()
 		{
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
 			IQueryBuilder queryBuilder = new QueryBuilder();
 
 			queryBuilder.Term(BBCFields.Title, "africa");
 
-			var results = ExecuteAndAssert(azureSearch, queryBuilder, 7);
+			var results = ExecuteAndAssert(luceneSearch, queryBuilder, 8);
 
-			Assert.AreEqual(7, results.TotalHits);
+			Assert.AreEqual(8, results.TotalHits);
 		}
 
         [Test]
         [Ignore("Conceptual test for proving index closure")]
 	    public void IndexUsed()
 	    {
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(GeneralConstants.Paths.CarDataIndex);
             IQueryBuilder queryBuilder = new QueryBuilder();
 
             queryBuilder.Term(CarDataFields.Make, "ford");
 
-            var searchResult = azureSearch.Execute(queryBuilder);
+            var searchResult = luceneSearch.Execute(queryBuilder);
 
             Assert.AreEqual(8, searchResult.TotalHits);
 	    }
@@ -57,32 +54,32 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 		[Test]
 		public void TermRange()
 		{
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
 			IQueryBuilder queryBuilder = new QueryBuilder();
 
 			DateTime startDate = new DateTime(2012, 12, 1);
 			DateTime endDate = new DateTime(2013, 1, 1);
 
-            queryBuilder.TermRange(BBCFields.PublishDateTime, TestHelpers.GetDateString(startDate), TestHelpers.GetDateString(endDate));
+            queryBuilder.TermRange(BBCFields.PublishDateString, TestHelpers.GetDateString(startDate), TestHelpers.GetDateString(endDate));
 
-			ExecuteAndAssert(azureSearch, queryBuilder, 60);
+			ExecuteAndAssert(luceneSearch, queryBuilder, 60);
 
 		}
 
 		[Test]
 		public void SetupSyntax()
 		{
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup(x => x.Term(BBCFields.Title, "africa"));
 
-			ExecuteAndAssert(azureSearch, queryBuilder, 7);
+			ExecuteAndAssert(luceneSearch, queryBuilder, 8);
 		}
 
 		[Test]
 		public void SimpleOrClauseSuccessful()
 		{
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
 			IQueryBuilder queryBuilder = new QueryBuilder();
 
 			queryBuilder.Or
@@ -91,13 +88,13 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 					x => x.Term(BBCFields.Title, "europe")
 				);
 
-			ExecuteAndAssert(azureSearch, queryBuilder, 10);
+			ExecuteAndAssert(luceneSearch, queryBuilder, 12);
 		}
 
 		[Test]
 		public void SimpleAndClauseSuccessful()
 		{
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
 			IQueryBuilder queryBuilder = new QueryBuilder();
 
 			queryBuilder.And
@@ -106,25 +103,25 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 					x => x.Term(BBCFields.Title, "road")
 				);
 
-			ExecuteAndAssert(azureSearch, queryBuilder, 1);
+			ExecuteAndAssert(luceneSearch, queryBuilder, 1);
 		}
 
 		[Test]
 		public void RemoveAndReexecute()
 		{
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
 			IQueryBuilder queryBuilder = new QueryBuilder();
 
 			queryBuilder.Term(BBCFields.Title, "africa", key: "africacriteria");
 
-			var results = ExecuteAndAssert(azureSearch, queryBuilder, 7);
+			var results = ExecuteAndAssert(luceneSearch, queryBuilder, 8);
 
 			queryBuilder.Queries.Remove("africacriteria");
 			queryBuilder.Term(BBCFields.Title, "report", key: "businesscriteria");
 
 			Console.WriteLine("\r\nSecond Criteria");
 
-			var results2 = ExecuteAndAssert(azureSearch, queryBuilder, 5);
+			var results2 = ExecuteAndAssert(luceneSearch, queryBuilder, 5);
 
 			Assert.AreNotEqual(results.TotalHits, results2.TotalHits);
 		}
@@ -132,21 +129,21 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 		[Test]
 		public void TermsOr()
 		{
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Terms(BBCFields.Title, new[] {"europe", "africa"}, Matches.Sometimes);
-			ExecuteAndAssert(azureSearch, queryBuilder, 10);
+			ExecuteAndAssert(luceneSearch, queryBuilder, 12);
 		}
 
         [Test]
         public void EasyOr()
         {
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
             IQueryBuilder queryBuilder = new QueryBuilder();
             queryBuilder.Or(
                 x => x.Term(BBCFields.Title, "europe"),
                 x => x.Term(BBCFields.Title, "africa"));
-            ExecuteAndAssert(azureSearch, queryBuilder, 10);
+            ExecuteAndAssert(luceneSearch, queryBuilder, 12);
         }
 
 		/*[Test]
@@ -160,7 +157,7 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 		[Test]
 		public void PhraseDistance()
 		{
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
 			IQueryBuilder queryBuilder = new QueryBuilder();
 
             queryBuilder.Phrase(2, new[]
@@ -169,36 +166,36 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 		        new KeyValuePair<string, string>(BBCFields.Title, "africa")
 		    });
 
-			ExecuteAndAssert(azureSearch, queryBuilder, 1);
+			ExecuteAndAssert(luceneSearch, queryBuilder, 1);
 		}
 
 		[Test]
 		public void Fuzzy()
 		{
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Fuzzy(BBCFields.Title, "afric", 0.5f);
-			ExecuteAndAssert(azureSearch, queryBuilder, 16);
+			ExecuteAndAssert(luceneSearch, queryBuilder, 16);
 		}
 
 		[Test]
 		public void Paging()
 		{
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory,false), new LuceneAdapter());
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup(x => x.WildCard(BBCFields.Description, "a*"));
 
-			var results = ExecuteAndAssertPaged(azureSearch, queryBuilder, 1318, 0, 10);
+			var results = ExecuteAndAssertPaged(luceneSearch, queryBuilder, 902, 0, 10);
             var documents = results.GetRange(0, 9);
 			Assert.AreEqual(10, documents.Count);
 
-			var results2 = ExecuteAndAssertPaged(azureSearch, queryBuilder, 1318, 1, 11);
+			var results2 = ExecuteAndAssertPaged(luceneSearch, queryBuilder, 902, 1, 11);
 			var documents2 = results2.GetRange(1, 10);
 			Assert.AreEqual(10, documents2.Count);
 
 			for (var i = 0; i < documents.Count - 1; i++)
 			{
-				Assert.AreEqual(documents2[i].Document[BBCFields.Title].ToString(), documents[i+1].Document[BBCFields.Title].ToString());
+				Assert.AreEqual(documents2[i].GetValues(BBCFields.Title).FirstOrDefault(), documents[i+1].GetValues(BBCFields.Title).FirstOrDefault());
 			}
 				
 		}
@@ -206,20 +203,20 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 		[Test]
 		public void Sorting()
 		{
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup
 				(
 					x => x.WildCard(BBCFields.Description, "a*"),
-					x => x.Sort(BBCFields.Title)
+					x => x.Sort(BBCFields.Sortable)
 				);
 
-            IAzureSearchResult result = ExecuteAndAssert(azureSearch, queryBuilder, 1318);
-            IList<SearchResult> documents = result.GetRange(0, 100);
+            ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
+            IList<Document> documents = result.GetRange(0, 100);
 			for (var i = 1; i < documents.Count; i++)
 			{
-				string thisDocumentSortable = documents[i].Document[BBCFields.Title].ToString();
-				string lastDocumentSortable = documents[i - 1].Document[BBCFields.Title].ToString();
+				string thisDocumentSortable = documents[i].GetValues(BBCFields.Sortable).FirstOrDefault();
+				string lastDocumentSortable = documents[i - 1].GetValues(BBCFields.Sortable).FirstOrDefault();
 				Assert.IsTrue(String.Compare(thisDocumentSortable, lastDocumentSortable, StringComparison.Ordinal) >= 0);
 			}
 		}
@@ -227,17 +224,17 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 		[Test]
 		public void MultipleSorting()
 		{
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup
 				(
 					x => x.WildCard(BBCFields.Description, "a*"),
 					x => x.Sort(BBCFields.SecondarySort),
-					x => x.Sort(BBCFields.Title)
+					x => x.Sort(BBCFields.Sortable)
 				);
 
-            IAzureSearchResult result = ExecuteAndAssert(azureSearch, queryBuilder, 1318);
-            IList<SearchResult> documents = result.GetRange(0, 1000);
+            ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
+            IList<Document> documents = result.GetRange(0, 1000);
 			for (var i = 1; i < documents.Count; i++)
 			{
 				string thisDocumentSortable = GetSecondarySortString(documents[i]);
@@ -249,17 +246,17 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 		[Test]
 		public void MultipleSortingDescending()
 		{
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup
 				(
 					x => x.WildCard(BBCFields.Description, "a*"),
 					x => x.Sort(BBCFields.SecondarySort, true),
-					x => x.Sort(BBCFields.Title, true)
+					x => x.Sort(BBCFields.Sortable, true)
 				);
 
-            IAzureSearchResult result = ExecuteAndAssert(azureSearch, queryBuilder, 1318);
-            IList<SearchResult> documents = result.GetRange(0, 1000);
+            ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
+            IList<Document> documents = result.GetRange(0, 1000);
 			for (var i = 1; i < documents.Count; i++)
 			{
 				string thisDocumentSortable = GetSecondarySortString(documents[i]);
@@ -268,28 +265,28 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 			}
 		}
 
-		private string GetSecondarySortString(SearchResult document)
+		private string GetSecondarySortString(Document document)
 		{
-			return String.Format("{0}_{1}", document.Document[BBCFields.SecondarySort], document.Document[BBCFields.Title]);	
+			return String.Format("{0}_{1}", document.GetValues(BBCFields.SecondarySort).FirstOrDefault(), document.GetValues(BBCFields.Sortable).FirstOrDefault());	
 		}
 
 		[Test]
 		public void SortDescending()
 		{
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup
 				(
 					x => x.WildCard(BBCFields.Description, "a*"),
-					x => x.Sort(BBCFields.Title, true)
+					x => x.Sort(BBCFields.Sortable, true)
 				);
 
-            IAzureSearchResult result = ExecuteAndAssert(azureSearch, queryBuilder, 1318);
-            IList<SearchResult> documents = result.GetRange(0, 10);
+            ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
+            IList<Document> documents = result.GetRange(0, 10);
 			for (var i = 1; i < documents.Count; i++)
 			{
-				string thisDocumentSortable = documents[i].Document[BBCFields.Title].ToString();
-				string lastDocumentSortable = documents[i - 1].Document[BBCFields.Title].ToString();
+				string thisDocumentSortable = documents[i].GetValues(BBCFields.Sortable).FirstOrDefault();
+				string lastDocumentSortable = documents[i - 1].GetValues(BBCFields.Sortable).FirstOrDefault();
 				Assert.IsTrue(String.Compare(thisDocumentSortable, lastDocumentSortable, StringComparison.Ordinal) <= 0);
 			}
 		}
@@ -297,37 +294,37 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 		[Test]
 		public void TermsAnd()
 		{
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Terms(BBCFields.Title, new[] { "africa", "road" }, Matches.Always);
-			ExecuteAndAssert(azureSearch, queryBuilder, 1);
+			ExecuteAndAssert(luceneSearch, queryBuilder, 1);
 		}
 
         [Test]
         public void EasyAnd()
         {
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
             IQueryBuilder queryBuilder = new QueryBuilder();
             queryBuilder.And(
                 x => x.Term(BBCFields.Title, "road"),
                 x => x.Term(BBCFields.Title, "africa"));
-            ExecuteAndAssert(azureSearch, queryBuilder, 1);
+            ExecuteAndAssert(luceneSearch, queryBuilder, 1);
         }
 
 		[Test]
 		public void WildCard()
 		{
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup(x => x.WildCard(BBCFields.Description, "a*"));
 
-			ExecuteAndAssert(azureSearch, queryBuilder, 1318);
+			ExecuteAndAssert(luceneSearch, queryBuilder, 902);
 		}
 
 		[Test]
 		public void ChainedTerms()
 		{
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup
 				(
@@ -335,13 +332,13 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 					x => x.Term(BBCFields.Description, "police")
 				);
 
-			ExecuteAndAssert(azureSearch, queryBuilder, 25);
+			ExecuteAndAssert(luceneSearch, queryBuilder, 17);
 		}
 
 		[Test]
 		public void Group()
 		{
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
 			IQueryBuilder queryBuilder = new QueryBuilder();
 			queryBuilder.Setup
 				(
@@ -353,69 +350,69 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 							)
 				);
 
-			ExecuteAndAssert(azureSearch, queryBuilder, 5);
+			ExecuteAndAssert(luceneSearch, queryBuilder, 5);
 		}
 
 		[Test]
 		public void SpeedExample()
 		{
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
 			Console.WriteLine("A simple test to show Lucene getting quicker as queries are done");
 			Console.WriteLine("----------------------------------------------------------------");
 			Console.WriteLine();
 			Console.WriteLine("Pass 1");
-			SpeedExampleExecute(azureSearch, "b");
+			SpeedExampleExecute(luceneSearch, "b");
 			Console.WriteLine();
 
 			Console.WriteLine("Pass 2");
-			SpeedExampleExecute(azureSearch, "c");
+			SpeedExampleExecute(luceneSearch, "c");
 			Console.WriteLine();
 
 			Console.WriteLine("Pass 3");
-			SpeedExampleExecute(azureSearch, "a");
+			SpeedExampleExecute(luceneSearch, "a");
 
 			Console.WriteLine();
 			Console.WriteLine("** Repeating Passes **");
 
 			Console.WriteLine("Repeat Pass 1");
-			SpeedExampleExecute(azureSearch, "b");
+			SpeedExampleExecute(luceneSearch, "b");
 			Console.WriteLine();
 
 			Console.WriteLine("Repeat Pass 2");
-			SpeedExampleExecute(azureSearch, "c");
+			SpeedExampleExecute(luceneSearch, "c");
 			Console.WriteLine();
 
 			Console.WriteLine("Repeat Pass 3");
-			SpeedExampleExecute(azureSearch, "a");
+			SpeedExampleExecute(luceneSearch, "a");
 		}
 
 	    [Test]
         public void Enumerable()
         {
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
             IQueryBuilder queryBuilder = new QueryBuilder();
 
             queryBuilder.Term(BBCFields.Title, "africa");
 
-            var result = azureSearch.Execute(queryBuilder);
+            var result = luceneSearch.Execute(queryBuilder);
             WriteDocuments(result);
-            Assert.AreEqual(7, result.Count());
+            Assert.AreEqual(8, result.Count());
 	    }
 
         [Test]
         public void EnumerableWithWhere()
         {
-            var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
             IQueryBuilder queryBuilder = new QueryBuilder();
 
             queryBuilder.Term(BBCFields.Title, "africa");
 
-            var result = azureSearch.Execute(queryBuilder).Where(doc => doc.Document[BBCFields.Title].ToString().IndexOf("your", StringComparison.OrdinalIgnoreCase) >= 0).ToArray();
+            var result = luceneSearch.Execute(queryBuilder).Where(doc => doc.GetField(BBCFields.Title).StringValue.IndexOf("your", StringComparison.OrdinalIgnoreCase) >= 0).ToArray();
             WriteDocuments(result);
             Assert.AreEqual(1, result.Count());
         }
 
-		public void SpeedExampleExecute(Querying.AzureSearch azureSearch, string startingCharacter)
+		public void SpeedExampleExecute(LuceneSearch luceneSearch, string startingCharacter)
 		{
 			// Chosen due to it being the slowest query
 
@@ -425,15 +422,15 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 					x => x.WildCard(BBCFields.Description, startingCharacter + "*"),
 					x => x.Term(BBCFields.Description, "sport")
 				);
-			var result = azureSearch.Execute(queryBuilder);
+			var result = luceneSearch.Execute(queryBuilder);
 
 			Console.WriteLine("Total Results: {0}", result.TotalHits);
 			Console.WriteLine("Elapsed Time: {0}", result.ElapsedTimeMs);
 		}
 
-		private IAzureSearchResult ExecuteAndAssert(Querying.AzureSearch azureSearch, IQueryBuilder queryBuilder, int numberOfHitsExpected)
+		private ILuceneSearchResult ExecuteAndAssert(LuceneSearch luceneSearch, IQueryBuilder queryBuilder, int numberOfHitsExpected)
 		{
-			var result = azureSearch.Execute(queryBuilder);
+			var result = luceneSearch.Execute(queryBuilder);
 
             var documents = result.GetTopItems();
 
@@ -447,11 +444,11 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 			return result;
 		}
 
-		private IAzureSearchResult ExecuteAndAssertPaged(Querying.AzureSearch azureSearch, IQueryBuilder queryBuilder, int numberOfHitsExpected, int start, int end)
+		private ILuceneSearchResult ExecuteAndAssertPaged(LuceneSearch luceneSearch, IQueryBuilder queryBuilder, int numberOfHitsExpected, int start, int end)
 		{
-			// Search = new AzureSearch(GeneralConstants.Paths.BBCIndex);
-			var result = azureSearch.Execute(queryBuilder);
-            IList<SearchResult> documents = result.GetRange(start, end);
+			// Search = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
+			var result = luceneSearch.Execute(queryBuilder);
+            IList<Document> documents = result.GetRange(start, end);
 
             Console.WriteLine("Searched documents in {0} ms", result.ElapsedTimeMs);
 			Console.WriteLine();
@@ -463,7 +460,7 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 			return result;
 		}
 
-		private void WriteDocuments(IEnumerable<SearchResult> documents)
+		private void WriteDocuments(IEnumerable<Document> documents)
 		{
 			int counter = 0;
 			Console.WriteLine("Showing the first 30 docs");
@@ -473,11 +470,11 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 					{
 						return;
 					}
-					Console.WriteLine("Title: " + document.Document[BBCFields.Title]);
-					//Console.WriteLine("Secondary Sort:" + document.Document[BBCFields.SecondarySort]);
-					Console.WriteLine("Description: " + document.Document[BBCFields.Description]);
-                    Console.WriteLine("Publish Date: " + document.Document[BBCFields.PublishDateTime]);
-					Console.WriteLine("Url: "+ document.Document[BBCFields.Link]);
+					Console.WriteLine("Title: " + document.GetValues(BBCFields.Title)[0]);
+					Console.WriteLine("Secondary Sort:" + document.GetValues(BBCFields.SecondarySort)[0]);
+					Console.WriteLine("Description: " + document.GetValues(BBCFields.Description)[0]);
+                    Console.WriteLine("Publish Date: " + document.GetValues(BBCFields.PublishDateString)[0]);
+					Console.WriteLine("Url: "+ document.GetValues(BBCFields.Link)[0]);
 					Console.WriteLine();
 					counter++; 
 		    }

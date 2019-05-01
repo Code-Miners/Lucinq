@@ -116,8 +116,7 @@ namespace Lucinq.Core.Querying
         /// <param name="queries">The lamdba expressions showing queries</param>
         public virtual IQueryBuilder And(Matches occur, params Action<IQueryBuilder>[] queries)
         {
-            CreateAndGroup(occur, queries);
-            return this;
+            return CreateAndGroup(occur, queries); ;
         }
 
         /// <summary>
@@ -136,8 +135,7 @@ namespace Lucinq.Core.Querying
         /// <param name="queries">The lamdba expressions showing queries</param>
         public virtual IQueryBuilder Or(Matches occur, params Action<IQueryBuilder>[] queries)
         {
-            CreateOrGroup(occur, queries);
-            return this;
+            return CreateOrGroup(occur, queries);
         }
 
         /// <summary>

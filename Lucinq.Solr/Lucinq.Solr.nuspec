@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Lucinq.Solr</id>
+    <version>$version$</version>
+    <title>Lucinq.Solr</title>
+    <authors>Nathanael Mann, Simon Proctor</authors>
+    <owners>Nathanael Mann, Simon Proctor</owners>
+    <licenseUrl>http://www.gnu.org/licenses/</licenseUrl>
+    <projectUrl>https://github.com/cardinal252/Lucinq</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Fluent API to drive search on different platforms</description>
+    <copyright>Copyright 2013 Cardinal IT Solutions Ltd</copyright>
+    <tags>lucinq text search information retrieval query</tags>
+	<dependencies>
+		<dependency id="Lucinq.Core" version="2.0.0" />
+	</dependencies>
+  </metadata>
+</package>

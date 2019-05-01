@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.AzureSearch", "Lucin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.AzureSearch.UnitTests", "Unit Tests\Lucinq.AzureSearch.UnitTests\Lucinq.AzureSearch.UnitTests.csproj", "{EDC17715-2614-4D76-8F4E-EBE341E3A198}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.Solr", "Lucinq.Solr\Lucinq.Solr.csproj", "{6E6FF124-6A8B-47A9-8169-B9101117B486}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.Solr.UnitTests", "Unit Tests\Lucinq.Solr.UnitTests\Lucinq.Solr.UnitTests.csproj", "{409ED454-427E-46A9-BD62-5879B5475D2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,14 @@ Global
 		{EDC17715-2614-4D76-8F4E-EBE341E3A198}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDC17715-2614-4D76-8F4E-EBE341E3A198}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDC17715-2614-4D76-8F4E-EBE341E3A198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E6FF124-6A8B-47A9-8169-B9101117B486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E6FF124-6A8B-47A9-8169-B9101117B486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E6FF124-6A8B-47A9-8169-B9101117B486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E6FF124-6A8B-47A9-8169-B9101117B486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{409ED454-427E-46A9-BD62-5879B5475D2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{409ED454-427E-46A9-BD62-5879B5475D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{409ED454-427E-46A9-BD62-5879B5475D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{409ED454-427E-46A9-BD62-5879B5475D2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +60,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A65CD9B7-DC30-414B-83F5-A8A5DD5FCDE8} = {88383E66-E660-4306-8B70-5B19AF34F0CF}
 		{EDC17715-2614-4D76-8F4E-EBE341E3A198} = {88383E66-E660-4306-8B70-5B19AF34F0CF}
+		{409ED454-427E-46A9-BD62-5879B5475D2D} = {88383E66-E660-4306-8B70-5B19AF34F0CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1EE19508-E078-41E4-9122-8FE59A97F84E}

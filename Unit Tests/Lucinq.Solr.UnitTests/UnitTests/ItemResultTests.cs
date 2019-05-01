@@ -1,16 +1,16 @@
-﻿using System;
-using AutoMapper;
-using Lucene.Net.Documents;
-using Lucene.Net.Store;
-using Lucinq.Core.Interfaces;
-using Lucinq.Core.Querying;
-using Lucinq.Core.Results;
-using Lucinq.Lucene30.Querying;
-using Lucinq.Lucene30.UnitTests.IntegrationTests;
-using NUnit.Framework;
-
-namespace Lucinq.Lucene30.UnitTests.UnitTests
+﻿namespace Lucinq.Solr.UnitTests.UnitTests
 {
+    using System;
+    using AutoMapper;
+    using Core.Interfaces;
+    using Core.Querying;
+    using Core.Results;
+    using IntegrationTests;
+    using Lucene.Net.Documents;
+    using Lucene.Net.Store;
+    using Lucene30.Querying;
+    using NUnit.Framework;
+
     [TestFixture]
     public class ItemResultTests : BaseTestFixture
     {

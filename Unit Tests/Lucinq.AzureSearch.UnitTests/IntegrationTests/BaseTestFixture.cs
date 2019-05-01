@@ -18,6 +18,7 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 		{
 			// Map the lucene document back to our news article.
 			Mapper.CreateMap<SearchResult, NewsArticle>()
+			    .ForMember(x => x.Key, opt => opt.MapFrom(y => y.Document["key"]))
 				.ForMember(x => x.Title, opt => opt.MapFrom(y => y.Document[BBCFields.Title].ToString()))
 				.ForMember(x => x.Description, opt => opt.MapFrom(y => y.Document[BBCFields.Description].ToString()))
 				.ForMember(x => x.PublishDateTime, opt => opt.MapFrom(y => FromTicks(y.Document[BBCFields.PublishDateTime].ToString())))

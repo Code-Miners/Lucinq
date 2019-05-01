@@ -7,8 +7,8 @@ namespace Lucinq.Core.Results
     {
         private readonly Func<TDocument, TReturn> function;
 
-        public DelegateItemSearchResult(ISearchResult<TDocument> luceneSearchResult, Func<TDocument, TReturn> function)
-            : base(luceneSearchResult)
+        public DelegateItemSearchResult(ISearchResult<TDocument> nativeSearchResult, Func<TDocument, TReturn> function)
+            : base(nativeSearchResult)
         {
             this.function = function;
         }
@@ -28,9 +28,9 @@ namespace Lucinq.Core.Results
             this.function = function;
         }
 
-        public DelegateItemSearchResult<TDocument, TReturn> GetItemResult(ISearchResult<TDocument> luceneSearchResult)
+        public DelegateItemSearchResult<TDocument, TReturn> GetItemResult(ISearchResult<TDocument> nativeSearchResult)
         {
-            return new DelegateItemSearchResult<TDocument, TReturn>(luceneSearchResult, function);
+            return new DelegateItemSearchResult<TDocument, TReturn>(nativeSearchResult, function);
         }
 
     }

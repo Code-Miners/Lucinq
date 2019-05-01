@@ -1,25 +1,25 @@
-﻿using System;
-using System.Data.SqlClient;
-using NUnit.Framework;
-
-namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
+﻿namespace Lucinq.Solr.UnitTests.IntegrationTests
 {
+    using System;
     using System.Collections.Generic;
     using System.Configuration;
+    using System.Data.SqlClient;
     using System.Globalization;
     using System.IO;
-    using System.Linq;
     using System.Xml.Linq;
-    using Microsoft.Azure.Search;
-    using Microsoft.Azure.Search.Models;
+    using Lucene.Net.Analysis;
+    using Lucene.Net.Analysis.Standard;
+    using Lucene.Net.Index;
+    using Lucene.Net.Store;
+    using Lucene30.Building;
+    using NUnit.Framework;
+    using Directory = System.IO.Directory;
+    using Version = Lucene.Net.Util.Version;
 
     [TestFixture]
-	//[Ignore ("Index Rebuilding is specific, run the individual tests.")]
+	[Ignore ("Index Rebuilding is specific, run the individual tests.")]
 	public class IndexRebuilder
     {
-
-        private const string indexName = "bbc-index";
-
         #region [ BBC News Indexing ]
 
         [Test]
@@ -40,58 +40,52 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 		/// <summary>
 		/// Before you say - not robust - just does enough to get the job done ;)
 		/// </summary>
-		//[Ignore("Don't build this under normal unit test conditions")]
+		[Ignore("Don't build this under normal unit test conditions")]
         [Test]
 		public void BuildBBCIndex()
 		{
 			// IF YOU WANT TO RUN THIS, DELETE THE CONTENTS OF THE EXISTING INDEX FIRST, OTHERWISE, IT WILL APPEND
 
-            SearchServiceClient client = new SearchServiceClient("icaew-sitecore-dev-azs", new SearchCredentials("B016F5DF8C6C794746BB9668B7A42EA3"));
-
-			string[] rssFiles = Directory.GetFiles(GeneralConstants.Paths.RSSFeed);
-		    int count = 0;
-		    List<NewsArticle> newsArticles = new List<NewsArticle>();
-
-            foreach (var rssFile in rssFiles)
-			{
-				string secondarySort = count%2 == 0 ? "A" : "B";
-				count ++;
-				List<NewsArticle> feedArticles = ReadFeed(rssFile);
-                newsArticles.AddRange(feedArticles);
-
-			}
-
-		    foreach (var newsArticle in newsArticles)
+		    if (Directory.Exists(GeneralConstants.Paths.BBCIndex))
 		    {
-		        newsArticle.Key = count.ToString();
-		        count++;
+                Directory.Delete(GeneralConstants.Paths.BBCIndex, true);
 		    }
 
-		    var definition = new Index()
-		    {
-		        Name = indexName,
-		        Fields = FieldBuilder.BuildForType<NewsArticle>()
-		    };
+			var indexFolder = FSDirectory.Open(new DirectoryInfo(GeneralConstants.Paths.BBCIndex));
 
-		    client.Indexes.Create(definition);
-		    ISearchIndexClient indexClient = client.Indexes.GetClient(indexName);
+			Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_29);
+			using (IndexWriter indexWriter = new IndexWriter(indexFolder, analyzer, IndexWriter.MaxFieldLength.UNLIMITED))
+			{
+				string[] rssFiles = Directory.GetFiles(GeneralConstants.Paths.RSSFeed);
+				int count = 0;
+				foreach (var rssFile in rssFiles)
+				{
+					/*if (count > 4)
+					{
+						break;
+					}*/
+					string secondarySort = count%2 == 0 ? "A" : "B";
+					count ++;
+					var newsArticles = ReadFeed(rssFile);
+					newsArticles.ForEach(
+						newsArticle => 
+							indexWriter.AddDocument
+							(
+								x => x.AddAnalysedField(BBCFields.Title, newsArticle.Title, true),
+								x => x.AddAnalysedField(BBCFields.Description, newsArticle.Description, true),
+								x => x.AddAnalysedField(BBCFields.Copyright, newsArticle.Copyright),
+								x => x.AddStoredField(BBCFields.Link, newsArticle.Link),
+								x => x.AddNonAnalysedField(BBCFields.PublishDateString, TestHelpers.GetDateString(newsArticle.PublishDateTime), true),
+                                x => x.AddNonAnalysedField(BBCFields.PublishDateObject, newsArticle.PublishDateTime, true),
+								x => x.AddNonAnalysedField(BBCFields.Sortable, newsArticle.Title, true), // must be non-analysed to sort against it
+								x => x.AddNonAnalysedField(BBCFields.SecondarySort, secondarySort, true))
+							);
+				}
 
-		    var actions = newsArticles.Select(IndexAction.MergeOrUpload);
-            
-		    var batch = IndexBatch.New(actions.Skip(0).Take(500));
-
-		    indexClient.Documents.Index(batch);
-
-		    batch = IndexBatch.New(actions.Skip(500).Take(500));
-
-		    indexClient.Documents.Index(batch);
-
-		    batch = IndexBatch.New(actions.Skip(1000).Take(500));
-
-		    indexClient.Documents.Index(batch);
-
-
-        }
+				indexWriter.Optimize();
+				indexWriter.Dispose();
+			}
+		}
 
 		protected List<NewsArticle> ReadFeed(string filePath)
 		{
@@ -136,7 +130,7 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
         }
 
         #endregion
-        /*
+
         [Ignore("Indexing is not part of the normal tests")]
         [Test]
 	    public void BuildCarDataIndex()
@@ -230,29 +224,40 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 	            }
 	        }
 	        return carDataItems;
-	    }*/
+	    }
     }
-    
-   
-    [SerializePropertyNamesAsCamelCase]
+
+    public class CarDataItem
+    {
+        public Guid AdvertId { get; set; }
+        public DateTime Created { get; set; }
+        public int MakeId { get; set; }
+        public int ModelId { get; set; }
+        public string Code { get; set; }
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public string Variant { get; set; }
+        public string Options { get; set; }
+        public int AdvertTypeId { get; set; }
+        public string AdvertType { get; set; }
+        public int AdvertStatusId { get; set; }
+        public string AdvertStatus { get; set; }
+        public string Town { get; set; }
+        public string County { get; set; }
+        public decimal Price { get; set; }
+        public decimal? Mileage { get; set; }
+        public string FuelType { get; set; }
+        public string Postcode { get; set; }
+    }
+
 	public class NewsArticle
 	{
-
-        [System.ComponentModel.DataAnnotations.Key]
-        public string Key { get; set; }
-
-        [IsFilterable, IsSortable, IsSearchable]
 		public string Title { get; set; }
-        [IsFilterable, IsSortable, IsSearchable]
-	    public string Link { get; set; }
-        [IsFilterable, IsSortable, IsSearchable]
-	    public string Copyright { get; set; }
-	    [IsFilterable, IsSortable, IsSearchable]
-            public string Description { get; set; }
-	    [IsFilterable, IsSortable]
-            public DateTime PublishDateTime { get; set; }
-	    [IsFilterable, IsSortable, IsSearchable]
-            public string FileName { get; set; }
+		public string Link { get; set; }
+		public string Copyright { get; set; }
+		public string Description { get; set; }
+		public DateTime PublishDateTime { get; set; }
+        public string FileName { get; set; }
 	}
 
     public static class ReaderExtensions
