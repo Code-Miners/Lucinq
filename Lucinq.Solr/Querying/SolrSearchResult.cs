@@ -1,33 +1,31 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Diagnostics;
-using Microsoft.Azure.Search;
-using Microsoft.Azure.Search.Models;
-
-namespace Lucinq.AzureSearch.Querying
+﻿namespace Lucinq.Solr.Querying
 {
-    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Diagnostics;
+    using Adapters;
+    using Microsoft.Azure.Search;
+    using Microsoft.Azure.Search.Models;
 
-    public class AzureSearchResult : IAzureSearchResult
+    public class AzureSearchResult : ISolrSearchResult
     {
         #region [ Fields ]
 
-	    private int? totalHits;
+	    private int totalHits;
 	    private bool searchExecuted;
 	    private DocumentSearchResult topDocs;
 
         protected string IndexName { get; }
 
-        protected AzureSearchDetails AzureSearchDetails { get; }
+        protected SolrSearchDetails AzureSearchDetails { get; }
 
-        protected AzureSearchModel Model { get; }
+        protected SolrSearchModel Model { get; }
 
         #endregion
 
         #region [ Constructors ]
 
-        public AzureSearchResult(AzureSearchModel model, AzureSearchDetails azureSearchDetails, string indexName)
+        public AzureSearchResult(SolrSearchModel model, SolrSearchDetails azureSearchDetails, string indexName)
         {
             Model = model;
             AzureSearchDetails = azureSearchDetails;
@@ -42,13 +40,9 @@ namespace Lucinq.AzureSearch.Querying
 		{
 		    get
 		    {
-		        if (!totalHits.HasValue)
-		        {
-                    throw new InvalidOperationException("You must execute a query before you can examine the total hits");
-		        }
-
-		        return totalHits.Value;
-            }
+                ExecuteSearch(null, null);
+		        return totalHits;
+		    }
 		}
 
 		public long ElapsedTimeMs { get; set; }

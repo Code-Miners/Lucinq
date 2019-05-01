@@ -11,9 +11,9 @@ namespace Lucinq.Core.Results
 	{
 		#region [ Constructors ]s
 
-	    protected ItemSearchResult(ISearchResult<TDocument> luceneSearchResult)
+	    protected ItemSearchResult(ISearchResult<TDocument> nativeSearchResult)
 		{
-		    LuceneSearchResult = luceneSearchResult;
+		    NativeSearchResult = nativeSearchResult;
 		} 
 
 		#endregion
@@ -22,7 +22,7 @@ namespace Lucinq.Core.Results
 
 	    public int TotalHits
 	    {
-	        get { return LuceneSearchResult.TotalHits; }
+	        get { return NativeSearchResult.TotalHits; }
 	    }
 
 	    public long ElapsedTimeMs { get; set; }
@@ -30,7 +30,7 @@ namespace Lucinq.Core.Results
 
 		public List<T> Items { get; private set; }
 
-        protected ISearchResult<TDocument> LuceneSearchResult { get; private set; } 
+        protected ISearchResult<TDocument> NativeSearchResult { get; private set; } 
 
 		#endregion
 
@@ -56,12 +56,12 @@ namespace Lucinq.Core.Results
 
         public virtual IItemResult<T> GetTopItems()
 	    {
-	        var topItems = LuceneSearchResult.GetTopItems();
-            ElapsedTimeMs = LuceneSearchResult.ElapsedTimeMs;
+	        var topItems = NativeSearchResult.GetTopItems();
+            ElapsedTimeMs = NativeSearchResult.ElapsedTimeMs;
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
 	        var results = GetResults(topItems);
-            return new ItemResult<T>(results, LuceneSearchResult.TotalHits) { ElapsedTimeMs = stopwatch.ElapsedMilliseconds };
+            return new ItemResult<T>(results, NativeSearchResult.TotalHits) { ElapsedTimeMs = stopwatch.ElapsedMilliseconds };
 
 	    }
 
@@ -78,12 +78,12 @@ namespace Lucinq.Core.Results
         /// <returns></returns>
 	    public virtual IItemResult<T> GetRange(int start, int end)
 	    {
-            var pagedItems = LuceneSearchResult.GetRange(start, end);
-            ElapsedTimeMs = LuceneSearchResult.ElapsedTimeMs;
+            var pagedItems = NativeSearchResult.GetRange(start, end);
+            ElapsedTimeMs = NativeSearchResult.ElapsedTimeMs;
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
             var results = GetResults(pagedItems);
-            return new ItemResult<T>(results, LuceneSearchResult.TotalHits) { ElapsedTimeMs = stopwatch.ElapsedMilliseconds };
+            return new ItemResult<T>(results, NativeSearchResult.TotalHits) { ElapsedTimeMs = stopwatch.ElapsedMilliseconds };
 	    }
 
 	    public abstract T GetItem(TDocument document);

@@ -791,7 +791,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
         #endregion
 
         #region [ Raw Tests ]
-        
+
         // todo: NM: Fix Raw
         /*
         [Test]
@@ -831,6 +831,164 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
             Console.Write(queryString);
         }
         */
+
+	    [Test]
+	    public void AndFirst()
+	    {
+	        string queryString = "+_name:\"phrase\"~2 _name:*wildcard* AND ( +_name:value AND +_name:value)";
+
+	        QueryBuilder builder = new QueryBuilder();
+	        var andGroup = builder.And();
+	        andGroup.Term("_name", "value");
+	        andGroup.Term("_name", "value");
+            builder.Setup
+	        (
+	            x => x.Phrase(2, new[] { new KeyValuePair<string, string>("_name", "phrase") }),
+	            x => x.WildCard("_name", "*wildcard*", Matches.Sometimes)
+	        );
+	        LucinqQueryModel replacementQuery = builder.Build();
+
+	        AzureSearchAdapter adapter = new AzureSearchAdapter();
+	        string newQueryString = adapter.Adapt(replacementQuery).QueryBuilder.ToString();
+
+	        Assert.AreEqual(queryString, newQueryString);
+	        Console.Write(queryString);
+	    }
+
+	    [Test]
+	    public void AndOnly()
+	    {
+	        string queryString = "( +_name:value AND +_name:value)";
+
+	        QueryBuilder builder = new QueryBuilder();
+	        var andGroup = builder.And();
+	        andGroup.Term("_name", "value");
+	        andGroup.Term("_name", "value");
+
+	        LucinqQueryModel replacementQuery = builder.Build();
+
+	        AzureSearchAdapter adapter = new AzureSearchAdapter();
+	        string newQueryString = adapter.Adapt(replacementQuery).QueryBuilder.ToString();
+
+	        Assert.AreEqual(queryString, newQueryString);
+	        Console.Write(queryString);
+	    }
+
+	    [Test]
+	    public void AndThenAnd()
+	    {
+	        string queryString = "( +_name:value AND +_name:value) AND ( +_name:value AND +_name:value)";
+
+	        QueryBuilder builder = new QueryBuilder();
+	        var andGroup1 = builder.And();
+	        andGroup1.Term("_name", "value");
+	        andGroup1.Term("_name", "value");
+
+            var andGroup2 = builder.And();
+	        andGroup2.Term("_name", "value");
+	        andGroup2.Term("_name", "value");
+
+	        LucinqQueryModel replacementQuery = builder.Build();
+
+	        AzureSearchAdapter adapter = new AzureSearchAdapter();
+	        string newQueryString = adapter.Adapt(replacementQuery).QueryBuilder.ToString();
+
+	        Assert.AreEqual(queryString, newQueryString);
+	        Console.Write(queryString);
+	    }
+
+	    [Test]
+	    public void NestedAnd()
+	    {
+	        string queryString = "( +_name:value AND +_name:value AND ( +_name:value AND +_name:value))";
+
+	        QueryBuilder builder = new QueryBuilder();
+	        var andGroup1 = builder.And();
+	        andGroup1.Term("_name", "value");
+	        andGroup1.Term("_name", "value");
+
+	        var andGroup2 = andGroup1.And();
+	        andGroup2.Term("_name", "value");
+	        andGroup2.Term("_name", "value");
+
+	        LucinqQueryModel replacementQuery = builder.Build();
+
+	        AzureSearchAdapter adapter = new AzureSearchAdapter();
+	        string newQueryString = adapter.Adapt(replacementQuery).QueryBuilder.ToString();
+
+	        Assert.AreEqual(queryString, newQueryString);
+	        Console.Write(queryString);
+	    }
+
+	    [Test]
+	    public void NestedAndOr()
+	    {
+	        string queryString = "( +_name:value AND +_name:value AND ( _name:value OR _name:value))";
+
+	        QueryBuilder builder = new QueryBuilder();
+	        var andGroup1 = builder.And();
+	        andGroup1.Term("_name", "value");
+	        andGroup1.Term("_name", "value");
+
+	        var orGroup2 = andGroup1.Or();
+	        orGroup2.Term("_name", "value");
+	        orGroup2.Term("_name", "value");
+
+	        LucinqQueryModel replacementQuery = builder.Build();
+
+	        AzureSearchAdapter adapter = new AzureSearchAdapter();
+	        string newQueryString = adapter.Adapt(replacementQuery).QueryBuilder.ToString();
+
+	        Assert.AreEqual(queryString, newQueryString);
+	        Console.Write(queryString);
+	    }
+
+	    [Test]
+	    public void NestedOrAnd()
+	    {
+	        string queryString = "( _name:value OR _name:value AND ( +_name:value AND +_name:value))";
+
+	        QueryBuilder builder = new QueryBuilder();
+	        var orGroup1 = builder.Or();
+	        orGroup1.Term("_name", "value");
+	        orGroup1.Term("_name", "value");
+
+	        var andGroup2 = orGroup1.And();
+	        andGroup2.Term("_name", "value");
+	        andGroup2.Term("_name", "value");
+
+	        LucinqQueryModel replacementQuery = builder.Build();
+
+	        AzureSearchAdapter adapter = new AzureSearchAdapter();
+	        string newQueryString = adapter.Adapt(replacementQuery).QueryBuilder.ToString();
+
+	        Assert.AreEqual(queryString, newQueryString);
+	        Console.Write(queryString);
+	    }
+
+        [Test]
+	    public void OrThenAnd()
+	    {
+	        string queryString = "( _name:value OR _name:value) AND ( +_name:value AND +_name:value)";
+
+	        QueryBuilder builder = new QueryBuilder();
+	        var orGroup1 = builder.Or();
+	        orGroup1.Term("_name", "value");
+	        orGroup1.Term("_name", "value");
+
+	        var andGroup2 = builder.And();
+	        andGroup2.Term("_name", "value");
+	        andGroup2.Term("_name", "value");
+
+	        LucinqQueryModel replacementQuery = builder.Build();
+
+	        AzureSearchAdapter adapter = new AzureSearchAdapter();
+	        string newQueryString = adapter.Adapt(replacementQuery).QueryBuilder.ToString();
+
+	        Assert.AreEqual(queryString, newQueryString);
+	        Console.Write(queryString);
+	    }
+
 
         #endregion
     }

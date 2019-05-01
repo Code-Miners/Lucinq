@@ -1,23 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Lucinq.AzureSearch.Querying;
-using Lucinq.Core.Adapters;
-using Lucinq.Core.Enums;
-using Lucinq.Core.Querying;
-using Microsoft.Azure.Search.Models;
-
-namespace Lucinq.AzureSearch.Adapters
+﻿namespace Lucinq.Solr.Adapters
 {
-    public class AzureSearchAdapter : IProviderAdapter<AzureSearchModel>
-    {
-        protected AzureSearchModel NativeModel { get; set; }
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+    using Core.Adapters;
+    using Core.Enums;
+    using Core.Querying;
 
-        public virtual AzureSearchModel Adapt(LucinqQueryModel model)
+    public class SolrSearchAdapter : IProviderAdapter<SolrSearchModel>
+    {
+        protected SolrSearchModel NativeModel { get; set; }
+
+        public virtual SolrSearchModel Adapt(LucinqQueryModel model)
         {
-            NativeModel = new AzureSearchModel();
-            NativeModel.SearchParameters.QueryType = QueryType.Full;
-            NativeModel.SearchParameters.SearchMode = SearchMode.All;
+            NativeModel = new SolrSearchModel();
             Visit(model.Query);
             Visit(model.Sort);
             Visit(model.Filter);
@@ -203,16 +199,22 @@ namespace Lucinq.AzureSearch.Adapters
 
         protected virtual void VisitPrimary(LucinqGroupQuery query, StringBuilder stringBuilder)
         {
+            StringBuilder builder = new StringBuilder();
+            bool first = true;
+            foreach (var subQuery in query.Queries)
+            {
+                if (!first)
+                {
+                    builder.Append(" OR");
+                }
+                Visit(subQuery, builder);
+                first = false;
+
+            }
+
             if (stringBuilder.Length > 0)
             {
                 stringBuilder.Append(" ");
-            }
-
-            StringBuilder builder = new StringBuilder();
-            foreach (var subQuery in query.Queries)
-            {
-                Visit(subQuery, builder);
-
             }
 
             stringBuilder.Append(builder);
@@ -221,23 +223,10 @@ namespace Lucinq.AzureSearch.Adapters
         protected virtual void VisitAnd(LucinqAndQuery query, StringBuilder stringBuilder)
         {
             StringBuilder builder = new StringBuilder();
-
-            if (stringBuilder.Length > 0)
-            {
-                builder.Append(" ");
-            }
-
             bool first = true;
-            if (stringBuilder.Length > 0 && query.Matches == Matches.Always)
-            {
-                builder.Append("AND ");
-            }
-
-            builder.Append("(");
-
             foreach (var subQuery in query.Queries)
             {
-                if (!first && !IsGroupQuery(subQuery))
+                if (!first)
                 {
                     builder.Append(" AND");
                 }
@@ -245,8 +234,11 @@ namespace Lucinq.AzureSearch.Adapters
                 first = false;
 
             }
-            builder.Append(")");
 
+            if (stringBuilder.Length > 0)
+            {
+                stringBuilder.Append(" ");
+            }
             stringBuilder.Append(builder);
         }
 
@@ -254,39 +246,22 @@ namespace Lucinq.AzureSearch.Adapters
         {
             StringBuilder builder = new StringBuilder();
             bool first = true;
-
-            if (stringBuilder.Length > 0)
-            {
-                builder.Append(" ");
-            }
-
-            if (stringBuilder.Length > 0 && query.Matches == Matches.Always)
-            {
-                builder.Append("AND ");
-            }
-
-            builder.Append("(");
-
             foreach (var subQuery in query.Queries)
             {
-
-                if (!first && !IsGroupQuery(subQuery))
+                if (!first)
                 {
                     builder.Append(" OR");
                 }
-
                 Visit(subQuery, builder);
                 first = false;
 
             }
-            builder.Append(")");
 
+            if (stringBuilder.Length > 0)
+            {
+                stringBuilder.Append(" ");
+            }
             stringBuilder.Append(builder);
-        }
-
-        private static bool IsGroupQuery(LucinqQuery subQuery)
-        {
-            return subQuery is LucinqAndQuery || subQuery is LucinqOrQuery;
         }
 
         protected virtual void VisitFuzzy(LucinqFuzzyQuery query, StringBuilder stringBuilder)
