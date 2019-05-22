@@ -966,6 +966,27 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
 	        Console.Write(queryString);
 	    }
 
+	    [Test]
+	    public void NestedEmptyOrAnd()
+	    {
+	        string queryString = "( ( +_name:value AND +_name:value))";
+
+	        QueryBuilder builder = new QueryBuilder();
+	        var orGroup1 = builder.Or();
+
+	        var andGroup2 = orGroup1.And();
+	        andGroup2.Term("_name", "value");
+	        andGroup2.Term("_name", "value");
+
+	        LucinqQueryModel replacementQuery = builder.Build();
+
+	        AzureSearchAdapter adapter = new AzureSearchAdapter();
+	        string newQueryString = adapter.Adapt(replacementQuery).QueryBuilder.ToString();
+
+	        Assert.AreEqual(queryString, newQueryString);
+	        Console.Write(queryString);
+	    }
+
         [Test]
 	    public void OrThenAnd()
 	    {

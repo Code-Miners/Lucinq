@@ -49,7 +49,7 @@ namespace Lucinq.AzureSearch.Adapters
         {
         }
 
-        protected virtual void Visit(LucinqQuery query, StringBuilder stringBuilder = null)
+        protected virtual void Visit(LucinqQuery query, StringBuilder stringBuilder = null, bool omitLeadingOperator = false)
         {
             if (stringBuilder == null)
             {
@@ -61,11 +61,11 @@ namespace Lucinq.AzureSearch.Adapters
             }
             else if (query is LucinqOrQuery orQuery)
             {
-                VisitOr(orQuery, stringBuilder);
+                VisitOr(orQuery, stringBuilder, omitLeadingOperator);
             }
             else if (query is LucinqAndQuery andQuery)
             {
-                VisitAnd(andQuery, stringBuilder);
+                VisitAnd(andQuery, stringBuilder, omitLeadingOperator);
             }
             else if (query is LucinqFuzzyQuery fuzzyQuery)
             {
@@ -209,17 +209,25 @@ namespace Lucinq.AzureSearch.Adapters
             }
 
             StringBuilder builder = new StringBuilder();
+            bool first = true;
             foreach (var subQuery in query.Queries)
             {
-                Visit(subQuery, builder);
+                Visit(subQuery, builder, first);
+                first = false;
 
             }
 
             stringBuilder.Append(builder);
         }
 
-        protected virtual void VisitAnd(LucinqAndQuery query, StringBuilder stringBuilder)
+        protected virtual void VisitAnd(LucinqAndQuery query, StringBuilder stringBuilder, bool omitLeadingOperator = false)
         {
+            if (query.Queries.Count == 0)
+            {
+                return;
+            }
+
+
             StringBuilder builder = new StringBuilder();
 
             if (stringBuilder.Length > 0)
@@ -228,9 +236,16 @@ namespace Lucinq.AzureSearch.Adapters
             }
 
             bool first = true;
-            if (stringBuilder.Length > 0 && query.Matches == Matches.Always)
+            if (!omitLeadingOperator)
             {
-                builder.Append("AND ");
+                if(query.Matches == Matches.Always)
+                {
+                    builder.Append("AND ");
+                }
+                else
+                {
+                    builder.Append("OR ");
+                }
             }
 
             builder.Append("(");
@@ -241,7 +256,7 @@ namespace Lucinq.AzureSearch.Adapters
                 {
                     builder.Append(" AND");
                 }
-                Visit(subQuery, builder);
+                Visit(subQuery, builder, first);
                 first = false;
 
             }
@@ -250,8 +265,13 @@ namespace Lucinq.AzureSearch.Adapters
             stringBuilder.Append(builder);
         }
 
-        protected virtual void VisitOr(LucinqOrQuery query, StringBuilder stringBuilder)
+        protected virtual void VisitOr(LucinqOrQuery query, StringBuilder stringBuilder, bool omitLeadingOperator = false)
         {
+            if (query.Queries.Count == 0)
+            {
+                return;
+            }
+
             StringBuilder builder = new StringBuilder();
             bool first = true;
 
@@ -260,9 +280,16 @@ namespace Lucinq.AzureSearch.Adapters
                 builder.Append(" ");
             }
 
-            if (stringBuilder.Length > 0 && query.Matches == Matches.Always)
+            if (!omitLeadingOperator)
             {
-                builder.Append("AND ");
+                if (query.Matches == Matches.Always)
+                {
+                    builder.Append("AND ");
+                }
+                else
+                {
+                    builder.Append("OR ");
+                }
             }
 
             builder.Append("(");
@@ -275,7 +302,7 @@ namespace Lucinq.AzureSearch.Adapters
                     builder.Append(" OR");
                 }
 
-                Visit(subQuery, builder);
+                Visit(subQuery, builder, first);
                 first = false;
 
             }
