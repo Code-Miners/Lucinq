@@ -9,6 +9,8 @@ using Microsoft.Azure.Search.Models;
 
 namespace Lucinq.AzureSearch.Adapters
 {
+    using System.Linq;
+
     public class AzureSearchAdapter : IProviderAdapter<AzureSearchModel>
     {
         protected AzureSearchModel NativeModel { get; set; }
@@ -112,12 +114,12 @@ namespace Lucinq.AzureSearch.Adapters
         protected virtual void VisitTermRange(LucinqRangeQuery<string> query, StringBuilder stringBuilder)
         {
             string lowerOperator = query.IncludeMin ? "ge" : "gt";
-            string lower = !String.IsNullOrEmpty(query.Lower) ? $"{query.Field} {lowerOperator} '{query.Lower}'" : String.Empty;
+            string lower = !String.IsNullOrEmpty(query.Lower) ? $"{query.Field} {lowerOperator} {query.Lower}" : String.Empty;
 
             string upperOperator = query.IncludeMin ? "le" : "lt";
-            string upper = !String.IsNullOrEmpty(query.Upper) ? $"{query.Field} {upperOperator} '{query.Upper}'" : String.Empty;
+            string upper = !String.IsNullOrEmpty(query.Upper) ? $"{query.Field} {upperOperator} {query.Upper}" : String.Empty;
 
-            NativeModel.FilterBuilder.Append($"({lower} and {upper})");
+            NativeModel.FilterBuilder.Append($"{lower} and {upper}");
         }
 
         protected virtual void VisitIntRange(LucinqRangeQuery<int> query, StringBuilder stringBuilder)
@@ -128,7 +130,7 @@ namespace Lucinq.AzureSearch.Adapters
             string upperOperator = query.IncludeMin ? "le" : "lt";
             string upper = !String.IsNullOrEmpty(query.Upper.ToString()) ? $"{query.Field} {upperOperator} {query.Upper.ToString()}" : String.Empty;
 
-            NativeModel.FilterBuilder.Append($"({lower} and {upper})");
+            NativeModel.FilterBuilder.Append($"{lower} and {upper}");
         }
 
         protected virtual void VisitLongRange(LucinqRangeQuery<long> query, StringBuilder stringBuilder)
@@ -139,7 +141,7 @@ namespace Lucinq.AzureSearch.Adapters
             string upperOperator = query.IncludeMin ? "le" : "lt";
             string upper = !String.IsNullOrEmpty(query.Upper.ToString()) ? $"{query.Field} {upperOperator} {query.Upper.ToString()}" : String.Empty;
 
-            NativeModel.FilterBuilder.Append($"({lower} and {upper})");
+            NativeModel.FilterBuilder.Append($"{lower} and {upper}");
         }
 
         protected virtual void VisitDoubleRange(LucinqRangeQuery<double> query, StringBuilder stringBuilder)
@@ -150,7 +152,7 @@ namespace Lucinq.AzureSearch.Adapters
             string upperOperator = query.IncludeMin ? "le" : "lt";
             string upper = !String.IsNullOrEmpty(query.Upper.ToString()) ? $"{query.Field} {upperOperator} {query.Upper.ToString()}" : String.Empty;
 
-            NativeModel.FilterBuilder.Append($"({lower} and {upper})");
+            NativeModel.FilterBuilder.Append($"{lower} and {upper}");
         }
 
         protected virtual void VisitKeyword(LucinqKeywordQuery query, StringBuilder stringBuilder)
@@ -222,52 +224,17 @@ namespace Lucinq.AzureSearch.Adapters
 
         protected virtual void VisitAnd(LucinqAndQuery query, StringBuilder stringBuilder, bool omitLeadingOperator = false)
         {
-            if (query.Queries.Count == 0)
-            {
-                return;
-            }
-
-
-            StringBuilder builder = new StringBuilder();
-
-            if (stringBuilder.Length > 0)
-            {
-                builder.Append(" ");
-            }
-
-            bool first = true;
-            if (!omitLeadingOperator)
-            {
-                if(query.Matches == Matches.Always)
-                {
-                    builder.Append("AND ");
-                }
-                else
-                {
-                    builder.Append("OR ");
-                }
-            }
-
-            builder.Append("(");
-
-            foreach (var subQuery in query.Queries)
-            {
-                if (!first && !IsGroupQuery(subQuery))
-                {
-                    builder.Append(" AND");
-                }
-                Visit(subQuery, builder, first);
-                first = false;
-
-            }
-            builder.Append(")");
-
-            stringBuilder.Append(builder);
+            VisitGroupQuery(query, stringBuilder, omitLeadingOperator, "AND");
         }
 
         protected virtual void VisitOr(LucinqOrQuery query, StringBuilder stringBuilder, bool omitLeadingOperator = false)
         {
-            if (query.Queries.Count == 0)
+            VisitGroupQuery(query, stringBuilder, omitLeadingOperator, "OR");
+        }
+
+        private void VisitGroupQuery(LucinqGroupQuery query, StringBuilder stringBuilder, bool omitLeadingOperator, string groupSeperator)
+        {
+            if (query.Queries.Count == 0 || query.Queries.All(IsRangeQuery))
             {
                 return;
             }
@@ -292,21 +259,31 @@ namespace Lucinq.AzureSearch.Adapters
                 }
             }
 
-            builder.Append("(");
+            if (query.Queries.Count > 1)
+            {
+                builder.Append("(");
+            }
 
             foreach (var subQuery in query.Queries)
             {
+                if (IsRangeQuery(subQuery))
+                {
+                    continue;
+                }
 
                 if (!first && !IsGroupQuery(subQuery))
                 {
-                    builder.Append(" OR");
+                    builder.Append($" {groupSeperator}");
                 }
 
                 Visit(subQuery, builder, first);
                 first = false;
-
             }
-            builder.Append(")");
+
+            if (query.Queries.Count > 1)
+            {
+                builder.Append(")");
+            }
 
             stringBuilder.Append(builder);
         }
@@ -358,6 +335,13 @@ namespace Lucinq.AzureSearch.Adapters
             }
 
             stringBuilder.Append(returnString);
+        }
+
+        protected bool IsRangeQuery(LucinqQuery query)
+        {
+            Type rangeQueryType = typeof(LucinqRangeQuery<>);
+            Type queryType = query.GetType();
+            return queryType.IsGenericType && rangeQueryType.IsAssignableFrom(queryType.GetGenericTypeDefinition());
         }
     }
 }
