@@ -790,7 +790,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
 
         #endregion
 
-        #region [ Raw Tests ]
+	    #region [ Raw Tests ]
 
         // todo: NM: Fix Raw
         /*
@@ -892,6 +892,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
 
 	        AzureSearchAdapter adapter = new AzureSearchAdapter();
 	        string newQueryString = adapter.Adapt(replacementQuery).QueryBuilder.ToString();
+
 
 	        Assert.AreEqual(queryString, newQueryString);
 	        Console.Write(queryString);
@@ -1012,5 +1013,13 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
 
 
         #endregion
+
+        [Test]
+	    public void DateTimeFormatTest()
+        {
+            DateTime date = DateTime.Now.ToUniversalTime();
+            string result = date.ToString("O");
+            Console.WriteLine(result);
+	    }
     }
 }
