@@ -744,11 +744,47 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
             Console.Write(queryString);
         }
 
-		#endregion
+	    [Test]
+	    public void Filter()
+	    {
+	        string filterString = "name1 eq value1";
 
-		#region [ Composite Tests ]
+	        QueryBuilder builder = new QueryBuilder();
+	        builder.Setup(x => x.Filter(new LucinqFilter("name1", "value1", Comparator.Equals)));
+	        LucinqQueryModel replacementQuery = builder.Build();
 
-		[Test]
+	        AzureSearchAdapter adapter = new AzureSearchAdapter();
+	        string newQueryString = adapter.Adapt(replacementQuery).SearchParameters.Filter;
+
+	        Assert.AreEqual(filterString, newQueryString);
+	        Console.Write(filterString);
+	    }
+
+	    [Test]
+	    public void TermRangeAndFilter()
+	    {
+	        string filterString = "field ge Lower and field le Upper and name1 ge value1";
+
+	        QueryBuilder builder = new QueryBuilder();
+	        builder.Setup(x =>
+	        {
+	            x.TermRange("field", "Lower", "Upper", caseSensitive: true);
+	            x.Filter(new LucinqFilter("name1", "value1", Comparator.GreaterThanEquals));
+	        });
+	        LucinqQueryModel replacementQuery = builder.Build();
+
+	        AzureSearchAdapter adapter = new AzureSearchAdapter();
+	        string newQueryString = adapter.Adapt(replacementQuery).SearchParameters.Filter;
+
+	        Assert.AreEqual(filterString, newQueryString);
+	        Console.Write(filterString);
+	    }
+
+        #endregion
+
+        #region [ Composite Tests ]
+
+        [Test]
 		public void CompositeTermPhraseWildcardTests()
 		{
 		    string queryString = "+_name:value OR +_name:\"phrase\"~2 OR _name:*wildcard*";
