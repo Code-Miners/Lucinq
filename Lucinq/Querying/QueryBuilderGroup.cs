@@ -51,7 +51,7 @@ namespace Lucinq.Core.Querying
                 groupQuery.Queries.Add(query.Build().Query);
             }
 
-            LucinqQueryModel model = new LucinqQueryModel(groupQuery, BuildSort(), null);
+            LucinqQueryModel model = new LucinqQueryModel(groupQuery, BuildSort(), CurrentFilter);
             return model;
         }
 

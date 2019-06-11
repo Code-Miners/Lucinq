@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\IProviderAdapter.cs" />
+    <Compile Include="Enums\Comparator.cs" />
     <Compile Include="LucinqConstants.cs" />
     <Compile Include="Enums\Matches.cs" />
     <Compile Include="Enums\SortType.cs" />

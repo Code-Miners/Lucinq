@@ -49,6 +49,43 @@ namespace Lucinq.AzureSearch.Adapters
 
         protected virtual void Visit(LucinqFilter filter)
         {
+            if (filter == null)
+            {
+                return;
+            }
+
+            string comparator;
+            switch (filter.Comparator)
+            {
+                case Comparator.Equals:
+                    comparator = "eq";
+                    break;
+                case Comparator.NotEquals:
+                    comparator = "ne";
+                    break;
+                case Comparator.GreaterThan:
+                    comparator = "gt";
+                    break;
+                case Comparator.GreaterThanEquals:
+                    comparator = "ge";
+                    break;
+                case Comparator.LessThan:
+                    comparator = "lt";
+                    break;
+                case Comparator.LessThanEquals:
+                    comparator = "le";
+                    break;
+                default:
+                    comparator = "eq";
+                    break;
+            }
+            var filterString = $"{filter.Field} {comparator} {filter.Value}";
+
+            if (NativeModel.FilterBuilder.Length > 0)
+            {
+                NativeModel.FilterBuilder.Append(" and ");
+            }
+            NativeModel.FilterBuilder.Append(filterString);
         }
 
         protected virtual void Visit(LucinqQuery query, StringBuilder stringBuilder = null, bool omitLeadingOperator = false)

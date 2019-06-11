@@ -431,7 +431,21 @@ namespace Lucinq.AzureSearch.UnitTests.IntegrationTests
 			Console.WriteLine("Elapsed Time: {0}", result.ElapsedTimeMs);
 		}
 
-		private IAzureSearchResult ExecuteAndAssert(Querying.AzureSearch azureSearch, IQueryBuilder queryBuilder, int numberOfHitsExpected)
+	    [Test]
+	    public void Filter()
+	    {
+	        var azureSearch = new Querying.AzureSearch(new AzureSearchDetails(searchServiceName, adminApiKey), indexName);
+	        IQueryBuilder queryBuilder = new QueryBuilder();
+
+	        queryBuilder.Term(BBCFields.Title, "africa");
+            queryBuilder.Filter(new LucinqFilter("description", "Close encounters from the heart of Africa", Comparator.Equals));
+
+            var results = ExecuteAndAssert(azureSearch, queryBuilder, 1);
+
+	        Assert.AreEqual(1, results.TotalHits);
+	    }
+
+        private IAzureSearchResult ExecuteAndAssert(Querying.AzureSearch azureSearch, IQueryBuilder queryBuilder, int numberOfHitsExpected)
 		{
 			var result = azureSearch.Execute(queryBuilder);
 
