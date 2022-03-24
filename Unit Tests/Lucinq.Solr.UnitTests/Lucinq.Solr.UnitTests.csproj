@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\..\packages\NUnit.3.11.0\build\NUnit.props" Condition="Exists('..\..\packages\NUnit.3.11.0\build\NUnit.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +11,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Lucinq.Solr.UnitTests</RootNamespace>
     <AssemblyName>Lucinq.Solr.UnitTests</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
@@ -45,19 +45,32 @@
     <Reference Include="AutoMapper.Net4, Version=3.3.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <HintPath>..\..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.Net4.dll</HintPath>
     </Reference>
+    <Reference Include="CommonServiceLocator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CommonServiceLocator.2.0.2\lib\net45\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonServiceLocator.SolrNet, Version=1.0.19.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SolrNet.1.0.19\lib\net46\CommonServiceLocator.SolrNet.dll</HintPath>
+    </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>..\..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
-    <Reference Include="Lucene.Net">
-      <HintPath>..\..\packages\Lucene.Net.3.0.3\lib\NET40\Lucene.Net.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework, Version=3.11.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\..\packages\NUnit.3.11.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="SolrNet, Version=1.0.19.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SolrNet.Core.1.0.19\lib\net46\SolrNet.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.ValueTuple.4.4.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -68,29 +81,22 @@
   <ItemGroup>
     <Compile Include="BBCFields.cs" />
     <Compile Include="CarDataFields.cs" />
-    <Compile Include="DateCollector.cs" />
     <Compile Include="GeneralConstants.cs" />
     <Compile Include="IntegrationTests\BaseTestFixture.cs" />
-    <Compile Include="IntegrationTests\BasicCollectorTests.cs" />
     <Compile Include="IntegrationTests\BasicTests..cs" />
-    <Compile Include="IntegrationTests\DateFieldTests.cs" />
-    <Compile Include="IntegrationTests\FilesystemDirectoryTests.cs" />
     <Compile Include="IntegrationTests\IndexRebuilder.cs" />
-    <Compile Include="IntegrationTests\PrefixTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestHelpers.cs" />
-    <Compile Include="UnitTests\ConceptTests.cs" />
     <Compile Include="UnitTests\EquivalencyTests.cs" />
-    <Compile Include="UnitTests\ItemResultTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Lucinq.Lucene30\Lucinq.Lucene30.csproj">
-      <Project>{8fc26db5-0277-49c8-9345-d53da0059a64}</Project>
-      <Name>Lucinq.Lucene30</Name>
+    <ProjectReference Include="..\..\Lucinq.Solr\Lucinq.Solr.csproj">
+      <Project>{6e6ff124-6a8b-47a9-8169-b9101117b486}</Project>
+      <Name>Lucinq.Solr</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Lucinq\Lucinq.Core.csproj">
       <Project>{4A37D121-9AC6-489D-B565-C353D85AFB73}</Project>

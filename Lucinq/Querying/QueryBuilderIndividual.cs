@@ -318,7 +318,7 @@ namespace Lucinq.Core.Querying
 		 public virtual void DateRange(string fieldName, DateTime minValue, DateTime maxValue, Matches occur = Matches.NotSet, float? boost = null,
                                     int precisionStep = Int32.MaxValue, bool includeMin = true, bool includeMax = true, string key = null)
 		{
-            LucinqRangeQuery<float> rangeQuery = new LucinqRangeQuery<float>(fieldName, precisionStep, minValue.Ticks, maxValue.Ticks, includeMin, includeMax, LucinqConstants.AdapterKeys.FloatRangeQuery)
+            LucinqRangeQuery<long>rangeQuery = new LucinqRangeQuery<long>(fieldName, precisionStep, minValue.Ticks, maxValue.Ticks, includeMin, includeMax, LucinqConstants.AdapterKeys.LongRangeQuery)
             {
                 Matches = occur
             };

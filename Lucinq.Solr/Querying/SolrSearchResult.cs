@@ -1,23 +1,26 @@
 ﻿namespace Lucinq.Solr.Querying
 {
+    using System;
     using System.Collections;
     using System.Collections.Generic;
     using System.Diagnostics;
+    using System.Linq;
     using Adapters;
-    using Microsoft.Azure.Search;
-    using Microsoft.Azure.Search.Models;
+    using CommonServiceLocator;
+    using SolrNet;
+    using SolrNet.Impl;
 
-    public class AzureSearchResult : ISolrSearchResult
+    public class SolrSearchResult : ISolrSearchResult
     {
         #region [ Fields ]
 
-	    private int totalHits;
-	    private bool searchExecuted;
-	    private DocumentSearchResult topDocs;
+        private int totalHits;
+        private bool searchExecuted;
+        private IList<Dictionary<string, object>> topDocs;
 
         protected string IndexName { get; }
 
-        protected SolrSearchDetails AzureSearchDetails { get; }
+        protected SolrSearchDetails SolrSearchDetails { get; }
 
         protected SolrSearchModel Model { get; }
 
@@ -25,38 +28,38 @@
 
         #region [ Constructors ]
 
-        public AzureSearchResult(SolrSearchModel model, SolrSearchDetails azureSearchDetails, string indexName)
+        public SolrSearchResult(SolrSearchModel model, SolrSearchDetails solrSearchDetails, string indexName)
         {
             Model = model;
-            AzureSearchDetails = azureSearchDetails;
+            SolrSearchDetails = solrSearchDetails;
             IndexName = indexName;
         }
 
-		#endregion
+        #endregion
 
-		#region [ Properties ]
+        #region [ Properties ]
 
-		public int TotalHits
-		{
-		    get
-		    {
+        public int TotalHits
+        {
+            get
+            {
                 ExecuteSearch(null, null);
-		        return totalHits;
-		    }
-		}
+                return totalHits;
+            }
+        }
 
-		public long ElapsedTimeMs { get; set; }
+        public long ElapsedTimeMs { get; set; }
 
         #endregion
 
-		#region [ Methods ]
+        #region [ Methods ]
 
-		public virtual IList<SearchResult> GetTopItems()
-		{
-		    ExecuteSearch(null, 30);
+        public virtual IList<Dictionary<string, object>> GetTopItems()
+        {
+            ExecuteSearch(null, 30);
 
-		    return topDocs.Results;
-		}
+            return topDocs;
+        }
 
         /// <summary>
         /// Gets a range of items on a zero based index
@@ -64,7 +67,7 @@
         /// <param name="start"></param>
         /// <param name="end"></param>
         /// <returns></returns>
-        public virtual IList<SearchResult> GetRange(int start, int end)
+        public virtual IList<Dictionary<string, object>> GetRange(int start, int end)
         {
             if (start < 0)
             {
@@ -75,42 +78,55 @@
 
             ExecuteSearch(start, take);
 
-            return topDocs.Results;
+            return topDocs;
         }
 
         private void ExecuteSearch(int? skip, int? take)
-	    {
+        {
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
 
-	        Model.SearchParameters.Top = take;
-	        Model.SearchParameters.Skip = skip;
-	        Model.SearchParameters.IncludeTotalResultCount = true;
+            if (skip == null)
+            {
+                skip = 0;
+            }
+
+            Model.QueryOptions.StartOrCursor = new StartOrCursor.Start((int)skip);
+            Model.QueryOptions.Rows = take;
 
 
-	        using (ISearchServiceClient serviceClient = new SearchServiceClient(AzureSearchDetails.SearchServiceName, new SearchCredentials(AzureSearchDetails.AdminApiKey)))
-	        {
-	            ISearchIndexClient indexClient = serviceClient.Indexes.GetClient(IndexName);
-	            topDocs = indexClient.Documents.Search(Model.QueryBuilder.ToString(), Model.SearchParameters);
-	            totalHits = (int) (topDocs?.Count);
-	        }
+            Model.IncludeTotalNumberOfSearchResults = true;
+            var solr = ServiceLocator.Current.GetInstance<ISolrOperations<Dictionary<string, object>>>();
 
-	        stopwatch.Stop();
-	        ElapsedTimeMs = stopwatch.ElapsedMilliseconds;
-	    }
+            if (Model.QueryBuilder.ToString() == String.Empty)
+            {
+                Model.QueryBuilder.Append("*:*");
+            }
 
-	    #endregion
+            var solrQuery = new SolrQuery(Model.QueryBuilder.ToString());
+            Model.QueryOptions.FilterQueries.Add(new SolrQuery(Model.FilterBuilder.ToString()));
+
+            SolrQueryResults<Dictionary<string, object>> results = solr.Query(solrQuery, Model.QueryOptions);
+
+            topDocs = results;
+            totalHits = topDocs.Count;
+
+            stopwatch.Stop();
+            ElapsedTimeMs = stopwatch.ElapsedMilliseconds;
+        }
+
+        #endregion
 
         #region [ IEnumerable Methods ]
 
-        public IEnumerator<SearchResult> GetEnumerator()
+        public IEnumerator<Dictionary<string, object>> GetEnumerator()
         {
             return GetTopItems().GetEnumerator();
-	    }
+        }
 
-	    IEnumerator IEnumerable.GetEnumerator()
-	    {
-	        return GetEnumerator();
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
 
         #endregion

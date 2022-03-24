@@ -1,21 +1,27 @@
 ﻿namespace Lucinq.Solr.Adapters
 {
+    using System.Collections.Generic;
     using System.Text;
-    using Microsoft.Azure.Search.Models;
+    using System.Threading;
+    using SolrNet;
+    using SolrNet.Commands.Parameters;
 
     public class SolrSearchModel
     {
-        public SearchParameters SearchParameters { get; }
 
         public StringBuilder QueryBuilder { get; set; }
 
         public StringBuilder FilterBuilder { get; set; }
 
+        public QueryOptions QueryOptions { get; }
+
+        public bool IncludeTotalNumberOfSearchResults { get; set; }
+
         public SolrSearchModel()
         {
             QueryBuilder = new StringBuilder();
             FilterBuilder = new StringBuilder();
-            SearchParameters = new SearchParameters();
+            QueryOptions = new QueryOptions();
         }
     }
 }

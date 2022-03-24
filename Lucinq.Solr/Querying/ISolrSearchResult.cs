@@ -1,9 +1,9 @@
 ﻿namespace Lucinq.Solr.Querying
 {
+    using System.Collections.Generic;
     using Core.Interfaces;
-    using Microsoft.Azure.Search.Models;
 
-    public interface ISolrSearchResult : ISearchResult<SearchResult>
+    public interface ISolrSearchResult : ISearchResult<Dictionary<string, object>>
 	{
 	}
 }
