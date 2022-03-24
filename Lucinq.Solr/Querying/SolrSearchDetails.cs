@@ -2,13 +2,11 @@
 {
     public class SolrSearchDetails
     {
-        public SolrSearchDetails(string searchServiceName, string adminApiKey)
+        public SolrSearchDetails(string searchServiceName)
         {
             SearchServiceName = searchServiceName;
-            AdminApiKey = adminApiKey;
         }
 
-        public string AdminApiKey { get; }
 
         public string SearchServiceName { get; }
     }

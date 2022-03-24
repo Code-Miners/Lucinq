@@ -1,32 +1,32 @@
 ﻿namespace Lucinq.Solr.Querying
 {
     using System;
+    using System.Collections.Generic;
     using System.Diagnostics;
     using Adapters;
     using Core.Adapters;
     using Core.Interfaces;
     using Core.Querying;
     using Core.Results;
-    using Microsoft.Azure.Search.Models;
 
     public class SolrSearch : ISolrSearch<ISolrSearchResult>
     {
         public IProviderAdapter<SolrSearchModel> Adapter { get; }
 
-        protected SolrSearchDetails AzureSearchDetails { get; }
+        protected SolrSearchDetails SolrSearchDetails { get; }
 
         protected string IndexName { get; }
 
         #region [ Constructors ]
 
-        public SolrSearch(IProviderAdapter<SolrSearchModel> adapter, SolrSearchDetails azureSearchDetails, string indexName)
+        public SolrSearch(IProviderAdapter<SolrSearchModel> adapter, SolrSearchDetails solrSearchDetails, string indexName)
         {
             Adapter = adapter;
-            AzureSearchDetails = azureSearchDetails;
+            SolrSearchDetails = solrSearchDetails;
             IndexName = indexName;
         }
 
-        public SolrSearch(SolrSearchDetails azureSearchDetails, string indexName) : this(new SolrSearchAdapter(), azureSearchDetails, indexName)
+        public SolrSearch(SolrSearchDetails solrSearchDetails, string indexName) : this(new SolrSearchAdapter(), solrSearchDetails, indexName)
         {
         }
 
@@ -67,7 +67,7 @@
         public virtual ISolrSearchResult Execute(LucinqQueryModel lucinqModel, int noOfResults = Int32.MaxValue - 1)
         {
             var nativeModel = Adapter.Adapt(lucinqModel);
-            return new AzureSearchResult(nativeModel, AzureSearchDetails, IndexName);
+            return new SolrSearchResult(nativeModel, SolrSearchDetails, IndexName);
         }
 
         public virtual ISolrSearchResult Execute(IQueryBuilder queryBuilder, int noOfResults = Int32.MaxValue - 1)
@@ -75,7 +75,7 @@
             return Execute(queryBuilder.Build(), noOfResults);
         }
 
-        public virtual TItemResult Execute<TItemResult, T>(IQueryBuilder queryBuilder, Func<ISolrSearchResult, TItemResult> creator, int noOfResults = Int32.MaxValue - 1) where TItemResult : ItemSearchResult<SearchResult, T>
+        public virtual TItemResult Execute<TItemResult, T>(IQueryBuilder queryBuilder, Func<ISolrSearchResult, TItemResult> creator, int noOfResults = Int32.MaxValue - 1) where TItemResult : ItemSearchResult<Dictionary<string, object>, T>
         {
             ISolrSearchResult searchResult = Execute(queryBuilder.Build(), noOfResults);
             return creator(searchResult);

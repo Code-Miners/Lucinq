@@ -2,10 +2,12 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using System.Text;
     using Core.Adapters;
     using Core.Enums;
     using Core.Querying;
+    using SolrNet;
 
     public class SolrSearchAdapter : IProviderAdapter<SolrSearchModel>
     {
@@ -17,7 +19,6 @@
             Visit(model.Query);
             Visit(model.Sort);
             Visit(model.Filter);
-            NativeModel.SearchParameters.Filter = NativeModel.FilterBuilder.ToString();
             return NativeModel;
         }
 
@@ -28,24 +29,63 @@
                 return;
             }
 
-            NativeModel.SearchParameters.OrderBy = new List<string>();
+            if (sort?.SortFields == null || sort.SortFields.Length == 0)
+            {
+                return;
+            }
+
             foreach (var sortField in sort.SortFields)
             {
-                string orderBy = sortField.FieldName;
-                if (sortField.SortDescending)
-                {
-                    orderBy += " desc";
-                }
 
-                NativeModel.SearchParameters.OrderBy.Add(orderBy);
+                Order order = sortField.SortDescending ? Order.DESC : Order.ASC;
+
+                NativeModel.QueryOptions.OrderBy.Add(new SortOrder(sortField.FieldName, order));
+
             }
         }
 
         protected virtual void Visit(LucinqFilter filter)
         {
+            if (filter == null)
+            {
+                return;
+            }
+
+            string comparator;
+            string filterString;
+            switch (filter.Comparator)
+            {
+                case Comparator.Equals:
+                    filterString = $"{filter.Field}:{filter.Value}";
+                    break;
+                case Comparator.NotEquals:
+                    filterString = $"{filter.Field}:!{filter.Value}";
+                    break;
+                case Comparator.GreaterThan:
+                    filterString = $"{filter.Field}:{{{filter.Value} TO * ]";
+                    break;
+                case Comparator.GreaterThanEquals:
+                    filterString = $"{filter.Field}:[{filter.Value} TO * ]";
+                    break;
+                case Comparator.LessThan:
+                    filterString = $"{filter.Field}:[* TO {filter.Value} }}";
+                    break;
+                case Comparator.LessThanEquals:
+                    filterString = $"{filter.Field}:[* TO {filter.Value} ]";
+                    break;
+                default:
+                    filterString = $"{filter.Field}:{filter.Value}";
+                    break;
+            }
+
+            if (NativeModel.FilterBuilder.Length > 0)
+            {
+                NativeModel.FilterBuilder.Append(" and ");
+            }
+            NativeModel.FilterBuilder.Append(filterString);
         }
 
-        protected virtual void Visit(LucinqQuery query, StringBuilder stringBuilder = null)
+        protected virtual void Visit(LucinqQuery query, StringBuilder stringBuilder = null, bool omitLeadingOperator = false)
         {
             if (stringBuilder == null)
             {
@@ -55,14 +95,15 @@
             {
                 VisitPrimary(queryRoot, stringBuilder);
             }
-            else if (query is LucinqOrQuery orQuery)
-            {
-                VisitOr(orQuery, stringBuilder);
-            }
             else if (query is LucinqAndQuery andQuery)
             {
-                VisitAnd(andQuery, stringBuilder);
+                VisitAnd(andQuery, stringBuilder, omitLeadingOperator);
             }
+            else if (query is LucinqOrQuery orQuery)
+            {
+                VisitOr(orQuery, stringBuilder, omitLeadingOperator);
+            }
+
             else if (query is LucinqFuzzyQuery fuzzyQuery)
             {
                 VisitFuzzy(fuzzyQuery, stringBuilder);
@@ -103,50 +144,64 @@
             {
                 VisitTermRange(termRangeQuery, stringBuilder);
             }
+
+
         }
 
         protected virtual void VisitTermRange(LucinqRangeQuery<string> query, StringBuilder stringBuilder)
         {
-            string lowerOperator = query.IncludeMin ? "ge" : "gt";
-            string lower = !String.IsNullOrEmpty(query.Lower) ? $"{query.Field} {lowerOperator} '{query.Lower}'" : String.Empty;
+            string lowerOperator = query.IncludeMin ? "[" : "{";
+            string lower = !String.IsNullOrEmpty(query.Lower) ? $"{lowerOperator}{query.Lower}" : String.Empty;
 
-            string upperOperator = query.IncludeMin ? "le" : "lt";
-            string upper = !String.IsNullOrEmpty(query.Upper) ? $"{query.Field} {upperOperator} '{query.Upper}'" : String.Empty;
+            string upperOperator = query.IncludeMin ? "]" : "}";
+            string upper = !String.IsNullOrEmpty(query.Upper) ? $"{query.Upper}{upperOperator}" : String.Empty;
 
-            NativeModel.FilterBuilder.Append($"({lower} and {upper})");
+
+            string value = $"{query.Field}:{lower} TO {upper}";
+
+            NativeModel.FilterBuilder.Append($"{value}");
         }
 
         protected virtual void VisitIntRange(LucinqRangeQuery<int> query, StringBuilder stringBuilder)
         {
-            string lowerOperator = query.IncludeMin ? "ge" : "gt";
-            string lower = !String.IsNullOrEmpty(query.Lower.ToString()) ? $"{query.Field} {lowerOperator} {query.Lower.ToString()}" : String.Empty;
+            string lowerOperator = query.IncludeMin ? "[" : "{";
+            string lower = !String.IsNullOrEmpty(query.Lower.ToString()) ? $"{lowerOperator}{query.Lower}" : String.Empty;
 
-            string upperOperator = query.IncludeMin ? "le" : "lt";
-            string upper = !String.IsNullOrEmpty(query.Upper.ToString()) ? $"{query.Field} {upperOperator} {query.Upper.ToString()}" : String.Empty;
+            string upperOperator = query.IncludeMin ? "]" : "}";
+            string upper = !String.IsNullOrEmpty(query.Upper.ToString()) ? $"{query.Upper}{upperOperator}" : String.Empty;
 
-            NativeModel.FilterBuilder.Append($"({lower} and {upper})");
+
+            string value = $"{query.Field}:{lower} TO {upper}";
+
+            NativeModel.FilterBuilder.Append(value);
         }
 
         protected virtual void VisitLongRange(LucinqRangeQuery<long> query, StringBuilder stringBuilder)
         {
-            string lowerOperator = query.IncludeMin ? "ge" : "gt";
-            string lower = !String.IsNullOrEmpty(query.Lower.ToString()) ? $"{query.Field} {lowerOperator} {query.Lower.ToString()}" : String.Empty;
+            string lowerOperator = query.IncludeMin ? "[" : "{";
+            string lower = !String.IsNullOrEmpty(query.Lower.ToString()) ? $"{lowerOperator}{query.Lower}" : String.Empty;
 
-            string upperOperator = query.IncludeMin ? "le" : "lt";
-            string upper = !String.IsNullOrEmpty(query.Upper.ToString()) ? $"{query.Field} {upperOperator} {query.Upper.ToString()}" : String.Empty;
+            string upperOperator = query.IncludeMin ? "]" : "}";
+            string upper = !String.IsNullOrEmpty(query.Upper.ToString()) ? $"{query.Upper}{upperOperator}" : String.Empty;
 
-            NativeModel.FilterBuilder.Append($"({lower} and {upper})");
+
+            string value = $"{query.Field}:{lower} TO {upper}";
+
+            NativeModel.FilterBuilder.Append(value);
         }
 
         protected virtual void VisitDoubleRange(LucinqRangeQuery<double> query, StringBuilder stringBuilder)
         {
-            string lowerOperator = query.IncludeMin ? "ge" : "gt";
-            string lower = !String.IsNullOrEmpty(query.Lower.ToString()) ? $"{query.Field} {lowerOperator} {query.Lower.ToString()}" : String.Empty;
+            string lowerOperator = query.IncludeMin ? "[" : "{";
+            string lower = !String.IsNullOrEmpty(query.Lower.ToString()) ? $"{lowerOperator}{query.Lower}" : String.Empty;
 
-            string upperOperator = query.IncludeMin ? "le" : "lt";
-            string upper = !String.IsNullOrEmpty(query.Upper.ToString()) ? $"{query.Field} {upperOperator} {query.Upper.ToString()}" : String.Empty;
+            string upperOperator = query.IncludeMin ? "]" : "}";
+            string upper = !String.IsNullOrEmpty(query.Upper.ToString()) ? $"{query.Upper}{upperOperator}" : String.Empty;
 
-            NativeModel.FilterBuilder.Append($"({lower} and {upper})");
+
+            string value = $"{query.Field}:{lower} TO {upper}";
+
+            NativeModel.FilterBuilder.Append(value);
         }
 
         protected virtual void VisitKeyword(LucinqKeywordQuery query, StringBuilder stringBuilder)
@@ -169,7 +224,7 @@
             stringBuilder.Append(GetTermQueryString(query, false, stringBuilder));
         }
 
-        private string GetTermQueryString(LucinqTermQuery query, bool quoteValue, StringBuilder stringBuilder)
+        private string GetTermQueryString(LucinqTermQuery query, bool quoteValue, StringBuilder stringBuilder, bool fuzzy = false)
         {
             string returnString = null;
             if (stringBuilder.Length > 0)
@@ -191,81 +246,159 @@
             }
 
             string value = quoteValue ? $"\"{query.SearchTerm.Value}\"" : query.SearchTerm.Value;
+            if (fuzzy)
+            {
+                value += "~";
+            }
 
             string boostString = query.Boost.HasValue ? $"~{query.Boost.Value}" : String.Empty;
             returnString += $"{occurrence}{query.SearchTerm.Field}:{value}{boostString}";
             return returnString;
         }
 
+        protected virtual void VisitGroup(LucinqGroupQuery query, StringBuilder stringBuilder, bool omitLeadingOperator = false)
+        {
+
+
+
+            if (stringBuilder.Length > 0)
+            {
+                stringBuilder.Append(" ");
+
+                if (query.Matches == Matches.Always)
+                {
+                    stringBuilder.Append("AND ");
+                }
+                else
+                {
+                    stringBuilder.Append("OR ");
+                }
+            }
+
+            StringBuilder builder = new StringBuilder();
+
+            var first = true;
+            foreach (var subQuery in query.Queries)
+            {
+
+                Visit(subQuery, builder);
+                first = false;
+            }
+
+            stringBuilder.Append(builder);
+        }
+
         protected virtual void VisitPrimary(LucinqGroupQuery query, StringBuilder stringBuilder)
         {
-            StringBuilder builder = new StringBuilder();
-            bool first = true;
-            foreach (var subQuery in query.Queries)
-            {
-                if (!first)
-                {
-                    builder.Append(" OR");
-                }
-                Visit(subQuery, builder);
-                first = false;
-
-            }
-
             if (stringBuilder.Length > 0)
             {
                 stringBuilder.Append(" ");
             }
 
+            StringBuilder builder = new StringBuilder();
+            bool first = true;
+            foreach (var subQuery in query.Queries)
+            {
+                Visit(subQuery, builder, first);
+                first = false;
+
+            }
+
             stringBuilder.Append(builder);
         }
 
-        protected virtual void VisitAnd(LucinqAndQuery query, StringBuilder stringBuilder)
+        protected virtual void VisitAnd(LucinqAndQuery query, StringBuilder stringBuilder, bool omitLeadingOperator = false)
         {
-            StringBuilder builder = new StringBuilder();
-            bool first = true;
-            foreach (var subQuery in query.Queries)
-            {
-                if (!first)
-                {
-                    builder.Append(" AND");
-                }
-                Visit(subQuery, builder);
-                first = false;
-
-            }
-
-            if (stringBuilder.Length > 0)
-            {
-                stringBuilder.Append(" ");
-            }
-            stringBuilder.Append(builder);
+            VisitGroupQuery(query, stringBuilder, omitLeadingOperator, "AND");
         }
 
-        protected virtual void VisitOr(LucinqOrQuery query, StringBuilder stringBuilder)
+        protected virtual void VisitOr(LucinqOrQuery query, StringBuilder stringBuilder, bool omitLeadingOperator = false)
         {
+            VisitGroupQuery(query, stringBuilder, omitLeadingOperator, "OR");
+        }
+
+        private void VisitGroupQuery(LucinqGroupQuery query, StringBuilder stringBuilder, bool omitLeadingOperator,
+            string groupSeperator)
+        {
+            if (query.Queries.Count == 0 || query.Queries.All(IsRangeQuery))
+            {
+                return;
+            }
+
             StringBuilder builder = new StringBuilder();
             bool first = true;
-            foreach (var subQuery in query.Queries)
-            {
-                if (!first)
-                {
-                    builder.Append(" OR");
-                }
-                Visit(subQuery, builder);
-                first = false;
-
-            }
 
             if (stringBuilder.Length > 0)
             {
-                stringBuilder.Append(" ");
+                builder.Append(" ");
             }
+
+            if (!omitLeadingOperator)
+            {
+                if (query.Matches == Matches.Always)
+                {
+                    builder.Append("AND ");
+                }
+                else
+                {
+                    builder.Append("OR ");
+                }
+            }
+
+            if (query.Queries.Count > 1)
+            {
+                builder.Append("(");
+            }
+
+            foreach (var subQuery in query.Queries)
+            {
+                if (IsRangeQuery(subQuery))
+                {
+                    continue;
+                }
+
+                if (!first && !IsGroupQuery(subQuery))
+                {
+                    string subgroupSeperator;
+                    if (subQuery.Matches == Matches.Always)
+                    {
+                        subgroupSeperator = "AND";
+                    }
+                    else
+                    {
+                        subgroupSeperator = "OR";
+                    }
+                    builder.Append($" {subgroupSeperator}");
+                }
+
+                Visit(subQuery, builder, first);
+                first = false;
+            }
+
+            if (query.Queries.Count > 1)
+            {
+                builder.Append(")");
+            }
+
             stringBuilder.Append(builder);
         }
+
+        protected bool IsRangeQuery(LucinqQuery query)
+        {
+            Type rangeQueryType = typeof(LucinqRangeQuery<>);
+            Type queryType = query.GetType();
+            return queryType.IsGenericType && rangeQueryType.IsAssignableFrom(queryType.GetGenericTypeDefinition());
+        }
+
+        private static bool IsGroupQuery(LucinqQuery subQuery)
+        {
+            return subQuery is LucinqAndQuery || subQuery is LucinqOrQuery;
+        }
+
 
         protected virtual void VisitFuzzy(LucinqFuzzyQuery query, StringBuilder stringBuilder)
         {
+            stringBuilder.Append(GetTermQueryString(query, false, stringBuilder, true));
         }
 
         protected virtual void VisitPhrase(LucinqPhraseQuery query, StringBuilder stringBuilder)

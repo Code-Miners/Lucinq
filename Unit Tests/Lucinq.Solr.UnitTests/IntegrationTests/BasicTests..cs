@@ -1,24 +1,30 @@
 ﻿namespace Lucinq.Solr.UnitTests.IntegrationTests
 {
     using System;
+    using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
     using Core.Enums;
     using Core.Interfaces;
     using Core.Querying;
-    using Lucene.Net.Documents;
-    using Lucene30.Adapters;
-    using Lucene30.Querying;
     using NUnit.Framework;
+	using Querying;
+    using SolrNet;
+
 
     [TestFixture]
 	public class BasicTests : BaseTestFixture
 	{
-		#region [ Properties ]
+        private const string searchServiceName = "https://solr840:8987/solr";
+        private const string indexName = "bbc_index";
+		
+        
+        #region [ Properties ]
 
 		[OneTimeSetUp]
 		public void Setup()
 		{
+            Startup.Init<Dictionary<string, object>>("https://solr840:8987/solr/bbc_index");
 		}
 
 		#endregion
@@ -26,458 +32,466 @@
 		[Test]
 		public void Term()
 		{
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
+			SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
 			IQueryBuilder queryBuilder = new QueryBuilder();
 
 			queryBuilder.Term(BBCFields.Title, "africa");
 
-			var results = ExecuteAndAssert(luceneSearch, queryBuilder, 8);
+			var results = ExecuteAndAssert(solrSearch, queryBuilder, 7);
 
-			Assert.AreEqual(8, results.TotalHits);
+			Assert.AreEqual(7, results.TotalHits);
 		}
+
 
         [Test]
-        [Ignore("Conceptual test for proving index closure")]
-	    public void IndexUsed()
-	    {
-            LuceneSearch luceneSearch = new LuceneSearch(GeneralConstants.Paths.CarDataIndex);
+        public void DateRange()
+        {
+
+			SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
             IQueryBuilder queryBuilder = new QueryBuilder();
 
-            queryBuilder.Term(CarDataFields.Make, "ford");
+            DateTime startDate = new DateTime(2012, 12, 1);
+            DateTime endDate = new DateTime(2013, 1, 1);
 
-            var searchResult = luceneSearch.Execute(queryBuilder);
+            queryBuilder.TermRange("publish_date_time", TestHelpers.GetDateString(startDate), TestHelpers.GetDateString(endDate));
 
-            Assert.AreEqual(8, searchResult.TotalHits);
-	    }
+            ExecuteAndAssert(solrSearch, queryBuilder, 60);
+
+        }
+
+		private ISolrSearchResult ExecuteAndAssert(SolrSearch solrSearch, IQueryBuilder queryBuilder, int numberOfHitsExpected)
+        {
+
+            ISolrSearchResult result = solrSearch.Execute(queryBuilder);
+
+            IList<Dictionary<string, object>> documents = result.GetTopItems();
+
+            Console.WriteLine("Searched documents in {0} ms", result.ElapsedTimeMs);
+            Console.WriteLine();
+
+            WriteDocuments(documents);
+
+            Assert.AreEqual(numberOfHitsExpected, result.TotalHits);
+
+            return result;
+        }
+
+        [Test]
+        public void SetupSyntax()
+        {
+			SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
+            IQueryBuilder queryBuilder = new QueryBuilder();
+            queryBuilder.Setup(x => x.Term(BBCFields.Title, "africa"));
+
+            ExecuteAndAssert(solrSearch, queryBuilder, 7);
+        }
 
 
-		[Test]
-		public void TermRange()
-		{
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
-			IQueryBuilder queryBuilder = new QueryBuilder();
 
-			DateTime startDate = new DateTime(2012, 12, 1);
-			DateTime endDate = new DateTime(2013, 1, 1);
 
-            queryBuilder.TermRange(BBCFields.PublishDateString, TestHelpers.GetDateString(startDate), TestHelpers.GetDateString(endDate));
+		private void WriteDocuments(ICollection<Dictionary<string, object>> documents)
+        {
+            int counter = 0;
+            Console.WriteLine("Showing the first 30 docs");
 
-			ExecuteAndAssert(luceneSearch, queryBuilder, 60);
+            foreach (var document in documents)
+            {
+                if (counter >= 29)
+                {
+                    return;
+                }
 
-		}
+                Console.WriteLine("Title: " + document["title"]);
+                Console.WriteLine("Description: " + document["description"]);
+                Console.WriteLine("Publish Date: " + document["publish_date_time"]);
+                Console.WriteLine("Url: " + document["link"]);
+                Console.WriteLine();
+                counter++;
+            }
+        }
 
-		[Test]
-		public void SetupSyntax()
-		{
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
-			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Setup(x => x.Term(BBCFields.Title, "africa"));
 
-			ExecuteAndAssert(luceneSearch, queryBuilder, 8);
-		}
+        [Test]
+        public void SimpleOrClauseSuccessful()
+        {
+			SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
+            IQueryBuilder queryBuilder = new QueryBuilder();
 
-		[Test]
-		public void SimpleOrClauseSuccessful()
-		{
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
-			IQueryBuilder queryBuilder = new QueryBuilder();
+            queryBuilder.Or
+            (
+                x => x.Term(BBCFields.Title, "africa"),
+                x => x.Term(BBCFields.Title, "europe")
+            );
 
-			queryBuilder.Or
-				(
-					x => x.Term(BBCFields.Title, "africa"),
-					x => x.Term(BBCFields.Title, "europe")
-				);
+            ExecuteAndAssert(solrSearch, queryBuilder, 10);
+        }
 
-			ExecuteAndAssert(luceneSearch, queryBuilder, 12);
-		}
+        [Test]
+        public void SimpleAndClauseSuccessful()
+        {
 
-		[Test]
-		public void SimpleAndClauseSuccessful()
-		{
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
-			IQueryBuilder queryBuilder = new QueryBuilder();
+			SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
+            IQueryBuilder queryBuilder = new QueryBuilder();
 
-			queryBuilder.And
-				(
-					x => x.Term(BBCFields.Title, "africa"),
-					x => x.Term(BBCFields.Title, "road")
-				);
+            queryBuilder.And
+            (
+                x => x.Term(BBCFields.Title, "africa"),
+                x => x.Term(BBCFields.Title, "road")
+            );
 
-			ExecuteAndAssert(luceneSearch, queryBuilder, 1);
-		}
+            ExecuteAndAssert(solrSearch, queryBuilder, 1);
+        }
 
-		[Test]
-		public void RemoveAndReexecute()
-		{
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
-			IQueryBuilder queryBuilder = new QueryBuilder();
 
-			queryBuilder.Term(BBCFields.Title, "africa", key: "africacriteria");
+        [Test]
+        public void RemoveAndReexecute()
+        {
+            SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
+            IQueryBuilder queryBuilder = new QueryBuilder();
 
-			var results = ExecuteAndAssert(luceneSearch, queryBuilder, 8);
+            queryBuilder.Term(BBCFields.Title, "africa", key: "africacriteria");
 
-			queryBuilder.Queries.Remove("africacriteria");
-			queryBuilder.Term(BBCFields.Title, "report", key: "businesscriteria");
+            var results = ExecuteAndAssert(solrSearch, queryBuilder, 7);
 
-			Console.WriteLine("\r\nSecond Criteria");
+            queryBuilder.Queries.Remove("africacriteria");
+            queryBuilder.Term(BBCFields.Title, "report", key: "businesscriteria");
 
-			var results2 = ExecuteAndAssert(luceneSearch, queryBuilder, 5);
+            Console.WriteLine("\r\nSecond Criteria");
 
-			Assert.AreNotEqual(results.TotalHits, results2.TotalHits);
-		}
+            var results2 = ExecuteAndAssert(solrSearch, queryBuilder, 5);
 
-		[Test]
-		public void TermsOr()
-		{
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
-			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Terms(BBCFields.Title, new[] {"europe", "africa"}, Matches.Sometimes);
-			ExecuteAndAssert(luceneSearch, queryBuilder, 12);
-		}
+            Assert.AreNotEqual(results.TotalHits, results2.TotalHits);
+        }
+
+        [Test]
+        public void TermsOr()
+        {
+            SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
+            IQueryBuilder queryBuilder = new QueryBuilder();
+            queryBuilder.Terms(BBCFields.Title, new[] { "europe", "africa" }, Matches.Sometimes);
+            ExecuteAndAssert(solrSearch, queryBuilder, 10);
+        }
 
         [Test]
         public void EasyOr()
         {
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
+            SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
             IQueryBuilder queryBuilder = new QueryBuilder();
             queryBuilder.Or(
                 x => x.Term(BBCFields.Title, "europe"),
                 x => x.Term(BBCFields.Title, "africa"));
-            ExecuteAndAssert(luceneSearch, queryBuilder, 12);
-        }
+            ExecuteAndAssert(solrSearch, queryBuilder, 10);
+		}
 
-		/*[Test]
-		public void SimpleNot()
-		{
-			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Not().Term("_name", "home");
-			var results = ExecuteAndAssert(queryBuilder, 12);
-		}*/
-
-		[Test]
-		public void PhraseDistance()
-		{
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
-			IQueryBuilder queryBuilder = new QueryBuilder();
+        [Test]
+        public void PhraseDistance()
+        {
+            SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
+            IQueryBuilder queryBuilder = new QueryBuilder();
 
             queryBuilder.Phrase(2, new[]
-		    {
-		        new KeyValuePair<string, string>(BBCFields.Title, "wildlife"),
-		        new KeyValuePair<string, string>(BBCFields.Title, "africa")
-		    });
+            {
+                new KeyValuePair<string, string>(BBCFields.Title, "wildlife"),
+                new KeyValuePair<string, string>(BBCFields.Title, "africa")
+            });
 
-			ExecuteAndAssert(luceneSearch, queryBuilder, 1);
-		}
+            ExecuteAndAssert(solrSearch, queryBuilder, 1);
+        }
 
-		[Test]
-		public void Fuzzy()
-		{
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
-			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Fuzzy(BBCFields.Title, "afric", 0.5f);
-			ExecuteAndAssert(luceneSearch, queryBuilder, 16);
-		}
+        [Test]
+        public void Fuzzy()
+        {
+            SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
+            IQueryBuilder queryBuilder = new QueryBuilder();
+            queryBuilder.Fuzzy(BBCFields.Title, "afric", 0.5f);
+            ExecuteAndAssert(solrSearch, queryBuilder, 16);
+        }
 
-		[Test]
-		public void Paging()
-		{
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory,false), new LuceneAdapter());
-			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Setup(x => x.WildCard(BBCFields.Description, "a*"));
 
-			var results = ExecuteAndAssertPaged(luceneSearch, queryBuilder, 902, 0, 10);
+        [Test]
+        public void Paging()
+        {
+            SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
+            IQueryBuilder queryBuilder = new QueryBuilder();
+            queryBuilder.Setup(x => x.WildCard(BBCFields.Description, "a*"));
+
+            var results = ExecuteAndAssertPaged(solrSearch, queryBuilder, 1318, 0, 10);
             var documents = results.GetRange(0, 9);
-			Assert.AreEqual(10, documents.Count);
+            Assert.AreEqual(10, documents.Count);
 
-			var results2 = ExecuteAndAssertPaged(luceneSearch, queryBuilder, 902, 1, 11);
-			var documents2 = results2.GetRange(1, 10);
-			Assert.AreEqual(10, documents2.Count);
+            var results2 = ExecuteAndAssertPaged(solrSearch, queryBuilder, 1318, 1, 11);
+            var documents2 = results2.GetRange(1, 10);
+            Assert.AreEqual(10, documents2.Count);
 
-			for (var i = 0; i < documents.Count - 1; i++)
-			{
-				Assert.AreEqual(documents2[i].GetValues(BBCFields.Title).FirstOrDefault(), documents[i+1].GetValues(BBCFields.Title).FirstOrDefault());
-			}
-				
-		}
+            for (var i = 0; i < documents.Count - 1; i++)
+            {
+                Assert.AreEqual(documents2[i][BBCFields.Title], documents[i + 1][BBCFields.Title]);
+            }
 
-		[Test]
-		public void Sorting()
-		{
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
-			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Setup
-				(
-					x => x.WildCard(BBCFields.Description, "a*"),
-					x => x.Sort(BBCFields.Sortable)
-				);
+        }
 
-            ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
-            IList<Document> documents = result.GetRange(0, 100);
-			for (var i = 1; i < documents.Count; i++)
-			{
-				string thisDocumentSortable = documents[i].GetValues(BBCFields.Sortable).FirstOrDefault();
-				string lastDocumentSortable = documents[i - 1].GetValues(BBCFields.Sortable).FirstOrDefault();
-				Assert.IsTrue(String.Compare(thisDocumentSortable, lastDocumentSortable, StringComparison.Ordinal) >= 0);
-			}
-		}
+        [Test]
+        public void Sorting()
+        {
 
-		[Test]
-		public void MultipleSorting()
-		{
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
-			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Setup
-				(
-					x => x.WildCard(BBCFields.Description, "a*"),
-					x => x.Sort(BBCFields.SecondarySort),
-					x => x.Sort(BBCFields.Sortable)
-				);
+            SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
+            IQueryBuilder queryBuilder = new QueryBuilder();
+            queryBuilder.Setup
+            (
+                x => x.WildCard(BBCFields.Description, "a*"),
+                x => x.Sort("title_sort")
+            );
 
-            ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
-            IList<Document> documents = result.GetRange(0, 1000);
-			for (var i = 1; i < documents.Count; i++)
-			{
-				string thisDocumentSortable = GetSecondarySortString(documents[i]);
-				string lastDocumentSortable = GetSecondarySortString(documents[i - 1]);
-				Assert.IsTrue(String.Compare(thisDocumentSortable, lastDocumentSortable, StringComparison.Ordinal) >= 0);
-			}
-		}
+            ISolrSearchResult result = ExecuteAndAssert(solrSearch, queryBuilder, 1318);
+            var documents = result.GetRange(0, 100);
+            for (var i = 1; i < documents.Count; i++)
+            {
+                string thisDocumentSortable = documents[i][BBCFields.Title].ToString();
+                string lastDocumentSortable = documents[i - 1][BBCFields.Title].ToString();
+                Assert.IsTrue(String.Compare(thisDocumentSortable, lastDocumentSortable, StringComparison.Ordinal) >= 0);
+            }
+        }
 
-		[Test]
-		public void MultipleSortingDescending()
-		{
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
-			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Setup
-				(
-					x => x.WildCard(BBCFields.Description, "a*"),
-					x => x.Sort(BBCFields.SecondarySort, true),
-					x => x.Sort(BBCFields.Sortable, true)
-				);
 
-            ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
-            IList<Document> documents = result.GetRange(0, 1000);
-			for (var i = 1; i < documents.Count; i++)
-			{
-				string thisDocumentSortable = GetSecondarySortString(documents[i]);
-				string lastDocumentSortable = GetSecondarySortString(documents[i - 1]);
-				Assert.IsTrue(String.Compare(lastDocumentSortable, thisDocumentSortable, StringComparison.Ordinal) >= 0);
-			}
-		}
+        [Test]
+        public void MultipleSorting()
+        {
+            SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
+            IQueryBuilder queryBuilder = new QueryBuilder();
+            queryBuilder.Setup
+            (
+                x => x.WildCard(BBCFields.Description, "a*"),
+                x => x.Sort("title_sort"),
+                x => x.Sort("secondary_sort")
+            );
 
-		private string GetSecondarySortString(Document document)
-		{
-			return String.Format("{0}_{1}", document.GetValues(BBCFields.SecondarySort).FirstOrDefault(), document.GetValues(BBCFields.Sortable).FirstOrDefault());	
-		}
+            ISolrSearchResult result = ExecuteAndAssert(solrSearch, queryBuilder, 1318);
+            var documents = result.GetRange(0, 1000);
+            for (var i = 1; i < documents.Count; i++)
+            {
+                string thisDocumentSortable = GetSecondarySortString(documents[i]);
+                string lastDocumentSortable = GetSecondarySortString(documents[i - 1]);
+                Assert.IsTrue(String.Compare(thisDocumentSortable, lastDocumentSortable, StringComparison.Ordinal) >= 0);
+            }
+        }
 
-		[Test]
-		public void SortDescending()
-		{
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
-			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Setup
-				(
-					x => x.WildCard(BBCFields.Description, "a*"),
-					x => x.Sort(BBCFields.Sortable, true)
-				);
+     
+        private ISolrSearchResult ExecuteAndAssertPaged(SolrSearch solrSearch, IQueryBuilder queryBuilder, int numberOfHitsExpected, int start, int end)
+        {
+            // Search = new SolrSearch(GeneralConstants.Paths.BBCIndex);
+            var result = solrSearch.Execute(queryBuilder);
+            var documents = result.GetRange(start, end);
 
-            ILuceneSearchResult result = ExecuteAndAssert(luceneSearch, queryBuilder, 902);
-            IList<Document> documents = result.GetRange(0, 10);
-			for (var i = 1; i < documents.Count; i++)
-			{
-				string thisDocumentSortable = documents[i].GetValues(BBCFields.Sortable).FirstOrDefault();
-				string lastDocumentSortable = documents[i - 1].GetValues(BBCFields.Sortable).FirstOrDefault();
-				Assert.IsTrue(String.Compare(thisDocumentSortable, lastDocumentSortable, StringComparison.Ordinal) <= 0);
-			}
-		}
+            Console.WriteLine("Searched documents in {0} ms", result.ElapsedTimeMs);
+            Console.WriteLine();
 
-		[Test]
-		public void TermsAnd()
-		{
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
-			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Terms(BBCFields.Title, new[] { "africa", "road" }, Matches.Always);
-			ExecuteAndAssert(luceneSearch, queryBuilder, 1);
-		}
+            WriteDocuments(documents);
+
+            Assert.AreEqual(numberOfHitsExpected, result.TotalHits);
+
+            return result;
+        }
+
+        private string GetSecondarySortString(Dictionary<string, object> document)
+        {
+            return String.Format("{0}_{1}", document["secondary_sort"].ToString(), document["title_sort"].ToString());
+        }
+
+
+        [Test]
+        public void TermsAnd()
+        {
+            SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
+            IQueryBuilder queryBuilder = new QueryBuilder();
+            queryBuilder.Terms(BBCFields.Title, new[] { "africa", "road" }, Matches.Always);
+            ExecuteAndAssert(solrSearch, queryBuilder, 1);
+        }
 
         [Test]
         public void EasyAnd()
         {
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
+            SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
             IQueryBuilder queryBuilder = new QueryBuilder();
             queryBuilder.And(
                 x => x.Term(BBCFields.Title, "road"),
                 x => x.Term(BBCFields.Title, "africa"));
-            ExecuteAndAssert(luceneSearch, queryBuilder, 1);
+            ExecuteAndAssert(solrSearch, queryBuilder, 1);
         }
 
-		[Test]
-		public void WildCard()
-		{
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
-			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Setup(x => x.WildCard(BBCFields.Description, "a*"));
+        [Test]
+        public void WildCard()
+        {
+            SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
+            IQueryBuilder queryBuilder = new QueryBuilder();
+            queryBuilder.Setup(x => x.WildCard(BBCFields.Description, "a*"));
 
-			ExecuteAndAssert(luceneSearch, queryBuilder, 902);
-		}
+            ExecuteAndAssert(solrSearch, queryBuilder, 1318);
+        }
 
-		[Test]
-		public void ChainedTerms()
-		{
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
-			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Setup
-				(
-					x => x.WildCard(BBCFields.Description, "a*"),
-					x => x.Term(BBCFields.Description, "police")
-				);
+        [Test]
+        public void ChainedTerms()
+        {
+            SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
+            IQueryBuilder queryBuilder = new QueryBuilder();
+            queryBuilder.Setup
+            (
+                x => x.WildCard(BBCFields.Description, "a*"),
+                x => x.Term(BBCFields.Description, "police")
+            );
 
-			ExecuteAndAssert(luceneSearch, queryBuilder, 17);
-		}
+            ExecuteAndAssert(solrSearch, queryBuilder, 25);
+        }
 
-		[Test]
-		public void Group()
-		{
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
-			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Setup
-				(
-					x => x.WildCard(BBCFields.Title, "africa"),
-					x => x.Group().Setup
-							(
-								y => y.Term(BBCFields.Description, "africa", Matches.Sometimes),
-                                y => y.Term(BBCFields.Description, "amazing", Matches.Sometimes)
-							)
-				);
+        [Test]
+        public void Group()
+        {
+            SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
+            IQueryBuilder queryBuilder = new QueryBuilder();
+            queryBuilder.Setup
+            (
+                x => x.WildCard(BBCFields.Title, "africa"),
+                x => x.Group().Setup
+                (
+                    y => y.Term(BBCFields.Description, "africa", Matches.Sometimes),
+                    y => y.Term(BBCFields.Description, "amazing", Matches.Sometimes)
+                )
+            );
 
-			ExecuteAndAssert(luceneSearch, queryBuilder, 5);
-		}
+            ExecuteAndAssert(solrSearch, queryBuilder, 5);
+        }
 
-		[Test]
-		public void SpeedExample()
-		{
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
-			Console.WriteLine("A simple test to show Lucene getting quicker as queries are done");
-			Console.WriteLine("----------------------------------------------------------------");
-			Console.WriteLine();
-			Console.WriteLine("Pass 1");
-			SpeedExampleExecute(luceneSearch, "b");
-			Console.WriteLine();
 
-			Console.WriteLine("Pass 2");
-			SpeedExampleExecute(luceneSearch, "c");
-			Console.WriteLine();
+        [Test]
+        public void SpeedExample()
+        {
+            SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
+            Console.WriteLine("A simple test to show Lucene getting quicker as queries are done");
+            Console.WriteLine("----------------------------------------------------------------");
+            Console.WriteLine();
+            Console.WriteLine("Pass 1");
+            SpeedExampleExecute(solrSearch, "b");
+            Console.WriteLine();
 
-			Console.WriteLine("Pass 3");
-			SpeedExampleExecute(luceneSearch, "a");
+            Console.WriteLine("Pass 2");
+            SpeedExampleExecute(solrSearch, "c");
+            Console.WriteLine();
 
-			Console.WriteLine();
-			Console.WriteLine("** Repeating Passes **");
+            Console.WriteLine("Pass 3");
+            SpeedExampleExecute(solrSearch, "a");
 
-			Console.WriteLine("Repeat Pass 1");
-			SpeedExampleExecute(luceneSearch, "b");
-			Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("** Repeating Passes **");
 
-			Console.WriteLine("Repeat Pass 2");
-			SpeedExampleExecute(luceneSearch, "c");
-			Console.WriteLine();
+            Console.WriteLine("Repeat Pass 1");
+            SpeedExampleExecute(solrSearch, "b");
+            Console.WriteLine();
 
-			Console.WriteLine("Repeat Pass 3");
-			SpeedExampleExecute(luceneSearch, "a");
-		}
+            Console.WriteLine("Repeat Pass 2");
+            SpeedExampleExecute(solrSearch, "c");
+            Console.WriteLine();
 
-	    [Test]
+            Console.WriteLine("Repeat Pass 3");
+            SpeedExampleExecute(solrSearch, "a");
+        }
+
+        [Test]
         public void Enumerable()
         {
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
+            SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
             IQueryBuilder queryBuilder = new QueryBuilder();
 
             queryBuilder.Term(BBCFields.Title, "africa");
 
-            var result = luceneSearch.Execute(queryBuilder);
-            WriteDocuments(result);
-            Assert.AreEqual(8, result.Count());
-	    }
+            var result = solrSearch.Execute(queryBuilder);
+            /*WriteDocuments(result);*/
+            Assert.AreEqual(7, result.Count());
+        }
 
         [Test]
         public void EnumerableWithWhere()
         {
-            LuceneSearch luceneSearch = new LuceneSearch(new DirectorySearcherProvider(IndexDirectory, false), new LuceneAdapter());
+            SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
             IQueryBuilder queryBuilder = new QueryBuilder();
 
             queryBuilder.Term(BBCFields.Title, "africa");
 
-            var result = luceneSearch.Execute(queryBuilder).Where(doc => doc.GetField(BBCFields.Title).StringValue.IndexOf("your", StringComparison.OrdinalIgnoreCase) >= 0).ToArray();
+            var result = solrSearch.Execute(queryBuilder).Where(doc => doc[BBCFields.Title].ToString().IndexOf("your", StringComparison.OrdinalIgnoreCase) >= 0).ToArray();
             WriteDocuments(result);
             Assert.AreEqual(1, result.Count());
         }
+        public void SpeedExampleExecute(SolrSearch solrSearch, string startingCharacter)
+        {
+            // Chosen due to it being the slowest query
 
-		public void SpeedExampleExecute(LuceneSearch luceneSearch, string startingCharacter)
-		{
-			// Chosen due to it being the slowest query
+            IQueryBuilder queryBuilder = new QueryBuilder();
+            queryBuilder.Setup
+            (
+                x => x.WildCard(BBCFields.Description, startingCharacter + "*"),
+                x => x.Term(BBCFields.Description, "sport")
+            );
+            var result = solrSearch.Execute(queryBuilder);
 
-			IQueryBuilder queryBuilder = new QueryBuilder();
-			queryBuilder.Setup
-				(
-					x => x.WildCard(BBCFields.Description, startingCharacter + "*"),
-					x => x.Term(BBCFields.Description, "sport")
-				);
-			var result = luceneSearch.Execute(queryBuilder);
+            Console.WriteLine("Total Results: {0}", result.TotalHits);
+            Console.WriteLine("Elapsed Time: {0}", result.ElapsedTimeMs);
+        }
+        [Test]
+        public void Filter()
+        {
+            SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
+            IQueryBuilder queryBuilder = new QueryBuilder();
 
-			Console.WriteLine("Total Results: {0}", result.TotalHits);
-			Console.WriteLine("Elapsed Time: {0}", result.ElapsedTimeMs);
-		}
+            queryBuilder.Term(BBCFields.Title, "Africa");
+            queryBuilder.Filter(new LucinqFilter("description", "Close encounters from the heart of Africa", Comparator.Equals));
 
-		private ILuceneSearchResult ExecuteAndAssert(LuceneSearch luceneSearch, IQueryBuilder queryBuilder, int numberOfHitsExpected)
-		{
-			var result = luceneSearch.Execute(queryBuilder);
+            var results = ExecuteAndAssert(solrSearch, queryBuilder, 1);
 
-            var documents = result.GetTopItems();
+            Assert.AreEqual(1, results.TotalHits);
+        }
 
-			Console.WriteLine("Searched documents in {0} ms", result.ElapsedTimeMs);
-			Console.WriteLine();
 
-			WriteDocuments(documents);
+        [Test]
+        public void MultipleSortingDescending()
+        {
+            SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
+            IQueryBuilder queryBuilder = new QueryBuilder();
+            queryBuilder.Setup
+            (
+                x => x.WildCard(BBCFields.Description, "a*"),
+                x => x.Sort(BBCFields.SecondarySort, true),
+                x => x.Sort("title_sort", true)
+            );
 
-			Assert.AreEqual(numberOfHitsExpected, result.TotalHits);
-			
-			return result;
-		}
+            ISolrSearchResult result = ExecuteAndAssert(solrSearch, queryBuilder, 1318);
+            var documents = result.GetRange(0, 1000);
+            for (var i = 1; i < documents.Count; i++)
+            {
+                string thisDocumentSortable = GetSecondarySortString(documents[i]);
+                string lastDocumentSortable = GetSecondarySortString(documents[i - 1]);
+                Assert.IsTrue(String.Compare(lastDocumentSortable, thisDocumentSortable, StringComparison.Ordinal) >= 0);
+            }
+        }
 
-		private ILuceneSearchResult ExecuteAndAssertPaged(LuceneSearch luceneSearch, IQueryBuilder queryBuilder, int numberOfHitsExpected, int start, int end)
-		{
-			// Search = new LuceneSearch(GeneralConstants.Paths.BBCIndex);
-			var result = luceneSearch.Execute(queryBuilder);
-            IList<Document> documents = result.GetRange(start, end);
 
-            Console.WriteLine("Searched documents in {0} ms", result.ElapsedTimeMs);
-			Console.WriteLine();
 
-			WriteDocuments(documents);
+        [Test]
+        public void SortDescending()
+        {
+            SolrSearch solrSearch = new SolrSearch(new SolrSearchDetails(searchServiceName), indexName);
+            IQueryBuilder queryBuilder = new QueryBuilder();
+            queryBuilder.Setup
+            (
+                x => x.WildCard(BBCFields.Description, "a*"),
+                x => x.Sort("title_sort", true)
+            );
 
-			Assert.AreEqual(numberOfHitsExpected, result.TotalHits);
-
-			return result;
-		}
-
-		private void WriteDocuments(IEnumerable<Document> documents)
-		{
-			int counter = 0;
-			Console.WriteLine("Showing the first 30 docs");
-		    foreach (var document in documents)
-		    {
-		       if (counter >= 29)
-					{
-						return;
-					}
-					Console.WriteLine("Title: " + document.GetValues(BBCFields.Title)[0]);
-					Console.WriteLine("Secondary Sort:" + document.GetValues(BBCFields.SecondarySort)[0]);
-					Console.WriteLine("Description: " + document.GetValues(BBCFields.Description)[0]);
-                    Console.WriteLine("Publish Date: " + document.GetValues(BBCFields.PublishDateString)[0]);
-					Console.WriteLine("Url: "+ document.GetValues(BBCFields.Link)[0]);
-					Console.WriteLine();
-					counter++; 
-		    }
-		}
-	}
+            ISolrSearchResult result = ExecuteAndAssert(solrSearch, queryBuilder, 1318);
+            var documents = result.GetRange(0, 10);
+            for (var i = 1; i < documents.Count; i++)
+            {
+                string thisDocumentSortable = documents[i]["title_sort"].ToString();
+                string lastDocumentSortable = documents[i - 1]["title_sort"].ToString();
+                Assert.IsTrue(String.Compare(thisDocumentSortable, lastDocumentSortable, StringComparison.Ordinal) <= 0);
+            }
+        }
+    }
 }

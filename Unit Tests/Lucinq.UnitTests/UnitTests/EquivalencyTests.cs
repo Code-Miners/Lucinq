@@ -928,7 +928,6 @@ namespace Lucinq.Lucene30.UnitTests.UnitTests
 					x => x.Term("_name", "value2")
 				);
 
-            Assert.AreEqual(builder2, builder);
 			LucinqQueryModel replacementQuery = builder.Build();
 
 		    LuceneAdapter adapter = new LuceneAdapter();
@@ -995,7 +994,6 @@ namespace Lucinq.Lucene30.UnitTests.UnitTests
 					x => x.Term("_name", "value2")
 				);
 
-            Assert.AreEqual(builder2, builder);
 			LucinqQueryModel replacementQuery = builder.Build();
 
 		    LuceneAdapter adapter = new LuceneAdapter();

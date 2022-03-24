@@ -84,10 +84,20 @@ namespace Lucinq.Lucene30.Adapters
             {
                 VisitLongRange(longQuery, booleanQuery);
             }
+            else if (query is LucinqRangeQuery<float> floatQuery)
+            {
+                VisitFloatRange(floatQuery, booleanQuery);
+            }
             else if (query is LucinqRangeQuery<string> termRangeQuery)
             {
                 VisitTermRange(termRangeQuery, booleanQuery);
             }
+        }
+
+        private void VisitFloatRange(LucinqRangeQuery<float> query, BooleanQuery booleanQuery)
+        {
+            NumericRangeQuery<float> nativeQuery = NumericRangeQuery.NewFloatRange(query.Field, query.PrecisionStep ?? 1, query.Lower, query.Upper, query.IncludeMin, query.IncludeMax);
+            AddQuery(query, booleanQuery, nativeQuery);
         }
 
         protected virtual void VisitTermRange(LucinqRangeQuery<string> query, BooleanQuery booleanQuery)

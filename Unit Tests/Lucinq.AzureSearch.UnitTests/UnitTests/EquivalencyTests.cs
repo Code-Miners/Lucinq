@@ -345,7 +345,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
         [Test]
         public void CaseInsensitiveWildCards()
         {
-            string queryString = "+_name:value* AND +_name:value2*";
+            string queryString = "( +_name:value* AND +_name:value2*)";
 
             QueryBuilder builder = new QueryBuilder();
             builder.Setup(x => x.WildCards("_name", new []{"Value*", "Value2*"}));
@@ -505,7 +505,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
         {
             QueryBuilder builder = new QueryBuilder();
 
-            string queryString = "+_name:\"value\" AND +_name:\"value2\" AND +_name:\"value3\"";
+            string queryString = "( +_name:\"value\" AND +_name:\"value2\" AND +_name:\"value3\")";
 
             builder.Setup(x => x.Keywords("_name", new []{"Value", "Value2", "Value3"}));
             LucinqQueryModel replacementQuery = builder.Build();
@@ -524,7 +524,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
 		[Test]
 		public void IntegerRange()
 		{
-		    string queryString = "(field ge 0 and field le 10)";
+		    string queryString = "field ge 0 and field le 10";
 
             QueryBuilder builder = new QueryBuilder();
 			builder.Setup(x => x.NumericRange("field", 0, 10));
@@ -540,7 +540,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
 		[Test]
 		public void DoubleRange()
 		{
-		    string queryString = "(field ge 0 and field le 10)";
+		    string queryString = "field ge 0 and field le 10";
 
             QueryBuilder builder = new QueryBuilder();
 			builder.Setup(x => x.NumericRange("field", 0d, 10d));
@@ -556,7 +556,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
 		[Test]
 		public void LongRange()
 		{
-		    string queryString = "(field ge 0 and field le 10)";
+		    string queryString = "field ge 0 and field le 10";
 
             QueryBuilder builder = new QueryBuilder();
 			builder.Setup(x => x.NumericRange("field", 0L, 10L));
@@ -576,7 +576,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
 		[Test]
 		public void Or()
 		{
-		    string queryString = "_name:value1 OR _name:value2";
+		    string queryString = "_name:value1 _name:value2";
 
             QueryBuilder builder = new QueryBuilder{DefaultChildrenOccur = Matches.Sometimes};
 			builder.Setup
@@ -619,7 +619,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
         [Test]
 	    public void OptionalOr()
 	    {
-	        string queryString = "_name:value1 OR _name:value2";
+	        string queryString = "( _name:value1 OR _name:value2)";
 
             QueryBuilder builder = new QueryBuilder { DefaultChildrenOccur = Matches.Sometimes };
             builder.Or
@@ -639,7 +639,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
 		[Test]
 		public void OrExtension()
 		{
-		    string queryString = "_name:value1 OR _name:value2";
+		    string queryString = "( _name:value1 OR _name:value2)";
 
             QueryBuilder builder = new QueryBuilder();
 			var builder2 = builder.Or
@@ -648,7 +648,6 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
 					x => x.Term("_name", "value2")
 				);
 
-            Assert.AreEqual(builder2, builder);
 			LucinqQueryModel replacementQuery = builder.Build();
 
 		    AzureSearchAdapter adapter = new AzureSearchAdapter();
@@ -661,7 +660,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
         [Test]
         public void CreateOrExtension()
         {
-            string queryString = "_name:value1 OR _name:value2";
+            string queryString = "( _name:value1 OR _name:value2)";
 
             QueryBuilder builder = new QueryBuilder();
             var group = builder.CreateOrGroup
@@ -682,7 +681,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
 		[Test]
 		public void AndExtension()
 		{
-		    string queryString = "+_name:value1 AND +_name:value2";
+		    string queryString = "( +_name:value1 AND +_name:value2)";
 
             QueryBuilder builder = new QueryBuilder();
 			var builder2 = builder.And
@@ -691,7 +690,6 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
 					x => x.Term("_name", "value2")
 				);
 
-            Assert.AreEqual(builder2, builder);
 			LucinqQueryModel replacementQuery = builder.Build();
 
 		    AzureSearchAdapter adapter = new AzureSearchAdapter();
@@ -704,7 +702,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
         [Test]
         public void CreateAndExtension()
         {
-            string queryString = "+_name:value1 AND +_name:value2";
+            string queryString = "( +_name:value1 AND +_name:value2)";
 
             QueryBuilder builder = new QueryBuilder();
             var builder2 = builder.CreateAndGroup
@@ -726,7 +724,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
         [Test]
         public void OptionalAndExtension()
         {
-            string queryString = "+_name:value1 AND +_name:value2";
+            string queryString = "( +_name:value1 AND +_name:value2)";
 
             QueryBuilder builder = new QueryBuilder();
             builder.And
@@ -787,7 +785,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
         [Test]
 		public void CompositeTermPhraseWildcardTests()
 		{
-		    string queryString = "+_name:value OR +_name:\"phrase\"~2 OR _name:*wildcard*";
+		    string queryString = "+_name:value +_name:\"phrase\"~2 _name:*wildcard*";
 
             QueryBuilder builder = new QueryBuilder();
 			builder.Setup
@@ -1006,7 +1004,7 @@ namespace Lucinq.AzureSearch.UnitTests.UnitTests
 	    [Test]
 	    public void NestedEmptyOrAnd()
 	    {
-	        string queryString = "( ( +_name:value AND +_name:value))";
+	        string queryString = "( +_name:value AND +_name:value)";
 
 	        QueryBuilder builder = new QueryBuilder();
 	        var orGroup1 = builder.Or();
