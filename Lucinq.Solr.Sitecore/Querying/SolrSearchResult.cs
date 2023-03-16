@@ -1,15 +1,16 @@
-﻿namespace Lucinq.Solr.Querying
-{
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Diagnostics;
-    using System.Linq;
-    using Adapters;
-    using CommonServiceLocator;
-    using SolrNet;
-    using SolrNet.Impl;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
+using CommonServiceLocator;
+using Lucinq.Solr.Sitecore.Adapters;
+using Sitecore.ContentSearch;
+using Sitecore.ContentSearch.SolrProvider.SolrNetIntegration;
+using SolrNet;
+using SolrNet.Impl;
 
+namespace Lucinq.Solr.Sitecore.Querying
+{
     public class SolrSearchResult : ISolrSearchResult
     {
         #region [ Fields ]
@@ -94,10 +95,7 @@
             Model.QueryOptions.Start = (int)skip;
             Model.QueryOptions.Rows = take;
 
-
             Model.IncludeTotalNumberOfSearchResults = true;
-            var solr = ServiceLocator.Current.GetInstance<ISolrOperations<Dictionary<string, object>>>();
-
             if (Model.QueryBuilder.ToString() == String.Empty)
             {
                 Model.QueryBuilder.Append("*:*");
@@ -106,18 +104,21 @@
             var solrQuery = new SolrQuery(Model.QueryBuilder.ToString());
             Model.QueryOptions.FilterQueries.Add(new SolrQuery(Model.FilterBuilder.ToString()));
             Model.QueryOptions.ExtraParams = new List<KeyValuePair<string, string>>
-                { new KeyValuePair<string, string>("wt", "xml") };
+                { /*new KeyValuePair<string, string>("wt", "xml")*/ };
 
 
-            SolrQueryResults<Dictionary<string, object>> results = solr.Query(solrQuery, Model.QueryOptions);
-
-            topDocs = results;
-            totalHits = topDocs.Count;
+            using (IProviderSearchContext context = ContentSearchManager.GetIndex(IndexName).CreateSearchContext())
+            {
+                var results = context.Query<Dictionary<string, object>>(solrQuery, Model.QueryOptions);
+                topDocs = results;
+                totalHits = topDocs.Count;
+            }
 
             stopwatch.Stop();
             ElapsedTimeMs = stopwatch.ElapsedMilliseconds;
         }
 
+    
         #endregion
 
         #region [ IEnumerable Methods ]

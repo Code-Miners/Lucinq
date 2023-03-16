@@ -1,12 +1,12 @@
-﻿namespace Lucinq.Solr.Querying
-{
-    using System;
-    using System.Collections.Generic;
-    using Adapters;
-    using Core.Adapters;
-    using Core.Interfaces;
-    using Core.Results;
+﻿using System;
+using System.Collections.Generic;
+using Lucinq.Core.Adapters;
+using Lucinq.Core.Interfaces;
+using Lucinq.Core.Results;
+using Lucinq.Solr.Sitecore.Adapters;
 
+namespace Lucinq.Solr.Sitecore.Querying
+{
     public abstract class SolrItemSearch<TItemResult, T> : SolrSearch where TItemResult : ItemSearchResult<Dictionary<string, object>, T>
     {
         public SolrItemSearch(IProviderAdapter<SolrSearchModel> adapter, SolrSearchDetails azureSearchDetails, string indexName) : base(adapter, azureSearchDetails, indexName)

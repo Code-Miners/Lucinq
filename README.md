@@ -73,10 +73,20 @@ foreach (Document document in result.GetTopDocuments())
 }
 ```
 
+Sitecore Adaptor
+================
+
+The Lucinq Solr adaptor was incompatible with Sitecore 10 onwards. This is becuase Lucinq uses ServiceLocator via Solr.Net to retrive Solr Operations. Sitecore Content API also initalises a custom locator provider, and this results in a "first past the post" situation which will cause errors with either Lucinq or Sitecore Indexing.
+
+To resolve this an adaptor has been created where Lucinq generates the Solr.Net queries, then passes these queries to the Sitecore Content Search Api to execute
+
+
 Further Projects
 ================
 
-The intention at present is to allow the use of raw lucene with a view to writing overlays for Sitecore and potentially umbraco.
+The intention at present is to allow the use of raw lucene with a view to potentially writing overlays for umbraco.
+
+
 
 License
 =======

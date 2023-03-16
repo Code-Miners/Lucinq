@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2019
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.Core", "Lucinq\Lucinq.Core.csproj", "{4A37D121-9AC6-489D-B565-C353D85AFB73}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.Solr", "Lucinq.Solr\Lucinq.Solr.csproj", "{6E6FF124-6A8B-47A9-8169-B9101117B486}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.Solr.UnitTests", "Unit Tests\Lucinq.Solr.UnitTests\Lucinq.Solr.UnitTests.csproj", "{409ED454-427E-46A9-BD62-5879B5475D2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucinq.Solr.Sitecore", "Lucinq.Solr.Sitecore\Lucinq.Solr.Sitecore.csproj", "{1D210C51-5A45-474E-A7EA-B2ECF20664C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{409ED454-427E-46A9-BD62-5879B5475D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{409ED454-427E-46A9-BD62-5879B5475D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{409ED454-427E-46A9-BD62-5879B5475D2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D210C51-5A45-474E-A7EA-B2ECF20664C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D210C51-5A45-474E-A7EA-B2ECF20664C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D210C51-5A45-474E-A7EA-B2ECF20664C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D210C51-5A45-474E-A7EA-B2ECF20664C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

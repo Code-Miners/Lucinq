@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Adapters\SolrSearchAdapter.cs" />
     <Compile Include="Querying\ClauseOperator.cs" />
+    <Compile Include="Querying\SolrItemSearch.cs" />
     <Compile Include="Querying\SolrSearch.cs" />
     <Compile Include="Adapters\SolrSearchModel.cs" />
     <Compile Include="Querying\SolrSearchResult.cs" />
