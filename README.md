@@ -1,20 +1,18 @@
-Lucinq - A Fluent / Expressive API for Lucene.Net
+Lucinq - A Fluent / Expressive API for SOLR, Azure Search and Lucene.NET
 =================================================
 
-This project gives fluent style API to Lucene.Net. The primary purpose of which is to make Lucene a little less verbose 
-to accomplish most tasks whilst retaining the power and speed of Lucene. It has been designed with the goal with driving the
-existing lucene API, and keeping the abstraction to a minimum.
+This project gives fluent style API to SOLR, Azure Search and Lucene. The primary purpose of which is to make the syntax a little less verbose whilst retaining the inherent power and speed of those tools.
 
 Wiki
 ====
 
 More complete documentation can be found in the wiki which can be found here:
-https://github.com/cardinal252/Lucinq/wiki
+https://github.com/Code-Miners/Lucinq/wiki
 
 Features
 ========
 
-- A fluent style api for working with lucene queries for most of the query types and grouping.
+- A fluent style api for working with queries for most query types and groupings.
 - Paging
 - Sorting
 - Query manipulation - remove terms and re-run for example.
